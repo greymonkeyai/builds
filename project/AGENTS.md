@@ -24,4 +24,4 @@ under refinement is `prompt.md`; builds are disposable evidence.
   at review, named-but-unenacted scenarios are flagged as evidence gaps. The suite is
   project-side; sync it with the corpus at review points.
 - `C:\Project` and `C:\Harness` are read-only corpora — cite by path and identifier
-  (E-\*, M-\*, D-\*), do not copy content into them or from them wholesale.
+  (E-\*, M-\*, C-\*, D-\*), do not copy content into them or from them wholesale.

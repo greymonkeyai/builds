@@ -32,6 +32,18 @@ Per-scenario evaluation criteria for JEV verdicts and owner review. Each scenari
 | S-defer-publication | Unconfigured nonlocal publication request refused or deferred, request and status recorded | authority boundary, graceful deferral | D10 |
 | S-chat-invocation | Chat input requests a conversational response while matching one or more tool needs; each need remains distinguishable | chat-turn chain, conversational tool matching | UX chat tool invocation |
 | S-focused-need | Unmet need moved into focus; values supplied conversationally; need remains available until its requirement is fulfilled | focus/context mechanics, conversational slot-filling | UX focused unmet need |
+| S-personality-roster | Selectable roster of personalities presented as a persistent panel, conventionally the left column | roster surface, personality switching | owner 2026-11-22; cf. C-InspectionSurfaces |
+| S-portrait-bind | Creating a personality produces portrait-quality art depicting that specific personality, bound to it as visual identity | portrait generation, art-to-persona binding | owner 2026-11-22; C-PersonalityArt, C-PresentationGlass |
+| S-color-schemes | Theme selector offers dark mode plus at least two other colorways; fresh launch opens in light mode | theming | owner 2026-11-22 |
+| S-status-bar | Status bar continuously shows available sources and LLMs | capability surfacing | owner 2026-11-22; cf. C-HonestyBanner, C-MultiSourceAccess |
+| S-email-commentary | User selects a received email from a list and adds it to conversational context; the active personality offers commentary on it | source ingestion, context injection, persona commentary | owner 2026-11-22; cf. C-ConfiguredAccounts |
+| S-conversation-reset | Reset button clears the conversation when it has moved to a different topic, keeping personality prompts on-topic | topic segmentation, prompt hygiene | owner 2026-11-22; C-ConversationArchive |
+| S-context-display | Active conversational topic/context displayed when the user selects a profile, email, or other result | context surfacing | owner 2026-11-22; C-ConversationArchive |
+| S-personality-editor | Editor tab exposing all customizable personality elements for editing | persona editing surface | owner 2026-11-22 |
+| S-windows-launch | Application launches from MS Windows like an installed program | packaging, launch | owner 2026-11-22; C-SupportedOS-*, C-LauncherTests |
+| S-close-terminate | Closing the application window terminates the program — no orphaned process | process lifecycle | owner 2026-11-22; C-DesktopShell |
+| S-speech-serialization | Generated speech waits until the previous speaker finishes rather than overlapping | speech floor, sequential respondents | owner 2026-11-22; C-SpeechFloor, C-PerceivableRespondents, C-SequentialRespondents |
+| S-distinct-preloadeds | Shipped personalities differ enough in persona and style that the same prompt elicits noticeably different responses | persona distinctness | owner 2026-11-22; C-VoiceDiversity |
 
 ## Scenario notes
 
@@ -43,3 +55,7 @@ Per-scenario evaluation criteria for JEV verdicts and owner review. Each scenari
 - **S-personality-create:** good coverage of many parts working together — identity
   assignment, portrait/voice/characterization needs generated, and the resulting persona
   coherent and distinct. Score coherence of the whole, not the parts' existence.
+- **Owner additions 2026-11-22:** the twelve scenarios below S-focused-need exercise UI
+  and shell capabilities. Where one overlaps a convention (noted `cf. C-*` / `C-*`), the
+  convention mechanism governs: a build may depart with a recorded challenge — conformity
+  direction is not scored, only reckoning on the record (owner ruling 3, 2026-11-19).

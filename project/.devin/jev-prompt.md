@@ -34,6 +34,15 @@ individually per its scoring conventions — `enactment` evidence where the buil
 run artifacts demonstrate it, `repository` evidence where it does not. Omit the `scenarios`
 array when the direction does not name the suite.
 
+## Conventions
+
+The corpus convention layer (`C:\Project\MigrateInbound\CONVENTIONS.md`, `C-*` identifiers)
+is challengeable but not ignorable. Do not score which direction a build takes on a
+convention — score whether a departure was reckoned with on the record: acknowledged,
+evaluated, and explained (FEATURES.md, devlog entries, or other build evidence). A
+recorded challenge is compliant; a silent departure is a conformance gap — flag it in
+`notes`.
+
 `user_opinion` and `user_commentary` are owner-review slots: the judge emits `null` /
 `[]`. When the owner reviews, every user opinion offered on an automated score is recorded
 in that criterion's `user_opinion` field — a 0-1 figure, or a status such as `"confirmed"`
