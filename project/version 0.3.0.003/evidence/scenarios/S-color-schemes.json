@@ -1,0 +1,30 @@
+{
+  "id": "S-color-schemes",
+  "ran": true,
+  "cycles": [
+    {
+      "set": "dark",
+      "stateTheme": "dark"
+    },
+    {
+      "set": "sepia",
+      "stateTheme": "sepia"
+    },
+    {
+      "set": "slate",
+      "stateTheme": "slate"
+    },
+    {
+      "set": "light",
+      "stateTheme": "light"
+    }
+  ],
+  "themesInCss": [
+    "light",
+    "dark",
+    "sepia",
+    "slate"
+  ],
+  "defaultLight": true,
+  "finalTheme": "light"
+}

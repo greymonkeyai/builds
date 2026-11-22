@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "checks": {
+    "input": {
+      "components": true,
+      "componentCount": 85,
+      "pipelineRoutes": true,
+      "llmMode": "live-ollama",
+      "llmAccepts": true,
+      "primitiveAnswer": true
+    },
+    "ledger": {
+      "durable": true,
+      "partitionMounted": 0,
+      "partitionFile": "C:\\builds\\project\\version 0.3.0.003\\runtime\\launch-partition.jsonl",
+      "queryable": true,
+      "live": 83,
+      "essentialMounted": true
+    }
+  },
+  "startedMs": 1795336470755,
+  "passedAt": 1795336474404,
+  "msToGate": 3649,
+  "inputReady": true,
+  "ledgerReady": true
+}

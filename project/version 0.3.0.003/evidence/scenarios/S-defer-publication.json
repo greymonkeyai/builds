@@ -1,0 +1,35 @@
+{
+  "id": "S-defer-publication",
+  "ran": true,
+  "noGrant": {
+    "ok": false,
+    "needId": "need-4c4ebd2e6427",
+    "deferred": true,
+    "missing": [
+      {
+        "slot": "__grant__",
+        "minCertainty": 1.0,
+        "scope": "publish.creator"
+      }
+    ],
+    "result": null,
+    "error": null
+  },
+  "withGrant": {
+    "ok": true,
+    "needId": "need-dc9a3e3607a6",
+    "deferred": null,
+    "missing": null,
+    "result": {
+      "ok": true,
+      "result": {
+        "ok": true,
+        "published": "C:\\builds\\project\\version 0.3.0.003\\runtime\\scenario\\artifacts\\published\\1795336220445-cycle-log.md"
+      },
+      "ms": 3
+    },
+    "error": null
+  },
+  "deferredRows": 2,
+  "grantId": "g-87c1f4fbdf45"
+}

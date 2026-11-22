@@ -1,0 +1,30 @@
+{
+  "id": "S-personality-editor",
+  "ran": true,
+  "update": true,
+  "applied": {
+    "traits": [
+      "precise",
+      "wry",
+      "patient"
+    ],
+    "register": "scholarly",
+    "voice": {
+      "name": "Microsoft Zira Desktop",
+      "rate": -2
+    },
+    "color": "#7a3b8c",
+    "priority": 0.7
+  },
+  "lensAssertions": 1,
+  "editableElements": [
+    "name",
+    "traits",
+    "interests",
+    "lens",
+    "voice",
+    "color",
+    "rosterPriority",
+    "displayMode"
+  ]
+}

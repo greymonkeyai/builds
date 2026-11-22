@@ -1,0 +1,51 @@
+{
+  "ran": true,
+  "informational": true,
+  "gate": {
+    "passed": true,
+    "checks": {
+      "input": {
+        "components": true,
+        "componentCount": 85,
+        "pipelineRoutes": true,
+        "llmMode": "live-ollama",
+        "llmAccepts": true,
+        "primitiveAnswer": true
+      },
+      "ledger": {
+        "durable": true,
+        "partitionMounted": 0,
+        "partitionFile": "C:\\builds\\project\\version 0.3.0.003\\runtime\\scenario\\launch-partition.jsonl",
+        "queryable": true,
+        "live": 83,
+        "essentialMounted": true
+      }
+    },
+    "startedMs": 1795336162704,
+    "passedAt": 1795336166353,
+    "msToGate": 3649,
+    "inputReady": true,
+    "ledgerReady": true,
+    "path": "C:\\builds\\project\\version 0.3.0.003\\runtime\\scenario\\gate.json"
+  },
+  "honesty": {
+    "llm": {
+      "engine": "llm",
+      "mode": "live-ollama",
+      "model": "llama3.2:latest"
+    },
+    "tts": {
+      "engine": "tts",
+      "local": "sapi",
+      "remote": "unconfigured"
+    },
+    "stt": {
+      "engine": "stt",
+      "mode": "browser-webSpeech-or-declared-none"
+    },
+    "portrait": {
+      "engine": "portrait",
+      "mode": "inproc-svg"
+    }
+  }
+}

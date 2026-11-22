@@ -1,0 +1,37 @@
+{
+  "id": "S-restart-recovery",
+  "ran": true,
+  "before": 856,
+  "after": 865,
+  "recovered": true,
+  "partitionMounted": null,
+  "roster": 13,
+  "personasWithArt": 13,
+  "gate": {
+    "passed": true,
+    "checks": {
+      "input": {
+        "components": true,
+        "componentCount": 84,
+        "pipelineRoutes": true,
+        "llmMode": "live-ollama",
+        "llmAccepts": true,
+        "primitiveAnswer": true
+      },
+      "ledger": {
+        "durable": true,
+        "partitionMounted": 58,
+        "partitionFile": "C:\\builds\\project\\version 0.3.0.003\\runtime\\scenario\\launch-partition.jsonl",
+        "queryable": true,
+        "live": 837,
+        "essentialMounted": true
+      }
+    },
+    "startedMs": 1795336444284,
+    "passedAt": 1795336447987,
+    "msToGate": 3703,
+    "inputReady": true,
+    "ledgerReady": true,
+    "path": "C:\\builds\\project\\version 0.3.0.003\\runtime\\scenario\\gate.json"
+  }
+}

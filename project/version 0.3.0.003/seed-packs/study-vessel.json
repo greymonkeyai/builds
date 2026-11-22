@@ -1,0 +1,134 @@
+{
+  "id": "study-vessel",
+  "assertions": [
+    {
+      "subject": "source:ledger",
+      "predicate": "source:configured",
+      "value": {
+        "kind": "internal",
+        "locator": "runtime/ledger.jsonl"
+      }
+    },
+    {
+      "subject": "source:ledger",
+      "predicate": "source:trust-class",
+      "value": "configured"
+    },
+    {
+      "subject": "source:ledger",
+      "predicate": "source:confidence",
+      "value": 0.8
+    },
+    {
+      "subject": "project:study-habits",
+      "predicate": "project:exists",
+      "value": {
+        "title": "Study habits review"
+      }
+    },
+    {
+      "subject": "project:study-habits",
+      "predicate": "project:goal",
+      "value": {
+        "text": "collect study techniques worth keeping",
+        "status": "open"
+      }
+    }
+  ],
+  "personas": [
+    {
+      "name": "Scholar",
+      "traits": [
+        "patient",
+        "methodical",
+        "citation-minded"
+      ],
+      "interests": [
+        "study",
+        "research",
+        "sources",
+        "notes"
+      ],
+      "lens": {
+        "register": "scholarly",
+        "style": "scholarly",
+        "responsibilities": [
+          "research",
+          "adequacy review"
+        ]
+      },
+      "voice": {
+        "name": "Microsoft Zira Desktop",
+        "rate": -1
+      }
+    }
+  ],
+  "tools": [
+    {
+      "id": "suggest-study-plan",
+      "kind": "tool",
+      "title": "Suggest a study plan",
+      "need": "study.plan",
+      "triggers": {
+        "keywords": [
+          "study",
+          "plan"
+        ],
+        "patterns": [
+          "study plan"
+        ]
+      },
+      "template": {
+        "slots": [
+          {
+            "name": "topic",
+            "required": true,
+            "minCertainty": 0.5
+          }
+        ]
+      },
+      "steps": [
+        {
+          "op": "append",
+          "subject": "study",
+          "predicate": "study:plan-suggest",
+          "value": {
+            "topic": {
+              "$ref": "input.topic"
+            }
+          },
+          "claimant": "persona:scholar",
+          "certainty": 0.6,
+          "basis": {
+            "$typed": {
+              "type": "map",
+              "v": {
+                "kind": "generated"
+              }
+            }
+          }
+        },
+        {
+          "op": "emit",
+          "kind": "card",
+          "payload": {
+            "kind": "offer",
+            "summary": "study plan suggestion",
+            "topic": {
+              "$ref": "input.topic"
+            }
+          }
+        },
+        {
+          "op": "result",
+          "value": {
+            "suggested": true,
+            "topic": {
+              "$ref": "input.topic"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

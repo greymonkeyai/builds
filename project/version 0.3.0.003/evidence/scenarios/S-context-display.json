@@ -1,0 +1,18 @@
+{
+  "id": "S-context-display",
+  "ran": true,
+  "profileSelect": {
+    "kind": "profile",
+    "label": "profile — Curator"
+  },
+  "contextShownProfile": "profile — Curator",
+  "emailSelect": {
+    "kind": "email",
+    "label": "email — Field notes: the Otter Creek survey"
+  },
+  "contextShownEmail": "email — Field notes: the Otter Creek survey",
+  "commentaryPresent": true,
+  "contextRows": [
+    "email — Field notes: the Otter Creek survey"
+  ]
+}

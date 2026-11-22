@@ -1,0 +1,24 @@
+{
+  "id": "S-email-commentary",
+  "ran": true,
+  "emailCount": 3,
+  "subjects": [
+    "Reunion roster - headcount needed by Friday",
+    "Statement ready: November 2025",
+    "Field notes: the Otter Creek survey"
+  ],
+  "selected": "Reunion roster - headcount needed by Friday",
+  "context": {
+    "kind": "email",
+    "label": "email — Reunion roster - headcount needed by Friday"
+  },
+  "commentary": {
+    "personaId": "persona-2501ec5fdfa5",
+    "name": "Curator",
+    "text": "1. The email thread appears to be from Marta Ellison, a confirmed attendee of the Harbor reunion, requesting an update on the headcount.\n2. The mention of \"maybe\" guests (6) suggests that the attendee is uncertain about the status of some individuals, potentially indicating a need for further communication or clarification.\n3. The reference to the \"lighthouse slides from '98\" is unclear without additional context, but it may be a requested item or a potential artifact for the reunion.",
+    "engine": "ollama:llama3.2:latest"
+  },
+  "contextRows": [
+    "email — Reunion roster - headcount needed by Friday"
+  ]
+}

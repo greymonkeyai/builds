@@ -1,0 +1,6 @@
+{
+  "id": "S-close-terminate",
+  "ran": true,
+  "seeEvidence": "evidence/launch/launch-check.json",
+  "checkFile": null
+}

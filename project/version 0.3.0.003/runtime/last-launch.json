@@ -1,0 +1,90 @@
+{
+  "ok": true,
+  "version": "0.3.0.003",
+  "port": 9760,
+  "root": "C:\\builds\\project\\version 0.3.0.003",
+  "runtime": "C:\\builds\\project\\version 0.3.0.003\\runtime",
+  "engines": {
+    "llm": {
+      "engine": "llm",
+      "mode": "live-ollama",
+      "model": "llama3.2:latest"
+    },
+    "tts": {
+      "engine": "tts",
+      "local": "sapi",
+      "remote": "unconfigured"
+    },
+    "stt": {
+      "engine": "stt",
+      "mode": "browser-webSpeech-or-declared-none"
+    },
+    "portrait": {
+      "engine": "portrait",
+      "mode": "inproc-svg"
+    }
+  },
+  "components": 85,
+  "ledger": {
+    "total": 86,
+    "live": 86,
+    "superseded": 0,
+    "namespaces": {
+      "ethics": 4,
+      "persona": 46,
+      "product": 4,
+      "maxim": 2,
+      "chat": 1,
+      "user": 2,
+      "routing": 2,
+      "seed": 2,
+      "source": 6,
+      "project": 2,
+      "tool": 4,
+      "connector": 2,
+      "email": 4,
+      "engine": 1,
+      "decision": 1,
+      "gate": 2,
+      "launch": 1
+    },
+    "path": "C:\\builds\\project\\version 0.3.0.003\\runtime\\ledger.jsonl",
+    "durable": true
+  },
+  "partitionMounted": 0,
+  "transientReset": false,
+  "packs": [
+    "getting-started",
+    "study-vessel"
+  ],
+  "gate": {
+    "passed": true,
+    "checks": {
+      "input": {
+        "components": true,
+        "componentCount": 85,
+        "pipelineRoutes": true,
+        "llmMode": "live-ollama",
+        "llmAccepts": true,
+        "primitiveAnswer": true
+      },
+      "ledger": {
+        "durable": true,
+        "partitionMounted": 0,
+        "partitionFile": "C:\\builds\\project\\version 0.3.0.003\\runtime\\launch-partition.jsonl",
+        "queryable": true,
+        "live": 83,
+        "essentialMounted": true
+      }
+    },
+    "startedMs": 1795336470755,
+    "passedAt": 1795336474404,
+    "msToGate": 3649,
+    "inputReady": true,
+    "ledgerReady": true,
+    "path": "C:\\builds\\project\\version 0.3.0.003\\runtime\\gate.json"
+  },
+  "steward": true,
+  "bootMs": 1795336470755,
+  "log": "C:\\builds\\project\\version 0.3.0.003\\evidence\\launch\\launch-20261122-033435.log"
+}

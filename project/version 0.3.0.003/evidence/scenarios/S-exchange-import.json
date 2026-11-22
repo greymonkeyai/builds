@@ -1,0 +1,25 @@
+{
+  "id": "S-exchange-import",
+  "ran": true,
+  "export": {
+    "path": "C:\\builds\\project\\version 0.3.0.003\\runtime\\scenario\\artifacts\\exports\\pkg-466d292801f6.json",
+    "counts": {
+      "personas": 6,
+      "tools": 0,
+      "needs": 2
+    }
+  },
+  "import": {
+    "ok": true,
+    "package": "pkg-466d292801f6",
+    "counts": {
+      "assertions": 4,
+      "personas": 6,
+      "tools": 0,
+      "needs": 2
+    },
+    "threshold": "below-action (0.4 < 0.7)"
+  },
+  "importRows": 1,
+  "belowActionThreshold": true
+}

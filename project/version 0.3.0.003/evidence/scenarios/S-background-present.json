@@ -1,0 +1,176 @@
+{
+  "id": "S-background-present",
+  "ran": true,
+  "wake": {
+    "ok": true,
+    "result": {
+      "ok": true,
+      "ms": 2,
+      "report": {
+        "duties": [
+          "drain-needs",
+          "countdown",
+          "calendar-scan",
+          "source-confidence",
+          "compact-check",
+          "temporal-attention"
+        ],
+        "ran": [
+          {
+            "drain-needs": []
+          },
+          {
+            "countdown": []
+          },
+          {
+            "calendar-scan": 0
+          },
+          {
+            "source-confidence": {
+              "adjusted": []
+            }
+          },
+          {
+            "temporal-attention": {
+              "current": 0,
+              "upcoming": 0,
+              "future": 0,
+              "recent": 0,
+              "historical": 0
+            }
+          },
+          {
+            "compact-check": "under-budget"
+          }
+        ],
+        "reason": "manual"
+      }
+    },
+    "ms": 3
+  },
+  "autonomousRunsBeforeWake": 3,
+  "autonomousReasons": [
+    null,
+    null,
+    null
+  ],
+  "stewardRuns": 4,
+  "temporalAttention": [
+    {
+      "subjectKey": "temporal",
+      "predicate": "temporal:attention",
+      "value": {
+        "type": "map",
+        "v": {
+          "findings": [],
+          "contextCount": {
+            "current": 0,
+            "upcoming": 0,
+            "future": 0,
+            "recent": 0,
+            "historical": 0
+          }
+        }
+      },
+      "claimant": "steward:main",
+      "certainty": 1.0,
+      "context": 1.0,
+      "basis": {
+        "kind": "execution"
+      },
+      "at": 1795336182388,
+      "supersedes": null,
+      "relates": [],
+      "tags": [],
+      "id": "a-40d82379f06d",
+      "meta": {}
+    },
+    {
+      "subjectKey": "temporal",
+      "predicate": "temporal:attention",
+      "value": {
+        "type": "map",
+        "v": {
+          "findings": [],
+          "contextCount": {
+            "current": 0,
+            "upcoming": 0,
+            "future": 0,
+            "recent": 0,
+            "historical": 0
+          }
+        }
+      },
+      "claimant": "steward:main",
+      "certainty": 1.0,
+      "context": 1.0,
+      "basis": {
+        "kind": "execution"
+      },
+      "at": 1795336197401,
+      "supersedes": null,
+      "relates": [],
+      "tags": [],
+      "id": "a-8b0621d9078e",
+      "meta": {}
+    },
+    {
+      "subjectKey": "temporal",
+      "predicate": "temporal:attention",
+      "value": {
+        "type": "map",
+        "v": {
+          "findings": [],
+          "contextCount": {
+            "current": 0,
+            "upcoming": 0,
+            "future": 0,
+            "recent": 0,
+            "historical": 0
+          }
+        }
+      },
+      "claimant": "steward:main",
+      "certainty": 1.0,
+      "context": 1.0,
+      "basis": {
+        "kind": "execution"
+      },
+      "at": 1795336212410,
+      "supersedes": null,
+      "relates": [],
+      "tags": [],
+      "id": "a-a25dbab01c63",
+      "meta": {}
+    },
+    {
+      "subjectKey": "temporal",
+      "predicate": "temporal:attention",
+      "value": {
+        "type": "map",
+        "v": {
+          "findings": [],
+          "contextCount": {
+            "current": 0,
+            "upcoming": 0,
+            "future": 0,
+            "recent": 0,
+            "historical": 0
+          }
+        }
+      },
+      "claimant": "steward:main",
+      "certainty": 1.0,
+      "context": 1.0,
+      "basis": {
+        "kind": "execution"
+      },
+      "at": 1795336220421,
+      "supersedes": null,
+      "relates": [],
+      "tags": [],
+      "id": "a-fed5b7ffcd4d",
+      "meta": {}
+    }
+  ]
+}

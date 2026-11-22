@@ -1,0 +1,115 @@
+{
+  "id": "S-focused-need",
+  "ran": true,
+  "needId": "need-427158a7f297",
+  "deferredBefore": null,
+  "focus": {
+    "ok": true,
+    "focus": {
+      "needId": "need-427158a7f297"
+    },
+    "need": {
+      "id": "need-427158a7f297",
+      "status": "open",
+      "spec": {
+        "toolId": "set-response-depth",
+        "summary": null,
+        "slots": {},
+        "satisfaction": {},
+        "project": null
+      },
+      "detail": {},
+      "candidates": {},
+      "deferred": {
+        "reason": "requirements on order",
+        "missing": [
+          {
+            "slot": "value",
+            "minCertainty": 0.7,
+            "best": null
+          }
+        ]
+      },
+      "refinements": []
+    }
+  },
+  "turn": {
+    "ok": true,
+    "focusFill": {
+      "needId": "need-427158a7f297",
+      "filled": [
+        "value"
+      ],
+      "fulfill": {
+        "ok": true,
+        "result": "3"
+      }
+    }
+  },
+  "candidatesAdded": [
+    {
+      "slot": "value",
+      "value": "3",
+      "confidence": 0.8,
+      "source": "conversation"
+    }
+  ],
+  "statusAfter": "closed-or-absent",
+  "needRows": [
+    [
+      "need:deferred",
+      {
+        "reason": "requirements on order",
+        "missing": [
+          {
+            "slot": "value",
+            "minCertainty": 0.7,
+            "best": null
+          }
+        ]
+      }
+    ],
+    [
+      "need:refined",
+      {
+        "note": "focused for conversational filling"
+      }
+    ],
+    [
+      "need:candidate",
+      {
+        "slot": "value",
+        "value": "3",
+        "confidence": 0.8,
+        "source": "conversation"
+      }
+    ],
+    [
+      "need:refined",
+      {
+        "note": "conversation supplied: value",
+        "fromInput": "3"
+      }
+    ],
+    [
+      "need:fulfilled",
+      {
+        "status": "dispatching",
+        "toolId": "set-response-depth"
+      }
+    ],
+    [
+      "need:fulfilled",
+      {
+        "status": "fulfilled",
+        "detail": {
+          "toolId": "set-response-depth",
+          "result": "3",
+          "ms": 1
+        },
+        "closedAt": 1795336220477
+      }
+    ]
+  ],
+  "responseDepthNow": 3
+}

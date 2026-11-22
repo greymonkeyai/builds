@@ -1,0 +1,27 @@
+{
+  "id": "S-portrait-bind",
+  "ran": true,
+  "personas": 6,
+  "bound": 6,
+  "allDistinct": true,
+  "artifactsOnDisk": true,
+  "artAssertions": 10,
+  "portraitEngines": [
+    "inproc-svg-portrait"
+  ],
+  "samplePortraitParams": {
+    "face": "oval",
+    "skin": "#8d5a33",
+    "hairStyle": "hood",
+    "hair": "#8c5a2b",
+    "eyeGap": 1.0789500411734685,
+    "eyeSize": 4.2429730911007955,
+    "browTilt": 0.021946870033604515,
+    "mouth": "smile",
+    "mouthW": 18.53030828970033,
+    "glasses": false,
+    "collar": false,
+    "earrings": false,
+    "blush": false
+  }
+}

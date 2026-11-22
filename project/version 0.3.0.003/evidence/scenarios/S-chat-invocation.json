@@ -1,0 +1,206 @@
+{
+  "id": "S-chat-invocation",
+  "ran": true,
+  "turn": {
+    "ok": true,
+    "needIds": [
+      "need-0d43e0eeee9c"
+    ],
+    "responseNeedId": "need-601b6d3fd03d",
+    "intents": [
+      {
+        "toolId": "set-topic",
+        "score": 0.675,
+        "slots": {
+          "topic": "to harbor tides, and tell me what you think about tidal atlases"
+        },
+        "features": {
+          "keyword": 0.125,
+          "pattern": 1.0,
+          "slot_fill": 1.0,
+          "success_rate": 0.5,
+          "rank_mult": 1.0,
+          "recency": 0.0,
+          "source_conf": 1.0
+        }
+      }
+    ]
+  },
+  "toolNeedsOpened": 1,
+  "recentPersonaReplies": 3,
+  "respondentRows": [
+    {
+      "subjectKey": "decision:persona",
+      "predicate": "decision:respondent",
+      "value": {
+        "type": "map",
+        "v": {
+          "input": "set the topic to harbor tides, and tell me what you think about tidal atlases",
+          "ranking": [
+            {
+              "personaId": "persona-2501ec5fdfa5",
+              "score": 0.235,
+              "features": {
+                "lens_overlap": 0.0,
+                "topic_link": 0.0,
+                "confidence": 0.8,
+                "priority": 0.5
+              }
+            },
+            {
+              "personaId": "persona-a07fe449f817",
+              "score": 0.235,
+              "features": {
+                "lens_overlap": 0.0,
+                "topic_link": 0.0,
+                "confidence": 0.8,
+                "priority": 0.5
+              }
+            },
+            {
+              "personaId": "persona-d1e353437df3",
+              "score": 0.235,
+              "features": {
+                "lens_overlap": 0.0,
+                "topic_link": 0.0,
+                "confidence": 0.8,
+                "priority": 0.5
+              }
+            },
+            {
+              "personaId": "persona-98867ed972d5",
+              "score": 0.235,
+              "features": {
+                "lens_overlap": 0.0,
+                "topic_link": 0.0,
+                "confidence": 0.8,
+                "priority": 0.5
+              }
+            },
+            {
+              "personaId": "persona-9e7669ef1f02",
+              "score": 0.235,
+              "features": {
+                "lens_overlap": 0.0,
+                "topic_link": 0.0,
+                "confidence": 0.8,
+                "priority": 0.5
+              }
+            },
+            {
+              "personaId": "persona-1b914472fa3a",
+              "score": 0.235,
+              "features": {
+                "lens_overlap": 0.0,
+                "topic_link": 0.0,
+                "confidence": 0.8,
+                "priority": 0.5
+              }
+            }
+          ]
+        }
+      },
+      "claimant": "model:decision",
+      "certainty": 0.9,
+      "context": 1.0,
+      "basis": {
+        "kind": "interpretation"
+      },
+      "at": 1795336170908,
+      "supersedes": null,
+      "relates": [],
+      "tags": [],
+      "id": "a-f313fce59850",
+      "meta": {}
+    },
+    {
+      "subjectKey": "chat",
+      "predicate": "decision:respondent",
+      "value": {
+        "type": "map",
+        "v": {
+          "personaId": "persona-2501ec5fdfa5",
+          "sequence": 1,
+          "score": 0.235,
+          "needId": "need-601b6d3fd03d"
+        }
+      },
+      "claimant": "model:decision",
+      "certainty": 1.0,
+      "context": 1.0,
+      "basis": {
+        "kind": "execution"
+      },
+      "at": 1795336175008,
+      "supersedes": null,
+      "relates": [],
+      "tags": [],
+      "id": "a-864980673b79",
+      "meta": {}
+    },
+    {
+      "subjectKey": "chat",
+      "predicate": "decision:respondent",
+      "value": {
+        "type": "map",
+        "v": {
+          "personaId": "persona-a07fe449f817",
+          "sequence": 2,
+          "score": 0.235,
+          "needId": "need-601b6d3fd03d"
+        }
+      },
+      "claimant": "model:decision",
+      "certainty": 1.0,
+      "context": 1.0,
+      "basis": {
+        "kind": "execution"
+      },
+      "at": 1795336175010,
+      "supersedes": null,
+      "relates": [],
+      "tags": [],
+      "id": "a-387f28d912dd",
+      "meta": {}
+    }
+  ],
+  "inferenceSnapshot": {
+    "snapshotId": "snap-53d37eb33510",
+    "rows": 124,
+    "tasks": 2,
+    "needId": "need-601b6d3fd03d"
+  },
+  "inferenceCommits": [
+    {
+      "snapshotId": "snap-53d37eb33510",
+      "personaId": "persona-2501ec5fdfa5",
+      "sequence": 1,
+      "verified": true,
+      "reactsTo": null,
+      "needId": "need-601b6d3fd03d"
+    },
+    {
+      "snapshotId": "snap-53d37eb33510",
+      "personaId": "persona-a07fe449f817",
+      "sequence": 2,
+      "verified": true,
+      "reactsTo": "Curator",
+      "needId": "need-601b6d3fd03d"
+    }
+  ],
+  "floorPlayed": 2,
+  "chatTail": [
+    {
+      "role": "persona",
+      "claimant": "persona:persona-2501ec5fdfa5",
+      "text": "Observations on Tidal Atlases:\n\n1. Tidal atlases are a crucial resource for navigators, cartographers, and researchers seeking to understand the complexities of coastal tidal patterns.\n2. Provenance of the atlases is essential; most were compiled by British Admiralty Chart Offices in the 18th and 19th centuries, with notable contributors including the Office of Weights and Measures.\n3. Atlases with accurate tidal data are extremely rare, as many have been lost, damaged, or deliberately altered over the centuries, making the surviving examples highly valuable for historical and scientific study.",
+      "at": 1795336175005
+    },
+    {
+      "role": "persona",
+      "claimant": "persona:persona-a07fe449f817",
+      "text": "Curator first. Also — Tidal atlases crucial. Coastal navigation depends on precise timing.",
+      "at": 1795336175009
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "S-personality-create",
+  "ran": true,
+  "personaId": "persona-9e7669ef1f02",
+  "onboardOk": true,
+  "art": {
+    "bound": true,
+    "artifact": "C:\\builds\\project\\version 0.3.0.003\\runtime\\scenario\\artifacts\\persona-art\\persona-persona-9e7669ef1f02.svg",
+    "artifactExists": true,
+    "portrait": [
+      "prism",
+      true
+    ]
+  },
+  "voice": {
+    "engine": "sapi",
+    "name": "Microsoft David Desktop",
+    "rate": -1,
+    "assigned": "rotated-default"
+  },
+  "characterized": true,
+  "predicates": [
+    "persona:art",
+    "persona:characterization",
+    "persona:exists",
+    "persona:interest",
+    "persona:name",
+    "persona:trait",
+    "persona:voice"
+  ],
+  "rosterEntry": {
+    "name": "Wendell",
+    "traits": [
+      "precise",
+      "wry"
+    ],
+    "color": "#ca8656"
+  }
+}

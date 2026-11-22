@@ -1,0 +1,27 @@
+{
+  "id": "S-distinct-preloadeds",
+  "ran": true,
+  "prompt": "what should we do about the harbor survey results?",
+  "replies": {
+    "Curator": {
+      "register": "catalogue",
+      "engine": "ollama:llama3.2:latest",
+      "stub": false,
+      "text": "1. The Otter Creek survey results warrant investigation, particularly the anomalies at Stations 4 and 7.\n2. I have reviewed the attached raw transect counts and verified the evidence in the ledger: calendar:event, project:due, calendar:linked.\n3. To address the harbor survey results, I recommend reviewing the raw data and conducting a thorough quality control check on the instrument readings to ensure accuracy."
+    },
+    "Herald": {
+      "register": "clipped",
+      "engine": "ollama:llama3.2:latest",
+      "stub": false,
+      "text": "Anomalies: 1. Rookery upstream or double-count. 2. Instrument issue. Investigate, report findings."
+    },
+    "Wickett": {
+      "register": "wry",
+      "engine": "ollama:llama3.2:latest",
+      "stub": false,
+      "text": "The thrill of possibly having a rookery upstream and a duckweed problem with the turbidity probe. Well, let's get down to business. It seems like we have some... interesting data points to review. I'll start by reviewing the station 4 heron count - tripled, you say? That's a 300% increase. Not exactly a statistically significant anomaly, but I suppose it's worth looking into. The question is, what's the probability of a new rookery suddenly appearing upstream, and what are the implications for our understanding of local migration patterns?"
+    }
+  },
+  "allTextuallyDistinct": true,
+  "maxJaccard": 0.079
+}

@@ -1,0 +1,82 @@
+{
+  "region": "Pennsylvania",
+  "memberKind": "city",
+  "criteria": "all the cities in Pennsylvania",
+  "produced": [
+    "Aliquippa",
+    "Allentown",
+    "Altoona",
+    "Arnold",
+    "Beaver Falls",
+    "Bethlehem",
+    "Bradford",
+    "Butler",
+    "Carbondale",
+    "Chester",
+    "Clairton",
+    "Coatesville",
+    "Connellsville",
+    "Corry",
+    "DuBois",
+    "Duquesne",
+    "Easton",
+    "Erie",
+    "Farrell",
+    "Franklin",
+    "Greensburg",
+    "Harrisburg",
+    "Hazleton",
+    "Hermitage",
+    "Jeannette",
+    "Johnstown",
+    "Lancaster",
+    "Latrobe",
+    "Lebanon",
+    "Lock Haven",
+    "Lower Burrell",
+    "McKeesport",
+    "Meadville",
+    "Monessen",
+    "Monongahela",
+    "Nanticoke",
+    "New Castle",
+    "New Kensington",
+    "Oil City",
+    "Parker",
+    "Philadelphia",
+    "Pittsburgh",
+    "Pittston",
+    "Pottsville",
+    "Reading",
+    "Scranton",
+    "Shamokin",
+    "Sharon",
+    "St. Marys",
+    "Sunbury",
+    "Titusville",
+    "Uniontown",
+    "Warren",
+    "Washington",
+    "Wilkes-Barre",
+    "Williamsport",
+    "York"
+  ],
+  "memberCount": 57,
+  "agreement": {
+    "both": 55,
+    "perTool": {
+      "retrieve-set-wiki-table": 56,
+      "retrieve-set-wiki-category": 56
+    },
+    "solo": {
+      "retrieve-set-wiki-table": [
+        "Harrisburg"
+      ],
+      "retrieve-set-wiki-category": [
+        "Latrobe"
+      ]
+    }
+  },
+  "competition": "cmp-b5ebc663e127",
+  "producedAt": 1795336220381
+}

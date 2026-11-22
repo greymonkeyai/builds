@@ -1,0 +1,49 @@
+{
+  "ran": true,
+  "informational": true,
+  "context": {
+    "now": 1795336220436,
+    "horizonMs": 604800000,
+    "current": [],
+    "upcoming": [
+      {
+        "title": "atlas study check-in",
+        "startMs": 1795444200000,
+        "endMs": 1795447800000,
+        "source": "scenario-ics",
+        "assertionId": "a-e9b144b088c5"
+      }
+    ],
+    "future": [
+      {
+        "title": "persona sync (far future fixture)",
+        "startMs": 1893528000000,
+        "endMs": 0,
+        "source": "scenario-ics",
+        "assertionId": "a-513d36dc91f9"
+      }
+    ],
+    "recent": [],
+    "historical": [
+      {
+        "title": "old survey (long past fixture)",
+        "startMs": 1577908800000,
+        "endMs": 1577912400000,
+        "source": "scenario-ics",
+        "assertionId": "a-3c9a4c915986"
+      }
+    ],
+    "count": {
+      "current": 0,
+      "upcoming": 1,
+      "future": 1,
+      "recent": 0,
+      "historical": 1
+    }
+  },
+  "check": {
+    "farFutureInRecent": false,
+    "farFutureClass": "future",
+    "longPastClass": "historical"
+  }
+}

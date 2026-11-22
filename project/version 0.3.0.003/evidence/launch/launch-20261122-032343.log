@@ -1,0 +1,2 @@
+LAUNCH REFUSED: port 9764 already owned by a running Meridian instance — {'app': 'meridian', 'version': '0.3.0.003', 'gate': True, 'gatePassedAt': 1795335822316}
+no second instance bound; this launch reports FAILURE, not success

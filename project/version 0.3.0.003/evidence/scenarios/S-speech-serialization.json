@@ -1,0 +1,58 @@
+{
+  "id": "S-speech-serialization",
+  "ran": true,
+  "enqueued": 3,
+  "played": [
+    {
+      "persona": "Herald",
+      "ok": true,
+      "ms": 17269,
+      "playbackMs": null,
+      "heldUntilPlaybackComplete": true
+    },
+    {
+      "persona": "Marlowe",
+      "ok": true,
+      "ms": 28359,
+      "playbackMs": null,
+      "heldUntilPlaybackComplete": true
+    },
+    {
+      "persona": "Herald",
+      "ok": true,
+      "ms": 15256,
+      "playbackMs": null,
+      "heldUntilPlaybackComplete": true
+    },
+    {
+      "persona": "Herald",
+      "ok": true,
+      "ms": 15239,
+      "playbackMs": null,
+      "heldUntilPlaybackComplete": true
+    },
+    {
+      "persona": "Herald",
+      "ok": true,
+      "ms": 15244,
+      "playbackMs": null,
+      "heldUntilPlaybackComplete": true
+    },
+    {
+      "persona": "Herald",
+      "ok": true,
+      "ms": 15238,
+      "playbackMs": null,
+      "heldUntilPlaybackComplete": true
+    },
+    {
+      "persona": "Herald",
+      "ok": true,
+      "ms": 15232,
+      "playbackMs": null,
+      "heldUntilPlaybackComplete": true
+    }
+  ],
+  "count": 7,
+  "queueDepthDuring": 13
+}

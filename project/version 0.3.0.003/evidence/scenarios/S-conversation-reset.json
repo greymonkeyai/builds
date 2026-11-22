@@ -1,0 +1,19 @@
+{
+  "id": "S-conversation-reset",
+  "ran": true,
+  "messagesBefore": 15,
+  "reset": {
+    "ok": true,
+    "archiveId": "archive-1"
+  },
+  "messagesAfter": 0,
+  "topicAfter": "",
+  "contextAfter": "",
+  "clearedRows": [
+    {
+      "archiveId": "archive-1",
+      "at": 1795336291634,
+      "messagesSealed": 15
+    }
+  ]
+}

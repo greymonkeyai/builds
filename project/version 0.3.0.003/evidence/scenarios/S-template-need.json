@@ -1,0 +1,14 @@
+{
+  "id": "S-template-need",
+  "ran": true,
+  "invoke": {
+    "ok": true,
+    "needId": "need-bd29ef130b82",
+    "deferred": null,
+    "missing": null,
+    "result": "tidal atlases",
+    "error": null
+  },
+  "topic": "tidal atlases",
+  "fulfilledRows": 6
+}

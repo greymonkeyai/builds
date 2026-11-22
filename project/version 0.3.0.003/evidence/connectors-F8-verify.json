@@ -1,0 +1,103 @@
+{
+  "connectorRuns": 5,
+  "configured": {
+    "ok": true,
+    "connectors": [
+      {
+        "id": "inbox-local",
+        "locator": "C:\\builds\\project\\version 0.3.0.003\\fixtures\\inbox",
+        "configuredAt": 1795336165309,
+        "trust": 0.8,
+        "assertionId": "a-fb8a9c5e3e48",
+        "lastRun": {
+          "ok": true,
+          "items": 0,
+          "error": null,
+          "ms": 1,
+          "locator": "C:\\builds\\project\\version 0.3.0.003\\fixtures\\inbox"
+        }
+      },
+      {
+        "id": "wikipedia",
+        "locator": "Atlas",
+        "configuredAt": 1795336443981,
+        "trust": 0.8,
+        "assertionId": "a-775d7dca14b7",
+        "lastRun": {
+          "ok": true,
+          "items": 1,
+          "error": null,
+          "ms": 84,
+          "locator": "Atlas (mythology)"
+        }
+      },
+      {
+        "id": "ics-calendar",
+        "locator": "C:\\builds\\project\\version 0.3.0.003\\runtime\\scenario\\scenario.ics",
+        "configuredAt": 1795336444070,
+        "trust": 0.8,
+        "assertionId": "a-f7417acabeec",
+        "lastRun": {
+          "ok": true,
+          "items": 3,
+          "error": null,
+          "ms": 7,
+          "locator": "C:\\builds\\project\\version 0.3.0.003\\runtime\\scenario\\scenario.ics"
+        }
+      },
+      {
+        "id": "files",
+        "locator": "C:\\builds\\project\\version 0.3.0.003\\runtime\\scenario\\docs",
+        "configuredAt": 1795336444085,
+        "trust": 0.8,
+        "assertionId": "a-dfbcaa3fb4d4",
+        "lastRun": {
+          "ok": true,
+          "items": 1,
+          "error": null,
+          "ms": 3,
+          "locator": "C:\\builds\\project\\version 0.3.0.003\\runtime\\scenario\\docs"
+        }
+      }
+    ],
+    "available": [
+      "files",
+      "ics-calendar",
+      "inbox-local",
+      "rss",
+      "wikipedia"
+    ]
+  },
+  "results": {
+    "wiki": {
+      "ok": true,
+      "items": 1,
+      "title": "Atlas (mythology)",
+      "ms": 84
+    },
+    "ics": {
+      "ok": true,
+      "items": 3,
+      "locator": "C:\\builds\\project\\version 0.3.0.003\\runtime\\scenario\\scenario.ics",
+      "ms": 7
+    },
+    "files": {
+      "ok": true,
+      "items": 1,
+      "locator": "C:\\builds\\project\\version 0.3.0.003\\runtime\\scenario\\docs",
+      "pattern": "*",
+      "ms": 3
+    },
+    "inbox": {
+      "ok": true,
+      "items": 0,
+      "locator": "C:\\builds\\project\\version 0.3.0.003\\fixtures\\inbox",
+      "subjects": [],
+      "skippedExisting": 3,
+      "ms": 1
+    },
+    "runRows": 5
+  },
+  "allOk": true,
+  "verifiedAt": 1795336444.099664
+}

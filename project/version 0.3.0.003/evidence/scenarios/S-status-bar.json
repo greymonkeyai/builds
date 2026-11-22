@@ -1,0 +1,39 @@
+{
+  "id": "S-status-bar",
+  "ran": true,
+  "statusbarElement": true,
+  "sourcesConfigured": [
+    {
+      "id": "inbox-local",
+      "locator": "C:\\builds\\project\\version 0.3.0.003\\fixtures\\inbox",
+      "configuredAt": 1795336165309,
+      "trust": 0.8,
+      "assertionId": "a-fb8a9c5e3e48"
+    }
+  ],
+  "sourcesAvailable": [
+    "files",
+    "ics-calendar",
+    "inbox-local",
+    "rss",
+    "wikipedia"
+  ],
+  "llmMode": "live-ollama",
+  "llmModel": "llama3.2:latest",
+  "ttsLocal": "sapi",
+  "gate": {
+    "passed": true,
+    "passedAt": 1795336166353,
+    "msToGate": 3649,
+    "inputReady": true,
+    "ledgerReady": true
+  },
+  "fields": [
+    "version",
+    "gate",
+    "llm",
+    "sources",
+    "speechFloor",
+    "needs"
+  ]
+}

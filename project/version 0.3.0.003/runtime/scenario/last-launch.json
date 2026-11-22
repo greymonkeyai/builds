@@ -1,0 +1,101 @@
+{
+  "ok": true,
+  "version": "0.3.0.003",
+  "port": 9763,
+  "root": "C:\\builds\\project\\version 0.3.0.003",
+  "runtime": "C:\\builds\\project\\version 0.3.0.003\\runtime\\scenario",
+  "engines": {
+    "llm": {
+      "engine": "llm",
+      "mode": "live-ollama",
+      "model": "llama3.2:latest"
+    },
+    "tts": {
+      "engine": "tts",
+      "local": "sapi",
+      "remote": "unconfigured"
+    },
+    "stt": {
+      "engine": "stt",
+      "mode": "browser-webSpeech-or-declared-none"
+    },
+    "portrait": {
+      "engine": "portrait",
+      "mode": "inproc-svg"
+    }
+  },
+  "components": 84,
+  "ledger": {
+    "total": 864,
+    "live": 840,
+    "superseded": 24,
+    "namespaces": {
+      "routing": 5,
+      "source": 15,
+      "connector": 11,
+      "tool": 141,
+      "persona": 139,
+      "project": 10,
+      "ethics": 14,
+      "product": 9,
+      "maxim": 3,
+      "chat": 40,
+      "user": 2,
+      "seed": 2,
+      "email": 5,
+      "engine": 2,
+      "decision": 15,
+      "gate": 4,
+      "launch": 3,
+      "need": 230,
+      "speech": 41,
+      "inference": 7,
+      "idle": 22,
+      "device": 13,
+      "temporal": 20,
+      "comparison": 6,
+      "set": 61,
+      "calendar": 10,
+      "creator": 1,
+      "grant": 2,
+      "exchange": 2,
+      "ui": 4,
+      "archive": 1
+    },
+    "path": "C:\\builds\\project\\version 0.3.0.003\\runtime\\scenario\\ledger.jsonl",
+    "durable": true
+  },
+  "partitionMounted": 58,
+  "transientReset": true,
+  "packs": [],
+  "gate": {
+    "passed": true,
+    "checks": {
+      "input": {
+        "components": true,
+        "componentCount": 84,
+        "pipelineRoutes": true,
+        "llmMode": "live-ollama",
+        "llmAccepts": true,
+        "primitiveAnswer": true
+      },
+      "ledger": {
+        "durable": true,
+        "partitionMounted": 58,
+        "partitionFile": "C:\\builds\\project\\version 0.3.0.003\\runtime\\scenario\\launch-partition.jsonl",
+        "queryable": true,
+        "live": 837,
+        "essentialMounted": true
+      }
+    },
+    "startedMs": 1795336444284,
+    "passedAt": 1795336447987,
+    "msToGate": 3703,
+    "inputReady": true,
+    "ledgerReady": true,
+    "path": "C:\\builds\\project\\version 0.3.0.003\\runtime\\scenario\\gate.json"
+  },
+  "steward": true,
+  "bootMs": 1795336444284,
+  "log": "C:\\builds\\project\\version 0.3.0.003\\evidence\\launch\\launch-20261122-033409.log"
+}

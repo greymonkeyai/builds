@@ -1,0 +1,71 @@
+{
+  "id": "S-personality-roster",
+  "ran": true,
+  "rosterCount": 12,
+  "names": [
+    "Curator",
+    "Herald",
+    "Marlowe",
+    "Scholar",
+    "Wendell",
+    "Wickett",
+    "Curator",
+    "Herald",
+    "Marlowe",
+    "Scholar",
+    "Wendell",
+    "Wickett"
+  ],
+  "withArt": 12,
+  "persistentPanel": true,
+  "registers": [
+    [
+      "Curator",
+      "catalogue"
+    ],
+    [
+      "Herald",
+      "clipped"
+    ],
+    [
+      "Marlowe",
+      "warm"
+    ],
+    [
+      "Scholar",
+      "scholarly"
+    ],
+    [
+      "Wendell",
+      "wry"
+    ],
+    [
+      "Wickett",
+      "wry"
+    ],
+    [
+      "Curator",
+      "catalogue"
+    ],
+    [
+      "Herald",
+      "clipped"
+    ],
+    [
+      "Marlowe",
+      "warm"
+    ],
+    [
+      "Scholar",
+      "scholarly"
+    ],
+    [
+      "Wendell",
+      "wry"
+    ],
+    [
+      "Wickett",
+      "wry"
+    ]
+  ]
+}

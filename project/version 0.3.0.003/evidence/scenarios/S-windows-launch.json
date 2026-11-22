@@ -1,0 +1,42 @@
+{
+  "id": "S-windows-launch",
+  "ran": true,
+  "seeEvidence": "evidence/launch/launch-check.json",
+  "launcherExists": true,
+  "checkFile": {
+    "port": 9764,
+    "checks": {
+      "cleanBoot": {
+        "ok": true,
+        "gatePassed": true,
+        "gatePassedAt": 1795335822316,
+        "msToGate": 3679,
+        "launchServerOut": "C:\\builds\\project\\version 0.3.0.003\\launch-server.out",
+        "launchServerOutFresh": true,
+        "version": {
+          "app": "meridian",
+          "version": "0.3.0.003",
+          "gate": true,
+          "gatePassedAt": 1795335822316
+        }
+      },
+      "stalePortRefusal": {
+        "exitCode": 3,
+        "refused": true,
+        "reportedSuccess": false,
+        "neverFalseOk": true,
+        "tail": "LAUNCH REFUSED: port 9764 already owned by a running Meridian instance â€” {'app': 'meridian', 'version': '0.3.0.003', 'gate': True, 'gatePassedAt': 1795335822316}\nno second instance bound; this launch reports FAILURE, not success\n",
+        "lastLaunchOk": false
+      },
+      "portFreedAfterStop": true,
+      "closeTerminates": {
+        "ok": true,
+        "exitCode": 0,
+        "waitedS": 16.0,
+        "noOrphan": true
+      },
+      "portFreed": true
+    },
+    "ok": true
+  }
+}

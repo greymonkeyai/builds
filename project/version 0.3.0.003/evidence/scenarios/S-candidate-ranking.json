@@ -1,0 +1,92 @@
+{
+  "id": "S-candidate-ranking",
+  "ran": true,
+  "needId": "need-616740031a5f",
+  "candidates": [
+    {
+      "slot": "format",
+      "value": "hardcover",
+      "confidence": 0.9,
+      "source": "user"
+    },
+    {
+      "slot": "format",
+      "value": "pdf",
+      "confidence": 0.4,
+      "source": "guess"
+    },
+    {
+      "slot": "format",
+      "value": "vhs tape",
+      "confidence": 0.15,
+      "source": "bad-idea"
+    }
+  ],
+  "ranked": {
+    "candidates": [
+      {
+        "value": {
+          "type": "map",
+          "v": {
+            "slot": "format",
+            "value": "hardcover",
+            "confidence": 0.9,
+            "source": "user"
+          }
+        },
+        "certainty": 0.9,
+        "context": 1.0,
+        "effectiveConfidence": 0.9,
+        "claimant": "principal",
+        "assertionId": "a-f65c9279e62e",
+        "at": 1795336217713,
+        "basis": {
+          "kind": "source-evidence",
+          "ref": "user"
+        }
+      },
+      {
+        "value": {
+          "type": "map",
+          "v": {
+            "slot": "format",
+            "value": "pdf",
+            "confidence": 0.4,
+            "source": "guess"
+          }
+        },
+        "certainty": 0.4,
+        "context": 1.0,
+        "effectiveConfidence": 0.4,
+        "claimant": "principal",
+        "assertionId": "a-558ad146c9fc",
+        "at": 1795336217715,
+        "basis": {
+          "kind": "source-evidence",
+          "ref": "guess"
+        }
+      },
+      {
+        "value": {
+          "type": "map",
+          "v": {
+            "slot": "format",
+            "value": "vhs tape",
+            "confidence": 0.15,
+            "source": "bad-idea"
+          }
+        },
+        "certainty": 0.15,
+        "context": 1.0,
+        "effectiveConfidence": 0.15,
+        "claimant": "principal",
+        "assertionId": "a-c814335f6d55",
+        "at": 1795336217717,
+        "basis": {
+          "kind": "source-evidence",
+          "ref": "bad-idea"
+        }
+      }
+    ]
+  }
+}
