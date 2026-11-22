@@ -1,0 +1,10 @@
+{
+  "id": "S-focused-need",
+  "ran": true,
+  "needId": "need-f6d9dcc7dd7b",
+  "refinements": [
+    {
+      "note": "focus: pennsylvania municipalities only"
+    }
+  ]
+}

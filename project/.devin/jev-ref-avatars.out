@@ -1,0 +1,111 @@
+I'll evaluate the Avatars archive against GreyAvatar and the current prompt snapshot. Starting with the governing docs and a capability manifest if one exists.I have the prompt snapshot. Now reading the scenarios, the GreyAvatar capability manifest (if usable), and prior reference assessments.The GreyAvatar manifest file only has a stub line — I'll inventory GreyAvatar myself. Checking the prior Avatars reference output and JEV prompt for format guidance.The prior `.out` files are stubs — I'll inventory both repos directly. Mapping source trees first.Both repos are large. Checking fleet-install and exchange-media evidence in each.Avatars has real multi-device evidence (headless host, paired surfaces, QR pairing, staging scripts). Now checking calendar/exchange gaps in Avatars and confirming GreyAvatar's fleet + exchange implementation.Calendar exists in Avatars via the Gmail bundle. Now spot-checking the remaining prompt areas: ledger internals, needs/templates, authority boundary, cleanup, and competing tools.{
+  "criteria": [
+    {
+      "name": "clean launch",
+      "score": 1.0,
+      "evidence": ["owner attestation 2026-11-19", "Avatars/package.json (verify/dev/tauri scripts)", "Avatars/scripts/verify.ps1"],
+      "confidence": 0.9,
+      "user_opinion": null
+    },
+    {
+      "name": "existing features",
+      "score": 0.7,
+      "evidence": [
+        "Avatars/src/services/assertions/journal.ts",
+        "Avatars/src/services/assertions/types.ts:46-49",
+        "Avatars/src/services/templates/gapEmission.ts:1-20",
+        "Avatars/src/services/ethicsGate/imitationMark.ts:65",
+        "Avatars/src/services/monitors/registry.ts",
+        "Avatars/src/services/platform/store.ts:169-172",
+        "Avatars/src/services/audio/localTts.ts:119",
+        "Avatars/src/components/HostPairingPanel.tsx:1-50",
+        "Avatars/scripts/pack-bv7-host.ps1:1-45",
+        "GreyAvatar/src/tools/storefronts.ts:1-30",
+        "GreyAvatar/src/tools/code-import/",
+        "GreyAvatar/android-satellite/"
+      ],
+      "confidence": 0.75,
+      "user_opinion": null
+    },
+    {
+      "name": "completeness",
+      "score": 0.72,
+      "evidence": [
+        "Avatars/src/services/assertions/ (journal, trust, truthMaintenance, certaintyBands, metaPropagation)",
+        "Avatars/src/services/templates/ (registry, resolve, gapEmission)",
+        "Avatars/src/services/toolRequest/toolRequestFlow.ts:1-30",
+        "Avatars/src/services/complexTasks/ (set-build, planners)",
+        "Avatars/src/app/useGoogleBundleConnector.ts:9-12 (calendar)",
+        "Avatars/src/services/authority/evaluator.ts:14-40 (grants)",
+        "Avatars/src/services/disclosureGate/index.ts:1-35",
+        "Avatars/src/services/assetPipeline/queue.ts:117-196",
+        "ABSENT: storefront/exchange schema, ledger consolidation/cleanup machinery"
+      ],
+      "confidence": 0.7,
+      "user_opinion": null
+    },
+    {
+      "name": "fleet install",
+      "score": 0.55,
+      "evidence": [
+        "Avatars/scripts/pack-bv7-host.ps1 (portable host pack, USB deploy, staging)",
+        "Avatars/dist-pack/Launch-Avatars-Host.cmd, Launch-Avatars-Paired-LAN.cmd, yoga-surface/",
+        "Avatars/scripts/sync-yoga-usb.ps1, setup-staging-share.ps1",
+        "Avatars/src/components/HostPairingPanel.tsx (QR pairing + approvals)",
+        "Avatars/src/services/netDiscovery/ (mDNS pairing)",
+        "GreyAvatar parity bar: Deploy-GMK-LAN.cmd, Launch-Mirror-Fleet.cmd, Sync-Usb-Dual-Arch.cmd, android-satellite/, D105 fleet topology"
+      ],
+      "confidence": 0.7,
+      "user_opinion": null
+    },
+    {
+      "name": "exchange media",
+      "score": 0.1,
+      "evidence": [
+        "Avatars: only pairing QR — src/components/HostPairingPanel.tsx:16-26 (qrcode for surface pairing, not content exchange)",
+        "Avatars: no storefront/import/export code paths found in src/, docs/",
+        "GreyAvatar parity bar: src/tools/storefronts.ts, storefront-catalog.ts, code-import/{codec,emitter,export-tool,import-tool,scanned-tray}.ts, compose/qr-encode.ts, engines/perception/qr-decode.ts, postcard-batch.ts"
+      ],
+      "confidence": 0.85,
+      "user_opinion": null
+    }
+  ],
+  "overall": 0.61,
+  "judge_model": "SWE-2 Medium",
+  "user_commentary": [],
+  "scenarios": [
+    { "id": "S-assertion-input", "score": 0.85, "evidence_class": "repository", "evidence": ["Avatars/src/services/assertions/appendAssertion.ts", "Avatars/src/services/assertions/journal.ts", "Avatars/src/services/assertions/types.ts:46-49"], "notes": "Append-only journal with claimant/certainty/provenance; turn pipeline writes inputs. Enactment unverified." },
+    { "id": "S-template-need", "score": 0.75, "evidence_class": "repository", "evidence": ["Avatars/src/services/templates/registry.ts", "Avatars/src/services/templates/gapEmission.ts:1-20", "Avatars/src/services/toolRequest/toolRequestFlow.ts:1-30"], "notes": "Template slots emit gap assertions (GAP_PREDICATE); tool-request ratification via authority gate. Avatars used gap vocabulary rather than need:*; functionally analogous but Open/Cancelled lifecycle thinner." },
+    { "id": "S-candidate-ranking", "score": 0.7, "evidence_class": "repository", "evidence": ["Avatars/src/services/assertions/certaintyBands.ts", "Avatars/src/services/assertions/trust.ts", "Avatars/src/services/templates/rosterRankingTemplate.ts"], "notes": "Certainty bands + trust-weighted recall + supersession present; candidate slot ranking exists via template resolve." },
+    { "id": "S-list-project", "score": 0.7, "evidence_class": "repository", "evidence": ["Avatars/src/services/complexTasks/setBuildProgress.ts", "Avatars/src/services/complexTasks/setKind.ts (geographic→Wikidata SPARQL)", "Avatars/src/services/knowledgeBase/"], "notes": "Set-build machinery with geographic fork and criteria-preserving list corrections is directly on-point for the PA-cities canonical test. Outcome quality capped: list defensibility cannot be judged without running." },
+    { "id": "S-personality-create", "score": 0.8, "evidence_class": "repository", "evidence": ["Avatars/src/services/avatarCreation/", "Avatars/src/services/complexTasks/avatarCreationPlanner.ts", "Avatars/src/services/ethicsGate/", "Avatars/src/services/assetPipeline/queue.ts:117-196"], "notes": "Creation planner, ethics gate with liveness research and imitation mark, staged portrait/voice pipeline. Coherence of resulting persona capped without enactment." },
+    { "id": "S-background-present", "score": 0.7, "evidence_class": "repository", "evidence": ["Avatars/src/services/monitors/driver.ts", "Avatars/src/services/monitors/registry.ts", "Avatars/src/services/monitors/postSynthetic.ts", "Avatars/src/services/assetPipeline/"], "notes": "Monitor registry + conductor-tick asset pipeline + synthetic offer posts give the background-to-personality path." },
+    { "id": "S-competing-tools", "score": 0.3, "evidence_class": "repository", "evidence": ["Avatars/src/services/agenticTools/", "Avatars/src/services/templates/resolve.ts"], "notes": "Tool catalog and template resolution exist, but no real machinery for registering competing implementations of the same need and locally comparing results was found." },
+    { "id": "S-restart-recovery", "score": 0.6, "evidence_class": "repository", "evidence": ["Avatars/src/services/assertions/persistence.ts", "Avatars/src/services/assertions/bootHydration.ts", "Avatars/src/services/platform/ (atomic JSON store)"], "notes": "Journal persistence + boot hydration + platform cache give restart recovery; governed cleanup/consolidation (condensation without provenance loss) is thin — mainly conversation archive, not ledger consolidation." },
+    { "id": "S-exchange-import", "score": 0.05, "evidence_class": "repository", "evidence": ["no storefront/ExchangeSchema/import code in Avatars"], "notes": "Absent. Only QR usage is LAN surface pairing, not content exchange." },
+    { "id": "S-defer-publication", "score": 0.55, "evidence_class": "repository", "evidence": ["Avatars/src/services/authority/evaluator.ts:14-40 (witnessed grants, channel ladder, stake classes incl. presentation_out)", "Avatars/src/services/disclosureGate/index.ts:1-35"], "notes": "Authority-grant boundary is real and gated by channel sufficiency; whether a specifically nonlocal/publication request defers with recorded status is plausible but the publication tool path itself is thin." },
+    { "id": "S-chat-invocation", "score": 0.8, "evidence_class": "repository", "evidence": ["Avatars/src/services/turnPipeline/", "Avatars/src/services/switchboardWavesQueue/", "Avatars/src/services/avatarAgents.toolUse.integration.test.ts", "Avatars/src/services/agenticTools/"], "notes": "Chat turn fans out to avatars with tool-call offers distinguishable from conversational replies." },
+    { "id": "S-focused-need", "score": 0.6, "evidence_class": "repository", "evidence": ["Avatars/src/services/focusWatcher.ts", "Avatars/src/services/platform/resolveActivePlatformTask.ts", "Avatars/src/services/templates/resolve.ts"], "notes": "Focus/active-task mechanics and conversational slot resolution exist; need remains-available-until-fulfilled semantics partial under the gap model." }
+  ],
+  "capability_manifest": [
+    { "area": "assertion ledger (journal, trust, supersession, computed views)", "status": "implemented", "evidence": ["Avatars/src/services/assertions/journal.ts", "types.ts:46-49", "trust.ts", "truthMaintenance.ts", "metaPropagation.ts", "knowledgeSetView.ts"] },
+    { "area": "tools / unfulfilled requirements (templates, slots, gap assertions, tool-request ratification)", "status": "implemented", "evidence": ["src/services/templates/registry.ts", "gapEmission.ts", "toolRequest/toolRequestFlow.ts", "agenticTools/"] },
+    { "area": "personalities (builder, roster, rules library, routing)", "status": "implemented", "evidence": ["src/components/AvatarBuilderModal.tsx", "src/services/avatarRoster/", "avatarRules.ts", "avatarRoutingProfile.ts"] },
+    { "area": "ethics gate / imitation marking (person-imitation boundary)", "status": "implemented", "evidence": ["src/services/ethicsGate/imitationMark.ts:65", "stateMachine.ts:98-99", "components/HeaderGlassStrip.tsx:67"] },
+    { "area": "voices / speech (local TTS, voice profiles, persona voice, audio cues/soundscape)", "status": "implemented", "evidence": ["src/services/audio/localTts.ts:119 (Piper)", "voiceProfileResolution", "src-tauri/src/audio_tts.rs", "src/services/soundscape/"] },
+    { "area": "images / art (portrait pipeline, frames, ambient motion; steward-sourced stills, not generative)", "status": "partial", "evidence": ["src/services/assetPipeline/queue.ts:117-196", "types.ts:1", "avatarPortrait.ts — no ComfyUI/diffusion generation path"] },
+    { "area": "surfaces / UI (React shell, paired display, headless host, viewer/companion binary)", "status": "implemented", "evidence": ["src/app/", "src/services/surfaces/deployMode.ts", "src/components/HostPairingPanel.tsx", "viewer-tauri/"] },
+    { "area": "connectors / sources (gmail+calendar+contacts bundle, outlook, reddit, amazon, crunchyroll, youtube)", "status": "implemented", "evidence": ["src/connectors/", "src/app/useGoogleBundleConnector.ts:1-20", "src-tauri/src/gmail.rs"] },
+    { "area": "background work / stewardship (monitor registry, stewards, asset pipeline ticks)", "status": "implemented", "evidence": ["src/services/monitors/registry.ts", "driver.ts", "profilePictureSteward.ts", "livenessResearchSteward.ts"] },
+    { "area": "projects / tasks (platform store, complex task planner, set-build)", "status": "implemented", "evidence": ["src/services/platform/store.ts:169-172", "src/services/complexTasks/"] },
+    { "area": "calendar / temporal sources", "status": "implemented", "evidence": ["src/app/useGoogleBundleConnector.ts:9-12 (fetchCalendarUpcoming, CalendarEvent)"] },
+    { "area": "authority / integrity signals (witnessed grants, channel ladder, disclosure gate, skeptic, perception witness)", "status": "implemented", "evidence": ["src/services/authority/evaluator.ts", "grantChannels.ts", "disclosureGate/index.ts", "src/services/skeptic/", "src/services/perception/"] },
+    { "area": "fleet install / multi-device (host pack, paired LAN surface, USB/staging deploy)", "status": "partial", "evidence": ["scripts/pack-bv7-host.ps1", "dist-pack/ launchers", "scripts/sync-yoga-usb.ps1", "netDiscovery/ — no android satellites, no chorus audio fleet"] },
+    { "area": "exchange / storefront (ExchangeSchema, AVQR packages, import/export)", "status": "absent", "evidence": ["no storefront or package import/export code; QR limited to surface pairing (HostPairingPanel.tsx:16-26)"] },
+    { "area": "ledger cleanup / consolidation", "status": "partial", "evidence": ["conversation archive (conversationSegments.ts, turn archive) exists; governed ledger condensation/compaction machinery not found"] },
+    { "area": "desktop / device shells (Tauri desktop, companion viewer)", "status": "implemented", "evidence": ["src-tauri/", "viewer-tauri/", "dist-pack/Launch-Avatars-Desktop.cmd, Launch-Avatars-Companion.cmd"] },
+    { "area": "conversation archive / topic segments", "status": "implemented", "evidence": ["src/services/conversationSegments.ts", "ArchiveWorkshopPanel"] },
+    { "area": "competing local tools comparison", "status": "documented-only", "evidence": ["tool catalog exists but no competing-implementation comparison machinery located"] }
+  ],
+  "notes": "Retrospective measurement: Avatars v0.1 predates the prompt snapshot in force; scored against it anyway as a common yardstick. clean-launch is owner-attested ('launches just fine', 2026-11-19), not probed — no launch performed per direction. Parity vs GreyAvatar: v0.1 already delivered the large majority of Grey's functional surface — ledger, templates/gaps, personalities+ethics, voices, connectors incl. calendar, monitors/stewardship, projects, paired surfaces/headless host — and in places exceeds it (connector breadth, ethics-gate depth, presentation glass, conversation archive, set-build, agentic tool protocol) — lineage evidence, not scored. The decisive parity gaps are exchange media (entirely absent: Grey has storefronts, code-import codec, QR encode/decode, postcard batch) and fleet depth (Avatars has real host-pack + paired-surface deployment but no android satellites, chorus speak-floor, or deploy/sync tooling parity); cleanup/consolidation and competing-tool comparison are thinner in Avatars than the prompt requires. Fleet install and exchange media scored on real code evidence, not docs. Frontier-model escalation not recommended — evidence base was adequate."
+}

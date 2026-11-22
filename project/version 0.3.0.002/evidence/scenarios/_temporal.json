@@ -1,0 +1,30 @@
+{
+  "context": {
+    "now": 1795241425732,
+    "horizonMs": 604800000,
+    "current": [],
+    "upcoming": [
+      {
+        "title": "atlas study check-in",
+        "startMs": 1795349400000,
+        "endMs": 1795353000000,
+        "source": "scenario-ics",
+        "assertionId": "a-7c15763708bd"
+      }
+    ],
+    "recent": [
+      {
+        "title": "persona sync",
+        "startMs": 1893528000000,
+        "endMs": 0,
+        "source": "scenario-ics",
+        "assertionId": "a-a16499d1b0b2"
+      }
+    ],
+    "count": {
+      "current": 0,
+      "upcoming": 1,
+      "recent": 1
+    }
+  }
+}

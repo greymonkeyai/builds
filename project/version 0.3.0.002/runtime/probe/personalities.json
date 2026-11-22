@@ -1,0 +1,119 @@
+[
+  {
+    "id": "persona-2e115e4c544e",
+    "name": "Curator",
+    "traits": [
+      "orderly",
+      "evidence-first",
+      "quiet"
+    ],
+    "interests": [
+      "library",
+      "provenance",
+      "ledger hygiene",
+      "lists"
+    ],
+    "lens": {
+      "style": "measured",
+      "responsibilities": [
+        "source adequacy",
+        "library"
+      ]
+    },
+    "voice": {
+      "local": "sapi-default"
+    },
+    "imitates": null,
+    "color": "#94d7bd",
+    "rosterPriority": 0.5,
+    "confidence": 0.8,
+    "mintedAt": 1795241301.5884879,
+    "toolPermissions": [],
+    "displayMode": "respondent",
+    "ethicsVerdict": "allowed",
+    "art": {
+      "artifact": "C:\\builds\\project\\version 0.3.0.002\\runtime\\probe\\artifacts\\persona-art\\persona-persona-2e115e4c544e.svg",
+      "motif": "strata",
+      "frame": "square",
+      "dataUrl": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNjAgMTYwIj48cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9IjE2MCIgcng9IjE4IiBmaWxsPSJoc2woMTY5LDg3JSw3MCUpIi8+PGcgb3BhY2l0eT0iMC4zNSI+PGVsbGlwc2UgY3g9IjgwLjAiIGN5PSI4MC4wIiByeD0iNjYiIHJ5PSI0MiIgZmlsbD0iaHNsKDIxOCw0OCUsMzMlKSI+PGFuaW1hdGVUcmFuc2Zvcm0gYXR0cmlidXRlTmFtZT0idHJhbnNmb3JtIiB0eXBlPSJyb3RhdGUiIGZyb209IjAgODAgODAiIHRvPSIzNjAgODAgODAiIGR1cj0iNy41cyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiLz48L2VsbGlwc2U+PC9nPjxnIG9wYWNpdHk9IjAuMjUiPjxlbGxpcHNlIGN4PSI4MC4wIiBjeT0iODAuMCIgcng9IjQxIiByeT0iMjgiIGZpbGw9ImhzbCgyNjcsNTQlLDUxJSkiPjxhbmltYXRlVHJhbnNmb3JtIGF0dHJpYnV0ZU5hbWU9InRyYW5zZm9ybSIgdHlwZT0icm90YXRlIiBmcm9tPSIzNjAgODAgODAiIHRvPSIwIDgwIDgwIiBkdXI9IjEzLjRzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIvPjwvZWxsaXBzZT48L2c+PHBhdGggZD0iTTggMzAgUSA4MC4wIDM3IDE1MiAzMCBMIDE1MiA0NCBRIDgwLjAgMzcgOCA0NCBaIiBmaWxsPSJoc2woMjY3LDU0JSw1MSUpIiBvcGFjaXR5PSIwLjQyIi8+PHBhdGggZD0iTTggNTMgUSA4MC4wIDQ3IDE1MiA1MyBMIDE1MiA2MCBRIDgwLjAgNTMgOCA2MCBaIiBmaWxsPSJoc2woMjY3LDU0JSw1MSUpIiBvcGFjaXR5PSIwLjM5Ii8+PHBhdGggZD0iTTggNjkgUSA4MC4wIDY5IDE1MiA2OSBMIDE1MiA3OSBRIDgwLjAgNzUgOCA3OSBaIiBmaWxsPSJoc2woMjY3LDU0JSw1MSUpIiBvcGFjaXR5PSIwLjUyIi8+PHBhdGggZD0iTTggODkgUSA4MC4wIDg0IDE1MiA4OSBMIDE1MiA5NCBRIDgwLjAgOTcgOCA5NCBaIiBmaWxsPSJoc2woMjY3LDU0JSw1MSUpIiBvcGFjaXR5PSIwLjMwIi8+PHBhdGggZD0iTTggMTAyIFEgODAuMCA5OSAxNTIgMTAyIEwgMTUyIDExNyBRIDgwLjAgMTIzIDggMTE3IFoiIGZpbGw9ImhzbCgyNjcsNTQlLDUxJSkiIG9wYWNpdHk9IjAuMzEiLz48cGF0aCBkPSJNOCAxMjUgUSA4MC4wIDEzMiAxNTIgMTI1IEwgMTUyIDEzMSBRIDgwLjAgMTM5IDggMTMxIFoiIGZpbGw9ImhzbCgyNjcsNTQlLDUxJSkiIG9wYWNpdHk9IjAuMzEiLz48cGF0aCBkPSJNOCAxMzggUSA4MC4wIDEzNyAxNTIgMTM4IEwgMTUyIDE0NiBRIDgwLjAgMTU0IDggMTQ2IFoiIGZpbGw9ImhzbCgyNjcsNTQlLDUxJSkiIG9wYWNpdHk9IjAuNTQiLz48cmVjdCB4PSI2IiB5PSI2IiB3aWR0aD0iMTQ4IiBoZWlnaHQ9IjE0OCIgcng9IjEwIiBmaWxsPSJub25lIiBzdHJva2U9ImhzbCgzMTYsNjUlLDQ2JSkiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWRhc2hhcnJheT0iMTAgOCIvPjx0ZXh0IHg9IjgwLjAiIHk9Ijk2LjAiIGZvbnQtc2l6ZT0iNDYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC45MiI+QzwvdGV4dD48L3N2Zz4="
+    }
+  },
+  {
+    "id": "persona-d49c749d2c9d",
+    "name": "Herald",
+    "traits": [
+      "alert",
+      "terse",
+      "forward-looking"
+    ],
+    "interests": [
+      "calendar",
+      "opportunities",
+      "attention",
+      "stewardship"
+    ],
+    "lens": {
+      "style": "terse",
+      "responsibilities": [
+        "temporal awareness",
+        "notifications"
+      ]
+    },
+    "voice": {
+      "local": "sapi-default"
+    },
+    "imitates": null,
+    "color": "#3d17c8",
+    "rosterPriority": 0.5,
+    "confidence": 0.8,
+    "mintedAt": 1795241301.5989954,
+    "toolPermissions": [],
+    "displayMode": "respondent",
+    "ethicsVerdict": "allowed",
+    "art": {
+      "artifact": "C:\\builds\\project\\version 0.3.0.002\\runtime\\probe\\artifacts\\persona-art\\persona-persona-d49c749d2c9d.svg",
+      "motif": "halo",
+      "frame": "arc",
+      "dataUrl": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNjAgMTYwIj48cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9IjE2MCIgcng9IjE4IiBmaWxsPSJoc2woMjg2LDY1JSw2NiUpIi8+PGcgb3BhY2l0eT0iMC4zNSI+PGVsbGlwc2UgY3g9IjgwLjAiIGN5PSI4MC4wIiByeD0iNjAiIHJ5PSI1MSIgZmlsbD0iaHNsKDQ3LDc5JSw2MSUpIj48YW5pbWF0ZVRyYW5zZm9ybSBhdHRyaWJ1dGVOYW1lPSJ0cmFuc2Zvcm0iIHR5cGU9InJvdGF0ZSIgZnJvbT0iMCA4MCA4MCIgdG89IjM2MCA4MCA4MCIgZHVyPSI4LjZzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIvPjwvZWxsaXBzZT48L2c+PGcgb3BhY2l0eT0iMC4yNSI+PGVsbGlwc2UgY3g9IjgwLjAiIGN5PSI4MC4wIiByeD0iNDAiIHJ5PSIzMCIgZmlsbD0iaHNsKDE2OCw4MyUsNjMlKSI+PGFuaW1hdGVUcmFuc2Zvcm0gYXR0cmlidXRlTmFtZT0idHJhbnNmb3JtIiB0eXBlPSJyb3RhdGUiIGZyb209IjM2MCA4MCA4MCIgdG89IjAgODAgODAiIGR1cj0iMTEuMHMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIi8+PC9lbGxpcHNlPjwvZz48Y2lyY2xlIGN4PSI4MC4wIiBjeT0iODAuMCIgcj0iMTgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iaHNsKDE2OCw4MyUsNjMlKSIgc3Ryb2tlLXdpZHRoPSIyLjQiIG9wYWNpdHk9IjAuODUiIHN0cm9rZS1kYXNoYXJyYXk9IjcyIDE4Ii8+PGNpcmNsZSBjeD0iODAuMCIgY3k9IjgwLjAiIHI9IjM0IiBmaWxsPSJub25lIiBzdHJva2U9ImhzbCgxNjgsODMlLDYzJSkiIHN0cm9rZS13aWR0aD0iMS44IiBvcGFjaXR5PSIwLjY1IiBzdHJva2UtZGFzaGFycmF5PSIxMzUgMzQiLz48Y2lyY2xlIGN4PSI4MC4wIiBjeT0iODAuMCIgcj0iNTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iaHNsKDE2OCw4MyUsNjMlKSIgc3Ryb2tlLXdpZHRoPSIxLjIiIG9wYWNpdHk9IjAuNDUiIHN0cm9rZS1kYXNoYXJyYXk9IjIwMCA1MCIvPjxwYXRoIGQ9Ik0xNCAxNDYgQSAxNDYgMTQ2IDAgMCAxIDE0NiAxNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJoc2woMjg5LDgxJSw1MyUpIiBzdHJva2Utd2lkdGg9IjQiLz48dGV4dCB4PSI4MC4wIiB5PSI5Ni4wIiBmb250LXNpemU9IjQ2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuOTIiPkg8L3RleHQ+PC9zdmc+"
+    }
+  },
+  {
+    "id": "persona-08e40cfdcb3a",
+    "name": "Scholar",
+    "traits": [
+      "patient",
+      "methodical",
+      "citation-minded"
+    ],
+    "interests": [
+      "study",
+      "research",
+      "sources",
+      "notes"
+    ],
+    "lens": {
+      "style": "formal",
+      "responsibilities": [
+        "research",
+        "adequacy review"
+      ]
+    },
+    "voice": {
+      "local": "sapi-default"
+    },
+    "imitates": null,
+    "color": "#3fe324",
+    "rosterPriority": 0.5,
+    "confidence": 0.8,
+    "mintedAt": 1795241301.6130455,
+    "toolPermissions": [],
+    "displayMode": "respondent",
+    "ethicsVerdict": "allowed",
+    "art": {
+      "artifact": "C:\\builds\\project\\version 0.3.0.002\\runtime\\probe\\artifacts\\persona-art\\persona-persona-08e40cfdcb3a.svg",
+      "motif": "garden",
+      "frame": "double",
+      "dataUrl": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNjAgMTYwIj48cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9IjE2MCIgcng9IjE4IiBmaWxsPSJoc2woOTcsNjglLDUwJSkiLz48ZyBvcGFjaXR5PSIwLjM1Ij48ZWxsaXBzZSBjeD0iODAuMCIgY3k9IjgwLjAiIHJ4PSI1OCIgcnk9IjU0IiBmaWxsPSJoc2woMjA0LDU0JSw0NSUpIj48YW5pbWF0ZVRyYW5zZm9ybSBhdHRyaWJ1dGVOYW1lPSJ0cmFuc2Zvcm0iIHR5cGU9InJvdGF0ZSIgZnJvbT0iMCA4MCA4MCIgdG89IjM2MCA4MCA4MCIgZHVyPSI5LjVzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIvPjwvZWxsaXBzZT48L2c+PGcgb3BhY2l0eT0iMC4yNSI+PGVsbGlwc2UgY3g9IjgwLjAiIGN5PSI4MC4wIiByeD0iMzgiIHJ5PSIyNSIgZmlsbD0iaHNsKDMxMSw2MiUsNTAlKSI+PGFuaW1hdGVUcmFuc2Zvcm0gYXR0cmlidXRlTmFtZT0idHJhbnNmb3JtIiB0eXBlPSJyb3RhdGUiIGZyb209IjM2MCA4MCA4MCIgdG89IjAgODAgODAiIGR1cj0iMTIuNXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIi8+PC9lbGxpcHNlPjwvZz48cGF0aCBkPSJNMzUgMTI1IHYgLTUwIiBzdHJva2U9ImhzbCgzMTEsNjIlLDUwJSkiIHN0cm9rZS13aWR0aD0iMi42IiBmaWxsPSJub25lIi8+PGVsbGlwc2UgY3g9IjM1IiBjeT0iNzMiIHJ4PSI3IiByeT0iOSIgZmlsbD0iaHNsKDU4LDUyJSw3MCUpIiBvcGFjaXR5PSIwLjgiLz48cGF0aCBkPSJNNjkgMTI1IHYgLTUyIiBzdHJva2U9ImhzbCgzMTEsNjIlLDUwJSkiIHN0cm9rZS13aWR0aD0iMi42IiBmaWxsPSJub25lIi8+PGVsbGlwc2UgY3g9IjY5IiBjeT0iNzYiIHJ4PSI5IiByeT0iMTEiIGZpbGw9ImhzbCg1OCw1MiUsNzAlKSIgb3BhY2l0eT0iMC44Ii8+PHBhdGggZD0iTTEwMCAxMjUgdiAtMzkiIHN0cm9rZT0iaHNsKDMxMSw2MiUsNTAlKSIgc3Ryb2tlLXdpZHRoPSIyLjYiIGZpbGw9Im5vbmUiLz48ZWxsaXBzZSBjeD0iMTAwIiBjeT0iNjkiIHJ4PSI4IiByeT0iMTQiIGZpbGw9ImhzbCg1OCw1MiUsNzAlKSIgb3BhY2l0eT0iMC44Ii8+PHBhdGggZD0iTTEyOSAxMjUgdiAtNDMiIHN0cm9rZT0iaHNsKDMxMSw2MiUsNTAlKSIgc3Ryb2tlLXdpZHRoPSIyLjYiIGZpbGw9Im5vbmUiLz48ZWxsaXBzZSBjeD0iMTI5IiBjeT0iODYiIHJ4PSI4IiByeT0iMTEiIGZpbGw9ImhzbCg1OCw1MiUsNzAlKSIgb3BhY2l0eT0iMC44Ii8+PHJlY3QgeD0iNSIgeT0iNSIgd2lkdGg9IjE1MCIgaGVpZ2h0PSIxNTAiIHJ4PSIxMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJoc2woNTgsNTIlLDcwJSkiIHN0cm9rZS13aWR0aD0iMiIvPjxyZWN0IHg9IjExIiB5PSIxMSIgd2lkdGg9IjEzOCIgaGVpZ2h0PSIxMzgiIHJ4PSI5IiBmaWxsPSJub25lIiBzdHJva2U9ImhzbCg1OCw1MiUsNzAlKSIgc3Ryb2tlLXdpZHRoPSIxIiBvcGFjaXR5PSIwLjYiLz48dGV4dCB4PSI4MC4wIiB5PSI5Ni4wIiBmb250LXNpemU9IjQ2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuOTIiPlM8L3RleHQ+PC9zdmc+"
+    }
+  }
+]

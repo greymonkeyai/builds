@@ -1,0 +1,185 @@
+{
+  "id": "S-chat-invocation",
+  "ran": true,
+  "turn": {
+    "ok": true,
+    "result": {
+      "ok": true,
+      "needIds": [],
+      "responseNeedId": "need-d5807c015647",
+      "drain": {
+        "drained": [
+          {
+            "needId": "need-d5807c015647",
+            "ok": true,
+            "result": {
+              "ok": true,
+              "served": true,
+              "respondents": [
+                {
+                  "personaId": "persona-62b1d18d9316",
+                  "name": "Curator",
+                  "score": 0.235,
+                  "engine": "ollama:llama3.2:latest",
+                  "sequence": 1
+                },
+                {
+                  "personaId": "persona-88d5047680cb",
+                  "name": "Herald",
+                  "score": 0.235,
+                  "engine": "ollama:llama3.2:latest",
+                  "sequence": 2
+                }
+              ]
+            },
+            "ms": 6054
+          }
+        ]
+      },
+      "intents": []
+    },
+    "ms": 6061
+  },
+  "recentPersonaReplies": 3,
+  "respondentRows": [
+    {
+      "subjectKey": "decision:persona",
+      "predicate": "decision:respondent",
+      "value": {
+        "type": "map",
+        "v": {
+          "input": "what is the difference between a map and an atlas",
+          "ranking": [
+            {
+              "personaId": "persona-62b1d18d9316",
+              "score": 0.235,
+              "features": {
+                "lens_overlap": 0.0,
+                "topic_link": 0.0,
+                "confidence": 0.8,
+                "priority": 0.5
+              }
+            },
+            {
+              "personaId": "persona-88d5047680cb",
+              "score": 0.235,
+              "features": {
+                "lens_overlap": 0.0,
+                "topic_link": 0.0,
+                "confidence": 0.8,
+                "priority": 0.5
+              }
+            },
+            {
+              "personaId": "persona-81a71db2f3d2",
+              "score": 0.235,
+              "features": {
+                "lens_overlap": 0.0,
+                "topic_link": 0.0,
+                "confidence": 0.8,
+                "priority": 0.5
+              }
+            },
+            {
+              "personaId": "persona-d393450d9a75",
+              "score": 0.235,
+              "features": {
+                "lens_overlap": 0.0,
+                "topic_link": 0.0,
+                "confidence": 0.8,
+                "priority": 0.5
+              }
+            },
+            {
+              "personaId": "persona-d43dd152ae18",
+              "score": 0.235,
+              "features": {
+                "lens_overlap": 0.0,
+                "topic_link": 0.0,
+                "confidence": 0.8,
+                "priority": 0.5
+              }
+            }
+          ]
+        }
+      },
+      "claimant": "model:decision",
+      "certainty": 0.9,
+      "context": 1.0,
+      "basis": {
+        "kind": "interpretation"
+      },
+      "at": 1795241419148,
+      "supersedes": null,
+      "relates": [],
+      "tags": [],
+      "id": "a-daf4a181b673",
+      "meta": {}
+    },
+    {
+      "subjectKey": "chat",
+      "predicate": "decision:respondent",
+      "value": {
+        "type": "map",
+        "v": {
+          "personaId": "persona-62b1d18d9316",
+          "sequence": 1,
+          "score": 0.235,
+          "needId": "need-d5807c015647"
+        }
+      },
+      "claimant": "model:decision",
+      "certainty": 1.0,
+      "context": 1.0,
+      "basis": {
+        "kind": "execution"
+      },
+      "at": 1795241422278,
+      "supersedes": null,
+      "relates": [],
+      "tags": [],
+      "id": "a-1f0fbd3c7823",
+      "meta": {}
+    },
+    {
+      "subjectKey": "chat",
+      "predicate": "decision:respondent",
+      "value": {
+        "type": "map",
+        "v": {
+          "personaId": "persona-88d5047680cb",
+          "sequence": 2,
+          "score": 0.235,
+          "needId": "need-d5807c015647"
+        }
+      },
+      "claimant": "model:decision",
+      "certainty": 1.0,
+      "context": 1.0,
+      "basis": {
+        "kind": "execution"
+      },
+      "at": 1795241425201,
+      "supersedes": null,
+      "relates": [],
+      "tags": [],
+      "id": "a-d773f23e4a1f",
+      "meta": {}
+    }
+  ],
+  "floorPlayed": 2,
+  "chatTail": [
+    {
+      "role": "persona",
+      "claimant": "persona:persona-62b1d18d9316",
+      "text": "A distinction often blurred, yet discernible through careful observation of the ledger's entries. An atlas, by definition, is a comprehensive collection of maps, whereas a map is a singular representation of a geographic area, often with its own unique set of characteristics and details. I have recorded these differences in my own ledger, for the sake of clarity and cataloging.",
+      "at": 1795241422276
+    },
+    {
+      "role": "persona",
+      "claimant": "persona:persona-88d5047680cb",
+      "text": "The distinction is clear as the calendar's turn. An atlas is a comprehensive compilation of maps, whereas a map is a singular representation of a geographic area, distilling its essence onto a sheet of parchment. Recorded in my ledger, for future reference.",
+      "at": 1795241425199
+    }
+  ]
+}

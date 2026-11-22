@@ -1,0 +1,76 @@
+{
+  "id": "S-competing-tools",
+  "ran": true,
+  "competition": {
+    "ok": true,
+    "competition": {
+      "id": "cmp-b961430056e9",
+      "need": "speech.render",
+      "input": {
+        "text": "competition check"
+      },
+      "competitors": 2,
+      "adequate": 1,
+      "ranking": [
+        {
+          "rank": 1,
+          "toolId": "render-speech-sapi",
+          "ok": true,
+          "adequate": true,
+          "count": null,
+          "confidence": 0.8,
+          "ms": 11,
+          "unconfigured": false
+        },
+        {
+          "rank": 2,
+          "toolId": "render-speech-remote",
+          "ok": false,
+          "adequate": false,
+          "count": null,
+          "confidence": 0.0,
+          "ms": 0,
+          "unconfigured": true
+        }
+      ]
+    },
+    "rows": [
+      {
+        "competition": "cmp-b961430056e9",
+        "toolId": "render-speech-sapi",
+        "need": "speech.render",
+        "ok": true,
+        "adequate": true,
+        "unconfigured": false,
+        "error": null,
+        "ms": 11,
+        "count": null,
+        "summary": null,
+        "artifact": null,
+        "confidence": 0.8,
+        "rankMultiplier": 1.0,
+        "successRate": 1.0,
+        "rank": 1
+      },
+      {
+        "competition": "cmp-b961430056e9",
+        "toolId": "render-speech-remote",
+        "need": "speech.render",
+        "ok": false,
+        "adequate": false,
+        "unconfigured": true,
+        "error": "remote TTS not configured — no source grant",
+        "ms": 0,
+        "count": null,
+        "summary": null,
+        "artifact": null,
+        "confidence": 0.0,
+        "rankMultiplier": 0.9,
+        "successRate": 1.0,
+        "rank": 2
+      }
+    ],
+    "membersByTool": {}
+  },
+  "recorded": 1
+}

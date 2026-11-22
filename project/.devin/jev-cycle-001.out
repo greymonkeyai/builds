@@ -1,0 +1,64 @@
+warning: rejected a tool call that requires confirmation. Running in non-interactive mode. Use --permission-mode dangerous to auto-approve all tools.
+```json
+{
+  "criteria": [
+    {
+      "name": "clean launch",
+      "score": 0.9,
+      "evidence": [
+        "version 0.3.0.001/LAUNCH.md",
+        "version 0.3.0.001/launch.cmd",
+        "version 0.3.0.001/evidence/launch/launch-20261119-005714.log:1-18",
+        "version 0.3.0.001/runtime/last-launch.json:2-54",
+        "version 0.3.0.001/evidence/launch/probe-20261119-005627.json:2-15"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "name": "existing features",
+      "score": 0.7,
+      "evidence": [
+        "version 0.3.0.001/app/ledger.py:158-241",
+        "version 0.3.0.001/app/dsl.py",
+        "version 0.3.0.001/app/needs.py",
+        "version 0.3.0.001/app/personas.py",
+        "version 0.3.0.001/evidence/demos/08-restart-and-cleanup.md:3-150",
+        "version 0.3.0.001/evidence/demos/summary.json:61-88",
+        "version 0.3.0.001/FEATURES.md (Absent section: LAN mirror, Tauri shell, live connectors, webcam, soundscape)"
+      ],
+      "confidence": 0.7
+    },
+    {
+      "name": "new features",
+      "score": 0.75,
+      "evidence": [
+        "version 0.3.0.001/app/decision.py:35-198",
+        "version 0.3.0.001/app/builtins.py:515-551",
+        "version 0.3.0.001/evidence/demos/07-competing-tools.md:31-62",
+        "version 0.3.0.001/evidence/demos/summary.json:76 (decision: 9 rows)",
+        "version 0.3.0.001/app/ui/app.js:153-178 (stewardship config, persona frame, workshops)"
+      ],
+      "confidence": 0.7
+    },
+    {
+      "name": "fleet install",
+      "score": 0,
+      "evidence": [
+        "version 0.3.0.001/FEATURES.md (Absent table: fleet install not implemented — expected 0)"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "name": "exchange media",
+      "score": 0,
+      "evidence": [
+        "version 0.3.0.001/FEATURES.md (Absent table: QR/AVQR encode/scan not implemented — expected 0)"
+      ],
+      "confidence": 0.95
+    }
+  ],
+  "overall": 0.65,
+  "judge_model": "SWE-2 Medium",
+  "notes": "Evidence is largely real, not self-asserted: launch logs, probe JSON, and per-demo transcripts contain actual ledger rows consistent with runtime/demo/ledger.jsonl (223 rows, decision:* and need:* namespaces populated). Spot-checked decision.py (bounded feature-vector model + trust churn, lines 98-198) and app.js (multi-tab UI is functional but thin ~280 lines — workshops render generically from templates as claimed). Deductions: 'existing features' parity is asserted at parity-level for several areas where GreyAvatar's execution is deeper (LAN mirror, desktop shell, live connectors, soundscape/camera are declared absent — honest, but real coverage gaps vs the reference); demo transcripts are script-generated rather than interactive UI evidence; probe steward.runs=0 in the captured probe artifact (steward responsiveness claim only partially evidenced). fleet/exchange-media correctly declared 0. No frontier-model escalation needed; evidence quality is adequate for this verdict."
+}
+```

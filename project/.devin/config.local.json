@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Exec(awk)",
+      "Exec(python)"
+    ]
+  }
+}

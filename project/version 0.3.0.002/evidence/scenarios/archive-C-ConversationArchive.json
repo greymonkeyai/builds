@@ -1,0 +1,67 @@
+{
+  "id": "archive-C-ConversationArchive",
+  "ran": true,
+  "seal": {
+    "segments": [
+      {
+        "index": 1,
+        "topic": null,
+        "turns": [
+          {
+            "input": "what is the difference between a map and an atlas",
+            "at": 1795241419142,
+            "id": "a-fc92c8019938",
+            "claimant": "principal",
+            "responses": [
+              {
+                "personaId": "persona-62b1d18d9316",
+                "text": "A distinction often blurred, yet discernible through careful observation of the ledger's entries. An atlas, by definition, is a comprehensive collection of maps, whereas a map is a singular representation of a geographic area, often with its own unique set of characteristics and details. I have recorded these differences in my own ledger, for the sake of clarity and cataloging.",
+                "claimant": "persona:persona-62b1d18d9316",
+                "at": 1795241422276
+              },
+              {
+                "personaId": "persona-88d5047680cb",
+                "text": "The distinction is clear as the calendar's turn. An atlas is a comprehensive compilation of maps, whereas a map is a singular representation of a geographic area, distilling its essence onto a sheet of parchment. Recorded in my ledger, for future reference.",
+                "claimant": "persona:persona-88d5047680cb",
+                "at": 1795241425199
+              },
+              {
+                "personaId": "persona-88d5047680cb",
+                "text": "Stewardship pass — temporal attention: event: atlas study check-in at 2026-11-22 07:10; project 'Study habits review' relates to event 'atlas study check-in' at 2026-11-22 07:10; project 'atlas study' relates to event 'atlas study check-in' at 2026-11-22 07:10. Evidence is in the ledger (calendar:event, project:due, calendar:linked).",
+                "claimant": "persona:persona-88d5047680cb",
+                "at": 1795241425728
+              }
+            ],
+            "needs": [
+              {
+                "needId": "need-9cdd09924c1e",
+                "kind": "generic",
+                "summary": "survey atlases"
+              },
+              {
+                "needId": "need-f6d9dcc7dd7b",
+                "kind": "tool-request",
+                "summary": null
+              }
+            ]
+          }
+        ],
+        "startAt": 1795241419142,
+        "boundary": "start",
+        "endAt": 1795241419142
+      }
+    ],
+    "turnCount": 1,
+    "segmentCount": 1,
+    "sealed": {
+      "topic": null,
+      "turns": 1,
+      "firstAt": 1795241419142,
+      "endAt": 1795241419142,
+      "reason": "scenario seal",
+      "sealedAt": 1795241427055
+    }
+  },
+  "segments": 1,
+  "turns": 1
+}

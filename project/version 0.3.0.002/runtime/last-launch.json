@@ -1,0 +1,60 @@
+{
+  "ok": true,
+  "port": 9760,
+  "root": "C:\\builds\\project\\version 0.3.0.002",
+  "runtime": "C:\\builds\\project\\version 0.3.0.002\\runtime",
+  "engines": {
+    "llm": {
+      "engine": "llm",
+      "mode": "live-ollama",
+      "model": "llama3.2:latest"
+    },
+    "tts": {
+      "engine": "tts",
+      "local": "sapi",
+      "remote": "unconfigured"
+    },
+    "stt": {
+      "engine": "stt",
+      "mode": "browser-webSpeech-or-declared-none"
+    },
+    "portrait": {
+      "engine": "portrait",
+      "mode": "inproc-svg"
+    }
+  },
+  "components": 80,
+  "ledger": {
+    "total": 11318,
+    "live": 11318,
+    "superseded": 0,
+    "namespaces": {
+      "ethics": 3,
+      "persona": 33,
+      "product": 4,
+      "maxim": 2,
+      "chat": 4,
+      "user": 2,
+      "routing": 2,
+      "seed": 2,
+      "source": 3,
+      "project": 2,
+      "tool": 3754,
+      "engine": 2,
+      "launch": 3,
+      "temporal": 3745,
+      "idle": 3745,
+      "decision": 4,
+      "speech": 4,
+      "device": 2,
+      "need": 1,
+      "cleanup": 1
+    },
+    "path": "C:\\builds\\project\\version 0.3.0.002\\runtime\\ledger.jsonl",
+    "durable": true
+  },
+  "packs": [],
+  "steward": true,
+  "bootMs": 1795323993126,
+  "log": "C:\\builds\\project\\version 0.3.0.002\\evidence\\launch\\launch-20261122-000635.log"
+}

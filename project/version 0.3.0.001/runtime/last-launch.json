@@ -1,0 +1,55 @@
+{
+  "ok": true,
+  "port": 9760,
+  "root": "C:\\builds\\project\\version 0.3.0.001",
+  "runtime": "C:\\builds\\project\\version 0.3.0.001\\runtime",
+  "engines": {
+    "llm": {
+      "engine": "llm",
+      "mode": "live-ollama",
+      "model": "llama3.2:latest"
+    },
+    "tts": {
+      "engine": "tts",
+      "local": "sapi",
+      "remote": "unconfigured"
+    },
+    "stt": {
+      "engine": "stt",
+      "mode": "browser-webSpeech-or-declared-none"
+    },
+    "portrait": {
+      "engine": "portrait",
+      "mode": "inproc-svg"
+    }
+  },
+  "components": 68,
+  "ledger": {
+    "total": 48,
+    "live": 48,
+    "superseded": 0,
+    "namespaces": {
+      "persona": 27,
+      "product": 4,
+      "maxim": 2,
+      "chat": 1,
+      "user": 2,
+      "routing": 1,
+      "seed": 2,
+      "source": 3,
+      "project": 2,
+      "tool": 2,
+      "engine": 1,
+      "launch": 1
+    },
+    "path": "C:\\builds\\project\\version 0.3.0.001\\runtime\\ledger.jsonl",
+    "durable": true
+  },
+  "packs": [
+    "getting-started",
+    "study-vessel"
+  ],
+  "steward": true,
+  "bootMs": 1795067832324,
+  "log": "C:\\builds\\project\\version 0.3.0.001\\evidence\\launch\\launch-20261119-005714.log"
+}

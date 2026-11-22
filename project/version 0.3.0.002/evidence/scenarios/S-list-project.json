@@ -1,0 +1,244 @@
+{
+  "id": "S-list-project",
+  "ran": true,
+  "result": {
+    "ok": true,
+    "needId": "need-0b3dca5efa87",
+    "deferred": null,
+    "missing": null,
+    "result": {
+      "ok": true,
+      "setBuild": true,
+      "projectId": "proj-7ef79ee379ff",
+      "needId": "need-42407a790293",
+      "criteria": "all the cities in Pennsylvania",
+      "matched": [
+        "Aliquippa",
+        "Allentown",
+        "Altoona",
+        "Arnold",
+        "Beaver Falls",
+        "Bethlehem",
+        "Bradford",
+        "Butler",
+        "Carbondale",
+        "Chester",
+        "Clairton",
+        "Coatesville",
+        "Connellsville",
+        "Corry",
+        "DuBois",
+        "Duquesne",
+        "Easton",
+        "Erie",
+        "Farrell",
+        "Franklin",
+        "Greensburg",
+        "Harrisburg",
+        "Hazleton",
+        "Hermitage",
+        "Jeannette",
+        "Johnstown",
+        "Lancaster",
+        "Latrobe",
+        "Lebanon",
+        "Lock Haven",
+        "Lower Burrell",
+        "McKeesport",
+        "Meadville",
+        "Monessen",
+        "Monongahela",
+        "Nanticoke",
+        "New Castle",
+        "New Kensington",
+        "Oil City",
+        "Parker",
+        "Philadelphia",
+        "Pittsburgh",
+        "Pittston",
+        "Pottsville",
+        "Reading",
+        "Scranton",
+        "Shamokin",
+        "Sharon",
+        "St. Marys",
+        "Sunbury",
+        "Titusville",
+        "Uniontown",
+        "Warren",
+        "Washington",
+        "Wilkes-Barre",
+        "Williamsport",
+        "York"
+      ],
+      "produced": [
+        "Aliquippa",
+        "Allentown",
+        "Altoona",
+        "Arnold",
+        "Beaver Falls",
+        "Bethlehem",
+        "Bradford",
+        "Butler",
+        "Carbondale",
+        "Chester",
+        "Clairton",
+        "Coatesville",
+        "Connellsville",
+        "Corry",
+        "DuBois",
+        "Duquesne",
+        "Easton",
+        "Erie",
+        "Farrell",
+        "Franklin",
+        "Greensburg",
+        "Harrisburg",
+        "Hazleton",
+        "Hermitage",
+        "Jeannette",
+        "Johnstown",
+        "Lancaster",
+        "Latrobe",
+        "Lebanon",
+        "Lock Haven",
+        "Lower Burrell",
+        "McKeesport",
+        "Meadville",
+        "Monessen",
+        "Monongahela",
+        "Nanticoke",
+        "New Castle",
+        "New Kensington",
+        "Oil City",
+        "Parker",
+        "Philadelphia",
+        "Pittsburgh",
+        "Pittston",
+        "Pottsville",
+        "Reading",
+        "Scranton",
+        "Shamokin",
+        "Sharon",
+        "St. Marys",
+        "Sunbury",
+        "Titusville",
+        "Uniontown",
+        "Warren",
+        "Washington",
+        "Wilkes-Barre",
+        "Williamsport",
+        "York"
+      ],
+      "memberCount": 57,
+      "artifact": "C:\\builds\\project\\version 0.3.0.002\\runtime\\scenario\\artifacts\\sets\\set-set-5cd16f4b4124.json",
+      "agreement": {
+        "both": 55,
+        "perTool": {
+          "retrieve-set-wiki-table": 56,
+          "retrieve-set-wiki-category": 56
+        },
+        "solo": {
+          "retrieve-set-wiki-table": [
+            "Harrisburg"
+          ],
+          "retrieve-set-wiki-category": [
+            "Latrobe"
+          ]
+        }
+      },
+      "competition": {
+        "id": "cmp-c35b259ca42d",
+        "need": "set.members",
+        "input": {
+          "region": "Pennsylvania",
+          "memberKind": "city",
+          "needId": "need-42407a790293"
+        },
+        "competitors": 2,
+        "adequate": 2,
+        "ranking": [
+          {
+            "rank": 1,
+            "toolId": "retrieve-set-wiki-category",
+            "ok": true,
+            "adequate": true,
+            "count": 56,
+            "confidence": 0.8,
+            "ms": 174,
+            "unconfigured": false
+          },
+          {
+            "rank": 2,
+            "toolId": "retrieve-set-wiki-table",
+            "ok": true,
+            "adequate": true,
+            "count": 56,
+            "confidence": 0.8,
+            "ms": 243,
+            "unconfigured": false
+          }
+        ]
+      },
+      "error": null
+    },
+    "error": null
+  },
+  "memberCount": 57,
+  "artifact": "C:\\builds\\project\\version 0.3.0.002\\runtime\\scenario\\artifacts\\sets\\set-set-5cd16f4b4124.json",
+  "agreement": {
+    "both": 55,
+    "perTool": {
+      "retrieve-set-wiki-table": 56,
+      "retrieve-set-wiki-category": 56
+    },
+    "solo": {
+      "retrieve-set-wiki-table": [
+        "Harrisburg"
+      ],
+      "retrieve-set-wiki-category": [
+        "Latrobe"
+      ]
+    }
+  },
+  "competitionRows": 4,
+  "closure": {
+    "criteria": "all the cities in Pennsylvania",
+    "memberCount": 57,
+    "artifact": "C:\\builds\\project\\version 0.3.0.002\\runtime\\scenario\\artifacts\\sets\\set-set-5cd16f4b4124.json",
+    "agreement": {
+      "both": 55,
+      "perTool": {
+        "retrieve-set-wiki-table": 56,
+        "retrieve-set-wiki-category": 56
+      },
+      "solo": {
+        "retrieve-set-wiki-table": [
+          "Harrisburg"
+        ],
+        "retrieve-set-wiki-category": [
+          "Latrobe"
+        ]
+      }
+    }
+  },
+  "nonMatches": 2,
+  "nonMatchSample": [
+    {
+      "slot": "foreign-link",
+      "value": "List of sister cities in Pennsylvania",
+      "confidence": 0.2,
+      "source": "set-retrieval",
+      "class": "foreign-link",
+      "reason": "non-member page title"
+    },
+    {
+      "slot": "foreign-link",
+      "value": "List of cities in Pennsylvania",
+      "confidence": 0.2,
+      "source": "set-retrieval",
+      "class": "foreign-link",
+      "reason": "non-member page title"
+    }
+  ]
+}

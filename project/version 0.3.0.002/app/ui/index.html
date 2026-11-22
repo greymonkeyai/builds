@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Meridian</title>
+<link rel="stylesheet" href="/ui/styles.css">
+</head>
+<body>
+<header id="honesty"></header>
+<div id="app">
+  <aside id="rail">
+    <h2>ROSTER <span id="frameTag"></span></h2>
+    <div id="roster"></div>
+    <button id="mintBtn">+ mint personality</button>
+    <button id="allChatBtn">ALL CHAT</button>
+  </aside>
+  <main>
+    <nav id="tabs">
+      <button data-tab="chat" class="on">Chat</button>
+      <button data-tab="command">Command</button>
+      <button data-tab="library">Library</button>
+      <button data-tab="workshops">Workshops</button>
+      <button data-tab="exchange">Exchange</button>
+      <button data-tab="settings">Settings</button>
+      <button data-tab="log">Log</button>
+    </nav>
+    <section id="tab-chat">
+      <div id="chathead"></div>
+      <div id="feed"></div>
+      <div id="composer">
+        <button id="mic" title="push to talk (browser Web Speech API, or declared-none)">&#x1F3A4;</button>
+        <input id="msg" placeholder="type an input — requests work AND conversation">
+        <button id="send">send</button>
+      </div>
+    </section>
+    <section id="tab-command" class="hidden">
+      <div class="cols">
+        <div><h3>Projects <button id="newProj">+ create project</button></h3><div id="projects"></div></div>
+        <div><h3>Open needs (queue)</h3><div id="needs"></div></div>
+        <div><h3>Focus / calendar</h3><div id="focus"></div><div id="cal"></div>
+          <h3>Grant requests</h3><div id="grantReqs"></div></div>
+      </div>
+    </section>
+    <section id="tab-library" class="hidden">
+      <div class="cols">
+        <div><h3>Assertion browser</h3>
+          <input id="libq" placeholder="search ledger text"><button id="libSearch">search</button>
+          <select id="libns"><option value="">(all predicates)</option></select>
+          <div id="librows"></div></div>
+        <div><h3>Computed view</h3>
+          <input id="viewsubj" placeholder="subject key e.g. persona:...">
+          <button id="viewGo">render</button><pre id="viewout"></pre>
+          <h3>Edit assertion (append-only)</h3>
+          <input id="edSubj" placeholder="subject"><input id="edPred" placeholder="predicate ns:name">
+          <input id="edVal" placeholder="value"><input id="edCert" placeholder="certainty 0-1" value="0.9">
+          <input id="edSup" placeholder="supersedes id (optional)">
+          <button id="edGo">append assertion</button><div id="edMsg"></div></div>
+      </div>
+    </section>
+    <section id="tab-workshops" class="hidden">
+      <div class="cols">
+        <div><h3>Tools</h3><div id="toollist"></div></div>
+        <div><h3>Workshop</h3><div id="workshop"></div>
+          <h3>Author a tool</h3>
+          <textarea id="newspec" rows="8" placeholder='{"id":"my-tool","title":"...","template":{"slots":[{"name":"x","required":true}]},"steps":[{"op":"result","value":"hi"}]}'></textarea>
+          <button id="validateSpec">validate</button><button id="mintSpec">mint tool</button>
+          <pre id="specMsg"></pre></div>
+      </div>
+    </section>
+    <section id="tab-exchange" class="hidden">
+      <h3>Exchange packages</h3>
+      <button id="expBtn">export package</button><span id="expMsg"></span>
+      <h4>Import (meridian.exchange/v1 JSON)</h4>
+      <textarea id="impPkg" rows="8" placeholder='{"schema":"meridian.exchange/v1","id":"pkg-1","personas":[],"tools":[],"assertions":[],"needs":[]}'></textarea>
+      <button id="impBtn">import below threshold</button><pre id="impMsg"></pre>
+      <div id="impList"></div>
+    </section>
+    <section id="tab-settings" class="hidden">
+      <div id="settings"></div>
+    </section>
+    <section id="tab-log" class="hidden">
+      <div id="logctl">
+        <select id="logkind"><option value="traces">turn traces</option>
+          <option value="decisions">decision scores</option>
+          <option value="steward">steward runs</option>
+          <option value="churn">trust churn</option>
+          <option value="telemetry">tool telemetry</option></select>
+        <button id="loggo">load</button></div>
+      <pre id="log"></pre>
+    </section>
+  </main>
+</div>
+<script src="/ui/app.js"></script>
+</body>
+</html>

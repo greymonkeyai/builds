@@ -1,0 +1,79 @@
+{
+  "id": "S-background-present",
+  "ran": true,
+  "wake": {
+    "ok": true,
+    "result": {
+      "ok": true,
+      "ms": 1,
+      "report": {
+        "duties": [
+          "drain-needs",
+          "countdown",
+          "calendar-scan",
+          "source-confidence",
+          "compact-check",
+          "temporal-attention"
+        ],
+        "ran": [
+          {
+            "drain-needs": []
+          },
+          {
+            "countdown": []
+          },
+          {
+            "calendar-scan": 0
+          },
+          {
+            "source-confidence": {
+              "adjusted": []
+            }
+          },
+          {
+            "temporal-attention": {
+              "current": 0,
+              "upcoming": 0,
+              "recent": 0
+            }
+          },
+          {
+            "compact-check": "under-budget"
+          }
+        ],
+        "reason": "manual"
+      }
+    },
+    "ms": 2
+  },
+  "stewardRuns": 1,
+  "temporalAttention": [
+    {
+      "subjectKey": "temporal",
+      "predicate": "temporal:attention",
+      "value": {
+        "type": "map",
+        "v": {
+          "findings": [],
+          "contextCount": {
+            "current": 0,
+            "upcoming": 0,
+            "recent": 0
+          }
+        }
+      },
+      "claimant": "steward:main",
+      "certainty": 1.0,
+      "context": 1.0,
+      "basis": {
+        "kind": "execution"
+      },
+      "at": 1795241425719,
+      "supersedes": null,
+      "relates": [],
+      "tags": [],
+      "id": "a-9e9f609b1217",
+      "meta": {}
+    }
+  ]
+}

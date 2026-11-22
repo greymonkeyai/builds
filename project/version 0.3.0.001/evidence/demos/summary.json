@@ -1,0 +1,89 @@
+{
+  "ranAt": "2026-11-19T00:58:32",
+  "runtime": "C:\\builds\\project\\version 0.3.0.001\\runtime\\demo",
+  "demos": [
+    {
+      "demo": 1,
+      "title": "source-aware-input",
+      "file": "01-source-aware-input.md"
+    },
+    {
+      "demo": 2,
+      "title": "template-governs-need",
+      "file": "02-template-governs-need.md"
+    },
+    {
+      "demo": 3,
+      "title": "confidence-ranking",
+      "file": "03-confidence-ranking.md"
+    },
+    {
+      "demo": 4,
+      "title": "criteria-governed-list",
+      "file": "04-criteria-governed-list.md"
+    },
+    {
+      "demo": 5,
+      "title": "persona-create-extend",
+      "file": "05-persona-create-extend.md"
+    },
+    {
+      "demo": 6,
+      "title": "background-result-via-persona",
+      "file": "06-background-result-via-persona.md"
+    },
+    {
+      "demo": 7,
+      "title": "competing-tools",
+      "file": "07-competing-tools.md"
+    },
+    {
+      "demo": 8,
+      "title": "restart-and-cleanup",
+      "file": "08-restart-and-cleanup.md"
+    },
+    {
+      "demo": 9,
+      "title": "exchange-import-below-threshold",
+      "file": "09-exchange-import-below-threshold.md"
+    },
+    {
+      "demo": 10,
+      "title": "recorded-refusal-deferral",
+      "file": "10-recorded-refusal-deferral.md"
+    },
+    {
+      "demo": 11,
+      "title": "project-from-chat-calendar",
+      "file": "11-project-from-chat-calendar.md"
+    }
+  ],
+  "ledger": {
+    "total": 223,
+    "live": 219,
+    "superseded": 4,
+    "namespaces": {
+      "persona": 38,
+      "product": 4,
+      "maxim": 2,
+      "chat": 14,
+      "user": 2,
+      "routing": 5,
+      "seed": 2,
+      "source": 20,
+      "project": 7,
+      "tool": 56,
+      "decision": 9,
+      "device": 10,
+      "need": 34,
+      "idle": 5,
+      "search": 4,
+      "calendar": 3,
+      "cleanup": 2,
+      "travel": 1,
+      "exchange": 1
+    },
+    "path": "C:\\builds\\project\\version 0.3.0.001\\runtime\\demo\\ledger.jsonl",
+    "durable": true
+  }
+}

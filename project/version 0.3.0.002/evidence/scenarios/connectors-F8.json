@@ -1,0 +1,77 @@
+{
+  "id": "connectors-F8",
+  "ran": true,
+  "wiki": {
+    "ok": true,
+    "items": 1,
+    "title": "Atlas (mythology)",
+    "ms": 81
+  },
+  "ics": {
+    "ok": true,
+    "items": 2,
+    "locator": "C:\\builds\\project\\version 0.3.0.002\\runtime\\scenario\\scenario.ics",
+    "ms": 8
+  },
+  "files": {
+    "ok": true,
+    "items": 1,
+    "locator": "C:\\builds\\project\\version 0.3.0.002\\runtime\\scenario\\docs",
+    "pattern": "*",
+    "ms": 2
+  },
+  "status": {
+    "ok": true,
+    "connectors": [
+      {
+        "id": "wikipedia",
+        "locator": "Atlas",
+        "configuredAt": 1795241426941,
+        "trust": 0.8,
+        "assertionId": "a-0466c1d50a25",
+        "lastRun": {
+          "ok": true,
+          "items": 1,
+          "error": null,
+          "ms": 81,
+          "locator": "Atlas (mythology)"
+        }
+      },
+      {
+        "id": "ics-calendar",
+        "locator": "C:\\builds\\project\\version 0.3.0.002\\runtime\\scenario\\scenario.ics",
+        "configuredAt": 1795241427029,
+        "trust": 0.8,
+        "assertionId": "a-b9be8ec45e7e",
+        "lastRun": {
+          "ok": true,
+          "items": 2,
+          "error": null,
+          "ms": 8,
+          "locator": "C:\\builds\\project\\version 0.3.0.002\\runtime\\scenario\\scenario.ics"
+        }
+      },
+      {
+        "id": "files",
+        "locator": "C:\\builds\\project\\version 0.3.0.002\\runtime\\scenario\\docs",
+        "configuredAt": 1795241427044,
+        "trust": 0.8,
+        "assertionId": "a-8d4ce767635a",
+        "lastRun": {
+          "ok": true,
+          "items": 1,
+          "error": null,
+          "ms": 2,
+          "locator": "C:\\builds\\project\\version 0.3.0.002\\runtime\\scenario\\docs"
+        }
+      }
+    ],
+    "available": [
+      "files",
+      "ics-calendar",
+      "rss",
+      "wikipedia"
+    ]
+  },
+  "runRows": 3
+}

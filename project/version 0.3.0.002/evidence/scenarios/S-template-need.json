@@ -1,0 +1,13 @@
+{
+  "id": "S-template-need",
+  "ran": true,
+  "invoke": {
+    "ok": true,
+    "needId": "need-69f4803cae4d",
+    "deferred": null,
+    "missing": null,
+    "result": "atlases",
+    "error": null
+  },
+  "topic": "atlases"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "S-exchange-import",
+  "ran": true,
+  "export": {
+    "ok": true,
+    "result": {
+      "ok": true,
+      "path": "C:\\builds\\project\\version 0.3.0.002\\runtime\\scenario\\artifacts\\exports\\pkg-5470fb7017f3.json",
+      "counts": {
+        "personas": 5,
+        "tools": 0,
+        "needs": 2
+      }
+    },
+    "ms": 3
+  },
+  "import": {
+    "ok": true,
+    "result": {
+      "ok": false,
+      "error": "not a meridian.exchange/v1 package"
+    },
+    "ms": 0
+  },
+  "importRows": 0
+}

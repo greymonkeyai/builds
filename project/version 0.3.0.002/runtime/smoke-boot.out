@@ -1,0 +1,15 @@
+================================================================
+  MERIDIAN - local-first assertion-ledger ecosystem
+  personalities are lenses over one shared ledger (respondent frame)
+----------------------------------------------------------------
+  ledger: durable  (C:\builds\project\version 0.3.0.002\runtime/smoke\ledger.jsonl)
+  rows: 56  live: 56
+  llm: live-ollama (llama3.2:latest)
+  tts: local=sapi  remote=unconfigured
+  stt: browser-webSpeech-or-declared-none
+  portrait/art: inproc-svg + generated persona art
+  speech floor: serialized (one playback at a time)
+  persona frame: respondent
+  surface: http://127.0.0.1:9770
+================================================================
+launch log: C:\builds\project\version 0.3.0.002\evidence\launch\launch-20261121-010007.log

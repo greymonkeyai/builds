@@ -1,0 +1,16 @@
+{
+  "launched": true,
+  "checks": {
+    "state.roster": 3,
+    "state.tools": 68,
+    "honesty.ledger.durable": true,
+    "engine.llm.mode": "live-ollama",
+    "chat.ms": 10349,
+    "chat.ok": true,
+    "chat.intents": [],
+    "steward.runs": 0,
+    "ledger.file.bytes": 27938,
+    "launch.assertion": true
+  },
+  "ok": true
+}

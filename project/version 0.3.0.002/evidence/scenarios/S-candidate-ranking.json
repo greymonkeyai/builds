@@ -1,0 +1,19 @@
+{
+  "id": "S-candidate-ranking",
+  "ran": true,
+  "needId": "need-9cdd09924c1e",
+  "candidates": [
+    {
+      "slot": "format",
+      "value": "hardcover",
+      "confidence": 0.9,
+      "source": "user"
+    },
+    {
+      "slot": "format",
+      "value": "pdf",
+      "confidence": 0.4,
+      "source": "guess"
+    }
+  ]
+}

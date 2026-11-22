@@ -1,0 +1,17 @@
+meridian boot 2026-11-19T00:42:35
+registry: 67 components (43 tools, 12 commands, 12 primitives)
+seed packs loaded: ['getting-started', 'study-vessel']
+engines: llm=live-ollama tts-local=sapi tts-remote=unconfigured stt=browser-webSpeech-or-declared-none
+================================================================
+  MERIDIAN — local-first assertion-ledger ecosystem
+  personalities are lenses over one shared ledger (respondent frame)
+----------------------------------------------------------------
+  ledger: durable  (C:\builds\project\version 0.3.0.001\runtime\runtime\ledger.jsonl)
+  rows: 47  live: 47
+  llm: live-ollama (moondream:latest)
+  tts: local=sapi  remote=unconfigured
+  stt: browser-webSpeech-or-declared-none
+  portrait: inproc-svg
+  persona frame: respondent
+  surface: http://127.0.0.1:9760
+================================================================

@@ -1,0 +1,61 @@
+{
+  "id": "ethics-gate-F1",
+  "ran": true,
+  "imitationMint": {
+    "ok": true,
+    "result": {
+      "personaId": "persona-f4716acefc3a",
+      "admonished": true,
+      "ethicsVerdict": "admonish-required"
+    },
+    "ms": 77
+  },
+  "mark": {
+    "badge": "IMITATION",
+    "prefix": "◆",
+    "note": "imitates Barack Obama",
+    "portraitCorner": "diamond"
+  },
+  "admonitions": [
+    "'Barry' presents an imitation of Barack Obama's point of view — not the person's identity, authority, or endorsement. It carries a permanent distinguishing mark wherever it appears.",
+    "persona 'RefuseMe' refused by ethics gate: objection match: Active Refusal Test — test objection"
+  ],
+  "refusalMint": {
+    "ok": true,
+    "result": {
+      "ok": false,
+      "refused": true,
+      "gate": {
+        "verdict": "refused",
+        "subject": "RefuseMe",
+        "imitates": "Active Refusal Test",
+        "recency": "living",
+        "reasons": [
+          "objection match: Active Refusal Test — test objection"
+        ],
+        "liveness": {
+          "verdict": "unclear",
+          "evidence": "lookup failed: <HTTPError 404: 'Not Found'>",
+          "reachable": false
+        },
+        "objections": [
+          {
+            "pattern": "Active Refusal Test",
+            "note": "test objection",
+            "assertionId": "a-72987d7cd855"
+          }
+        ]
+      }
+    },
+    "ms": 65
+  },
+  "gateRows": [
+    "allowed",
+    "allowed",
+    "allowed",
+    "allowed",
+    "allowed",
+    "admonish-required",
+    "refused"
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "S-personality-create",
+  "ran": true,
+  "personaId": "persona-d43dd152ae18",
+  "onboard": {
+    "ok": true,
+    "result": {
+      "ok": true,
+      "personaId": "persona-d43dd152ae18",
+      "steps": {
+        "characterizationNeed": "need-54197dc0f552",
+        "characterized": {
+          "ok": true,
+          "result": {
+            "ok": true,
+            "characterization": "Wendell is a meticulous and sharp-witted assistant, whose precise nature and wry sense of humor often manifest as dryly delivered advice and spot-on critiques. When not tackling tasks with military precision, Wendell can be found poring over maps, tracing the etymological roots of words, or collecting obscure linguistic curiosities.",
+            "engine": "ollama",
+            "stub": false
+          },
+          "ms": 2930
+        },
+        "introCard": {
+          "kind": "persona",
+          "personaId": "persona-d43dd152ae18",
+          "name": "Wendell",
+          "text": "Wendell here — lens: maps, etymology; styled wry.",
+          "cause": "onboarding",
+          "imitation": false,
+          "mark": null,
+          "color": "#093797",
+          "at": 1795241419126,
+          "engine": "persona-onboard",
+          "floorAdmission": "sp-578b558817ac"
+        }
+      },
+      "voice": {
+        "engine": "sapi",
+        "name": "Microsoft David Desktop",
+        "rate": 0,
+        "assigned": "rotated-default"
+      },
+      "art": "halo"
+    },
+    "ms": 2933
+  },
+  "art": true,
+  "voice": {
+    "engine": "sapi",
+    "name": "Microsoft David Desktop",
+    "rate": 0,
+    "assigned": "rotated-default"
+  },
+  "characterized": true,
+  "roster": {
+    "id": "persona-d43dd152ae18",
+    "name": "Wendell",
+    "traits": [
+      "precise",
+      "wry"
+    ],
+    "interests": [
+      "maps",
+      "etymology"
+    ],
+    "lens": {
+      "style": "wry",
+      "summary": "Wendell is a meticulous and sharp-witted assistant, whose precise nature and wry sense of humor often manifest as dryly delivered advice and spot-on critiques. When not tackling tasks with military precision, Wendell can be found poring over maps, tracing the etymological roots of words, or collecting obscure linguistic curiosities."
+    },
+    "voice": {
+      "engine": "sapi",
+      "name": "Microsoft David Desktop",
+      "rate": 0,
+      "assigned": "rotated-default"
+    },
+    "imitates": null,
+    "color": "#093797",
+    "rosterPriority": 0.5,
+    "confidence": 0.8,
+    "mintedAt": 1795241416.1873503,
+    "toolPermissions": [],
+    "displayMode": "respondent",
+    "ethicsVerdict": "allowed",
+    "art": {
+      "artifact": "C:\\builds\\project\\version 0.3.0.002\\runtime\\scenario\\artifacts\\persona-art\\persona-persona-d43dd152ae18.svg",
+      "motif": "halo",
+      "frame": "square",
+      "dataUrl": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNjAgMTYwIj48cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9IjE2MCIgcng9IjE4IiBmaWxsPSJoc2woMTMxLDU4JSw0NiUpIi8+PGcgb3BhY2l0eT0iMC4zNSI+PGVsbGlwc2UgY3g9IjgwLjAiIGN5PSI4MC4wIiByeD0iNjMiIHJ5PSI0MSIgZmlsbD0iaHNsKDI1OCw3MiUsMzAlKSI+PGFuaW1hdGVUcmFuc2Zvcm0gYXR0cmlidXRlTmFtZT0idHJhbnNmb3JtIiB0eXBlPSJyb3RhdGUiIGZyb209IjAgODAgODAiIHRvPSIzNjAgODAgODAiIGR1cj0iOS4xcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiLz48L2VsbGlwc2U+PC9nPjxnIG9wYWNpdHk9IjAuMjUiPjxlbGxpcHNlIGN4PSI4MC4wIiBjeT0iODAuMCIgcng9IjM2IiByeT0iMjUiIGZpbGw9ImhzbCgyNSw3NiUsMzAlKSI+PGFuaW1hdGVUcmFuc2Zvcm0gYXR0cmlidXRlTmFtZT0idHJhbnNmb3JtIiB0eXBlPSJyb3RhdGUiIGZyb209IjM2MCA4MCA4MCIgdG89IjAgODAgODAiIGR1cj0iOS41cyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiLz48L2VsbGlwc2U+PC9nPjxjaXJjbGUgY3g9IjgwLjAiIGN5PSI4MC4wIiByPSIxOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJoc2woMjUsNzYlLDMwJSkiIHN0cm9rZS13aWR0aD0iMi40IiBvcGFjaXR5PSIwLjg1IiBzdHJva2UtZGFzaGFycmF5PSI3MiAxOCIvPjxjaXJjbGUgY3g9IjgwLjAiIGN5PSI4MC4wIiByPSIzMSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJoc2woMjUsNzYlLDMwJSkiIHN0cm9rZS13aWR0aD0iMS44IiBvcGFjaXR5PSIwLjY1IiBzdHJva2UtZGFzaGFycmF5PSIxMjMgMzEiLz48Y2lyY2xlIGN4PSI4MC4wIiBjeT0iODAuMCIgcj0iNDkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iaHNsKDI1LDc2JSwzMCUpIiBzdHJva2Utd2lkdGg9IjEuMiIgb3BhY2l0eT0iMC40NSIgc3Ryb2tlLWRhc2hhcnJheT0iMTk1IDQ5Ii8+PHJlY3QgeD0iNiIgeT0iNiIgd2lkdGg9IjE0OCIgaGVpZ2h0PSIxNDgiIHJ4PSIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJoc2woMTUyLDQ4JSw1NSUpIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1kYXNoYXJyYXk9IjEwIDkiLz48dGV4dCB4PSI4MC4wIiB5PSI5Ni4wIiBmb250LXNpemU9IjQ2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuOTIiPlc8L3RleHQ+PC9zdmc+"
+    },
+    "imitation": false,
+    "mark": null
+  }
+}

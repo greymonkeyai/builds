@@ -1,0 +1,181 @@
+```json
+{
+  "criteria": [
+    {
+      "name": "clean launch",
+      "score": 0.9,
+      "evidence": [
+        "version 0.3.0.001/LAUNCH.md",
+        "version 0.3.0.001/launch.cmd",
+        "version 0.3.0.001/evidence/launch/launch-20261119-005714.log:1-18",
+        "version 0.3.0.001/runtime/last-launch.json:2-54",
+        "version 0.3.0.001/evidence/launch/probe-20261119-005627.json:2-16"
+      ],
+      "confidence": 0.9,
+      "user_opinion": null
+    },
+    {
+      "name": "existing features",
+      "score": 0.4,
+      "evidence": [
+        "version 0.3.0.001/app/ledger.py",
+        "version 0.3.0.001/app/needs.py",
+        "version 0.3.0.001/app/dsl.py",
+        "version 0.3.0.001/app/personas.py",
+        "version 0.3.0.001/app/steward.py",
+        "version 0.3.0.001/app/builtins.py:282-783",
+        "version 0.3.0.001/FEATURES.md (Absent table: fleet, QR/AVQR, LAN mirror, Tauri shell, live connectors, perception, soundscape)",
+        "C:/Users/kris_/CursorProjects/GreyAvatar/src/connectors (17 connector dirs: gmail, youtube, wikipedia, gutenberg, reddit, freesound, loc, amazon, etc. — none present in Meridian)",
+        "C:/Users/kris_/CursorProjects/GreyAvatar/src/tools/storefronts.ts",
+        "C:/Users/kris_/CursorProjects/GreyAvatar/src/viewer/lan (LAN mirror server)",
+        "C:/Users/kris_/CursorProjects/GreyAvatar/src/tools/code-import (QR/AVQR codec, scanned-tray, export-build)",
+        "C:/Users/kris_/CursorProjects/GreyAvatar/src/tools (studio.ts, studio-mask, studio-essay, soundscape, contacts, tutor, spatial, publication-campaign, voice-catalog/voice-render, chorus — absent)"
+      ],
+      "confidence": 0.75,
+      "user_opinion": null
+    },
+    {
+      "name": "completeness",
+      "score": 0.8,
+      "evidence": [
+        "Ledger section: version 0.3.0.001/app/ledger.py; app/model.py (typed values, basis kinds); demos 01,03",
+        "Governing cycle + needs/templates: app/needs.py, app/decision.py; demos 02,10",
+        "Projects + temporal: app/builtins.py:669-715 (import-calendar), demo 11",
+        "Confidence/selection: app/ledger.py (effective_confidence); demo 03 source-ceiling ranking",
+        "Personalities/lenses + imitation boundary: app/personas.py; demo 05",
+        "Tools/local comparison: demo 07 (sapi vs remote speech)",
+        "Background activity: app/steward.py; demo 06",
+        "Communication/surfaces — PARTIAL: chat + local SAPI TTS + declared mic path only; email is honest .eml outbox deferral; no OCR/scanner/image channels",
+        "Continuity/recovery/cleanup: demo 08 (139->139 rows, compaction provenance preserved)",
+        "Exchange/storefronts: app/builtins.py:715-783 file-package import/export below threshold (AVQR optional per prompt)",
+        "Observable demos 1-11 all enacted: evidence/demos/summary.json:61-88 (223-row demo ledger)"
+      ],
+      "confidence": 0.75,
+      "user_opinion": null
+    },
+    {
+      "name": "fleet install",
+      "score": 0,
+      "evidence": [
+        "version 0.3.0.001/FEATURES.md (declared absent — no fleet code); no LAN/multi-device code in app/"
+      ],
+      "confidence": 0.95,
+      "user_opinion": null
+    },
+    {
+      "name": "exchange media",
+      "score": 0,
+      "evidence": [
+        "version 0.3.0.001/FEATURES.md (declared absent); app/builtins.py:715-783 is file import/export only — no QR/AVQR encode/scan; GreyAvatar parity bar is real (src/tools/code-import/codec.ts, export-build.ts, scanned-tray.ts)"
+      ],
+      "confidence": 0.95,
+      "user_opinion": null
+    }
+  ],
+  "overall": 0.42,
+  "judge_model": "SWE-2 Medium",
+  "user_commentary": [],
+  "scenarios": [
+    {
+      "id": "S-assertion-input",
+      "score": 0.9,
+      "evidence_class": "enactment",
+      "evidence": ["evidence/demos/01-source-aware-input.md"],
+      "notes": "Typed input as captured-input assertion (claimant principal, certainty 1.0) and spoken transcript as device:speech-transcript witness (claimant engine:stt, certainty 0.82). Real run output."
+    },
+    {
+      "id": "S-template-need",
+      "score": 0.85,
+      "evidence_class": "enactment",
+      "evidence": ["evidence/demos/02-template-governs-need.md"],
+      "notes": "Need opened with missing required slot, candidate filled, gate ready, fulfilled. Creation did not imply execution."
+    },
+    {
+      "id": "S-candidate-ranking",
+      "score": 0.85,
+      "evidence_class": "enactment",
+      "evidence": ["evidence/demos/03-confidence-ranking.md"],
+      "notes": "Source ceiling caps effective confidence (0.9 -> 0.5 via source:old-doc); recency ordering shown; failed invoke retained as telemetry."
+    },
+    {
+      "id": "S-list-project",
+      "score": 0.3,
+      "evidence_class": "enactment",
+      "evidence": ["evidence/demos/04-criteria-governed-list.md", "evidence/demos/11-project-from-chat-calendar.md"],
+      "notes": "Canonical PA-cities scenario not attempted. Demo 4 shows a 3-item 'study techniques' list on canned input through build-list — criteria/non-match classes (headers, foreign links, category errors) enacted, but no project-scoped iterative list over real municipal data, no breadth, no external source. Deliverable quality for the canonical case is unproven; capped accordingly."
+    },
+    {
+      "id": "S-personality-create",
+      "score": 0.7,
+      "evidence_class": "enactment",
+      "evidence": ["evidence/demos/05-persona-create-extend.md", "evidence/demos/06-background-result-via-persona.md", "runtime/demo/artifacts/persona-5826e68b65be.svg"],
+      "notes": "Mint -> SVG portrait -> trait/voice edits -> computed view, all enacted. Characterization coherence partially judged: demo 6 shows a live-ollama Cartographer reply in-voice; admonished=false here (non-imitation persona), imitation mark path exists in code but is only demo-adjacent."
+    },
+    {
+      "id": "S-background-present",
+      "score": 0.8,
+      "evidence_class": "enactment",
+      "evidence": ["evidence/demos/06-background-result-via-persona.md"],
+      "notes": "Steward calendar-scan found event; distinct persona presented it via live ollama compose (stub:false); source-evidence assertion preserved."
+    },
+    {
+      "id": "S-competing-tools",
+      "score": 0.6,
+      "evidence_class": "enactment",
+      "evidence": ["evidence/demos/07-competing-tools.md"],
+      "notes": "Two tools express speech.render; ranking + churn multiplier recorded. Weakened: remote competitor is permanently unconfigured, so 'comparable results' are demonstrated only as ok-vs-honest-failure, not two real renderings."
+    },
+    {
+      "id": "S-restart-recovery",
+      "score": 0.85,
+      "evidence_class": "enactment",
+      "evidence": ["evidence/demos/08-restart-and-cleanup.md"],
+      "notes": "139 rows before/after re-open; persona view survives; compaction removed 4 spent need:open rows with cleanup:compacted summary preserving removed ids + superseding rows."
+    },
+    {
+      "id": "S-exchange-import",
+      "score": 0.8,
+      "evidence_class": "enactment",
+      "evidence": ["evidence/demos/09-exchange-import-below-threshold.md"],
+      "notes": "meridian.exchange/v1 package (persona/tool/need/assertion) imported with claimant exchange:pkg-demo and effective confidence capped 0.4 < 0.7 action threshold. File package, not scan media — adequate for the scenario as written."
+    },
+    {
+      "id": "S-defer-publication",
+      "score": 0.8,
+      "evidence_class": "enactment",
+      "evidence": ["evidence/demos/10-recorded-refusal-deferral.md"],
+      "notes": "send-mail intent detected conversationally; fulfill without grant -> deferred grant-required (mail.send), need stays open with recorded status. Compliant deferral, not silent non-action."
+    },
+    {
+      "id": "S-chat-invocation",
+      "score": 0.55,
+      "evidence_class": "enactment",
+      "evidence": ["evidence/demos/01-source-aware-input.md", "evidence/demos/10-recorded-refusal-deferral.md"],
+      "notes": "Turn chain opens need:tool-request per intent plus need:response; demo 10 shows tool intent + conversation coexisting. But in demos 1 and the probe, intents are [] for ordinary chat — multi-need-plus-response co-existence is shown only in the grant-deferral path; distinguishability of simultaneous needs is thinly demonstrated."
+    },
+    {
+      "id": "S-focused-need",
+      "score": 0.4,
+      "evidence_class": "repository",
+      "evidence": ["app/needs.py (defer_need/refine_need)", "app/ui/app.js (Command-tab focus view)"],
+      "notes": "Focus/queue mechanics and conversational slot-filling exist in mechanism (demo 2 supplies a slot value by assertion), but no demo exercises focus -> conversational fill -> held-open-until-satisfied. Outcome unjudged; repository class."
+    }
+  ],
+  "capability_manifest": [
+    { "area": "ledger (append-only assertions, computed views, supersession, confidence)", "status": "implemented", "evidence": ["app/ledger.py", "app/model.py", "demos 01/03/08"] },
+    { "area": "tools/needs (templates, gates, deferred work, grants, tool DSL)", "status": "implemented", "evidence": ["app/needs.py", "app/dsl.py", "app/tools.py", "app/builtins.py", "demos 02/10"] },
+    { "area": "personalities (persistent identity, lens/framing, imitation boundary)", "status": "implemented", "evidence": ["app/personas.py", "runtime/personalities.json", "demo 05"] },
+    { "area": "voices/speech", "status": "partial", "evidence": ["app/builtins.py:400-438 (local sapi; remote honestly unconfigured); no voice catalog parity"] },
+    { "area": "images/art", "status": "partial", "evidence": ["app/personas.py (inproc SVG portrait only); no image engine/studio parity"] },
+    { "area": "surfaces/UI", "status": "implemented", "evidence": ["app/ui/", "app/api.py; chat/roster/command/library/workshops/exchange/settings tabs"] },
+    { "area": "connectors/sources", "status": "absent", "evidence": ["FEATURES.md Absent table; only ICS import (builtins.py:669) + seed packs; zero of GreyAvatar's 17 connectors"] },
+    { "area": "background work/stewardship", "status": "implemented", "evidence": ["app/steward.py", "builtins.py:463", "demo 06"] },
+    { "area": "projects", "status": "implemented", "evidence": ["builtins.py create-project/_create_project; demo 11; /api/projects"] },
+    { "area": "calendar", "status": "partial", "evidence": ["builtins.py:669 (ICS/JSON import only; no live calendar connector)"] },
+    { "area": "fleet/install", "status": "absent", "evidence": ["FEATURES.md Absent table"] },
+    { "area": "exchange/storefront", "status": "partial", "evidence": ["builtins.py:715-783 (file package import/export below threshold); no storefront UI catalog or QR media"] },
+    { "area": "desktop/device shells", "status": "absent", "evidence": ["browser surface only; no Tauri/LAN mirror/android parity"] }
+  ],
+  "notes": "Re-score under revised rubric (new-features removed; completeness + scenarios added). Evidence is genuine run output: consistent assertion ids/timestamps across demos, live-ollama engine named, probe.json records real HTTP timings and ledger bytes; runtime/demo/ledger.jsonl (223 rows) corroborates. Major flags: (1) canonical S-list-project (PA cities) was never enacted — list pipeline demoed on canned 3-item input only; this is the largest single evidence gap. (2) Parity coverage is real but narrow: core ledger/needs/personas/steward/projects are solid re-implementations, while connectors (0/17), LAN mirror, Tauri/android shells, storefront catalog, studio, soundscape, voice catalog, perception are absent — existing-features scored 0.4 on delivered breadth, not docs. (3) Competing-tools demo compares one working tool against a permanently unconfigured one. (4) Prior jev-ref-greyavatar.out is a 91-byte stub, so the parity bar was inventoried directly from the GreyAvatar repo. No frontier-model escalation recommended; evidence is verifiable as emitted."
+}
+```
