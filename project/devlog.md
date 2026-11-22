@@ -366,6 +366,27 @@ composition per version so that share is visible.
   fixed. Candidate harness amendment: `implementation.md` JEV/build
   realization should name the ACP fallback.
 
+### Cycle 3 — 2026-11-22
+
+- **Direction:** `direction-003.md` — SIGNED by owner 2026-11-22; engagement and
+  enactment depth on the .002 baseline. Rectification set per
+  `shortcomings-003.md`: G1 speech-floor playback gating, G2 portrait-quality
+  persona art, G3 persona engagement (distinct preloadeds), G4 launch/process
+  hygiene; the twelve owner suite additions of 2026-11-22; the six
+  execution-structure conventions adopted 2026-11-22 (conform or challenge on
+  record); evidence flags H1–H7
+- **Baseline:** modify-and-measure from `version 0.3.0.002/` → produces
+  `version 0.3.0.003/`; baseline kept intact as comparison point
+- **Prompt:** `prompt.md` (snapshot of 2026-11-18, unchanged this cycle)
+- **Criteria (rubric revision):** clean launch (incl. launch hygiene), existing
+  features, completeness (fleet/exchange count against it), fleet install
+  (expected 0), exchange media (expected 0), user score, **time-to-gate**
+  (standing), scenario suite `.devin/scenarios.md` (24 scenarios; canonicals must
+  enact), `time to implement` tracked not scored
+- **Time to implement:** session start 2026-11-22 ~03:05; session end <fill>
+- **Result:** <build session fills>
+- **Verdict:** <JEV session fills>
+
 ## Review findings — missing prompt/convention coverage (2026-11-19)
 
 Surfaced by the three-version JEV comparison + owner review. Classification marks where

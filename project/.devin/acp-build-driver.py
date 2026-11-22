@@ -12,6 +12,7 @@ PROMPT_FILE = os.environ.get("ACP_PROMPT_FILE", os.path.join(CWD, ".devin", "bui
 LOG = os.environ.get("ACP_LOG", os.path.join(CWD, ".devin", "build-cycle-002.acp.log"))
 MODE = os.environ.get("ACP_MODE", "bypass")   # Bypass Permissions — disposable build session
 TIMEOUT = int(os.environ.get("ACP_TIMEOUT", str(6 * 3600)))
+STATUS_FILE = os.environ.get("ACP_STATUS_FILE", os.path.join(CWD, ".devin", "last-cycle-status.txt"))
 
 def creds_key():
     t = open(r"C:\Users\kris_\AppData\Roaming\devin\credentials.toml", encoding="utf-8").read()
@@ -138,6 +139,24 @@ while time.time() < deadline and not done:
 log(("DRIVER-END %s session=%s\n" % (end_reason, session_id)).encode())
 try:
     proc.terminate()
+except Exception:
+    pass
+
+# Owner notification: write a status file and sound the terminal bell audibly, so
+# a session end (complete OR given-up) is noticeable away from the chat.
+try:
+    status = "%s: ACP session ended (%s) session=%s prompt=%s\n%s\n" % (
+        time.strftime("%Y-%m-%d %H:%M:%S"), end_reason, session_id,
+        os.path.basename(PROMPT_FILE), time.asctime())
+    open(STATUS_FILE, "w", encoding="utf-8").write(status)
+except Exception:
+    pass
+try:
+    import winsound
+    for _ in range(3):
+        winsound.Beep(880, 220)
+        time.sleep(0.18)
+    winsound.MessageBeep(winsound.MB_ICONASTERISK)
 except Exception:
     pass
 print(end_reason, session_id)
