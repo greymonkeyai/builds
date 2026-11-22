@@ -5,6 +5,16 @@ folder against the criteria below. Do not modify any files.
 
 <the direction's named criteria, verbatim>
 
+## Standing criteria
+
+- **time-to-gate** — always scored. Per C-ReadinessGate
+  (`C:\Project\MigrateInbound\CONVENTIONS.md`), the build's Interactive Readiness
+  Gate records its pass time in accessible evidence. Cite the timestamp; record the
+  measured duration in `metrics.time_to_gate` (seconds, session start to gate pass;
+  `null` when the gate never passed). Score the criterion on evidence presence and
+  gate passage — absent evidence or an unpassed gate scores 0; a direction that names
+  a target duration may be scored against it.
+
 ## Evidence
 
 The build is required to emit accessible evidence for these criteria. Locate it — logs,
@@ -20,6 +30,7 @@ Output ONLY a JSON object:
     { "name": "...", "score": 0, "evidence": ["path:line"], "confidence": 0.0, "user_opinion": null }
   ],
   "overall": 0,
+  "metrics": { "time_to_gate": null },
   "judge_model": "<model id>",
   "user_commentary": [],
   "scenarios": [
