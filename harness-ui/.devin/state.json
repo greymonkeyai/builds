@@ -17,9 +17,7 @@
     ]
   },
   "builds": [],
-  "pending_owner_questions": [
-    "Coordinator-side gate — install the direction gate in C:\\Harness (the coordinator home) as well? C:\\Harness is a doc workspace; owner wants to think about it (2026-11-23)."
-  ],
+  "pending_owner_questions": [],
   "revisions": {
     "prompt": "2026-11-23",
     "conventions": null,
