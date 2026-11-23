@@ -18,6 +18,8 @@ them.
   - `version 0.3.0.001/`, `version 0.3.0.002/` — one folder per build:
     `app/` Python source + UI, `evidence/` launch and scenario artifacts,
     `runtime/` ledger/persona state, `scripts/`, `seed-packs/`
+- `harness-ui/` — harness line of development for the builds-root status display
+  (read-only, file-derived pages over this repo; spec in `harness-ui/prompt.md`)
 
 Related: [greymonkeyai/avatarsDev](https://github.com/greymonkeyai/avatarsDev) is the
 reference realization these builds are measured against.
