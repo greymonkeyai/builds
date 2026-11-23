@@ -3,7 +3,7 @@
   "prompt_ref": "embedded prompt.md (revision 2026-11-23)",
   "direction_in_force": {
     "ref": "direction-001.md",
-    "clarity": "draft",
+    "clarity": "signed",
     "baseline": "fresh",
     "budget": { "total": 1, "spent": 0 },
     "criteria": [
@@ -18,15 +18,11 @@
   },
   "builds": [],
   "pending_owner_questions": [
-    "Line name — 'harness-ui' assumed from the folder name; confirm?",
-    "Judge model — default cheap swe-family, distinct from builder; override?",
-    "Coordinator-side gate — install the direction gate in C:\\Harness (the coordinator home) as well? C:\\Harness is a doc workspace; AGENTS.md permits harness machinery but not incidental content.",
-    "Scenario suite — .devin/scenarios.md drafted at intake; sign off or amend?",
-    "Direction-001 — drafted unsigned; sign or amend?"
+    "Coordinator-side gate — install the direction gate in C:\\Harness (the coordinator home) as well? C:\\Harness is a doc workspace; owner wants to think about it (2026-11-23)."
   ],
   "revisions": {
     "prompt": "2026-11-23",
     "conventions": null,
-    "scenarios": "draft 2026-11-23"
+    "scenarios": "signed 2026-11-23"
   }
 }

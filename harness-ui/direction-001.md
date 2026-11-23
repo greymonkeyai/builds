@@ -1,6 +1,7 @@
-# Direction 001 — DRAFT (awaiting owner signature)
+# Direction 001 — SIGNED 2026-11-23
 
 Drafted by the coordinator session 2026-11-23 at line birth. First cycle on a new line.
+Signed by owner 2026-11-23 (with line name, judge model, and scenario suite).
 
 - **Region / variable:** first realization of `prompt.md` — the status display
   end-to-end: emitter + shell + data payloads over the real `C:\builds` corpus.

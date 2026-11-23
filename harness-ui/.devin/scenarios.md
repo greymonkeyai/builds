@@ -1,7 +1,7 @@
 # Scenario suite — harness-ui line of development
 
-DRAFT candidate suite, derived at intake 2026-11-23 from `prompt.md` — awaiting owner
-sign-off. Each scenario scores 0–1 on the implementation's **ability to enact** it.
+Derived at intake 2026-11-23 from `prompt.md`; **signed by owner 2026-11-23**. Each
+scenario scores 0–1 on the implementation's **ability to enact** it.
 
 ## Scoring conventions
 
