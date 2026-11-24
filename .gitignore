@@ -4,3 +4,19 @@ __pycache__/
 # Emitted display payloads (regenerable)
 /data.js
 */display/data.js
+
+# Transient per-run state (regenerated; the status display reads the working
+# dir, not git — commit the devlog verdict, not the machine that produced it)
+**/runtime/
+*.acp.log
+*.driver.log
+launch-server.out
+last-*-status.txt
+
+# Fixture copies inside builds are source data, not transient state
+!**/fixtures/runtime/
+!**/fixtures/runtime/**
+!**/fixtures/**/*.acp.log
+!**/fixtures/**/*.driver.log
+!**/fixtures/**/launch-server.out
+!**/fixtures/**/last-*-status.txt

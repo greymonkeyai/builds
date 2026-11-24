@@ -1,1 +1,0 @@
-scenario connector ingest check
