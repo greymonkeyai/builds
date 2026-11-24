@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vantage</title>
+<link rel="stylesheet" href="/ui/styles.css">
+</head>
+<body>
+<header id="honesty"></header>
+<div id="app">
+  <aside id="rail">
+    <h2>ROSTER <span id="frameTag"></span></h2>
+    <div class="hint">click = select &middot; &#9650;&#9660; = reorder</div>
+    <div id="roster"></div>
+    <button id="mintBtn">+ mint personality</button>
+    <button id="allChatBtn">ALL CHAT</button>
+  </aside>
+  <main>
+    <nav id="tabs">
+      <button data-tab="chat" class="on">Chat</button>
+      <button data-tab="inbox">Inbox</button>
+      <button data-tab="command">Command</button>
+      <button data-tab="library">Library</button>
+      <button data-tab="workshops">Workshops</button>
+      <button data-tab="exchange">Exchange</button>
+      <button data-tab="settings">Settings</button>
+      <button data-tab="log">Log</button>
+    </nav>
+    <section id="tab-chat">
+      <div id="stage"></div>
+      <div id="chathead"><span id="chatheadText">Conversation</span>
+        <span id="topicbadge" class="hidden"></span>
+        <span id="ctxbadge" class="hidden"></span>
+        <span id="focusbadge" class="hidden"></span>
+        <button id="resetBtn" title="seal this conversation and clear context">reset conversation</button>
+      </div>
+      <div id="feed"></div>
+      <div id="composer">
+        <select id="address" title="quick-select a respondent (chorus on address)"><option value="">auto</option></select>
+        <button id="mic" title="push to talk (browser Web Speech API, or declared-none)">&#x1F3A4;</button>
+        <input id="msg" placeholder="type an input — requests work AND conversation">
+        <button id="send">send</button>
+      </div>
+    </section>
+    <section id="tab-inbox" class="hidden">
+      <div class="cols">
+        <div><h3>Mailbox <span id="inboxSrc" class="small"></span>
+          <button id="inboxRefresh">re-scan</button></h3>
+          <div id="inboxList"></div></div>
+        <div><h3>Selected context</h3>
+          <div id="selctx" class="small">nothing selected — pick an email to pull
+            it into conversational context; the active respondent comments.</div>
+          <div id="ctxCommentary"></div></div>
+      </div>
+    </section>
+    <section id="tab-command" class="hidden">
+      <div class="cols">
+        <div><h3>Projects <button id="newProj">+ create project</button></h3>
+          <div id="projects"></div></div>
+        <div><h3>Open needs (queue)</h3><div id="needs"></div></div>
+        <div><h3>Focus / calendar</h3><div id="focus"></div><div id="cal"></div>
+          <h3>Grant requests</h3><div id="grantReqs"></div></div>
+      </div>
+    </section>
+    <section id="tab-library" class="hidden">
+      <div class="liblayout">
+        <div id="libnav">
+          <h3>Holdings</h3>
+          <button data-hold="personas" class="on">Personalities</button>
+          <button data-hold="tools">Tools</button>
+          <button data-hold="packages">Packages</button>
+          <button data-hold="artifacts">Artifacts</button>
+          <button data-hold="needs">Open needs</button>
+          <button data-hold="ledger">Ledger</button>
+        </div>
+        <div id="libmain">
+          <div id="liblist"></div>
+          <div id="libdetail" class="small"></div>
+        </div>
+      </div>
+      <div id="ledgerpane" class="hidden">
+        <input id="libq" placeholder="search ledger text"><button id="libSearch">search</button>
+        <select id="libns"><option value="">(all predicates)</option></select>
+        <div id="librows"></div>
+        <h3>Edit assertion (append-only)</h3>
+        <input id="edSubj" placeholder="subject"><input id="edPred" placeholder="predicate ns:name">
+        <input id="edVal" placeholder="value"><input id="edCert" placeholder="certainty 0-1" value="0.9">
+        <input id="edSup" placeholder="supersedes id (optional)">
+        <button id="edGo">append assertion</button><div id="edMsg"></div>
+      </div>
+    </section>
+    <section id="tab-workshops" class="hidden">
+      <div class="cols">
+        <div><h3>Tools</h3><div id="toollist"></div></div>
+        <div><h3>Workshop</h3><div id="workshop"></div>
+          <h3>Author a tool</h3>
+          <textarea id="newspec" rows="8" placeholder='{"id":"my-tool","title":"...","template":{"slots":[{"name":"x","required":true}]},"steps":[{"op":"result","value":"hi"}]}'></textarea>
+          <button id="validateSpec">validate</button><button id="mintSpec">mint tool</button>
+          <pre id="specMsg"></pre></div>
+      </div>
+    </section>
+    <section id="tab-exchange" class="hidden">
+      <h3>Exchange packages</h3>
+      <button id="expBtn">export package</button><span id="expMsg"></span>
+      <h4>Import (vantage.exchange/v1 JSON)</h4>
+      <textarea id="impPkg" rows="8" placeholder='{"schema":"vantage.exchange/v1","id":"pkg-1","personas":[],"tools":[],"assertions":[],"needs":[]}'></textarea>
+      <button id="impBtn">import below threshold</button><pre id="impMsg"></pre>
+      <div id="impList"></div>
+    </section>
+    <section id="tab-settings" class="hidden">
+      <div id="settings"></div>
+    </section>
+    <section id="tab-log" class="hidden">
+      <div id="logctl">
+        <select id="logkind"><option value="traces">turn traces</option>
+          <option value="decisions">decision scores</option>
+          <option value="respondents">respondents</option>
+          <option value="steward">steward runs</option>
+          <option value="churn">trust churn</option>
+          <option value="inference">inference commits</option>
+          <option value="floor">speech floor</option>
+          <option value="fidelity">fidelity flags</option></select>
+        <button id="loggo">load</button></div>
+      <pre id="log"></pre>
+    </section>
+  </main>
+</div>
+<footer id="statusbar">
+  <span id="sbVersion"></span><span id="sbGate"></span>
+  <span id="sbLLM"></span><span id="sbSources"></span>
+  <span id="sbFloor"></span><span id="sbNeeds"></span>
+  <span class="sb-right">
+    <button id="fsBtn" title="full screen">&#x26F6;</button>
+    <label for="themeSel">theme</label>
+    <select id="themeSel">
+      <option value="light">light</option>
+      <option value="dark">dark</option>
+      <option value="sepia">sepia</option>
+      <option value="slate">slate</option>
+    </select>
+  </span>
+</footer>
+<div id="editor" class="hidden">
+  <div id="editorCard">
+    <h3 id="edTitle">personality editor</h3>
+    <div id="edPortrait"></div>
+    <div class="edgrid">
+      <label>name</label><input id="peName">
+      <label>traits (comma)</label><input id="peTraits">
+      <label>interests (comma)</label><input id="peInterests">
+      <label>voice register</label>
+      <select id="peRegister"><option>clipped</option><option>scholarly</option>
+        <option>catalogue</option><option>wry</option><option>warm</option>
+        <option>measured</option><option>expansive</option></select>
+      <label>responsibilities (comma)</label><input id="peResp">
+      <label>voice name</label><input id="peVoice" placeholder="e.g. Microsoft Zira Desktop">
+      <label>voice rate (-10..10)</label><input id="peRate" type="number" min="-10" max="10">
+      <label>color</label><input id="peColor" type="color">
+      <label>held confidence (0-1)</label><input id="peConf" type="number" step="0.05" min="0" max="1">
+      <label>display mode</label>
+      <select id="peMode"><option>respondent</option><option>personified</option></select>
+    </div>
+    <div class="edbtns">
+      <button id="peSave">save</button>
+      <button id="peReart">regenerate portrait</button>
+      <button id="peSpeak">speak</button>
+      <button id="peClose">close</button>
+    </div>
+    <pre id="peMsg"></pre>
+  </div>
+</div>
+<script src="/ui/app.js"></script>
+</body>
+</html>

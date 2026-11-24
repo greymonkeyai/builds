@@ -1,0 +1,30 @@
+{
+  "id": "S-windows-launch",
+  "ran": true,
+  "checks": [
+    {
+      "name": "launch.cmd exists (installed-program launch)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "serving on Windows",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "gate passed",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true,
+  "server": {
+    "app": "Vantage",
+    "version": "0.3.0.004",
+    "gate": {
+      "passed": true,
+      "timeToGateMs": 2341
+    }
+  }
+}

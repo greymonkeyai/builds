@@ -1,0 +1,130 @@
+{
+  "id": "S-personality-roster",
+  "ran": true,
+  "checks": [
+    {
+      "name": "persistent roster panel",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "each persona once (no double-seeding)",
+      "pass": true,
+      "detail": "8 entries, 8 distinct"
+    },
+    {
+      "name": "selection works through the control",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "active": "persona-d8df17c1cf35",
+        "name": "Marisol"
+      }
+    },
+    {
+      "name": "reorder works",
+      "pass": true,
+      "detail": {
+        "before": [
+          "persona-051d2365a4d4",
+          "persona-d8df17c1cf35",
+          "persona-ff46a0c0390d",
+          "persona-f776d13a8d78",
+          "persona-b54b49758e57",
+          "persona-88495b83a14c",
+          "persona-f1504937c9c6",
+          "persona-6bcfb4615dd5"
+        ],
+        "after": [
+          "persona-d8df17c1cf35",
+          "persona-051d2365a4d4",
+          "persona-ff46a0c0390d",
+          "persona-f776d13a8d78",
+          "persona-b54b49758e57",
+          "persona-88495b83a14c",
+          "persona-f1504937c9c6",
+          "persona-6bcfb4615dd5"
+        ]
+      }
+    },
+    {
+      "name": "dyadic rank assertions recorded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "every shipped persona reachable",
+      "pass": true,
+      "detail": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  ],
+  "pass": true,
+  "names": [
+    "Quill",
+    "Marisol",
+    "Aldous",
+    "Beatrix",
+    "Corin",
+    "Sable",
+    "Wendell",
+    "Marlowe"
+  ],
+  "selected": {
+    "ok": true,
+    "active": "persona-d8df17c1cf35",
+    "name": "Marisol"
+  },
+  "orderAfter": [
+    "Marisol",
+    "Quill",
+    "Aldous",
+    "Beatrix",
+    "Corin",
+    "Sable",
+    "Wendell",
+    "Marlowe"
+  ],
+  "registers": [
+    [
+      "Marisol",
+      "warm"
+    ],
+    [
+      "Quill",
+      "clipped"
+    ],
+    [
+      "Aldous",
+      "wry"
+    ],
+    [
+      "Beatrix",
+      "scholarly"
+    ],
+    [
+      "Corin",
+      "catalogue"
+    ],
+    [
+      "Sable",
+      "expansive"
+    ],
+    [
+      "Wendell",
+      "wry"
+    ],
+    [
+      "Marlowe",
+      "warm"
+    ]
+  ]
+}

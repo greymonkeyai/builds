@@ -1,0 +1,105 @@
+{
+  "id": "S-chat-invocation",
+  "ran": true,
+  "checks": [
+    {
+      "name": "tool need opened",
+      "pass": true,
+      "detail": [
+        "n-d81ce6d66255"
+      ]
+    },
+    {
+      "name": "response need opened",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "needs distinguishable",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "persona replies produced",
+      "pass": true,
+      "detail": [
+        "Quill",
+        "Marisol",
+        "Marisol"
+      ]
+    },
+    {
+      "name": "snapshot inference rows",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "sequential commits",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true,
+  "turn": {
+    "ok": true,
+    "intents": [
+      {
+        "toolId": "set-topic",
+        "slots": {
+          "topic": "harbor tides, and tell me what you think about tidal atlases"
+        }
+      }
+    ],
+    "needIds": [
+      "n-d81ce6d66255"
+    ]
+  },
+  "replies": [
+    {
+      "name": "Quill",
+      "register": "clipped",
+      "text": "Harbor tides. Essential for navigation. Tidal atlases: thorough, yet often outdated. Coastal changes, dredging, and new charts can render them obsolete. Still, a valuable resource for those who use them. Worth noting tha"
+    },
+    {
+      "name": "Marisol",
+      "register": "warm",
+      "text": "Harbor tides! I just love how the ocean's rhythms can be so predictable, yet so full of surprises. You know, I've always been fascinated by those tidal atlases - those big, colorful books that show you where the tide lin"
+    },
+    {
+      "name": "Marisol",
+      "register": "warm",
+      "text": "I think there's definitely some truth to that, Quill. Tidal atlases can be a treasure trove of information, but it's easy to get caught up in the thoroughness of them and overlook the fact that they might not be entirely"
+    }
+  ],
+  "snapshot": {
+    "snapshot": "snap-e833a309bd96",
+    "task": "Quill",
+    "rows": 101
+  },
+  "commits": [
+    {
+      "rank": 1,
+      "persona": "persona-d8df17c1cf35",
+      "kind": "reaction",
+      "reactsTo": "Quill"
+    },
+    {
+      "rank": 1,
+      "persona": "persona-d8df17c1cf35",
+      "name": "Marisol",
+      "engine": "live-ollama:llama3.2",
+      "fidelity": {
+        "grounded": true
+      }
+    },
+    {
+      "rank": 0,
+      "persona": "persona-051d2365a4d4",
+      "name": "Quill",
+      "engine": "live-ollama:llama3.2",
+      "fidelity": {
+        "grounded": true
+      }
+    }
+  ]
+}

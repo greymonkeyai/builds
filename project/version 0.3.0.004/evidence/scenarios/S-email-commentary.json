@@ -1,0 +1,33 @@
+{
+  "id": "S-email-commentary",
+  "ran": true,
+  "checks": [
+    {
+      "name": "emails listed",
+      "pass": true,
+      "detail": 3
+    },
+    {
+      "name": "selection enters context",
+      "pass": true,
+      "detail": {
+        "kind": "email",
+        "ref": "003-repair.eml",
+        "label": "Estimate for the skiff repair",
+        "excerpt": "Estimate for the hull work: materials 220, labor 410, total 630.\nWe can start Monday if you approve by Friday.\n"
+      }
+    },
+    {
+      "name": "persona commentary offered",
+      "pass": true,
+      "detail": "Marlowe"
+    }
+  ],
+  "pass": true,
+  "mail": "Estimate for the skiff repair",
+  "commentary": {
+    "persona": "Marlowe",
+    "text": "It looks like there's a typo in the email. The word \"hull\" is used instead of \"skiff\", which is likely the intended word.",
+    "register": "warm"
+  }
+}

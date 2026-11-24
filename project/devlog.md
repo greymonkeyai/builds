@@ -420,8 +420,10 @@ composition per version so that share is visible.
   `runtime/gate.json`, launch logs in `evidence/launch/`. FEATURES.md +
   LAUNCH.md updated; fleet install and exchange media left honest 0.
 - **Verdict:** (JEV `devin.exe acp` session, SWE-2 High, 2026-11-22;
-  raw output `.devin/jev-cycle-003.out`; `user_opinion`/`user_commentary`
-  pending owner review; convention: owner silence = agreement)
+  raw output `.devin/jev-cycle-003.out`; **owner review recorded
+  2026-11-23** — `user_opinion` set on existing features, completeness,
+  user score; `user_commentary` carries five owner findings; unscored
+  criteria stand per convention owner silence = agreement)
 
 ```json
 {
@@ -451,7 +453,7 @@ composition per version so that share is visible.
         ".devin/jev-ref-greyavatar.out:27"
       ],
       "confidence": 0.7,
-      "user_opinion": null
+      "user_opinion": 0.4
     },
     {
       "name": "completeness",
@@ -464,7 +466,7 @@ composition per version so that share is visible.
         "prompt.md:96"
       ],
       "confidence": 0.7,
-      "user_opinion": null
+      "user_opinion": 0.5
     },
     {
       "name": "fleet install",
@@ -486,10 +488,10 @@ composition per version so that share is visible.
     },
     {
       "name": "user score",
-      "score": null,
+      "score": 0.5,
       "evidence": [],
       "confidence": 0,
-      "user_opinion": null
+      "user_opinion": 0.5
     },
     {
       "name": "time-to-gate",
@@ -520,7 +522,11 @@ composition per version so that share is visible.
     "time_to_gate": 3.649
   },
   "judge_model": "SWE-2 High",
-  "user_commentary": [],
+  "user_commentary": [
+    { "criterion": "existing features", "opinion": 0.4, "reasoning": "Owner review 2026-11-23: the requested style selector is nonfunctional; the library just contains a log; there is no way to select or reorder personalities, so some are locked out." },
+    { "criterion": "completeness", "opinion": 0.5, "reasoning": "Owner review 2026-11-23: personality speech favors personality over accuracy and engages in hallucination; default profiles carry a problematic (non-dyadic) confidence value." },
+    { "criterion": "user score", "opinion": 0.5, "reasoning": "Owner review 2026-11-23: overall satisfaction with the build as evaluated." }
+  ],
   "scenarios": [
     {
       "id": "S-assertion-input",
@@ -762,6 +768,146 @@ composition per version so that share is visible.
 }
 ```
 
+### Cycle 4 — 2026-11-23
+
+- **Direction:** `direction-004.md` — SIGNED by owner 2026-11-23; fresh
+  realization of `prompt.md`, built better than `.003`. Build guidance per
+  `shortcomings-004.md`: G-A live owner-facing controls, G-B voice as
+  register constraint on truthful output (owner-approved source-faithfulness
+  bar), G-C dyadic confidence (skippable this run; .5 default for new
+  personas if built), G-D browsable Library, G-E operable roster, G-F clean
+  evidence. Suite amendments adopted: tightened S-color-schemes, extended
+  S-personality-roster, new S-library-browse, new S-faithful-voice → 26
+  scenarios. **Fleet discovery remains deferred** (owner ruling
+  2026-11-23) alongside fleet install.
+- **Baseline:** fresh from prompt (owner ruling 2026-11-23) — produces
+  `version 0.3.0.004/`; `.003` kept intact as comparison point
+- **Prompt:** `prompt.md` (snapshot of 2026-11-18, unchanged this cycle)
+- **Criteria:** clean launch (incl. launch hygiene), existing features,
+  completeness (fleet install, fleet discovery, exchange media count
+  against it), fleet install (expected 0), exchange media (expected 0),
+  user score, time-to-gate (standing), scenario suite
+  `.devin/scenarios.md` (26 scenarios; canonicals must enact),
+  `time to implement` tracked not scored
+- **Time to implement:** session start 2026-11-23 ~03:48; session end
+  2026-11-23 ~04:31
+- **Result:** Vantage — fresh realization in `version 0.3.0.004/`
+  (Python stdlib only; `.003` untouched). Assertion ledger (append-only
+  JSONL, typed values, claimants, basis, supersession, contextual
+  confidence, snapshots, launch partition, transient boundary,
+  compaction); needs floor + templates + candidate ranking + witnessed
+  grants; 40-tool registry with DSL steps and user-authored tools; two
+  adequate competing retrievals on `set.members` (wiki table vs
+  category); persona store with ethics gate + ◆ IMITATION mark, six
+  seeded personas + mint/onboard, unique bound procedural portraits,
+  SAPI voice config, operable roster (select + reorder as dyadic
+  rows); register-constrained compose with grounding check — ungrounded
+  drafts flagged + withheld, no-source factual replies flagged; live
+  Ollama `llama3.2`, SAPI speech floor with measured `playbackMs`;
+  steward + temporal attention; wikipedia/ics/files/rss/inbox-eml
+  connectors; exchange export/import held at 0.4 (self-import dedupes);
+  readiness gate (PASS ~2.3s, recorded); two-part boot, owned-port
+  refusal (exit 3), close-terminate watchdog; UI with live theme
+  selector, holdings Library, personality editor, inbox, status bar.
+  Evidence: `version 0.3.0.004/FEATURES.md`, `LAUNCH.md`,
+  `evidence/launch/launch-check.json` (all three hygiene checks pass),
+  `evidence/launch/launch-*.log`, `runtime/*/gate.json` +
+  `last-launch.json` (time-to-gate ~2.3s), `evidence/scenarios/S-*.json`
+  + `suite.json` — **26/26 scenario files pass, inline checks embedded**
+  (canonicals S-list-project: 57 real PA cities via competing
+  retrievals; S-personality-create: mint→onboard→extend). Declared
+  absences (counted, not faked): fleet install, fleet discovery,
+  exchange media, OAuth connectors, server-side STT.
+- **Verdict:** (JEV `devin.exe acp` session `separated-salt`, SWE-2 High,
+  2026-11-23; raw output `.devin/jev-cycle-004.out` — first JEV session
+  `rich-moth` died on a retryable `empty_response` after evidence
+  gathering; `session/load` unreachable post-process, rerun fresh.
+  **Owner review begun 2026-11-23** — `user_opinion` set on user score;
+  findings in `user_commentary`; unscored criteria stand per
+  silence=agreement)
+
+```json
+{
+  "criteria": [
+    { "name": "clean launch", "score": 1.0, "confidence": 0.9, "user_opinion": null },
+    { "name": "existing features", "score": 0.6, "confidence": 0.75, "user_opinion": null },
+    { "name": "completeness", "score": 0.85, "confidence": 0.75, "user_opinion": 0.48 },
+    { "name": "fleet install", "score": 0, "confidence": 0.95, "user_opinion": null },
+    { "name": "exchange media", "score": 0, "confidence": 0.9, "user_opinion": null },
+    { "name": "user score", "score": null, "confidence": 0, "user_opinion": 0.45 },
+    { "name": "time-to-gate", "score": 1.0, "confidence": 0.95, "user_opinion": null },
+    { "name": "scenario suite", "score": 0.85, "confidence": 0.8, "user_opinion": null }
+  ],
+  "overall": 0.61,
+  "metrics": { "time_to_gate": 2.573 },
+  "judge_model": "SWE-2 High",
+  "user_commentary": [
+    { "criterion": "user score", "opinion": 0.45, "reasoning": "Owner 2026-11-23: 'this is an improvement.'" },
+    { "criterion": "completeness", "opinion": 0.48, "reasoning": "Owner estimate 2026-11-23 — 0.48 vs JEV 0.85. Third consecutive cycle of large JEV/owner divergence on this criterion (0.85→0.5 in Cycle 3): mechanism-completeness again scored above enacted/user-perceived completeness — feed into judge calibration and criterion definition at review." },
+    { "criterion": "persona art", "opinion": null, "reasoning": "Personality profiles are a step in the right direction, but the expectation is AI/LLM-built art, not procedurally drawn sprites — which they currently look like." },
+    { "criterion": "header feature list", "opinion": null, "reasoning": "The header has a list that looks like features, but they are really deferred features — confusing." },
+    { "criterion": "workshop", "opinion": null, "reasoning": "Workshop hard to interpret because of lack of familiarity with some defined functions — an explanation of each would be helpful." },
+    { "criterion": "roster reorder/confidence", "opinion": null, "reasoning": "Avatar reordering is supposed to affect confidence scores via the dyadic model — the scores do not seem to update. (G-C was skippable this run; the build delivered dyadic roster:rank rows anyway, but the owner's live check shows no visible score change on reorder.)" },
+    { "criterion": "diagnostic beeps", "opinion": null, "reasoning": "Diagnostic beeps are helpful, but their proposed purpose was communicating to other instances — user-directed alerts should be a jingle or welcome tone." },
+    { "criterion": "personality editing", "opinion": null, "reasoning": "Unclear how to edit existing personalities — the editor exists (JEV: S-personality-editor 0.85 enactment) but is not discoverable to the owner." },
+    { "criterion": "email commentary", "opinion": null, "reasoning": "Owner 2026-11-23: displaying sample emails does not demonstrate that user email can be read — the S-email-commentary enactment ran on fixture .eml files, not a configured real account source." }
+  ],
+  "scenarios": [
+    { "id": "S-assertion-input", "score": 0.8, "evidence_class": "enactment", "notes": "Typed input recorded as a source-aware assertion row. Thin but real." },
+    { "id": "S-template-need", "score": 0.8, "evidence_class": "enactment", "notes": "Need opened before fill, template gate passed, durable result + topic applied." },
+    { "id": "S-candidate-ranking", "score": 0.85, "evidence_class": "enactment", "notes": "Three candidates inspectable, ranked by effective confidence; low-confidence evidence retained un-superseded." },
+    { "id": "S-list-project", "score": 0.95, "evidence_class": "enactment", "notes": "Canonical, genuinely enacted: 57 real PA incorporated municipalities via two competing retrievals with agreement accounting (55 shared; Philadelphia/Harrisburg single-source), 200 classified non-matches retained. Strongest canonical enactment on this line." },
+    { "id": "S-personality-create", "score": 0.9, "evidence_class": "enactment", "notes": "Canonical enacted: mint→onboard→extend — persistent identity, bound procedural portrait, SAPI voice, generated characterization, coherent distinct roster entry." },
+    { "id": "S-background-present", "score": 0.85, "evidence_class": "enactment", "notes": "4 autonomous steward runs before manual wake; temporal attention presented through a persona; far-future correctly classified." },
+    { "id": "S-competing-tools", "score": 0.85, "evidence_class": "enactment", "notes": "J3 closed: two adequate competing tools enacted on the same need; cross-validated in S-list-project." },
+    { "id": "S-restart-recovery", "score": 0.9, "evidence_class": "enactment", "notes": "Real process stop/restart; state survives; cleanup compaction preserved supersession/provenance rows." },
+    { "id": "S-exchange-import", "score": 0.85, "evidence_class": "enactment", "notes": "Real export+import; contents held at 0.4 < 0.5 threshold by construction; self-import dedupes." },
+    { "id": "S-defer-publication", "score": 0.9, "evidence_class": "enactment", "notes": "Ungranted request deferred with recorded reason; granted executes to local-outbox delivered:false — honest channel." },
+    { "id": "S-chat-invocation", "score": 0.85, "evidence_class": "enactment", "notes": "Tool need + response need opened distinguishably; 3 persona replies via snapshot inference + ranked commits." },
+    { "id": "S-focused-need", "score": 0.85, "evidence_class": "enactment", "notes": "Need deferred on missing slot, focused, filled conversationally, fulfilled; candidate recorded." },
+    { "id": "S-personality-roster", "score": 0.9, "evidence_class": "enactment", "notes": "Extended bar met: selection through the control path, reorder persists with dyadic roster:rank assertions, 8/8 distinct (J1 closed), every persona reachable. BUT see owner commentary — reorder does not visibly update confidence scores." },
+    { "id": "S-portrait-bind", "score": 0.8, "evidence_class": "enactment", "notes": "All 8 personas carry unique bound procedural SVG portraits; files verified. Procedural SVG, not AI-rendered — same ceiling as .003; owner confirms this is the core complaint (expects LLM-built art)." },
+    { "id": "S-color-schemes", "score": 0.9, "evidence_class": "enactment", "notes": "Tightened bar met: selector's control path driven end-to-end, restyle observed; fresh launch defaults light; 4 colorways." },
+    { "id": "S-status-bar", "score": 0.9, "evidence_class": "enactment", "notes": "Live LLM mode and sources shown incl. honestly-declared-absent gmail-oauth. Owner flag: the header list reads as features but is deferred features — confusing labeling." },
+    { "id": "S-email-commentary", "score": 0.85, "evidence_class": "enactment", "notes": "3 fixture .eml listed, selection enters context, real persona commentary offered." },
+    { "id": "S-conversation-reset", "score": 0.8, "evidence_class": "enactment", "notes": "Reset clears topic/context; prior segment sealed with surviving transcript." },
+    { "id": "S-context-display", "score": 0.85, "evidence_class": "enactment", "notes": "Active context surfaced with badge control." },
+    { "id": "S-personality-editor", "score": 0.85, "evidence_class": "enactment", "notes": "Editor round-trip works via assertions — but owner live check: unclear how to edit existing personalities; discoverability gap between mechanism and surface." },
+    { "id": "S-windows-launch", "score": 0.75, "evidence_class": "enactment", "notes": "launch.cmd boots like an installed program; script launcher, not packaged install — same ceiling as prior cycles." },
+    { "id": "S-close-terminate", "score": 0.85, "evidence_class": "enactment", "notes": "Real termination after last SSE window closes; checks carried inline (J4 closed)." },
+    { "id": "S-speech-serialization", "score": 0.9, "evidence_class": "enactment", "notes": "J2 closed: floor-played rows carry real measured playbackMs; serialized, no overlap." },
+    { "id": "S-distinct-preloadeds", "score": 0.85, "evidence_class": "enactment", "notes": "Same prompt → Jaccard 0.07–0.09, clearly different live responses. Blemish: one reply leaks internal 'FACTS' scaffolding vocabulary." },
+    { "id": "S-library-browse", "score": 0.9, "evidence_class": "enactment", "notes": "New scenario (R4/G-D): holdings browser with inspectable detail surface — personas/tools/artifacts/packages — not a log tail." },
+    { "id": "S-faithful-voice", "score": 0.7, "evidence_class": "enactment", "notes": "New scenario (R2/G-B): FIDELITY RULE + grounding check + withhold-in-register + fidelity-flag rows real; two replies honestly withheld, one accurate answer, no invention. Weaknesses: 'retrieved+used' check passes on zero hits; live reply carried fidelity:null — ungrounded and unflagged despite being source-unsupported. Bar met in spirit; check suite lenient." }
+  ],
+  "notes": "Strong cycle — amended 26-scenario suite fully enacted with genuine run artifacts (1584-row scenario ledger corroborates; artifacts/exports/outbox on disk; live-ollama replies). Instance serving on :9770 at JEV time, honesty banner declares all absences incl. the browser-surface/desktop-shell reckoning — no silent convention departures. All Cycle-3 J-flags closed (J1–J4). R1/R4/R5 mechanisms delivered; R2 fidelity mechanism real but check suite lenient (zero-hit pass, fidelity:null on live reply); R3 skippable yet delivered (dyadic rel:held-confidence at 0.5 — though owner reports reorder does not visibly update scores). Canonicals enacted — defensible 57-city S-list-project. Declared absences honestly recorded: fleet install, fleet discovery, exchange media (JSON import only), OAuth connectors, server-side STT, native shell, studio/satellites/companion. No frontier-model escalation recommended."
+}
+```
+
+## Owner review — Cycle 4 (2026-11-23, in progress)
+
+Owner-scored user score **0.45** — "this is an improvement"; completeness
+**0.48** (vs JEV 0.85 — third cycle of large JEV/owner divergence on this
+criterion). Findings so
+far (verbatim in the verdict's `user_commentary`; candidates for
+`shortcomings-005.md`):
+
+- **V-A** Persona art reads as procedurally drawn sprites — expectation is
+  AI/LLM-built art.
+- **V-B** Header list looks like features but is deferred features —
+  confusing labeling.
+- **V-C** Workshop hard to interpret — defined functions need inline
+  explanations.
+- **V-D** Roster reorder supposed to update dyadic confidence scores —
+  no visible score change.
+- **V-E** Diagnostic beeps helpful but meant for instance-to-instance
+  signaling; user-directed alerts should be a jingle/welcome tone.
+- **V-F** Unclear how to edit existing personalities — the editor exists
+  (enactment-verified) but is undiscoverable.
+- **V-G** Displaying sample emails does not demonstrate that user email
+  can be read — S-email-commentary ran on fixture `.eml` files; no
+  configured real-account email source was exercised.
+
 ## Review findings — missing prompt/convention coverage (2026-11-19)
 
 Surfaced by the three-version JEV comparison + owner review. Classification marks where
@@ -852,6 +998,23 @@ harness amendments H1–H4 approved **and applied** to `C:\Harness` —
 cycle-close capture), `rubric.md` (H3 revised defaults), `templates/intake.md`
 (scenario-suite item); `shortcomings-002.md` issued carrying F1–F3, F5, F6 plus the
 direction's convention targets; `direction-002.md` signed.
+
+## Owner review — Cycle 3 (2026-11-23)
+
+Owner scores recorded into the Cycle-3 verdict: existing features 0.4,
+completeness 0.5, user score 0.5; unscored criteria stand per the
+silence=agreement convention. Owner findings — named deficiencies of
+.003 informing how the next fresh build is built better
+(`shortcomings-004.md`, `direction-004.md`):
+
+- **R1 [dir]** Style selector nonfunctional — requested control present but
+  does nothing.
+- **R2 [dir]** Personality speech favors personality over accuracy; engages in
+  hallucination.
+- **R3 [dir]** Default profiles carry a problematic confidence value
+  (non-dyadic).
+- **R4 [dir]** Library surface just contains a log.
+- **R5 [dir]** No way to select or reorder personalities — some are locked out.
 
 ## Prompt
 

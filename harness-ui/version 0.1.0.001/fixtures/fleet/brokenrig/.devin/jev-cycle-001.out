@@ -1,0 +1,13 @@
+Fixture JEV raw output.
+
+```json
+{
+  "criteria": [
+    { "name": "clean launch", "score": 0, "confidence": 0.9, "user_opinion": null }
+  ],
+  "overall": 0.1,
+  "judge_model": "fixture",
+  "scenarios": [],
+  "notes": "Fixture fallback verdict — the only verdict source for brokenrig."
+}
+```

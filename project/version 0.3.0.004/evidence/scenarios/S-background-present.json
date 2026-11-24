@@ -1,0 +1,45 @@
+{
+  "id": "S-background-present",
+  "ran": true,
+  "checks": [
+    {
+      "name": "steward runs recorded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "autonomous runs before manual wake",
+      "pass": true,
+      "detail": 4
+    },
+    {
+      "name": "temporal attention presented",
+      "pass": true,
+      "detail": [
+        "atlas study check-in"
+      ]
+    },
+    {
+      "name": "far-future classified future, not recent",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true,
+  "autonomousBeforeWake": 4,
+  "temporalAttention": [
+    {
+      "summary": "atlas study check-in",
+      "when": "2026-11-24T10:24",
+      "in_h": 30.0,
+      "presentAs": "opportunity",
+      "persona": "Quill"
+    }
+  ],
+  "buckets": {
+    "current": 0,
+    "upcoming": 1,
+    "past": 1,
+    "future": 1
+  }
+}

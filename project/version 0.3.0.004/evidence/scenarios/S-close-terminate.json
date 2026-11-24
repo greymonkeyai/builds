@@ -1,0 +1,19 @@
+{
+  "id": "S-close-terminate",
+  "ran": true,
+  "checks": [
+    {
+      "name": "window presence observed (SSE)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "program terminates after last window closes",
+      "pass": true,
+      "detail": "poll=0 after 57s"
+    }
+  ],
+  "pass": true,
+  "exitCode": 0,
+  "waitedS": 57
+}

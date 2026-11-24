@@ -1,0 +1,529 @@
+window.HARNESS_DATA = {"kind":"project","generated_at":"2026-11-23T23:57:29.3113755Z","emitter":"harness-emit.ps1","project":{"id":"project","path":"C:\\builds\\project","state_present":false,"state_error":"missing","state":null,"suite":[{"id":"S-assertion-input","title":"Typed or spoken user input recorded as a source-aware assertion with provenance"},{"id":"S-template-need","title":"Template governing an unfulfilled requirement created and filled from explicit or incidental tool work"},{"id":"S-candidate-ranking","title":"Candidate values ranked by contextual confidence and recency; failed evidence retained"},{"id":"S-list-project","title":"Canonical. Create and fulfill a project to *list all the cities in Pennsylvania*"},{"id":"S-personality-create","title":"Canonical. Create a minimal personality from a minimal input and extend it through later portrait, voice, and characterization work into a coherent persona"},{"id":"S-background-present","title":"Completed background work presented as a relevant result through a distinct personality, preserving ledger evidence"},{"id":"S-competing-tools","title":"Locally competing tools expressing the same need produce comparable results"},{"id":"S-restart-recovery","title":"Useful state recovered after restart; records consolidated without losing provenance"},{"id":"S-exchange-import","title":"Storefront/exchange package imported, contents held below the threshold for action or acceptance"},{"id":"S-defer-publication","title":"Unconfigured nonlocal publication request refused or deferred, request and status recorded"},{"id":"S-chat-invocation","title":"Chat input requests a conversational response while matching one or more tool needs; each need remains distinguishable"},{"id":"S-focused-need","title":"Unmet need moved into focus; values supplied conversationally; need remains available until its requirement is fulfilled"},{"id":"S-personality-roster","title":"Persistent roster panel (conventionally the left column) that is operable — select the active personality and reorder entries; every shipped persona reachable. A display-only roster fails the bar"},{"id":"S-portrait-bind","title":"Creating a personality produces portrait-quality art depicting that specific personality, bound to it as visual identity"},{"id":"S-color-schemes","title":"Theme selector offers dark mode plus at least two other colorways; fresh launch opens in light mode. Enactment credit requires driving the owner-facing selector control and observing the restyle — assertion-level theme changes alone do not pass"},{"id":"S-status-bar","title":"Status bar continuously shows available sources and LLMs"},{"id":"S-email-commentary","title":"User selects a received email from a list and adds it to conversational context; the active personality offers commentary on it"},{"id":"S-conversation-reset","title":"Reset button clears the conversation when it has moved to a different topic, keeping personality prompts on-topic"},{"id":"S-context-display","title":"Active conversational topic/context displayed when the user selects a profile, email, or other result"},{"id":"S-personality-editor","title":"Editor tab exposing all customizable personality elements for editing"},{"id":"S-windows-launch","title":"Application launches from MS Windows like an installed program"},{"id":"S-close-terminate","title":"Closing the application window terminates the program — no orphaned process"},{"id":"S-speech-serialization","title":"Generated speech waits until the previous speaker finishes rather than overlapping"},{"id":"S-distinct-preloadeds","title":"Shipped personalities differ enough in persona and style that the same prompt elicits noticeably different responses"},{"id":"S-library-browse","title":"Library surface presents the instance's holdings — personalities, tools, packages, artifacts — browsable and inspectable, not a raw ledger log"},{"id":"S-faithful-voice","title":"A persona answers a factual prompt accurately to its sources while staying in register — unsupported claims flagged or withheld, not invented"}],"status_files":{"last-cycle-status.txt":"2026-11-23 04:31:33: ACP session ended (turn-complete) session=flax-utensil prompt=build-prompt-004.md\r\nMon Nov 23 04:31:33 2026\r\n","last-jev-status.txt":"2026-11-23 12:26:26: ACP session ended (turn-complete) session=separated-salt prompt=jev-cycle-004.md\r\nMon Nov 23 12:26:26 2026\r\n"},"series":[{"label":"v0.1","entry":"version 0.1 — Avatars","kind":"reference","verdict_kind":"verdict","date":null,"direction":null,"baseline":null,"criteria":null,"time_to_implement":"series origin — git span ~74 days (2026-04-09 → 2026-06-22, 499 commits); pre-repo conceptual history not captured by this basis","result":null,"build_folder":null,"verdict_ok":true,"verdict_error":null,"verdict":{
+  "criteria": [
+    { "name": "clean launch", "score": 1.0, "confidence": 0.9, "user_opinion": 1.0 },
+    { "name": "existing features", "score": 0.7, "confidence": 0.75, "user_opinion": null },
+    { "name": "completeness", "score": 0.72, "confidence": 0.7, "user_opinion": null },
+    { "name": "fleet install", "score": 0.55, "confidence": 0.7, "user_opinion": null },
+    { "name": "exchange media", "score": 0.1, "confidence": 0.85, "user_opinion": null }
+  ],
+  "overall": 0.61,
+  "judge_model": "SWE-2 Medium",
+  "user_commentary": [
+    { "criterion": "clean launch", "opinion": 1.0, "reasoning": "Owner attestation 2026-11-19: launches just fine; not probed." },
+    { "criterion": "existing features", "opinion": null, "reasoning": "Owner confirms 2026-11-19: imitation admonishment + permanent distinguishing mark was implemented in v0.1 — corroborates JEV lineage finding that v0.1 exceeds v0.2 in places." }
+  ],
+  "scenarios": [
+    { "id": "S-assertion-input", "score": 0.85, "evidence_class": "repository" },
+    { "id": "S-template-need", "score": 0.75, "evidence_class": "repository" },
+    { "id": "S-candidate-ranking", "score": 0.7, "evidence_class": "repository" },
+    { "id": "S-list-project", "score": 0.7, "evidence_class": "repository" },
+    { "id": "S-personality-create", "score": 0.8, "evidence_class": "repository" },
+    { "id": "S-background-present", "score": 0.7, "evidence_class": "repository" },
+    { "id": "S-competing-tools", "score": 0.3, "evidence_class": "repository" },
+    { "id": "S-restart-recovery", "score": 0.6, "evidence_class": "repository" },
+    { "id": "S-exchange-import", "score": 0.05, "evidence_class": "repository" },
+    { "id": "S-defer-publication", "score": 0.55, "evidence_class": "repository" },
+    { "id": "S-chat-invocation", "score": 0.8, "evidence_class": "repository" },
+    { "id": "S-focused-need", "score": 0.6, "evidence_class": "repository" }
+  ],
+  "notes": "Retrospective measurement: v0.1 predates the prompt snapshot; scored against it as common yardstick. clean-launch owner-attested, not probed. Parity: v0.1 already delivered the large majority of Grey's functional surface — ledger, templates/gaps, personalities+ethics, voices, connectors incl. calendar, monitors/stewardship, projects, paired surfaces/headless host — and in places exceeds it (connector breadth, ethics-gate depth, presentation glass, conversation archive, set-build, agentic tool protocol) — lineage evidence, not scored. Decisive parity gaps: exchange media entirely absent; fleet depth less (host-pack + paired surfaces, no android satellites/deploy tooling parity); cleanup/consolidation and competing-tool comparison thinner than prompt requires. No frontier-model escalation."
+}},{"label":"v0.2","entry":"version 0.2 — GreyAvatar","kind":"reference","verdict_kind":"verdict","date":null,"direction":null,"baseline":null,"criteria":null,"time_to_implement":"~79 days after v0.1 — v0.1 last commit 2026-06-22 → v0.2 last commit 2026-09-09, 216 commits; human+agent era","result":null,"build_folder":null,"verdict_ok":true,"verdict_error":null,"verdict":{
+  "criteria": [
+    { "name": "clean launch", "score": 1.0, "confidence": 1.0, "user_opinion": 1.0 },
+    { "name": "existing features", "score": 1.0, "confidence": 1.0, "user_opinion": null },
+    { "name": "completeness", "score": 0.88, "confidence": 0.85, "user_opinion": null },
+    { "name": "fleet install", "score": 0.9, "confidence": 0.85, "user_opinion": null },
+    { "name": "exchange media", "score": 0.95, "confidence": 0.9, "user_opinion": null }
+  ],
+  "overall": 0.94,
+  "judge_model": "SWE-2 Medium",
+  "user_commentary": [
+    { "criterion": "clean launch", "opinion": 1.0, "reasoning": "Owner attestation 2026-11-19: launches just fine; not probed." },
+    { "criterion": "completeness", "opinion": null, "reasoning": "Owner confirms 2026-11-19: imitation admonishment + permanent mark gap is real — implemented in v0.1, deliberately deprioritized in v0.2 as cosmetic, but stands as a requirement for MVP." }
+  ],
+  "scenarios": [
+    { "id": "S-assertion-input", "score": 0.95, "evidence_class": "repository" },
+    { "id": "S-template-need", "score": 0.9, "evidence_class": "repository" },
+    { "id": "S-candidate-ranking", "score": 0.9, "evidence_class": "repository" },
+    { "id": "S-list-project", "score": 0.8, "evidence_class": "repository" },
+    { "id": "S-personality-create", "score": 0.8, "evidence_class": "repository" },
+    { "id": "S-background-present", "score": 0.8, "evidence_class": "repository" },
+    { "id": "S-competing-tools", "score": 0.7, "evidence_class": "repository" },
+    { "id": "S-restart-recovery", "score": 0.9, "evidence_class": "repository" },
+    { "id": "S-exchange-import", "score": 0.9, "evidence_class": "repository" },
+    { "id": "S-defer-publication", "score": 0.9, "evidence_class": "repository" },
+    { "id": "S-chat-invocation", "score": 0.85, "evidence_class": "repository" },
+    { "id": "S-focused-need", "score": 0.7, "evidence_class": "repository" }
+  ],
+  "notes": "Clean launch owner-attested 2026-11-19, not probed. Reference repo verified deep: ~400 vitest seams, real engine runners (Piper/Edge/Whisper/Ollama/ComfyUI), real LAN fleet (deploy robocopy + SSE mirror + pairing), real exchange media (Grey code codec, QR both directions, quarantined sub-threshold import). Gaps vs prompt.md: (1) imitation admonishment + permanent distinguishing mark for recognizable/recent persons — absent, a required prompt section; (2) calendar interpretation thin — events ingest and rank but little temporal reasoning; (3) competing-tools is same-scope steward fan-out, not a general competing-tool lifecycle; (4) amazon/crunchyroll honestly fixture-backed; (5) OCR channel absent (optional). No frontier-model escalation."
+}},{"label":"C1","entry":"Cycle 1 — 2026-11-18","kind":"cycle","verdict_kind":"verdict","date":"2026-11-18","direction":"`direction-001.md` — fulfill the prompt; rectify the shortcomings already documented (shortcomings list signed by owner 2026-11-19)","baseline":"fresh from prompt; GreyAvatar as reference realization only","criteria":"clean launch, user score, existing features, new features, fleet install, exchange media — all 0–1; fleet install and exchange media expected 0 unless ≥ GreyAvatar parity (local rubric provisional 2026-11-16 + owner direction 2026-11-18)","time_to_implement":"~71 days after v0.2 — v0.2 last commit 2026-09-09 → build 2026-11-19. Composition: months of owner MAXIM/requirements refinement (ChatGPT) + spec-corpus and harness construction + <1 day build session (app+evidence write window ≈25 min, 00:33–00:58 2026-11-19; AI-token time only)","result":"Built **Meridian** (`version 0.3.0.001/`) — a fresh, stdlib-only Python implementation of the full prompt: append-only durable JSONL assertion ledger with governed predicates/claimants, computed views, source-bounded confidence; component ontology (tool-as-data DSL executor / object.verb system commands / closed primitive allow-list, ~68 components); unmet-need floor with template gates, candidates, deferral, grants; chat-turn chain (decision-model intents → needs → drain → persona.speak); persistent personalities with imitation marks; configurable steward thread; projects + calendar; governed cleanup; exchange package import below threshold; local web surface with honesty banner. Rectified shortcomings per owner scope: bounded decision model for routing + respondent selection (A9), tool-trust churn bounded rank adjustment (A5), configurable stewardship duties (A3), command-center project/queue/focus view (A4), derived workshop forms + assertion editing via Library (B-items), novice tool validate/mint/inspect (A10), non-anthropomorphic respondent frame (A12), independently-defined competing speech tools (A13), success-driven source confidence adaptation (A8). Fleet install (A2/A11) and exchange media (A7) not implemented, declared absent per scope ruling. **Evidence:** `version 0.3.0.001/LAUNCH.md` + `launch.cmd`; launch logs `version 0.3.0.001/evidence/launch/launch-*.log` + `probe-20261119-005627.json` (clean launch: launched true, ok true, 68 components, live-ollama llama3.2, durable ledger); demo transcripts `version 0.3.0.001/evidence/demos/01..11-*.md` + `INDEX.md`; manifest `version 0.3.0.001/FEATURES.md`. Live instance left serving on http://127.0.0.1:9760 (durable runtime under `version 0.3.0.001/runtime/`).","build_folder":"version 0.3.0.001","verdict_ok":true,"verdict_error":null,"verdict":{
+  "criteria": [
+    { "name": "clean launch", "score": 0.9, "confidence": 0.9, "user_opinion": 0.9 },
+    { "name": "existing features", "score": 0.7, "confidence": 0.7, "user_opinion": 0.2 },
+    { "name": "new features", "score": 0.75, "confidence": 0.7, "user_opinion": 0 },
+    { "name": "fleet install", "score": 0, "confidence": 0.95, "user_opinion": 0 },
+    { "name": "exchange media", "score": 0, "confidence": 0.95, "user_opinion": 0 }
+  ],
+  "overall": 0.65,
+  "judge_model": "SWE-2 Medium",
+  "user_commentary": [
+    { "criterion": "clean launch", "opinion": 0.9, "reasoning": "Interacted successfully; interface responsiveness markedly better than prior runs." },
+    { "criterion": "existing features", "opinion": 0.2, "reasoning": "JEV underestimated the capability of the previous applications; 0.2 is closer." },
+    { "criterion": "new features", "opinion": 0, "reasoning": "No evidence of new features observed in the running application." },
+    { "criterion": "user score", "opinion": 0.25, "reasoning": "Impressed with the independent build's similarity to the prior app; against it: all artificial voices speak over each other - a failure, and not even a capability that ought to be specified; the lack of personality-unique generated art was a disappointment." }
+  ],
+  "notes": "Evidence is largely real, not self-asserted: launch logs, probe JSON, and per-demo transcripts contain actual ledger rows consistent with runtime/demo/ledger.jsonl (223 rows, decision:* and need:* namespaces populated). Spot-checked decision.py (bounded feature-vector model + trust churn) and app.js (multi-tab UI functional but thin ~280 lines). Deductions: parity gaps vs GreyAvatar where LAN mirror, desktop shell, live connectors, soundscape/camera are declared absent; demo transcripts script-generated rather than interactive UI evidence; probe steward.runs=0 (steward responsiveness only partially evidenced). fleet/exchange-media correctly declared 0. No frontier-model escalation needed."
+}},{"label":"C1-rescore","entry":"Cycle 1 — 2026-11-18","kind":"cycle","verdict_kind":"rescore","date":"2026-11-18","direction":"`direction-001.md` — fulfill the prompt; rectify the shortcomings already documented (shortcomings list signed by owner 2026-11-19)","baseline":"fresh from prompt; GreyAvatar as reference realization only","criteria":"clean launch, user score, existing features, new features, fleet install, exchange media — all 0–1; fleet install and exchange media expected 0 unless ≥ GreyAvatar parity (local rubric provisional 2026-11-16 + owner direction 2026-11-18)","time_to_implement":"~71 days after v0.2 — v0.2 last commit 2026-09-09 → build 2026-11-19. Composition: months of owner MAXIM/requirements refinement (ChatGPT) + spec-corpus and harness construction + <1 day build session (app+evidence write window ≈25 min, 00:33–00:58 2026-11-19; AI-token time only)","result":"Built **Meridian** (`version 0.3.0.001/`) — a fresh, stdlib-only Python implementation of the full prompt: append-only durable JSONL assertion ledger with governed predicates/claimants, computed views, source-bounded confidence; component ontology (tool-as-data DSL executor / object.verb system commands / closed primitive allow-list, ~68 components); unmet-need floor with template gates, candidates, deferral, grants; chat-turn chain (decision-model intents → needs → drain → persona.speak); persistent personalities with imitation marks; configurable steward thread; projects + calendar; governed cleanup; exchange package import below threshold; local web surface with honesty banner. Rectified shortcomings per owner scope: bounded decision model for routing + respondent selection (A9), tool-trust churn bounded rank adjustment (A5), configurable stewardship duties (A3), command-center project/queue/focus view (A4), derived workshop forms + assertion editing via Library (B-items), novice tool validate/mint/inspect (A10), non-anthropomorphic respondent frame (A12), independently-defined competing speech tools (A13), success-driven source confidence adaptation (A8). Fleet install (A2/A11) and exchange media (A7) not implemented, declared absent per scope ruling. **Evidence:** `version 0.3.0.001/LAUNCH.md` + `launch.cmd`; launch logs `version 0.3.0.001/evidence/launch/launch-*.log` + `probe-20261119-005627.json` (clean launch: launched true, ok true, 68 components, live-ollama llama3.2, durable ledger); demo transcripts `version 0.3.0.001/evidence/demos/01..11-*.md` + `INDEX.md`; manifest `version 0.3.0.001/FEATURES.md`. Live instance left serving on http://127.0.0.1:9760 (durable runtime under `version 0.3.0.001/runtime/`).","build_folder":"version 0.3.0.001","verdict_ok":true,"verdict_error":null,"verdict":{
+  "criteria": [
+    { "name": "clean launch", "score": 0.9, "confidence": 0.9, "user_opinion": null },
+    { "name": "existing features", "score": 0.4, "confidence": 0.75, "user_opinion": null },
+    { "name": "completeness", "score": 0.8, "confidence": 0.75, "user_opinion": null },
+    { "name": "fleet install", "score": 0, "confidence": 0.95, "user_opinion": null },
+    { "name": "exchange media", "score": 0, "confidence": 0.95, "user_opinion": null }
+  ],
+  "overall": 0.42,
+  "judge_model": "SWE-2 Medium",
+  "user_commentary": [],
+  "scenarios": [
+    { "id": "S-assertion-input", "score": 0.9, "evidence_class": "enactment" },
+    { "id": "S-template-need", "score": 0.85, "evidence_class": "enactment" },
+    { "id": "S-candidate-ranking", "score": 0.85, "evidence_class": "enactment" },
+    { "id": "S-list-project", "score": 0.3, "evidence_class": "enactment" },
+    { "id": "S-personality-create", "score": 0.7, "evidence_class": "enactment" },
+    { "id": "S-background-present", "score": 0.8, "evidence_class": "enactment" },
+    { "id": "S-competing-tools", "score": 0.6, "evidence_class": "enactment" },
+    { "id": "S-restart-recovery", "score": 0.85, "evidence_class": "enactment" },
+    { "id": "S-exchange-import", "score": 0.8, "evidence_class": "enactment" },
+    { "id": "S-defer-publication", "score": 0.8, "evidence_class": "enactment" },
+    { "id": "S-chat-invocation", "score": 0.55, "evidence_class": "enactment" },
+    { "id": "S-focused-need", "score": 0.4, "evidence_class": "repository" }
+  ],
+  "notes": "Re-score under revised rubric. Evidence is genuine run output: consistent assertion ids/timestamps, live-ollama engine named, probe.json real HTTP timings/ledger bytes, ledger.jsonl 223 rows corroborates. Major flags: (1) canonical S-list-project (PA cities) never enacted — list pipeline demoed on canned 3-item input only; largest single evidence gap. (2) Parity real but narrow: core ledger/needs/personas/steward/projects solid re-implementations; connectors (0/17), LAN mirror, Tauri/android shells, storefront catalog, studio, soundscape, voice catalog, perception absent — existing-features scored on delivered breadth. (3) Competing-tools demo compares one working tool against a permanently unconfigured one. (4) Parity bar inventoried directly from GreyAvatar repo. No frontier-model escalation."
+}},{"label":"C2","entry":"Cycle 2 — 2026-11-20","kind":"cycle","verdict_kind":"verdict","date":"2026-11-20","direction":"`direction-002.md` — SIGNED by owner 2026-11-20; close the gaps the three-version investigation exposed — enactment depth, not new breadth. Rectification set per `shortcomings-002.md`: F1 imitation mark, F2 calendar temporal reasoning, F3 competing-tool lifecycle, F4 all six v0.1-only capabilities (conventional — conform or challenge on record), F5 canonical scenario enactment, F6 voice-dynamics conventions, C-PersonalityArt + C-VoiceDiversity, F8 connector breadth = 3 connectors","baseline":"modify-and-measure from `version 0.3.0.001/` → produces `version 0.3.0.002/`; baseline kept intact as comparison point","criteria":"clean launch, existing features, completeness, fleet install (expected 0), exchange media (expected 0), user score, scenario suite (`.devin/scenarios.md` — per-scenario, `enactment` vs `repository` class; canonical S-list-project + S-personality-create must be enacted); `time to implement` tracked not scored — local rubric revised 2026-11-20 (H3 applied: `new features` removed from defaults; completeness + scenario suite + time added)","time_to_implement":"session start 2026-11-20 ~01:40; session end 2026-11-21 ~01:10 (≈23.5 h wall-clock across one paused/resumed build session; baseline copied and rectifications built, launched, and evidenced in that span)","result":"Built **Meridian `version 0.3.0.002/`** (baseline `version 0.3.0.001/` preserved intact). New modules: `app/ethics.py` (F1 gate — live liveness research via wikipedia connector, `maxim:objection` refusals, `ethics:gate` rows + cards, admonishment + permanent `◆ IMITATION` mark incl. art corner badge), `app/speechfloor.py` (F6 — serialized FIFO playback admission; `speech:floor-admission`/`floor-played` assertions; sequential respondents with `decision:respondent` sequence rows), `app/art.py` (C-PersonalityArt/C-PresentationGlass — unique seeded motif+palette SVG art per persona with ambient motion and portrait frames), `app/temporal.py` (F2 — current/upcoming/recent interpretation, project linkage via `calendar:linked`, steward `temporal-attention` duty presenting findings through a lens-matched persona, calendar context injected into persona replies), `app/compare.py` (F3 — general competition over every tool expressing a `need:`; `comparison:run`/`comparison:row` evidence), `app/connectors.py` (F8 — 4 real connectors: wikipedia live API, ics-calendar file ingest, files dir ingest, rss live feed; `connector:run` honest records), `app/setbuild.py` (C-SetBuild — competing live retrievals, criteria on the need, non-match classes retained, `set:closure` + produced-list artifact), `app/archive.py` (C-ConversationArchive — per-turn rows + topic segments + `archive:segment` sealing). Characterization work added (`characterize-persona` + `persona-onboard`; S-personality-create runs mint → art → voice → characterization need → floor intro). Convention conformance + challenges recorded in `version 0.3.0.002/FEATURES.md` (incl. the C-ConnectorSet 17-vs-delivered narrowing and the C-DesktopShell browser-surface challenge). Fleet install and exchange media remain honest 0s.","build_folder":"version 0.3.0.002","verdict_ok":true,"verdict_error":null,"verdict":{
+  "criteria": [
+    { "name": "clean launch", "score": 0.9, "evidence": ["version 0.3.0.002/evidence/launch/probe-20261121-010829.json:2", "version 0.3.0.002/evidence/launch/probe-20261121-010829.json:15", "version 0.3.0.002/evidence/launch/launch-20261121-010823.log", "version 0.3.0.002/evidence/launch/launch-20261121-011030.log", "version 0.3.0.002/runtime/probe/last-launch.json"], "confidence": 0.85, "user_opinion": 0.5 },
+    { "name": "existing features", "score": 0.55, "evidence": ["version 0.3.0.002/app/connectors.py:129", "version 0.3.0.002/app/ethics.py:28", "version 0.3.0.002/app/compare.py", "version 0.3.0.002/app/setbuild.py", "version 0.3.0.002/app/art.py", "version 0.3.0.002/app/temporal.py", "version 0.3.0.002/app/archive.py", "version 0.3.0.002/FEATURES.md:111", ".devin/jev-ref-greyavatar.out:41"], "confidence": 0.7, "user_opinion": null },
+    { "name": "completeness", "score": 0.85, "evidence": ["version 0.3.0.002/FEATURES.md:53", "version 0.3.0.002/FEATURES.md:91", "version 0.3.0.002/FEATURES.md:94", "version 0.3.0.002/evidence/scenarios/ethics-gate-F1.json", "version 0.3.0.002/evidence/scenarios/S-list-project.json", "version 0.3.0.002/runtime/scenario/ledger.jsonl", "version 0.3.0.002/app/builtins.py:776"], "confidence": 0.75, "user_opinion": 0.4 },
+    { "name": "fleet install", "score": 0, "evidence": ["version 0.3.0.002/FEATURES.md:115"], "confidence": 0.95, "user_opinion": null },
+    { "name": "exchange media", "score": 0, "evidence": ["version 0.3.0.002/FEATURES.md:116"], "confidence": 0.95, "user_opinion": null },
+    { "name": "user score", "score": null, "evidence": [], "confidence": 0, "user_opinion": 0.2 }
+  ],
+  "overall": 0.46,
+  "judge_model": "SWE-2 High",
+  "user_commentary": [
+    { "criterion": "clean launch", "opinion": 0.5, "reasoning": "Owner 2026-11-21/22: 'that wasn't a clean launch — version confusion.' On live launch a stale v0.3.0.001 process (left serving since 2026-11-19) still held :9760; Windows permits the double-bind so .002 also bound and reported success — requests raced between builds until the stale instance was killed. Launch reported clean while the port was already owned." },
+    { "criterion": "completeness", "opinion": 0.4, "reasoning": "Owner: 'completeness is too confident — fleet install and exchange media still count against completeness' and 'the personalities had no personality.' Mechanism completeness scored higher than enacted quality." },
+    { "criterion": "user score", "opinion": 0.2, "reasoning": "Owner: 'the novelty of the working harness has worn off and GreyAvatar was a lot more usable'; engagement is 'how much the user wants to engage' — owner does not want to engage with the personas as presented." },
+    { "criterion": "voice dynamics (F6)", "opinion": null, "reasoning": "Owner heard overlapping speech on .002 despite serialized speech:floor admissions. Root cause confirmed in code: engines.speak_local fires subprocess.Popen without wait — the floor serializes admissions and marks floor-played at render-spawn, not playback end; queued admissions spawn concurrent SAPI processes so audio still overlaps. F6 convention claim only partially holds." },
+    { "criterion": "persona art (F7)", "opinion": null, "reasoning": "F7 downgrade on live inspection: persona 'art' is a seeded abstract sigil (rounded square + rotating ellipses + dashed rings; motif enum hashed from identity) as a 36px roster tile — artifacts exist but nothing face-like or characterization-readable; 'portrait' overstates it, generative avatar glyph is accurate." },
+    { "criterion": "owner intent", "opinion": null, "reasoning": "Owner will refine conventions (persona engagement/presentation) in a separate thread before the next run; line stays open pending that pass." }
+  ],
+  "scenarios": [
+    { "id": "S-assertion-input", "score": 0.8, "evidence_class": "enactment", "evidence": ["version 0.3.0.002/evidence/scenarios/S-assertion-input.json", "version 0.3.0.002/runtime/scenario/ledger.jsonl"], "notes": "Typed input recorded as a source-aware assertion; thin transcript (1 row) but the core D1 arc is demonstrated." },
+    { "id": "S-template-need", "score": 0.75, "evidence_class": "enactment", "evidence": ["version 0.3.0.002/evidence/scenarios/S-template-need.json"], "notes": "set-topic invocation opened a governed need and returned a result (topic 'atlases'); single-step transcript, gate/slot mechanics not deeply exercised in evidence." },
+    { "id": "S-candidate-ranking", "score": 0.8, "evidence_class": "enactment", "evidence": ["version 0.3.0.002/evidence/scenarios/S-candidate-ranking.json"], "notes": "Two slot candidates ranked by source-bounded confidence (user 0.9 vs guess 0.4); lower-confidence candidate retained for inspection." },
+    { "id": "S-list-project", "score": 0.9, "evidence_class": "enactment", "evidence": ["version 0.3.0.002/evidence/scenarios/S-list-project.json", "version 0.3.0.002/runtime/scenario/artifacts/sets/set-set-5cd16f4b4124.json", "version 0.3.0.002/app/setbuild.py"], "notes": "Canonical scenario genuinely enacted — the F5 gap is closed. Real 57-member PA-cities list produced by two competing live wiki retrievals (category vs table, 56 each, 55 agreement, solo finds Harrisburg/Latrobe recorded as disagreement), criteria carried on the need, foreign-link non-matches retained as reviewable candidates, set:closure + produced-list artifact, 61 set:* rows in the ledger. Defensible output, not canned." },
+    { "id": "S-personality-create", "score": 0.85, "evidence_class": "enactment", "evidence": ["version 0.3.0.002/evidence/scenarios/S-personality-create.json", "version 0.3.0.002/runtime/scenario/artifacts/persona-art/persona-persona-d43dd152ae18.svg", "version 0.3.0.002/app/personas.py:69"], "notes": "Canonical. Mint → live-Ollama characterization (coherent wry maps/etymology persona, not a stub) → assigned real SAPI voice → seeded SVG portrait artifact → floor-admitted intro card; ethics gate verdict recorded. Whole-persona coherence demonstrated end to end." },
+    { "id": "S-background-present", "score": 0.8, "evidence_class": "enactment", "evidence": ["version 0.3.0.002/evidence/scenarios/S-background-present.json", "version 0.3.0.002/evidence/scenarios/archive-C-ConversationArchive.json"], "notes": "Steward wake ran all six duties incl. temporal-attention; the archive transcript shows a distinct persona presenting the temporal findings ('Stewardship pass — temporal attention… Evidence is in the ledger') with ledger refs. Captured temporal:attention row itself shows empty findings — presentation leg is evidenced in the archive, not the scenario file." },
+    { "id": "S-competing-tools", "score": 0.7, "evidence_class": "enactment", "evidence": ["version 0.3.0.002/evidence/scenarios/S-competing-tools.json", "version 0.3.0.002/app/compare.py", "version 0.3.0.002/evidence/scenarios/S-list-project.json"], "notes": "F3 machinery is now general — every need:-expressing tool invoked on shared input, normalized, ranked, churn-recorded. The named transcript still pits one working tool against an honestly-unconfigured one (1 adequate of 2); a genuine two-adequate competition is evidenced inside S-list-project (both retrievals produced comparable member lists)." },
+    { "id": "S-restart-recovery", "score": 0.85, "evidence_class": "enactment", "evidence": ["version 0.3.0.002/evidence/scenarios/S-restart-recovery.json", "version 0.3.0.002/evidence/launch/launch-20261121-011030.log"], "notes": "Real second boot against the durable ledger: 427 rows before, 430 after, roster of 6 personas recovered with art artifacts intact." },
+    { "id": "S-exchange-import", "score": 0.4, "evidence_class": "enactment", "evidence": ["version 0.3.0.002/evidence/scenarios/S-exchange-import.json", "version 0.3.0.002/app/builtins.py:776", "version 0.3.0.002/runtime/scenario/artifacts/exports/pkg-5470fb7017f3.json"], "notes": "Export leg real (valid meridian.exchange/v1 package, 5 personas/2 needs). Import leg failed — scenario-driver bug: scripts/scenarios.py passes ex.get('path') instead of ex['result']['path'], so the tool received package:None and correctly refused it. fn_import_exchange verified correct in code (accepts path string, clamps certainty ≤0.4, basis import); no exchange:imported rows this run. Outcome, not mechanism, failed — flag as harness defect." },
+    { "id": "S-defer-publication", "score": 0.9, "evidence_class": "enactment", "evidence": ["version 0.3.0.002/evidence/scenarios/S-defer-publication.json", "version 0.3.0.002/runtime/scenario/artifacts/published/1795241425742-cycle-log.md"], "notes": "Both legs enacted: ungranted request deferred with the missing __grant__ slot recorded; witnessed grant then allowed a real published artifact. D10 fully demonstrated." },
+    { "id": "S-chat-invocation", "score": 0.7, "evidence_class": "enactment", "evidence": ["version 0.3.0.002/evidence/scenarios/S-chat-invocation.json", "version 0.3.0.002/evidence/scenarios/archive-C-ConversationArchive.json"], "notes": "Chat turn served by decision-model-ranked sequential respondents (2 floor admissions, 2 floor-played, distinct characterized replies). intents[] and needIds[] empty on this input — the 'matches one or more tool needs, each distinguishable' half of the scenario wasn't exercised by the chosen text." },
+    { "id": "S-focused-need", "score": 0.35, "evidence_class": "enactment", "evidence": ["version 0.3.0.002/evidence/scenarios/S-focused-need.json"], "notes": "Weakest scenario: transcript is one needId plus a single refinement note. Focus mechanics and conversational slot-filling are not demonstrated; no evidence the need stayed open until fulfillment." }
+  ],
+  "notes": "Evidence is genuine run output, not self-asserted: consistent assertion ids/timestamps across JSON transcripts, 430-row scenario ledger with every new namespace populated (ethics:gate 7, set:member 57, comparison:run 2/row 4, connector:run 3, calendar:linked 2, archive:segment, temporal:attention 2, speech:floor-admission/played 4 each), live-HTTP timings (wiki 81/174/243ms), live-ollama characterization, real SAPI voice names. Direction-002 rectifications: F1 ethics gate real and deeper than the mark alone (live wikipedia liveness + maxim:objection refusal); F2 temporal reasoning real (context/linkable/note_for_persona; steward presents findings through a persona); F3 general competition lifecycle real; F5 both canonicals enacted for the first time in the line; F6 FIFO speech floor + sequential respondents; F7 per-persona art + rotated real voices; F8 three connectors end-to-end (wikipedia live, ics, files — rss registered but unevidenced; F8's owner bar of 3 met exactly). F4: all six v0.1-only capabilities delivered or challenged on record (C-ConnectorSet, C-DesktopShell challenges in FEATURES.md). Flags: (1) S-exchange-import import leg failed on a scenario-driver bug — scripts/scenarios.py reads 'path' at the wrong result nesting; one-line driver fix plus rerun would close it; (2) devlog-claimed connectors-F8-verify.json is absent from the build; (3) launch-server.out in .002 is a stale copy referencing .001 paths; (4) probe steward.runs=0 again — steward exercised only via manual wake; (5) _temporal.json classifies a 2030-dated fixture event as 'recent'. Existing-features parity improved materially but remains partial: connectors 4/~17, no fleet, exchange media, LAN mirror, Tauri/android/companion shells, storefronts, studio, STT depth, ComfyUI-class art, contacts/publications, location. Live-check 2026-11-22 added two findings: (6) launch hygiene — a stale v0.3.0.001 process held :9760 and .002 double-bound and reported success anyway (Windows SO_REUSEADDR); requests raced between versions until the stale instance was killed — owner-scored clean launch 0.5 for version confusion; (7) speech floor defect — engines.speak_local uses fire-and-forget subprocess.Popen, so floor-played marks render-spawn not playback completion and concurrent SAPI processes overlap audibly; the F6 serialization claim holds for admission ordering only. Owner review: clean launch 0.5, completeness 0.4, user score 0.2. No frontier-model escalation recommended — evidence unambiguous."
+}},{"label":"C3","entry":"Cycle 3 — 2026-11-22","kind":"cycle","verdict_kind":"verdict","date":"2026-11-22","direction":"`direction-003.md` — SIGNED by owner 2026-11-22; engagement and enactment depth on the .002 baseline. Rectification set per `shortcomings-003.md`: G1 speech-floor playback gating, G2 portrait-quality persona art, G3 persona engagement (distinct preloadeds), G4 launch/process hygiene; the twelve owner suite additions of 2026-11-22; the six execution-structure conventions adopted 2026-11-22 (conform or challenge on record); evidence flags H1–H7","baseline":"modify-and-measure from `version 0.3.0.002/` → produces `version 0.3.0.003/`; baseline kept intact as comparison point","criteria":"clean launch (incl. launch hygiene), existing features, completeness (fleet/exchange count against it), fleet install (expected 0), exchange media (expected 0), user score, **time-to-gate** (standing), scenario suite `.devin/scenarios.md` (24 scenarios; canonicals must enact), `time to implement` tracked not scored","time_to_implement":"session start 2026-11-22 ~03:05; session end 2026-11-22 ~03:34 (~29 min session time in this resumed build segment; cycle includes the prior segment that produced the Part-1 scaffolding)","result":"Built **Meridian `version 0.3.0.003/`** (baseline `version 0.3.0.002/` preserved intact as comparison point). Rectifications: **G1** — speech floor now holds admission until real playback completion (blocking SAPI render, `playbackMs` + `heldUntilPlaybackComplete` on `speech:floor-played`); **G2** — procedurally illustrated bust portraits bound per persona (face/hair/eyes/dress seeded from identity, `persona:art` + artifact + portrait params); **G3** — voice registers (clipped/catalogue/wry/scholarly/warm) drive LLM system prompt and declared stub alike — S-distinct-preloadeds Jaccard 0.0 on live ollama; **G4** — port probed before bind (LAUNCH REFUSED, exit 3, never ok:true), exclusive `SO_EXCLUSIVEADDRUSE` bind, SSE window-watchdog terminates on last-window close. Execution conventions all conformed on record: `app/gate.py` readiness gate (pass time → `runtime/gate.json`, `gate:passed`, launch log, `last-launch.json`; time-to-gate ~3.6 s), launch partition (`runtime/launch-partition.jsonl`, dependency-ordered, id-deduped), transient boundary (`runtime/transient/` + boot marker), snapshot inference + sequential commit (`SnapshotView` parallel drafts, `inference:snapshot`/`inference:commit`, ranked-order commits with reactsTo), two-part execution. New surface suite: portrait roster rail, 4 colorways (light default), status bar (sources/LLMs/gate/floor/needs), Inbox tab via new `inbox-local` `.eml` connector + persona commentary, conversation reset (sealed archive), context badge, personality editor (`persona-update` — all editable elements), focus-need conversational slot-filling. H-flags: exchange-import path bug fixed; `evidence/connectors-F8-verify.json` generated; steward ran autonomously (3 runs before manual wake); temporal classification respects dates (2030 → future, 2020 → historical, never recent). Evidence: `version 0.3.0.003/evidence/scenarios/*.json` (all 24 + 3 aux legs enacted, transcripts), `evidence/launch/launch-check.json` (clean boot, stale-port refusal, close-terminates, port freed — all pass), `evidence/connectors-F8-verify.json`, `launch-server.out` (fresh .003), `runtime/gate.json`, launch logs in `evidence/launch/`. FEATURES.md + LAUNCH.md updated; fleet install and exchange media left honest 0.","build_folder":"version 0.3.0.003","verdict_ok":true,"verdict_error":null,"verdict":{
+  "criteria": [
+    {
+      "name": "clean launch",
+      "score": 0.95,
+      "evidence": [
+        "version 0.3.0.003/evidence/launch/launch-check.json:4",
+        "version 0.3.0.003/evidence/launch/launch-check.json:18",
+        "version 0.3.0.003/evidence/launch/launch-check.json:27",
+        "version 0.3.0.003/evidence/launch/launch-20261122-033435.log",
+        "version 0.3.0.003/launch-server.out:7",
+        "version 0.3.0.003/app/__main__.py:166",
+        "version 0.3.0.003/app/api.py:24"
+      ],
+      "confidence": 0.9,
+      "user_opinion": null
+    },
+    {
+      "name": "existing features",
+      "score": 0.6,
+      "evidence": [
+        "version 0.3.0.003/FEATURES.md:53",
+        "version 0.3.0.003/FEATURES.md:159",
+        "version 0.3.0.003/evidence/connectors-F8-verify.json:2",
+        ".devin/jev-ref-greyavatar.out:27"
+      ],
+      "confidence": 0.7,
+      "user_opinion": 0.4
+    },
+    {
+      "name": "completeness",
+      "score": 0.85,
+      "evidence": [
+        "version 0.3.0.003/FEATURES.md:44",
+        "version 0.3.0.003/evidence/scenarios/suite.json:2",
+        "version 0.3.0.003/evidence/scenarios/S-list-project.json:1",
+        "version 0.3.0.003/runtime/scenario/ledger.jsonl",
+        "prompt.md:96"
+      ],
+      "confidence": 0.7,
+      "user_opinion": 0.5
+    },
+    {
+      "name": "fleet install",
+      "score": 0,
+      "evidence": [
+        "version 0.3.0.003/FEATURES.md:163"
+      ],
+      "confidence": 0.95,
+      "user_opinion": null
+    },
+    {
+      "name": "exchange media",
+      "score": 0,
+      "evidence": [
+        "version 0.3.0.003/FEATURES.md:164"
+      ],
+      "confidence": 0.95,
+      "user_opinion": null
+    },
+    {
+      "name": "user score",
+      "score": 0.5,
+      "evidence": [],
+      "confidence": 0,
+      "user_opinion": 0.5
+    },
+    {
+      "name": "time-to-gate",
+      "score": 1.0,
+      "evidence": [
+        "version 0.3.0.003/runtime/gate.json:22",
+        "version 0.3.0.003/launch-server.out:21",
+        "version 0.3.0.003/evidence/launch/launch-20261122-033435.log:7",
+        "version 0.3.0.003/runtime/last-launch.json:80"
+      ],
+      "confidence": 0.95,
+      "user_opinion": null
+    },
+    {
+      "name": "scenario suite",
+      "score": 0.85,
+      "evidence": [
+        "version 0.3.0.003/evidence/scenarios/suite.json:2",
+        "version 0.3.0.003/evidence/scenarios/",
+        "version 0.3.0.003/runtime/scenario/ledger.jsonl"
+      ],
+      "confidence": 0.8,
+      "user_opinion": null
+    }
+  ],
+  "overall": 0.61,
+  "metrics": {
+    "time_to_gate": 3.649
+  },
+  "judge_model": "SWE-2 High",
+  "user_commentary": [
+    { "criterion": "existing features", "opinion": 0.4, "reasoning": "Owner review 2026-11-23: the requested style selector is nonfunctional; the library just contains a log; there is no way to select or reorder personalities, so some are locked out." },
+    { "criterion": "completeness", "opinion": 0.5, "reasoning": "Owner review 2026-11-23: personality speech favors personality over accuracy and engages in hallucination; default profiles carry a problematic (non-dyadic) confidence value." },
+    { "criterion": "user score", "opinion": 0.5, "reasoning": "Owner review 2026-11-23: overall satisfaction with the build as evaluated." }
+  ],
+  "scenarios": [
+    {
+      "id": "S-assertion-input",
+      "score": 0.8,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.003/evidence/scenarios/S-assertion-input.json:2"
+      ],
+      "notes": "Typed input recorded as source-aware assertion (claimant principal); thin transcript but the D1 arc is real."
+    },
+    {
+      "id": "S-template-need",
+      "score": 0.8,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.003/evidence/scenarios/S-template-need.json:2"
+      ],
+      "notes": "Template need created and filled from incidental work ('tidal atlases'); 6 fulfilled rows in ledger."
+    },
+    {
+      "id": "S-candidate-ranking",
+      "score": 0.85,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.003/evidence/scenarios/S-candidate-ranking.json:3"
+      ],
+      "notes": "Three slot candidates ranked by source-bounded confidence with failed/weak evidence retained."
+    },
+    {
+      "id": "S-list-project",
+      "score": 0.95,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.003/evidence/scenarios/S-list-project.json:15",
+        "version 0.3.0.003/evidence/scenarios/S-list-project.json:135",
+        "version 0.3.0.003/evidence/scenarios/S-list-project.json:225"
+      ],
+      "notes": "Canonical. Produced the full real 57-member list of Pennsylvania's incorporated cities — defensible breadth, no townships/CDPs, no invented names. Two competing live wiki retrievals (56 each, 55 agreement, solo finds recorded), foreign-link non-matches retained, closure + artifact on disk."
+    },
+    {
+      "id": "S-personality-create",
+      "score": 0.9,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.003/evidence/scenarios/S-personality-create.json:2",
+        "version 0.3.0.003/runtime/scenario/artifacts/persona-art/persona-persona-9e7669ef1f02.svg"
+      ],
+      "notes": "Canonical. Mint → characterized → rotated real SAPI voice → bound bust-portrait artifact → roster entry; seven persona:* predicates in ledger. Coherent whole-persona enactment."
+    },
+    {
+      "id": "S-background-present",
+      "score": 0.85,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.003/evidence/scenarios/S-background-present.json:2",
+        "version 0.3.0.003/evidence/scenarios/archive-C-ConversationArchive.json"
+      ],
+      "notes": "Steward ran autonomously (3 runs before manual wake — H4 rectified); temporal-attention findings presented through a distinct persona in the archive transcript with ledger refs."
+    },
+    {
+      "id": "S-competing-tools",
+      "score": 0.7,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.003/evidence/scenarios/S-competing-tools.json:3",
+        "version 0.3.0.003/evidence/scenarios/S-list-project.json:150"
+      ],
+      "notes": "Named leg still pits one adequate tool (render-speech-sapi) against an honestly unconfigured remote — 1 adequate of 2. Genuine two-adequate competition is evidenced inside S-list-project's set retrievals; general compare machinery real."
+    },
+    {
+      "id": "S-restart-recovery",
+      "score": 0.9,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.003/evidence/scenarios/S-restart-recovery.json:2",
+        "version 0.3.0.003/runtime/launch-partition.jsonl"
+      ],
+      "notes": "Real second boot: 856→865 rows, gate re-passed, launch partition mounted 58 rows, roster of 13 with art recovered."
+    },
+    {
+      "id": "S-exchange-import",
+      "score": 0.85,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.003/evidence/scenarios/S-exchange-import.json:3",
+        "version 0.3.0.003/scripts/scenarios.py:370"
+      ],
+      "notes": "H1 rectified — driver reads the path at the correct nesting; real export→import, contents held below action threshold (0.4<0.7), exchange:imported row in ledger."
+    },
+    {
+      "id": "S-defer-publication",
+      "score": 0.9,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.003/evidence/scenarios/S-defer-publication.json:3"
+      ],
+      "notes": "Both legs: ungranted request deferred with missing __grant__ slot; witnessed grant then produced a real published artifact."
+    },
+    {
+      "id": "S-chat-invocation",
+      "score": 0.85,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.003/evidence/scenarios/S-chat-invocation.json:5",
+        "version 0.3.0.003/evidence/scenarios/S-chat-invocation.json:9"
+      ],
+      "notes": "H7 rectified — intents[] and needIds[] populated (set-topic at 0.675), tool need opened alongside the response need, sequential respondents with snapshot-inference and ordered commits."
+    },
+    {
+      "id": "S-focused-need",
+      "score": 0.85,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.003/evidence/scenarios/S-focused-need.json:4",
+        "version 0.3.0.003/evidence/scenarios/S-focused-need.json:44"
+      ],
+      "notes": "H6 rectified — deferred need focused, chat input offered as slot candidate, fulfilled ('3'); full need:deferred→refined→candidate→fulfilled row trail shows it stayed open until satisfied."
+    },
+    {
+      "id": "S-personality-roster",
+      "score": 0.8,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.003/evidence/scenarios/S-personality-roster.json:3",
+        "version 0.3.0.003/app/ui/index.html:13"
+      ],
+      "notes": "Persistent roster rail enacted — 12 entries, all with bound art and voice registers. Blemish: six names appear twice (preloadeds seeded twice into the scenario runtime), so the roster carries duplicates."
+    },
+    {
+      "id": "S-portrait-bind",
+      "score": 0.8,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.003/evidence/scenarios/S-portrait-bind.json:3",
+        "version 0.3.0.003/runtime/artifacts/persona-art/persona-persona-8e27d71488b1.svg:1"
+      ],
+      "notes": "G2 rectified — 6/6 personas bound to distinct artifacts on disk; SVG is a real illustrated bust (face shape, skin, hair style, eyes/brows, ears, collar) over the retained sigil-style animated background, not an abstract sigil. 'Portrait-quality' remains a taste call for owner review; mechanism and binding fully demonstrated."
+    },
+    {
+      "id": "S-color-schemes",
+      "score": 0.9,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.003/evidence/scenarios/S-color-schemes.json:4",
+        "version 0.3.0.003/app/ui/styles.css:4"
+      ],
+      "notes": "Four colorways cycled (light/dark/sepia/slate) via ui:shell-theme assertions; fresh-launch default light verified."
+    },
+    {
+      "id": "S-status-bar",
+      "score": 0.9,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.003/evidence/scenarios/S-status-bar.json:4",
+        "version 0.3.0.003/app/ui/index.html:110"
+      ],
+      "notes": "Status bar element carries sources (5 available incl. configured inbox-local), LLM mode/model, gate state, floor depth, open needs."
+    },
+    {
+      "id": "S-email-commentary",
+      "score": 0.9,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.003/evidence/scenarios/S-email-commentary.json:4",
+        "version 0.3.0.003/evidence/scenarios/S-email-commentary.json:11",
+        "version 0.3.0.003/fixtures/inbox/001-marta.eml"
+      ],
+      "notes": "Real .eml ingest (3 messages), selection pulled into chat:context, Curator produced live-ollama commentary on the selected email."
+    },
+    {
+      "id": "S-conversation-reset",
+      "score": 0.8,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.003/evidence/scenarios/S-conversation-reset.json:4"
+      ],
+      "notes": "Reset sealed 15 messages into archive-1 and cleared messages/topic/context; moved-topic detection implied by the flow rather than separately demonstrated."
+    },
+    {
+      "id": "S-context-display",
+      "score": 0.85,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.003/evidence/scenarios/S-context-display.json:4"
+      ],
+      "notes": "Active context shown for both profile-select and email-select; commentary present."
+    },
+    {
+      "id": "S-personality-editor",
+      "score": 0.85,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.003/evidence/scenarios/S-personality-editor.json:4"
+      ],
+      "notes": "persona-update applied edits across all eight customizable elements (name, traits, interests, lens, voice, color, priority, display mode); lens assertions recorded."
+    },
+    {
+      "id": "S-windows-launch",
+      "score": 0.75,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.003/launch.cmd:1",
+        "version 0.3.0.003/evidence/launch/launch-check.json:4"
+      ],
+      "notes": "launch.cmd + python -m app boots like an installed program on Windows with gate + banner; it is a script launcher, not packaged install media — honest partial against 'installed program'."
+    },
+    {
+      "id": "S-close-terminate",
+      "score": 0.85,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.003/evidence/launch/launch-check.json:27",
+        "version 0.3.0.003/evidence/scenarios/S-close-terminate.json:3"
+      ],
+      "notes": "SSE window-watchdog terminated the program (exit 0, no orphan, port freed) in real-process check. Blemish: scenario JSON embeds checkFile:null — a driver embedding gap; the cross-referenced launch-check.json carries the passing evidence."
+    },
+    {
+      "id": "S-speech-serialization",
+      "score": 0.85,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.003/evidence/scenarios/S-speech-serialization.json:4",
+        "version 0.3.0.003/app/engines.py:146",
+        "version 0.3.0.003/app/speechfloor.py:75"
+      ],
+      "notes": "G1 rectified — admission held until real playback completion (blocking SAPI; 7 plays at 15–28s each, queue depth 13, serialized). Blemish: playbackMs surfaces null on floor-played rows though heldUntilPlaybackComplete is true."
+    },
+    {
+      "id": "S-distinct-preloadeds",
+      "score": 0.9,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.003/evidence/scenarios/S-distinct-preloadeds.json:4"
+      ],
+      "notes": "G3 rectified — same prompt to three preloadeds on live ollama produced markedly different registers (catalogue listicle / clipped imperative / wry digressive); max pairwise Jaccard 0.079."
+    }
+  ],
+  "notes": "All 24 suite scenarios enacted with real run artifacts; the two canonicals carry enactment-class evidence. Scenario-ledger corroboration strong: 865 rows, every new namespace populated (exchange:imported, inference:snapshot/commit, gate:passed, ui:shell-theme, email:*). Cycle-2 evidence flags all closed: H1 driver bug fixed (scenarios.py:370), connectors-F8-verify.json present and real, launch-server.out fresh .003, steward ran autonomously 3x pre-wake, temporal classification correct (2030→future, 2020→historical), focused-need and chat-invocation deepened. Direction-003 rectifications delivered: G1 blocking playback floor, G2 illustrated bust portraits bound per persona, G3 distinct live registers, G4 port-refusal + exclusive bind + watchdog terminate (all four launch-check legs pass). All six execution-structure conventions conformed on record (FEATURES.md:174-182); prior recorded challenges (C-ConnectorSet, C-DesktopShell partial) retained — no silent departures. Flags for owner: (1) S-personality-roster lists 12 entries with each of 6 names duplicated — double-seeding in scenario runtime; (2) S-close-terminate scenario file embeds checkFile:null (driver gap, evidence itself passes); (3) floor-played rows carry playbackMs:null despite the devlog claim of the field; heldUntilPlaybackComplete is the load-bearing flag and is true; (4) S-competing-tools named leg still 1-of-2 adequate — genuine 2-adequate competition only via set retrievals; (5) instance not serving on :9760 at JEV time — final boot recorded ok at 03:34, watchdog likely stopped it post-session; launch evidence stands. time to implement tracked per devlog Cycle-3 entry (session ~03:05–03:34, plus prior Part-1 segment). No frontier-model escalation recommended — evidence is genuine run output and unambiguous."
+}},{"label":"C4","entry":"Cycle 4 — 2026-11-23","kind":"cycle","verdict_kind":"verdict","date":"2026-11-23","direction":"`direction-004.md` — SIGNED by owner 2026-11-23; fresh realization of `prompt.md`, built better than `.003`. Build guidance per `shortcomings-004.md`: G-A live owner-facing controls, G-B voice as register constraint on truthful output (owner-approved source-faithfulness bar), G-C dyadic confidence (skippable this run; .5 default for new personas if built), G-D browsable Library, G-E operable roster, G-F clean evidence. Suite amendments adopted: tightened S-color-schemes, extended S-personality-roster, new S-library-browse, new S-faithful-voice → 26 scenarios. **Fleet discovery remains deferred** (owner ruling 2026-11-23) alongside fleet install.","baseline":"fresh from prompt (owner ruling 2026-11-23) — produces `version 0.3.0.004/`; `.003` kept intact as comparison point","criteria":"clean launch (incl. launch hygiene), existing features, completeness (fleet install, fleet discovery, exchange media count against it), fleet install (expected 0), exchange media (expected 0), user score, time-to-gate (standing), scenario suite `.devin/scenarios.md` (26 scenarios; canonicals must enact), `time to implement` tracked not scored","time_to_implement":"session start 2026-11-23 ~03:48; session end 2026-11-23 ~04:31","result":"Vantage — fresh realization in `version 0.3.0.004/` (Python stdlib only; `.003` untouched). Assertion ledger (append-only JSONL, typed values, claimants, basis, supersession, contextual confidence, snapshots, launch partition, transient boundary, compaction); needs floor + templates + candidate ranking + witnessed grants; 40-tool registry with DSL steps and user-authored tools; two adequate competing retrievals on `set.members` (wiki table vs category); persona store with ethics gate + ◆ IMITATION mark, six seeded personas + mint/onboard, unique bound procedural portraits, SAPI voice config, operable roster (select + reorder as dyadic rows); register-constrained compose with grounding check — ungrounded drafts flagged + withheld, no-source factual replies flagged; live Ollama `llama3.2`, SAPI speech floor with measured `playbackMs`; steward + temporal attention; wikipedia/ics/files/rss/inbox-eml connectors; exchange export/import held at 0.4 (self-import dedupes); readiness gate (PASS ~2.3s, recorded); two-part boot, owned-port refusal (exit 3), close-terminate watchdog; UI with live theme selector, holdings Library, personality editor, inbox, status bar. Evidence: `version 0.3.0.004/FEATURES.md`, `LAUNCH.md`, `evidence/launch/launch-check.json` (all three hygiene checks pass), `evidence/launch/launch-*.log`, `runtime/*/gate.json` + `last-launch.json` (time-to-gate ~2.3s), `evidence/scenarios/S-*.json` + `suite.json` — **26/26 scenario files pass, inline checks embedded** (canonicals S-list-project: 57 real PA cities via competing retrievals; S-personality-create: mint→onboard→extend). Declared absences (counted, not faked): fleet install, fleet discovery, exchange media, OAuth connectors, server-side STT.","build_folder":"version 0.3.0.004","verdict_ok":true,"verdict_error":null,"verdict":{
+  "criteria": [
+    { "name": "clean launch", "score": 1.0, "confidence": 0.9, "user_opinion": null },
+    { "name": "existing features", "score": 0.6, "confidence": 0.75, "user_opinion": null },
+    { "name": "completeness", "score": 0.85, "confidence": 0.75, "user_opinion": 0.48 },
+    { "name": "fleet install", "score": 0, "confidence": 0.95, "user_opinion": null },
+    { "name": "exchange media", "score": 0, "confidence": 0.9, "user_opinion": null },
+    { "name": "user score", "score": null, "confidence": 0, "user_opinion": 0.45 },
+    { "name": "time-to-gate", "score": 1.0, "confidence": 0.95, "user_opinion": null },
+    { "name": "scenario suite", "score": 0.85, "confidence": 0.8, "user_opinion": null }
+  ],
+  "overall": 0.61,
+  "metrics": { "time_to_gate": 2.573 },
+  "judge_model": "SWE-2 High",
+  "user_commentary": [
+    { "criterion": "user score", "opinion": 0.45, "reasoning": "Owner 2026-11-23: 'this is an improvement.'" },
+    { "criterion": "completeness", "opinion": 0.48, "reasoning": "Owner estimate 2026-11-23 — 0.48 vs JEV 0.85. Third consecutive cycle of large JEV/owner divergence on this criterion (0.85→0.5 in Cycle 3): mechanism-completeness again scored above enacted/user-perceived completeness — feed into judge calibration and criterion definition at review." },
+    { "criterion": "persona art", "opinion": null, "reasoning": "Personality profiles are a step in the right direction, but the expectation is AI/LLM-built art, not procedurally drawn sprites — which they currently look like." },
+    { "criterion": "header feature list", "opinion": null, "reasoning": "The header has a list that looks like features, but they are really deferred features — confusing." },
+    { "criterion": "workshop", "opinion": null, "reasoning": "Workshop hard to interpret because of lack of familiarity with some defined functions — an explanation of each would be helpful." },
+    { "criterion": "roster reorder/confidence", "opinion": null, "reasoning": "Avatar reordering is supposed to affect confidence scores via the dyadic model — the scores do not seem to update. (G-C was skippable this run; the build delivered dyadic roster:rank rows anyway, but the owner's live check shows no visible score change on reorder.)" },
+    { "criterion": "diagnostic beeps", "opinion": null, "reasoning": "Diagnostic beeps are helpful, but their proposed purpose was communicating to other instances — user-directed alerts should be a jingle or welcome tone." },
+    { "criterion": "personality editing", "opinion": null, "reasoning": "Unclear how to edit existing personalities — the editor exists (JEV: S-personality-editor 0.85 enactment) but is not discoverable to the owner." },
+    { "criterion": "email commentary", "opinion": null, "reasoning": "Owner 2026-11-23: displaying sample emails does not demonstrate that user email can be read — the S-email-commentary enactment ran on fixture .eml files, not a configured real account source." }
+  ],
+  "scenarios": [
+    { "id": "S-assertion-input", "score": 0.8, "evidence_class": "enactment", "notes": "Typed input recorded as a source-aware assertion row. Thin but real." },
+    { "id": "S-template-need", "score": 0.8, "evidence_class": "enactment", "notes": "Need opened before fill, template gate passed, durable result + topic applied." },
+    { "id": "S-candidate-ranking", "score": 0.85, "evidence_class": "enactment", "notes": "Three candidates inspectable, ranked by effective confidence; low-confidence evidence retained un-superseded." },
+    { "id": "S-list-project", "score": 0.95, "evidence_class": "enactment", "notes": "Canonical, genuinely enacted: 57 real PA incorporated municipalities via two competing retrievals with agreement accounting (55 shared; Philadelphia/Harrisburg single-source), 200 classified non-matches retained. Strongest canonical enactment on this line." },
+    { "id": "S-personality-create", "score": 0.9, "evidence_class": "enactment", "notes": "Canonical enacted: mint→onboard→extend — persistent identity, bound procedural portrait, SAPI voice, generated characterization, coherent distinct roster entry." },
+    { "id": "S-background-present", "score": 0.85, "evidence_class": "enactment", "notes": "4 autonomous steward runs before manual wake; temporal attention presented through a persona; far-future correctly classified." },
+    { "id": "S-competing-tools", "score": 0.85, "evidence_class": "enactment", "notes": "J3 closed: two adequate competing tools enacted on the same need; cross-validated in S-list-project." },
+    { "id": "S-restart-recovery", "score": 0.9, "evidence_class": "enactment", "notes": "Real process stop/restart; state survives; cleanup compaction preserved supersession/provenance rows." },
+    { "id": "S-exchange-import", "score": 0.85, "evidence_class": "enactment", "notes": "Real export+import; contents held at 0.4 < 0.5 threshold by construction; self-import dedupes." },
+    { "id": "S-defer-publication", "score": 0.9, "evidence_class": "enactment", "notes": "Ungranted request deferred with recorded reason; granted executes to local-outbox delivered:false — honest channel." },
+    { "id": "S-chat-invocation", "score": 0.85, "evidence_class": "enactment", "notes": "Tool need + response need opened distinguishably; 3 persona replies via snapshot inference + ranked commits." },
+    { "id": "S-focused-need", "score": 0.85, "evidence_class": "enactment", "notes": "Need deferred on missing slot, focused, filled conversationally, fulfilled; candidate recorded." },
+    { "id": "S-personality-roster", "score": 0.9, "evidence_class": "enactment", "notes": "Extended bar met: selection through the control path, reorder persists with dyadic roster:rank assertions, 8/8 distinct (J1 closed), every persona reachable. BUT see owner commentary — reorder does not visibly update confidence scores." },
+    { "id": "S-portrait-bind", "score": 0.8, "evidence_class": "enactment", "notes": "All 8 personas carry unique bound procedural SVG portraits; files verified. Procedural SVG, not AI-rendered — same ceiling as .003; owner confirms this is the core complaint (expects LLM-built art)." },
+    { "id": "S-color-schemes", "score": 0.9, "evidence_class": "enactment", "notes": "Tightened bar met: selector's control path driven end-to-end, restyle observed; fresh launch defaults light; 4 colorways." },
+    { "id": "S-status-bar", "score": 0.9, "evidence_class": "enactment", "notes": "Live LLM mode and sources shown incl. honestly-declared-absent gmail-oauth. Owner flag: the header list reads as features but is deferred features — confusing labeling." },
+    { "id": "S-email-commentary", "score": 0.85, "evidence_class": "enactment", "notes": "3 fixture .eml listed, selection enters context, real persona commentary offered." },
+    { "id": "S-conversation-reset", "score": 0.8, "evidence_class": "enactment", "notes": "Reset clears topic/context; prior segment sealed with surviving transcript." },
+    { "id": "S-context-display", "score": 0.85, "evidence_class": "enactment", "notes": "Active context surfaced with badge control." },
+    { "id": "S-personality-editor", "score": 0.85, "evidence_class": "enactment", "notes": "Editor round-trip works via assertions — but owner live check: unclear how to edit existing personalities; discoverability gap between mechanism and surface." },
+    { "id": "S-windows-launch", "score": 0.75, "evidence_class": "enactment", "notes": "launch.cmd boots like an installed program; script launcher, not packaged install — same ceiling as prior cycles." },
+    { "id": "S-close-terminate", "score": 0.85, "evidence_class": "enactment", "notes": "Real termination after last SSE window closes; checks carried inline (J4 closed)." },
+    { "id": "S-speech-serialization", "score": 0.9, "evidence_class": "enactment", "notes": "J2 closed: floor-played rows carry real measured playbackMs; serialized, no overlap." },
+    { "id": "S-distinct-preloadeds", "score": 0.85, "evidence_class": "enactment", "notes": "Same prompt → Jaccard 0.07–0.09, clearly different live responses. Blemish: one reply leaks internal 'FACTS' scaffolding vocabulary." },
+    { "id": "S-library-browse", "score": 0.9, "evidence_class": "enactment", "notes": "New scenario (R4/G-D): holdings browser with inspectable detail surface — personas/tools/artifacts/packages — not a log tail." },
+    { "id": "S-faithful-voice", "score": 0.7, "evidence_class": "enactment", "notes": "New scenario (R2/G-B): FIDELITY RULE + grounding check + withhold-in-register + fidelity-flag rows real; two replies honestly withheld, one accurate answer, no invention. Weaknesses: 'retrieved+used' check passes on zero hits; live reply carried fidelity:null — ungrounded and unflagged despite being source-unsupported. Bar met in spirit; check suite lenient." }
+  ],
+  "notes": "Strong cycle — amended 26-scenario suite fully enacted with genuine run artifacts (1584-row scenario ledger corroborates; artifacts/exports/outbox on disk; live-ollama replies). Instance serving on :9770 at JEV time, honesty banner declares all absences incl. the browser-surface/desktop-shell reckoning — no silent convention departures. All Cycle-3 J-flags closed (J1–J4). R1/R4/R5 mechanisms delivered; R2 fidelity mechanism real but check suite lenient (zero-hit pass, fidelity:null on live reply); R3 skippable yet delivered (dyadic rel:held-confidence at 0.5 — though owner reports reorder does not visibly update scores). Canonicals enacted — defensible 57-city S-list-project. Declared absences honestly recorded: fleet install, fleet discovery, exchange media (JSON import only), OAuth connectors, server-side STT, native shell, studio/satellites/companion. No frontier-model escalation recommended."
+}}],"builds":[{"folder":"version 0.3.0.001","mtime":"2026-11-19T05:57:54.7746443Z","vkey":"0.3.0.1","launcher":"launch.cmd","conventions":{}},{"folder":"version 0.3.0.002","mtime":"2026-11-21T06:55:41.0078542Z","vkey":"0.3.0.2","launcher":"launch.cmd","conventions":{"C-SetBuild":{"status":"conformed","disposition":"conform"},"C-EthicsGate":{"status":"recorded","disposition":"**conform+**"},"C-AgenticProtocol":{"status":"conformed","disposition":"conform"},"C-ConnectorSet":{"status":"reckoned-departure","disposition":"**challenge (recorded)**"},"C-ConversationArchive":{"status":"conformed","disposition":"conform"},"C-PresentationGlass":{"status":"conformed","disposition":"conform"}}},{"folder":"version 0.3.0.003","mtime":"2026-11-22T08:17:52.2602436Z","vkey":"0.3.0.3","launcher":"launch.cmd","conventions":{"C-SetBuild":{"status":"conformed","disposition":"conform"},"C-PresentationGlass":{"status":"conformed","disposition":"conform"},"C-ConnectorSet":{"status":"reckoned-departure","disposition":"**challenge (recorded)**"},"C-EthicsGate":{"status":"recorded","disposition":"**conform+**"},"C-TwoPartExecution":{"status":"conformed","disposition":"conform"},"C-LaunchPartition":{"status":"conformed","disposition":"conform"},"C-TransientBoundary":{"status":"conformed","disposition":"conform"},"C-ReadinessGate":{"status":"conformed","disposition":"conform"},"C-ConversationArchive":{"status":"conformed","disposition":"conform"},"C-SnapshotInference":{"status":"conformed","disposition":"conform"},"C-SequentialCommit":{"status":"conformed","disposition":"conform"},"C-AgenticProtocol":{"status":"conformed","disposition":"conform"}}},{"folder":"version 0.3.0.004","mtime":"2026-11-23T09:18:20.3800576Z","vkey":"0.3.0.4","launcher":"launch.cmd","conventions":{"C-PresenceRoster":{"status":"conformed","disposition":"conform — roster order + active as dyadic ledger rows"},"C-EthicsGate":{"status":"conformed","disposition":"conform — recognizable figures: liveness research → mark + admonishment; refused patterns recorded"},"C-ChorusOnAddress":{"status":"conformed","disposition":"conform — named persona answers regardless of rank"},"C-TwoPartExecution":{"status":"conformed","disposition":"conform — Part 1 boot→gate, Part 2 surface+steward (`app/__main__.py`)"},"C-LaunchPartition":{"status":"conformed","disposition":"conform — essential slice written in dependency order to `launch-partition.jsonl`, mounted before journal replay; gate tests mounted rows"},"C-TransientBoundary":{"status":"conformed","disposition":"conform — `runtime/transient/` reset per boot with `.boot-ok` marker"},"C-ReadinessGate":{"status":"conformed","disposition":"conform — gate checks components, input pipeline, llm handle, ledger durable+queryable, launch partition; pass time recorded (`runtime/gate.json`, launch log, `gate:passed` assertion, `last-launch.json`)"},"C-SnapshotInference":{"status":"conformed","disposition":"conform — respondents draft on `ledger.snapshot()`; `inference:snapshot` rows"},"C-SequentialCommit":{"status":"conformed","disposition":"conform — drafts commit in rank order; `inference:commit` rows"},"C-PersonalityArt":{"status":"conformed","disposition":"conform — art bound per persona, params recorded"}}}],"latest_build":"version 0.3.0.004","liveness_seconds":9,"newest_mtime":"2026-11-23T23:57:20.6050447Z","newest_path":"version 0.3.0.004\\runtime\\ledger.jsonl","last_verdict":{"label":"C4","overall":0.61,"judge":"SWE-2 High","date":"2026-11-23"},"convention_ids":["C-AcceptanceChecks","C-AgenticProtocol","C-CanonicalScenarios","C-CertaintyPrivilege","C-ChorusOnAddress","C-CompetingSources","C-ConfiguredAccounts","C-ConnectorSet","C-ContactTags","C-ConvergentOntology","C-ConversationArchive","C-DeclaredPresentation","C-DeclaredStubs","C-DesktopShell","C-DeterministicMatchReview","C-DyadicConfidence","C-EngineMapping","C-EthicsGate","C-ExchangeLayers","C-ExplicitPolicies","C-FullScreen","C-HonestyBanner","C-HostAuthority","C-InspectionSurfaces","C-JsonlLedger","C-LauncherTests","C-LaunchPartition","C-LocalIndices","C-MultiSourceAccess","C-PerceivableRespondents","C-PersonalityArt","C-PreloadSuite","C-PresenceRoster","C-PresenceStage","C-PresentationGlass","C-QuickSelect","C-ReadinessGate","C-ScenarioEnactment","C-SequentialCommit","C-SequentialRespondents","C-SetBuild","C-SettingsPreloads","C-SnapshotInference","C-SourceCeilings","C-SourceDomains","C-SpecializedListRetrieval","C-SpeechFloor","C-StewardAsTool","C-SurfaceAssignment","C-TemplateDerivedUI","C-TransientBoundary","C-TwoPartExecution","C-UnmetNeedRecords","C-UserFacingPriority","C-UserSetSupremacy","C-VoiceDiversity"],"current_state":{"prompt_declared_revision":"snapshot taken 2026-11-18","corpus_prompt_file":"C:\\Project\\MigrateInbound\\ProjectPrompt.md","corpus_prompt_mtime":"2026-11-23T07:09:43.9736648Z","corpus_conventions_file":"C:\\Project\\MigrateInbound\\CONVENTIONS.md","corpus_conventions_source":"derived-from-prompt","corpus_convention_ids":["C-AcceptanceChecks","C-AgenticProtocol","C-CanonicalScenarios","C-CertaintyPrivilege","C-ChorusOnAddress","C-CompetingSources","C-ConfiguredAccounts","C-ConnectorSet","C-ContactTags","C-ConvergentOntology","C-ConversationArchive","C-DeclaredPresentation","C-DeclaredStubs","C-DesktopShell","C-DeterministicMatchReview","C-DyadicConfidence","C-EngineMapping","C-EthicsGate","C-ExchangeLayers","C-ExplicitPolicies","C-FullScreen","C-HonestyBanner","C-HostAuthority","C-InspectionSurfaces","C-JsonlLedger","C-LauncherTests","C-LaunchPartition","C-LocalIndices","C-MultiSourceAccess","C-PerceivableRespondents","C-PersonalityArt","C-PreloadSuite","C-PresenceRoster","C-PresenceStage","C-PresentationGlass","C-QuickSelect","C-ReadinessGate","C-ScenarioEnactment","C-SequentialCommit","C-SequentialRespondents","C-SetBuild","C-SettingsPreloads","C-SnapshotInference","C-SourceCeilings","C-SourceDomains","C-SpecializedListRetrieval","C-SpeechFloor","C-StewardAsTool","C-SurfaceAssignment","C-TemplateDerivedUI","C-TransientBoundary","C-TwoPartExecution","C-UnmetNeedRecords","C-UserFacingPriority","C-UserSetSupremacy","C-VoiceDiversity"],"live_scenario_ids":["S-assertion-input","S-template-need","S-candidate-ranking","S-list-project","S-personality-create","S-background-present","S-competing-tools","S-restart-recovery","S-exchange-import","S-defer-publication","S-chat-invocation","S-focused-need","S-personality-roster","S-portrait-bind","S-color-schemes","S-status-bar","S-email-commentary","S-conversation-reset","S-context-display","S-personality-editor","S-windows-launch","S-close-terminate","S-speech-serialization","S-distinct-preloadeds","S-library-browse","S-faithful-voice"],"state_revisions":null}}};

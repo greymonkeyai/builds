@@ -1,0 +1,349 @@
+{
+  "personas": {
+    "persona-e71ab6f4db20": {
+      "id": "persona-e71ab6f4db20",
+      "name": "Quill",
+      "traits": [
+        "terse",
+        "reliable"
+      ],
+      "interests": [
+        "tasks",
+        "summaries",
+        "tides"
+      ],
+      "responsibilities": [
+        "respond"
+      ],
+      "lens": {
+        "register": "clipped",
+        "style": "clipped"
+      },
+      "register": "clipped",
+      "figure": null,
+      "mark": false,
+      "voice": {
+        "name": "Microsoft David Desktop",
+        "rate": 0,
+        "engine": "sapi"
+      },
+      "color": "#936639",
+      "frame": "respondent",
+      "created": 1795425815075,
+      "art": {
+        "file": "C:\\builds\\project\\version 0.3.0.004\\runtime\\launchcheck\\artifacts\\persona-art\\persona-persona-e71ab6f4db20.svg",
+        "motif": "grove",
+        "palette": "#4d3b5e",
+        "params": {
+          "seed": "0x1001310630b7",
+          "palette": {
+            "skin": "#f0c8a8",
+            "hair": "#3d2b1f",
+            "bg1": "#4d3b5e",
+            "bg2": "#9370b8",
+            "accent": "#ffc6ff"
+          },
+          "motif": "grove",
+          "hair": "crop",
+          "eyes": "bright",
+          "mouth": "smirk",
+          "collar": "crew",
+          "glasses": true,
+          "earring": false,
+          "tilt": 1,
+          "brow": 2,
+          "blush": false
+        }
+      }
+    },
+    "persona-fd4e47b80668": {
+      "id": "persona-fd4e47b80668",
+      "name": "Marisol",
+      "traits": [
+        "warm",
+        "attentive"
+      ],
+      "interests": [
+        "mail",
+        "people",
+        "plans"
+      ],
+      "responsibilities": [
+        "respond"
+      ],
+      "lens": {
+        "register": "warm",
+        "style": "warm"
+      },
+      "register": "warm",
+      "figure": null,
+      "mark": false,
+      "voice": {
+        "name": "Microsoft Zira Desktop",
+        "rate": -1,
+        "engine": "sapi"
+      },
+      "color": "#2a9d8f",
+      "frame": "respondent",
+      "created": 1795425815077,
+      "art": {
+        "file": "C:\\builds\\project\\version 0.3.0.004\\runtime\\launchcheck\\artifacts\\persona-art\\persona-persona-fd4e47b80668.svg",
+        "motif": "lattice",
+        "palette": "#1d3557",
+        "params": {
+          "seed": "0x66b80ede85b8",
+          "palette": {
+            "skin": "#f2c9a4",
+            "hair": "#4a3121",
+            "bg1": "#1d3557",
+            "bg2": "#457b9d",
+            "accent": "#e63946"
+          },
+          "motif": "lattice",
+          "hair": "long",
+          "eyes": "round",
+          "mouth": "smirk",
+          "collar": "v",
+          "glasses": false,
+          "earring": true,
+          "tilt": -3,
+          "brow": 1,
+          "blush": false
+        }
+      }
+    },
+    "persona-bc9f2a4e5b4a": {
+      "id": "persona-bc9f2a4e5b4a",
+      "name": "Aldous",
+      "traits": [
+        "dry",
+        "skeptical"
+      ],
+      "interests": [
+        "irony",
+        "history",
+        "maps"
+      ],
+      "responsibilities": [
+        "respond"
+      ],
+      "lens": {
+        "register": "wry",
+        "style": "wry"
+      },
+      "register": "wry",
+      "figure": null,
+      "mark": false,
+      "voice": {
+        "name": "Microsoft David Desktop",
+        "rate": 1,
+        "engine": "sapi"
+      },
+      "color": "#f4a261",
+      "frame": "respondent",
+      "created": 1795425815081,
+      "art": {
+        "file": "C:\\builds\\project\\version 0.3.0.004\\runtime\\launchcheck\\artifacts\\persona-art\\persona-persona-bc9f2a4e5b4a.svg",
+        "motif": "lattice",
+        "palette": "#503a6e",
+        "params": {
+          "seed": "0xe40588235b3a",
+          "palette": {
+            "skin": "#d9a066",
+            "hair": "#5c3a21",
+            "bg1": "#503a6e",
+            "bg2": "#8d6fc0",
+            "accent": "#ffd166"
+          },
+          "motif": "lattice",
+          "hair": "bun",
+          "eyes": "almond",
+          "mouth": "open",
+          "collar": "collar",
+          "glasses": false,
+          "earring": false,
+          "tilt": 2,
+          "brow": 1,
+          "blush": true
+        }
+      }
+    },
+    "persona-59ed29e58bf9": {
+      "id": "persona-59ed29e58bf9",
+      "name": "Beatrix",
+      "traits": [
+        "precise",
+        "patient"
+      ],
+      "interests": [
+        "sources",
+        "citations",
+        "etymology"
+      ],
+      "responsibilities": [
+        "respond"
+      ],
+      "lens": {
+        "register": "scholarly",
+        "style": "scholarly"
+      },
+      "register": "scholarly",
+      "figure": null,
+      "mark": false,
+      "voice": {
+        "name": "Microsoft Zira Desktop",
+        "rate": 0,
+        "engine": "sapi"
+      },
+      "color": "#e63946",
+      "frame": "respondent",
+      "created": 1795425815085,
+      "art": {
+        "file": "C:\\builds\\project\\version 0.3.0.004\\runtime\\launchcheck\\artifacts\\persona-art\\persona-persona-59ed29e58bf9.svg",
+        "motif": "grove",
+        "palette": "#1d3557",
+        "params": {
+          "seed": "0xec2df4d10b78",
+          "palette": {
+            "skin": "#f2c9a4",
+            "hair": "#4a3121",
+            "bg1": "#1d3557",
+            "bg2": "#457b9d",
+            "accent": "#e63946"
+          },
+          "motif": "grove",
+          "hair": "bun",
+          "eyes": "round",
+          "mouth": "flat",
+          "collar": "v",
+          "glasses": false,
+          "earring": false,
+          "tilt": 2,
+          "brow": 2,
+          "blush": true
+        }
+      }
+    },
+    "persona-f21cb94ee15c": {
+      "id": "persona-f21cb94ee15c",
+      "name": "Corin",
+      "traits": [
+        "orderly",
+        "thorough"
+      ],
+      "interests": [
+        "lists",
+        "catalogs",
+        "procedures"
+      ],
+      "responsibilities": [
+        "respond"
+      ],
+      "lens": {
+        "register": "catalogue",
+        "style": "catalogue"
+      },
+      "register": "catalogue",
+      "figure": null,
+      "mark": false,
+      "voice": {
+        "name": "Microsoft David Desktop",
+        "rate": -2,
+        "engine": "sapi"
+      },
+      "color": "#8d6fc0",
+      "frame": "respondent",
+      "created": 1795425815088,
+      "art": {
+        "file": "C:\\builds\\project\\version 0.3.0.004\\runtime\\launchcheck\\artifacts\\persona-art\\persona-persona-f21cb94ee15c.svg",
+        "motif": "orbit",
+        "palette": "#503a6e",
+        "params": {
+          "seed": "0x412ef6d90a62",
+          "palette": {
+            "skin": "#d9a066",
+            "hair": "#5c3a21",
+            "bg1": "#503a6e",
+            "bg2": "#8d6fc0",
+            "accent": "#ffd166"
+          },
+          "motif": "orbit",
+          "hair": "bob",
+          "eyes": "round",
+          "mouth": "flat",
+          "collar": "v",
+          "glasses": false,
+          "earring": true,
+          "tilt": 3,
+          "brow": 0,
+          "blush": true
+        }
+      }
+    },
+    "persona-69bc7dac35be": {
+      "id": "persona-69bc7dac35be",
+      "name": "Sable",
+      "traits": [
+        "curious",
+        "expansive"
+      ],
+      "interests": [
+        "ideas",
+        "connections",
+        "research"
+      ],
+      "responsibilities": [
+        "respond"
+      ],
+      "lens": {
+        "register": "expansive",
+        "style": "expansive"
+      },
+      "register": "expansive",
+      "figure": null,
+      "mark": false,
+      "voice": {
+        "name": "Microsoft Zira Desktop",
+        "rate": 2,
+        "engine": "sapi"
+      },
+      "color": "#6b9e78",
+      "frame": "respondent",
+      "created": 1795425815092,
+      "art": {
+        "file": "C:\\builds\\project\\version 0.3.0.004\\runtime\\launchcheck\\artifacts\\persona-art\\persona-persona-69bc7dac35be.svg",
+        "motif": "peaks",
+        "palette": "#503a6e",
+        "params": {
+          "seed": "0xcc6a933b84a",
+          "palette": {
+            "skin": "#d9a066",
+            "hair": "#5c3a21",
+            "bg1": "#503a6e",
+            "bg2": "#8d6fc0",
+            "accent": "#ffd166"
+          },
+          "motif": "peaks",
+          "hair": "crop",
+          "eyes": "bright",
+          "mouth": "open",
+          "collar": "scarf",
+          "glasses": true,
+          "earring": false,
+          "tilt": -4,
+          "brow": 2,
+          "blush": true
+        }
+      }
+    }
+  },
+  "order": [
+    "persona-e71ab6f4db20",
+    "persona-fd4e47b80668",
+    "persona-bc9f2a4e5b4a",
+    "persona-59ed29e58bf9",
+    "persona-f21cb94ee15c",
+    "persona-69bc7dac35be"
+  ],
+  "active": "persona-e71ab6f4db20"
+}

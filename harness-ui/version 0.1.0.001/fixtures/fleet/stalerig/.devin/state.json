@@ -1,0 +1,20 @@
+{
+  "line": "stalerig",
+  "prompt_ref": "prompt.md (snapshot taken 2026-11-01)",
+  "direction_in_force": {
+    "ref": "direction-002.md",
+    "clarity": "signed",
+    "baseline": "modify-and-measure",
+    "budget": { "total": 4, "spent": 2 },
+    "criteria": ["clean launch", "completeness", "scenario suite"]
+  },
+  "builds": ["version 0.1.0.001", "version 0.1.0.002"],
+  "pending_owner_questions": [
+    "Fixture: is C-Beta's recorded challenge acceptable to the owner?"
+  ],
+  "revisions": {
+    "prompt": "snapshot 2026-11-01",
+    "conventions": "fixture-rev-old (2 ids)",
+    "scenarios": "signed 2026-11-12 (2 ids, pre-S-gamma)"
+  }
+}

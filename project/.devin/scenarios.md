@@ -32,9 +32,9 @@ Per-scenario evaluation criteria for JEV verdicts and owner review. Each scenari
 | S-defer-publication | Unconfigured nonlocal publication request refused or deferred, request and status recorded | authority boundary, graceful deferral | D10 |
 | S-chat-invocation | Chat input requests a conversational response while matching one or more tool needs; each need remains distinguishable | chat-turn chain, conversational tool matching | UX chat tool invocation |
 | S-focused-need | Unmet need moved into focus; values supplied conversationally; need remains available until its requirement is fulfilled | focus/context mechanics, conversational slot-filling | UX focused unmet need |
-| S-personality-roster | Selectable roster of personalities presented as a persistent panel, conventionally the left column | roster surface, personality switching | owner 2026-11-22; cf. C-InspectionSurfaces |
+| S-personality-roster | Persistent roster panel (conventionally the left column) that is operable — select the active personality and reorder entries; every shipped persona reachable. A display-only roster fails the bar | roster surface, personality switching, ordering | owner 2026-11-22; extended 2026-11-23 (R5); cf. C-InspectionSurfaces |
 | S-portrait-bind | Creating a personality produces portrait-quality art depicting that specific personality, bound to it as visual identity | portrait generation, art-to-persona binding | owner 2026-11-22; C-PersonalityArt, C-PresentationGlass |
-| S-color-schemes | Theme selector offers dark mode plus at least two other colorways; fresh launch opens in light mode | theming | owner 2026-11-22 |
+| S-color-schemes | Theme selector offers dark mode plus at least two other colorways; fresh launch opens in light mode. Enactment credit requires driving the owner-facing selector control and observing the restyle — assertion-level theme changes alone do not pass | theming | owner 2026-11-22; tightened 2026-11-23 (R1) |
 | S-status-bar | Status bar continuously shows available sources and LLMs | capability surfacing | owner 2026-11-22; cf. C-HonestyBanner, C-MultiSourceAccess |
 | S-email-commentary | User selects a received email from a list and adds it to conversational context; the active personality offers commentary on it | source ingestion, context injection, persona commentary | owner 2026-11-22; cf. C-ConfiguredAccounts |
 | S-conversation-reset | Reset button clears the conversation when it has moved to a different topic, keeping personality prompts on-topic | topic segmentation, prompt hygiene | owner 2026-11-22; C-ConversationArchive |
@@ -44,6 +44,8 @@ Per-scenario evaluation criteria for JEV verdicts and owner review. Each scenari
 | S-close-terminate | Closing the application window terminates the program — no orphaned process | process lifecycle | owner 2026-11-22; C-DesktopShell |
 | S-speech-serialization | Generated speech waits until the previous speaker finishes rather than overlapping | speech floor, sequential respondents | owner 2026-11-22; C-SpeechFloor, C-PerceivableRespondents, C-SequentialRespondents |
 | S-distinct-preloadeds | Shipped personalities differ enough in persona and style that the same prompt elicits noticeably different responses | persona distinctness | owner 2026-11-22; C-VoiceDiversity |
+| S-library-browse | Library surface presents the instance's holdings — personalities, tools, packages, artifacts — browsable and inspectable, not a raw ledger log | library surface, holdings inspection | owner 2026-11-23 (R4); cf. C-InspectionSurfaces |
+| S-faithful-voice | A persona answers a factual prompt accurately to its sources while staying in register — unsupported claims flagged or withheld, not invented | persona fidelity, voice registers | owner 2026-11-23 (R2; G-B bar) |
 
 ## Scenario notes
 

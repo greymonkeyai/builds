@@ -1,0 +1,65 @@
+{
+  "id": "S-portrait-bind",
+  "ran": true,
+  "checks": [
+    {
+      "name": "every persona has art bound",
+      "pass": true,
+      "detail": [
+        "Marisol",
+        "Quill",
+        "Aldous",
+        "Beatrix",
+        "Corin",
+        "Sable",
+        "Wendell",
+        "Marlowe"
+      ]
+    },
+    {
+      "name": "artifact files exist",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "art unique per persona (C-PersonalityArt)",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true,
+  "arts": {
+    "Marisol": {
+      "file": "C:\\builds\\project\\version 0.3.0.004\\runtime\\scenario\\artifacts\\persona-art\\persona-persona-d8df17c1cf35.svg",
+      "motif": "grove"
+    },
+    "Quill": {
+      "file": "C:\\builds\\project\\version 0.3.0.004\\runtime\\scenario\\artifacts\\persona-art\\persona-persona-051d2365a4d4.svg",
+      "motif": "lattice"
+    },
+    "Aldous": {
+      "file": "C:\\builds\\project\\version 0.3.0.004\\runtime\\scenario\\artifacts\\persona-art\\persona-persona-ff46a0c0390d.svg",
+      "motif": "waves"
+    },
+    "Beatrix": {
+      "file": "C:\\builds\\project\\version 0.3.0.004\\runtime\\scenario\\artifacts\\persona-art\\persona-persona-f776d13a8d78.svg",
+      "motif": "grove"
+    },
+    "Corin": {
+      "file": "C:\\builds\\project\\version 0.3.0.004\\runtime\\scenario\\artifacts\\persona-art\\persona-persona-b54b49758e57.svg",
+      "motif": "grove"
+    },
+    "Sable": {
+      "file": "C:\\builds\\project\\version 0.3.0.004\\runtime\\scenario\\artifacts\\persona-art\\persona-persona-88495b83a14c.svg",
+      "motif": "lattice"
+    },
+    "Wendell": {
+      "file": "C:\\builds\\project\\version 0.3.0.004\\runtime\\scenario\\artifacts\\persona-art\\persona-persona-f1504937c9c6.svg",
+      "motif": "lattice"
+    },
+    "Marlowe": {
+      "file": "C:\\builds\\project\\version 0.3.0.004\\runtime\\scenario\\artifacts\\persona-art\\persona-persona-6bcfb4615dd5.svg",
+      "motif": "waves"
+    }
+  }
+}

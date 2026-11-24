@@ -1,0 +1,83 @@
+{
+  "ok": true,
+  "port": 9771,
+  "gate": {
+    "passed": true,
+    "checks": {
+      "components": {
+        "ok": true,
+        "count": {
+          "tools": 40,
+          "commands": 12,
+          "primitives": 8,
+          "components": 60,
+          "byNeed": [
+            "calendar.import",
+            "calendar.link",
+            "chat.topic",
+            "comparison.run",
+            "config.depth",
+            "config.preload",
+            "context.select",
+            "demo.echo",
+            "exchange.export",
+            "exchange.import",
+            "home.actuate",
+            "ledger.cleanup",
+            "mail.send",
+            "memory.note",
+            "need.focus",
+            "persona.characterize",
+            "persona.mint",
+            "persona.note",
+            "persona.onboard",
+            "persona.portrait",
+            "persona.update",
+            "persona.voice",
+            "project.create",
+            "publish.artifact",
+            "search.run",
+            "set.build",
+            "set.members",
+            "source.endorse",
+            "speech.render",
+            "speech.speak",
+            "speech.transcribe",
+            "steward.assign",
+            "steward.tick",
+            "tool.create",
+            "tool.inspect",
+            "tool.validate",
+            "ui.theme"
+          ]
+        }
+      },
+      "input-pipeline": {
+        "ok": true,
+        "intents": []
+      },
+      "llm-handle": {
+        "ok": true,
+        "mode": "live-ollama:llama3.2",
+        "note": "live handle accepts input"
+      },
+      "ledger-durable": {
+        "ok": true,
+        "rows": 31
+      },
+      "launch-partition": {
+        "ok": true,
+        "mounted": 10
+      },
+      "ledger-queryable": {
+        "ok": true
+      }
+    },
+    "passedAt": 1795426283.91409,
+    "timeToGateMs": 2352
+  },
+  "rows": 33,
+  "pid": 48044,
+  "url": "http://127.0.0.1:9771",
+  "at": 1795426283.9200995
+}

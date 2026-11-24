@@ -5,7 +5,7 @@
     "ref": "direction-001.md",
     "clarity": "signed",
     "baseline": "fresh",
-    "budget": { "total": 1, "spent": 0 },
+    "budget": { "total": 1, "spent": 1 },
     "criteria": [
       "file://-only operation",
       "derivation correctness",
@@ -16,7 +16,15 @@
       "time to implement (tracked)"
     ]
   },
-  "builds": [],
+  "builds": [
+    {
+      "cycle": 1,
+      "version": "version 0.1.0.001",
+      "status": "building",
+      "spawned": "2026-11-23 ~18:26 EST",
+      "acp_session": "ubiquitous-eyebrow"
+    }
+  ],
   "pending_owner_questions": [],
   "revisions": {
     "prompt": "2026-11-23",

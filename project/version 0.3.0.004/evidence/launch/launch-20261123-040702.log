@@ -1,0 +1,3 @@
+[04:07:02] vantage 0.3.0.004 boot — port 9777, runtime runtime/smoke
+[04:07:04] transient boundary: runtime/smoke\transient (reset=True)
+[04:07:04] launch partition mounted: 0 rows; journal replay: 0 rows

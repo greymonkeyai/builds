@@ -24,45 +24,42 @@
       "mode": "inproc-svg"
     }
   },
-  "components": 85,
+  "components": 84,
   "ledger": {
-    "total": 86,
-    "live": 86,
+    "total": 95,
+    "live": 95,
     "superseded": 0,
     "namespaces": {
-      "ethics": 4,
+      "routing": 3,
+      "source": 6,
+      "connector": 2,
+      "tool": 6,
       "persona": 46,
+      "project": 2,
+      "ethics": 4,
       "product": 4,
       "maxim": 2,
       "chat": 1,
       "user": 2,
-      "routing": 2,
       "seed": 2,
-      "source": 6,
-      "project": 2,
-      "tool": 4,
-      "connector": 2,
       "email": 4,
-      "engine": 1,
-      "decision": 1,
-      "gate": 2,
-      "launch": 1
+      "engine": 2,
+      "decision": 2,
+      "gate": 4,
+      "launch": 3
     },
     "path": "C:\\builds\\project\\version 0.3.0.003\\runtime\\ledger.jsonl",
     "durable": true
   },
-  "partitionMounted": 0,
-  "transientReset": false,
-  "packs": [
-    "getting-started",
-    "study-vessel"
-  ],
+  "partitionMounted": 58,
+  "transientReset": true,
+  "packs": [],
   "gate": {
     "passed": true,
     "checks": {
       "input": {
         "components": true,
-        "componentCount": 85,
+        "componentCount": 84,
         "pipelineRoutes": true,
         "llmMode": "live-ollama",
         "llmAccepts": true,
@@ -70,21 +67,21 @@
       },
       "ledger": {
         "durable": true,
-        "partitionMounted": 0,
+        "partitionMounted": 58,
         "partitionFile": "C:\\builds\\project\\version 0.3.0.003\\runtime\\launch-partition.jsonl",
         "queryable": true,
-        "live": 83,
+        "live": 92,
         "essentialMounted": true
       }
     },
-    "startedMs": 1795336470755,
-    "passedAt": 1795336474404,
-    "msToGate": 3649,
+    "startedMs": 1795417960114,
+    "passedAt": 1795417963757,
+    "msToGate": 3643,
     "inputReady": true,
     "ledgerReady": true,
     "path": "C:\\builds\\project\\version 0.3.0.003\\runtime\\gate.json"
   },
   "steward": true,
-  "bootMs": 1795336470755,
-  "log": "C:\\builds\\project\\version 0.3.0.003\\evidence\\launch\\launch-20261122-033435.log"
+  "bootMs": 1795417960114,
+  "log": "C:\\builds\\project\\version 0.3.0.003\\evidence\\launch\\launch-20261123-021244.log"
 }

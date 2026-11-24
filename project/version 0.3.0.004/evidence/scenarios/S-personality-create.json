@@ -1,0 +1,118 @@
+{
+  "id": "S-personality-create",
+  "ran": true,
+  "checks": [
+    {
+      "name": "persistent identity",
+      "pass": true,
+      "detail": "persona-f1504937c9c6"
+    },
+    {
+      "name": "portrait generated+bound",
+      "pass": true,
+      "detail": "C:\\builds\\project\\version 0.3.0.004\\runtime\\scenario\\artifacts\\persona-art\\persona-persona-f1504937c9c6.svg"
+    },
+    {
+      "name": "voice assigned",
+      "pass": true,
+      "detail": {
+        "name": "Microsoft David Desktop",
+        "rate": 0,
+        "engine": "sapi"
+      }
+    },
+    {
+      "name": "characterized",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "coherent roster entry",
+      "pass": true,
+      "detail": "Wendell"
+    }
+  ],
+  "pass": true,
+  "personaId": "persona-f1504937c9c6",
+  "rosterEntry": {
+    "id": "persona-f1504937c9c6",
+    "name": "Wendell",
+    "traits": [
+      "precise",
+      "wry"
+    ],
+    "interests": [
+      "maps",
+      "etymology"
+    ],
+    "register": "wry",
+    "lens": {
+      "register": "wry",
+      "style": "wry"
+    },
+    "voice": {
+      "name": "Microsoft David Desktop",
+      "rate": 0,
+      "engine": "sapi"
+    },
+    "color": "#f4a261",
+    "mark": false,
+    "frame": "respondent",
+    "art": {
+      "file": "C:\\builds\\project\\version 0.3.0.004\\runtime\\scenario\\artifacts\\persona-art\\persona-persona-f1504937c9c6.svg",
+      "motif": "lattice",
+      "palette": "#1f4e5f",
+      "params": {
+        "seed": "0x791cca2d66f4",
+        "palette": {
+          "skin": "#c98f5f",
+          "hair": "#2f2f2f",
+          "bg1": "#1f4e5f",
+          "bg2": "#4f8a9b",
+          "accent": "#e9c46a"
+        },
+        "motif": "lattice",
+        "hair": "bald",
+        "eyes": "narrow",
+        "mouth": "flat",
+        "collar": "collar",
+        "glasses": false,
+        "earring": true,
+        "tilt": 0,
+        "brow": 2,
+        "blush": true
+      }
+    },
+    "heldConfidence": 0.5,
+    "characterization": "Wendell views the world through a precise and wry lens, perceiving nuances that others may overlook. He is characterized by dry wit and a penchant for etymological insights. His responses are marked by a wry tone, cutting through ambiguity with wit and clarity."
+  },
+  "onboard": {
+    "personaId": "persona-f1504937c9c6",
+    "name": "Wendell",
+    "portrait": {
+      "ok": true,
+      "artifact": "C:\\builds\\project\\version 0.3.0.004\\runtime\\scenario\\artifacts\\persona-art\\persona-persona-f1504937c9c6.svg",
+      "motif": "lattice"
+    },
+    "voice": {
+      "ok": true,
+      "voice": {
+        "name": "Microsoft David Desktop",
+        "rate": 0,
+        "engine": "sapi"
+      }
+    },
+    "characterization": {
+      "ok": true,
+      "characterization": "Wendell views the world through a precise and wry lens, perceiving nuances that others may overlook. He is characterized by dry wit and a penchant for etymological insights. His responses are marked by a wry tone, cutting through ambiguity with wit and clarity.",
+      "engine": "live-ollama:llama3.2"
+    },
+    "ok": true
+  },
+  "predicates": [
+    "persona:art",
+    "persona:characterization",
+    "persona:profile",
+    "persona:voice"
+  ]
+}

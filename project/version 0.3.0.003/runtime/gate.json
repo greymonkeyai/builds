@@ -3,7 +3,7 @@
   "checks": {
     "input": {
       "components": true,
-      "componentCount": 85,
+      "componentCount": 84,
       "pipelineRoutes": true,
       "llmMode": "live-ollama",
       "llmAccepts": true,
@@ -11,16 +11,16 @@
     },
     "ledger": {
       "durable": true,
-      "partitionMounted": 0,
+      "partitionMounted": 58,
       "partitionFile": "C:\\builds\\project\\version 0.3.0.003\\runtime\\launch-partition.jsonl",
       "queryable": true,
-      "live": 83,
+      "live": 92,
       "essentialMounted": true
     }
   },
-  "startedMs": 1795336470755,
-  "passedAt": 1795336474404,
-  "msToGate": 3649,
+  "startedMs": 1795417960114,
+  "passedAt": 1795417963757,
+  "msToGate": 3643,
   "inputReady": true,
   "ledgerReady": true
 }

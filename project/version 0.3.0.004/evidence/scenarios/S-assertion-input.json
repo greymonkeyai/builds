@@ -1,0 +1,52 @@
+{
+  "id": "S-assertion-input",
+  "ran": true,
+  "checks": [
+    {
+      "name": "row recorded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "typed value",
+      "pass": true,
+      "detail": {
+        "type": "string",
+        "v": "enactment probe assertion"
+      }
+    },
+    {
+      "name": "source-aware claimant",
+      "pass": true,
+      "detail": "principal"
+    },
+    {
+      "name": "basis captured/user",
+      "pass": true,
+      "detail": {
+        "kind": "user-choice"
+      }
+    }
+  ],
+  "pass": true,
+  "row": {
+    "id": "a-08ffe05cf27d",
+    "at": 1795425787797,
+    "subject": "scenario-check",
+    "predicate": "product:goal",
+    "value": {
+      "type": "string",
+      "v": "enactment probe assertion"
+    },
+    "claimant": "principal",
+    "certainty": 0.9,
+    "applicability": 1.0,
+    "basis": {
+      "kind": "user-choice"
+    },
+    "supersedes": null,
+    "links": [],
+    "tags": [],
+    "meta": {}
+  }
+}

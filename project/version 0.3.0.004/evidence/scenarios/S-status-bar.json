@@ -1,0 +1,42 @@
+{
+  "id": "S-status-bar",
+  "ran": true,
+  "checks": [
+    {
+      "name": "status bar present",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LLMs shown",
+      "pass": true,
+      "detail": "live-ollama:llama3.2"
+    },
+    {
+      "name": "sources shown",
+      "pass": true,
+      "detail": [
+        "wikipedia",
+        "ics-calendar",
+        "files",
+        "rss",
+        "inbox-eml",
+        "gmail-oauth"
+      ]
+    }
+  ],
+  "pass": true,
+  "engines": {
+    "mode": "live-ollama:llama3.2",
+    "model": "llama3.2",
+    "error": null
+  },
+  "connectors": {
+    "wikipedia": "Wikipedia (live)",
+    "ics-calendar": "ICS calendar files",
+    "files": "Local files directory",
+    "rss": "RSS feed",
+    "inbox-eml": "Local .eml inbox",
+    "gmail-oauth": "Gmail (oauth) (declared-absent)"
+  }
+}

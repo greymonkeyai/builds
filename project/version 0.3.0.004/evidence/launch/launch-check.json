@@ -1,0 +1,32 @@
+{
+  "checks": [
+    {
+      "name": "clean launch",
+      "pass": true,
+      "detail": {
+        "honesty": true,
+        "lastLaunchOk": true,
+        "gate": true,
+        "timeToGateMs": 2338
+      }
+    },
+    {
+      "name": "second launch refused",
+      "pass": true,
+      "detail": {
+        "exit": 3,
+        "refusedLine": true,
+        "out": "[04:23:35] vantage 0.3.0.004 boot \u2014 port 9778, runtime C:\\builds\\project\\version 0.3.0.004\\runtime\\second\n[04:23:35] LAUNCH REFUSED \u2014 a live Vantage instance already owns port 9778\n"
+      }
+    },
+    {
+      "name": "close-terminate",
+      "pass": true,
+      "detail": {
+        "exitCode": 0,
+        "waitedS": 57
+      }
+    }
+  ],
+  "pass": true
+}

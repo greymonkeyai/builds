@@ -1,0 +1,44 @@
+{
+  "id": "S-color-schemes",
+  "ran": true,
+  "checks": [
+    {
+      "name": "dark mode + >=2 other colorways",
+      "pass": true,
+      "detail": [
+        "dark",
+        "light",
+        "sepia",
+        "slate"
+      ]
+    },
+    {
+      "name": "fresh launch default light",
+      "pass": true,
+      "detail": "light"
+    },
+    {
+      "name": "selector drives restyle (data-theme applied)",
+      "pass": true,
+      "detail": "<!doctype html>\n<html data-theme=\"dark\">\n<head>\n<meta charset=\"utf-8\">\n<title>Vantage</title>\n<link rel=\"stylesheet\" href=\"/ui/styles.css\">\n</head>\n<body>\n<head"
+    },
+    {
+      "name": "state reflects the change",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "config assertion recorded",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true,
+  "schemes": [
+    "dark",
+    "light",
+    "sepia",
+    "slate"
+  ],
+  "htmlAfterDark": "<!doctype html>\n<html data-theme=\"dark\">\n<head>\n<meta charset=\"utf-8\">\n<title>Vantage</title>\n<link rel=\"stylesheet\" href=\"/ui/styles.css\">\n</head>\n<body>\n<header id=\"honesty\"></header>\n<div id=\"app\">"
+}

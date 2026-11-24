@@ -1,0 +1,16 @@
+{
+  "id": "study-vessel",
+  "title": "Study vessel — a worked example need + config",
+  "assertions": [
+    {"subject":"study","predicate":"product:goal","value":"survey the local collection and report","certainty":0.8},
+    {"subject":"sources","predicate":"source:endorsement","value":{"source":"source:wikipedia","raise":0.1},"certainty":0.9}
+  ],
+  "personas": [],
+  "tools": [
+    {"id":"echo-slots","title":"Echo the supplied slots (authored example)",
+     "need":"demo.echo",
+     "template":{"slots":[{"name":"text","required":true}]},
+     "steps":[{"op":"set","k":"echo","value":"{slots.text}"},
+              {"op":"result","value":{"echoed":"$vars.echo"}}]}
+  ]
+}

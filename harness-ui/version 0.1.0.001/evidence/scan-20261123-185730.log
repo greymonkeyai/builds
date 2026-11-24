@@ -1,0 +1,26 @@
+﻿2026-11-23 18:57:30 harness-emit scan — root C:\builds\harness-ui\version 0.1.0.001\fixtures\fleet
+2026-11-23 18:57:30 discovered 2 project(s): brokenrig, stalerig
+2026-11-23 18:57:30 project: brokenrig
+2026-11-23 18:57:30   parsing brokenrig\devlog.md
+2026-11-23 18:57:30     entries: 1; verdict json blocks parsed: 0; failed: 0
+2026-11-23 18:57:30     state.json: MISSING -> gap
+2026-11-23 18:57:30     scenarios.md: MISSING -> gap ids
+2026-11-23 18:57:30     last-*-status.txt: 0 file(s)
+2026-11-23 18:57:30     version folders: 1; latest: version 0.1.0.001
+2026-11-23 18:57:30     C1: no devlog verdict -> used jev-cycle-001.out
+2026-11-23 18:57:30     verdict series points: 1
+2026-11-23 18:57:30     liveness: newest in-scope mtime 2026-11-01T17:00:00.0000000Z (devlog.md); age 1925851s
+2026-11-23 18:57:30     corpus: prompt ref none derivable; conventions file none -> 0 ids
+2026-11-23 18:57:30     emitted brokenrig\display\ (shell + data.js, 1471 bytes)
+2026-11-23 18:57:30 project: stalerig
+2026-11-23 18:57:30   parsing stalerig\devlog.md
+2026-11-23 18:57:30     entries: 2; verdict json blocks parsed: 2; failed: 0
+2026-11-23 18:57:30     state.json: parsed
+2026-11-23 18:57:30     scenarios.md: 3 ids
+2026-11-23 18:57:30     last-*-status.txt: 1 file(s)
+2026-11-23 18:57:30     version folders: 2; latest: version 0.1.0.002
+2026-11-23 18:57:30     verdict series points: 2
+2026-11-23 18:57:30     liveness: newest in-scope mtime 2026-11-01T17:00:00.0000000Z (devlog.md); age 1925851s
+2026-11-23 18:57:30     corpus: prompt ref C:\builds\harness-ui\version 0.1.0.001\fixtures\corpus\spec\Prompt.md; conventions file C:\builds\harness-ui\version 0.1.0.001\fixtures\corpus\spec\CONVENTIONS.md -> 3 ids
+2026-11-23 18:57:31     emitted stalerig\display\ (shell + data.js, 4473 bytes)
+2026-11-23 18:57:31 emitted C:\builds\harness-ui\version 0.1.0.001\fixtures\fleet fleet index + data.js (1003 bytes)

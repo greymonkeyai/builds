@@ -1,0 +1,30 @@
+{
+  "id": "S-restart-recovery",
+  "ran": true,
+  "checks": [
+    {
+      "name": "state survives restart",
+      "pass": true,
+      "detail": {
+        "before": 10,
+        "after": 500
+      }
+    },
+    {
+      "name": "launch partition checkpointed + mounted",
+      "pass": true,
+      "detail": 10
+    },
+    {
+      "name": "cleanup preserves provenance",
+      "pass": true,
+      "detail": {
+        "compactions": 1,
+        "supersessionRows": 120
+      }
+    }
+  ],
+  "pass": true,
+  "rowsAfterRestart": 500,
+  "partitionRows": 10
+}

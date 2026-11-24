@@ -1,0 +1,95 @@
+{
+  "id": "S-personality-editor",
+  "ran": true,
+  "checks": [
+    {
+      "name": "editor surface exposes all elements",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "save updates the persona",
+      "pass": true,
+      "detail": "scholarly"
+    },
+    {
+      "name": "changes asserted to ledger",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true,
+  "before": {
+    "register": "warm",
+    "interests": [
+      "mail",
+      "people",
+      "plans"
+    ]
+  },
+  "after": {
+    "register": "scholarly",
+    "interests": [
+      "atlases",
+      "harbors"
+    ]
+  },
+  "updateResult": {
+    "ok": true,
+    "persona": {
+      "id": "persona-d8df17c1cf35",
+      "name": "Marisol",
+      "traits": [
+        "warm",
+        "attentive"
+      ],
+      "interests": [
+        "atlases",
+        "harbors"
+      ],
+      "responsibilities": [
+        "respond"
+      ],
+      "lens": {
+        "register": "scholarly",
+        "style": "warm"
+      },
+      "register": "scholarly",
+      "figure": null,
+      "mark": false,
+      "voice": {
+        "name": "Microsoft Zira Desktop",
+        "rate": -1,
+        "engine": "sapi"
+      },
+      "color": "#33657d",
+      "frame": "respondent",
+      "created": 1795425787695,
+      "art": {
+        "file": "C:\\builds\\project\\version 0.3.0.004\\runtime\\scenario\\artifacts\\persona-art\\persona-persona-d8df17c1cf35.svg",
+        "motif": "grove",
+        "palette": "#4d3b5e",
+        "params": {
+          "seed": "0xc01398ab2877",
+          "palette": {
+            "skin": "#f0c8a8",
+            "hair": "#3d2b1f",
+            "bg1": "#4d3b5e",
+            "bg2": "#9370b8",
+            "accent": "#ffc6ff"
+          },
+          "motif": "grove",
+          "hair": "crop",
+          "eyes": "narrow",
+          "mouth": "open",
+          "collar": "collar",
+          "glasses": false,
+          "earring": false,
+          "tilt": 2,
+          "brow": 0,
+          "blush": true
+        }
+      }
+    }
+  }
+}

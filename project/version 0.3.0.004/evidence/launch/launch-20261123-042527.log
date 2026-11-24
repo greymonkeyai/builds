@@ -1,0 +1,13 @@
+[04:25:27] vantage 0.3.0.004 boot — port 9775, runtime C:\builds\project\version 0.3.0.004\runtime\closetest
+[04:25:29] transient boundary: C:\builds\project\version 0.3.0.004\runtime\closetest\transient (reset=True)
+[04:25:29] launch partition mounted: 0 rows; journal replay: 0 rows
+[04:25:30] seed packs: {'ok': True, 'seeded': True, 'count': 13}
+[04:25:30] launch partition initialized: 10 rows written, 0 mounted
+[04:25:30] components: {'tools': 40, 'commands': 12, 'primitives': 8, 'components': 60, 'byNeed': ['calendar.import', 'calendar.link', 'chat.topic', 'comparison.run', 'config.depth', 'config.preload', 'context.select', 'demo.echo', 'exchange.export', 'exchange.import', 'home.actuate', 'ledger.cleanup', 'mail.send', 'memory.note', 'need.focus', 'persona.characterize', 'persona.mint', 'persona.note', 'persona.onboard', 'persona.portrait', 'persona.update', 'persona.voice', 'project.create', 'publish.artifact', 'search.run', 'set.build', 'set.members', 'source.endorse', 'speech.render', 'speech.speak', 'speech.transcribe', 'steward.assign', 'steward.tick', 'tool.create', 'tool.inspect', 'tool.validate', 'ui.theme']}
+[04:25:30] engines: llm=live-ollama:llama3.2 tts=sapi(2v) stt=browser-webspeech-declared
+[04:25:30] readiness gate: PASS in 2339ms — dict_keys(['components', 'input-pipeline', 'llm-handle', 'ledger-durable', 'launch-partition', 'ledger-queryable'])
+[04:25:30] honesty: llm=live-ollama:llama3.2 | tts=sapi | declared absences: fleet install, fleet discovery, exchange media (QR/AVQR encode+scan)…
+[04:25:30] steward running every 18s
+[04:25:30] serving http://127.0.0.1:9775 (watchdog=on)
+[04:25:30] launch log: C:\builds\project\version 0.3.0.004\evidence\launch\launch-20261123-042527.log
+[04:26:26] shutdown — partition checkpointed (10 rows)

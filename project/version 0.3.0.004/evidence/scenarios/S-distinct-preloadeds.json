@@ -1,0 +1,43 @@
+{
+  "id": "S-distinct-preloadeds",
+  "ran": true,
+  "checks": [
+    {
+      "name": "same prompt to >=3 personas",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "noticeably different responses",
+      "pass": true,
+      "detail": [
+        0.07,
+        0.091,
+        0.073
+      ]
+    }
+  ],
+  "pass": true,
+  "outputs": [
+    {
+      "name": "Marisol",
+      "register": "scholarly",
+      "text": "I must correct you that my previous response was not within the realm of the provided FACTS. The FACTS only mention a roster of six personalities with distinct registers, but do not provide information on harbor tides or charts.\nRegarding your current question, I can tell you that the FACTS do not provide any information on harbor charts. However, I can suggest that harbor charts, like any other chart, are typically created to provide accurate and reliable information on navigation and tidal patterns."
+    },
+    {
+      "name": "Quill",
+      "register": "clipped",
+      "text": "Harbor charts are typically detailed charts showing water levels, depth soundings, and navigation hazards. They are useful for mariners and pilots."
+    },
+    {
+      "name": "Aldous",
+      "register": "wry",
+      "text": "Harbor charts. (pausing, tone neutral) Limited usefulness. Overly reliant on manual updates and prone to errors. Not a substitute for actual navigation, especially in low-visibility conditions."
+    }
+  ],
+  "jaccardPairs": [
+    0.07,
+    0.091,
+    0.073
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "S-conversation-reset",
+  "ran": true,
+  "checks": [
+    {
+      "name": "topic cleared after reset",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "context cleared",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "segment sealed (transcript survives)",
+      "pass": true,
+      "detail": {
+        "turns": 2,
+        "sealedAt": 1795425927059,
+        "topic": "repair estimates"
+      }
+    }
+  ],
+  "pass": true,
+  "reset": {
+    "ok": true,
+    "sealedTurns": 2
+  },
+  "segments": 1
+}

@@ -1,0 +1,78 @@
+{
+  "id": "S-candidate-ranking",
+  "ran": true,
+  "checks": [
+    {
+      "name": "candidates inspectable",
+      "pass": true,
+      "detail": [
+        "pdf",
+        "hardcover",
+        "vhs tape"
+      ]
+    },
+    {
+      "name": "ranked by effective confidence",
+      "pass": true,
+      "detail": [
+        "pdf",
+        "hardcover",
+        "vhs tape"
+      ]
+    },
+    {
+      "name": "failed/low evidence retained",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true,
+  "needId": "n-04228284c22b",
+  "ranked": [
+    {
+      "id": "a-5c4a366ad546",
+      "value": {
+        "slot": "format",
+        "value": "pdf",
+        "test": "no-test",
+        "adequate": true,
+        "via": "user"
+      },
+      "claimant": "principal",
+      "certainty": 0.9,
+      "effective": 0.9,
+      "superseded": false,
+      "at": 1795425858979
+    },
+    {
+      "id": "a-b9d6cf8334d9",
+      "value": {
+        "slot": "format",
+        "value": "hardcover",
+        "test": "no-test",
+        "adequate": true,
+        "via": "guess"
+      },
+      "claimant": "model:guess",
+      "certainty": 0.4,
+      "effective": 0.4,
+      "superseded": false,
+      "at": 1795425858981
+    },
+    {
+      "id": "a-bdbb97e6edb8",
+      "value": {
+        "slot": "format",
+        "value": "vhs tape",
+        "test": "no-test",
+        "adequate": true,
+        "via": "bad-idea"
+      },
+      "claimant": "model:bad-idea",
+      "certainty": 0.15,
+      "effective": 0.15,
+      "superseded": false,
+      "at": 1795425858982
+    }
+  ]
+}

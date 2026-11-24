@@ -1,0 +1,67 @@
+{
+  "id": "S-focused-need",
+  "ran": true,
+  "checks": [
+    {
+      "name": "need deferred missing required slot",
+      "pass": true,
+      "detail": [
+        "depth"
+      ]
+    },
+    {
+      "name": "moved into focus",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "value supplied conversationally",
+      "pass": true,
+      "detail": {
+        "needId": "n-1117a4caa114",
+        "slot": "depth",
+        "value": 3,
+        "test": "no-test",
+        "fulfilled": true
+      }
+    },
+    {
+      "name": "need fulfilled after fill",
+      "pass": true,
+      "detail": {
+        "needId": "n-1117a4caa114",
+        "slot": "depth",
+        "value": 3,
+        "test": "no-test",
+        "fulfilled": true
+      }
+    },
+    {
+      "name": "candidates recorded",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true,
+  "needId": "n-1117a4caa114",
+  "statusBefore": "deferred",
+  "turn": {
+    "focusFill": {
+      "needId": "n-1117a4caa114",
+      "slot": "depth",
+      "value": 3,
+      "test": "no-test",
+      "fulfilled": true
+    }
+  },
+  "candidates": [
+    {
+      "slot": "depth",
+      "value": 3,
+      "test": "no-test",
+      "adequate": true,
+      "via": "user"
+    }
+  ],
+  "responseDepthNow": 3
+}

@@ -1,0 +1,66 @@
+{
+  "id": "S-speech-serialization",
+  "ran": true,
+  "checks": [
+    {
+      "name": "replies played through the floor",
+      "pass": true,
+      "detail": 4
+    },
+    {
+      "name": "playbackMs populated (measured)",
+      "pass": true,
+      "detail": [
+        24297,
+        16286,
+        2209,
+        1521
+      ]
+    },
+    {
+      "name": "held until playback complete",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "serialized (no overlap)",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true,
+  "played": [
+    {
+      "persona": "Marisol",
+      "text": "I couldn't agree more - those tidal atlases are incredibly useful for anyone who works with the ocean, and it's amazing how much planning and precision they can",
+      "engine": "render-speech-sapi",
+      "at": 1795425865.3198602,
+      "playbackMs": 24297,
+      "heldUntilPlaybackComplete": true
+    },
+    {
+      "persona": "Aldous",
+      "text": "(sighing) Ah, yes, because nothing says \"getting started\" like a detour into the fascinating world of tidal charts. Let's just say I'm excited to dive into the ",
+      "engine": "render-speech-sapi",
+      "at": 1795425866.1976078,
+      "playbackMs": 16286,
+      "heldUntilPlaybackComplete": true
+    },
+    {
+      "persona": "Marlowe",
+      "text": "I'd say \"swell\".",
+      "engine": "render-speech-sapi",
+      "at": 1795425987.318432,
+      "playbackMs": 2209,
+      "heldUntilPlaybackComplete": true
+    },
+    {
+      "persona": "Quill",
+      "text": "Ebb.",
+      "engine": "render-speech-sapi",
+      "at": 1795425987.318432,
+      "playbackMs": 1521,
+      "heldUntilPlaybackComplete": true
+    }
+  ]
+}

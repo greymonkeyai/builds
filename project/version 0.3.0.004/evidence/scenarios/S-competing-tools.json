@@ -1,0 +1,44 @@
+{
+  "id": "S-competing-tools",
+  "ran": true,
+  "checks": [
+    {
+      "name": "competition ran",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "two adequate competing tools on same need",
+      "pass": true,
+      "detail": "2 adequate of 2"
+    },
+    {
+      "name": "results recorded",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true,
+  "competition": {
+    "ok": true,
+    "runId": "cmp-46494a4ef1d3",
+    "need": "set.members",
+    "rows": [
+      {
+        "toolId": "retrieve-set-wiki-table",
+        "ok": true,
+        "adequate": true,
+        "trust": 1.0,
+        "result": "{'ok': True, 'strategy': 'table', 'members': ['Pittsburgh', 'Allentown', 'Reading', 'Erie', 'Scranton', 'Bethlehem', 'Lancaster', 'Harrisburg', 'York', 'Altoona', 'Wilkes-Barre', 'Chester', 'Williamsport', 'Easton', 'Lebanon', 'Hazleton', 'New Castle', 'Johnstown', 'McKeesport', 'DuBois', 'Hermitage…"
+      },
+      {
+        "toolId": "retrieve-set-wiki-category",
+        "ok": true,
+        "adequate": true,
+        "trust": 1.0,
+        "result": "{'ok': True, 'strategy': 'category', 'members': ['Aliquippa', 'Allentown', 'Altoona', 'Arnold', 'Beaver Falls', 'Bethlehem', 'Bradford', 'Butler', 'Carbondale', 'Chester', 'Clairton', 'Coatesville', 'Connellsville', 'Corry', 'DuBois', 'Duquesne', 'Easton', 'Erie', 'Farrell', 'Franklin', 'Greensburg'…"
+      }
+    ],
+    "adequate": 2
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "S-context-display",
+  "ran": true,
+  "checks": [
+    {
+      "name": "context displayed in state",
+      "pass": true,
+      "detail": {
+        "kind": "profile",
+        "ref": "roster",
+        "label": "the roster",
+        "excerpt": "six personalities with distinct registers"
+      }
+    },
+    {
+      "name": "context badge control exists",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true,
+  "context": {
+    "kind": "profile",
+    "ref": "roster",
+    "label": "the roster",
+    "excerpt": "six personalities with distinct registers"
+  }
+}

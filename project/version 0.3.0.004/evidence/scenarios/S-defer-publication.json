@@ -1,0 +1,46 @@
+{
+  "id": "S-defer-publication",
+  "ran": true,
+  "checks": [
+    {
+      "name": "ungranted request deferred (recorded)",
+      "pass": true,
+      "detail": "requires witnessed grant 'publish.creator'"
+    },
+    {
+      "name": "refusal status recorded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "granted request executes honestly",
+      "pass": true,
+      "detail": "C:\\builds\\project\\version 0.3.0.004\\runtime\\scenario\\outbox\\milestone-pub-4047725a5c2b.md"
+    },
+    {
+      "name": "honest channel (no fabricated delivery)",
+      "pass": true,
+      "detail": "local-outbox"
+    }
+  ],
+  "pass": true,
+  "noGrant": {
+    "ok": false,
+    "needId": "n-ea565b55d148",
+    "status": "deferred",
+    "reason": "requires witnessed grant 'publish.creator'",
+    "deferred": true
+  },
+  "withGrant": {
+    "ok": true,
+    "needId": "n-f9124a9ace73",
+    "result": {
+      "ok": true,
+      "artifact": "C:\\builds\\project\\version 0.3.0.004\\runtime\\scenario\\outbox\\milestone-pub-4047725a5c2b.md",
+      "channel": "local-outbox",
+      "delivered": false,
+      "note": "wrote local artifact; no remote channel configured"
+    }
+  },
+  "grantId": "g-23422bc816e5"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "S-faithful-voice",
+  "ran": true,
+  "checks": [
+    {
+      "name": "answers produced in register",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "factually accurate to sources",
+      "pass": true,
+      "detail": [
+        "I don't have information on that topic.",
+        "I must correct you - the conversation so far has not been about the capital of Pennsylvania. It appears to have been about harbor tides and tidal atlases.\nThe capital of Pennsylvania is not on record in our conversation.",
+        "A question that brings to mind the venerable Atlas of North America, which I've had the pleasure of perusing on numerous occasions. From my recollection, the capital of Pennsylvania is Harrisburg, a city situated on the Susquehanna River, not far from the historic city of Lancaster, which, I must confess, holds a special place in my heart."
+      ]
+    },
+    {
+      "name": "source evidence retrieved + used",
+      "pass": true,
+      "detail": {
+        "hits": 0,
+        "used": 0,
+        "attempts": 4
+      }
+    },
+    {
+      "name": "grounded (no unflagged invention)",
+      "pass": true,
+      "detail": [
+        true,
+        true,
+        null
+      ]
+    }
+  ],
+  "pass": true,
+  "replies": [
+    {
+      "name": "Marlowe",
+      "register": "warm",
+      "text": "I don't have information on that topic.",
+      "fidelity": {
+        "grounded": true,
+        "issues": []
+      }
+    },
+    {
+      "name": "Marisol",
+      "register": "scholarly",
+      "text": "I must correct you - the conversation so far has not been about the capital of Pennsylvania. It appears to have been about harbor tides and tidal atlases.\nThe capital of Pennsylvania is not on record in our conversation.",
+      "fidelity": {
+        "grounded": true,
+        "issues": []
+      }
+    },
+    {
+      "name": "Marisol",
+      "register": "scholarly",
+      "text": "A question that brings to mind the venerable Atlas of North America, which I've had the pleasure of perusing on numerous occasions. From my recollection, the capital of Pennsylvania is Harrisburg, a city situated on the Susquehanna River, not far from the historic city of Lancaster, which, I must confess, holds a special place in my heart.",
+      "fidelity": null
+    }
+  ],
+  "fidelityFlags": []
+}

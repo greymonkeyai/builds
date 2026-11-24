@@ -13,6 +13,7 @@ LOG = os.environ.get("ACP_LOG", os.path.join(CWD, ".devin", "build-cycle-002.acp
 MODE = os.environ.get("ACP_MODE", "bypass")   # Bypass Permissions — disposable build session
 TIMEOUT = int(os.environ.get("ACP_TIMEOUT", str(6 * 3600)))
 STATUS_FILE = os.environ.get("ACP_STATUS_FILE", os.path.join(CWD, ".devin", "last-cycle-status.txt"))
+RESUME = os.environ.get("ACP_SESSION")   # session/load this id instead of session/new
 
 def creds_key():
     t = open(r"C:\Users\kris_\AppData\Roaming\devin\credentials.toml", encoding="utf-8").read()
@@ -120,10 +121,13 @@ while time.time() < deadline and not done:
             continue
         res = msg.get("result")
         if res == {} and session_id is None and msg["id"] == init_id + 1:
-            send("session/new", {"cwd": CWD, "mcpServers": []})
+            if RESUME:
+                send("session/load", {"sessionId": RESUME, "cwd": CWD, "mcpServers": []})
+            else:
+                send("session/new", {"cwd": CWD, "mcpServers": []})
             continue
-        if isinstance(res, dict) and res.get("sessionId") and session_id is None:
-            session_id = res["sessionId"]
+        if isinstance(res, dict) and session_id is None and (res.get("sessionId") or RESUME):
+            session_id = res.get("sessionId") or RESUME
             try:
                 send("session/set_mode", {"sessionId": session_id, "modeId": MODE})
             except Exception:

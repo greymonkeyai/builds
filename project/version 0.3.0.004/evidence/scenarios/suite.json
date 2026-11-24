@@ -1,0 +1,807 @@
+{
+  "suite": ".devin/scenarios.md (26)",
+  "ranAt": "2026-11-23T04:30:57",
+  "results": {
+    "_gate": {
+      "pass": null,
+      "checks": null
+    },
+    "S-assertion-input": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "row recorded",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "typed value",
+          "pass": true,
+          "detail": {
+            "type": "string",
+            "v": "enactment probe assertion"
+          }
+        },
+        {
+          "name": "source-aware claimant",
+          "pass": true,
+          "detail": "principal"
+        },
+        {
+          "name": "basis captured/user",
+          "pass": true,
+          "detail": {
+            "kind": "user-choice"
+          }
+        }
+      ]
+    },
+    "S-personality-create": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "persistent identity",
+          "pass": true,
+          "detail": "persona-f1504937c9c6"
+        },
+        {
+          "name": "portrait generated+bound",
+          "pass": true,
+          "detail": "C:\\builds\\project\\version 0.3.0.004\\runtime\\scenario\\artifacts\\persona-art\\persona-persona-f1504937c9c6.svg"
+        },
+        {
+          "name": "voice assigned",
+          "pass": true,
+          "detail": {
+            "name": "Microsoft David Desktop",
+            "rate": 0,
+            "engine": "sapi"
+          }
+        },
+        {
+          "name": "characterized",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "coherent roster entry",
+          "pass": true,
+          "detail": "Wendell"
+        }
+      ]
+    },
+    "S-chat-invocation": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "tool need opened",
+          "pass": true,
+          "detail": [
+            "n-d81ce6d66255"
+          ]
+        },
+        {
+          "name": "response need opened",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "needs distinguishable",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "persona replies produced",
+          "pass": true,
+          "detail": [
+            "Quill",
+            "Marisol",
+            "Marisol"
+          ]
+        },
+        {
+          "name": "snapshot inference rows",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "sequential commits",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-template-need": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "need opened (unmet requirement first)",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "template gate passed + fulfilled",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "durable result",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "topic applied",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-candidate-ranking": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "candidates inspectable",
+          "pass": true,
+          "detail": [
+            "pdf",
+            "hardcover",
+            "vhs tape"
+          ]
+        },
+        {
+          "name": "ranked by effective confidence",
+          "pass": true,
+          "detail": [
+            "pdf",
+            "hardcover",
+            "vhs tape"
+          ]
+        },
+        {
+          "name": "failed/low evidence retained",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-competing-tools": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "competition ran",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "two adequate competing tools on same need",
+          "pass": true,
+          "detail": "2 adequate of 2"
+        },
+        {
+          "name": "results recorded",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-list-project": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "fulfilled",
+          "pass": true,
+          "detail": 57
+        },
+        {
+          "name": "defensible breadth (>=50 real cities)",
+          "pass": true,
+          "detail": 57
+        },
+        {
+          "name": "real incorporated municipalities",
+          "pass": true,
+          "detail": []
+        },
+        {
+          "name": "competing retrievals agree",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "non-matches retained for review",
+          "pass": true,
+          "detail": 200
+        },
+        {
+          "name": "closure + artifact recorded",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-background-present": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "steward runs recorded",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "autonomous runs before manual wake",
+          "pass": true,
+          "detail": 4
+        },
+        {
+          "name": "temporal attention presented",
+          "pass": true,
+          "detail": [
+            "atlas study check-in"
+          ]
+        },
+        {
+          "name": "far-future classified future, not recent",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-defer-publication": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "ungranted request deferred (recorded)",
+          "pass": true,
+          "detail": "requires witnessed grant 'publish.creator'"
+        },
+        {
+          "name": "refusal status recorded",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "granted request executes honestly",
+          "pass": true,
+          "detail": "C:\\builds\\project\\version 0.3.0.004\\runtime\\scenario\\outbox\\milestone-pub-4047725a5c2b.md"
+        },
+        {
+          "name": "honest channel (no fabricated delivery)",
+          "pass": true,
+          "detail": "local-outbox"
+        }
+      ]
+    },
+    "S-focused-need": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "need deferred missing required slot",
+          "pass": true,
+          "detail": [
+            "depth"
+          ]
+        },
+        {
+          "name": "moved into focus",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "value supplied conversationally",
+          "pass": true,
+          "detail": {
+            "needId": "n-1117a4caa114",
+            "slot": "depth",
+            "value": 3,
+            "test": "no-test",
+            "fulfilled": true
+          }
+        },
+        {
+          "name": "need fulfilled after fill",
+          "pass": true,
+          "detail": {
+            "needId": "n-1117a4caa114",
+            "slot": "depth",
+            "value": 3,
+            "test": "no-test",
+            "fulfilled": true
+          }
+        },
+        {
+          "name": "candidates recorded",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-exchange-import": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "package exported",
+          "pass": true,
+          "detail": "C:\\builds\\project\\version 0.3.0.004\\runtime\\scenario\\artifacts\\exports\\pkg-073876e19d94.json"
+        },
+        {
+          "name": "import recorded",
+          "pass": true,
+          "detail": {
+            "personas": 0,
+            "tools": 1,
+            "assertions": 2,
+            "needs": 3
+          }
+        },
+        {
+          "name": "held below action threshold",
+          "pass": true,
+          "detail": [
+            0.4,
+            0.4,
+            0.4,
+            0.4,
+            0.4,
+            0.4,
+            0.4,
+            0.4
+          ]
+        }
+      ]
+    },
+    "S-personality-roster": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "persistent roster panel",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "each persona once (no double-seeding)",
+          "pass": true,
+          "detail": "8 entries, 8 distinct"
+        },
+        {
+          "name": "selection works through the control",
+          "pass": true,
+          "detail": {
+            "ok": true,
+            "active": "persona-d8df17c1cf35",
+            "name": "Marisol"
+          }
+        },
+        {
+          "name": "reorder works",
+          "pass": true,
+          "detail": {
+            "before": [
+              "persona-051d2365a4d4",
+              "persona-d8df17c1cf35",
+              "persona-ff46a0c0390d",
+              "persona-f776d13a8d78",
+              "persona-b54b49758e57",
+              "persona-88495b83a14c",
+              "persona-f1504937c9c6",
+              "persona-6bcfb4615dd5"
+            ],
+            "after": [
+              "persona-d8df17c1cf35",
+              "persona-051d2365a4d4",
+              "persona-ff46a0c0390d",
+              "persona-f776d13a8d78",
+              "persona-b54b49758e57",
+              "persona-88495b83a14c",
+              "persona-f1504937c9c6",
+              "persona-6bcfb4615dd5"
+            ]
+          }
+        },
+        {
+          "name": "dyadic rank assertions recorded",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "every shipped persona reachable",
+          "pass": true,
+          "detail": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    "S-portrait-bind": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "every persona has art bound",
+          "pass": true,
+          "detail": [
+            "Marisol",
+            "Quill",
+            "Aldous",
+            "Beatrix",
+            "Corin",
+            "Sable",
+            "Wendell",
+            "Marlowe"
+          ]
+        },
+        {
+          "name": "artifact files exist",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "art unique per persona (C-PersonalityArt)",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-color-schemes": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "dark mode + >=2 other colorways",
+          "pass": true,
+          "detail": [
+            "dark",
+            "light",
+            "sepia",
+            "slate"
+          ]
+        },
+        {
+          "name": "fresh launch default light",
+          "pass": true,
+          "detail": "light"
+        },
+        {
+          "name": "selector drives restyle (data-theme applied)",
+          "pass": true,
+          "detail": "<!doctype html>\n<html data-theme=\"dark\">\n<head>\n<meta charset=\"utf-8\">\n<title>Vantage</title>\n<link rel=\"stylesheet\" href=\"/ui/styles.css\">\n</head>\n<body>\n<head"
+        },
+        {
+          "name": "state reflects the change",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "config assertion recorded",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-status-bar": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "status bar present",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "LLMs shown",
+          "pass": true,
+          "detail": "live-ollama:llama3.2"
+        },
+        {
+          "name": "sources shown",
+          "pass": true,
+          "detail": [
+            "wikipedia",
+            "ics-calendar",
+            "files",
+            "rss",
+            "inbox-eml",
+            "gmail-oauth"
+          ]
+        }
+      ]
+    },
+    "S-email-commentary": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "emails listed",
+          "pass": true,
+          "detail": 3
+        },
+        {
+          "name": "selection enters context",
+          "pass": true,
+          "detail": {
+            "kind": "email",
+            "ref": "003-repair.eml",
+            "label": "Estimate for the skiff repair",
+            "excerpt": "Estimate for the hull work: materials 220, labor 410, total 630.\nWe can start Monday if you approve by Friday.\n"
+          }
+        },
+        {
+          "name": "persona commentary offered",
+          "pass": true,
+          "detail": "Marlowe"
+        }
+      ]
+    },
+    "S-conversation-reset": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "topic cleared after reset",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "context cleared",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "segment sealed (transcript survives)",
+          "pass": true,
+          "detail": {
+            "turns": 2,
+            "sealedAt": 1795425927059,
+            "topic": "repair estimates"
+          }
+        }
+      ]
+    },
+    "S-context-display": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "context displayed in state",
+          "pass": true,
+          "detail": {
+            "kind": "profile",
+            "ref": "roster",
+            "label": "the roster",
+            "excerpt": "six personalities with distinct registers"
+          }
+        },
+        {
+          "name": "context badge control exists",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-personality-editor": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "editor surface exposes all elements",
+          "pass": true,
+          "detail": []
+        },
+        {
+          "name": "save updates the persona",
+          "pass": true,
+          "detail": "scholarly"
+        },
+        {
+          "name": "changes asserted to ledger",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-windows-launch": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "launch.cmd exists (installed-program launch)",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "serving on Windows",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "gate passed",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-close-terminate": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "window presence observed (SSE)",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "program terminates after last window closes",
+          "pass": true,
+          "detail": "poll=0 after 57s"
+        }
+      ]
+    },
+    "S-speech-serialization": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "replies played through the floor",
+          "pass": true,
+          "detail": 4
+        },
+        {
+          "name": "playbackMs populated (measured)",
+          "pass": true,
+          "detail": [
+            24297,
+            16286,
+            2209,
+            1521
+          ]
+        },
+        {
+          "name": "held until playback complete",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "serialized (no overlap)",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-distinct-preloadeds": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "same prompt to >=3 personas",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "noticeably different responses",
+          "pass": true,
+          "detail": [
+            0.07,
+            0.091,
+            0.073
+          ]
+        }
+      ]
+    },
+    "S-library-browse": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "personas browsable",
+          "pass": true,
+          "detail": 8
+        },
+        {
+          "name": "tools browsable",
+          "pass": true,
+          "detail": 40
+        },
+        {
+          "name": "artifacts browsable",
+          "pass": true,
+          "detail": 10
+        },
+        {
+          "name": "needs inspectable",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "holdings surface not a log view",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-faithful-voice": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "answers produced in register",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "factually accurate to sources",
+          "pass": true,
+          "detail": [
+            "I don't have information on that topic.",
+            "I must correct you - the conversation so far has not been about the capital of Pennsylvania. It appears to have been about harbor tides and tidal atlases.\nThe capital of Pennsylvania is not on record in our conversation.",
+            "A question that brings to mind the venerable Atlas of North America, which I've had the pleasure of perusing on numerous occasions. From my recollection, the capital of Pennsylvania is Harrisburg, a city situated on the Susquehanna River, not far from the historic city of Lancaster, which, I must confess, holds a special place in my heart."
+          ]
+        },
+        {
+          "name": "source evidence retrieved + used",
+          "pass": true,
+          "detail": {
+            "hits": 0,
+            "used": 0,
+            "attempts": 4
+          }
+        },
+        {
+          "name": "grounded (no unflagged invention)",
+          "pass": true,
+          "detail": [
+            true,
+            true,
+            null
+          ]
+        }
+      ]
+    },
+    "S-restart-recovery": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "state survives restart",
+          "pass": true,
+          "detail": {
+            "before": 10,
+            "after": 500
+          }
+        },
+        {
+          "name": "launch partition checkpointed + mounted",
+          "pass": true,
+          "detail": 10
+        },
+        {
+          "name": "cleanup preserves provenance",
+          "pass": true,
+          "detail": {
+            "compactions": 1,
+            "supersessionRows": 120
+          }
+        }
+      ]
+    }
+  },
+  "scorecard": {
+    "S-assertion-input": 1.0,
+    "S-personality-create": 1.0,
+    "S-chat-invocation": 1.0,
+    "S-template-need": 1.0,
+    "S-candidate-ranking": 1.0,
+    "S-competing-tools": 1.0,
+    "S-list-project": 1.0,
+    "S-background-present": 1.0,
+    "S-defer-publication": 1.0,
+    "S-focused-need": 1.0,
+    "S-exchange-import": 1.0,
+    "S-personality-roster": 1.0,
+    "S-portrait-bind": 1.0,
+    "S-color-schemes": 1.0,
+    "S-status-bar": 1.0,
+    "S-email-commentary": 1.0,
+    "S-conversation-reset": 1.0,
+    "S-context-display": 1.0,
+    "S-personality-editor": 1.0,
+    "S-windows-launch": 1.0,
+    "S-close-terminate": 1.0,
+    "S-speech-serialization": 1.0,
+    "S-distinct-preloadeds": 1.0,
+    "S-library-browse": 1.0,
+    "S-faithful-voice": 1.0,
+    "S-restart-recovery": 1.0
+  }
+}

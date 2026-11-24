@@ -1,0 +1,57 @@
+{
+  "id": "S-exchange-import",
+  "ran": true,
+  "checks": [
+    {
+      "name": "package exported",
+      "pass": true,
+      "detail": "C:\\builds\\project\\version 0.3.0.004\\runtime\\scenario\\artifacts\\exports\\pkg-073876e19d94.json"
+    },
+    {
+      "name": "import recorded",
+      "pass": true,
+      "detail": {
+        "personas": 0,
+        "tools": 1,
+        "assertions": 2,
+        "needs": 3
+      }
+    },
+    {
+      "name": "held below action threshold",
+      "pass": true,
+      "detail": [
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4
+      ]
+    }
+  ],
+  "pass": true,
+  "export": {
+    "path": "C:\\builds\\project\\version 0.3.0.004\\runtime\\scenario\\artifacts\\exports\\pkg-073876e19d94.json",
+    "counts": {
+      "personas": 6,
+      "tools": 1,
+      "assertions": 2,
+      "needs": 3
+    }
+  },
+  "import": {
+    "ok": true,
+    "package": "pkg-073876e19d94",
+    "counts": {
+      "personas": 0,
+      "tools": 1,
+      "assertions": 2,
+      "needs": 3
+    },
+    "threshold": 0.4
+  },
+  "belowThreshold": true
+}

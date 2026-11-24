@@ -1,0 +1,35 @@
+{
+  "id": "S-template-need",
+  "ran": true,
+  "checks": [
+    {
+      "name": "need opened (unmet requirement first)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template gate passed + fulfilled",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "durable result",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "topic applied",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true,
+  "invoke": {
+    "ok": true,
+    "needId": "n-e1c88cd8fe11",
+    "result": {
+      "ok": true,
+      "topic": "tidal atlases"
+    }
+  }
+}

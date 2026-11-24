@@ -1,0 +1,234 @@
+{
+  "id": "S-list-project",
+  "ran": true,
+  "checks": [
+    {
+      "name": "fulfilled",
+      "pass": true,
+      "detail": 57
+    },
+    {
+      "name": "defensible breadth (>=50 real cities)",
+      "pass": true,
+      "detail": 57
+    },
+    {
+      "name": "real incorporated municipalities",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "competing retrievals agree",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "non-matches retained for review",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "closure + artifact recorded",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true,
+  "memberCount": 57,
+  "artifact": "C:\\builds\\project\\version 0.3.0.004\\runtime\\scenario\\artifacts\\lists\\set-list-e6e3210f008c.json",
+  "agreement": {
+    "both": [
+      "Aliquippa",
+      "Allentown",
+      "Altoona",
+      "Arnold",
+      "Beaver Falls",
+      "Bethlehem",
+      "Bradford",
+      "Butler",
+      "Carbondale",
+      "Chester",
+      "Clairton",
+      "Coatesville",
+      "Connellsville",
+      "Corry",
+      "DuBois",
+      "Duquesne",
+      "Easton",
+      "Erie",
+      "Farrell",
+      "Franklin",
+      "Greensburg",
+      "Hazleton",
+      "Hermitage",
+      "Jeannette",
+      "Johnstown",
+      "Lancaster",
+      "Latrobe",
+      "Lebanon",
+      "Lock Haven",
+      "Lower Burrell",
+      "McKeesport",
+      "Meadville",
+      "Monessen",
+      "Monongahela",
+      "Nanticoke",
+      "New Castle",
+      "New Kensington",
+      "Oil City",
+      "Parker",
+      "Pittsburgh",
+      "Pittston",
+      "Pottsville",
+      "Reading",
+      "Scranton",
+      "Shamokin",
+      "Sharon",
+      "St. Marys",
+      "Sunbury",
+      "Titusville",
+      "Uniontown",
+      "Warren",
+      "Washington",
+      "Wilkes-Barre",
+      "Williamsport",
+      "York"
+    ],
+    "only-table": [
+      "Harrisburg"
+    ],
+    "only-category": [
+      "Philadelphia"
+    ]
+  },
+  "members": [
+    "Aliquippa",
+    "Allentown",
+    "Altoona",
+    "Arnold",
+    "Beaver Falls",
+    "Bethlehem",
+    "Bradford",
+    "Butler",
+    "Carbondale",
+    "Chester",
+    "Clairton",
+    "Coatesville",
+    "Connellsville",
+    "Corry",
+    "DuBois",
+    "Duquesne",
+    "Easton",
+    "Erie",
+    "Farrell",
+    "Franklin",
+    "Greensburg",
+    "Harrisburg",
+    "Hazleton",
+    "Hermitage",
+    "Jeannette",
+    "Johnstown",
+    "Lancaster",
+    "Latrobe",
+    "Lebanon",
+    "Lock Haven",
+    "Lower Burrell",
+    "McKeesport",
+    "Meadville",
+    "Monessen",
+    "Monongahela",
+    "Nanticoke",
+    "New Castle",
+    "New Kensington",
+    "Oil City",
+    "Parker",
+    "Philadelphia",
+    "Pittsburgh",
+    "Pittston",
+    "Pottsville",
+    "Reading",
+    "Scranton",
+    "Shamokin",
+    "Sharon",
+    "St. Marys",
+    "Sunbury",
+    "Titusville",
+    "Uniontown",
+    "Warren",
+    "Washington",
+    "Wilkes-Barre",
+    "Williamsport",
+    "York"
+  ],
+  "nonMatchSample": [
+    {
+      "slot": "member",
+      "value": "Philadelphia",
+      "adequate": true,
+      "class": "single-source",
+      "detail": "returned by only-category strategy only"
+    },
+    {
+      "slot": "member",
+      "value": "Harrisburg",
+      "adequate": true,
+      "class": "single-source",
+      "detail": "returned by only-table strategy only"
+    },
+    {
+      "slot": "member",
+      "value": "List of cities in Pennsylvania",
+      "adequate": false,
+      "class": "header",
+      "detail": "list/header page is not a member",
+      "strategy": "category"
+    },
+    {
+      "slot": "member",
+      "value": "List of sister cities in Pennsylvania",
+      "adequate": false,
+      "class": "header",
+      "detail": "list/header page is not a member",
+      "strategy": "category"
+    },
+    {
+      "slot": "member",
+      "value": "Centralia",
+      "adequate": false,
+      "class": "class-error",
+      "detail": "table class 'borough' is not a city",
+      "strategy": "table"
+    },
+    {
+      "slot": "member",
+      "value": "Valley-Hi",
+      "adequate": false,
+      "class": "class-error",
+      "detail": "table class 'borough' is not a city",
+      "strategy": "table"
+    },
+    {
+      "slot": "member",
+      "value": "S.N.P.J.",
+      "adequate": false,
+      "class": "class-error",
+      "detail": "table class 'borough' is not a city",
+      "strategy": "table"
+    },
+    {
+      "slot": "member",
+      "value": "Seven Springs",
+      "adequate": false,
+      "class": "class-error",
+      "detail": "table class 'borough' is not a city",
+      "strategy": "table"
+    }
+  ],
+  "closure": {
+    "criteria": "all the cities in Pennsylvania",
+    "memberCount": 57,
+    "agreeBoth": 55,
+    "disputed": 2,
+    "artifact": "C:\\builds\\project\\version 0.3.0.004\\runtime\\scenario\\artifacts\\lists\\set-list-e6e3210f008c.json"
+  }
+}

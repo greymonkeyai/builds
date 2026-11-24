@@ -1,0 +1,39 @@
+{
+  "id": "S-library-browse",
+  "ran": true,
+  "checks": [
+    {
+      "name": "personas browsable",
+      "pass": true,
+      "detail": 8
+    },
+    {
+      "name": "tools browsable",
+      "pass": true,
+      "detail": 40
+    },
+    {
+      "name": "artifacts browsable",
+      "pass": true,
+      "detail": 10
+    },
+    {
+      "name": "needs inspectable",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "holdings surface not a log view",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true,
+  "counts": {
+    "personas": 8,
+    "tools": 40,
+    "artifacts": 10,
+    "packages": 2,
+    "ledgerRows": 1425
+  }
+}
