@@ -72,7 +72,7 @@ RMT-93 recorded `.33` and `.41` in different months).
 
 ## Candidate suite additions
 
-For adoption into `.devin/scenarios.md` when a direction names the fleet suite.
+For adoption into `scenarios.md` when a direction names the fleet suite.
 
 | ID | Scenario | Exercises | Source |
 |----|----------|-----------|--------|

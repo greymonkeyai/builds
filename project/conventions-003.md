@@ -49,7 +49,7 @@ stay free.
 
 ## Candidate suite additions
 
-For adoption into `.devin/scenarios.md` alongside the artifact/AVQR direction.
+For adoption into `scenarios.md` alongside the artifact/AVQR direction.
 
 | ID | Scenario | Exercises | Source |
 |----|----------|-----------|--------|

@@ -18,7 +18,7 @@ under refinement is `prompt.md`; builds are disposable evidence.
   §Observable demonstrations, evaluability paragraph).
 - The JEV verdict (`.devin/jev-prompt.md` contract) is recorded in the cycle entry in
   `devlog.md` before the session stops. A failed cycle is recorded, not auto-retried.
-- **Usage-case discovery (F11):** the scenario suite (`.devin/scenarios.md`) is derived
+- **Usage-case discovery (F11):** the scenario suite (`scenarios.md`) is derived
   from the project corpus — prompt §Observable demonstrations, UX reference scenarios,
   prior builds' test conventions. Directions name the suite so every JEV scores it;
   at review, named-but-unenacted scenarios are flagged as evidence gaps. The suite is

@@ -34,13 +34,13 @@ Output ONLY a JSON object:
   "judge_model": "<model id>",
   "user_commentary": [],
   "scenarios": [
-    { "id": "<scenario id from .devin/scenarios.md>", "score": 0, "evidence_class": "enactment|repository", "evidence": ["path:line"], "notes": "" }
+    { "id": "<scenario id from scenarios.md>", "score": 0, "evidence_class": "enactment|repository", "evidence": ["path:line"], "notes": "" }
   ],
   "notes": "<flags for the owner; say if frontier-model escalation is recommended>"
 }
 ```
 
-When the direction names the scenario suite (`.devin/scenarios.md`), score each scenario
+When the direction names the scenario suite (`scenarios.md`), score each scenario
 individually per its scoring conventions — `enactment` evidence where the build runs or its
 run artifacts demonstrate it, `repository` evidence where it does not. Omit the `scenarios`
 array when the direction does not name the suite.

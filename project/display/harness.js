@@ -343,7 +343,7 @@
     t.appendChild(tr);
     if (!p.suite || !p.suite.length) {
       var e = el('tr'); var td = el('td'); td.colSpan = subset.length + 1;
-      td.appendChild(gap('no scenario suite parsed (.devin/scenarios.md missing or empty)'));
+      td.appendChild(gap('no scenario suite parsed (scenarios.md missing or empty)'));
       e.appendChild(td); t.appendChild(e); return t;
     }
     var cells = 0, filled = 0;
@@ -427,7 +427,7 @@
     row('state.json revisions (snapshot)', rev ? renderAny(rev) : absent(p.state_present ? 'revisions key absent' : 'no state.json'));
     m.appendChild(t);
 
-    m.appendChild(el('h3', null, 'live scenario id set \u2014 .devin/scenarios.md (' + (cs.live_scenario_ids ? cs.live_scenario_ids.length : 0) + ' ids)'));
+    m.appendChild(el('h3', null, 'live scenario id set \u2014 scenarios.md (' + (cs.live_scenario_ids ? cs.live_scenario_ids.length : 0) + ' ids)'));
     if (cs.live_scenario_ids && cs.live_scenario_ids.length) {
       var d = el('div', 'mono'); d.textContent = cs.live_scenario_ids.join('  ');
       m.appendChild(d);

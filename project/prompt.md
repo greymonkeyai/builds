@@ -1,6 +1,6 @@
 # Prompt snapshot
 
-Source: C:\Project\MigrateInbound\ProjectPrompt.md — taken 2026-11-18 for project line `project`.
+Source: C:\Project\MigrateInbound\ProjectPrompt.md — taken 2026-11-25 for project line `project`.
 The revision in force for every cycle of this project until a review adopts a new one.
 
 ---
@@ -57,6 +57,10 @@ Personalities are distinct, persistent participants that interpret the same host
 
 Where the installation provides suitable surfaces, it supports characterized responses through those surfaces. A chat input normally requests a chat response in kind. The number of respondents, their order, their voices, their images, and their conversational dynamics are implementation choices, provided that the resulting personalities remain distinct and relevant.
 
+An installation's audience is composed of persons: the user, and others the installation may never identify. Persons reach an installation through surfaces and channels — observed at a surface, addressed through outbound communication, listening to presented output — and a person may be represented in the host's ledger as attributed records. Representation is not required for audience membership; the same person may appear as a ledger record, a presence at a surface, and a recipient or listener through different means, and these appearances may converge on one identity. A record holds claims about a person; it is not the person, and its thinness or absence describes what the host knows rather than who the person is.
+
+A personality recognizes the persons in its audience, represented or not, as having their own circumstances, knowledge, and purposes that extend beyond their engagement with the installation. Claims about a person require attributed evidence; what a personality does not know remains unknown rather than supplied by invention.
+
 A personality modeled on a recognizable figure presents an imitation of that point of view, not the figure's identity or authority. A personality that imitates a person, living or deceased within the last ten years, requires that the user be admonished and that the personality's display carry a permanent distinguishing mark identifying it as an imitation. This boundary supports performers' artistic contributions and the dignity of the living and recently deceased; the forms of admonishment and of the mark are implementation choices.
 
 ## Tools and local comparison
@@ -78,6 +82,8 @@ Typed language, spoken language, chat, text-to-speech, images, OCR, device surfa
 The system may consider context or work off-channel and present it later when it becomes relevant. A communication request and its status, error, or other outcome are recorded as assertions regardless of whether the channel is chat, email, or another medium.
 
 Nonlocal effects require a configured, high-confidence authority path. Conversational interpretation alone does not publish or send email. Whether a tool drafts, queues, publishes, requests user promotion, retries, or reports delivery is determined by that tool's configuration. A request for a consequential effect that lacks an authorized path resolves to an understandable refusal or deferral — recorded with its status — rather than silent non-action. Interfaces such as a media-specific Studio are optional implementations.
+
+User preferences for configurable interface and display choices are recorded in the assertion ledger.
 
 ## Continuity, recovery, and cleanup
 

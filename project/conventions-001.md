@@ -51,7 +51,7 @@ independent implementations converge when the prompt doesn't determine an answer
 
 | ID | Convention | Source / strength |
 |----|-----------|-------------------|
-| C-CanonicalScenarios | The line's discriminating tests are enacted per version: S-list-project (PA cities), S-personality-create, and the named suite — real inputs, not canned | Prior builds' test canon; now `.devin/scenarios.md`. Strong — two generations of test convention |
+| C-CanonicalScenarios | The line's discriminating tests are enacted per version: S-list-project (PA cities), S-personality-create, and the named suite — real inputs, not canned | Prior builds' test canon; now `scenarios.md`. Strong — two generations of test convention |
 | C-ConvergentOntology | Invokable components realized as tool-as-data DSL executor / object.verb system commands / closed primitive allow-list | GreyAvatar + Meridian **independently converged** — the strongest convention evidence there is |
 | C-JsonlLedger | Append-only durable JSONL assertion journal as the ledger realization | Converged: both implementations |
 | C-HonestyBanner | Runtime surfaces declare capability honestly (ledger durability, engine/stub status) | Converged: both implementations |
