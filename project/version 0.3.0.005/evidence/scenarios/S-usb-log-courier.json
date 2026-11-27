@@ -1,0 +1,22 @@
+{
+  "id": "S-usb-log-courier",
+  "ran": true,
+  "checks": [
+    {
+      "name": "courier log accumulates across runs",
+      "pass": true,
+      "detail": "4→5"
+    },
+    {
+      "name": "machine-readable per-node evidence",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "stale-seed revisit handling recorded",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true
+}

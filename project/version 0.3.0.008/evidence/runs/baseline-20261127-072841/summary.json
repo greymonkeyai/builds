@@ -1,0 +1,15 @@
+{
+ "mode": "baseline",
+ "ts": "2026-11-27T07:28:41",
+ "elapsed": 0.6,
+ "scenarios": 84,
+ "checks": 352,
+ "passed": 32,
+ "green": 32,
+ "evidenceClass": {
+  "externalToFlag": 0.0,
+  "rendered": 0.19318181818181818,
+  "userPath": 1.0,
+  "selfAttestedOnly": 0.0
+ }
+}

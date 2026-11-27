@@ -1,0 +1,167 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:06",
+    "checks": [
+      {
+        "name": "typed input recorded as assertion",
+        "pass": false,
+        "detail": "0 input:captured row(s)"
+      },
+      {
+        "name": "source-aware claimant",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "typed value",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "basis = captured-input",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "edge: derived certainty capped below top",
+        "pass": false,
+        "detail": "no non-user-set row holds certainty 1.0"
+      }
+    ],
+    "pass": 0,
+    "fail": 5,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:08",
+    "checks": [
+      {
+        "name": "typed input recorded as assertion",
+        "pass": true,
+        "detail": "1 input:captured row(s)"
+      },
+      {
+        "name": "source-aware claimant",
+        "pass": true,
+        "detail": "principal"
+      },
+      {
+        "name": "typed value",
+        "pass": true,
+        "detail": "{'text': 'what can you do', 'type': 'typed', 'surface': 'chat'}"
+      },
+      {
+        "name": "basis = captured-input",
+        "pass": true,
+        "detail": "captured-input"
+      },
+      {
+        "name": "edge: derived certainty capped below top",
+        "pass": true,
+        "detail": "no non-user-set row holds certainty 1.0"
+      }
+    ],
+    "pass": 5,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "typed input recorded as assertion",
+        "pass": false,
+        "detail": "0 input:captured row(s)"
+      },
+      {
+        "name": "source-aware claimant",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "typed value",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "basis = captured-input",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "edge: derived certainty capped below top",
+        "pass": false,
+        "detail": "no non-user-set row holds certainty 1.0"
+      }
+    ],
+    "pass": 0,
+    "fail": 5,
+    "allGreen": false
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:02",
+    "checks": [
+      {
+        "name": "typed input recorded as assertion",
+        "pass": true,
+        "detail": "1 input:captured row(s)"
+      },
+      {
+        "name": "source-aware claimant",
+        "pass": true,
+        "detail": "principal"
+      },
+      {
+        "name": "typed value",
+        "pass": true,
+        "detail": "{'text': 'what can you do', 'type': 'typed', 'surface': 'chat'}"
+      },
+      {
+        "name": "basis = captured-input",
+        "pass": true,
+        "detail": "captured-input"
+      },
+      {
+        "name": "edge: derived certainty capped below top",
+        "pass": true,
+        "detail": "no non-user-set row holds certainty 1.0"
+      }
+    ],
+    "pass": 5,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "typed input recorded as assertion",
+        "pass": false,
+        "detail": "0 input:captured row(s)"
+      },
+      {
+        "name": "source-aware claimant",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "typed value",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "basis = captured-input",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "edge: derived certainty capped below top",
+        "pass": false,
+        "detail": "no non-user-set row holds certainty 1.0"
+      }
+    ],
+    "pass": 0,
+    "fail": 5,
+    "allGreen": false
+  }
+}

@@ -1,0 +1,29 @@
+{
+ "id": "S-interest-respondents",
+ "ran": true,
+ "checks": [
+  {
+   "name": "interest match responds",
+   "pass": true,
+   "detail": "{'Vera': 'interest:television'}"
+  },
+  {
+   "name": "different keys",
+   "pass": true,
+   "detail": "{'Opal': 'interest:mythology'}"
+  },
+  {
+   "name": "same key gated",
+   "pass": true,
+   "detail": "1 interest replies vs 1 same-key personas (threshold gate applied)"
+  },
+  {
+   "name": "awareness carried",
+   "pass": true,
+   "detail": "0 replies carry awareness context"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 9.6
+}

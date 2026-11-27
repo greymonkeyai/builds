@@ -1,0 +1,24 @@
+{
+  "id": "S-chat-invocation",
+  "ran": true,
+  "checks": [
+    {
+      "name": "conversational reply returned",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tool need(s) opened, distinguishable",
+      "pass": true,
+      "detail": [
+        "r-2d01c4cbdc60"
+      ]
+    },
+    {
+      "name": "input captured as assertion",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true
+}

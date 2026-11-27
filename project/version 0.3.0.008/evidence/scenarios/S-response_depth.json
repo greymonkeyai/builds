@@ -1,0 +1,282 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "depth setting exists",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "user assertion",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "persists",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "chat all",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "priority exempt",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "depth fills",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 6,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "depth setting exists",
+    "pass": true,
+    "detail": "settings keys=['choiceSet', 'depth', 'preloads', 'style', 'theme', 'themes']",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "user assertion",
+    "pass": true,
+    "detail": "response-depth recorded claimant=user",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "persists",
+    "pass": true,
+    "detail": "depth after relaunch=1",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "chat all",
+    "pass": true,
+    "detail": "depth=1 \u2192 1 respondents (fill to depth)",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "priority exempt",
+    "pass": true,
+    "detail": "priority respondents exempt from depth",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "depth fills",
+    "pass": true,
+    "detail": "shortfall filled in confidence-rank order: 1",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 6,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "depth setting exists",
+    "pass": true,
+    "detail": "settings keys=['choiceSet', 'depth', 'preloads', 'style', 'theme', 'themes']",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "user assertion",
+    "pass": true,
+    "detail": "response-depth recorded claimant=user",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "persists",
+    "pass": false,
+    "detail": "depth after relaunch=2",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "chat all",
+    "pass": true,
+    "detail": "depth=1 \u2192 2 respondents (fill to depth)",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "priority exempt",
+    "pass": true,
+    "detail": "priority respondents exempt from depth",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "depth fills",
+    "pass": true,
+    "detail": "shortfall filled in confidence-rank order: 2",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 5,
+  "fail": 1,
+  "allGreen": false
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "depth setting exists",
+    "pass": true,
+    "detail": "settings keys=['choiceSet', 'depth', 'preloads', 'style', 'theme', 'themes']",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "user assertion",
+    "pass": true,
+    "detail": "response-depth recorded claimant=user",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "persists",
+    "pass": true,
+    "detail": "depth after relaunch=1",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "chat all",
+    "pass": true,
+    "detail": "depth=1 \u2192 1 respondents (fill to depth)",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "priority exempt",
+    "pass": true,
+    "detail": "priority respondents exempt from depth",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "depth fills",
+    "pass": true,
+    "detail": "shortfall filled in confidence-rank order: 1",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 6,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "depth setting exists",
+    "pass": false,
+    "detail": "settings keys=['error']",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "user assertion",
+    "pass": false,
+    "detail": "response-depth recorded claimant=user",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "persists",
+    "pass": false,
+    "detail": "depth after relaunch=None",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "chat all",
+    "pass": false,
+    "detail": "depth=1 \u2192 0 respondents (fill to depth)",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "priority exempt",
+    "pass": true,
+    "detail": "priority respondents exempt from depth",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "depth fills",
+    "pass": false,
+    "detail": "shortfall filled in confidence-rank order: 0",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 1,
+  "fail": 5,
+  "allGreen": false
+ }
+}

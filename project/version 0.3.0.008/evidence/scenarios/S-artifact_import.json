@@ -1,0 +1,170 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "capture \u2192 workshop entry created",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "below action/acceptance threshold",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "entry accessible in the app",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "capture \u2192 workshop entry created",
+    "pass": true,
+    "detail": "entry=a-39accb14d7d6",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "below action/acceptance threshold",
+    "pass": true,
+    "detail": "belowThreshold=True ceiling=0.25",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "entry accessible in the app",
+    "pass": true,
+    "detail": "workshop entries on the library surface",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "capture \u2192 workshop entry created",
+    "pass": true,
+    "detail": "entry=a-2eb679ad7d93",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "below action/acceptance threshold",
+    "pass": true,
+    "detail": "belowThreshold=True ceiling=0.25",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "entry accessible in the app",
+    "pass": true,
+    "detail": "workshop entries on the library surface",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "capture \u2192 workshop entry created",
+    "pass": true,
+    "detail": "entry=a-9ea216924e28",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "below action/acceptance threshold",
+    "pass": true,
+    "detail": "belowThreshold=True ceiling=0.25",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "entry accessible in the app",
+    "pass": true,
+    "detail": "workshop entries on the library surface",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "capture \u2192 workshop entry created",
+    "pass": false,
+    "detail": "entry=None",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "below action/acceptance threshold",
+    "pass": false,
+    "detail": "belowThreshold=None ceiling=None",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "entry accessible in the app",
+    "pass": false,
+    "detail": "workshop entries on the library surface",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ }
+}

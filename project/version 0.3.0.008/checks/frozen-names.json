@@ -1,0 +1,413 @@
+{
+ "S-account-configure": [
+  "credential path exists",
+  "descriptor row",
+  "secret hygiene",
+  "real read",
+  "unconfigured honest"
+ ],
+ "S-artifact-import": [
+  "capture \u2192 workshop entry created",
+  "below action/acceptance threshold",
+  "entry accessible in the app"
+ ],
+ "S-artifact-republish": [
+  "adopted workshop re-encoded to new artifact",
+  "gen-2 payload decodes identically"
+ ],
+ "S-artifact-style": [
+  "stylistic extraction layer present",
+  "art style captured as LLM reference",
+  "carried on the workshop entry"
+ ],
+ "S-assertion-input": [
+  "typed input recorded as assertion",
+  "source-aware claimant",
+  "typed value",
+  "basis = captured-input",
+  "edge: derived certainty capped below top"
+ ],
+ "S-asset-anticipation": [
+  "persona creation opens asset need(s)",
+  "background fulfillment produces asset",
+  "asset bound to persona",
+  "need closes on fulfillment",
+  "persistence"
+ ],
+ "S-audible-ack": [
+  "snippet pre-generated per persona",
+  "plays before composition starts",
+  "\u22640.5s / \u22645 syllables",
+  "register-suitable",
+  "honest-absence"
+ ],
+ "S-background-channels": [
+  "sample tracks present",
+  "prompt reference creates channel",
+  "channel persists under conversation",
+  "honest when audio engine absent"
+ ],
+ "S-background-present": [
+  "steward pass recorded",
+  "liveness data for first-screen chit",
+  "persona presented while idle work continues"
+ ],
+ "S-candidate-ranking": [
+  "candidates retained w/ source+confidence",
+  "supersession rows retained",
+  "invocation produced result",
+  "discrimination-case"
+ ],
+ "S-chat-invocation": [
+  "conversational reply returned",
+  "tool need(s) opened, distinguishable",
+  "input captured as assertion",
+  "needs route"
+ ],
+ "S-close-terminate": [
+  "close-terminates (launch-check leg 4)"
+ ],
+ "S-color-schemes": [
+  "\u22653 colorways implemented incl. dark",
+  "theme selector drives settings claims",
+  "fresh launch opens light (seeded)"
+ ],
+ "S-competing-tools": [
+  "two competing tools ran the same need",
+  "both legs produced interpretable results",
+  "results comparable (member counts)",
+  "comparison recorded"
+ ],
+ "S-context-display": [
+  "active context displayed"
+ ],
+ "S-conversation-reset": [
+  "reset clears conversation",
+  "topic cleared"
+ ],
+ "S-conversational-register": [
+  "sentences",
+  "no textbook",
+  "no verbatim markup",
+  "register unbroken"
+ ],
+ "S-credential-surrender": [
+  "surrender recorded as a claim",
+  "host holds the credential screen (\u00a75)",
+  "secrets stay host-local \u2014 needs travel, secrets never do"
+ ],
+ "S-defer-publication": [
+  "unconfigured nonlocal effect refused/deferred",
+  "request + status recorded as assertions",
+  "production half"
+ ],
+ "S-discovery-progress": [
+  "in-progress shown",
+  "transport progress",
+  "finished shown"
+ ],
+ "S-distinct-preloadeds": [
+  "\u22653 shipped personas w/ distinct registers",
+  "same prompt \u2192 noticeably different replies"
+ ],
+ "S-dubious-source": [
+  "artifact claims held below trust ceiling",
+  "encoded references resolved against vetted pointers",
+  "non-matching claims recorded for review"
+ ],
+ "S-dyadic-ranking": [
+  "every move visible",
+  "interior moves",
+  "surface shows it"
+ ],
+ "S-email-commentary": [
+  "email list from configured source basis",
+  "V-G: fixture basis honestly labeled",
+  "persona commentary produced",
+  "commentary recorded",
+  "configured source exercised"
+ ],
+ "S-exchange-import": [
+  "package exported then imported",
+  "contents below action threshold",
+  "foreign tools staged as candidates, not live"
+ ],
+ "S-faithful-voice": [
+  "grounded reply flagged grounded",
+  "zero-hit does NOT pass grounding (S-2)",
+  "no unflagged fidelity:null"
+ ],
+ "S-fleet-action-legible": [
+  "invite legible",
+  "join legible",
+  "install legible",
+  "map legible"
+ ],
+ "S-fleet-exchange": [
+  "second real node",
+  "delta exchange",
+  "rejoin correlation",
+  "courier sync",
+  "both sides evidenced"
+ ],
+ "S-fleet-install-path": [
+  "no dead end",
+  "target surface OR directions",
+  "honest outcome",
+  "pending stated"
+ ],
+ "S-fleet-invite": [
+  "discovery lists candidates",
+  "user selects which join",
+  "non-invited devices are NOT members",
+  "continues to path",
+  "legible outcome"
+ ],
+ "S-fleet-roster": [
+  "every named-roster device reported",
+  "honest status per device",
+  "coverage is test data \u2014 non-targets recorded"
+ ],
+ "S-focused-need": [
+  "unmet need moved into focus",
+  "value supplied conversationally fills a slot",
+  "need remains until requirement met"
+ ],
+ "S-intent-routing": [
+  "name-addressed \u2192 addressee",
+  "capability \u2192 answered",
+  "want \u2260 list",
+  "list \u2192 list machinery",
+  "genuine unmet \u2192 floor",
+  "no stray rows"
+ ],
+ "S-interest-respondents": [
+  "interest match responds",
+  "different keys",
+  "same key gated",
+  "awareness carried"
+ ],
+ "S-interstitial-queue": [
+  "asset needs queued fleet-addressable",
+  "collected before presentation",
+  "input change triggers rework",
+  "presents when ready",
+  "trigger honestly bounded",
+  "honest-absence"
+ ],
+ "S-library-browse": [
+  "personas browsable",
+  "tools browsable w/ explanations",
+  "holdings structured, not a raw log"
+ ],
+ "S-list-project": [
+  "list need created from chat",
+  "chat path enactment",
+  "iterable object",
+  "retrieval produced members",
+  "non-matches recorded for review (D4)",
+  "criteria preserved in need rows"
+ ],
+ "S-local-transports": [
+  "wired LAN baseline exercised",
+  "\u22651 additional local transport (BT/NFC/SoftAP)",
+  "wired preferred ordering honored"
+ ],
+ "S-need-fulfillment": [
+  "met marked",
+  "met leaves floor",
+  "answered = closed",
+  "unmet visible",
+  "edge: cancelled leaves floor",
+  "edge: creation does not imply execution"
+ ],
+ "S-network-map": [
+  "map artifact produced",
+  "covers non-member devices alongside members",
+  "member/non-member distinction on the map"
+ ],
+ "S-personality-create": [
+  "persona minted from minimal input",
+  "portrait generated + bound",
+  "LLM art path (V-A)",
+  "voice assigned",
+  "characterization extended",
+  "dyadic default 0.5"
+ ],
+ "S-personality-editor": [
+  "editor path updates persona elements",
+  "edits recorded as assertions",
+  "V-F: edit discoverable from roster surface"
+ ],
+ "S-personality-roster": [
+  "roster operable",
+  "selection works",
+  "reorder changes order",
+  "V-D: reorder visibly changes held-confidence",
+  "every move moves"
+ ],
+ "S-personality-source-match": [
+  "domain-matched source suggested at creation",
+  "accept binds source to persona",
+  "decline leaves persona source-free",
+  "discrimination-case"
+ ],
+ "S-portrait-bind": [
+  "portrait file produced",
+  "art bound to this persona",
+  "generative path declared",
+  "auto-bound shipped",
+  "auto-bound minted",
+  "fallback legible"
+ ],
+ "S-preload-cache": [
+  "vetted-source pointers seeded",
+  "device decoder entries present",
+  "marketing exemplar present + decodable"
+ ],
+ "S-publish-workflow": [
+  "select + form",
+  "produced + recorded",
+  "or deferred",
+  "no silent absence"
+ ],
+ "S-respondent-union": [
+  "named addressee replies",
+  "selector-chosen replies",
+  "union not override",
+  "addressed first",
+  "multi-select",
+  "over-threshold only"
+ ],
+ "S-response-depth": [
+  "depth setting exists",
+  "user assertion",
+  "persists",
+  "chat all",
+  "priority exempt",
+  "depth fills"
+ ],
+ "S-restart-recovery": [
+  "state recovered after restart",
+  "provenance retained (superseded rows kept)",
+  "cleanup consolidates without losing records"
+ ],
+ "S-role-negotiate": [
+  "role negotiation recorded",
+  "mint rights are a negotiated grant",
+  "join outcome honest (member vs pending)"
+ ],
+ "S-scancode-interchange": [
+  "generate",
+  "carry",
+  "decode",
+  "import"
+ ],
+ "S-scene-enactment": [
+  "short public-domain scene enacted",
+  "\u22652 personas enact parts",
+  "available tool classes exercised",
+  "knock-knock joke enactable",
+  "discrimination-case"
+ ],
+ "S-source-admission-gate": [
+  "admission gate screens new sources",
+  "free + no-login verified per row",
+  "opt-out posture checked",
+  "verification recorded as assertion",
+  "failing rows quarantined w/ basis",
+  "discrimination-case"
+ ],
+ "S-source-seed-import": [
+  "seed imports as configured-source rows",
+  "50 entries incl. simpsons, wookieepedia, memory-alpha",
+  "each row carries kind, endpoint, domains, descriptor, ceiling",
+  "all rows free-tier + no-login",
+  "seeded sources browsable",
+  "honest-absence"
+ ],
+ "S-speech-completion": [
+  "sentence boundary",
+  "sequential utterances",
+  "or declared excerpt",
+  "no silent cut"
+ ],
+ "S-speech-latency": [
+  "composition time measured per response",
+  "recorded as metric",
+  "reportable for host comparison"
+ ],
+ "S-speech-serialization": [
+  "speech serialized through the floor",
+  "playback measured not assumed",
+  "held until playback complete"
+ ],
+ "S-status-bar": [
+  "sources surfaced",
+  "LLM status surfaced",
+  "engine modes declared honestly"
+ ],
+ "S-steward-liveness": [
+  "monotonic passes",
+  "real age",
+  "no reset"
+ ],
+ "S-template-need": [
+  "need row created from chat input",
+  "template-governed (slots+criteria)",
+  "opens unfulfilled",
+  "terminal-state"
+ ],
+ "S-tool-composition": [
+  "need met by composed minimal tools",
+  "composition recorded as ledger object",
+  "AI-composed + direct-edit paths both offered",
+  "decomposes back to components",
+  "discrimination-case"
+ ],
+ "S-tool-transmission": [
+  "literal decode fidelity (C-ToolWireFidelity)",
+  "imported tool quarantined as candidate",
+  "not invocable before acceptance"
+ ],
+ "S-usb-log-courier": [
+  "courier log accumulates across runs",
+  "machine-readable per-node evidence",
+  "stale-seed revisit handling recorded"
+ ],
+ "S-usb-mint-gen2": [
+  "gen-2 installer written to media",
+  "carries founding network identity as adoptable offer",
+  "join-or-found is the user's choice"
+ ],
+ "S-usb-seed-run": [
+  "app launched executing from removable media",
+  "runs in place \u2014 no install required",
+  "local network log written ON the medium"
+ ],
+ "S-usb-stage-consent": [
+  "decline \u2192 no local write, app stays on media",
+  "consent \u2192 stages to C:\\builds-installed"
+ ],
+ "S-voice-assign": [
+  "assignment reasons from available descriptions",
+  "in-use voices assessed",
+  "used voices disfavored",
+  "assigned voice stable across relaunch",
+  "changes only on user direction",
+  "discrimination-case",
+  "honest-absence"
+ ],
+ "S-voice-select": [
+  "voice choices list offered",
+  "user assigns a persona's voice from the list"
+ ],
+ "S-voice-spec": [
+  "spec is QR-fittable (minimal payload)",
+  "ranked families and/or traits carried",
+  "local engine mapping renders nearest voice"
+ ],
+ "S-windows-launch": [
+  "launches on Windows like an installed program"
+ ]
+}

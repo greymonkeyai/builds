@@ -1,0 +1,24 @@
+{
+ "id": "S-status-bar",
+ "ran": true,
+ "checks": [
+  {
+   "name": "sources surfaced",
+   "pass": true,
+   "detail": "{\"configured\": 51, \"admitted\": 39, \"quarantined\": 12}"
+  },
+  {
+   "name": "LLM status surfaced",
+   "pass": true,
+   "detail": "live-ollama:llama3.2"
+  },
+  {
+   "name": "engine modes declared honestly",
+   "pass": true,
+   "detail": "live-ollama:llama3.2"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.0
+}

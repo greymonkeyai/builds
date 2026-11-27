@@ -1,8 +1,9 @@
 # Decision candidates — forward-convention proposals (2026-11-25)
+<!-- harness-doc kind=conventions status=adopted-upstream since=2026-11-25 applies-to=cycle-5 mapped-into=CONVENTIONS.md -->
 
 Five decision candidates for future build lines. **Approved 2026-11-25** (owner) —
-same posture as `conventions-002.md` / `conventions-003.md`; corpus adoption assigns
-corpus identifiers at review.
+same posture as `conventions-002.md` / `conventions-003.md`; corpus adoption assigned 2026-11-25:
+corpus identifiers: C-ToolCandidateAcceptance, C-TurnEvalLane, C-SovereignHubs, C-StewardLiveness, C-CredentialSurrender (`C:\Project\MigrateInbound\CONVENTIONS.md`).
 
 **Provenance.** Drafted as GreyAvatar `docs/decisions/` D179–D183 (`e0b21a7`…`4813923`);
 relocated to this corpus 2026-11-25 (GreyAvatar copies removed `5e0fb08`). All

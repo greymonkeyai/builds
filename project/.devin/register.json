@@ -1,0 +1,341 @@
+﻿{
+    "generated":  "2026-11-27T11:59:34.4756932Z",
+    "root":  "C:\\builds\\project",
+    "docs":  [
+                 {
+                     "id":  "configured-sources-001",
+                     "file":  "configured-sources-001.md",
+                     "kind":  "seed",
+                     "status":  "in-force",
+                     "since":  "2026-11-25",
+                     "applies_to":  [
+                                        "cycle-6"
+                                    ]
+                 },
+                 {
+                     "id":  "conventions-001",
+                     "file":  "conventions-001.md",
+                     "kind":  "conventions",
+                     "status":  "adopted-upstream"
+                 },
+                 {
+                     "id":  "conventions-002",
+                     "file":  "conventions-002.md",
+                     "kind":  "conventions",
+                     "status":  "adopted-upstream",
+                     "since":  "2026-11-25",
+                     "applies_to":  [
+                                        "cycle-5"
+                                    ],
+                     "mapped_into":  [
+                                         "CONVENTIONS.md"
+                                     ]
+                 },
+                 {
+                     "id":  "conventions-003",
+                     "file":  "conventions-003.md",
+                     "kind":  "conventions",
+                     "status":  "adopted-upstream",
+                     "since":  "2026-11-25",
+                     "applies_to":  [
+                                        "cycle-5"
+                                    ],
+                     "mapped_into":  [
+                                         "CONVENTIONS.md"
+                                     ]
+                 },
+                 {
+                     "id":  "conventions-004",
+                     "file":  "conventions-004.md",
+                     "kind":  "conventions",
+                     "status":  "adopted-upstream",
+                     "since":  "2026-11-25",
+                     "applies_to":  [
+                                        "cycle-6"
+                                    ],
+                     "mapped_into":  [
+                                         "CONVENTIONS.md"
+                                     ]
+                 },
+                 {
+                     "id":  "conventions-sweep-001",
+                     "file":  "conventions-sweep-001.md",
+                     "kind":  "analysis",
+                     "status":  "discharged"
+                 },
+                 {
+                     "id":  "decision-candidates-001",
+                     "file":  "decision-candidates-001.md",
+                     "kind":  "conventions",
+                     "status":  "adopted-upstream",
+                     "since":  "2026-11-25",
+                     "applies_to":  [
+                                        "cycle-5"
+                                    ],
+                     "mapped_into":  [
+                                         "CONVENTIONS.md"
+                                     ]
+                 },
+                 {
+                     "id":  "devlog",
+                     "file":  "devlog.md",
+                     "kind":  "log",
+                     "status":  "in-force"
+                 },
+                 {
+                     "id":  "direction-001",
+                     "file":  "direction-001.md",
+                     "kind":  "direction",
+                     "status":  "discharged",
+                     "applies_to":  [
+                                        "cycle-1"
+                                    ]
+                 },
+                 {
+                     "id":  "direction-002",
+                     "file":  "direction-002.md",
+                     "kind":  "direction",
+                     "status":  "discharged",
+                     "applies_to":  [
+                                        "cycle-2"
+                                    ]
+                 },
+                 {
+                     "id":  "direction-003",
+                     "file":  "direction-003.md",
+                     "kind":  "direction",
+                     "status":  "discharged",
+                     "applies_to":  [
+                                        "cycle-3"
+                                    ]
+                 },
+                 {
+                     "id":  "direction-004",
+                     "file":  "direction-004.md",
+                     "kind":  "direction",
+                     "status":  "discharged",
+                     "applies_to":  [
+                                        "cycle-4"
+                                    ]
+                 },
+                 {
+                     "id":  "direction-005",
+                     "file":  "direction-005.md",
+                     "kind":  "direction",
+                     "status":  "discharged",
+                     "applies_to":  [
+                                        "cycle-5"
+                                    ]
+                 },
+                 {
+                     "id":  "direction-006",
+                     "file":  "direction-006.md",
+                     "kind":  "direction",
+                     "status":  "discharged",
+                     "applies_to":  [
+                                        "cycle-6"
+                                    ]
+                 },
+                 {
+                     "id":  "direction-007",
+                     "file":  "direction-007.md",
+                     "kind":  "direction",
+                     "status":  "discharged",
+                     "since":  "2026-11-26",
+                     "applies_to":  [
+                                        "cycle-7"
+                                    ]
+                 },
+                 {
+                     "id":  "direction-008",
+                     "file":  "direction-008.md",
+                     "kind":  "direction",
+                     "status":  "in-force",
+                     "since":  "2026-11-27",
+                     "applies_to":  [
+                                        "cycle-8"
+                                    ]
+                 },
+                 {
+                     "id":  "harness-amendments-001",
+                     "file":  "harness-amendments-001.md",
+                     "kind":  "amendments",
+                     "status":  "adopted-upstream"
+                 },
+                 {
+                     "id":  "impl-design-001",
+                     "file":  "impl-design-001.md",
+                     "kind":  "impl-design",
+                     "status":  "in-force",
+                     "since":  "2026-11-26",
+                     "applies_to":  [
+                                        "cycle-7"
+                                    ]
+                 },
+                 {
+                     "id":  "prompt-amendments-001",
+                     "file":  "prompt-amendments-001.md",
+                     "kind":  "amendments",
+                     "status":  "superseded",
+                     "mapped_into":  [
+                                         "conventions-sweep-001.md"
+                                     ]
+                 },
+                 {
+                     "id":  "prompt-amendments-002",
+                     "file":  "prompt-amendments-002.md",
+                     "kind":  "amendments",
+                     "status":  "adopted-upstream",
+                     "since":  "2026-11-27",
+                     "applies_to":  [
+                                        "prompt"
+                                    ],
+                     "mapped_into":  [
+                                         "ProjectPrompt.md"
+                                     ]
+                 },
+                 {
+                     "id":  "prompt",
+                     "file":  "prompt.md",
+                     "kind":  "prompt",
+                     "status":  "in-force"
+                 },
+                 {
+                     "id":  "scenario-checks",
+                     "file":  "scenario-checks.md",
+                     "kind":  "suite",
+                     "status":  "superseded",
+                     "mapped_into":  [
+                                         "scenarios.md"
+                                     ]
+                 },
+                 {
+                     "id":  "scenarios",
+                     "file":  "scenarios.md",
+                     "kind":  "suite",
+                     "status":  "in-force",
+                     "applies_to":  [
+                                        "cycle-6"
+                                    ]
+                 },
+                 {
+                     "id":  "shortcomings-001",
+                     "file":  "shortcomings-001.md",
+                     "kind":  "shortcomings",
+                     "status":  "discharged",
+                     "applies_to":  [
+                                        "direction-001"
+                                    ],
+                     "mapped_into":  [
+                                         "direction-001"
+                                     ]
+                 },
+                 {
+                     "id":  "shortcomings-002",
+                     "file":  "shortcomings-002.md",
+                     "kind":  "shortcomings",
+                     "status":  "discharged",
+                     "applies_to":  [
+                                        "direction-002"
+                                    ],
+                     "mapped_into":  [
+                                         "direction-002"
+                                     ]
+                 },
+                 {
+                     "id":  "shortcomings-003",
+                     "file":  "shortcomings-003.md",
+                     "kind":  "shortcomings",
+                     "status":  "discharged",
+                     "applies_to":  [
+                                        "direction-003"
+                                    ],
+                     "mapped_into":  [
+                                         "direction-003"
+                                     ]
+                 },
+                 {
+                     "id":  "shortcomings-004",
+                     "file":  "shortcomings-004.md",
+                     "kind":  "shortcomings",
+                     "status":  "discharged",
+                     "applies_to":  [
+                                        "direction-004"
+                                    ],
+                     "mapped_into":  [
+                                         "scenarios.md"
+                                     ]
+                 },
+                 {
+                     "id":  "shortcomings-005",
+                     "file":  "shortcomings-005.md",
+                     "kind":  "shortcomings",
+                     "status":  "discharged",
+                     "applies_to":  [
+                                        "direction-005"
+                                    ],
+                     "mapped_into":  [
+                                         "scenarios.md"
+                                     ]
+                 },
+                 {
+                     "id":  "shortcomings-006",
+                     "file":  "shortcomings-006.md",
+                     "kind":  "shortcomings",
+                     "status":  "approved",
+                     "applies_to":  [
+                                        "cycle-6"
+                                    ],
+                     "mapped_into":  [
+                                         "scenarios.md",
+                                         "conventions-004.md"
+                                     ]
+                 },
+                 {
+                     "id":  "shortcomings-007",
+                     "file":  "shortcomings-007.md",
+                     "kind":  "shortcomings",
+                     "status":  "approved",
+                     "since":  "2026-11-26",
+                     "applies_to":  [
+                                        "direction-007"
+                                    ]
+                 },
+                 {
+                     "id":  "shortcomings-008",
+                     "file":  "shortcomings-008.md",
+                     "kind":  "shortcomings",
+                     "status":  "approved",
+                     "since":  "2026-11-27",
+                     "applies_to":  [
+                                        "direction-008"
+                                    ]
+                 }
+             ],
+    "current":  {
+                    "seed":  "configured-sources-001",
+                    "log":  "devlog",
+                    "direction":  "direction-008",
+                    "impl-design":  "impl-design-001",
+                    "prompt":  "prompt",
+                    "suite":  "scenarios",
+                    "shortcomings":  "shortcomings-008"
+                },
+    "pending":  [
+
+                ],
+    "in_force":  [
+                     "configured-sources-001",
+                     "devlog",
+                     "direction-008",
+                     "impl-design-001",
+                     "prompt",
+                     "scenarios"
+                 ],
+    "provisional_ids":  [
+
+                        ],
+    "headerless":  [
+
+                   ]
+}

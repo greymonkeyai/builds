@@ -1,0 +1,2 @@
+partition=2 journal=2 gate=PASS in 3916ms llm=live-ollama:llama3.2 voices=2 seed=False
+chorus serving on http://127.0.0.1:9791 (peer :7871) node=node-desktop-oogq7un-n-1c44

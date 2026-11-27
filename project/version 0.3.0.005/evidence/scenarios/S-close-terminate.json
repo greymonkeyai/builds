@@ -1,0 +1,12 @@
+{
+  "id": "S-close-terminate",
+  "ran": true,
+  "checks": [
+    {
+      "name": "close-terminates (launch-check leg 4)",
+      "pass": true,
+      "detail": "see evidence/launch/launch-check.json"
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,24 @@
+{
+ "id": "S-usb-seed-run",
+ "ran": true,
+ "checks": [
+  {
+   "name": "app launched executing from removable media",
+   "pass": true,
+   "detail": "29 seed-log entries on H:\\"
+  },
+  {
+   "name": "runs in place \u2014 no install required",
+   "pass": true,
+   "detail": "{'event': 'seed-prepared', 'node': 'node-desktop-oogq7un-n-394f', 'network': 'net-chorus-459b78', 'media': 'H:\\\\', 'at': '2026-11-26T05:36:52.453+00:00'}"
+  },
+  {
+   "name": "local network log written ON the medium",
+   "pass": true,
+   "detail": "H:\\chorus-seed\\seed-log.jsonl"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.0
+}

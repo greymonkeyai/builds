@@ -1,0 +1,44 @@
+﻿{
+    "generated":  "2026-11-26T02:25:41.7452649Z",
+    "root":  "C:\\builds\\harness-ui",
+    "docs":  [
+                 {
+                     "id":  "devlog",
+                     "file":  "devlog.md",
+                     "kind":  "log",
+                     "status":  "in-force"
+                 },
+                 {
+                     "id":  "direction-001",
+                     "file":  "direction-001.md",
+                     "kind":  "direction",
+                     "status":  "discharged",
+                     "applies_to":  [
+                                        "cycle-1"
+                                    ]
+                 },
+                 {
+                     "id":  "prompt",
+                     "file":  "prompt.md",
+                     "kind":  "prompt",
+                     "status":  "in-force"
+                 }
+             ],
+    "current":  {
+                    "log":  "devlog",
+                    "prompt":  "prompt"
+                },
+    "pending":  [
+
+                ],
+    "in_force":  [
+                     "devlog",
+                     "prompt"
+                 ],
+    "provisional_ids":  [
+
+                        ],
+    "headerless":  [
+
+                   ]
+}

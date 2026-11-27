@@ -1,0 +1,19 @@
+{
+ "id": "S-usb-stage-consent",
+ "ran": true,
+ "checks": [
+  {
+   "name": "decline \u2192 no local write, app stays on media",
+   "pass": true,
+   "detail": "12 declines, 12 consents"
+  },
+  {
+   "name": "consent \u2192 stages to C:\\builds-installed",
+   "pass": true,
+   "detail": "staged=True consent rows=12"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.0
+}

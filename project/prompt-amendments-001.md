@@ -1,4 +1,5 @@
 # Proposed prompt amendments — SUPERSEDED (2026-11-19)
+<!-- harness-doc kind=amendments status=superseded mapped-into=conventions-sweep-001.md -->
 
 **Owner ruling 2026-11-19: P1–P5 are conventions, not prompt amendments.** Contents
 carried into the conventions set (`conventions-sweep-001.md`, owner-reclassified section).

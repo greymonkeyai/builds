@@ -1,0 +1,162 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "package exported then imported",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "contents below action threshold",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "foreign tools staged as candidates, not live",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "package exported then imported",
+    "pass": true,
+    "detail": "pkg personas=1 tools=1",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "contents below action threshold",
+    "pass": true,
+    "detail": "ceilings=[0.25]",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "foreign tools staged as candidates, not live",
+    "pass": true,
+    "detail": "1 candidates, 0 invocable",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "package exported then imported",
+    "pass": true,
+    "detail": "pkg personas=1 tools=1",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "contents below action threshold",
+    "pass": true,
+    "detail": "ceilings=[0.25]",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "foreign tools staged as candidates, not live",
+    "pass": true,
+    "detail": "1 candidates, 0 invocable",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "package exported then imported",
+    "pass": true,
+    "detail": "pkg personas=1 tools=1",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "contents below action threshold",
+    "pass": true,
+    "detail": "ceilings=[0.25]",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "foreign tools staged as candidates, not live",
+    "pass": true,
+    "detail": "1 candidates, 0 invocable",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "package exported then imported",
+    "pass": false,
+    "detail": "pkg personas=0 tools=0",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "contents below action threshold",
+    "pass": false,
+    "detail": "ceilings=[]",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "foreign tools staged as candidates, not live",
+    "pass": false,
+    "detail": "0 candidates, 0 invocable",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ }
+}

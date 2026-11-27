@@ -1,0 +1,29 @@
+{
+ "id": "S-background-channels",
+ "ran": true,
+ "checks": [
+  {
+   "name": "sample tracks present",
+   "pass": true,
+   "detail": "3 tracks"
+  },
+  {
+   "name": "prompt reference creates channel",
+   "pass": true,
+   "detail": "{\"name\": \"hum\", \"track\": \"C:\\\\builds\\\\project\\\\version 0.3.0.006\\\\runtime-suite\\\\sample-library\\\\hum.wav\", \"state\": \"playing\", \"openedAt\": \"2026-11-26"
+  },
+  {
+   "name": "channel persists under conversation",
+   "pass": true,
+   "detail": "['hum']"
+  },
+  {
+   "name": "honest when audio engine absent",
+   "pass": true,
+   "detail": "sample library generated locally; wav playback honest"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 4.7
+}

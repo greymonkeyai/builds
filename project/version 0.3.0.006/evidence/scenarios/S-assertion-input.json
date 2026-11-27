@@ -1,0 +1,29 @@
+{
+ "id": "S-assertion-input",
+ "ran": true,
+ "checks": [
+  {
+   "name": "typed input recorded as assertion",
+   "pass": true,
+   "detail": "1 input:captured row(s)"
+  },
+  {
+   "name": "source-aware claimant",
+   "pass": true,
+   "detail": "principal"
+  },
+  {
+   "name": "typed value",
+   "pass": true,
+   "detail": "text"
+  },
+  {
+   "name": "basis = captured-input",
+   "pass": true,
+   "detail": "captured-input"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 4.0
+}

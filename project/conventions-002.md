@@ -1,6 +1,9 @@
 # Conventions — USB seed distribution (proposal, 2026-11-24)
+<!-- harness-doc kind=conventions status=adopted-upstream since=2026-11-25 applies-to=cycle-5 mapped-into=CONVENTIONS.md -->
 
-**Approved 2026-11-25** (owner). Drafted for owner edit/approval ahead of the
+**Approved 2026-11-25** (owner). **Adopted 2026-11-25** into
+`C:\Project\MigrateInbound\CONVENTIONS.md` (Distribution, seed & fleet section).
+Drafted for owner edit/approval ahead of the
 fleet-discovery direction. Covers the
 removable-media installer lifecycle for the build line's distribution model.
 **Binds essentials only** — transport, filesystem, signing method, and protocol

@@ -1,0 +1,15 @@
+{
+ "mode": "sabotage:stubbed-endpoints",
+ "ts": "2026-11-27T08:41:38",
+ "elapsed": 294.6,
+ "scenarios": 84,
+ "checks": 347,
+ "passed": 53,
+ "green": 53,
+ "evidenceClass": {
+  "externalToFlag": 0.40634005763688763,
+  "rendered": 0.25936599423631124,
+  "userPath": 0.654178674351585,
+  "selfAttestedOnly": 0.0
+ }
+}

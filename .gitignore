@@ -20,3 +20,6 @@ last-*-status.txt
 !**/fixtures/**/*.driver.log
 !**/fixtures/**/launch-server.out
 !**/fixtures/**/last-*-status.txt
+
+# Watch-mode emitter log (transient)
+emit-watch.out

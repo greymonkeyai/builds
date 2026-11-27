@@ -1,0 +1,366 @@
+{
+  "mode": "green",
+  "ts": "2026-11-26T15:28:45",
+  "scenarios": 71,
+  "scenariosAllGreen": 46,
+  "checksPassed": 207,
+  "checksFailed": 58,
+  "checkTotal": 265,
+  "perScenario": {
+    "S-assertion-input": {
+      "pass": 5,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-template-need": {
+      "pass": 4,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-candidate-ranking": {
+      "pass": 3,
+      "fail": 1,
+      "allGreen": false
+    },
+    "S-focused-need": {
+      "pass": 3,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-need-fulfillment": {
+      "pass": 4,
+      "fail": 2,
+      "allGreen": false
+    },
+    "S-intent-routing": {
+      "pass": 6,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-list-project": {
+      "pass": 6,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-steward-liveness": {
+      "pass": 3,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-background-present": {
+      "pass": 3,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-restart-recovery": {
+      "pass": 2,
+      "fail": 1,
+      "allGreen": false
+    },
+    "S-competing-tools": {
+      "pass": 2,
+      "fail": 2,
+      "allGreen": false
+    },
+    "S-asset-anticipation": {
+      "pass": 4,
+      "fail": 1,
+      "allGreen": false
+    },
+    "S-tool-composition": {
+      "pass": 5,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-chat-invocation": {
+      "pass": 4,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-conversational-register": {
+      "pass": 4,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-faithful-voice": {
+      "pass": 3,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-distinct-preloadeds": {
+      "pass": 2,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-personality-create": {
+      "pass": 6,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-personality-editor": {
+      "pass": 3,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-personality-source-match": {
+      "pass": 4,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-personality-roster": {
+      "pass": 5,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-dyadic-ranking": {
+      "pass": 3,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-portrait-bind": {
+      "pass": 6,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-respondent-union": {
+      "pass": 6,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-response-depth": {
+      "pass": 1,
+      "fail": 5,
+      "allGreen": false
+    },
+    "S-interest-respondents": {
+      "pass": 0,
+      "fail": 4,
+      "allGreen": false
+    },
+    "S-conversation-reset": {
+      "pass": 2,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-context-display": {
+      "pass": 0,
+      "fail": 1,
+      "allGreen": false
+    },
+    "S-email-commentary": {
+      "pass": 5,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-speech-serialization": {
+      "pass": 3,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-speech-completion": {
+      "pass": 4,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-voice-spec": {
+      "pass": 3,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-voice-select": {
+      "pass": 2,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-voice-assign": {
+      "pass": 7,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-audible-ack": {
+      "pass": 5,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-speech-latency": {
+      "pass": 3,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-windows-launch": {
+      "pass": 1,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-close-terminate": {
+      "pass": 0,
+      "fail": 1,
+      "allGreen": false
+    },
+    "S-color-schemes": {
+      "pass": 0,
+      "fail": 3,
+      "allGreen": false
+    },
+    "S-status-bar": {
+      "pass": 0,
+      "fail": 3,
+      "allGreen": false
+    },
+    "S-library-browse": {
+      "pass": 3,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-account-configure": {
+      "pass": 5,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-source-seed-import": {
+      "pass": 6,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-source-admission-gate": {
+      "pass": 6,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-publish-workflow": {
+      "pass": 4,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-defer-publication": {
+      "pass": 3,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-scancode-interchange": {
+      "pass": 2,
+      "fail": 2,
+      "allGreen": false
+    },
+    "S-background-channels": {
+      "pass": 0,
+      "fail": 4,
+      "allGreen": false
+    },
+    "S-interstitial-queue": {
+      "pass": 6,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-scene-enactment": {
+      "pass": 5,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-usb-seed-run": {
+      "pass": 3,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-usb-stage-consent": {
+      "pass": 2,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-fleet-invite": {
+      "pass": 0,
+      "fail": 1,
+      "allGreen": false
+    },
+    "S-fleet-install-path": {
+      "pass": 4,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-fleet-action-legible": {
+      "pass": 4,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-fleet-exchange": {
+      "pass": 1,
+      "fail": 4,
+      "allGreen": false
+    },
+    "S-role-negotiate": {
+      "pass": 0,
+      "fail": 3,
+      "allGreen": false
+    },
+    "S-usb-mint-gen2": {
+      "pass": 3,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-usb-log-courier": {
+      "pass": 3,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-fleet-roster": {
+      "pass": 3,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-network-map": {
+      "pass": 3,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-local-transports": {
+      "pass": 3,
+      "fail": 0,
+      "allGreen": true
+    },
+    "S-credential-surrender": {
+      "pass": 0,
+      "fail": 3,
+      "allGreen": false
+    },
+    "S-discovery-progress": {
+      "pass": 2,
+      "fail": 1,
+      "allGreen": false
+    },
+    "S-exchange-import": {
+      "pass": 0,
+      "fail": 3,
+      "allGreen": false
+    },
+    "S-artifact-import": {
+      "pass": 0,
+      "fail": 3,
+      "allGreen": false
+    },
+    "S-tool-transmission": {
+      "pass": 0,
+      "fail": 3,
+      "allGreen": false
+    },
+    "S-artifact-style": {
+      "pass": 0,
+      "fail": 3,
+      "allGreen": false
+    },
+    "S-artifact-republish": {
+      "pass": 1,
+      "fail": 1,
+      "allGreen": false
+    },
+    "S-dubious-source": {
+      "pass": 1,
+      "fail": 2,
+      "allGreen": false
+    },
+    "S-preload-cache": {
+      "pass": 2,
+      "fail": 1,
+      "allGreen": false
+    }
+  }
+}

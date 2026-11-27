@@ -1,0 +1,24 @@
+{
+ "id": "S-fleet-roster",
+ "ran": true,
+ "checks": [
+  {
+   "name": "every named-roster device reported",
+   "pass": true,
+   "detail": "14 devices reported: ['amazon-7526c0796.lan', 'brnb422002abf58.lan', 'google-nest-hub.lan', 'hs100.lan', 'mybooklive.lan', 'none', 'nucbox_g3_pro.lan', 'pixel-9a.lan']"
+  },
+  {
+   "name": "honest status per device",
+   "pass": true,
+   "detail": "{'unavailable', 'not-a-target', 'found', 'installable'}"
+  },
+  {
+   "name": "coverage is test data \u2014 non-targets recorded",
+   "pass": true,
+   "detail": "5 non-targets of 14"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.0
+}

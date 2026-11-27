@@ -1,0 +1,446 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "unmet request visible w/ bound template",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "required slots show candidates w/ confidence",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "all-above-threshold \u2192 steward executes without user act",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "below-threshold stays queued \u2014 no silent execute",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "user selects under-threshold template",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "candidate fix supersedes",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "force-execute honored + recorded",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "intentional choice = threshold-crossing act",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "need closes + leaves floor",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "legible-outcome",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 10,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "unmet request visible w/ bound template",
+    "pass": true,
+    "detail": "a-a98e9bf23efc visible on floor",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "required slots show candidates w/ confidence",
+    "pass": true,
+    "detail": "candidates=['request']",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "all-above-threshold \u2192 steward executes without user act",
+    "pass": true,
+    "detail": "need a-76aa2b05e46c drained; steward-exec rows=1",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "below-threshold stays queued \u2014 no silent execute",
+    "pass": true,
+    "detail": "a-a98e9bf23efc still queued (conf below threshold)",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "user selects under-threshold template",
+    "pass": true,
+    "detail": "focus action carried on floor row",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "candidate fix supersedes",
+    "pass": true,
+    "detail": "fix row=a-741ec4024275",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "force-execute honored + recorded",
+    "pass": true,
+    "detail": "executed=True",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "intentional choice = threshold-crossing act",
+    "pass": true,
+    "detail": "forcedBy rows=1",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "need closes + leaves floor",
+    "pass": true,
+    "detail": "a-a98e9bf23efc gone from floor=True",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "template state + outcome legible on floor",
+    "pass": true,
+    "detail": "verdict text=fulfilled",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 10,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "unmet request visible w/ bound template",
+    "pass": true,
+    "detail": "a-1aed5de790af visible on floor",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "required slots show candidates w/ confidence",
+    "pass": true,
+    "detail": "candidates=['request']",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "all-above-threshold \u2192 steward executes without user act",
+    "pass": true,
+    "detail": "need a-bf5b90491289 drained; steward-exec rows=1",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "below-threshold stays queued \u2014 no silent execute",
+    "pass": true,
+    "detail": "a-1aed5de790af still queued (conf below threshold)",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "user selects under-threshold template",
+    "pass": true,
+    "detail": "focus action carried on floor row",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "candidate fix supersedes",
+    "pass": true,
+    "detail": "fix row=a-beb3bb4003fc",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "force-execute honored + recorded",
+    "pass": true,
+    "detail": "executed=True",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "intentional choice = threshold-crossing act",
+    "pass": true,
+    "detail": "forcedBy rows=1",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "need closes + leaves floor",
+    "pass": true,
+    "detail": "a-1aed5de790af gone from floor=True",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "template state + outcome legible on floor",
+    "pass": true,
+    "detail": "verdict text=fulfilled",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 10,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "unmet request visible w/ bound template",
+    "pass": true,
+    "detail": "a-44296d334e36 visible on floor",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "required slots show candidates w/ confidence",
+    "pass": true,
+    "detail": "candidates=['request']",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "all-above-threshold \u2192 steward executes without user act",
+    "pass": true,
+    "detail": "need a-faa28af40f54 drained; steward-exec rows=1",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "below-threshold stays queued \u2014 no silent execute",
+    "pass": true,
+    "detail": "a-44296d334e36 still queued (conf below threshold)",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "user selects under-threshold template",
+    "pass": true,
+    "detail": "focus action carried on floor row",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "candidate fix supersedes",
+    "pass": true,
+    "detail": "fix row=a-8cdfbcfa4956",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "force-execute honored + recorded",
+    "pass": true,
+    "detail": "executed=True",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "intentional choice = threshold-crossing act",
+    "pass": true,
+    "detail": "forcedBy rows=1",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "need closes + leaves floor",
+    "pass": true,
+    "detail": "a-44296d334e36 gone from floor=True",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "template state + outcome legible on floor",
+    "pass": true,
+    "detail": "verdict text=fulfilled",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 10,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "unmet request visible w/ bound template",
+    "pass": false,
+    "detail": "None visible on floor",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "required slots show candidates w/ confidence",
+    "pass": false,
+    "detail": "candidates=None",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "all-above-threshold \u2192 steward executes without user act",
+    "pass": false,
+    "detail": "need None drained; steward-exec rows=0",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "below-threshold stays queued \u2014 no silent execute",
+    "pass": false,
+    "detail": "None still queued (conf below threshold)",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "user selects under-threshold template",
+    "pass": false,
+    "detail": "focus action carried on floor row",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "candidate fix supersedes",
+    "pass": false,
+    "detail": "fix row=None",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "force-execute honored + recorded",
+    "pass": false,
+    "detail": "executed=None",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "intentional choice = threshold-crossing act",
+    "pass": false,
+    "detail": "forcedBy rows=0",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "need closes + leaves floor",
+    "pass": true,
+    "detail": "None gone from floor=True",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "template state + outcome legible on floor",
+    "pass": false,
+    "detail": "verdict text=None",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 1,
+  "fail": 9,
+  "allGreen": false
+ }
+}

@@ -1,0 +1,166 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "wired LAN baseline exercised",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "\u22651 additional local transport (BT/NFC/SoftAP)",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "wired preferred ordering honored",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "wired LAN baseline exercised",
+    "pass": true,
+    "detail": "28 devices on wired LAN",
+    "src": [
+     "external:net"
+    ]
+   },
+   {
+    "name": "\u22651 additional local transport (BT/NFC/SoftAP)",
+    "pass": true,
+    "detail": "bt engine=radio-present \u2014 declared present",
+    "src": [
+     "user-path",
+     "external:proc"
+    ]
+   },
+   {
+    "name": "wired preferred ordering honored",
+    "pass": true,
+    "detail": "wired sweep ran first/primary",
+    "src": [
+     "external:net"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "wired LAN baseline exercised",
+    "pass": true,
+    "detail": "28 devices on wired LAN",
+    "src": [
+     "external:net"
+    ]
+   },
+   {
+    "name": "\u22651 additional local transport (BT/NFC/SoftAP)",
+    "pass": true,
+    "detail": "bt engine=radio-present \u2014 declared present",
+    "src": [
+     "user-path",
+     "external:proc"
+    ]
+   },
+   {
+    "name": "wired preferred ordering honored",
+    "pass": true,
+    "detail": "wired sweep ran first/primary",
+    "src": [
+     "external:net"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "wired LAN baseline exercised",
+    "pass": true,
+    "detail": "28 devices on wired LAN",
+    "src": [
+     "external:net"
+    ]
+   },
+   {
+    "name": "\u22651 additional local transport (BT/NFC/SoftAP)",
+    "pass": true,
+    "detail": "bt engine=absent-declared \u2014 declared present",
+    "src": [
+     "user-path",
+     "external:proc"
+    ]
+   },
+   {
+    "name": "wired preferred ordering honored",
+    "pass": true,
+    "detail": "wired sweep ran first/primary",
+    "src": [
+     "external:net"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "wired LAN baseline exercised",
+    "pass": false,
+    "detail": "0 devices on wired LAN",
+    "src": [
+     "external:net"
+    ]
+   },
+   {
+    "name": "\u22651 additional local transport (BT/NFC/SoftAP)",
+    "pass": false,
+    "detail": "bt engine=None \u2014 declared absent",
+    "src": [
+     "user-path",
+     "external:proc"
+    ]
+   },
+   {
+    "name": "wired preferred ordering honored",
+    "pass": false,
+    "detail": "wired sweep ran first/primary",
+    "src": [
+     "external:net"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ }
+}

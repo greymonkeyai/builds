@@ -1,0 +1,209 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "need row created from chat input",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "template-governed (slots+criteria)",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "opens unfulfilled",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "terminal-state",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 4,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "need row created from chat input",
+    "pass": true,
+    "detail": "need a-cb3bad7ccdfa on floor",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "template-governed (slots+criteria)",
+    "pass": true,
+    "detail": "template=user-request slots=['request']",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "opens unfulfilled",
+    "pass": true,
+    "detail": "state=open",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "terminal-state",
+    "pass": true,
+    "detail": "state after execute=fulfilled",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "need row created from chat input",
+    "pass": true,
+    "detail": "need a-67564f79163c on floor",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "template-governed (slots+criteria)",
+    "pass": true,
+    "detail": "template=user-request slots=['request']",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "opens unfulfilled",
+    "pass": true,
+    "detail": "state=open",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "terminal-state",
+    "pass": true,
+    "detail": "state after execute=fulfilled",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "need row created from chat input",
+    "pass": true,
+    "detail": "need a-afedd7c1110c on floor",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "template-governed (slots+criteria)",
+    "pass": true,
+    "detail": "template=user-request slots=['request']",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "opens unfulfilled",
+    "pass": true,
+    "detail": "state=open",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "terminal-state",
+    "pass": true,
+    "detail": "state after execute=fulfilled",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "need row created from chat input",
+    "pass": false,
+    "detail": "need None on floor",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "template-governed (slots+criteria)",
+    "pass": false,
+    "detail": "template=[] slots=[]",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "opens unfulfilled",
+    "pass": false,
+    "detail": "state=[]",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "terminal-state",
+    "pass": false,
+    "detail": "no need opened",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 4,
+  "allGreen": false
+ }
+}

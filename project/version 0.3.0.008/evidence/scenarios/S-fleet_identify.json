@@ -1,0 +1,205 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "identify action on a discovery result",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "signal-the-device response per capabilities",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "richer identifying info resolved",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "verdict grounded in real evidence",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 4,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "identify action on a discovery result",
+    "pass": true,
+    "detail": "identify on 192.168.86.1",
+    "src": [
+     "user-path",
+     "rendered"
+    ]
+   },
+   {
+    "name": "signal-the-device response per capabilities",
+    "pass": true,
+    "detail": "signalClass=icmp-echo responded=True",
+    "src": [
+     "external:net"
+    ]
+   },
+   {
+    "name": "richer identifying info resolved",
+    "pass": true,
+    "detail": "vendor=None type=unknown services=['dns', 'http'] name=None",
+    "src": [
+     "external:net"
+    ]
+   },
+   {
+    "name": "verdict grounded in real evidence",
+    "pass": true,
+    "detail": "device-identify row carries execution-evidence basis",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "identify action on a discovery result",
+    "pass": true,
+    "detail": "identify on 192.168.86.1",
+    "src": [
+     "user-path",
+     "rendered"
+    ]
+   },
+   {
+    "name": "signal-the-device response per capabilities",
+    "pass": true,
+    "detail": "signalClass=icmp-echo responded=True",
+    "src": [
+     "external:net"
+    ]
+   },
+   {
+    "name": "richer identifying info resolved",
+    "pass": true,
+    "detail": "vendor=None type=unknown services=['dns', 'http'] name=None",
+    "src": [
+     "external:net"
+    ]
+   },
+   {
+    "name": "verdict grounded in real evidence",
+    "pass": true,
+    "detail": "device-identify row carries execution-evidence basis",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "identify action on a discovery result",
+    "pass": true,
+    "detail": "identify on 192.168.86.1",
+    "src": [
+     "user-path",
+     "rendered"
+    ]
+   },
+   {
+    "name": "signal-the-device response per capabilities",
+    "pass": true,
+    "detail": "signalClass=icmp-echo responded=True",
+    "src": [
+     "external:net"
+    ]
+   },
+   {
+    "name": "richer identifying info resolved",
+    "pass": true,
+    "detail": "vendor=None type=unknown services=['dns', 'http'] name=None",
+    "src": [
+     "external:net"
+    ]
+   },
+   {
+    "name": "verdict grounded in real evidence",
+    "pass": true,
+    "detail": "device-identify row carries execution-evidence basis",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "identify action on a discovery result",
+    "pass": true,
+    "detail": "identify affordance exists",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "signal-the-device response per capabilities",
+    "pass": false,
+    "detail": "no discovered device to act on",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "richer identifying info resolved",
+    "pass": false,
+    "detail": "no discovered device to act on",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "verdict grounded in real evidence",
+    "pass": false,
+    "detail": "no discovered device to act on",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 1,
+  "fail": 3,
+  "allGreen": false
+ }
+}

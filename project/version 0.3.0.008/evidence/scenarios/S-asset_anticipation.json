@@ -1,0 +1,246 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "persona creation opens asset need(s)",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "background fulfillment produces asset",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "asset bound to persona",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "need closes on fulfillment",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "persistence",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 5,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "persona creation opens asset need(s)",
+    "pass": true,
+    "detail": "10 asset needs after create",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "background fulfillment produces asset",
+    "pass": true,
+    "detail": "portrait on disk: C:\\builds\\project\\version 0.3.0.008\\runtime\\green\\portraits\\",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "asset bound to persona",
+    "pass": true,
+    "detail": "bound=procedural-render",
+    "src": [
+     "user-path",
+     "external:file"
+    ]
+   },
+   {
+    "name": "need closes on fulfillment",
+    "pass": true,
+    "detail": "open asset needs for persona=0",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "assets persist relaunch",
+    "pass": true,
+    "detail": "portrait file survives relaunch",
+    "src": [
+     "external:file"
+    ]
+   }
+  ],
+  "pass": 5,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "persona creation opens asset need(s)",
+    "pass": true,
+    "detail": "2 asset needs after create",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "background fulfillment produces asset",
+    "pass": true,
+    "detail": "portrait on disk: C:\\builds\\project\\version 0.3.0.008\\runtime\\sabotage-empty-s",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "asset bound to persona",
+    "pass": true,
+    "detail": "bound=procedural-render",
+    "src": [
+     "user-path",
+     "external:file"
+    ]
+   },
+   {
+    "name": "need closes on fulfillment",
+    "pass": true,
+    "detail": "open asset needs for persona=0",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "assets persist relaunch",
+    "pass": true,
+    "detail": "portrait file survives relaunch",
+    "src": [
+     "external:file"
+    ]
+   }
+  ],
+  "pass": 5,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "persona creation opens asset need(s)",
+    "pass": true,
+    "detail": "10 asset needs after create",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "background fulfillment produces asset",
+    "pass": true,
+    "detail": "portrait on disk: C:\\builds\\project\\version 0.3.0.008\\runtime\\sabotage-stub-en",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "asset bound to persona",
+    "pass": true,
+    "detail": "bound=procedural-render",
+    "src": [
+     "user-path",
+     "external:file"
+    ]
+   },
+   {
+    "name": "need closes on fulfillment",
+    "pass": true,
+    "detail": "open asset needs for persona=0",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "assets persist relaunch",
+    "pass": true,
+    "detail": "portrait file survives relaunch",
+    "src": [
+     "external:file"
+    ]
+   }
+  ],
+  "pass": 5,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "persona creation opens asset need(s)",
+    "pass": true,
+    "detail": "8 asset needs after create",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "background fulfillment produces asset",
+    "pass": false,
+    "detail": "portrait on disk: ",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "asset bound to persona",
+    "pass": false,
+    "detail": "bound=None",
+    "src": [
+     "user-path",
+     "external:file"
+    ]
+   },
+   {
+    "name": "need closes on fulfillment",
+    "pass": true,
+    "detail": "open asset needs for persona=0",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "assets persist relaunch",
+    "pass": false,
+    "detail": "portrait file survives relaunch",
+    "src": [
+     "external:file"
+    ]
+   }
+  ],
+  "pass": 2,
+  "fail": 3,
+  "allGreen": false
+ }
+}

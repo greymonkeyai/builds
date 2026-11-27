@@ -1,0 +1,26 @@
+{
+ "vettedSources": [
+  {
+   "key": "source-wikipedia",
+   "pointer": "https://en.wikipedia.org/w/api.php"
+  },
+  {
+   "key": "source-memory-alpha",
+   "pointer": "https://memory-alpha.fandom.com/api.php"
+  }
+ ],
+ "decoders": [
+  {
+   "device": "camera-bmp",
+   "symbology": "rastgrid-1",
+   "entry": "artifacts.decode_rastgrid"
+  }
+ ],
+ "exemplars": [
+  {
+   "kind": "postcard",
+   "name": "hello-postcard",
+   "note": "marketing exemplar \u2014 decodable rastgrid"
+  }
+ ]
+}

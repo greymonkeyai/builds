@@ -1,0 +1,192 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:06",
+    "checks": [
+      {
+        "name": "named addressee replies",
+        "pass": false,
+        "detail": "roster < 2"
+      },
+      {
+        "name": "selector-chosen replies",
+        "pass": false,
+        "detail": "roster < 2"
+      },
+      {
+        "name": "union not override",
+        "pass": false,
+        "detail": "roster < 2"
+      },
+      {
+        "name": "addressed first",
+        "pass": false,
+        "detail": "roster < 2"
+      },
+      {
+        "name": "multi-select",
+        "pass": false,
+        "detail": "roster < 2"
+      },
+      {
+        "name": "over-threshold only",
+        "pass": false,
+        "detail": "roster < 2"
+      }
+    ],
+    "pass": 0,
+    "fail": 6,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "named addressee replies",
+        "pass": true,
+        "detail": "['Ada', 'Marlowe']"
+      },
+      {
+        "name": "selector-chosen replies",
+        "pass": true,
+        "detail": "['Ada', 'Marlowe']"
+      },
+      {
+        "name": "union not override",
+        "pass": true,
+        "detail": "both replied: True"
+      },
+      {
+        "name": "addressed first",
+        "pass": true,
+        "detail": "order=['Ada', 'Marlowe']"
+      },
+      {
+        "name": "multi-select",
+        "pass": true,
+        "detail": "multi replies=['Marlowe', 'Bramble']"
+      },
+      {
+        "name": "over-threshold only",
+        "pass": true,
+        "detail": "respondents ['Ada', 'Marlowe'] \u2286 grants+depth"
+      }
+    ],
+    "pass": 6,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "named addressee replies",
+        "pass": false,
+        "detail": "roster < 2"
+      },
+      {
+        "name": "selector-chosen replies",
+        "pass": false,
+        "detail": "roster < 2"
+      },
+      {
+        "name": "union not override",
+        "pass": false,
+        "detail": "roster < 2"
+      },
+      {
+        "name": "addressed first",
+        "pass": false,
+        "detail": "roster < 2"
+      },
+      {
+        "name": "multi-select",
+        "pass": false,
+        "detail": "roster < 2"
+      },
+      {
+        "name": "over-threshold only",
+        "pass": false,
+        "detail": "roster < 2"
+      }
+    ],
+    "pass": 0,
+    "fail": 6,
+    "allGreen": false
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:03",
+    "checks": [
+      {
+        "name": "named addressee replies",
+        "pass": true,
+        "detail": "['Ada', 'Marlowe']"
+      },
+      {
+        "name": "selector-chosen replies",
+        "pass": true,
+        "detail": "['Ada', 'Marlowe']"
+      },
+      {
+        "name": "union not override",
+        "pass": true,
+        "detail": "both replied: True"
+      },
+      {
+        "name": "addressed first",
+        "pass": true,
+        "detail": "order=['Ada', 'Marlowe']"
+      },
+      {
+        "name": "multi-select",
+        "pass": true,
+        "detail": "multi replies=['Marlowe', 'Bramble']"
+      },
+      {
+        "name": "over-threshold only",
+        "pass": true,
+        "detail": "respondents ['Ada', 'Marlowe'] \u2286 grants+depth"
+      }
+    ],
+    "pass": 6,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "named addressee replies",
+        "pass": false,
+        "detail": "roster < 2"
+      },
+      {
+        "name": "selector-chosen replies",
+        "pass": false,
+        "detail": "roster < 2"
+      },
+      {
+        "name": "union not override",
+        "pass": false,
+        "detail": "roster < 2"
+      },
+      {
+        "name": "addressed first",
+        "pass": false,
+        "detail": "roster < 2"
+      },
+      {
+        "name": "multi-select",
+        "pass": false,
+        "detail": "roster < 2"
+      },
+      {
+        "name": "over-threshold only",
+        "pass": false,
+        "detail": "roster < 2"
+      }
+    ],
+    "pass": 0,
+    "fail": 6,
+    "allGreen": false
+  }
+}

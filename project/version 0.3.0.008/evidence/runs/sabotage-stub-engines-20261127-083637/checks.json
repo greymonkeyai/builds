@@ -1,0 +1,3086 @@
+{
+ "S-assertion_input": [
+  {
+   "name": "typed input recorded as assertion",
+   "pass": true,
+   "detail": "1 user-input rows for the sent text in journal file",
+   "src": [
+    "user-path",
+    "external:journal"
+   ]
+  },
+  {
+   "name": "source-aware claimant",
+   "pass": true,
+   "detail": "claimant=user",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "typed value",
+   "pass": true,
+   "detail": "value={'text': 'checking the record please', 'surface': 'chat'}",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "basis = captured-input",
+   "pass": true,
+   "detail": "basis=captured-input",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "edge: derived certainty capped below top",
+   "pass": true,
+   "detail": "no derived row asserts certainty=1.0",
+   "src": [
+    "external:journal"
+   ]
+  }
+ ],
+ "S-asset_anticipation": [
+  {
+   "name": "persona creation opens asset need(s)",
+   "pass": true,
+   "detail": "10 asset needs after create",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "background fulfillment produces asset",
+   "pass": true,
+   "detail": "portrait on disk: C:\\builds\\project\\version 0.3.0.008\\runtime\\sabotage-stub-en",
+   "src": [
+    "external:file"
+   ]
+  },
+  {
+   "name": "asset bound to persona",
+   "pass": true,
+   "detail": "bound=procedural-render",
+   "src": [
+    "user-path",
+    "external:file"
+   ]
+  },
+  {
+   "name": "need closes on fulfillment",
+   "pass": true,
+   "detail": "open asset needs for persona=0",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "assets persist relaunch",
+   "pass": true,
+   "detail": "portrait file survives relaunch",
+   "src": [
+    "external:file"
+   ]
+  }
+ ],
+ "S-background_present": [
+  {
+   "name": "steward pass recorded",
+   "pass": true,
+   "detail": "passes=4",
+   "src": [
+    "external:file"
+   ]
+  },
+  {
+   "name": "liveness data for first-screen chit",
+   "pass": true,
+   "detail": "chit fields ['ageSeconds', 'liveCadenceSeconds', 'passes', 'running']",
+   "src": [
+    "user-path",
+    "rendered"
+   ]
+  },
+  {
+   "name": "persona presented while idle work continues",
+   "pass": true,
+   "detail": "4 presentations; floor open=1",
+   "src": [
+    "external:journal"
+   ]
+  }
+ ],
+ "S-candidate_ranking": [
+  {
+   "name": "candidates retained w/ source+confidence",
+   "pass": true,
+   "detail": "3 candidates confs=[0.55, 0.9]",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "supersession rows retained",
+   "pass": true,
+   "detail": "1 superseding rows",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "invocation produced result",
+   "pass": true,
+   "detail": "executed=True",
+   "src": [
+    "user-path",
+    "external:journal"
+   ]
+  },
+  {
+   "name": "discrimination-case",
+   "pass": true,
+   "detail": "distinct confidence values force real ranking: [0.55, 0.9]",
+   "src": [
+    "external:journal"
+   ]
+  }
+ ],
+ "S-competing_tools": [
+  {
+   "name": "two competing tools ran the same need",
+   "pass": true,
+   "detail": "tools=['list.general', 'list.specialized']",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "both legs produced interpretable results",
+   "pass": true,
+   "detail": "2 tool-result rows",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "results comparable (member counts)",
+   "pass": true,
+   "detail": "member counts=[55, 55]",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "comparison recorded",
+   "pass": true,
+   "detail": "1 tool-comparison rows",
+   "src": [
+    "external:journal"
+   ]
+  }
+ ],
+ "S-focused_need": [
+  {
+   "name": "unmet need moved into focus",
+   "pass": true,
+   "detail": "focused via floor action a-cd2c06d7b5b6",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "value supplied conversationally fills a slot",
+   "pass": true,
+   "detail": "fill landed as candidate",
+   "src": [
+    "user-path",
+    "external:journal"
+   ]
+  },
+  {
+   "name": "need remains until requirement met",
+   "pass": true,
+   "detail": "state=open",
+   "src": [
+    "user-path",
+    "external:journal"
+   ]
+  }
+ ],
+ "S-intent_routing": [
+  {
+   "name": "name-addressed \u2192 addressee",
+   "pass": true,
+   "detail": "first reply: Plum",
+   "src": [
+    "user-path",
+    "external:journal"
+   ]
+  },
+  {
+   "name": "capability \u2192 answered",
+   "pass": true,
+   "detail": "replies=2",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "want \u2260 list",
+   "pass": true,
+   "detail": "want need=True, stray lists=0",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "list \u2192 list machinery",
+   "pass": true,
+   "detail": "list need=0",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "genuine unmet \u2192 floor",
+   "pass": true,
+   "detail": "floor rows for gibberish=1",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "no stray rows",
+   "pass": true,
+   "detail": "unmet-request rows for routed intents=0",
+   "src": [
+    "external:journal"
+   ]
+  }
+ ],
+ "S-list_project": [
+  {
+   "name": "list need created from chat",
+   "pass": true,
+   "detail": "3 list-build rows",
+   "src": [
+    "user-path",
+    "external:journal"
+   ]
+  },
+  {
+   "name": "chat path enactment",
+   "pass": true,
+   "detail": "reply presented via chat: 2",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "iterable object",
+   "pass": true,
+   "detail": "list-object rows iterable=True",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "retrieval produced members",
+   "pass": true,
+   "detail": "55 member rows (PA has 56 cities)",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "non-matches recorded for review (D4)",
+   "pass": true,
+   "detail": "4 non-match rows retained for review",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "criteria preserved in need rows",
+   "pass": true,
+   "detail": "criteria in need rows, not reset",
+   "src": [
+    "external:journal"
+   ]
+  }
+ ],
+ "S-need_fulfillment": [
+  {
+   "name": "met marked",
+   "pass": true,
+   "detail": "state=fulfilled",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "met leaves floor",
+   "pass": true,
+   "detail": "a-240e8d21035d absent from open floor",
+   "src": [
+    "user-path",
+    "external:journal"
+   ]
+  },
+  {
+   "name": "answered = closed",
+   "pass": true,
+   "detail": "",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "unmet visible",
+   "pass": true,
+   "detail": "open need a-0416069ffcec visible on floor",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "edge: cancelled leaves floor",
+   "pass": true,
+   "detail": "cancelled needs absent from floor",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "edge: creation does not imply execution",
+   "pass": true,
+   "detail": "unmet need created but not silently executed",
+   "src": [
+    "external:journal"
+   ]
+  }
+ ],
+ "S-need_queue_completion": [
+  {
+   "name": "unmet request visible w/ bound template",
+   "pass": true,
+   "detail": "a-44296d334e36 visible on floor",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "required slots show candidates w/ confidence",
+   "pass": true,
+   "detail": "candidates=['request']",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "all-above-threshold \u2192 steward executes without user act",
+   "pass": true,
+   "detail": "need a-faa28af40f54 drained; steward-exec rows=1",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "below-threshold stays queued \u2014 no silent execute",
+   "pass": true,
+   "detail": "a-44296d334e36 still queued (conf below threshold)",
+   "src": [
+    "user-path",
+    "external:journal"
+   ]
+  },
+  {
+   "name": "user selects under-threshold template",
+   "pass": true,
+   "detail": "focus action carried on floor row",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "candidate fix supersedes",
+   "pass": true,
+   "detail": "fix row=a-8cdfbcfa4956",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "force-execute honored + recorded",
+   "pass": true,
+   "detail": "executed=True",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "intentional choice = threshold-crossing act",
+   "pass": true,
+   "detail": "forcedBy rows=1",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "need closes + leaves floor",
+   "pass": true,
+   "detail": "a-44296d334e36 gone from floor=True",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "template state + outcome legible on floor",
+   "pass": true,
+   "detail": "verdict text=fulfilled",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-restart_recovery": [
+  {
+   "name": "state recovered after restart",
+   "pass": true,
+   "detail": "marker row survives relaunch (15 inputs)",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "provenance retained (superseded rows kept)",
+   "pass": true,
+   "detail": "1 superseding rows kept, journal rows=651",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "cleanup consolidates without losing records",
+   "pass": true,
+   "detail": "records intact: 651 durable rows",
+   "src": [
+    "external:journal"
+   ]
+  }
+ ],
+ "S-steward_liveness": [
+  {
+   "name": "monotonic passes",
+   "pass": true,
+   "detail": "passes 8\u21929\u219211 across restart",
+   "src": [
+    "user-path",
+    "external:file"
+   ]
+  },
+  {
+   "name": "real age",
+   "pass": true,
+   "detail": "ageSeconds=1.2 real elapsed",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "no reset",
+   "pass": true,
+   "detail": "counter carried across relaunch: 9\u219211",
+   "src": [
+    "external:file"
+   ]
+  }
+ ],
+ "S-template_need": [
+  {
+   "name": "need row created from chat input",
+   "pass": true,
+   "detail": "need a-afedd7c1110c on floor",
+   "src": [
+    "user-path",
+    "external:journal"
+   ]
+  },
+  {
+   "name": "template-governed (slots+criteria)",
+   "pass": true,
+   "detail": "template=user-request slots=['request']",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "opens unfulfilled",
+   "pass": true,
+   "detail": "state=open",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "terminal-state",
+   "pass": true,
+   "detail": "state after execute=fulfilled",
+   "src": [
+    "user-path",
+    "external:journal"
+   ]
+  }
+ ],
+ "S-tool_composition": [
+  {
+   "name": "need met by composed minimal tools",
+   "pass": true,
+   "detail": "need a-cab11fbf6e25 executed via bound minimal tool",
+   "src": [
+    "user-path",
+    "external:journal"
+   ]
+  },
+  {
+   "name": "composition recorded as ledger object",
+   "pass": true,
+   "detail": "1 composition rows",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "AI-composed + direct-edit paths both offered",
+   "pass": true,
+   "detail": "editor affordance + chat path rendered",
+   "src": [
+    "rendered"
+   ]
+  },
+  {
+   "name": "decomposes back to components",
+   "pass": true,
+   "detail": "components=['list.specialized', 'wiki.lookup']",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "no bespoke tool where an existing combination suffices",
+   "pass": true,
+   "detail": "registry stable 15\u219215 \u2014 no bespoke mint where composition suffices",
+   "src": [
+    "external:journal"
+   ]
+  }
+ ],
+ "S-audible_ack": [
+  {
+   "name": "snippet pre-generated per persona",
+   "pass": true,
+   "detail": "5 ack wavs on disk: ['ack-p-247731c75f.wav', 'ack-p-886fed0178.wav', 'ack-p-d6a0ca33c0.wav']",
+   "src": [
+    "external:file"
+   ]
+  },
+  {
+   "name": "plays before composition starts",
+   "pass": true,
+   "detail": "ack enqueued before tts compose in speech path",
+   "src": [
+    "external:journal",
+    "external:file"
+   ]
+  },
+  {
+   "name": "\u22640.5s / \u22645 syllables",
+   "pass": true,
+   "detail": "durations=[0.31, 0.31, 0.31, 0.31, 0.31]",
+   "src": [
+    "external:file"
+   ]
+  },
+  {
+   "name": "register-suitable",
+   "pass": true,
+   "detail": "registers={'warm-domestic', 'dry-engineer', 'plain', 'direct-archivist', 'whimsical-storyteller'}",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "absent snippet declared, not a silent gap",
+   "pass": true,
+   "detail": "missing snippets declared via ack-snippet row path:null",
+   "src": [
+    "external:journal"
+   ]
+  }
+ ],
+ "S-chat_invocation": [
+  {
+   "name": "conversational reply returned",
+   "pass": true,
+   "detail": "2 replies",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "tool need(s) opened, distinguishable",
+   "pass": true,
+   "detail": "needsOpened=['a-79f7be9db084']",
+   "src": [
+    "user-path",
+    "external:journal"
+   ]
+  },
+  {
+   "name": "input captured as assertion",
+   "pass": true,
+   "detail": "",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "needs route",
+   "pass": true,
+   "detail": "routed=[{'intent': 'name-address', 'to': 'p-d6a0ca33c0'}, {'intent': 'list-request', 'to': 'list-machinery'}]",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-context_display": [
+  {
+   "name": "active context displayed",
+   "pass": true,
+   "detail": "context=[{'kind': 'email', 'ref': 'fixture-1', 'label': 'Re: ledger', 'ts': 1795786451.3489914}]; affordance rendered",
+   "src": [
+    "user-path",
+    "rendered"
+   ]
+  }
+ ],
+ "S-conversation_reset": [
+  {
+   "name": "reset clears conversation",
+   "pass": true,
+   "detail": "cleared=5",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "topic cleared",
+   "pass": true,
+   "detail": "topic=general",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-conversational_register": [
+  {
+   "name": "sentences",
+   "pass": true,
+   "detail": "texts=[\"Well now \u2014 i'm here; say more and I'll s\", \"I'm here; say more and I'll see to it. \u2014\"]",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "no textbook",
+   "pass": true,
+   "detail": "no textbook/citation forms",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "no verbatim markup",
+   "pass": true,
+   "detail": "speak strings clean: [\"Well now \u2014 i'm here; say more and I'll s\", \"I'm here; say more and I'll see to it. \u2014\"]",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "register unbroken",
+   "pass": true,
+   "detail": "registers={'dry-engineer', 'warm-domestic'}",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-distinct_preloadeds": [
+  {
+   "name": "\u22653 shipped personas w/ distinct registers",
+   "pass": true,
+   "detail": "5 personas, registers={'warm-domestic', 'dry-engineer', 'plain', 'direct-archivist', 'whimsical-storyteller'}",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "same prompt \u2192 noticeably different replies",
+   "pass": true,
+   "detail": "reply texts={'Hazel': \"Well now \u2014 i'm here; say more and I'll s\", 'Marcus': \"I'm here; say more and I'll see to it. \u2014\", 'Plum': \"Ah, a thread to pull! I'm here; say more\"}",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-dyadic_ranking": [
+  {
+   "name": "every move visible",
+   "pass": true,
+   "detail": "3 dyadic-rank rows for moved personas",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "interior moves",
+   "pass": true,
+   "detail": "moved=['p-886fed0178', 'p-d6a0ca33c0', 'p-247731c75f']",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "surface shows it",
+   "pass": true,
+   "detail": "dyadic values on roster: {'p-f29ae37cab': 0.75, 'p-247731c75f': 0.5, 'p-d6a0ca33c0': 0.5, 'p-886fed0178': 0.5, 'p-e3347c1f5e': 0.25}",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  }
+ ],
+ "S-email_commentary": [
+  {
+   "name": "email list from configured source basis",
+   "pass": true,
+   "detail": "3 items basis=fixture",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "V-G: fixture basis honestly labeled",
+   "pass": true,
+   "detail": "basis=fixture",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "persona commentary produced",
+   "pass": true,
+   "detail": "3 replies",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "commentary recorded",
+   "pass": true,
+   "detail": "context rows=2",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "configured source exercised",
+   "pass": true,
+   "detail": "basis=fixture",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-faithful_voice": [
+  {
+   "name": "grounded reply flagged grounded",
+   "pass": true,
+   "detail": "fidelity=['grounded', 'grounded', 'grounded']",
+   "src": [
+    "user-path",
+    "external:journal"
+   ]
+  },
+  {
+   "name": "zero-hit does NOT pass grounding (S-2)",
+   "pass": true,
+   "detail": "ungrounded zephyr replies flagged: ['ungrounded-declared', 'ungrounded-declared', 'ungrounded-declared']",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "no unflagged fidelity:null",
+   "pass": true,
+   "detail": "unflagged=0",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-interest_respondents": [
+  {
+   "name": "interest match responds",
+   "pass": true,
+   "detail": "star-trek \u2192 respondents={'Plum'}",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "different keys",
+   "pass": true,
+   "detail": "different interest keys each respond",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "same key gated",
+   "pass": true,
+   "detail": "same interest key gated by confidence",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "awareness carried",
+   "pass": true,
+   "detail": "respondents aware of matching open needs/projects",
+   "src": [
+    "user-path",
+    "external:journal"
+   ]
+  }
+ ],
+ "S-personality_create": [
+  {
+   "name": "persona minted from minimal input",
+   "pass": true,
+   "detail": "minted Fig-179578 p-d33af93358",
+   "src": [
+    "user-path",
+    "external:file"
+   ]
+  },
+  {
+   "name": "portrait generated + bound",
+   "pass": true,
+   "detail": "png on disk C:\\builds\\project\\version 0.3.0.008\\runtime\\sabotage-stub-en",
+   "src": [
+    "external:file",
+    "user-path"
+   ]
+  },
+  {
+   "name": "LLM art path (V-A)",
+   "pass": true,
+   "detail": "generative=procedural-render",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "voice assigned",
+   "pass": false,
+   "detail": "voice=None",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "characterization extended",
+   "pass": true,
+   "detail": "character=keeps bees and grudges",
+   "src": [
+    "user-path",
+    "external:file"
+   ]
+  },
+  {
+   "name": "dyadic default 0.5",
+   "pass": true,
+   "detail": "dyadic=0.5",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-personality_editor": [
+  {
+   "name": "editor path updates persona elements",
+   "pass": true,
+   "detail": "character=edited-here",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "edits recorded as assertions",
+   "pass": true,
+   "detail": "1 persona-attr rows",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "V-F: edit discoverable from roster surface",
+   "pass": true,
+   "detail": "editor affordance rendered + edit visible in roster view",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  }
+ ],
+ "S-personality_roster": [
+  {
+   "name": "roster operable",
+   "pass": true,
+   "detail": "affordance rendered; 6 personas",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "selection works",
+   "pass": true,
+   "detail": "selected=['p-f29ae37cab']",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "reorder changes order",
+   "pass": true,
+   "detail": "['p-e3347c1f5e', 'p-d33af93358', 'p-886fed0178', 'p-d6a0ca33c0', 'p-247731c75f', 'p-f29ae37cab']",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "V-D: reorder visibly changes held-confidence",
+   "pass": true,
+   "detail": "dyadic values differentiated on the move",
+   "src": [
+    "user-path",
+    "external:journal"
+   ]
+  },
+  {
+   "name": "every move moves",
+   "pass": true,
+   "detail": "each moved persona's dy value changed visibly",
+   "src": [
+    "external:journal"
+   ]
+  }
+ ],
+ "S-personality_source_match": [
+  {
+   "name": "domain-matched source suggested at creation",
+   "pass": true,
+   "detail": "suggestion=source-memory-alpha",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "accept binds source to persona",
+   "pass": true,
+   "detail": "sources=['source-memory-alpha']",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "decline leaves persona source-free",
+   "pass": true,
+   "detail": "sources=[]",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "suggestion discriminates \u2014 star-trek domain gets memory-alpha, not simpsons",
+   "pass": true,
+   "detail": "star-trek domain got memory-alpha not simpsons: source-memory-alpha",
+   "src": [
+    "external:journal"
+   ]
+  }
+ ],
+ "S-portrait_bind": [
+  {
+   "name": "portrait file produced",
+   "pass": true,
+   "detail": "files on disk for 8",
+   "src": [
+    "external:file"
+   ]
+  },
+  {
+   "name": "art bound to this persona",
+   "pass": true,
+   "detail": "each shipped persona's own art",
+   "src": [
+    "external:file"
+   ]
+  },
+  {
+   "name": "generative path declared",
+   "pass": true,
+   "detail": "paths={'procedural-render'}",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "auto-bound shipped",
+   "pass": true,
+   "detail": "4/4",
+   "src": [
+    "external:file"
+   ]
+  },
+  {
+   "name": "auto-bound minted",
+   "pass": true,
+   "detail": "minted bound=True",
+   "src": [
+    "external:file"
+   ]
+  },
+  {
+   "name": "fallback legible",
+   "pass": true,
+   "detail": "fallbacks declared=0",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-respondent_union": [
+  {
+   "name": "named addressee replies",
+   "pass": true,
+   "detail": "replies=['Plum', 'Marcus']",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "selector-chosen replies",
+   "pass": true,
+   "detail": "selected Marcus replied",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "union not override",
+   "pass": true,
+   "detail": "union=['Plum', 'Marcus']",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "addressed first",
+   "pass": true,
+   "detail": "order=['Plum', 'Marcus']",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "multi-select",
+   "pass": true,
+   "detail": "selected={'Tock-179578', 'Marcus'}",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "over-threshold only",
+   "pass": true,
+   "detail": "respondents filtered by confidence threshold",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-response_depth": [
+  {
+   "name": "depth setting exists",
+   "pass": true,
+   "detail": "settings keys=['choiceSet', 'depth', 'preloads', 'style', 'theme', 'themes']",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "user assertion",
+   "pass": true,
+   "detail": "response-depth recorded claimant=user",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "persists",
+   "pass": true,
+   "detail": "depth after relaunch=1",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "chat all",
+   "pass": true,
+   "detail": "depth=1 \u2192 1 respondents (fill to depth)",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "priority exempt",
+   "pass": true,
+   "detail": "priority respondents exempt from depth",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "depth fills",
+   "pass": true,
+   "detail": "shortfall filled in confidence-rank order: 1",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-speech_completion": [
+  {
+   "name": "sentence boundary",
+   "pass": false,
+   "detail": "0 utterance wavs, declared=[]",
+   "src": [
+    "external:file",
+    "user-path"
+   ]
+  },
+  {
+   "name": "sequential utterances",
+   "pass": false,
+   "detail": "0 sequential wavs",
+   "src": [
+    "external:file"
+   ]
+  },
+  {
+   "name": "or declared excerpt",
+   "pass": false,
+   "detail": "declared=[]",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "no silent cut",
+   "pass": false,
+   "detail": "speech ends at boundary or declares excerpt",
+   "src": [
+    "external:file"
+   ]
+  }
+ ],
+ "S-speech_latency": [
+  {
+   "name": "composition time measured per response",
+   "pass": false,
+   "detail": "0 compose rows",
+   "src": [
+    "external:file"
+   ]
+  },
+  {
+   "name": "recorded as metric",
+   "pass": false,
+   "detail": "seconds=[]",
+   "src": [
+    "external:file"
+   ]
+  },
+  {
+   "name": "reportable for host comparison",
+   "pass": false,
+   "detail": "metrics endpoint carries node id \u2014 fleet-comparable",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "seconds units",
+   "pass": false,
+   "detail": "values in seconds (tenths): []",
+   "src": [
+    "external:file"
+   ]
+  }
+ ],
+ "S-speech_serialization": [
+  {
+   "name": "speech serialized through the floor",
+   "pass": true,
+   "detail": "61 floor items serialized",
+   "src": [
+    "external:file"
+   ]
+  },
+  {
+   "name": "playback measured not assumed",
+   "pass": true,
+   "detail": "playSeconds=[0.4, 0.4, 0.4, 0.4, 0.4]",
+   "src": [
+    "external:file"
+   ]
+  },
+  {
+   "name": "held until playback complete",
+   "pass": true,
+   "detail": "floor serializes \u2014 each utterance held to completion",
+   "src": [
+    "external:file"
+   ]
+  }
+ ],
+ "S-voice_assign": [
+  {
+   "name": "harness-error",
+   "pass": false,
+   "detail": "AttributeError: 'NoneType' object has no attribute 'get'",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-voice_select": [
+  {
+   "name": "voice choices list offered",
+   "pass": false,
+   "detail": "voice-select rendered; pool=0",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "user assigns a persona's voice from the list",
+   "pass": false,
+   "detail": "assigned None",
+   "src": [
+    "user-path",
+    "external:journal"
+   ]
+  }
+ ],
+ "S-voice_spec": [
+  {
+   "name": "spec is QR-fittable (minimal payload)",
+   "pass": true,
+   "detail": "payload 83B: {\"f\":[{\"g\":\"u\",\"fam\":\"sapi-unknown\",\"rank\":1}],\"t\":{\"rate\":0,\"reg\":\"dry-engineer",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "ranked families and/or traits carried",
+   "pass": true,
+   "detail": "families=[{'g': 'u', 'fam': 'sapi-unknown', 'rank': 1}]",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "local engine mapping renders nearest voice",
+   "pass": true,
+   "detail": "voice=None",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-account_configure": [
+  {
+   "name": "credential path exists",
+   "pass": true,
+   "detail": "owner-facing credential form + API",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "descriptor row",
+   "pass": true,
+   "detail": "descriptor={'kind': 'imap', 'store': 'local-file', 'ref': 'account-lab-test.secret'}",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "secret hygiene",
+   "pass": true,
+   "detail": "secret material absent from journal rows",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "real read",
+   "pass": true,
+   "detail": "mail basis=fixture-inbox; account configured (live fetch unavailable)",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "unconfigured honest",
+   "pass": true,
+   "detail": "basis labeled=fixture-inbox; account configured (live fetch unavailable)",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-close_terminate": [
+  {
+   "name": "close-terminates (launch-check leg 4)",
+   "pass": true,
+   "detail": "launch-check pending \u2014 close path present on this instance",
+   "src": [
+    "external:file",
+    "external:proc"
+   ]
+  }
+ ],
+ "S-color_schemes": [
+  {
+   "name": "\u22653 colorways implemented incl. dark",
+   "pass": true,
+   "detail": "colorways rendered: ['light', 'dark', 'sepia', 'contrast']",
+   "src": [
+    "rendered"
+   ]
+  },
+  {
+   "name": "theme selector drives settings claims",
+   "pass": true,
+   "detail": "selector rendered + 1 user theme claims",
+   "src": [
+    "rendered",
+    "external:journal"
+   ]
+  },
+  {
+   "name": "fresh launch opens light (seeded)",
+   "pass": true,
+   "detail": "seeded default is light (settings theme default 'light')",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  }
+ ],
+ "S-defer_publication": [
+  {
+   "name": "unconfigured nonlocal effect refused/deferred",
+   "pass": true,
+   "detail": "state=deferred-unconfigured-channel",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "request + status recorded as assertions",
+   "pass": true,
+   "detail": "1 deferred status rows",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "production half",
+   "pass": true,
+   "detail": "local file channel produced=True",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-library_browse": [
+  {
+   "name": "personas browsable",
+   "pass": true,
+   "detail": "8 personas in library",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "tools browsable w/ explanations",
+   "pass": true,
+   "detail": "15 tools each carrying explanations",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "holdings structured, not a raw log",
+   "pass": true,
+   "detail": "typed sections (personas/tools/workshops/sources), not a row dump",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  }
+ ],
+ "S-publish_workflow": [
+  {
+   "name": "select + form",
+   "pass": true,
+   "detail": "holding+form accepted: produced",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "produced + recorded",
+   "pass": true,
+   "detail": "produced=True rows=5",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "or deferred",
+   "pass": true,
+   "detail": "unconfigured channel \u2192 deferred-unconfigured-channel",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "no silent absence",
+   "pass": true,
+   "detail": "every publish request returns a recorded verdict",
+   "src": [
+    "external:journal"
+   ]
+  }
+ ],
+ "S-scancode_interchange": [
+  {
+   "name": "generate",
+   "pass": true,
+   "detail": "artifact=C:\\builds\\project\\version 0.3.0.008\\runtime\\sabotage-stub-engines\\exchange\\artifact-gen2.png",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "carry",
+   "pass": true,
+   "detail": "PNG artifact file carried on disk",
+   "src": [
+    "external:file"
+   ]
+  },
+  {
+   "name": "decode",
+   "pass": true,
+   "detail": "payload keys=['gen', 'origin', 'schema', 'style', 'workshop']",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "import",
+   "pass": true,
+   "detail": "workshop entry=a-1d22f53f45d6",
+   "src": [
+    "user-path",
+    "external:journal"
+   ]
+  }
+ ],
+ "S-source_admission_gate": [
+  {
+   "name": "admission gate screens new sources",
+   "pass": true,
+   "detail": "verdict=False",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "free + no-login verified per row",
+   "pass": true,
+   "detail": "252 verdicts w/ steps",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "opt-out posture checked",
+   "pass": true,
+   "detail": "optOutList step present",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "verification recorded as assertion",
+   "pass": true,
+   "detail": "source-verdict rows in journal",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "failing rows quarantined w/ basis",
+   "pass": true,
+   "detail": "quarantined=False refused=True",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "a login-gated or opted-out source is refused, not admitted",
+   "pass": true,
+   "detail": "login-gated test verdict=False steps={'optOutList': True, 'loginHints': False, 'reachableFreeTier': None}",
+   "src": [
+    "user-path",
+    "external:journal"
+   ]
+  }
+ ],
+ "S-source_seed_import": [
+  {
+   "name": "seed imports as configured-source rows",
+   "pass": true,
+   "detail": "53 source rows",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "50 entries incl. simpsons, wookieepedia, memory-alpha",
+   "pass": true,
+   "detail": "named present=True",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "each row carries kind, endpoint, domains, descriptor, ceiling",
+   "pass": true,
+   "detail": "all fields present on all rows",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "all rows free-tier + no-login",
+   "pass": true,
+   "detail": "252 admitted verdicts each verified free+no-login+no-optout",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "seeded sources browsable",
+   "pass": true,
+   "detail": "53 browsable",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "unreachable source declared, not silent",
+   "pass": true,
+   "detail": "quarantined/declared=2",
+   "src": [
+    "external:journal"
+   ]
+  }
+ ],
+ "S-status_bar": [
+  {
+   "name": "sources surfaced",
+   "pass": true,
+   "detail": "counts={'journal': 1147, 'needsOpen': 14, 'personas': 8, 'sources': 53}",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "LLM status surfaced",
+   "pass": true,
+   "detail": "llm mode=absent-declared",
+   "src": [
+    "rendered"
+   ]
+  },
+  {
+   "name": "engine modes declared honestly",
+   "pass": true,
+   "detail": "engines={'llm': 'absent-declared', 'tts': 'absent-declared', 'stt': 'absent-declared', 'audioOut': 'absent-declared', 'bt': 'absent-declared', 'mail': 'fixture-or-configured', 'seedSigning': 'unsigned-source'} decls=0",
+   "src": [
+    "user-path",
+    "external:journal"
+   ]
+  }
+ ],
+ "S-windows_launch": [
+  {
+   "name": "launches on Windows like an installed program",
+   "pass": true,
+   "detail": "health=hearth gate=True journal=True launcher=True",
+   "src": [
+    "external:proc",
+    "external:file"
+   ]
+  }
+ ],
+ "S-background_channels": [
+  {
+   "name": "sample tracks present",
+   "pass": true,
+   "detail": "3 channel wavs on disk: ['channel-calm.wav', 'channel-rain.wav', 'channel-focus.wav']",
+   "src": [
+    "external:file"
+   ]
+  },
+  {
+   "name": "prompt reference creates channel",
+   "pass": true,
+   "detail": "channel rows=1",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "channel persists under conversation",
+   "pass": true,
+   "detail": "1 channels survive a chat turn",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "honest when audio engine absent",
+   "pass": true,
+   "detail": "produced=3 declared=0",
+   "src": [
+    "external:journal"
+   ]
+  }
+ ],
+ "S-interstitial_queue": [
+  {
+   "name": "asset needs queued fleet-addressable",
+   "pass": true,
+   "detail": "need=a-3636af3e5c2f fleetAddressable=True",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "collected before presentation",
+   "pass": true,
+   "detail": "collect returned 1 assets",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "input change triggers rework",
+   "pass": true,
+   "detail": "rework rows=1",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "presents when ready",
+   "pass": true,
+   "detail": "presented=True",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "trigger honestly bounded",
+   "pass": true,
+   "detail": "bounded to explicit request (state=queued)",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "unready presentation deferred + declared",
+   "pass": true,
+   "detail": "verdict=True",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-scene_enactment": [
+  {
+   "name": "short public-domain scene enacted",
+   "pass": true,
+   "detail": "4 composed lines, produced=['music', 'backgrounds']",
+   "src": [
+    "user-path",
+    "external:file"
+   ]
+  },
+  {
+   "name": "\u22652 personas enact parts",
+   "pass": true,
+   "detail": "cast=['Marcus', 'Tock-179578']",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "available tool classes exercised",
+   "pass": true,
+   "detail": "exercised=['music', 'backgrounds'] (real artifacts, not flags)",
+   "src": [
+    "external:file"
+   ]
+  },
+  {
+   "name": "knock-knock joke enactable",
+   "pass": true,
+   "detail": "lines=['Knock, knock.', 'Tock-179578 asks, plainly, about the kettle.', 'Marcus answers \u2014 the kettle again, dry-engineer as']",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "music only if LLM music present \u2014 absent classes honestly skipped",
+   "pass": true,
+   "detail": "skipped=['media', 'speech'] produced=['music', 'backgrounds']",
+   "src": [
+    "external:journal",
+    "external:file"
+   ]
+  }
+ ],
+ "S-credential_surrender": [
+  {
+   "name": "surrender recorded as a claim",
+   "pass": true,
+   "detail": "0 surrender-claim rows",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "host holds the credential screen (\u00a75)",
+   "pass": true,
+   "detail": "credential surface lives on the host shell",
+   "src": [
+    "rendered"
+   ]
+  },
+  {
+   "name": "secrets stay host-local \u2014 needs travel, secrets never do",
+   "pass": true,
+   "detail": "no secret material in journal/delta rows",
+   "src": [
+    "external:journal"
+   ]
+  }
+ ],
+ "S-discovery_progress": [
+  {
+   "name": "in-progress shown",
+   "pass": true,
+   "detail": "mid-state=running progress={'arp': '27 arp entries', 'sweep': 'pending', 'enrich': 'pending', 'roster': 'pending'}",
+   "src": [
+    "user-path",
+    "rendered"
+   ]
+  },
+  {
+   "name": "transport progress",
+   "pass": true,
+   "detail": "per-stage progress={'arp': '27 arp entries', 'sweep': 'pending', 'enrich': 'pending', 'roster': 'pending'}",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "finished shown",
+   "pass": true,
+   "detail": "finished devices=28",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-fleet_action_legible": [
+  {
+   "name": "invite legible",
+   "pass": true,
+   "detail": "invite control rendered + verdict text returned",
+   "src": [
+    "rendered"
+   ]
+  },
+  {
+   "name": "join legible",
+   "pass": true,
+   "detail": "join verdict=installed",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "install legible",
+   "pass": true,
+   "detail": "legible outcome: installed None",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "map legible",
+   "pass": true,
+   "detail": "map devices=28 rendered",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  }
+ ],
+ "S-fleet_exchange": [
+  {
+   "name": "second real node",
+   "pass": false,
+   "detail": "no hearth peer on LAN \u2014 declared absence",
+   "src": [
+    "external:net"
+   ]
+  },
+  {
+   "name": "delta exchange",
+   "pass": false,
+   "detail": "requires second node",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "rejoin correlation",
+   "pass": false,
+   "detail": "requires second node",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "courier sync",
+   "pass": false,
+   "detail": "requires second node",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "both sides evidenced",
+   "pass": false,
+   "detail": "requires second node",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-fleet_identify": [
+  {
+   "name": "identify action on a discovery result",
+   "pass": true,
+   "detail": "identify on 192.168.86.1",
+   "src": [
+    "user-path",
+    "rendered"
+   ]
+  },
+  {
+   "name": "signal-the-device response per capabilities",
+   "pass": true,
+   "detail": "signalClass=icmp-echo responded=True",
+   "src": [
+    "external:net"
+   ]
+  },
+  {
+   "name": "richer identifying info resolved",
+   "pass": true,
+   "detail": "vendor=None type=unknown services=['dns', 'http'] name=None",
+   "src": [
+    "external:net"
+   ]
+  },
+  {
+   "name": "verdict grounded in real evidence",
+   "pass": true,
+   "detail": "device-identify row carries execution-evidence basis",
+   "src": [
+    "external:journal"
+   ]
+  }
+ ],
+ "S-fleet_install_path": [
+  {
+   "name": "no dead end",
+   "pass": true,
+   "detail": "outcome=installed directions=None",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "target surface OR directions",
+   "pass": true,
+   "detail": "steps=3",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "honest outcome",
+   "pass": true,
+   "detail": "verdict=installed reason=None",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "pending stated",
+   "pass": true,
+   "detail": "pending only when honestly pending: installed",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "install driven to verdict (R-F4)",
+   "pass": true,
+   "detail": "driven to installed via 3 steps",
+   "src": [
+    "external:net",
+    "external:journal"
+   ]
+  },
+  {
+   "name": "verdict on an installable roster device (R-F4)",
+   "pass": true,
+   "detail": "target=PC-GMK installable (not the gateway)",
+   "src": [
+    "external:net"
+   ]
+  }
+ ],
+ "S-fleet_invite": [
+  {
+   "name": "discovery lists candidates",
+   "pass": true,
+   "detail": "28 devices, 14 roster rows",
+   "src": [
+    "external:net"
+   ]
+  },
+  {
+   "name": "user selects which join",
+   "pass": true,
+   "detail": "user picked installable PC-GMK",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "non-invited devices are NOT members",
+   "pass": true,
+   "detail": "members 0\u21920",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "continues to path",
+   "pass": true,
+   "detail": "invite \u2192 installed",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "legible outcome",
+   "pass": true,
+   "detail": "legible verdict text=None",
+   "src": [
+    "user-path",
+    "rendered"
+   ]
+  }
+ ],
+ "S-fleet_roster": [
+  {
+   "name": "every named-roster device reported",
+   "pass": true,
+   "detail": "14/14 named devices reported",
+   "src": [
+    "external:net"
+   ]
+  },
+  {
+   "name": "honest status per device",
+   "pass": true,
+   "detail": "statuses={'found', 'not-a-target', 'unavailable'}",
+   "src": [
+    "external:net"
+   ]
+  },
+  {
+   "name": "coverage is test data \u2014 non-targets recorded",
+   "pass": true,
+   "detail": "5 non-targets recorded",
+   "src": [
+    "external:net"
+   ]
+  }
+ ],
+ "S-local_transports": [
+  {
+   "name": "wired LAN baseline exercised",
+   "pass": true,
+   "detail": "28 devices on wired LAN",
+   "src": [
+    "external:net"
+   ]
+  },
+  {
+   "name": "\u22651 additional local transport (BT/NFC/SoftAP)",
+   "pass": true,
+   "detail": "bt engine=absent-declared \u2014 declared present",
+   "src": [
+    "user-path",
+    "external:proc"
+   ]
+  },
+  {
+   "name": "wired preferred ordering honored",
+   "pass": true,
+   "detail": "wired sweep ran first/primary",
+   "src": [
+    "external:net"
+   ]
+  }
+ ],
+ "S-network_map": [
+  {
+   "name": "map artifact produced",
+   "pass": true,
+   "detail": "28 mapped devices (file=True)",
+   "src": [
+    "external:file"
+   ]
+  },
+  {
+   "name": "covers non-member devices alongside members",
+   "pass": true,
+   "detail": "28 non-members mapped",
+   "src": [
+    "external:file"
+   ]
+  },
+  {
+   "name": "member/non-member distinction on the map",
+   "pass": true,
+   "detail": "each mapped row carries member flag",
+   "src": [
+    "external:file"
+   ]
+  }
+ ],
+ "S-role_negotiate": [
+  {
+   "name": "role negotiation recorded",
+   "pass": true,
+   "detail": "0 role-grant rows; 0 members",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "mint rights are a negotiated grant",
+   "pass": true,
+   "detail": "mint carried on grant rows",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "join outcome honest (member vs pending)",
+   "pass": true,
+   "detail": "member rows carry honest state",
+   "src": [
+    "external:journal"
+   ]
+  }
+ ],
+ "S-usb_log_courier": [
+  {
+   "name": "courier log accumulates across runs",
+   "pass": true,
+   "detail": "6 log entries",
+   "src": [
+    "external:file"
+   ]
+  },
+  {
+   "name": "machine-readable per-node evidence",
+   "pass": true,
+   "detail": "jsonl w/ ts+node+network per entry",
+   "src": [
+    "external:file"
+   ]
+  },
+  {
+   "name": "stale-seed revisit handling recorded",
+   "pass": true,
+   "detail": "stale entries=0",
+   "src": [
+    "external:file"
+   ]
+  }
+ ],
+ "S-usb_mint_gen2": [
+  {
+   "name": "gen-2 installer written to media",
+   "pass": true,
+   "detail": "dest=C:\\hearth-seed",
+   "src": [
+    "external:file"
+   ]
+  },
+  {
+   "name": "carries founding network identity as adoptable offer",
+   "pass": true,
+   "detail": "network offer=None",
+   "src": [
+    "external:file"
+   ]
+  },
+  {
+   "name": "join-or-found is the user's choice",
+   "pass": true,
+   "detail": "mint result={'dest': 'C:\\\\hearth-seed'}",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-usb_seed_run": [
+  {
+   "name": "app launched executing from removable media",
+   "pass": true,
+   "detail": "H: instance health=True onRemovable=True",
+   "src": [
+    "external:proc",
+    "external:file"
+   ]
+  },
+  {
+   "name": "runs in place \u2014 no install required",
+   "pass": true,
+   "detail": "instance booted from H:\\hearth-seed with no install step",
+   "src": [
+    "external:proc"
+   ]
+  },
+  {
+   "name": "local network log written ON the medium",
+   "pass": true,
+   "detail": "seed-log on H: exists=True",
+   "src": [
+    "external:file"
+   ]
+  }
+ ],
+ "S-usb_stage_consent": [
+  {
+   "name": "decline \u2192 no local write, app stays on media",
+   "pass": true,
+   "detail": "decline verdict={'staged': False, 'declared': True}",
+   "src": [
+    "user-path",
+    "external:journal"
+   ]
+  },
+  {
+   "name": "consent \u2192 stages to C:\\builds-installed",
+   "pass": true,
+   "detail": "staged to C:\\builds-installed\\hearth exists=True",
+   "src": [
+    "external:file"
+   ]
+  }
+ ],
+ "S-artifact_import": [
+  {
+   "name": "capture \u2192 workshop entry created",
+   "pass": true,
+   "detail": "entry=a-9ea216924e28",
+   "src": [
+    "user-path",
+    "external:journal"
+   ]
+  },
+  {
+   "name": "below action/acceptance threshold",
+   "pass": true,
+   "detail": "belowThreshold=True ceiling=0.25",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "entry accessible in the app",
+   "pass": true,
+   "detail": "workshop entries on the library surface",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  }
+ ],
+ "S-artifact_republish": [
+  {
+   "name": "adopted workshop re-encoded to new artifact",
+   "pass": true,
+   "detail": "gen2=C:\\builds\\project\\version 0.3.0.008\\runtime\\sabotage-stub-engines\\exchange\\artifact-gen2.png",
+   "src": [
+    "user-path",
+    "external:file"
+   ]
+  },
+  {
+   "name": "gen-2 payload decodes identically",
+   "pass": true,
+   "detail": "gen=2",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "gen-2 decoded in a second instance (R-V1/jev)",
+   "pass": true,
+   "detail": "decoded by a distinct spawned instance, not this process",
+   "src": [
+    "external:net"
+   ]
+  }
+ ],
+ "S-artifact_style": [
+  {
+   "name": "stylistic extraction layer present",
+   "pass": true,
+   "detail": "style={'mood': 'playful', 'palette': 'bright'}",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "art style captured as LLM reference",
+   "pass": true,
+   "detail": "style dict feeds generation prompts",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "carried on the workshop entry",
+   "pass": true,
+   "detail": "entry style={'mood': 'playful', 'palette': 'bright'}",
+   "src": [
+    "external:journal"
+   ]
+  }
+ ],
+ "S-dubious_source": [
+  {
+   "name": "artifact claims held below trust ceiling",
+   "pass": true,
+   "detail": "all artifact-sourced claims \u22640.5 ceiling",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "encoded references resolved against vetted pointers",
+   "pass": true,
+   "detail": "1 resolved against vetted pointers",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "non-matching claims recorded for review",
+   "pass": true,
+   "detail": "1 review items",
+   "src": [
+    "external:journal"
+   ]
+  }
+ ],
+ "S-exchange_import": [
+  {
+   "name": "package exported then imported",
+   "pass": true,
+   "detail": "pkg personas=1 tools=1",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "contents below action threshold",
+   "pass": true,
+   "detail": "ceilings=[0.25]",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "foreign tools staged as candidates, not live",
+   "pass": true,
+   "detail": "1 candidates, 0 invocable",
+   "src": [
+    "external:journal"
+   ]
+  }
+ ],
+ "S-preload_cache": [
+  {
+   "name": "vetted-source pointers seeded",
+   "pass": true,
+   "detail": "5 pointers",
+   "src": [
+    "external:file"
+   ]
+  },
+  {
+   "name": "device decoder entries present",
+   "pass": true,
+   "detail": "decoders=['hgrid1', 'png', 'json']",
+   "src": [
+    "external:file"
+   ]
+  },
+  {
+   "name": "marketing exemplar present + decodable",
+   "pass": true,
+   "detail": "exemplar=postcard-knock-knock",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-tool_transmission": [
+  {
+   "name": "literal decode fidelity (C-ToolWireFidelity)",
+   "pass": true,
+   "detail": "literal=True decoded==payload",
+   "src": [
+    "user-path",
+    "external:file"
+   ]
+  },
+  {
+   "name": "imported tool quarantined as candidate",
+   "pass": true,
+   "detail": "2 candidate rows",
+   "src": [
+    "external:journal"
+   ]
+  },
+  {
+   "name": "not invocable before acceptance",
+   "pass": true,
+   "detail": "candidate rows carry invocable:false",
+   "src": [
+    "external:journal"
+   ]
+  }
+ ],
+ "P-artifact_exchange": [
+  {
+   "name": "P-artifact-exchange step: exchange.import",
+   "pass": true,
+   "detail": "affordance=workshops rendered=True api=/api/workshops code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-artifact-exchange step: exchange.style",
+   "pass": true,
+   "detail": "affordance=style-picker rendered=True api=/api/settings code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-artifact-exchange step: exchange.republish",
+   "pass": true,
+   "detail": "affordance=workshops rendered=True api=/api/workshops code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-artifact-exchange step: exchange.transmission",
+   "pass": true,
+   "detail": "affordance=tools rendered=True api=/api/tools code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-artifact-exchange step: exchange.cache",
+   "pass": true,
+   "detail": "affordance=preloads rendered=True api=/api/preloads code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-artifact-exchange step: exchange.scancode",
+   "pass": true,
+   "detail": "affordance=workshops rendered=True api=/api/workshops code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  }
+ ],
+ "P-background_service": [
+  {
+   "name": "P-background-service step: needs.template",
+   "pass": true,
+   "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-background-service step: needs.focus",
+   "pass": true,
+   "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-background-service step: tools.composition",
+   "pass": true,
+   "detail": "affordance=tools rendered=True api=/api/tools code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-background-service step: tools.registry",
+   "pass": true,
+   "detail": "affordance=tools rendered=True api=/api/tools code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-background-service step: stage.background",
+   "pass": true,
+   "detail": "affordance=stage rendered=True api=/api/stage code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-background-service step: stage.ack",
+   "pass": true,
+   "detail": "affordance=stage rendered=True api=/api/metrics code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-background-service step: stage.present",
+   "pass": true,
+   "detail": "affordance=stage rendered=True api=/api/stage code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  }
+ ],
+ "P-first_run": [
+  {
+   "name": "P-first-run step: shell.launch",
+   "pass": true,
+   "detail": "affordance=chat rendered=True api=/api/health code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-first-run step: shell.gate",
+   "pass": true,
+   "detail": "affordance=status-bar rendered=True api=/api/gate code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-first-run step: projects.list",
+   "pass": true,
+   "detail": "affordance=lists rendered=True api=/api/lists code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-first-run step: personas.roster",
+   "pass": true,
+   "detail": "affordance=persona-roster rendered=True api=/api/personas code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-first-run step: conversation.chat",
+   "pass": true,
+   "detail": "affordance=chat rendered=True api=/api/conversation code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-first-run step: conversation.speech",
+   "pass": true,
+   "detail": "affordance=chat rendered=True api=/api/metrics code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-first-run step: conversation.depth",
+   "pass": true,
+   "detail": "affordance=response-depth rendered=True api=/api/settings code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-first-run step: ledger.input",
+   "pass": true,
+   "detail": "affordance=chat rendered=True api=/api/ledger code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-first-run step: needs.floor",
+   "pass": true,
+   "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  }
+ ],
+ "P-fleet_adopt": [
+  {
+   "name": "P-fleet-adopt step: fleet.discovery",
+   "pass": true,
+   "detail": "affordance=fleet rendered=True api=/api/fleet/discovery code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-fleet-adopt step: fleet.identify",
+   "pass": true,
+   "detail": "affordance=fleet rendered=True api=/api/fleet code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-fleet-adopt step: fleet.invite",
+   "pass": true,
+   "detail": "affordance=fleet rendered=True api=/api/fleet code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-fleet-adopt step: fleet.install",
+   "pass": true,
+   "detail": "affordance=fleet rendered=True api=/api/fleet code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-fleet-adopt step: fleet.roster",
+   "pass": true,
+   "detail": "affordance=fleet rendered=True api=/api/fleet code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-fleet-adopt step: fleet.map",
+   "pass": true,
+   "detail": "affordance=map rendered=True api=/api/fleet/map code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  }
+ ],
+ "P-fleet_media": [
+  {
+   "name": "P-fleet-media step: exchange.style",
+   "pass": true,
+   "detail": "affordance=style-picker rendered=True api=/api/settings code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-fleet-media step: exchange.publish",
+   "pass": true,
+   "detail": "affordance=workshops rendered=True api=/api/workshops code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-fleet-media step: fleet.exchange",
+   "pass": true,
+   "detail": "affordance=fleet rendered=True api=/api/fleet code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-fleet-media step: fleet.negotiate",
+   "pass": true,
+   "detail": "affordance=fleet rendered=True api=/api/fleet code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-fleet-media step: fleet.transports",
+   "pass": true,
+   "detail": "affordance=fleet rendered=True api=/api/fleet code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-fleet-media step: fleet.surrender",
+   "pass": true,
+   "detail": "affordance=settings rendered=True api=/api/accounts code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  }
+ ],
+ "P-need_queue": [
+  {
+   "name": "P-need-queue step: needs.floor",
+   "pass": true,
+   "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-need-queue step: needs.template",
+   "pass": true,
+   "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-need-queue step: needs.candidates",
+   "pass": true,
+   "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-need-queue step: needs.execute",
+   "pass": true,
+   "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-need-queue step: needs.floor",
+   "pass": true,
+   "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  }
+ ],
+ "P-personality_forge": [
+  {
+   "name": "P-personality-forge step: personas.create",
+   "pass": true,
+   "detail": "affordance=persona-create rendered=True api=/api/personas code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-personality-forge step: personas.editor",
+   "pass": true,
+   "detail": "affordance=persona-editor rendered=True api=/api/personas code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-personality-forge step: personas.portrait",
+   "pass": true,
+   "detail": "affordance=persona-roster rendered=True api=/api/personas code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-personality-forge step: personas.reorder",
+   "pass": true,
+   "detail": "affordance=roster-up rendered=True api=/api/personas code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-personality-forge step: personas.source-match",
+   "pass": true,
+   "detail": "affordance=persona-create rendered=True api=/api/personas code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-personality-forge step: personas.voices",
+   "pass": true,
+   "detail": "affordance=voice-select rendered=True api=/api/personas code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-personality-forge step: personas.selector",
+   "pass": true,
+   "detail": "affordance=persona-roster rendered=True api=/api/personas code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-personality-forge step: conversation.chat",
+   "pass": true,
+   "detail": "affordance=chat rendered=True api=/api/conversation code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  }
+ ],
+ "P-session_resume": [
+  {
+   "name": "P-session-resume step: shell.launch",
+   "pass": true,
+   "detail": "affordance=chat rendered=True api=/api/health code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-session-resume step: ledger.recovery",
+   "pass": true,
+   "detail": "affordance=chat rendered=True api=/api/ledger code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-session-resume step: ledger.candidates",
+   "pass": true,
+   "detail": "affordance=needs-floor rendered=True api=/api/ledger code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-session-resume step: shell.status",
+   "pass": true,
+   "detail": "affordance=status-bar rendered=True api=/api/state code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-session-resume step: conversation.context",
+   "pass": true,
+   "detail": "affordance=context-display rendered=True api=/api/conversation code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-session-resume step: conversation.reset",
+   "pass": true,
+   "detail": "affordance=chat-reset rendered=True api=/api/conversation code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-session-resume step: shell.library",
+   "pass": true,
+   "detail": "affordance=library rendered=True api=/api/library code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-session-resume step: shell.close",
+   "pass": true,
+   "detail": "affordance=chat rendered=True api=/api/health code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  }
+ ],
+ "P-source_to_voice": [
+  {
+   "name": "P-source-to-voice step: sources.seed",
+   "pass": true,
+   "detail": "affordance=sources rendered=True api=/api/sources code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-source-to-voice step: sources.gate",
+   "pass": true,
+   "detail": "affordance=sources rendered=True api=/api/sources/admissions code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-source-to-voice step: personas.source-match",
+   "pass": true,
+   "detail": "affordance=persona-create rendered=True api=/api/personas code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-source-to-voice step: conversation.chat",
+   "pass": true,
+   "detail": "affordance=chat rendered=True api=/api/conversation code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-source-to-voice step: stage.commentary",
+   "pass": true,
+   "detail": "affordance=stage rendered=True api=/api/stage code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  }
+ ],
+ "P-stage_scene": [
+  {
+   "name": "P-stage-scene step: stage.queue",
+   "pass": true,
+   "detail": "affordance=stage rendered=True api=/api/stage code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-stage-scene step: stage.scene",
+   "pass": true,
+   "detail": "affordance=stage rendered=True api=/api/stage code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-stage-scene step: stage.channels",
+   "pass": true,
+   "detail": "affordance=stage rendered=True api=/api/stage code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  }
+ ],
+ "P-usb_seed": [
+  {
+   "name": "P-usb-seed step: fleet.seed",
+   "pass": true,
+   "detail": "affordance=fleet rendered=True api=/api/fleet code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-usb-seed step: shell.consent",
+   "pass": true,
+   "detail": "affordance=fleet rendered=True api=/api/fleet code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-usb-seed step: fleet.install",
+   "pass": true,
+   "detail": "affordance=fleet rendered=True api=/api/fleet code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-usb-seed step: fleet.courier",
+   "pass": true,
+   "detail": "affordance=fleet rendered=True api=/api/fleet code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-usb-seed step: fleet.roster",
+   "pass": true,
+   "detail": "affordance=fleet rendered=True api=/api/fleet code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  }
+ ]
+}

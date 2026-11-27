@@ -1,0 +1,24 @@
+{
+ "id": "S-artifact-import",
+ "ran": true,
+ "checks": [
+  {
+   "name": "capture \u2192 workshop entry created",
+   "pass": true,
+   "detail": "{\"decode\": {\"crcOk\": true, \"modules\": 62}, \"capture\": \"a-653\", \"workshop\": \"a-654\"}"
+  },
+  {
+   "name": "below action/acceptance threshold",
+   "pass": true,
+   "detail": "{\"decode\": {\"crcOk\": true, \"modules\": 62}, \"capture\": \"a-653\", \"workshop\": \"a-654\"}"
+  },
+  {
+   "name": "entry accessible in the app",
+   "pass": true,
+   "detail": "4 workshops"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.1
+}

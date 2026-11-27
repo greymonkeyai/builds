@@ -1,0 +1,202 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "composition time measured per response",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "recorded as metric",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "reportable for host comparison",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "seconds units",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 4,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "composition time measured per response",
+    "pass": true,
+    "detail": "64 compose rows",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "recorded as metric",
+    "pass": true,
+    "detail": "seconds=[0.5, 0.4, 0.8, 0.4, 0.4, 0.4, 0.8, 0.7, 0.4, 0.8, 1.1, 0.7, 0.7, 0.8, 0.4, 0.4, 0.8, 0.9, 0.7, 0.8, 1.1, 0.5, 0.7, 0.4, 0.7, 0.4, 0.7, 0.9, 0.8, 0.8, 0.8, 0.8, 0.4, 1.1, 0.7, 1.1, 1.1, 0.4, 0.7, 0.8, 0.4, 0.4, 0.8, 0.4, 0.4, 0.8, 1.1, 0.8, 0.4, 0.4, 0.4, 1.1, 1.1, 0.7, 0.4, 0.8, 0.8, 0.4, 0.7, 1.3, 0.8, 0.4, 0.4, 0.4]",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "reportable for host comparison",
+    "pass": true,
+    "detail": "metrics endpoint carries node id \u2014 fleet-comparable",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "seconds units",
+    "pass": true,
+    "detail": "values in seconds (tenths): [0.5, 0.4, 0.8, 0.4, 0.4, 0.4, 0.8, 0.7, 0.4, 0.8, 1.1, 0.7, 0.7, 0.8, 0.4, 0.4, 0.8, 0.9, 0.7, 0.8, 1.1, 0.5, 0.7, 0.4, 0.7, 0.4, 0.7, 0.9, 0.8, 0.8, 0.8, 0.8, 0.4, 1.1, 0.7, 1.1, 1.1, 0.4, 0.7, 0.8, 0.4, 0.4, 0.8, 0.4, 0.4, 0.8, 1.1, 0.8, 0.4, 0.4, 0.4, 1.1, 1.1, 0.7, 0.4, 0.8, 0.8, 0.4, 0.7, 1.3, 0.8, 0.4, 0.4, 0.4]",
+    "src": [
+     "external:file"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "composition time measured per response",
+    "pass": true,
+    "detail": "35 compose rows",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "recorded as metric",
+    "pass": true,
+    "detail": "seconds=[0.8, 0.4, 0.8, 0.7, 0.7, 0.8, 0.8, 0.8, 0.7, 0.7, 0.7, 0.4, 0.7, 0.7, 1.1, 0.7, 0.4, 0.4, 0.8, 0.7, 0.4, 0.8, 0.4, 1.2, 0.4, 0.4, 1.1, 0.4, 0.7, 0.8, 0.4, 0.4, 0.4, 0.5, 0.4]",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "reportable for host comparison",
+    "pass": true,
+    "detail": "metrics endpoint carries node id \u2014 fleet-comparable",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "seconds units",
+    "pass": true,
+    "detail": "values in seconds (tenths): [0.8, 0.4, 0.8, 0.7, 0.7, 0.8, 0.8, 0.8, 0.7, 0.7, 0.7, 0.4, 0.7, 0.7, 1.1, 0.7, 0.4, 0.4, 0.8, 0.7, 0.4, 0.8, 0.4, 1.2, 0.4, 0.4, 1.1, 0.4, 0.7, 0.8, 0.4, 0.4, 0.4, 0.5, 0.4]",
+    "src": [
+     "external:file"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "composition time measured per response",
+    "pass": false,
+    "detail": "0 compose rows",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "recorded as metric",
+    "pass": false,
+    "detail": "seconds=[]",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "reportable for host comparison",
+    "pass": false,
+    "detail": "metrics endpoint carries node id \u2014 fleet-comparable",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "seconds units",
+    "pass": false,
+    "detail": "values in seconds (tenths): []",
+    "src": [
+     "external:file"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 4,
+  "allGreen": false
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "composition time measured per response",
+    "pass": false,
+    "detail": "0 compose rows",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "recorded as metric",
+    "pass": false,
+    "detail": "seconds=[]",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "reportable for host comparison",
+    "pass": false,
+    "detail": "metrics endpoint carries node id \u2014 fleet-comparable",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "seconds units",
+    "pass": false,
+    "detail": "values in seconds (tenths): []",
+    "src": [
+     "external:file"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 4,
+  "allGreen": false
+ }
+}

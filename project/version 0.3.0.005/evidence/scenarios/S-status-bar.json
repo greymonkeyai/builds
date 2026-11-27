@@ -1,0 +1,22 @@
+{
+  "id": "S-status-bar",
+  "ran": true,
+  "checks": [
+    {
+      "name": "sources surfaced",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LLM status surfaced",
+      "pass": true,
+      "detail": "live-ollama:llama3.2"
+    },
+    {
+      "name": "engine modes declared honestly",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true
+}

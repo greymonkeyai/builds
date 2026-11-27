@@ -1,0 +1,117 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:07",
+    "checks": [
+      {
+        "name": "role negotiation recorded",
+        "pass": false,
+        "detail": "0 role rows, 0 grants"
+      },
+      {
+        "name": "mint rights are a negotiated grant",
+        "pass": false,
+        "detail": "mintRights on 0 grant rows"
+      },
+      {
+        "name": "join outcome honest (member vs pending)",
+        "pass": false,
+        "detail": "0 join rows with outcomes"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "role negotiation recorded",
+        "pass": false,
+        "detail": "0 role rows, 0 grants"
+      },
+      {
+        "name": "mint rights are a negotiated grant",
+        "pass": false,
+        "detail": "mintRights on 0 grant rows"
+      },
+      {
+        "name": "join outcome honest (member vs pending)",
+        "pass": true,
+        "detail": "2 join rows with outcomes"
+      }
+    ],
+    "pass": 1,
+    "fail": 2,
+    "allGreen": false
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "role negotiation recorded",
+        "pass": false,
+        "detail": "0 role rows, 0 grants"
+      },
+      {
+        "name": "mint rights are a negotiated grant",
+        "pass": false,
+        "detail": "mintRights on 0 grant rows"
+      },
+      {
+        "name": "join outcome honest (member vs pending)",
+        "pass": false,
+        "detail": "0 join rows with outcomes"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:03",
+    "checks": [
+      {
+        "name": "role negotiation recorded",
+        "pass": false,
+        "detail": "0 role rows, 0 grants"
+      },
+      {
+        "name": "mint rights are a negotiated grant",
+        "pass": false,
+        "detail": "mintRights on 0 grant rows"
+      },
+      {
+        "name": "join outcome honest (member vs pending)",
+        "pass": true,
+        "detail": "2 join rows with outcomes"
+      }
+    ],
+    "pass": 1,
+    "fail": 2,
+    "allGreen": false
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "role negotiation recorded",
+        "pass": false,
+        "detail": "0 role rows, 0 grants"
+      },
+      {
+        "name": "mint rights are a negotiated grant",
+        "pass": false,
+        "detail": "mintRights on 0 grant rows"
+      },
+      {
+        "name": "join outcome honest (member vs pending)",
+        "pass": false,
+        "detail": "0 join rows with outcomes"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  }
+}

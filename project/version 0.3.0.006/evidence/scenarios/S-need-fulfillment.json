@@ -1,0 +1,29 @@
+{
+ "id": "S-need-fulfillment",
+ "ran": true,
+ "checks": [
+  {
+   "name": "met marked",
+   "pass": true,
+   "detail": "fulfilled"
+  },
+  {
+   "name": "met leaves floor",
+   "pass": true,
+   "detail": "floor has 3 open; met 3"
+  },
+  {
+   "name": "answered = closed",
+   "pass": true,
+   "detail": "2026-11-26T06:50:28.214+00:00"
+  },
+  {
+   "name": "unmet visible",
+   "pass": true,
+   "detail": "3 open needs incl 2 requests"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 3.0
+}

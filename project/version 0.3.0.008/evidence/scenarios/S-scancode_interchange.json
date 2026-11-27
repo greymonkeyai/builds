@@ -1,0 +1,206 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "generate",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "carry",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "decode",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "import",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 4,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "generate",
+    "pass": true,
+    "detail": "artifact=C:\\builds\\project\\version 0.3.0.008\\runtime\\green\\exchange\\artifact-gen2.png",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "carry",
+    "pass": true,
+    "detail": "PNG artifact file carried on disk",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "decode",
+    "pass": true,
+    "detail": "payload keys=['gen', 'origin', 'schema', 'style', 'workshop']",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "import",
+    "pass": true,
+    "detail": "workshop entry=a-5859d1a2a97c",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "generate",
+    "pass": false,
+    "detail": "artifact=None",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "carry",
+    "pass": false,
+    "detail": "PNG artifact file carried on disk",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "decode",
+    "pass": false,
+    "detail": "payload keys=[]",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "import",
+    "pass": false,
+    "detail": "workshop entry=None",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 4,
+  "allGreen": false
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "generate",
+    "pass": true,
+    "detail": "artifact=C:\\builds\\project\\version 0.3.0.008\\runtime\\sabotage-stub-engines\\exchange\\artifact-gen2.png",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "carry",
+    "pass": true,
+    "detail": "PNG artifact file carried on disk",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "decode",
+    "pass": true,
+    "detail": "payload keys=['gen', 'origin', 'schema', 'style', 'workshop']",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "import",
+    "pass": true,
+    "detail": "workshop entry=a-1d22f53f45d6",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "generate",
+    "pass": false,
+    "detail": "artifact=None",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "carry",
+    "pass": false,
+    "detail": "PNG artifact file carried on disk",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "decode",
+    "pass": false,
+    "detail": "payload keys=[]",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "import",
+    "pass": false,
+    "detail": "workshop entry=None",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 4,
+  "allGreen": false
+ }
+}

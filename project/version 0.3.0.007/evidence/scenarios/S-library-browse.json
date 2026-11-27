@@ -1,0 +1,117 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:07",
+    "checks": [
+      {
+        "name": "personas browsable",
+        "pass": false,
+        "detail": "0 personas listed"
+      },
+      {
+        "name": "tools browsable w/ explanations",
+        "pass": false,
+        "detail": "0 tools, explanations=0"
+      },
+      {
+        "name": "holdings structured, not a raw log",
+        "pass": false,
+        "detail": "kinds=[]"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "personas browsable",
+        "pass": true,
+        "detail": "8 personas listed"
+      },
+      {
+        "name": "tools browsable w/ explanations",
+        "pass": true,
+        "detail": "9 tools, explanations=9"
+      },
+      {
+        "name": "holdings structured, not a raw log",
+        "pass": true,
+        "detail": "kinds=['personas', 'tools', 'compositions', 'lists', 'workshops', 'sources', 'artifacts', 'projects']"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "personas browsable",
+        "pass": false,
+        "detail": "0 personas listed"
+      },
+      {
+        "name": "tools browsable w/ explanations",
+        "pass": false,
+        "detail": "0 tools, explanations=0"
+      },
+      {
+        "name": "holdings structured, not a raw log",
+        "pass": true,
+        "detail": "kinds=['personas', 'tools', 'compositions', 'lists', 'workshops', 'sources', 'artifacts', 'projects']"
+      }
+    ],
+    "pass": 1,
+    "fail": 2,
+    "allGreen": false
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:03",
+    "checks": [
+      {
+        "name": "personas browsable",
+        "pass": true,
+        "detail": "8 personas listed"
+      },
+      {
+        "name": "tools browsable w/ explanations",
+        "pass": true,
+        "detail": "9 tools, explanations=9"
+      },
+      {
+        "name": "holdings structured, not a raw log",
+        "pass": true,
+        "detail": "kinds=['personas', 'tools', 'compositions', 'lists', 'workshops', 'sources', 'artifacts', 'projects']"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "personas browsable",
+        "pass": false,
+        "detail": "0 personas listed"
+      },
+      {
+        "name": "tools browsable w/ explanations",
+        "pass": false,
+        "detail": "0 tools, explanations=0"
+      },
+      {
+        "name": "holdings structured, not a raw log",
+        "pass": false,
+        "detail": "kinds=[]"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  }
+}

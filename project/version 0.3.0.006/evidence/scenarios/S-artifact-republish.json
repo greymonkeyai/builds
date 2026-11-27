@@ -1,0 +1,19 @@
+{
+ "id": "S-artifact-republish",
+ "ran": true,
+ "checks": [
+  {
+   "name": "adopted workshop re-encoded to new artifact",
+   "pass": true,
+   "detail": "{\"symbology\": \"rastgrid-1\", \"modules\": 56, \"payloadBytes\": 168, \"crc\": 1674167132, \"file\": \"C:\\\\builds\\\\project\\\\version 0.3.0.006\\\\runtime-suite\\\\art"
+  },
+  {
+   "name": "gen-2 payload decodes identically",
+   "pass": true,
+   "detail": "crcOk=True"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.0
+}

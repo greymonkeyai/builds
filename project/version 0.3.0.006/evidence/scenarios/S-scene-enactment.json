@@ -1,0 +1,34 @@
+{
+ "id": "S-scene-enactment",
+ "ran": true,
+ "checks": [
+  {
+   "name": "short public-domain scene enacted",
+   "pass": true,
+   "detail": "5"
+  },
+  {
+   "name": "\u22652 personas enact parts",
+   "pass": true,
+   "detail": "['Nix', 'Vera']"
+  },
+  {
+   "name": "available tool classes exercised",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "name": "knock-knock joke enactable",
+   "pass": true,
+   "detail": "Knock, knock."
+  },
+  {
+   "name": "music only if LLM music present \u2014 absent classes honestly skipped",
+   "pass": true,
+   "detail": "skipped: ['tool.music', 'tool.catalog-media']"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 1.7
+}

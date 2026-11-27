@@ -1,0 +1,167 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:06",
+    "checks": [
+      {
+        "name": "email list from configured source basis",
+        "pass": false,
+        "detail": "basis=; 0 mails"
+      },
+      {
+        "name": "V-G: fixture basis honestly labeled",
+        "pass": false,
+        "detail": "basis declares: "
+      },
+      {
+        "name": "persona commentary produced",
+        "pass": false,
+        "detail": "none"
+      },
+      {
+        "name": "commentary recorded",
+        "pass": false,
+        "detail": "email:context + reply rows present"
+      },
+      {
+        "name": "configured source exercised",
+        "pass": false,
+        "detail": "0 mails returned through the read path"
+      }
+    ],
+    "pass": 0,
+    "fail": 5,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "email list from configured source basis",
+        "pass": true,
+        "detail": "basis=fixture:.eml (no configured account \u2014 fixture basis honestly labeled); 3 mails"
+      },
+      {
+        "name": "V-G: fixture basis honestly labeled",
+        "pass": true,
+        "detail": "basis declares: fixture:.eml (no configured account \u2014 fixture basis honestly labeled)"
+      },
+      {
+        "name": "persona commentary produced",
+        "pass": true,
+        "detail": "It sounds like our build team has everything in order for the fleet run. I'm glad to see the USB see"
+      },
+      {
+        "name": "commentary recorded",
+        "pass": true,
+        "detail": "email:context + reply rows present"
+      },
+      {
+        "name": "configured source exercised",
+        "pass": true,
+        "detail": "3 mails returned through the read path"
+      }
+    ],
+    "pass": 5,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "email list from configured source basis",
+        "pass": true,
+        "detail": "basis=fixture:.eml (no configured account \u2014 fixture basis honestly labeled); 3 mails"
+      },
+      {
+        "name": "V-G: fixture basis honestly labeled",
+        "pass": true,
+        "detail": "basis declares: fixture:.eml (no configured account \u2014 fixture basis honestly labeled)"
+      },
+      {
+        "name": "persona commentary produced",
+        "pass": false,
+        "detail": "none"
+      },
+      {
+        "name": "commentary recorded",
+        "pass": false,
+        "detail": "email:context + reply rows present"
+      },
+      {
+        "name": "configured source exercised",
+        "pass": true,
+        "detail": "3 mails returned through the read path"
+      }
+    ],
+    "pass": 3,
+    "fail": 2,
+    "allGreen": false
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:03",
+    "checks": [
+      {
+        "name": "email list from configured source basis",
+        "pass": true,
+        "detail": "basis=fixture:.eml (no configured account \u2014 fixture basis honestly labeled); 3 mails"
+      },
+      {
+        "name": "V-G: fixture basis honestly labeled",
+        "pass": true,
+        "detail": "basis declares: fixture:.eml (no configured account \u2014 fixture basis honestly labeled)"
+      },
+      {
+        "name": "persona commentary produced",
+        "pass": true,
+        "detail": "Ada (declared-fallback, analyst): I hear you \u2014 'Comment on this email: subject 'USB seed drive ready"
+      },
+      {
+        "name": "commentary recorded",
+        "pass": true,
+        "detail": "email:context + reply rows present"
+      },
+      {
+        "name": "configured source exercised",
+        "pass": true,
+        "detail": "3 mails returned through the read path"
+      }
+    ],
+    "pass": 5,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "email list from configured source basis",
+        "pass": false,
+        "detail": "basis=; 0 mails"
+      },
+      {
+        "name": "V-G: fixture basis honestly labeled",
+        "pass": false,
+        "detail": "basis declares: "
+      },
+      {
+        "name": "persona commentary produced",
+        "pass": false,
+        "detail": "none"
+      },
+      {
+        "name": "commentary recorded",
+        "pass": false,
+        "detail": "email:context + reply rows present"
+      },
+      {
+        "name": "configured source exercised",
+        "pass": false,
+        "detail": "0 mails returned through the read path"
+      }
+    ],
+    "pass": 0,
+    "fail": 5,
+    "allGreen": false
+  }
+}

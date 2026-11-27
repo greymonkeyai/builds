@@ -1,0 +1,23 @@
+{
+  "id": "S-usb-mint-gen2",
+  "ran": true,
+  "checks": [
+    {
+      "name": "gen-2 installer written to media",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "carries founding network identity as adoptable offer",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "join-or-found is the user's choice (carry-not-enforce)",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true,
+  "note": "boot-on-fresh-machine leg needs a second physical host — declared"
+}

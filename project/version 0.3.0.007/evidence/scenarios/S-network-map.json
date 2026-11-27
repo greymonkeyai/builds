@@ -1,0 +1,117 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:07",
+    "checks": [
+      {
+        "name": "map artifact produced",
+        "pass": false,
+        "detail": "map keys=[]"
+      },
+      {
+        "name": "covers non-member devices alongside members",
+        "pass": false,
+        "detail": "nonMembers=0 devices=0"
+      },
+      {
+        "name": "member/non-member distinction on the map",
+        "pass": false,
+        "detail": "members=0"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "map artifact produced",
+        "pass": true,
+        "detail": "map keys=['node', 'members', 'nonMembers', 'devices', 'roster']"
+      },
+      {
+        "name": "covers non-member devices alongside members",
+        "pass": true,
+        "detail": "nonMembers=36 devices=36"
+      },
+      {
+        "name": "member/non-member distinction on the map",
+        "pass": true,
+        "detail": "members=0"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "map artifact produced",
+        "pass": true,
+        "detail": "map keys=['node', 'members', 'nonMembers', 'devices', 'roster']"
+      },
+      {
+        "name": "covers non-member devices alongside members",
+        "pass": true,
+        "detail": "nonMembers=36 devices=36"
+      },
+      {
+        "name": "member/non-member distinction on the map",
+        "pass": true,
+        "detail": "members=0"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:03",
+    "checks": [
+      {
+        "name": "map artifact produced",
+        "pass": true,
+        "detail": "map keys=['node', 'members', 'nonMembers', 'devices', 'roster']"
+      },
+      {
+        "name": "covers non-member devices alongside members",
+        "pass": true,
+        "detail": "nonMembers=36 devices=36"
+      },
+      {
+        "name": "member/non-member distinction on the map",
+        "pass": true,
+        "detail": "members=0"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "map artifact produced",
+        "pass": false,
+        "detail": "map keys=[]"
+      },
+      {
+        "name": "covers non-member devices alongside members",
+        "pass": false,
+        "detail": "nonMembers=0 devices=0"
+      },
+      {
+        "name": "member/non-member distinction on the map",
+        "pass": false,
+        "detail": "members=0"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  }
+}

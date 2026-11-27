@@ -1,0 +1,167 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:07",
+    "checks": [
+      {
+        "name": "snippet pre-generated per persona",
+        "pass": false,
+        "detail": "0/0 acks prepared"
+      },
+      {
+        "name": "plays before composition starts",
+        "pass": false,
+        "detail": "playsBeforeComposition flag on ack rows"
+      },
+      {
+        "name": "\u22640.5s / \u22645 syllables",
+        "pass": false,
+        "detail": "0/0 within bounds ([])"
+      },
+      {
+        "name": "register-suitable",
+        "pass": false,
+        "detail": "texts=[]"
+      },
+      {
+        "name": "honest-absence",
+        "pass": false,
+        "detail": "0 declared ack states, engine=None"
+      }
+    ],
+    "pass": 0,
+    "fail": 5,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "snippet pre-generated per persona",
+        "pass": true,
+        "detail": "8/8 acks prepared"
+      },
+      {
+        "name": "plays before composition starts",
+        "pass": true,
+        "detail": "playsBeforeComposition flag on ack rows"
+      },
+      {
+        "name": "\u22640.5s / \u22645 syllables",
+        "pass": true,
+        "detail": "8/8 within bounds ([(1.339, 1), (1.584, 1), (1.349, 2)])"
+      },
+      {
+        "name": "register-suitable",
+        "pass": true,
+        "detail": "texts=['Yeah.', 'Mm-hmm.', 'Ah now.', 'Hear ye!']"
+      },
+      {
+        "name": "honest-absence",
+        "pass": true,
+        "detail": "8 declared ack states, engine=sapi"
+      }
+    ],
+    "pass": 5,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "snippet pre-generated per persona",
+        "pass": false,
+        "detail": "0/0 acks prepared"
+      },
+      {
+        "name": "plays before composition starts",
+        "pass": false,
+        "detail": "playsBeforeComposition flag on ack rows"
+      },
+      {
+        "name": "\u22640.5s / \u22645 syllables",
+        "pass": false,
+        "detail": "0/0 within bounds ([])"
+      },
+      {
+        "name": "register-suitable",
+        "pass": false,
+        "detail": "texts=[]"
+      },
+      {
+        "name": "honest-absence",
+        "pass": false,
+        "detail": "0 declared ack states, engine=absent-declared"
+      }
+    ],
+    "pass": 0,
+    "fail": 5,
+    "allGreen": false
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:03",
+    "checks": [
+      {
+        "name": "snippet pre-generated per persona",
+        "pass": true,
+        "detail": "8/8 acks prepared"
+      },
+      {
+        "name": "plays before composition starts",
+        "pass": true,
+        "detail": "playsBeforeComposition flag on ack rows"
+      },
+      {
+        "name": "\u22640.5s / \u22645 syllables",
+        "pass": true,
+        "detail": "8/8 within bounds ([(None, 1), (None, 1), (None, 2)])"
+      },
+      {
+        "name": "register-suitable",
+        "pass": true,
+        "detail": "texts=['Yeah.', 'Mm-hmm.', 'Ah now.', 'Hear ye!']"
+      },
+      {
+        "name": "honest-absence",
+        "pass": true,
+        "detail": "8 declared ack states, engine=absent-declared"
+      }
+    ],
+    "pass": 5,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "snippet pre-generated per persona",
+        "pass": false,
+        "detail": "0/0 acks prepared"
+      },
+      {
+        "name": "plays before composition starts",
+        "pass": false,
+        "detail": "playsBeforeComposition flag on ack rows"
+      },
+      {
+        "name": "\u22640.5s / \u22645 syllables",
+        "pass": false,
+        "detail": "0/0 within bounds ([])"
+      },
+      {
+        "name": "register-suitable",
+        "pass": false,
+        "detail": "texts=[]"
+      },
+      {
+        "name": "honest-absence",
+        "pass": false,
+        "detail": "0 declared ack states, engine=None"
+      }
+    ],
+    "pass": 0,
+    "fail": 5,
+    "allGreen": false
+  }
+}

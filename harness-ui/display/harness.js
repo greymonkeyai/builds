@@ -19,7 +19,7 @@
     var h = (window.location.hash || '').replace(/^#/, '');
     if (!h) return;
     var parts = h.split('/');
-    if (['summary','comparison','current','builddetail'].indexOf(parts[0]) >= 0) state.tab = parts[0];
+    if (['summary','direction','documents','comparison','scorecard','current','builddetail'].indexOf(parts[0]) >= 0) state.tab = parts[0];
     if (parts[1] !== undefined && !isNaN(+parts[1])) state.selPoint = +parts[1];
   })();
 
@@ -40,6 +40,39 @@
   }
   function absent(why) { var d = el('span', 'absent', '\u2014 ' + (why || 'absent')); return d; }
   function gap(msg) { var d = el('div', 'gap'); d.appendChild(document.createTextNode(msg)); return d; }
+
+  /* ---------- owner cues — things that need the owner ---------- */
+  // Reads both payload shapes: the fleet row fields (docs_*, direction) and the
+  // project payload (register.pending/provisional_ids/headerless,
+  // state.direction_in_force.ref).
+  function computeCues(p) {
+    var cues = [];
+    var reg = p.register || {};
+    var pendIds = p.docs_pending_ids || reg.pending || [];
+    var pend = (p.docs_pending != null) ? p.docs_pending : pendIds.length;
+    var provIds = p.docs_provisional_ids || reg.provisional_ids || [];
+    var unregIds = p.docs_unregistered || reg.headerless || [];
+    var dir = p.direction || (p.state && p.state.direction_in_force && p.state.direction_in_force.ref);
+    var qs = (p.state && p.state.pending_owner_questions) ? p.state.pending_owner_questions.length : 0;
+    if (pend > 0) cues.push({ sev: 'action', text: pend + ' doc' + (pend > 1 ? 's' : '') + ' pending approval: ' + pendIds.join(', '), do: 'documents tab — read and approve or amend' });
+    if (provIds.length > 0) cues.push({ sev: 'warn', text: provIds.length + ' doc' + (provIds.length > 1 ? 's' : '') + ' carrying provisional ids', do: 'review wording; corpus adoption assigns real ids' });
+    if (unregIds.length > 0) cues.push({ sev: 'warn', text: unregIds.length + ' unregistered doc' + (unregIds.length > 1 ? 's' : '') + ': ' + unregIds.join(', '), do: 'stamp a harness-doc header or remove' });
+    if (!dir) cues.push({ sev: 'action', text: 'no direction in force', do: 'scope and approve the next direction' });
+    if (qs > 0) cues.push({ sev: 'action', text: qs + ' question' + (qs > 1 ? 's' : '') + ' awaiting you', do: 'answer in .devin/state.json' });
+    return cues;
+  }
+  function cueStrip(p) {
+    var cues = computeCues(p);
+    var d = el('div', 'cue-strip');
+    if (!cues.length) { d.appendChild(el('span', 'cue ok', '\u2713 nothing needs you — harness is clear')); return d; }
+    cues.forEach(function (c) {
+      var s = el('span', 'cue ' + c.sev, (c.sev === 'action' ? '\u25B2 ' : '\u25CB ') + c.text);
+      s.title = c.do;
+      d.appendChild(s);
+    });
+    d.appendChild(el('span', 'cue-do', 'next: ' + cues[0].do));
+    return d;
+  }
   function kvTable(obj, order) {
     var t = el('table', 'kv');
     var keys = order || Object.keys(obj);
@@ -128,6 +161,42 @@
   }
 
   /* ---------- fleet ---------- */
+  /* ---------- launch bridge ----------
+     The page is static; launching a build's own launcher (launch.cmd etc.)
+     goes through harness-display.pyw's pywebview API when the display runs
+     as its own window, else launch-serve.py on localhost:8358, else a hint. */
+  var LAUNCH_SVC = 'http://127.0.0.1:8358';
+  function launchButton(projectId, label) {
+    var wrap = el('span', 'launchwrap');
+    var b = el('button', 'launchbtn', '\u25B6 ' + (label || 'launch'));
+    var note = el('span', 'muted');
+    b.addEventListener('click', function (ev) {
+      ev.stopPropagation();
+      b.disabled = true;
+      note.textContent = ' launching\u2026';
+      function done(j) {
+        b.disabled = false;
+        if (j && j.ok) note.textContent = ' ' + j.build + ' launched \u2014 ' + String(j.launcher).split(/[\\/]/).pop() + ' (pid ' + j.pid + ')';
+        else note.textContent = ' ' + ((j && j.error) || 'launch failed');
+      }
+      function fail() {
+        b.disabled = false;
+        note.textContent = ' no launch path \u2014 run the display app (harness-display.pyw) or launch-serve.py on :8358, or run the build\u2019s launch.cmd manually';
+      }
+      try {
+        if (window.pywebview && window.pywebview.api && window.pywebview.api.launch) {
+          window.pywebview.api.launch(projectId).then(done).catch(fail);
+        } else {
+          fetch(LAUNCH_SVC + '/launch?project=' + encodeURIComponent(projectId))
+            .then(function (r) { return r.json(); })
+            .then(done).catch(fail);
+        }
+      } catch (e) { fail(); }
+    });
+    wrap.appendChild(b); wrap.appendChild(note);
+    return wrap;
+  }
+
   function renderFleet(d) {
     var m = el('main'); m.id = 'view-fleet';
     m.appendChild(el('p', 'meta',
@@ -139,7 +208,7 @@
     var t = el('table');
     t.setAttribute('data-rows', String(d.projects.length));
     var tr = el('tr');
-    ['line', 'direction in force', 'budget spent', 'last verdict', 'liveness age', 'last status', 'page'].forEach(function (x) { tr.appendChild(el('th', null, x)); });
+    ['line', 'direction in force', 'budget spent', 'docs', 'last verdict', 'liveness age', 'last status', 'page', 'launch'].forEach(function (x) { tr.appendChild(el('th', null, x)); });
     t.appendChild(tr);
     d.projects.forEach(function (p) {
       var r = el('tr', 'fleet-row');
@@ -152,6 +221,23 @@
       if (p.budget && (p.budget.spent !== undefined || p.budget.total !== undefined))
         td.appendChild(el('span', null, (p.budget.spent === null || p.budget.spent === undefined ? '\u2014' : p.budget.spent) + ' / ' + (p.budget.total === null || p.budget.total === undefined ? '\u2014' : p.budget.total)));
       else td.appendChild(absent());
+      r.appendChild(td);
+      td = el('td');
+      var pend = p.docs_pending || 0;
+      var inf = (p.docs_in_force || []).length;
+      var unreg = (p.docs_unregistered || []).length;
+      var cues = computeCues(p);
+      if (cues.some(function (c) { return c.sev === 'action'; })) {
+        var ny = el('span', 'needs-you', '\u25B2 needs you');
+        ny.title = cues.map(function (c) { return c.text + ' — ' + c.do; }).join('\n');
+        td.appendChild(ny); td.appendChild(el('span', 'muted', ' · '));
+      }
+      if (pend === 0 && inf === 0 && unreg === 0) td.appendChild(absent('no register'));
+      else {
+        if (pend > 0) { var w = el('span', 'doc-pending', pend + ' pending'); w.title = (p.docs_pending_ids || []).join(', '); td.appendChild(w); td.appendChild(el('span', 'muted', ' · ')); }
+        td.appendChild(el('span', inf > 0 ? 'doc-inforce' : 'muted', inf + ' in force'));
+        if (unreg > 0) { td.appendChild(el('span', 'muted', ' · ')); var u = el('span', 'doc-unreg', unreg + ' unregistered'); u.title = p.docs_unregistered.join(', '); td.appendChild(u); }
+      }
       r.appendChild(td);
       td = el('td');
       if (p.last_verdict)
@@ -174,8 +260,11 @@
       link.href = encodeURI(p.page);
       td.appendChild(link);
       r.appendChild(td);
+      td = el('td');
+      td.appendChild(launchButton(p.id, 'launch'));
+      r.appendChild(td);
       r.addEventListener('click', function (ev) {
-        if (ev.target.tagName !== 'A') window.location.href = encodeURI(p.page);
+        if (ev.target.tagName !== 'A' && ev.target.tagName !== 'BUTTON') window.location.href = encodeURI(p.page);
       });
       t.appendChild(r);
     });
@@ -187,6 +276,7 @@
   function viewSummary(p) {
     var m = el('div'); m.id = 'view-summary';
     m.appendChild(el('h2', null, 'project summary \u2014 .devin/state.json'));
+    m.appendChild(cueStrip(p));
     if (!p.state_present) { m.appendChild(gap('.devin/state.json is missing \u2014 every state-derived field below is a gap, not a default')); }
     else if (p.state_error) { m.appendChild(gap('.devin/state.json present but unparsed: ' + p.state_error)); }
     if (p.state) {
@@ -205,6 +295,204 @@
         var d = el('div', 'status-file'); d.textContent = p.status_files[n];
         m.appendChild(d);
       });
+    }
+    return m;
+  }
+
+  /* ---------- project: direction ---------- */
+  function viewDirection(p) {
+    var m = el('div'); m.id = 'view-direction';
+    m.appendChild(el('h2', null, 'direction — what governs the current cycle'));
+    m.appendChild(cueStrip(p));
+    var dif = (p.state && p.state.direction_in_force) || null;
+    var docs = (p.register && p.register.docs) || [];
+    var dirs = docs.filter(function (d) { return d.kind === 'direction'; }).sort(function (a, b) {
+      return (+(/\d+/.exec(b.id) || [0])[0]) - (+(/\d+/.exec(a.id) || [0])[0]);
+    });
+    if (dif) {
+      m.appendChild(kvTable({
+        'in force': dif.ref || '— none (awaiting next direction)',
+        clarity: dif.clarity, baseline: dif.baseline,
+        'budget spent / total': dif.budget ? (dif.budget.spent + ' / ' + dif.budget.total) : null,
+        criteria: dif.criteria,
+        'last direction': dif.last_direction ? (dif.last_direction.ref + ' — ' + (dif.last_direction.clarity || '')) : null
+      }));
+    } else {
+      m.appendChild(gap('no direction_in_force block in state.json'));
+    }
+    if (!dirs.length) { m.appendChild(gap('no direction docs in the register')); return m; }
+    var featured = null;
+    if (dif && dif.ref) featured = dirs.filter(function (d) { return d.file === dif.ref || d.id === String(dif.ref).replace(/\.md$/, ''); })[0];
+    if (!featured) featured = dirs.filter(function (d) { return ['proposed', 'draft', 'approved'].indexOf(d.status) >= 0; })[0];
+    if (!featured) featured = dirs[0];
+    var banner = 'featured: ' + featured.id + ' — status ' + featured.status;
+    if (featured.status === 'proposed' || featured.status === 'draft') banner += ' — AWAITING OWNER APPROVAL';
+    else if (featured.status === 'in-force') banner += ' — actively steering this cycle';
+    var b = el('div', 'dir-banner ' + (featured.status === 'in-force' ? 'ok' : 'warn'), banner);
+    m.appendChild(b);
+    if (featured.body) { var body = el('div', 'doc-body'); body.innerHTML = mdToHtml(featured.body); m.appendChild(body); }
+    if (dirs.length > 1) {
+      m.appendChild(el('h3', null, 'all directions'));
+      var t = el('table'), tr = el('tr');
+      ['id', 'status', 'applies to', 'mapped into'].forEach(function (x) { tr.appendChild(el('th', null, x)); });
+      t.appendChild(tr);
+      dirs.forEach(function (d) {
+        var r = el('tr');
+        r.appendChild(el('td', 'mono', d.id));
+        r.appendChild(el('td', null, d.status));
+        r.appendChild(el('td', null, (d.applies_to || []).join(', ')));
+        r.appendChild(el('td', null, (d.mapped_into || []).join(', ')));
+        t.appendChild(r);
+      });
+      m.appendChild(t);
+    }
+    return m;
+  }
+
+  /* ---------- project: documents ---------- */
+  function docStatusClass(s) {
+    if (s === 'in-force') return 'ds-inforce';
+    if (s === 'approved') return 'ds-approved';
+    if (s === 'draft' || s === 'proposed') return 'ds-pending';
+    if (s === 'unparsed') return 'ds-bad';
+    return 'ds-terminal';
+  }
+  /* minimal markdown -> html: headings, tables, fences, lists, bold/code */
+  function mdToHtml(md) {
+    function esc(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+    function inline(s) {
+      return esc(s).replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>').replace(/`([^`]+)`/g,'<code>$1</code>');
+    }
+    var lines = String(md || '').split(/\r?\n/), html = '', i = 0;
+    while (i < lines.length) {
+      var ln = lines[i];
+      if (/^\s*```/.test(ln)) {
+        var buf = []; i++;
+        while (i < lines.length && !/^\s*```/.test(lines[i])) { buf.push(lines[i]); i++; }
+        i++;
+        html += '<pre>' + esc(buf.join('\n')) + '</pre>';
+        continue;
+      }
+      if (/^\s*\|/.test(ln)) {
+        var rows = [];
+        while (i < lines.length && /^\s*\|/.test(lines[i])) { rows.push(lines[i]); i++; }
+        var t = '<table class="mdt">', headDone = false;
+        rows.forEach(function (r) {
+          var cells = r.replace(/^\s*\|/, '').replace(/\|\s*$/, '').split('|');
+          var sep = cells.every(function (c) { return /^\s*:?-{2,}:?\s*$/.test(c); });
+          if (sep) return;
+          var tag = headDone ? 'td' : 'th';
+          t += '<tr>' + cells.map(function (c) { return '<' + tag + '>' + inline(c.trim()) + '</' + tag + '>'; }).join('') + '</tr>';
+          headDone = true;
+        });
+        html += t + '</table>';
+        continue;
+      }
+      var mm = ln.match(/^(#{1,4})\s+(.*)/);
+      if (mm) { var lv = Math.min(4, mm[1].length + 1); html += '<h' + lv + '>' + inline(mm[2]) + '</h' + lv + '>'; }
+      else if (/^\s*---+\s*$/.test(ln)) html += '<hr>';
+      else if (/^\s*$/.test(ln)) { /* spacing */ }
+      else if (/^\s*[-*]\s+/.test(ln)) html += '<div class="mdli">&bull; ' + inline(ln.replace(/^\s*[-*]\s+/, '')) + '</div>';
+      else if (/^\s*\d+\.\s+/.test(ln)) html += '<div class="mdli">' + inline(ln) + '</div>';
+      else html += '<p>' + inline(ln) + '</p>';
+      i++;
+    }
+    return html;
+  }
+  function docView(doc, open) {
+    var det = el('details', 'doc-view');
+    if (open) det.setAttribute('open', '');
+    var sum = el('summary');
+    sum.appendChild(el('span', 'mono', doc.id));
+    sum.appendChild(document.createTextNode(' '));
+    sum.appendChild(el('span', 'doc-status ' + docStatusClass(doc.status), doc.status || '?'));
+    if (doc.provisional_ids) sum.appendChild(el('span', 'muted', ' · provisional ids'));
+    if (doc.applies_to && doc.applies_to.length) sum.appendChild(el('span', 'muted', ' · ' + doc.applies_to.join(',')));
+    sum.appendChild(el('span', 'muted', '  ' + doc.file));
+    det.appendChild(sum);
+    var body = el('div', 'doc-body');
+    if (doc.body) body.innerHTML = mdToHtml(doc.body);
+    else body.appendChild(absent('no body emitted'));
+    det.appendChild(body);
+    return det;
+  }
+  function viewDocuments(p) {
+    var m = el('div'); m.id = 'view-documents';
+    var reg = p.register || null;
+    m.appendChild(el('h2', null, 'derivative documents — harness-doc register'));
+    if (!reg || !reg.docs || !reg.docs.length) {
+      m.appendChild(gap('no harness-doc headers found on top-level *.md — the register is empty (see workflow.md §Derivative documents)'));
+      return m;
+    }
+    var docs = reg.docs;
+    var pend = reg.pending || [], prov = reg.provisional_ids || [], inf = reg.in_force || [];
+
+    // review queue — docs whose wording needs eyes: pending approval or provisional ids
+    var queue = docs.filter(function (d) { return pend.indexOf(d.id) >= 0 || prov.indexOf(d.id) >= 0; });
+    m.appendChild(el('h3', null, 'review queue — wording needs eyes (' + queue.length + ')'));
+    if (!queue.length) m.appendChild(el('p', 'muted', 'empty — nothing awaiting approval or adoption review'));
+    queue.forEach(function (d) {
+      var open = pend.indexOf(d.id) >= 0;   // pending docs open expanded; provisional collapsed
+      var v = docView(d, open);
+      if (prov.indexOf(d.id) >= 0) {
+        var tag = el('div', 'muted', 'provisional ids — approve wording before corpus adoption assigns real C-ids');
+        v.insertBefore(tag, v.lastChild);
+      }
+      m.appendChild(v);
+    });
+
+    // in force
+    m.appendChild(el('h3', null, 'in force (' + inf.length + ')'));
+    if (inf.length) {
+      var d = el('div', 'mono'); d.textContent = inf.join('  ');
+      m.appendChild(d);
+    } else m.appendChild(el('p', 'muted', 'nothing steering right now'));
+
+    // current per kind
+    if (reg.current && Object.keys(reg.current).length) {
+      m.appendChild(el('h3', null, 'current per kind'));
+      m.appendChild(kvTable(reg.current));
+    }
+
+    // full register — click a row to read the doc inline
+    m.appendChild(el('h3', null, 'register (' + docs.length + ' docs) — click a row to read the doc'));
+    var t = el('table', 'matrix');
+    var tr = el('tr');
+    ['id', 'kind', 'status', 'applies-to', 'mapped-into', 'file'].forEach(function (x) { tr.appendChild(el('th', null, x)); });
+    t.appendChild(tr);
+    var sorted = docs.slice().sort(function (a, b) {
+      return (a.kind === b.kind ? String(a.id).localeCompare(String(b.id)) : String(a.kind).localeCompare(String(b.kind)));
+    });
+    sorted.forEach(function (doc) {
+      var r = el('tr', 'doc-row');
+      r.appendChild(el('td', 'rowh', doc.id));
+      r.appendChild(el('td', null, doc.kind || '—'));
+      var st = el('td', 'doc-status ' + docStatusClass(doc.status), doc.status || '?');
+      if (doc.provisional_ids) st.title = 'provisional ids — pending corpus adoption';
+      r.appendChild(st);
+      r.appendChild(el('td', null, (doc.applies_to || []).join(', ') || '—'));
+      r.appendChild(el('td', null, (doc.mapped_into || []).join(', ') || '—'));
+      r.appendChild(el('td', 'mono', doc.file));
+      r.addEventListener('click', function () {
+        var next = r.nextSibling;
+        if (next && next.className === 'doc-detail') { next.parentNode.removeChild(next); return; }
+        var dr = el('tr', 'doc-detail');
+        var td = el('td'); td.colSpan = 6;
+        var body = el('div', 'doc-body');
+        if (doc.body) body.innerHTML = mdToHtml(doc.body);
+        else body.appendChild(absent('no body emitted'));
+        td.appendChild(body);
+        dr.appendChild(td);
+        r.parentNode.insertBefore(dr, r.nextSibling);
+      });
+      t.appendChild(r);
+    });
+    m.appendChild(t);
+
+    // unregistered
+    var un = reg.headerless || [];
+    if (un.length) {
+      m.appendChild(gap(un.length + ' top-level *.md file(s) without a harness-doc header — unregistered: ' + un.join(', ')));
     }
     return m;
   }
@@ -433,6 +721,9 @@
       m.appendChild(d);
     } else m.appendChild(gap('no live scenario suite parsed'));
 
+    m.appendChild(el('h3', null, 'pathed scenarios \u2014 build guidance (live read of scenarios.md ## Paths; not scored)'));
+    m.appendChild(pathsBlock(p));
+
     m.appendChild(el('h3', null, 'live convention id set' + (cs.corpus_conventions_file ? ' \u2014 ' + cs.corpus_conventions_file + ' (' + (cs.corpus_convention_ids || []).length + ' ids)' : '')));
     if (cs.corpus_convention_ids && cs.corpus_convention_ids.length) {
       var d2 = el('div', 'mono'); d2.textContent = cs.corpus_convention_ids.join('  ');
@@ -539,6 +830,163 @@
     return m;
   }
 
+  /* ---------- pathed scenarios (P-*) — build guidance, not scored ---------- */
+  function pathsData(p) { return (p && p.paths) || (p && p.current_state && p.current_state.paths) || null; }
+  function pathsBlock(p) {
+    var wrap = el('div');
+    var pd = pathsData(p);
+    if (!pd || !pd.n_paths) { wrap.appendChild(gap('no pathed scenarios declared')); return wrap; }
+    wrap.appendChild(el('p', 'muted',
+      pd.n_paths + ' paths \u00b7 consolidated ' + pd.consolidated + '/' + pd.suite_n +
+      ' scenarios \u00b7 ' + pd.unconsolidated.length + ' unconsolidated \u00b7 ' +
+      pd.undeclared_items.length + ' undeclared items \u00b7 ' + pd.unreachable_modules.length + ' unreachable modules'));
+    var pt = el('table');
+    var ph = el('tr');
+    ['path','journey','steps','enacts'].forEach(function (h) { ph.appendChild(el('th', null, h)); });
+    pt.appendChild(ph);
+    pd.declared.forEach(function (pp) {
+      var tr = el('tr');
+      tr.appendChild(el('td', 'mono', pp.id));
+      var jd = el('td', 'muted'); jd.textContent = pp.journey || ''; tr.appendChild(jd);
+      var sd = el('td', 'mono'); sd.textContent = (pp.steps || []).join(' \u2192 '); tr.appendChild(sd);
+      var en = el('td', 'mono'); en.textContent = (pp.enacts || []).join(', '); tr.appendChild(en);
+      pt.appendChild(tr);
+    });
+    wrap.appendChild(pt);
+    var gapList = function (title, items, fmt) {
+      if (!items.length) return;
+      wrap.appendChild(el('h4', null, title + ' (' + items.length + ')'));
+      var ul = el('ul', 'cite');
+      items.forEach(function (x) { var li = el('li'); li.textContent = fmt ? fmt(x) : x; ul.appendChild(li); });
+      wrap.appendChild(ul);
+    };
+    gapList('unconsolidated scenarios (tolerated gap signs)', pd.unconsolidated);
+    gapList('undeclared interface items', pd.undeclared_items, function (u) { return u.item + ' in ' + u.path + ' (' + u.kind + ')'; });
+    gapList('unknown scenario refs', pd.unknown_refs);
+    gapList('unreachable module obligations', pd.unreachable_modules);
+    return wrap;
+  }
+
+  /* ---------- project: scorecard (latest JEV verdict) ---------- */
+  function scoreCell(v) {
+    if (v === null || v === undefined || isNaN(+v)) return 'cell-na';
+    var n = +v;
+    if (n >= 0.8) return 'cell-conformed';
+    if (n >= 0.5) return 'cell-reckoned';
+    return 'cell-silent';
+  }
+  function viewScorecard(p) {
+    var m = el('div'); m.id = 'view-scorecard';
+    var lastSp = null, series = p.series || [];
+    series.forEach(function (sp) { if (sp.verdict_ok) lastSp = sp; });
+    if (!lastSp) { m.appendChild(el('h2', null, 'scorecard')); m.appendChild(gap('no parsed verdict yet')); return m; }
+    var v = lastSp.verdict || {};
+
+    m.appendChild(el('h2', null, 'scorecard \u2014 ' + lastSp.label + ' (' + (lastSp.entry || '') + ')'));
+    var hdr = el('table', 'kv');
+    function row(t, k, node) { var tr = el('tr'); tr.appendChild(el('th', null, k)); var td = el('td'); td.appendChild(node); tr.appendChild(td); t.appendChild(tr); }
+    var ov = el('span'); ov.className = scoreCell(v.overall); ov.style.fontWeight = '700'; ov.style.padding = '1px 6px';
+    ov.textContent = (v.overall !== null && v.overall !== undefined) ? v.overall : '\u2014';
+    row(hdr, 'overall', ov);
+    row(hdr, 'judge', el('span', null, (v.judge_model || '\u2014') + (lastSp.verdict_kind ? ' \u00b7 ' + lastSp.verdict_kind : '')));
+    row(hdr, 'date', lastSp.date ? el('span', null, lastSp.date) : absent());
+    row(hdr, 'direction', lastSp.direction ? el('span', null, lastSp.direction) : absent());
+    row(hdr, 'build folder', lastSp.build_folder ? el('span', 'mono', lastSp.build_folder) : absent());
+    var met = v.metrics || {}, mk = Object.keys(met);
+    row(hdr, 'metrics', mk.length ? renderAny(met) : absent());
+    m.appendChild(hdr);
+
+    var crit = v.criteria || [];
+    m.appendChild(el('h3', null, 'criteria (' + crit.length + ')'));
+    if (!crit.length) m.appendChild(gap('verdict carries no criteria'));
+    else {
+      function catOf(c) { var k = c.category || 'measured'; return (k === 'objective') ? 'measured' : (k === 'exploratory') ? 'evaluated' : k; }
+      var kinds = ['measured', 'evaluated', 'user'];
+      var groups = kinds.map(function (k) { return [k, crit.filter(function (c) { return catOf(c) === k; })]; })
+                        .filter(function (g) { return g[1].length; });
+      if (!groups.length) groups = [['criteria', crit]];
+      groups.forEach(function (g) {
+        m.appendChild(el('h4', null, g[0] + ' (' + g[1].length + ')'));
+        var ct = el('table');
+        var htr = el('tr');
+        var heads = (g[0] === 'measured') ? ['criterion','measure','method','score','owner','evidence']
+                  : (g[0] === 'evaluated') ? ['criterion','score','confidence','owner','evidence']
+                  : ['criterion','score','owner','evidence'];
+        heads.forEach(function (h) { htr.appendChild(el('th', null, h)); });
+        ct.appendChild(htr);
+        g[1].forEach(function (c) {
+          var tr = el('tr');
+          tr.appendChild(el('td', null, c.name));
+          if (g[0] === 'measured') {
+            tr.appendChild(el('td', 'mono', c.measure || '\u2014'));
+            var mtd = el('td', 'muted'); mtd.textContent = c.method || ''; tr.appendChild(mtd);
+          }
+          tr.appendChild(el('td', scoreCell(c.score), (c.score === null || c.score === undefined) ? '\u2014' : c.score));
+          if (g[0] === 'evaluated') tr.appendChild(el('td', null, (c.confidence === null || c.confidence === undefined) ? '\u2014' : c.confidence));
+          var uo = (c.user_opinion === null || c.user_opinion === undefined) ? '\u2014' : c.user_opinion;
+          tr.appendChild(el('td', (uo !== '\u2014' && +uo !== +c.score) ? 'cell-reckoned' : null, uo));
+          var ev = el('td');
+          var evs = c.evidence || [];
+          if (!evs.length) { ev.appendChild(absent('no citations')); }
+          else {
+            var det = el('details'); var sum = el('summary', null, evs.length + ' citation(s)');
+            det.appendChild(sum);
+            var ul = el('ul', 'cite'); evs.forEach(function (e) { var li = el('li'); li.textContent = e; ul.appendChild(li); });
+            det.appendChild(ul); ev.appendChild(det);
+          }
+          tr.appendChild(ev);
+          ct.appendChild(tr);
+        });
+        m.appendChild(ct);
+      });
+    }
+
+    var scen = v.scenarios || [];
+    m.appendChild(el('h3', null, 'scenarios (' + scen.length + ')'));
+    if (!scen.length) m.appendChild(gap('verdict carries no scenario scores'));
+    else {
+      var en = 0; scen.forEach(function (s) { if (s.evidence_class === 'enactment') en++; });
+      m.appendChild(el('p', 'muted', en + '/' + scen.length + ' enactment-class'));
+      var st = el('table');
+      var shr = el('tr');
+      ['id','score','class','notes','evidence'].forEach(function (h) { shr.appendChild(el('th', null, h)); });
+      st.appendChild(shr);
+      scen.forEach(function (s) {
+        var tr = el('tr');
+        tr.appendChild(el('td', 'mono', s.id));
+        tr.appendChild(el('td', scoreCell(s.score), (s.score === null || s.score === undefined) ? '\u2014' : s.score));
+        tr.appendChild(el('td', s.evidence_class === 'enactment' ? 'doc-inforce' : 'doc-pending', s.evidence_class || '\u2014'));
+        var nt = el('td', 'muted'); nt.textContent = s.notes || ''; tr.appendChild(nt);
+        var ev = el('td');
+        var evs = s.evidence || [];
+        if (!evs.length) { ev.appendChild(absent('none')); }
+        else {
+          var det = el('details'); det.appendChild(el('summary', null, evs.length + ''));
+          var ul = el('ul', 'cite'); evs.forEach(function (e) { var li = el('li'); li.textContent = e; ul.appendChild(li); });
+          det.appendChild(ul); ev.appendChild(det);
+        }
+        tr.appendChild(ev);
+        st.appendChild(tr);
+      });
+      m.appendChild(st);
+    }
+
+    var uc = v.user_commentary || [];
+    if (uc.length) {
+      m.appendChild(el('h3', null, 'owner commentary (' + uc.length + ')'));
+      var uul = el('ul', 'cite'); uc.forEach(function (c) { var li = el('li'); li.textContent = (typeof c === 'string') ? c : JSON.stringify(c); uul.appendChild(li); });
+      m.appendChild(uul);
+    }
+    m.appendChild(el('h3', null, 'judge notes'));
+    if (v.notes) { var pn = el('p', 'doc-body'); pn.style.whiteSpace = 'pre-wrap'; pn.textContent = v.notes; m.appendChild(pn); }
+    else m.appendChild(gap('verdict carries no judge notes'));
+
+    /* paths — pathed scenarios (P-*): build guidance, not scored rows */
+    m.appendChild(el('h3', null, 'pathed scenarios \u2014 build guidance (interface coverage, gap signs)'));
+    m.appendChild(pathsBlock(p));
+    return m;
+  }
+
   /* ---------- project shell ---------- */
   function renderProject(d) {
     var p = d.project;
@@ -550,15 +998,24 @@
     m.lastChild.appendChild(ageSpan);
     m.lastChild.appendChild(el('span', 'muted', ' (newest in-scope ' + (p.newest_path || 'none') + ')'));
 
+    if (p.latest_build) {
+      var lb = el('div', 'launchbar');
+      lb.appendChild(launchButton(p.id, 'launch ' + p.latest_build));
+      m.appendChild(lb);
+    }
+
     var tabs = el('div', 'tabs');
-    [['summary', 'project summary'], ['comparison', 'comparison'], ['current', 'current state'], ['builddetail', 'build detail']].forEach(function (pair) {
+    [['summary', 'project summary'], ['direction', 'direction'], ['documents', 'documents'], ['comparison', 'comparison'], ['scorecard', 'scorecard'], ['current', 'current state'], ['builddetail', 'build detail']].forEach(function (pair) {
       var b = el('button', state.tab === pair[0] ? 'active' : '', pair[1]);
       b.addEventListener('click', function () { state.tab = pair[0]; render(); });
       tabs.appendChild(b);
     });
     m.appendChild(tabs);
     var pane = el('div', 'pane');
-    if (state.tab === 'comparison') pane.appendChild(viewComparison(p));
+    if (state.tab === 'direction') pane.appendChild(viewDirection(p));
+    else if (state.tab === 'documents') pane.appendChild(viewDocuments(p));
+    else if (state.tab === 'comparison') pane.appendChild(viewComparison(p));
+    else if (state.tab === 'scorecard') pane.appendChild(viewScorecard(p));
     else if (state.tab === 'current') pane.appendChild(viewCurrent(p));
     else if (state.tab === 'builddetail') pane.appendChild(viewBuildDetail(p));
     else pane.appendChild(viewSummary(p));

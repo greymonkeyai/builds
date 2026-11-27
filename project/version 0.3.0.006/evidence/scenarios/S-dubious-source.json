@@ -1,0 +1,24 @@
+{
+ "id": "S-dubious-source",
+ "ran": true,
+ "checks": [
+  {
+   "name": "artifact claims held below trust ceiling",
+   "pass": true,
+   "detail": "{\"imported\": 7, \"belowThreshold\": true}"
+  },
+  {
+   "name": "encoded references resolved against vetted pointers",
+   "pass": true,
+   "detail": "52 vetted pointers"
+  },
+  {
+   "name": "non-matching claims recorded for review",
+   "pass": true,
+   "detail": "15 review rows"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.0
+}

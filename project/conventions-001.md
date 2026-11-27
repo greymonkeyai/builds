@@ -1,4 +1,5 @@
 # Conventions — a new spec-corpus category (proposal, 2026-11-19)
+<!-- harness-doc kind=conventions status=adopted-upstream -->
 
 Drafted for owner edit/approval. Adoption runs through `C:\Project`'s revision process —
 proposed home: `C:\Project\MigrateInbound\CONVENTIONS.md` + `InstructionsForConventions.txt`,

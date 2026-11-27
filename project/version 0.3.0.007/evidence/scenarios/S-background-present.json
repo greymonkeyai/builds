@@ -1,0 +1,117 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:06",
+    "checks": [
+      {
+        "name": "steward pass recorded",
+        "pass": false,
+        "detail": "0 liveness rows"
+      },
+      {
+        "name": "liveness data for first-screen chit",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "persona presented while idle work continues",
+        "pass": false,
+        "detail": "0 steward-presented replies; liveness continues"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "steward pass recorded",
+        "pass": true,
+        "detail": "4 liveness rows"
+      },
+      {
+        "name": "liveness data for first-screen chit",
+        "pass": true,
+        "detail": "{'passes': 4, 'age': 10.1, 'monotonic': True, 'lastPass': 1795727176.8249745}"
+      },
+      {
+        "name": "persona presented while idle work continues",
+        "pass": true,
+        "detail": "4 steward-presented replies; liveness continues"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "steward pass recorded",
+        "pass": false,
+        "detail": "0 liveness rows"
+      },
+      {
+        "name": "liveness data for first-screen chit",
+        "pass": true,
+        "detail": "{'passes': 2, 'age': 1.7, 'monotonic': True, 'lastPass': 1795726448.3297439}"
+      },
+      {
+        "name": "persona presented while idle work continues",
+        "pass": false,
+        "detail": "0 steward-presented replies; liveness continues"
+      }
+    ],
+    "pass": 1,
+    "fail": 2,
+    "allGreen": false
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:03",
+    "checks": [
+      {
+        "name": "steward pass recorded",
+        "pass": true,
+        "detail": "2 liveness rows"
+      },
+      {
+        "name": "liveness data for first-screen chit",
+        "pass": true,
+        "detail": "{'passes': 2, 'age': 3.2, 'monotonic': True, 'lastPass': 1795726589.6021175}"
+      },
+      {
+        "name": "persona presented while idle work continues",
+        "pass": true,
+        "detail": "2 steward-presented replies; liveness continues"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "steward pass recorded",
+        "pass": false,
+        "detail": "0 liveness rows"
+      },
+      {
+        "name": "liveness data for first-screen chit",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "persona presented while idle work continues",
+        "pass": false,
+        "detail": "0 steward-presented replies; liveness continues"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  }
+}

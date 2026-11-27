@@ -1,0 +1,43 @@
+{
+ "id": "S-voice-assign",
+ "ran": true,
+ "checks": [
+  {
+   "name": "assignment reasons from available descriptions",
+   "pass": true,
+   "detail": "[None, \"appropriateness: persona prefers None voice; variety: in-use voices ['Microsoft David Desktop'] disfavored; chose 'Microsoft Zira Desktop'\", \"appropriateness: persona prefers None voice; variety: in-use voices ['Microsoft David Desktop', 'Microsoft Zira Desktop'] disfavored; chose 'Microsoft David Desktop'\"]"
+  },
+  {
+   "name": "in-use voices assessed",
+   "pass": true,
+   "detail": "[None, ['Microsoft David Desktop'], ['Microsoft David Desktop', 'Microsoft Zira Desktop']]"
+  },
+  {
+   "name": "used voices disfavored",
+   "pass": true,
+   "detail": "[None, ['Microsoft David Desktop'], ['Microsoft David Desktop', 'Microsoft Zira Desktop']]"
+  },
+  {
+   "name": "assigned voice stable across relaunch",
+   "pass": true,
+   "detail": "voices identical post-restart: True"
+  },
+  {
+   "name": "changes only on user direction",
+   "pass": true,
+   "detail": "[True, None, None, None, None, None, None, None]"
+  },
+  {
+   "name": "new persona gets a different voice than siblings when variety is available",
+   "pass": true,
+   "detail": "2 distinct of 8"
+  },
+  {
+   "name": "thin voice pool declared honestly",
+   "pass": true,
+   "detail": "{'pool': 2, 'thin': True, 'note': 'thin voice pool declared honestly'}"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment"
+}

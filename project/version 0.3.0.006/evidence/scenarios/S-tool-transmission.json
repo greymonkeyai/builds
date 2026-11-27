@@ -1,0 +1,24 @@
+{
+ "id": "S-tool-transmission",
+ "ran": true,
+ "checks": [
+  {
+   "name": "literal decode fidelity (C-ToolWireFidelity)",
+   "pass": true,
+   "detail": "crcOk=True"
+  },
+  {
+   "name": "imported tool quarantined as candidate",
+   "pass": true,
+   "detail": "1 quarantined"
+  },
+  {
+   "name": "not invocable before acceptance",
+   "pass": true,
+   "detail": "['tool.compose-artifact', 'tool.compose-text', 'tool.discover', 'tool.fetch-page', 'tool.list-members', 'tool.match-criteria', 'tool.record', 'tool.render-art']"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.1
+}

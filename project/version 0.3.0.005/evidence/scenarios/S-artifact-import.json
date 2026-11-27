@@ -1,0 +1,25 @@
+{
+  "id": "S-artifact-import",
+  "ran": true,
+  "checks": [
+    {
+      "name": "capture → workshop entry created",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "below action/acceptance threshold",
+      "pass": true,
+      "detail": [
+        0.4,
+        0.4
+      ]
+    },
+    {
+      "name": "entry accessible in the app",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true
+}

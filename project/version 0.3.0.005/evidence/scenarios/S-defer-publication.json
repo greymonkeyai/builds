@@ -1,0 +1,17 @@
+{
+  "id": "S-defer-publication",
+  "ran": true,
+  "checks": [
+    {
+      "name": "unconfigured nonlocal effect refused/deferred",
+      "pass": true,
+      "detail": "{'need': 'r-9e44523f4363', 'ok': False, 'error': 'grant-required', 'deferred': True, 'status': 'no witnessed grant — request recorded, not executed'}"
+    },
+    {
+      "name": "request + status recorded as assertions",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true
+}

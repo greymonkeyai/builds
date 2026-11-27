@@ -1,0 +1,286 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "name-addressed \u2192 addressee",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "capability \u2192 answered",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "want \u2260 list",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "list \u2192 list machinery",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "genuine unmet \u2192 floor",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no stray rows",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 6,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "name-addressed \u2192 addressee",
+    "pass": true,
+    "detail": "first reply: Plum",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "capability \u2192 answered",
+    "pass": true,
+    "detail": "replies=2",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "want \u2260 list",
+    "pass": true,
+    "detail": "want need=True, stray lists=0",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "list \u2192 list machinery",
+    "pass": true,
+    "detail": "list need=0",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "genuine unmet \u2192 floor",
+    "pass": true,
+    "detail": "floor rows for gibberish=1",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no stray rows",
+    "pass": true,
+    "detail": "unmet-request rows for routed intents=0",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 6,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "name-addressed \u2192 addressee",
+    "pass": false,
+    "detail": "first reply: Tock-179578",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "capability \u2192 answered",
+    "pass": true,
+    "detail": "replies=1",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "want \u2260 list",
+    "pass": true,
+    "detail": "want need=True, stray lists=0",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "list \u2192 list machinery",
+    "pass": true,
+    "detail": "list need=0",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "genuine unmet \u2192 floor",
+    "pass": true,
+    "detail": "floor rows for gibberish=1",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no stray rows",
+    "pass": false,
+    "detail": "unmet-request rows for routed intents=1",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 2,
+  "allGreen": false
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "name-addressed \u2192 addressee",
+    "pass": true,
+    "detail": "first reply: Plum",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "capability \u2192 answered",
+    "pass": true,
+    "detail": "replies=2",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "want \u2260 list",
+    "pass": true,
+    "detail": "want need=True, stray lists=0",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "list \u2192 list machinery",
+    "pass": true,
+    "detail": "list need=0",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "genuine unmet \u2192 floor",
+    "pass": true,
+    "detail": "floor rows for gibberish=1",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no stray rows",
+    "pass": true,
+    "detail": "unmet-request rows for routed intents=0",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 6,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "name-addressed \u2192 addressee",
+    "pass": false,
+    "detail": "first reply: []",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "capability \u2192 answered",
+    "pass": false,
+    "detail": "replies=0",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "want \u2260 list",
+    "pass": false,
+    "detail": "want need=False, stray lists=0",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "list \u2192 list machinery",
+    "pass": false,
+    "detail": "list need=0",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "genuine unmet \u2192 floor",
+    "pass": false,
+    "detail": "floor rows for gibberish=0",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no stray rows",
+    "pass": true,
+    "detail": "unmet-request rows for routed intents=0",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 1,
+  "fail": 5,
+  "allGreen": false
+ }
+}

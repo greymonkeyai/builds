@@ -1,0 +1,12 @@
+{
+  "id": "S-context-display",
+  "ran": true,
+  "checks": [
+    {
+      "name": "active context displayed",
+      "pass": true,
+      "detail": "Borough council agenda"
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,133 @@
+{
+  "id": "S-fleet-roster",
+  "ran": true,
+  "checks": [
+    {
+      "name": "every named-roster device reported",
+      "pass": true,
+      "detail": 15
+    },
+    {
+      "name": "honest status per device (found/installable/unavailable/not-a-target)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "coverage is test data — non-targets recorded",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true,
+  "roster_status": [
+    {
+      "key": "PC-DEV",
+      "expect": "seed/observer host",
+      "status": "found-not-target",
+      "seen_as": [
+        {
+          "ip": "192.168.86.25",
+          "mac": "",
+          "name": "DESKTOP-OOGQ7UN",
+          "transport": "wired-lan",
+          "roster": "PC-DEV",
+          "reachable": true,
+          "self": true
+        }
+      ]
+    },
+    {
+      "key": "PC-RMATA-01",
+      "expect": "fleet target — stable node",
+      "status": "unavailable",
+      "seen_as": []
+    },
+    {
+      "key": "PC-RMATA-02",
+      "expect": "fleet target — resettable/seed node",
+      "status": "unavailable",
+      "seen_as": []
+    },
+    {
+      "key": "PC-GMK",
+      "expect": "fleet target; host-capable",
+      "status": "found-installable",
+      "seen_as": [
+        {
+          "ip": "192.168.86.41",
+          "mac": "e0:51:d8:21:46:54",
+          "name": "NUCBOX_G3_PRO",
+          "transport": "wired-lan",
+          "roster": "PC-GMK",
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "key": "TAB-YOGA",
+      "expect": "surface-class (ARM) — likely not-installable",
+      "status": "not-found-not-target",
+      "seen_as": []
+    },
+    {
+      "key": "ECHO-DOT",
+      "expect": "appliance — not installable",
+      "status": "not-found-not-target",
+      "seen_as": []
+    },
+    {
+      "key": "ANDROID-PH-1",
+      "expect": "surface-class",
+      "status": "not-found-not-target",
+      "seen_as": []
+    },
+    {
+      "key": "ANDROID-PH-2",
+      "expect": "surface-class",
+      "status": "not-found-not-target",
+      "seen_as": []
+    },
+    {
+      "key": "ANDROID-TAB",
+      "expect": "surface/kiosk-class",
+      "status": "not-found-not-target",
+      "seen_as": []
+    },
+    {
+      "key": "PC-TERRY",
+      "expect": "triage datapoint",
+      "status": "unavailable",
+      "seen_as": []
+    },
+    {
+      "key": "STICK-WIN",
+      "expect": "unknown state",
+      "status": "unavailable",
+      "seen_as": []
+    },
+    {
+      "key": "TAB-SURF",
+      "expect": "loaner — consent care",
+      "status": "not-found-not-target",
+      "seen_as": []
+    },
+    {
+      "key": "RPI-01",
+      "expect": "side device, not a target",
+      "status": "not-found-not-target",
+      "seen_as": []
+    },
+    {
+      "key": "RPI-02",
+      "expect": "side device, not a target",
+      "status": "not-found-not-target",
+      "seen_as": []
+    },
+    {
+      "key": "SPK-SONOS-01",
+      "expect": "appliance — not installable",
+      "status": "not-found-not-target",
+      "seen_as": []
+    }
+  ]
+}

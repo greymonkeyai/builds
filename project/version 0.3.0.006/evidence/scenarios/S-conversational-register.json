@@ -1,0 +1,29 @@
+{
+ "id": "S-conversational-register",
+ "ran": true,
+ "checks": [
+  {
+   "name": "sentences",
+   "pass": true,
+   "detail": "I don't have a personal take on gossip. I'm programmed to provide information an"
+  },
+  {
+   "name": "no textbook",
+   "pass": true,
+   "detail": "max len 322"
+  },
+  {
+   "name": "no verbatim markup",
+   "pass": true,
+   "detail": "I don't have a personal take on gossip. I'm programmed to pr"
+  },
+  {
+   "name": "register unbroken",
+   "pass": true,
+   "detail": "1"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 3.3
+}

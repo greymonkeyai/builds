@@ -1,0 +1,26 @@
+{
+  "legs": [
+    {
+      "leg": "clean-bind",
+      "pass": true,
+      "detail": "gate True ttg 3291ms"
+    },
+    {
+      "leg": "stale-owner-refusal",
+      "pass": true,
+      "detail": "second instance exit=2; first still alive=True"
+    },
+    {
+      "leg": "exclusive-bind",
+      "pass": true,
+      "detail": "raw socket could not steal the bound port"
+    },
+    {
+      "leg": "close-terminates",
+      "pass": true,
+      "detail": "process ended=True; port free=True"
+    }
+  ],
+  "port": 9794,
+  "pass": true
+}

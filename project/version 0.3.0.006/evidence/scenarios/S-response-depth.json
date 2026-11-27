@@ -1,0 +1,40 @@
+{
+ "id": "S-response-depth",
+ "ran": true,
+ "checks": [
+  {
+   "name": "depth setting exists",
+   "pass": true,
+   "detail": "3"
+  },
+  {
+   "name": "user assertion",
+   "pass": true,
+   "detail": "principal"
+  },
+  {
+   "name": "persists",
+   "pass": true,
+   "detail": "depth after restart: 1 == last durable set 1 (a-1187)"
+  },
+  {
+   "name": "chat all",
+   "pass": true,
+   "detail": "3"
+  },
+  {
+   "name": "priority exempt",
+   "pass": true,
+   "detail": "['Bolt', 'Vera']"
+  },
+  {
+   "name": "depth fills",
+   "pass": true,
+   "detail": "2"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "_depth_persist_check": true,
+ "seconds": 17.6
+}

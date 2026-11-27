@@ -1,0 +1,22 @@
+{
+  "id": "S-library-browse",
+  "ran": true,
+  "checks": [
+    {
+      "name": "personas browsable",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tools browsable w/ explanations",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "holdings structured, not a raw log",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true
+}

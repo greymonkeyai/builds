@@ -1,0 +1,24 @@
+{
+ "id": "S-usb-log-courier",
+ "ran": true,
+ "checks": [
+  {
+   "name": "courier log accumulates across runs",
+   "pass": true,
+   "detail": "29 entries"
+  },
+  {
+   "name": "machine-readable per-node evidence",
+   "pass": true,
+   "detail": "['node-desktop-oogq7un-n-06c0', 'node-desktop-oogq7un-n-0df9', 'node-desktop-oogq7un-n-1016', 'node-desktop-oogq7un-n-394f', 'node-desktop-oogq7un-n-73ad', 'node-desktop-oogq7un-n-80ff', 'node-desktop-oogq7un-n-9913', 'node-desktop-oogq7un-n-ce83', 'node-desktop-oogq7un-n-dd4b', 'node-desktop-oogq7un-n-dfb2', 'node-desktop-oogq7un-n-e410', 'node-desktop-oogq7un-n-e7cc', 'node-desktop-oogq7un-n-f2c"
+  },
+  {
+   "name": "stale-seed revisit handling recorded",
+   "pass": true,
+   "detail": "0 stale/revisit entries"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.0
+}

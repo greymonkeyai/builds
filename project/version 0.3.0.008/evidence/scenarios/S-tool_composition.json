@@ -1,0 +1,246 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "need met by composed minimal tools",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "composition recorded as ledger object",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "AI-composed + direct-edit paths both offered",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "decomposes back to components",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "discrimination-case",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 5,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "need met by composed minimal tools",
+    "pass": true,
+    "detail": "need a-a9d658ae4ae3 executed via bound minimal tool",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "composition recorded as ledger object",
+    "pass": true,
+    "detail": "1 composition rows",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "AI-composed + direct-edit paths both offered",
+    "pass": true,
+    "detail": "editor affordance + chat path rendered",
+    "src": [
+     "rendered"
+    ]
+   },
+   {
+    "name": "decomposes back to components",
+    "pass": true,
+    "detail": "components=['list.specialized', 'wiki.lookup']",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "no bespoke tool where an existing combination suffices",
+    "pass": true,
+    "detail": "registry stable 15\u219215 \u2014 no bespoke mint where composition suffices",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 5,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "need met by composed minimal tools",
+    "pass": true,
+    "detail": "need a-3a7522f5e110 executed via bound minimal tool",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "composition recorded as ledger object",
+    "pass": true,
+    "detail": "1 composition rows",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "AI-composed + direct-edit paths both offered",
+    "pass": true,
+    "detail": "editor affordance + chat path rendered",
+    "src": [
+     "rendered"
+    ]
+   },
+   {
+    "name": "decomposes back to components",
+    "pass": true,
+    "detail": "components=['list.specialized', 'wiki.lookup']",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "no bespoke tool where an existing combination suffices",
+    "pass": true,
+    "detail": "registry stable 15\u219215 \u2014 no bespoke mint where composition suffices",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 5,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "need met by composed minimal tools",
+    "pass": true,
+    "detail": "need a-cab11fbf6e25 executed via bound minimal tool",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "composition recorded as ledger object",
+    "pass": true,
+    "detail": "1 composition rows",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "AI-composed + direct-edit paths both offered",
+    "pass": true,
+    "detail": "editor affordance + chat path rendered",
+    "src": [
+     "rendered"
+    ]
+   },
+   {
+    "name": "decomposes back to components",
+    "pass": true,
+    "detail": "components=['list.specialized', 'wiki.lookup']",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "no bespoke tool where an existing combination suffices",
+    "pass": true,
+    "detail": "registry stable 15\u219215 \u2014 no bespoke mint where composition suffices",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 5,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "need met by composed minimal tools",
+    "pass": false,
+    "detail": "need None executed via bound minimal tool",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "composition recorded as ledger object",
+    "pass": false,
+    "detail": "0 composition rows",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "AI-composed + direct-edit paths both offered",
+    "pass": false,
+    "detail": "editor affordance + chat path rendered",
+    "src": [
+     "rendered"
+    ]
+   },
+   {
+    "name": "decomposes back to components",
+    "pass": false,
+    "detail": "components=None",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "no bespoke tool where an existing combination suffices",
+    "pass": true,
+    "detail": "registry stable 0\u21920 \u2014 no bespoke mint where composition suffices",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 1,
+  "fail": 4,
+  "allGreen": false
+ }
+}

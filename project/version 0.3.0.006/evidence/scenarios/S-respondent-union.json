@@ -1,0 +1,39 @@
+{
+ "id": "S-respondent-union",
+ "ran": true,
+ "checks": [
+  {
+   "name": "named addressee replies",
+   "pass": true,
+   "detail": "{'Vera': 'addressed', 'Bolt': 'selector'}"
+  },
+  {
+   "name": "selector-chosen replies",
+   "pass": true,
+   "detail": "{'Vera': 'addressed', 'Bolt': 'selector'}"
+  },
+  {
+   "name": "union not override",
+   "pass": true,
+   "detail": "{'Vera': 'addressed', 'Bolt': 'selector'}"
+  },
+  {
+   "name": "addressed first",
+   "pass": true,
+   "detail": "['Vera', 'Bolt']"
+  },
+  {
+   "name": "multi-select",
+   "pass": true,
+   "detail": "['Bolt', 'Nix']"
+  },
+  {
+   "name": "over-threshold only",
+   "pass": true,
+   "detail": "depth-fill respects conf threshold"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 10.8
+}

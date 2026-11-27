@@ -1,0 +1,162 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "vetted-source pointers seeded",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "device decoder entries present",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "marketing exemplar present + decodable",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "vetted-source pointers seeded",
+    "pass": true,
+    "detail": "5 pointers",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "device decoder entries present",
+    "pass": true,
+    "detail": "decoders=['hgrid1', 'png', 'json']",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "marketing exemplar present + decodable",
+    "pass": true,
+    "detail": "exemplar=postcard-knock-knock",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "vetted-source pointers seeded",
+    "pass": false,
+    "detail": "0 pointers",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "device decoder entries present",
+    "pass": false,
+    "detail": "decoders=[]",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "marketing exemplar present + decodable",
+    "pass": false,
+    "detail": "exemplar=None",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "vetted-source pointers seeded",
+    "pass": true,
+    "detail": "5 pointers",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "device decoder entries present",
+    "pass": true,
+    "detail": "decoders=['hgrid1', 'png', 'json']",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "marketing exemplar present + decodable",
+    "pass": true,
+    "detail": "exemplar=postcard-knock-knock",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "vetted-source pointers seeded",
+    "pass": false,
+    "detail": "0 pointers",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "device decoder entries present",
+    "pass": false,
+    "detail": "decoders=[]",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "marketing exemplar present + decodable",
+    "pass": false,
+    "detail": "exemplar=None",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ }
+}

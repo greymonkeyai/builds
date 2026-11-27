@@ -1,0 +1,24 @@
+{
+ "id": "S-defer-publication",
+ "ran": true,
+ "checks": [
+  {
+   "name": "unconfigured nonlocal effect refused/deferred",
+   "pass": true,
+   "detail": "{\"state\": \"deferred\", \"row\": \"a-579\", \"reason\": \"channel 'post-remote' unconfigured\"}"
+  },
+  {
+   "name": "request + status recorded as assertions",
+   "pass": true,
+   "detail": "2 publish rows"
+  },
+  {
+   "name": "production half",
+   "pass": true,
+   "detail": "local-form publishes produce artifacts"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.0
+}

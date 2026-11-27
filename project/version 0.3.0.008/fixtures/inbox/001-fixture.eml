@@ -1,0 +1,8 @@
+From: Lab Fixture <fixture@example.invalid>
+To: Operator <operator@example.invalid>
+Subject: Fixture: seed status digest
+Date: Thu, 27 Nov 2026 07:00:00 +0000
+X-Hearth-Fixture: true
+
+FIXTURE DATA — not a real fetched message.
+Nightly digest: 3 needs pending, seed medium present, roster stable.

@@ -1,0 +1,29 @@
+{
+ "id": "launch-check",
+ "app": "chorus",
+ "port": 9791,
+ "legs": [
+  {
+   "leg": "probe-before-bind",
+   "pass": true,
+   "detail": "port 9791 free before launch"
+  },
+  {
+   "leg": "exclusive-bind",
+   "pass": true,
+   "detail": "instance bound port 9791: {'ok': True, 'app': 'chorus', 'node': 'node-desktop-oogq7un-n-0e9e', 'part2': True}"
+  },
+  {
+   "leg": "no-ok-while-owned",
+   "pass": true,
+   "detail": "second launch rc=2: LAUNCH REFUSED \u2014 a chorus instance (node-desktop-oogq7un-n-0e9e) already owns port 9791"
+  },
+  {
+   "leg": "close-terminates",
+   "pass": true,
+   "detail": "port 9791 free after terminate: True"
+  }
+ ],
+ "pass": true,
+ "at": "2026-11-26T01:49:32"
+}

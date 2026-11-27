@@ -1,0 +1,438 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "P-first-run step: shell.launch",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: shell.gate",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: projects.list",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: personas.roster",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: conversation.chat",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: conversation.speech",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: conversation.depth",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: ledger.input",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: needs.floor",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 9,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "P-first-run step: shell.launch",
+    "pass": true,
+    "detail": "affordance=chat rendered=True api=/api/health code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: shell.gate",
+    "pass": true,
+    "detail": "affordance=status-bar rendered=True api=/api/gate code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: projects.list",
+    "pass": true,
+    "detail": "affordance=lists rendered=True api=/api/lists code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: personas.roster",
+    "pass": true,
+    "detail": "affordance=persona-roster rendered=True api=/api/personas code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: conversation.chat",
+    "pass": true,
+    "detail": "affordance=chat rendered=True api=/api/conversation code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: conversation.speech",
+    "pass": true,
+    "detail": "affordance=chat rendered=True api=/api/metrics code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: conversation.depth",
+    "pass": true,
+    "detail": "affordance=response-depth rendered=True api=/api/settings code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: ledger.input",
+    "pass": true,
+    "detail": "affordance=chat rendered=True api=/api/ledger code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: needs.floor",
+    "pass": true,
+    "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 9,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "P-first-run step: shell.launch",
+    "pass": true,
+    "detail": "affordance=chat rendered=True api=/api/health code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: shell.gate",
+    "pass": true,
+    "detail": "affordance=status-bar rendered=True api=/api/gate code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: projects.list",
+    "pass": true,
+    "detail": "affordance=lists rendered=True api=/api/lists code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: personas.roster",
+    "pass": true,
+    "detail": "affordance=persona-roster rendered=True api=/api/personas code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: conversation.chat",
+    "pass": true,
+    "detail": "affordance=chat rendered=True api=/api/conversation code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: conversation.speech",
+    "pass": true,
+    "detail": "affordance=chat rendered=True api=/api/metrics code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: conversation.depth",
+    "pass": true,
+    "detail": "affordance=response-depth rendered=True api=/api/settings code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: ledger.input",
+    "pass": true,
+    "detail": "affordance=chat rendered=True api=/api/ledger code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: needs.floor",
+    "pass": true,
+    "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 9,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "P-first-run step: shell.launch",
+    "pass": true,
+    "detail": "affordance=chat rendered=True api=/api/health code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: shell.gate",
+    "pass": true,
+    "detail": "affordance=status-bar rendered=True api=/api/gate code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: projects.list",
+    "pass": true,
+    "detail": "affordance=lists rendered=True api=/api/lists code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: personas.roster",
+    "pass": true,
+    "detail": "affordance=persona-roster rendered=True api=/api/personas code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: conversation.chat",
+    "pass": true,
+    "detail": "affordance=chat rendered=True api=/api/conversation code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: conversation.speech",
+    "pass": true,
+    "detail": "affordance=chat rendered=True api=/api/metrics code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: conversation.depth",
+    "pass": true,
+    "detail": "affordance=response-depth rendered=True api=/api/settings code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: ledger.input",
+    "pass": true,
+    "detail": "affordance=chat rendered=True api=/api/ledger code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: needs.floor",
+    "pass": true,
+    "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 9,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "P-first-run step: shell.launch",
+    "pass": true,
+    "detail": "affordance=chat rendered=False api=/api/health code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: shell.gate",
+    "pass": false,
+    "detail": "affordance=status-bar rendered=False api=/api/gate code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: projects.list",
+    "pass": false,
+    "detail": "affordance=lists rendered=False api=/api/lists code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: personas.roster",
+    "pass": false,
+    "detail": "affordance=persona-roster rendered=False api=/api/personas code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: conversation.chat",
+    "pass": false,
+    "detail": "affordance=chat rendered=False api=/api/conversation code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: conversation.speech",
+    "pass": false,
+    "detail": "affordance=chat rendered=False api=/api/metrics code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: conversation.depth",
+    "pass": false,
+    "detail": "affordance=response-depth rendered=False api=/api/settings code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: ledger.input",
+    "pass": false,
+    "detail": "affordance=chat rendered=False api=/api/ledger code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-first-run step: needs.floor",
+    "pass": false,
+    "detail": "affordance=needs-floor rendered=False api=/api/needs code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 1,
+  "fail": 8,
+  "allGreen": false
+ }
+}

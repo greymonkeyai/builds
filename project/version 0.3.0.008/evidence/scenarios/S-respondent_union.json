@@ -1,0 +1,282 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "named addressee replies",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "selector-chosen replies",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "union not override",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "addressed first",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "multi-select",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "over-threshold only",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 6,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "named addressee replies",
+    "pass": true,
+    "detail": "replies=['Plum', 'Marcus']",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "selector-chosen replies",
+    "pass": true,
+    "detail": "selected Marcus replied",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "union not override",
+    "pass": true,
+    "detail": "union=['Plum', 'Marcus']",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "addressed first",
+    "pass": true,
+    "detail": "order=['Plum', 'Marcus']",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "multi-select",
+    "pass": true,
+    "detail": "selected={'Marcus', 'Tock-179578'}",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "over-threshold only",
+    "pass": true,
+    "detail": "respondents filtered by confidence threshold",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 6,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "named addressee replies",
+    "pass": false,
+    "detail": "replies=['Trekkie-179578', 'Fig-179578']",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "selector-chosen replies",
+    "pass": true,
+    "detail": "selected Trekkie-179578 replied",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "union not override",
+    "pass": true,
+    "detail": "union=['Trekkie-179578', 'Fig-179578']",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "addressed first",
+    "pass": false,
+    "detail": "order=['Trekkie-179578', 'Fig-179578']",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "multi-select",
+    "pass": true,
+    "detail": "selected={'Fig-179578', 'Trekkie-179578'}",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "over-threshold only",
+    "pass": true,
+    "detail": "respondents filtered by confidence threshold",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 2,
+  "allGreen": false
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "named addressee replies",
+    "pass": true,
+    "detail": "replies=['Plum', 'Marcus']",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "selector-chosen replies",
+    "pass": true,
+    "detail": "selected Marcus replied",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "union not override",
+    "pass": true,
+    "detail": "union=['Plum', 'Marcus']",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "addressed first",
+    "pass": true,
+    "detail": "order=['Plum', 'Marcus']",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "multi-select",
+    "pass": true,
+    "detail": "selected={'Tock-179578', 'Marcus'}",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "over-threshold only",
+    "pass": true,
+    "detail": "respondents filtered by confidence threshold",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 6,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "named addressee replies",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "selector-chosen replies",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "union not override",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "addressed first",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "multi-select",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "over-threshold only",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 6,
+  "allGreen": false
+ }
+}

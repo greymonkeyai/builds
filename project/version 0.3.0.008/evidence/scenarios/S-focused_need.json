@@ -1,0 +1,168 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "unmet need moved into focus",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "value supplied conversationally fills a slot",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "need remains until requirement met",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "unmet need moved into focus",
+    "pass": true,
+    "detail": "focused via floor action a-01b7e58da8a9",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "value supplied conversationally fills a slot",
+    "pass": true,
+    "detail": "fill landed as candidate",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "need remains until requirement met",
+    "pass": true,
+    "detail": "state=open",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "unmet need moved into focus",
+    "pass": true,
+    "detail": "focused via floor action a-9f32e31a58e2",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "value supplied conversationally fills a slot",
+    "pass": true,
+    "detail": "fill landed as candidate",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "need remains until requirement met",
+    "pass": true,
+    "detail": "state=open",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "unmet need moved into focus",
+    "pass": true,
+    "detail": "focused via floor action a-cd2c06d7b5b6",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "value supplied conversationally fills a slot",
+    "pass": true,
+    "detail": "fill landed as candidate",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "need remains until requirement met",
+    "pass": true,
+    "detail": "state=open",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "unmet need moved into focus",
+    "pass": false,
+    "detail": "no need",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "value supplied conversationally fills a slot",
+    "pass": false,
+    "detail": "no need",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "need remains until requirement met",
+    "pass": false,
+    "detail": "no need",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ }
+}

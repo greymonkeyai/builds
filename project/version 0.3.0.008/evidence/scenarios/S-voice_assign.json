@@ -1,0 +1,226 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "assignment reasons from available descriptions",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "in-use voices assessed",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "used voices disfavored",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "assigned voice stable across relaunch",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "changes only on user direction",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "discrimination-case",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "honest-absence",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 7,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "assignment reasons from available descriptions",
+    "pass": true,
+    "detail": "8 voice-assign rows carry reasons",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "in-use voices assessed",
+    "pass": true,
+    "detail": "usedAtAssign recorded",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "used voices disfavored",
+    "pass": true,
+    "detail": "in-use=['Microsoft Zira Desktop', 'Microsoft David Desktop', 'Microsoft David Desktop', 'Microsoft David Desktop', 'Microsoft David Desktop', 'Microsoft David Desktop', 'Microsoft David Desktop', 'Microsoft David Desktop'] pool=2",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "assigned voice stable across relaunch",
+    "pass": true,
+    "detail": "voice after relaunch stable=True",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "changes only on user direction",
+    "pass": true,
+    "detail": "voice persists unless user reassigns",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "new persona gets a different voice than siblings when variety is available",
+    "pass": true,
+    "detail": "distinct voices in use={'Microsoft David Desktop', 'Microsoft Zira Desktop'}",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "thin voice pool declared honestly",
+    "pass": true,
+    "detail": "thin pool declared honestly (pool=2)",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 7,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "assignment reasons from available descriptions",
+    "pass": false,
+    "detail": "0 voice-assign rows carry reasons",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "in-use voices assessed",
+    "pass": false,
+    "detail": "usedAtAssign recorded",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "used voices disfavored",
+    "pass": true,
+    "detail": "in-use=['Microsoft Zira Desktop', 'Microsoft David Desktop', 'Microsoft David Desktop', 'Microsoft David Desktop'] pool=2",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "assigned voice stable across relaunch",
+    "pass": true,
+    "detail": "voice after relaunch stable=True",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "changes only on user direction",
+    "pass": true,
+    "detail": "voice persists unless user reassigns",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "new persona gets a different voice than siblings when variety is available",
+    "pass": true,
+    "detail": "distinct voices in use={'Microsoft David Desktop', 'Microsoft Zira Desktop'}",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "thin voice pool declared honestly",
+    "pass": true,
+    "detail": "thin pool declared honestly (pool=2)",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 5,
+  "fail": 2,
+  "allGreen": false
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "harness-error",
+    "pass": false,
+    "detail": "AttributeError: 'NoneType' object has no attribute 'get'",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 1,
+  "allGreen": false
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "harness-error",
+    "pass": false,
+    "detail": "IndexError: list index out of range",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 1,
+  "allGreen": false
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "id": "S-focused-need",
+ "ran": true,
+ "checks": [
+  {
+   "name": "unmet need moved into focus",
+   "pass": true,
+   "detail": "need-4099a1bb05"
+  },
+  {
+   "name": "value supplied conversationally fills a slot",
+   "pass": true,
+   "detail": "{\"filled\": \"topic\"}"
+  },
+  {
+   "name": "need remains until requirement met",
+   "pass": true,
+   "detail": "still open after slot fill"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 3.1
+}

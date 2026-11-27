@@ -1,0 +1,24 @@
+{
+ "id": "S-exchange-import",
+ "ran": true,
+ "checks": [
+  {
+   "name": "package exported then imported",
+   "pass": true,
+   "detail": "C:\\builds\\project\\version 0.3.0.006\\runtime-suite\\artifacts\\package-x-1196acd652.json"
+  },
+  {
+   "name": "contents below action threshold",
+   "pass": true,
+   "detail": "{\"imported\": 7, \"belowThreshold\": true}"
+  },
+  {
+   "name": "foreign tools staged as candidates, not live",
+   "pass": true,
+   "detail": "5 candidates"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.0
+}

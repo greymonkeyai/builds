@@ -1,0 +1,28 @@
+{
+  "id": "S-background-present",
+  "ran": true,
+  "checks": [
+    {
+      "name": "steward pass recorded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "liveness data for first-screen chit",
+      "pass": true,
+      "detail": {
+        "lastPassAt": 1795608337503,
+        "ageS": 4.278,
+        "expectedWakeS": 8,
+        "escalation": "ok",
+        "passes": 2
+      }
+    },
+    {
+      "name": "persona presented while idle work continues",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true
+}

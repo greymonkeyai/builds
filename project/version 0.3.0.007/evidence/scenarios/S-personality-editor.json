@@ -1,0 +1,117 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:06",
+    "checks": [
+      {
+        "name": "editor path updates persona elements",
+        "pass": false,
+        "detail": "empty roster"
+      },
+      {
+        "name": "edits recorded as assertions",
+        "pass": false,
+        "detail": "empty roster"
+      },
+      {
+        "name": "V-F: edit discoverable from roster surface",
+        "pass": false,
+        "detail": "empty roster"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "editor path updates persona elements",
+        "pass": true,
+        "detail": "edited character mark"
+      },
+      {
+        "name": "edits recorded as assertions",
+        "pass": true,
+        "detail": "1 persona:edited rows"
+      },
+      {
+        "name": "V-F: edit discoverable from roster surface",
+        "pass": true,
+        "detail": "editor controls present on the served surface"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "editor path updates persona elements",
+        "pass": false,
+        "detail": "empty roster"
+      },
+      {
+        "name": "edits recorded as assertions",
+        "pass": false,
+        "detail": "empty roster"
+      },
+      {
+        "name": "V-F: edit discoverable from roster surface",
+        "pass": false,
+        "detail": "empty roster"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:03",
+    "checks": [
+      {
+        "name": "editor path updates persona elements",
+        "pass": true,
+        "detail": "edited character mark"
+      },
+      {
+        "name": "edits recorded as assertions",
+        "pass": true,
+        "detail": "1 persona:edited rows"
+      },
+      {
+        "name": "V-F: edit discoverable from roster surface",
+        "pass": true,
+        "detail": "editor controls present on the served surface"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "editor path updates persona elements",
+        "pass": false,
+        "detail": "empty roster"
+      },
+      {
+        "name": "edits recorded as assertions",
+        "pass": false,
+        "detail": "empty roster"
+      },
+      {
+        "name": "V-F: edit discoverable from roster surface",
+        "pass": false,
+        "detail": "empty roster"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  }
+}

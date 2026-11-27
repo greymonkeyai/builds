@@ -1,0 +1,14 @@
+{
+ "id": "S-windows-launch",
+ "ran": true,
+ "checks": [
+  {
+   "name": "launches on Windows like an installed program",
+   "pass": true,
+   "detail": "legs: 4"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.0
+}

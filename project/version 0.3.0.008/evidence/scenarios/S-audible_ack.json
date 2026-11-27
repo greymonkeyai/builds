@@ -1,0 +1,246 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "snippet pre-generated per persona",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "plays before composition starts",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "\u22640.5s / \u22645 syllables",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "register-suitable",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "honest-absence",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 5,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "snippet pre-generated per persona",
+    "pass": true,
+    "detail": "5 ack wavs on disk: ['ack-p-247731c75f.wav', 'ack-p-886fed0178.wav', 'ack-p-d6a0ca33c0.wav']",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "plays before composition starts",
+    "pass": true,
+    "detail": "ack enqueued before tts compose in speech path",
+    "src": [
+     "external:journal",
+     "external:file"
+    ]
+   },
+   {
+    "name": "\u22640.5s / \u22645 syllables",
+    "pass": true,
+    "detail": "durations=[0.31, 0.31, 0.31, 0.31, 0.31]",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "register-suitable",
+    "pass": true,
+    "detail": "registers={'dry-engineer', 'whimsical-storyteller', 'plain', 'direct-archivist', 'warm-domestic'}",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "absent snippet declared, not a silent gap",
+    "pass": true,
+    "detail": "missing snippets declared via ack-snippet row path:null",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 5,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "snippet pre-generated per persona",
+    "pass": true,
+    "detail": "1 ack wavs on disk: ['ack-p-e3347c1f5e.wav']",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "plays before composition starts",
+    "pass": true,
+    "detail": "ack enqueued before tts compose in speech path",
+    "src": [
+     "external:journal",
+     "external:file"
+    ]
+   },
+   {
+    "name": "\u22640.5s / \u22645 syllables",
+    "pass": true,
+    "detail": "durations=[0.31]",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "register-suitable",
+    "pass": true,
+    "detail": "registers={'plain'}",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "absent snippet declared, not a silent gap",
+    "pass": true,
+    "detail": "missing snippets declared via ack-snippet row path:null",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 5,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "snippet pre-generated per persona",
+    "pass": true,
+    "detail": "5 ack wavs on disk: ['ack-p-247731c75f.wav', 'ack-p-886fed0178.wav', 'ack-p-d6a0ca33c0.wav']",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "plays before composition starts",
+    "pass": true,
+    "detail": "ack enqueued before tts compose in speech path",
+    "src": [
+     "external:journal",
+     "external:file"
+    ]
+   },
+   {
+    "name": "\u22640.5s / \u22645 syllables",
+    "pass": true,
+    "detail": "durations=[0.31, 0.31, 0.31, 0.31, 0.31]",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "register-suitable",
+    "pass": true,
+    "detail": "registers={'warm-domestic', 'dry-engineer', 'plain', 'direct-archivist', 'whimsical-storyteller'}",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "absent snippet declared, not a silent gap",
+    "pass": true,
+    "detail": "missing snippets declared via ack-snippet row path:null",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 5,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "snippet pre-generated per persona",
+    "pass": true,
+    "detail": "4 ack wavs on disk: ['ack-p-247731c75f.wav', 'ack-p-886fed0178.wav', 'ack-p-d6a0ca33c0.wav']",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "plays before composition starts",
+    "pass": true,
+    "detail": "ack enqueued before tts compose in speech path",
+    "src": [
+     "external:journal",
+     "external:file"
+    ]
+   },
+   {
+    "name": "\u22640.5s / \u22645 syllables",
+    "pass": true,
+    "detail": "durations=[0.31, 0.31, 0.31, 0.31]",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "register-suitable",
+    "pass": true,
+    "detail": "registers={'whimsical-storyteller', 'warm-domestic', 'dry-engineer', 'direct-archivist'}",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "absent snippet declared, not a silent gap",
+    "pass": true,
+    "detail": "missing snippets declared via ack-snippet row path:null",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 5,
+  "fail": 0,
+  "allGreen": true
+ }
+}

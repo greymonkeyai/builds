@@ -1,0 +1,64 @@
+{
+  "id": "S-personality-create",
+  "ran": true,
+  "checks": [
+    {
+      "name": "persona minted from minimal input",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "portrait generated + bound",
+      "pass": true,
+      "detail": "llm-authored"
+    },
+    {
+      "name": "LLM art path (V-A bar — not procedural sprite)",
+      "pass": true,
+      "detail": "llm-authored"
+    },
+    {
+      "name": "voice assigned",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "characterization extended via later work",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "dyadic default 0.5 held-confidence (S-5)",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true,
+  "persona": {
+    "id": "persona-cd52830c9f30",
+    "name": "Solace Quill",
+    "register": "formal",
+    "traits": [
+      "curious",
+      "bookish"
+    ],
+    "created": 1795608324651,
+    "portrait": "",
+    "voice": "Microsoft Zira Desktop",
+    "characterization": "",
+    "imitation_mark": false,
+    "imitation_of": ""
+  },
+  "portrait": {
+    "path": "C:\\builds\\project\\version 0.3.0.005\\runtime-suite\\artifacts\\persona-art\\persona-cd52830c9f30.svg",
+    "generator": "llm-authored",
+    "note": "portrait authored by the local LLM for this persona",
+    "attempts": [
+      {
+        "attempt": 1,
+        "ok": true,
+        "chars": 1893
+      }
+    ]
+  }
+}

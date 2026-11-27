@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<title>Quorum 0.3.0.005</title>
+<link rel="stylesheet" href="/ui/styles.css">
+</head>
+<body>
+<header id="topbar">
+  <div class="brand">Quorum <span class="ver">0.3.0.005</span></div>
+  <nav id="tabs">
+    <button data-tab="chat" class="tab on">Chat</button>
+    <button data-tab="library" class="tab">Library</button>
+    <button data-tab="fleet" class="tab">Fleet</button>
+    <button data-tab="exchange" class="tab">Exchange</button>
+    <button data-tab="workshop" class="tab">Workshop</button>
+    <button data-tab="mail" class="tab">Mail</button>
+    <button data-tab="settings" class="tab">Settings</button>
+    <button data-tab="log" class="tab">Log</button>
+  </nav>
+  <div id="steward-chit" title="Steward liveness (decision-candidates §4)">steward …</div>
+  <button id="fullscreen" title="Full screen (C-FullScreen)">⛶</button>
+</header>
+
+<!-- Deferred/absent capabilities — LABELED as such (V-B: never confusable
+     with the feature list) -->
+<div id="absences" class="absences-bar"></div>
+
+<main id="main">
+
+  <!-- ===================== CHAT (first screen) ===================== -->
+  <section id="tab-chat" class="tabpage on">
+    <div class="cols">
+      <aside id="roster-rail" class="rail">
+        <h3>Roster</h3>
+        <div id="roster"></div>
+        <button id="new-persona">+ New personality</button>
+      </aside>
+      <div class="center">
+        <div id="stage" class="stage" title="Current discussion participants (C-PresenceStage)"></div>
+        <div id="context-bar" class="context-bar" title="Active conversational context (S-context-display)">
+          <span id="topic">topic: general</span>
+          <button id="reset-conv" title="Reset conversation (S-conversation-reset)">reset</button>
+        </div>
+        <div id="chatlog"></div>
+        <div id="composer">
+          <select id="quick-select" title="Quick-select respondent (C-QuickSelect)"></select>
+          <input id="chat-input" placeholder="Speak to the roster…" autofocus>
+          <button id="chat-send">Send</button>
+        </div>
+      </div>
+      <aside class="rail right">
+        <h3>Unmet needs</h3>
+        <div id="needs"></div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===================== LIBRARY ===================== -->
+  <section id="tab-library" class="tabpage">
+    <h2>Library — holdings</h2>
+    <div class="grid2">
+      <div><h3>Personalities</h3><div id="lib-personas"></div></div>
+      <div><h3>Tools</h3><div id="lib-tools"></div></div>
+      <div><h3>Tool candidates</h3><div id="lib-candidates"></div></div>
+      <div><h3>Workshops & packages</h3><div id="lib-workshops"></div></div>
+    </div>
+  </section>
+
+  <!-- ===================== FLEET ===================== -->
+  <section id="tab-fleet" class="tabpage">
+    <h2>Fleet — discovery & seed lifecycle</h2>
+    <div class="row">
+      <button id="fleet-scan">Run discovery</button>
+      <button id="fleet-mapbtn">Write network map</button>
+      <span id="fleet-status"></span>
+    </div>
+    <div class="grid2">
+      <div>
+        <h3>Discovered devices (broad + honest)</h3>
+        <div id="fleet-found"></div>
+        <h3>Roster coverage</h3>
+        <div id="fleet-roster"></div>
+      </div>
+      <div>
+        <h3>Invite → member (user-mediated)</h3>
+        <div id="fleet-invites"></div>
+        <h3>Members & roles</h3>
+        <div id="fleet-members"></div>
+        <h3>Seed courier log</h3>
+        <div id="seed-log"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXCHANGE ===================== -->
+  <section id="tab-exchange" class="tabpage">
+    <h2>Exchange — workshop artifacts</h2>
+    <div class="row">
+      <button id="art-import">Import exemplar artifact</button>
+      <button id="art-repub">Republish adopted workshop</button>
+      <button id="pkg-export">Export exchange package</button>
+      <button id="pkg-import">Import exchange package</button>
+    </div>
+    <div class="grid2">
+      <div><h3>Artifact</h3><div id="artifact-view"></div></div>
+      <div><h3>Workshops (below-threshold entries)</h3><div id="workshops"></div>
+        <h3>Tool candidates — evaluate & accept</h3><div id="candidates"></div></div>
+    </div>
+  </section>
+
+  <!-- ===================== WORKSHOP ===================== -->
+  <section id="tab-workshop" class="tabpage">
+    <h2>Workshop — defined tools</h2>
+    <p class="hint">Each function carries its explanation: name, purpose, and
+    what invoking it does (readable without corpus knowledge — V-C).</p>
+    <div id="workshop-tools"></div>
+  </section>
+
+  <!-- ===================== MAIL ===================== -->
+  <section id="tab-mail" class="tabpage">
+    <h2>Mail</h2>
+    <div id="mail-basis" class="fixture-banner"></div>
+    <div class="grid2">
+      <div><h3>Inbox</h3><div id="inbox"></div></div>
+      <div><h3>Commentary</h3><div id="mail-commentary"></div></div>
+    </div>
+  </section>
+
+  <!-- ===================== SETTINGS ===================== -->
+  <section id="tab-settings" class="tabpage">
+    <h2>Settings</h2>
+    <div class="grid2">
+      <div>
+        <h3>Theme</h3>
+        <div id="themes">
+          <button data-theme="light">Light</button>
+          <button data-theme="sepia">Sepia</button>
+          <button data-theme="dark">Dark</button>
+        </div>
+        <h3>Settings preloads</h3>
+        <div id="preloads"></div>
+      </div>
+      <div>
+        <h3>Credentials <span id="cred-role"></span></h3>
+        <div id="credentials"></div>
+        <h3>Personality editor</h3>
+        <div id="editor"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LOG ===================== -->
+  <section id="tab-log" class="tabpage">
+    <h2>Ledger tail</h2>
+    <pre id="log"></pre>
+  </section>
+</main>
+
+<footer id="statusbar"></footer>
+<script src="/ui/app.js"></script>
+</body>
+</html>

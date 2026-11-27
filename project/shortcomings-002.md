@@ -1,4 +1,5 @@
 # Shortcomings list — direction-002 (2026-11-20)
+<!-- harness-doc kind=shortcomings status=discharged applies-to=direction-002 mapped-into=direction-002 -->
 
 Compiled 2026-11-20 by the coordinator session. Working definition of "the
 shortcomings" for direction-002 — carries the findings the Cycle-1 review surfaced

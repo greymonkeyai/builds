@@ -1,4 +1,5 @@
 # Shortcomings list — SIGNED by owner 2026-11-19 (direction-001)
+<!-- harness-doc kind=shortcomings status=discharged applies-to=direction-001 mapped-into=direction-001 -->
 
 Compiled 2026-11-18 by the coordinator session. This is the working definition of
 "the shortcomings already documented" for direction-001 ("fulfill the prompt; rectify

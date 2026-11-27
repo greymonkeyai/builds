@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "primitive pipelines route input",
+      "pass": true
+    },
+    {
+      "check": "primary LLM handle live",
+      "pass": true,
+      "note": "live-ollama:moondream"
+    },
+    {
+      "check": "launch partition mounted",
+      "pass": true,
+      "rows": 18
+    },
+    {
+      "check": "ledger queryable",
+      "pass": true
+    },
+    {
+      "check": "journal durable",
+      "pass": true
+    }
+  ],
+  "bootedAt": 1795608124843,
+  "passedAt": 1795608126910,
+  "timeToGateMs": 2067
+}

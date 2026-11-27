@@ -1,0 +1,15 @@
+{
+ "mode": "sabotage:empty-store",
+ "ts": "2026-11-27T08:33:11",
+ "elapsed": 338.6,
+ "scenarios": 84,
+ "checks": 355,
+ "passed": 316,
+ "green": 316,
+ "evidenceClass": {
+  "externalToFlag": 0.476056338028169,
+  "rendered": 0.2563380281690141,
+  "userPath": 0.5971830985915493,
+  "selfAttestedOnly": 0.0
+ }
+}

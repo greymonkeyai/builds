@@ -1,0 +1,24 @@
+{
+ "id": "S-speech-latency",
+ "ran": true,
+ "checks": [
+  {
+   "name": "composition time measured per response",
+   "pass": true,
+   "detail": "42 latency rows"
+  },
+  {
+   "name": "recorded as metric",
+   "pass": true,
+   "detail": "2516"
+  },
+  {
+   "name": "reportable for host comparison",
+   "pass": true,
+   "detail": "host=node-desktop-oogq7un-n-f2c6 n=42"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 2.5
+}

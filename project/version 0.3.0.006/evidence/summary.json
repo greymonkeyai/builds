@@ -1,0 +1,9 @@
+{
+ "suite": "scenarios.md consolidated 2026-11-25",
+ "ran": 71,
+ "passed": 71,
+ "failed": [],
+ "seconds": 245.6,
+ "app": "chorus",
+ "port": 9790
+}

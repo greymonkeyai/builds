@@ -1,0 +1,162 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "every named-roster device reported",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "honest status per device",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "coverage is test data \u2014 non-targets recorded",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "every named-roster device reported",
+    "pass": true,
+    "detail": "14/14 named devices reported",
+    "src": [
+     "external:net"
+    ]
+   },
+   {
+    "name": "honest status per device",
+    "pass": true,
+    "detail": "statuses={'not-a-target', 'found', 'unavailable'}",
+    "src": [
+     "external:net"
+    ]
+   },
+   {
+    "name": "coverage is test data \u2014 non-targets recorded",
+    "pass": true,
+    "detail": "5 non-targets recorded",
+    "src": [
+     "external:net"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "every named-roster device reported",
+    "pass": true,
+    "detail": "14/14 named devices reported",
+    "src": [
+     "external:net"
+    ]
+   },
+   {
+    "name": "honest status per device",
+    "pass": true,
+    "detail": "statuses={'found', 'not-a-target', 'unavailable'}",
+    "src": [
+     "external:net"
+    ]
+   },
+   {
+    "name": "coverage is test data \u2014 non-targets recorded",
+    "pass": true,
+    "detail": "5 non-targets recorded",
+    "src": [
+     "external:net"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "every named-roster device reported",
+    "pass": true,
+    "detail": "14/14 named devices reported",
+    "src": [
+     "external:net"
+    ]
+   },
+   {
+    "name": "honest status per device",
+    "pass": true,
+    "detail": "statuses={'found', 'not-a-target', 'unavailable'}",
+    "src": [
+     "external:net"
+    ]
+   },
+   {
+    "name": "coverage is test data \u2014 non-targets recorded",
+    "pass": true,
+    "detail": "5 non-targets recorded",
+    "src": [
+     "external:net"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "every named-roster device reported",
+    "pass": false,
+    "detail": "0/14 named devices reported",
+    "src": [
+     "external:net"
+    ]
+   },
+   {
+    "name": "honest status per device",
+    "pass": false,
+    "detail": "statuses=set()",
+    "src": [
+     "external:net"
+    ]
+   },
+   {
+    "name": "coverage is test data \u2014 non-targets recorded",
+    "pass": false,
+    "detail": "0 non-targets recorded",
+    "src": [
+     "external:net"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ }
+}

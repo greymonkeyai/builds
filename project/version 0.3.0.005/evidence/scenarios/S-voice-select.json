@@ -1,0 +1,20 @@
+{
+  "id": "S-voice-select",
+  "ran": true,
+  "checks": [
+    {
+      "name": "voice choices list offered",
+      "pass": true,
+      "detail": [
+        "Microsoft David Desktop",
+        "Microsoft Zira Desktop"
+      ]
+    },
+    {
+      "name": "user assigns a persona's voice from the list",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true
+}

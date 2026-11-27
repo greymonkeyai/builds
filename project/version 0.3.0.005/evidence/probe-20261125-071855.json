@@ -1,0 +1,15 @@
+{
+  "port": 9790,
+  "answers": true,
+  "app": "quorum-0.3.0.005",
+  "honest": null,
+  "ledger_rows": 197,
+  "llm": "live-ollama:llama3.2",
+  "steward": {
+    "lastPassAt": 1795609131444,
+    "ageS": 4.406,
+    "expectedWakeS": 8,
+    "escalation": "ok",
+    "passes": 1
+  }
+}

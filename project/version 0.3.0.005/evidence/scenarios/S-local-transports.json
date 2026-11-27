@@ -1,0 +1,25 @@
+{
+  "id": "S-local-transports",
+  "ran": true,
+  "checks": [
+    {
+      "name": "wired LAN baseline exercised",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "≥1 additional local transport (BT/NFC/SoftAP)",
+      "pass": true,
+      "detail": [
+        "bt",
+        "wired-lan"
+      ]
+    },
+    {
+      "name": "wired preferred ordering honored",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true
+}

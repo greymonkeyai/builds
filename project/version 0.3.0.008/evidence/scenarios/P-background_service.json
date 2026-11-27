@@ -1,0 +1,350 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "P-background-service step: needs.template",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: needs.focus",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: tools.composition",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: tools.registry",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: stage.background",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: stage.ack",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: stage.present",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 7,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "P-background-service step: needs.template",
+    "pass": true,
+    "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: needs.focus",
+    "pass": true,
+    "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: tools.composition",
+    "pass": true,
+    "detail": "affordance=tools rendered=True api=/api/tools code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: tools.registry",
+    "pass": true,
+    "detail": "affordance=tools rendered=True api=/api/tools code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: stage.background",
+    "pass": true,
+    "detail": "affordance=stage rendered=True api=/api/stage code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: stage.ack",
+    "pass": true,
+    "detail": "affordance=stage rendered=True api=/api/metrics code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: stage.present",
+    "pass": true,
+    "detail": "affordance=stage rendered=True api=/api/stage code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 7,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "P-background-service step: needs.template",
+    "pass": true,
+    "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: needs.focus",
+    "pass": true,
+    "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: tools.composition",
+    "pass": true,
+    "detail": "affordance=tools rendered=True api=/api/tools code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: tools.registry",
+    "pass": true,
+    "detail": "affordance=tools rendered=True api=/api/tools code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: stage.background",
+    "pass": true,
+    "detail": "affordance=stage rendered=True api=/api/stage code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: stage.ack",
+    "pass": true,
+    "detail": "affordance=stage rendered=True api=/api/metrics code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: stage.present",
+    "pass": true,
+    "detail": "affordance=stage rendered=True api=/api/stage code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 7,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "P-background-service step: needs.template",
+    "pass": true,
+    "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: needs.focus",
+    "pass": true,
+    "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: tools.composition",
+    "pass": true,
+    "detail": "affordance=tools rendered=True api=/api/tools code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: tools.registry",
+    "pass": true,
+    "detail": "affordance=tools rendered=True api=/api/tools code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: stage.background",
+    "pass": true,
+    "detail": "affordance=stage rendered=True api=/api/stage code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: stage.ack",
+    "pass": true,
+    "detail": "affordance=stage rendered=True api=/api/metrics code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: stage.present",
+    "pass": true,
+    "detail": "affordance=stage rendered=True api=/api/stage code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 7,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "P-background-service step: needs.template",
+    "pass": false,
+    "detail": "affordance=needs-floor rendered=False api=/api/needs code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: needs.focus",
+    "pass": false,
+    "detail": "affordance=needs-floor rendered=False api=/api/needs code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: tools.composition",
+    "pass": false,
+    "detail": "affordance=tools rendered=False api=/api/tools code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: tools.registry",
+    "pass": false,
+    "detail": "affordance=tools rendered=False api=/api/tools code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: stage.background",
+    "pass": false,
+    "detail": "affordance=stage rendered=False api=/api/stage code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: stage.ack",
+    "pass": false,
+    "detail": "affordance=stage rendered=False api=/api/metrics code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-background-service step: stage.present",
+    "pass": false,
+    "detail": "affordance=stage rendered=False api=/api/stage code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 7,
+  "allGreen": false
+ }
+}

@@ -1,0 +1,117 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:07",
+    "checks": [
+      {
+        "name": "artifact claims held below trust ceiling",
+        "pass": false,
+        "detail": "0 imported rows \u22640.25 certainty"
+      },
+      {
+        "name": "encoded references resolved against vetted pointers",
+        "pass": false,
+        "detail": "0 vetted-pointer rows; resolved=None"
+      },
+      {
+        "name": "non-matching claims recorded for review",
+        "pass": false,
+        "detail": "0 claim:review rows"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "artifact claims held below trust ceiling",
+        "pass": true,
+        "detail": "8 imported rows \u22640.25 certainty"
+      },
+      {
+        "name": "encoded references resolved against vetted pointers",
+        "pass": true,
+        "detail": "1 vetted-pointer rows; resolved=[]"
+      },
+      {
+        "name": "non-matching claims recorded for review",
+        "pass": true,
+        "detail": "0 claim:review rows"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "artifact claims held below trust ceiling",
+        "pass": false,
+        "detail": "0 imported rows \u22640.25 certainty"
+      },
+      {
+        "name": "encoded references resolved against vetted pointers",
+        "pass": true,
+        "detail": "0 vetted-pointer rows; resolved=[]"
+      },
+      {
+        "name": "non-matching claims recorded for review",
+        "pass": true,
+        "detail": "0 claim:review rows"
+      }
+    ],
+    "pass": 2,
+    "fail": 1,
+    "allGreen": false
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:03",
+    "checks": [
+      {
+        "name": "artifact claims held below trust ceiling",
+        "pass": true,
+        "detail": "8 imported rows \u22640.25 certainty"
+      },
+      {
+        "name": "encoded references resolved against vetted pointers",
+        "pass": true,
+        "detail": "1 vetted-pointer rows; resolved=[]"
+      },
+      {
+        "name": "non-matching claims recorded for review",
+        "pass": true,
+        "detail": "0 claim:review rows"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "artifact claims held below trust ceiling",
+        "pass": false,
+        "detail": "0 imported rows \u22640.25 certainty"
+      },
+      {
+        "name": "encoded references resolved against vetted pointers",
+        "pass": false,
+        "detail": "0 vetted-pointer rows; resolved=None"
+      },
+      {
+        "name": "non-matching claims recorded for review",
+        "pass": false,
+        "detail": "0 claim:review rows"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  }
+}

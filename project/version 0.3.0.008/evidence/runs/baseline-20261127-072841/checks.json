@@ -1,0 +1,3054 @@
+{
+ "S-assertion_input": [
+  {
+   "name": "typed input recorded as assertion",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "source-aware claimant",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "typed value",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "basis = captured-input",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-asset_anticipation": [
+  {
+   "name": "persona creation opens asset need(s)",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "background fulfillment produces asset",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "asset bound to persona",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "need closes on fulfillment",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "persistence",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-background_present": [
+  {
+   "name": "steward pass recorded",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "liveness data for first-screen chit",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "persona presented while idle work continues",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-candidate_ranking": [
+  {
+   "name": "candidates retained w/ source+confidence",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "supersession rows retained",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "invocation produced result",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "discrimination-case",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-competing_tools": [
+  {
+   "name": "two competing tools ran the same need",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "both legs produced interpretable results",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "results comparable (member counts)",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "comparison recorded",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-focused_need": [
+  {
+   "name": "unmet need moved into focus",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "value supplied conversationally fills a slot",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "need remains until requirement met",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-intent_routing": [
+  {
+   "name": "name-addressed \u2192 addressee",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "capability \u2192 answered",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "want \u2260 list",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "list \u2192 list machinery",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "genuine unmet \u2192 floor",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "no stray rows",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-list_project": [
+  {
+   "name": "list need created from chat",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "chat path enactment",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "iterable object",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "retrieval produced members",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "non-matches recorded for review (D4)",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "criteria preserved in need rows",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-need_fulfillment": [
+  {
+   "name": "met marked",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "met leaves floor",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "answered = closed",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "unmet visible",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-need_queue_completion": [
+  {
+   "name": "unmet request visible w/ bound template",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "required slots show candidates w/ confidence",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "all-above-threshold \u2192 steward executes without user act",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "below-threshold stays queued \u2014 no silent execute",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "user selects under-threshold template",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "candidate fix supersedes",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "force-execute honored + recorded",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "intentional choice = threshold-crossing act",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "need closes + leaves floor",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "legible-outcome",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-restart_recovery": [
+  {
+   "name": "state recovered after restart",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "provenance retained (superseded rows kept)",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "cleanup consolidates without losing records",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-steward_liveness": [
+  {
+   "name": "monotonic passes",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "real age",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "no reset",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-template_need": [
+  {
+   "name": "need row created from chat input",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "template-governed (slots+criteria)",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "opens unfulfilled",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "terminal-state",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-tool_composition": [
+  {
+   "name": "need met by composed minimal tools",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "composition recorded as ledger object",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "AI-composed + direct-edit paths both offered",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "decomposes back to components",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "discrimination-case",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-audible_ack": [
+  {
+   "name": "snippet pre-generated per persona",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "plays before composition starts",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "\u22640.5s / \u22645 syllables",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "register-suitable",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "honest-absence",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-chat_invocation": [
+  {
+   "name": "conversational reply returned",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "tool need(s) opened, distinguishable",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "input captured as assertion",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "needs route",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-context_display": [
+  {
+   "name": "active context displayed",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-conversation_reset": [
+  {
+   "name": "reset clears conversation",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "topic cleared",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-conversational_register": [
+  {
+   "name": "sentences",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "no textbook",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "no verbatim markup",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "register unbroken",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-distinct_preloadeds": [
+  {
+   "name": "\u22653 shipped personas w/ distinct registers",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "same prompt \u2192 noticeably different replies",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-dyadic_ranking": [
+  {
+   "name": "every move visible",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "interior moves",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "surface shows it",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-email_commentary": [
+  {
+   "name": "email list from configured source basis",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "V-G: fixture basis honestly labeled",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "persona commentary produced",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "commentary recorded",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "configured source exercised",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-faithful_voice": [
+  {
+   "name": "grounded reply flagged grounded",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "zero-hit does NOT pass grounding (S-2)",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "no unflagged fidelity:null",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-interest_respondents": [
+  {
+   "name": "interest match responds",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "different keys",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "same key gated",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "awareness carried",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-personality_create": [
+  {
+   "name": "persona minted from minimal input",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "portrait generated + bound",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "LLM art path (V-A)",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "voice assigned",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "characterization extended",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "dyadic default 0.5",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-personality_editor": [
+  {
+   "name": "editor path updates persona elements",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "edits recorded as assertions",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "V-F: edit discoverable from roster surface",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-personality_roster": [
+  {
+   "name": "roster operable",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "selection works",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "reorder changes order",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "V-D: reorder visibly changes held-confidence",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "every move moves",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-personality_source_match": [
+  {
+   "name": "domain-matched source suggested at creation",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "accept binds source to persona",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "decline leaves persona source-free",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "discrimination-case",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-portrait_bind": [
+  {
+   "name": "portrait file produced",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "art bound to this persona",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "generative path declared",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "auto-bound shipped",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "auto-bound minted",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "fallback legible",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-respondent_union": [
+  {
+   "name": "named addressee replies",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "selector-chosen replies",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "union not override",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "addressed first",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "multi-select",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "over-threshold only",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-response_depth": [
+  {
+   "name": "depth setting exists",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "user assertion",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "persists",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "chat all",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "priority exempt",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "depth fills",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-speech_completion": [
+  {
+   "name": "sentence boundary",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "sequential utterances",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "or declared excerpt",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "no silent cut",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-speech_latency": [
+  {
+   "name": "composition time measured per response",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "recorded as metric",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "reportable for host comparison",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "seconds units",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-speech_serialization": [
+  {
+   "name": "speech serialized through the floor",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "playback measured not assumed",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "held until playback complete",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-voice_assign": [
+  {
+   "name": "assignment reasons from available descriptions",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "in-use voices assessed",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "used voices disfavored",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "assigned voice stable across relaunch",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "changes only on user direction",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "discrimination-case",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "honest-absence",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-voice_select": [
+  {
+   "name": "voice choices list offered",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "user assigns a persona's voice from the list",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-voice_spec": [
+  {
+   "name": "spec is QR-fittable (minimal payload)",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "ranked families and/or traits carried",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "local engine mapping renders nearest voice",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-account_configure": [
+  {
+   "name": "credential path exists",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "descriptor row",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "secret hygiene",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "real read",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "unconfigured honest",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-close_terminate": [
+  {
+   "name": "close-terminates (launch-check leg 4)",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-color_schemes": [
+  {
+   "name": "\u22653 colorways implemented incl. dark",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "theme selector drives settings claims",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "fresh launch opens light (seeded)",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-defer_publication": [
+  {
+   "name": "unconfigured nonlocal effect refused/deferred",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "request + status recorded as assertions",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "production half",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-library_browse": [
+  {
+   "name": "personas browsable",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "tools browsable w/ explanations",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "holdings structured, not a raw log",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-publish_workflow": [
+  {
+   "name": "select + form",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "produced + recorded",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "or deferred",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "no silent absence",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-scancode_interchange": [
+  {
+   "name": "generate",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "carry",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "decode",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "import",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-source_admission_gate": [
+  {
+   "name": "admission gate screens new sources",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "free + no-login verified per row",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "opt-out posture checked",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "verification recorded as assertion",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "failing rows quarantined w/ basis",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "a login-gated or opted-out source is refused, not admitted",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-source_seed_import": [
+  {
+   "name": "seed imports as configured-source rows",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "50 entries incl. simpsons, wookieepedia, memory-alpha",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "each row carries kind, endpoint, domains, descriptor, ceiling",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "all rows free-tier + no-login",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "seeded sources browsable",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "unreachable source declared, not silent",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-status_bar": [
+  {
+   "name": "sources surfaced",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "LLM status surfaced",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "engine modes declared honestly",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-windows_launch": [
+  {
+   "name": "launches on Windows like an installed program",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-background_channels": [
+  {
+   "name": "sample tracks present",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "prompt reference creates channel",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "channel persists under conversation",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "honest when audio engine absent",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-interstitial_queue": [
+  {
+   "name": "asset needs queued fleet-addressable",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "collected before presentation",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "input change triggers rework",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "presents when ready",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "trigger honestly bounded",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "unready presentation deferred + declared",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-scene_enactment": [
+  {
+   "name": "short public-domain scene enacted",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "\u22652 personas enact parts",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "available tool classes exercised",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "knock-knock joke enactable",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "music only if LLM music present \u2014 absent classes honestly skipped",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-credential_surrender": [
+  {
+   "name": "surrender recorded as a claim",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "host holds the credential screen (\u00a75)",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "secrets stay host-local \u2014 needs travel, secrets never do",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-discovery_progress": [
+  {
+   "name": "in-progress shown",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "transport progress",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "finished shown",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-fleet_action_legible": [
+  {
+   "name": "invite legible",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "join legible",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "install legible",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "map legible",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-fleet_exchange": [
+  {
+   "name": "second real node",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "delta exchange",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "rejoin correlation",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "courier sync",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "both sides evidenced",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-fleet_identify": [
+  {
+   "name": "identify action on a discovery result",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "signal-the-device response per capabilities",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "richer identifying info resolved",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "verdict grounded in real evidence",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-fleet_install_path": [
+  {
+   "name": "no dead end",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "target surface OR directions",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "honest outcome",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "pending stated",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "install driven to verdict (R-F4)",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "verdict on an installable roster device (R-F4)",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-fleet_invite": [
+  {
+   "name": "discovery lists candidates",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "user selects which join",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "non-invited devices are NOT members",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "continues to path",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "legible outcome",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-fleet_roster": [
+  {
+   "name": "every named-roster device reported",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "honest status per device",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "coverage is test data \u2014 non-targets recorded",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-local_transports": [
+  {
+   "name": "wired LAN baseline exercised",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "\u22651 additional local transport (BT/NFC/SoftAP)",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "wired preferred ordering honored",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-network_map": [
+  {
+   "name": "map artifact produced",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "covers non-member devices alongside members",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "member/non-member distinction on the map",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-role_negotiate": [
+  {
+   "name": "role negotiation recorded",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "mint rights are a negotiated grant",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "join outcome honest (member vs pending)",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-usb_log_courier": [
+  {
+   "name": "courier log accumulates across runs",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "machine-readable per-node evidence",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "stale-seed revisit handling recorded",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-usb_mint_gen2": [
+  {
+   "name": "gen-2 installer written to media",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "carries founding network identity as adoptable offer",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "join-or-found is the user's choice",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-usb_seed_run": [
+  {
+   "name": "app launched executing from removable media",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "runs in place \u2014 no install required",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "local network log written ON the medium",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-usb_stage_consent": [
+  {
+   "name": "decline \u2192 no local write, app stays on media",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "consent \u2192 stages to C:\\builds-installed",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-artifact_import": [
+  {
+   "name": "capture \u2192 workshop entry created",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "below action/acceptance threshold",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "entry accessible in the app",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-artifact_republish": [
+  {
+   "name": "adopted workshop re-encoded to new artifact",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "gen-2 payload decodes identically",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "gen-2 decoded in a second instance (R-V1/jev)",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-artifact_style": [
+  {
+   "name": "stylistic extraction layer present",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "art style captured as LLM reference",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "carried on the workshop entry",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-dubious_source": [
+  {
+   "name": "artifact claims held below trust ceiling",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "encoded references resolved against vetted pointers",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "non-matching claims recorded for review",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-exchange_import": [
+  {
+   "name": "package exported then imported",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "contents below action threshold",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "foreign tools staged as candidates, not live",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-preload_cache": [
+  {
+   "name": "vetted-source pointers seeded",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "device decoder entries present",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "marketing exemplar present + decodable",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "S-tool_transmission": [
+  {
+   "name": "literal decode fidelity (C-ToolWireFidelity)",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "imported tool quarantined as candidate",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  },
+  {
+   "name": "not invocable before acceptance",
+   "pass": false,
+   "detail": "operator surface absent",
+   "src": [
+    "user-path"
+   ]
+  }
+ ],
+ "P-artifact_exchange": [
+  {
+   "name": "P-artifact-exchange step: exchange.import",
+   "pass": false,
+   "detail": "affordance=workshops rendered=False api=/api/workshops code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-artifact-exchange step: exchange.style",
+   "pass": false,
+   "detail": "affordance=style-picker rendered=False api=/api/settings code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-artifact-exchange step: exchange.republish",
+   "pass": false,
+   "detail": "affordance=workshops rendered=False api=/api/workshops code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-artifact-exchange step: exchange.transmission",
+   "pass": false,
+   "detail": "affordance=tools rendered=False api=/api/tools code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-artifact-exchange step: exchange.cache",
+   "pass": true,
+   "detail": "affordance=preloads rendered=False api=/api/preloads code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-artifact-exchange step: exchange.scancode",
+   "pass": false,
+   "detail": "affordance=workshops rendered=False api=/api/workshops code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  }
+ ],
+ "P-background_service": [
+  {
+   "name": "P-background-service step: needs.template",
+   "pass": false,
+   "detail": "affordance=needs-floor rendered=False api=/api/needs code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-background-service step: needs.focus",
+   "pass": false,
+   "detail": "affordance=needs-floor rendered=False api=/api/needs code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-background-service step: tools.composition",
+   "pass": false,
+   "detail": "affordance=tools rendered=False api=/api/tools code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-background-service step: tools.registry",
+   "pass": false,
+   "detail": "affordance=tools rendered=False api=/api/tools code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-background-service step: stage.background",
+   "pass": true,
+   "detail": "affordance=stage rendered=True api=/api/stage code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-background-service step: stage.ack",
+   "pass": true,
+   "detail": "affordance=stage rendered=True api=/api/metrics code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-background-service step: stage.present",
+   "pass": true,
+   "detail": "affordance=stage rendered=True api=/api/stage code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  }
+ ],
+ "P-first_run": [
+  {
+   "name": "P-first-run step: shell.launch",
+   "pass": true,
+   "detail": "affordance=chat rendered=False api=/api/health code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-first-run step: shell.gate",
+   "pass": true,
+   "detail": "affordance=status-bar rendered=False api=/api/gate code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-first-run step: projects.list",
+   "pass": false,
+   "detail": "affordance=lists rendered=False api=/api/lists code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-first-run step: personas.roster",
+   "pass": false,
+   "detail": "affordance=persona-roster rendered=False api=/api/personas code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-first-run step: conversation.chat",
+   "pass": false,
+   "detail": "affordance=chat rendered=False api=/api/conversation code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-first-run step: conversation.speech",
+   "pass": true,
+   "detail": "affordance=chat rendered=False api=/api/metrics code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-first-run step: conversation.depth",
+   "pass": false,
+   "detail": "affordance=response-depth rendered=False api=/api/settings code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-first-run step: ledger.input",
+   "pass": true,
+   "detail": "affordance=chat rendered=False api=/api/ledger code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-first-run step: needs.floor",
+   "pass": false,
+   "detail": "affordance=needs-floor rendered=False api=/api/needs code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  }
+ ],
+ "P-fleet_adopt": [
+  {
+   "name": "P-fleet-adopt step: fleet.discovery",
+   "pass": false,
+   "detail": "affordance=fleet rendered=False api=/api/fleet/discovery code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-fleet-adopt step: fleet.identify",
+   "pass": true,
+   "detail": "affordance=fleet rendered=False api=/api/fleet code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-fleet-adopt step: fleet.invite",
+   "pass": true,
+   "detail": "affordance=fleet rendered=False api=/api/fleet code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-fleet-adopt step: fleet.install",
+   "pass": true,
+   "detail": "affordance=fleet rendered=False api=/api/fleet code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-fleet-adopt step: fleet.roster",
+   "pass": true,
+   "detail": "affordance=fleet rendered=False api=/api/fleet code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-fleet-adopt step: fleet.map",
+   "pass": false,
+   "detail": "affordance=map rendered=False api=/api/fleet/map code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  }
+ ],
+ "P-fleet_media": [
+  {
+   "name": "P-fleet-media step: exchange.style",
+   "pass": false,
+   "detail": "affordance=style-picker rendered=False api=/api/settings code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-fleet-media step: exchange.publish",
+   "pass": false,
+   "detail": "affordance=workshops rendered=False api=/api/workshops code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-fleet-media step: fleet.exchange",
+   "pass": true,
+   "detail": "affordance=fleet rendered=False api=/api/fleet code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-fleet-media step: fleet.negotiate",
+   "pass": true,
+   "detail": "affordance=fleet rendered=False api=/api/fleet code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-fleet-media step: fleet.transports",
+   "pass": true,
+   "detail": "affordance=fleet rendered=False api=/api/fleet code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-fleet-media step: fleet.surrender",
+   "pass": false,
+   "detail": "affordance=settings rendered=False api=/api/accounts code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  }
+ ],
+ "P-need_queue": [
+  {
+   "name": "P-need-queue step: needs.floor",
+   "pass": false,
+   "detail": "affordance=needs-floor rendered=False api=/api/needs code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-need-queue step: needs.template",
+   "pass": false,
+   "detail": "affordance=needs-floor rendered=False api=/api/needs code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-need-queue step: needs.candidates",
+   "pass": false,
+   "detail": "affordance=needs-floor rendered=False api=/api/needs code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-need-queue step: needs.execute",
+   "pass": false,
+   "detail": "affordance=needs-floor rendered=False api=/api/needs code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-need-queue step: needs.floor",
+   "pass": false,
+   "detail": "affordance=needs-floor rendered=False api=/api/needs code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  }
+ ],
+ "P-personality_forge": [
+  {
+   "name": "P-personality-forge step: personas.create",
+   "pass": false,
+   "detail": "affordance=persona-create rendered=False api=/api/personas code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-personality-forge step: personas.editor",
+   "pass": false,
+   "detail": "affordance=persona-editor rendered=False api=/api/personas code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-personality-forge step: personas.portrait",
+   "pass": false,
+   "detail": "affordance=persona-roster rendered=False api=/api/personas code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-personality-forge step: personas.reorder",
+   "pass": false,
+   "detail": "affordance=roster-up rendered=False api=/api/personas code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-personality-forge step: personas.source-match",
+   "pass": false,
+   "detail": "affordance=persona-create rendered=False api=/api/personas code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-personality-forge step: personas.voices",
+   "pass": false,
+   "detail": "affordance=voice-select rendered=False api=/api/personas code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-personality-forge step: personas.selector",
+   "pass": false,
+   "detail": "affordance=persona-roster rendered=False api=/api/personas code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-personality-forge step: conversation.chat",
+   "pass": false,
+   "detail": "affordance=chat rendered=False api=/api/conversation code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  }
+ ],
+ "P-session_resume": [
+  {
+   "name": "P-session-resume step: shell.launch",
+   "pass": true,
+   "detail": "affordance=chat rendered=False api=/api/health code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-session-resume step: ledger.recovery",
+   "pass": true,
+   "detail": "affordance=chat rendered=False api=/api/ledger code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-session-resume step: ledger.candidates",
+   "pass": true,
+   "detail": "affordance=needs-floor rendered=False api=/api/ledger code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-session-resume step: shell.status",
+   "pass": true,
+   "detail": "affordance=status-bar rendered=False api=/api/state code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-session-resume step: conversation.context",
+   "pass": false,
+   "detail": "affordance=context-display rendered=False api=/api/conversation code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-session-resume step: conversation.reset",
+   "pass": false,
+   "detail": "affordance=chat-reset rendered=False api=/api/conversation code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-session-resume step: shell.library",
+   "pass": true,
+   "detail": "affordance=library rendered=True api=/api/library code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-session-resume step: shell.close",
+   "pass": true,
+   "detail": "affordance=chat rendered=False api=/api/health code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  }
+ ],
+ "P-source_to_voice": [
+  {
+   "name": "P-source-to-voice step: sources.seed",
+   "pass": true,
+   "detail": "affordance=sources rendered=True api=/api/sources code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-source-to-voice step: sources.gate",
+   "pass": true,
+   "detail": "affordance=sources rendered=True api=/api/sources/admissions code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-source-to-voice step: personas.source-match",
+   "pass": false,
+   "detail": "affordance=persona-create rendered=False api=/api/personas code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-source-to-voice step: conversation.chat",
+   "pass": false,
+   "detail": "affordance=chat rendered=False api=/api/conversation code=404",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-source-to-voice step: stage.commentary",
+   "pass": true,
+   "detail": "affordance=stage rendered=True api=/api/stage code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  }
+ ],
+ "P-stage_scene": [
+  {
+   "name": "P-stage-scene step: stage.queue",
+   "pass": true,
+   "detail": "affordance=stage rendered=True api=/api/stage code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-stage-scene step: stage.scene",
+   "pass": true,
+   "detail": "affordance=stage rendered=True api=/api/stage code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-stage-scene step: stage.channels",
+   "pass": true,
+   "detail": "affordance=stage rendered=True api=/api/stage code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  }
+ ],
+ "P-usb_seed": [
+  {
+   "name": "P-usb-seed step: fleet.seed",
+   "pass": true,
+   "detail": "affordance=fleet rendered=False api=/api/fleet code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-usb-seed step: shell.consent",
+   "pass": true,
+   "detail": "affordance=fleet rendered=False api=/api/fleet code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-usb-seed step: fleet.install",
+   "pass": true,
+   "detail": "affordance=fleet rendered=False api=/api/fleet code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-usb-seed step: fleet.courier",
+   "pass": true,
+   "detail": "affordance=fleet rendered=False api=/api/fleet code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  },
+  {
+   "name": "P-usb-seed step: fleet.roster",
+   "pass": true,
+   "detail": "affordance=fleet rendered=False api=/api/fleet code=200",
+   "src": [
+    "rendered",
+    "user-path"
+   ]
+  }
+ ]
+}

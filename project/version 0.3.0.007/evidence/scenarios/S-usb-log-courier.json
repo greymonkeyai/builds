@@ -1,0 +1,117 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:07",
+    "checks": [
+      {
+        "name": "courier log accumulates across runs",
+        "pass": false,
+        "detail": "62 \u2192 62 log entries on media, 0 ledger rows"
+      },
+      {
+        "name": "machine-readable per-node evidence",
+        "pass": false,
+        "detail": "nodes=[]"
+      },
+      {
+        "name": "stale-seed revisit handling recorded",
+        "pass": false,
+        "detail": "0 revisit rows"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "courier log accumulates across runs",
+        "pass": true,
+        "detail": "67 \u2192 71 log entries on media, 12 ledger rows"
+      },
+      {
+        "name": "machine-readable per-node evidence",
+        "pass": true,
+        "detail": "nodes=['node-desktop-oogq7un-n-f684', 'node-desktop-oogq7un-n-f684', 'node-desktop-oogq7un-n-f684', 'node-desktop-oogq7un-n-f684']"
+      },
+      {
+        "name": "stale-seed revisit handling recorded",
+        "pass": true,
+        "detail": "3 revisit rows"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "courier log accumulates across runs",
+        "pass": false,
+        "detail": "44 log entries on media, 0 ledger rows"
+      },
+      {
+        "name": "machine-readable per-node evidence",
+        "pass": false,
+        "detail": "nodes=['node-desktop-oogq7un-n-f580', 'node-desktop-oogq7un-n-f580', 'node-desktop-oogq7un-n-f580', 'node-desktop-oogq7un-n-f580', 'node-desktop-oogq7un-n-f580']"
+      },
+      {
+        "name": "stale-seed revisit handling recorded",
+        "pass": true,
+        "detail": "0 revisit rows"
+      }
+    ],
+    "pass": 1,
+    "fail": 2,
+    "allGreen": false
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:03",
+    "checks": [
+      {
+        "name": "courier log accumulates across runs",
+        "pass": true,
+        "detail": "53 log entries on media, 12 ledger rows"
+      },
+      {
+        "name": "machine-readable per-node evidence",
+        "pass": true,
+        "detail": "nodes=['node-desktop-oogq7un-n-f580', 'node-desktop-oogq7un-n-f580', 'node-desktop-oogq7un-n-f580', 'node-desktop-oogq7un-n-f580', 'node-desktop-oogq7un-n-f580']"
+      },
+      {
+        "name": "stale-seed revisit handling recorded",
+        "pass": true,
+        "detail": "3 revisit rows"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "courier log accumulates across runs",
+        "pass": false,
+        "detail": "53 log entries on media, 0 ledger rows"
+      },
+      {
+        "name": "machine-readable per-node evidence",
+        "pass": false,
+        "detail": "nodes=['node-desktop-oogq7un-n-f580', 'node-desktop-oogq7un-n-f580', 'node-desktop-oogq7un-n-f580', 'node-desktop-oogq7un-n-f580', 'node-desktop-oogq7un-n-f580']"
+      },
+      {
+        "name": "stale-seed revisit handling recorded",
+        "pass": true,
+        "detail": "0 revisit rows"
+      }
+    ],
+    "pass": 1,
+    "fail": 2,
+    "allGreen": false
+  }
+}

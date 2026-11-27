@@ -1,0 +1,202 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "two competing tools ran the same need",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "both legs produced interpretable results",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "results comparable (member counts)",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "comparison recorded",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 4,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "two competing tools ran the same need",
+    "pass": true,
+    "detail": "tools=['list.general', 'list.specialized']",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "both legs produced interpretable results",
+    "pass": true,
+    "detail": "2 tool-result rows",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "results comparable (member counts)",
+    "pass": true,
+    "detail": "member counts=[55, 55, 55]",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "comparison recorded",
+    "pass": true,
+    "detail": "1 tool-comparison rows",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "two competing tools ran the same need",
+    "pass": true,
+    "detail": "tools=['list.general', 'list.specialized']",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "both legs produced interpretable results",
+    "pass": true,
+    "detail": "2 tool-result rows",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "results comparable (member counts)",
+    "pass": true,
+    "detail": "member counts=[55, 55, 55]",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "comparison recorded",
+    "pass": true,
+    "detail": "1 tool-comparison rows",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "two competing tools ran the same need",
+    "pass": true,
+    "detail": "tools=['list.general', 'list.specialized']",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "both legs produced interpretable results",
+    "pass": true,
+    "detail": "2 tool-result rows",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "results comparable (member counts)",
+    "pass": true,
+    "detail": "member counts=[55, 55]",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "comparison recorded",
+    "pass": true,
+    "detail": "1 tool-comparison rows",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "two competing tools ran the same need",
+    "pass": false,
+    "detail": "no list need",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "both legs produced interpretable results",
+    "pass": false,
+    "detail": "no list need",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "results comparable (member counts)",
+    "pass": false,
+    "detail": "no list need",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "comparison recorded",
+    "pass": false,
+    "detail": "no list need",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 4,
+  "allGreen": false
+ }
+}

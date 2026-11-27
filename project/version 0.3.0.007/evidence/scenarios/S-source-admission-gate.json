@@ -1,0 +1,192 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:07",
+    "checks": [
+      {
+        "name": "admission gate screens new sources",
+        "pass": false,
+        "detail": "verdict=[]"
+      },
+      {
+        "name": "free + no-login verified per row",
+        "pass": false,
+        "detail": "{}"
+      },
+      {
+        "name": "opt-out posture checked",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "verification recorded as assertion",
+        "pass": false,
+        "detail": "0 source:admission rows"
+      },
+      {
+        "name": "failing rows quarantined w/ basis",
+        "pass": false,
+        "detail": "0 quarantined verdicts"
+      },
+      {
+        "name": "discrimination-case",
+        "pass": false,
+        "detail": "a login-gated/opted-out source would fail no-login/no-ai-opt-out and quarantine \u2014 gate discriminates, it does not blanket-admit"
+      }
+    ],
+    "pass": 0,
+    "fail": 6,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "admission gate screens new sources",
+        "pass": true,
+        "detail": "verdict=['no-ai-opt-out', 'reachable', 'status', 'no-login']"
+      },
+      {
+        "name": "free + no-login verified per row",
+        "pass": true,
+        "detail": "{'no-ai-opt-out': True, 'reachable': True, 'status': 200, 'no-login': True}"
+      },
+      {
+        "name": "opt-out posture checked",
+        "pass": true,
+        "detail": "True"
+      },
+      {
+        "name": "verification recorded as assertion",
+        "pass": true,
+        "detail": "1 source:admission rows"
+      },
+      {
+        "name": "failing rows quarantined w/ basis",
+        "pass": true,
+        "detail": "0 quarantined verdicts"
+      },
+      {
+        "name": "discrimination-case",
+        "pass": true,
+        "detail": "a login-gated/opted-out source would fail no-login/no-ai-opt-out and quarantine \u2014 gate discriminates, it does not blanket-admit"
+      }
+    ],
+    "pass": 6,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "admission gate screens new sources",
+        "pass": false,
+        "detail": "verdict=[]"
+      },
+      {
+        "name": "free + no-login verified per row",
+        "pass": false,
+        "detail": "{}"
+      },
+      {
+        "name": "opt-out posture checked",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "verification recorded as assertion",
+        "pass": false,
+        "detail": "0 source:admission rows"
+      },
+      {
+        "name": "failing rows quarantined w/ basis",
+        "pass": false,
+        "detail": "0 quarantined verdicts"
+      },
+      {
+        "name": "discrimination-case",
+        "pass": false,
+        "detail": "a login-gated/opted-out source would fail no-login/no-ai-opt-out and quarantine \u2014 gate discriminates, it does not blanket-admit"
+      }
+    ],
+    "pass": 0,
+    "fail": 6,
+    "allGreen": false
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:03",
+    "checks": [
+      {
+        "name": "admission gate screens new sources",
+        "pass": true,
+        "detail": "verdict=['no-ai-opt-out', 'reachable', 'status', 'no-login']"
+      },
+      {
+        "name": "free + no-login verified per row",
+        "pass": true,
+        "detail": "{'no-ai-opt-out': True, 'reachable': True, 'status': 200, 'no-login': True}"
+      },
+      {
+        "name": "opt-out posture checked",
+        "pass": true,
+        "detail": "True"
+      },
+      {
+        "name": "verification recorded as assertion",
+        "pass": true,
+        "detail": "1 source:admission rows"
+      },
+      {
+        "name": "failing rows quarantined w/ basis",
+        "pass": true,
+        "detail": "0 quarantined verdicts"
+      },
+      {
+        "name": "discrimination-case",
+        "pass": true,
+        "detail": "a login-gated/opted-out source would fail no-login/no-ai-opt-out and quarantine \u2014 gate discriminates, it does not blanket-admit"
+      }
+    ],
+    "pass": 6,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "admission gate screens new sources",
+        "pass": false,
+        "detail": "verdict=[]"
+      },
+      {
+        "name": "free + no-login verified per row",
+        "pass": false,
+        "detail": "{}"
+      },
+      {
+        "name": "opt-out posture checked",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "verification recorded as assertion",
+        "pass": false,
+        "detail": "0 source:admission rows"
+      },
+      {
+        "name": "failing rows quarantined w/ basis",
+        "pass": false,
+        "detail": "0 quarantined verdicts"
+      },
+      {
+        "name": "discrimination-case",
+        "pass": false,
+        "detail": "a login-gated/opted-out source would fail no-login/no-ai-opt-out and quarantine \u2014 gate discriminates, it does not blanket-admit"
+      }
+    ],
+    "pass": 0,
+    "fail": 6,
+    "allGreen": false
+  }
+}

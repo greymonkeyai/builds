@@ -1,0 +1,2 @@
+[quorum] partition=6 journal=0 gate=PASS in 3285ms
+[quorum] serving http://127.0.0.1:9793/ (runtime C:\builds\project\version 0.3.0.005\runtime-suite)

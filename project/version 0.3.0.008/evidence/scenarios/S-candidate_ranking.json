@@ -1,0 +1,205 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "candidates retained w/ source+confidence",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "supersession rows retained",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "invocation produced result",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "discrimination-case",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 4,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "candidates retained w/ source+confidence",
+    "pass": true,
+    "detail": "3 candidates confs=[0.55, 0.9]",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "supersession rows retained",
+    "pass": true,
+    "detail": "1 superseding rows",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "invocation produced result",
+    "pass": true,
+    "detail": "executed=True",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "discrimination-case",
+    "pass": true,
+    "detail": "distinct confidence values force real ranking: [0.55, 0.9]",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "candidates retained w/ source+confidence",
+    "pass": true,
+    "detail": "3 candidates confs=[0.55, 0.9]",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "supersession rows retained",
+    "pass": true,
+    "detail": "1 superseding rows",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "invocation produced result",
+    "pass": true,
+    "detail": "executed=True",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "discrimination-case",
+    "pass": true,
+    "detail": "distinct confidence values force real ranking: [0.55, 0.9]",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "candidates retained w/ source+confidence",
+    "pass": true,
+    "detail": "3 candidates confs=[0.55, 0.9]",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "supersession rows retained",
+    "pass": true,
+    "detail": "1 superseding rows",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "invocation produced result",
+    "pass": true,
+    "detail": "executed=True",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "discrimination-case",
+    "pass": true,
+    "detail": "distinct confidence values force real ranking: [0.55, 0.9]",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "candidates retained w/ source+confidence",
+    "pass": false,
+    "detail": "no need opened",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "supersession rows retained",
+    "pass": false,
+    "detail": "no need opened",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "invocation produced result",
+    "pass": false,
+    "detail": "no need opened",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "discrimination-case",
+    "pass": false,
+    "detail": "no need opened",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 4,
+  "allGreen": false
+ }
+}

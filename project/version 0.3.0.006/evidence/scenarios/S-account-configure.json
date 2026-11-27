@@ -1,0 +1,34 @@
+{
+ "id": "S-account-configure",
+ "ran": true,
+ "checks": [
+  {
+   "name": "credential path exists",
+   "pass": true,
+   "detail": "POST /api/accounts credential surface"
+  },
+  {
+   "name": "descriptor row",
+   "pass": true,
+   "detail": "a-535"
+  },
+  {
+   "name": "secret hygiene",
+   "pass": true,
+   "detail": "secret absent from ledger rows"
+  },
+  {
+   "name": "real read",
+   "pass": true,
+   "detail": "mail surface returns data"
+  },
+  {
+   "name": "unconfigured honest",
+   "pass": true,
+   "detail": "fixture-directory (labeled)"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.0
+}

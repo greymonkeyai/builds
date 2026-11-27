@@ -1,0 +1,24 @@
+{
+ "id": "S-color-schemes",
+ "ran": true,
+ "checks": [
+  {
+   "name": "\u22653 colorways implemented incl. dark",
+   "pass": true,
+   "detail": "['contrast', 'dark', 'light', 'sepia']"
+  },
+  {
+   "name": "theme selector drives settings claims",
+   "pass": true,
+   "detail": "['dark', 'light', 'dark', 'sepia', 'contrast', 'light']"
+  },
+  {
+   "name": "fresh launch opens light (seeded)",
+   "pass": true,
+   "detail": "theme seeded light; settings:set rows drive the surface"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.0
+}

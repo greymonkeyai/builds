@@ -1,0 +1,202 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "sentences",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no textbook",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no verbatim markup",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "register unbroken",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 4,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "sentences",
+    "pass": true,
+    "detail": "texts=['Did you know that the smell of baking br', \"I've been analyzing the stress concentra\"]",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no textbook",
+    "pass": true,
+    "detail": "no textbook/citation forms",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no verbatim markup",
+    "pass": true,
+    "detail": "speak strings clean: ['Did you know that the smell of baking br', \"I've been analyzing the stress concentra\"]",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "register unbroken",
+    "pass": true,
+    "detail": "registers={'dry-engineer', 'warm-domestic'}",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "sentences",
+    "pass": true,
+    "detail": "texts=[\"I've been listening to the same old cloc\"]",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no textbook",
+    "pass": true,
+    "detail": "no textbook/citation forms",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no verbatim markup",
+    "pass": true,
+    "detail": "speak strings clean: [\"I've been listening to the same old cloc\"]",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "register unbroken",
+    "pass": true,
+    "detail": "registers={'plain'}",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "sentences",
+    "pass": true,
+    "detail": "texts=[\"Well now \u2014 i'm here; say more and I'll s\", \"I'm here; say more and I'll see to it. \u2014\"]",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no textbook",
+    "pass": true,
+    "detail": "no textbook/citation forms",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no verbatim markup",
+    "pass": true,
+    "detail": "speak strings clean: [\"Well now \u2014 i'm here; say more and I'll s\", \"I'm here; say more and I'll see to it. \u2014\"]",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "register unbroken",
+    "pass": true,
+    "detail": "registers={'dry-engineer', 'warm-domestic'}",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "sentences",
+    "pass": false,
+    "detail": "texts=[]",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no textbook",
+    "pass": true,
+    "detail": "no textbook/citation forms",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no verbatim markup",
+    "pass": true,
+    "detail": "speak strings clean: []",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "register unbroken",
+    "pass": false,
+    "detail": "registers=set()",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 2,
+  "fail": 2,
+  "allGreen": false
+ }
+}

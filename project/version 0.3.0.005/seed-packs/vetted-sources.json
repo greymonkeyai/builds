@@ -1,0 +1,17 @@
+{
+  "purpose": "C-PreloadCache — pointers to vetted sources. Artifact-supplied references resolve AGAINST these; the artifact's own claims are never trusted at face value.",
+  "sources": {
+    "https://en.wikipedia.org/": {"class": "vetted-encyclopedic", "ceiling": 0.85},
+    "https://pa.gov/": {"class": "vetted-official", "ceiling": 0.9},
+    "https://www.census.gov/": {"class": "vetted-official", "ceiling": 0.9},
+    "https://html.duckduckgo.com/": {"class": "vetted-search", "ceiling": 0.6}
+  },
+  "decoders": {
+    "qmatrix-24": "stdlib BMP cell-matrix decoder (this build)",
+    "plain-qr-url": "ordinary QR links decode to references — resolved under dubious-provenance rules, no special trust"
+  },
+  "marketing_exemplars": [
+    "seed-packs/exemplar-postcard.bmp — handout-class artifact, single capture",
+    "fixtures/inbox — fixture mail basis (labeled)"
+  ]
+}

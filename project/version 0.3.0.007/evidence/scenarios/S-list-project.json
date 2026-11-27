@@ -1,0 +1,192 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:06",
+    "checks": [
+      {
+        "name": "list need created from chat",
+        "pass": false,
+        "detail": "needs=[]"
+      },
+      {
+        "name": "chat path enactment",
+        "pass": false,
+        "detail": "input:captured carries the request"
+      },
+      {
+        "name": "iterable object",
+        "pass": false,
+        "detail": "0 members"
+      },
+      {
+        "name": "retrieval produced members",
+        "pass": false,
+        "detail": "memberCount=0"
+      },
+      {
+        "name": "non-matches recorded for review (D4)",
+        "pass": false,
+        "detail": "nonMatches=0"
+      },
+      {
+        "name": "criteria preserved in need rows",
+        "pass": false,
+        "detail": "None"
+      }
+    ],
+    "pass": 0,
+    "fail": 6,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "list need created from chat",
+        "pass": true,
+        "detail": "needs=['need-0017']"
+      },
+      {
+        "name": "chat path enactment",
+        "pass": true,
+        "detail": "input:captured carries the request"
+      },
+      {
+        "name": "iterable object",
+        "pass": true,
+        "detail": "56 members"
+      },
+      {
+        "name": "retrieval produced members",
+        "pass": true,
+        "detail": "memberCount=56"
+      },
+      {
+        "name": "non-matches recorded for review (D4)",
+        "pass": true,
+        "detail": "nonMatches=2"
+      },
+      {
+        "name": "criteria preserved in need rows",
+        "pass": true,
+        "detail": "{'scope': 'cities', 'place': 'pennsylvania', 'member_kind': 'citie', 'label': 'cities in pennsylvania', 'preserved': 'criteria carried in th"
+      }
+    ],
+    "pass": 6,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "list need created from chat",
+        "pass": true,
+        "detail": "needs=['need-0017']"
+      },
+      {
+        "name": "chat path enactment",
+        "pass": false,
+        "detail": "input:captured carries the request"
+      },
+      {
+        "name": "iterable object",
+        "pass": false,
+        "detail": "0 members"
+      },
+      {
+        "name": "retrieval produced members",
+        "pass": false,
+        "detail": "memberCount=0"
+      },
+      {
+        "name": "non-matches recorded for review (D4)",
+        "pass": false,
+        "detail": "nonMatches=0"
+      },
+      {
+        "name": "criteria preserved in need rows",
+        "pass": false,
+        "detail": "None"
+      }
+    ],
+    "pass": 1,
+    "fail": 5,
+    "allGreen": false
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:02",
+    "checks": [
+      {
+        "name": "list need created from chat",
+        "pass": true,
+        "detail": "needs=['need-0017']"
+      },
+      {
+        "name": "chat path enactment",
+        "pass": true,
+        "detail": "input:captured carries the request"
+      },
+      {
+        "name": "iterable object",
+        "pass": true,
+        "detail": "56 members"
+      },
+      {
+        "name": "retrieval produced members",
+        "pass": true,
+        "detail": "memberCount=56"
+      },
+      {
+        "name": "non-matches recorded for review (D4)",
+        "pass": true,
+        "detail": "nonMatches=2"
+      },
+      {
+        "name": "criteria preserved in need rows",
+        "pass": true,
+        "detail": "{'scope': 'cities', 'place': 'pennsylvania', 'member_kind': 'citie', 'label': 'cities in pennsylvania', 'preserved': 'criteria carried in th"
+      }
+    ],
+    "pass": 6,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "list need created from chat",
+        "pass": false,
+        "detail": "needs=[]"
+      },
+      {
+        "name": "chat path enactment",
+        "pass": false,
+        "detail": "input:captured carries the request"
+      },
+      {
+        "name": "iterable object",
+        "pass": false,
+        "detail": "0 members"
+      },
+      {
+        "name": "retrieval produced members",
+        "pass": false,
+        "detail": "memberCount=0"
+      },
+      {
+        "name": "non-matches recorded for review (D4)",
+        "pass": false,
+        "detail": "nonMatches=0"
+      },
+      {
+        "name": "criteria preserved in need rows",
+        "pass": false,
+        "detail": "None"
+      }
+    ],
+    "pass": 0,
+    "fail": 6,
+    "allGreen": false
+  }
+}

@@ -1,0 +1,170 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "\u22653 colorways implemented incl. dark",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "theme selector drives settings claims",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "fresh launch opens light (seeded)",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "\u22653 colorways implemented incl. dark",
+    "pass": true,
+    "detail": "colorways rendered: ['light', 'dark', 'sepia', 'contrast']",
+    "src": [
+     "rendered"
+    ]
+   },
+   {
+    "name": "theme selector drives settings claims",
+    "pass": true,
+    "detail": "selector rendered + 1 user theme claims",
+    "src": [
+     "rendered",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "fresh launch opens light (seeded)",
+    "pass": true,
+    "detail": "seeded default is light (settings theme default 'light')",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "\u22653 colorways implemented incl. dark",
+    "pass": true,
+    "detail": "colorways rendered: ['light', 'dark', 'sepia', 'contrast']",
+    "src": [
+     "rendered"
+    ]
+   },
+   {
+    "name": "theme selector drives settings claims",
+    "pass": true,
+    "detail": "selector rendered + 1 user theme claims",
+    "src": [
+     "rendered",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "fresh launch opens light (seeded)",
+    "pass": true,
+    "detail": "seeded default is light (settings theme default 'light')",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "\u22653 colorways implemented incl. dark",
+    "pass": true,
+    "detail": "colorways rendered: ['light', 'dark', 'sepia', 'contrast']",
+    "src": [
+     "rendered"
+    ]
+   },
+   {
+    "name": "theme selector drives settings claims",
+    "pass": true,
+    "detail": "selector rendered + 1 user theme claims",
+    "src": [
+     "rendered",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "fresh launch opens light (seeded)",
+    "pass": true,
+    "detail": "seeded default is light (settings theme default 'light')",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "\u22653 colorways implemented incl. dark",
+    "pass": false,
+    "detail": "colorways rendered: []",
+    "src": [
+     "rendered"
+    ]
+   },
+   {
+    "name": "theme selector drives settings claims",
+    "pass": false,
+    "detail": "selector rendered + 0 user theme claims",
+    "src": [
+     "rendered",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "fresh launch opens light (seeded)",
+    "pass": false,
+    "detail": "seeded default is light (settings theme default 'light')",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ }
+}

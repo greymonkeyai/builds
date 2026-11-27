@@ -27,7 +27,7 @@ Output ONLY a JSON object:
 ```json
 {
   "criteria": [
-    { "name": "...", "score": 0, "evidence": ["path:line"], "confidence": 0.0, "user_opinion": null }
+    { "name": "...", "category": "measured", "measure": "<raw value+unit>", "method": "<how measured>", "score": 0, "evidence": ["path:line"], "confidence": 0.0, "user_opinion": null }
   ],
   "overall": 0,
   "metrics": { "time_to_gate": null },
@@ -60,6 +60,24 @@ in that criterion's `user_opinion` field — a 0-1 figure, or a status such as `
 or `"undisputed"` — and every reasoning the owner offered is recorded in
 `user_commentary` as `{ "criterion": "...", "opinion": ..., "reasoning": "..." }`.
 
-Owner silence is agreement: a criterion that draws no user commentary takes the judge's
-score as its `user_opinion`; affirmative commentary that offers no alternative figure is
-agreement too (record the judge's score, keep the commentary).
+Criterion kinds (rubric §Criterion kinds; owner note 2026-11-27): every
+criterion carries `"category"` — `"measured"`, `"evaluated"`, or `"user"`
+(default `"measured"` when omitted).
+
+- **Measured criteria** report measurements of enumerated evidence — check
+  counts, scenario pass ratios, raw timings in seconds (tenths where reasonable,
+  per R-M1). They must carry `measure` (the raw value + unit) and `method` (how
+  it was taken). The number is the number: the owner may rule a measurement
+  failed or absent, but neither side restyles it into a 0-1 opinion. Enumerated
+  tests themselves are not altered by review. Time-based criteria are measured
+  in seconds, not scored 0-1.
+- **Evaluated criteria** are the judgment layer: JEV 0-1 plus `confidence` —
+  required, expressing how confident the evaluator is in its own score — and
+  owner opinions as vibes-based highlights, not audits. A criterion left
+  untouched is **unreviewed**, not agreed: `user_opinion` stays `null` and the
+  JEV score reads as provisional. Affirmative commentary without a figure may
+  record `"confirmed"` rather than copying the judge's number.
+- **User criteria** are scores the user enters at review (satisfaction,
+  ranking). The judge emits `"score": null`; the owner's figure lands in
+  `user_opinion` and is indicative of user opinion on the topic — neither a
+  measurement nor an evaluated judgment.

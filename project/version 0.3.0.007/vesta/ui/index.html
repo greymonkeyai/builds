@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>vesta — operator surface</title>
+<style>
+:root { --bg:#f4f1ea; --ink:#22201b; --panel:#fffdf7; --edge:#cfc9b8; --accent:#6a4d2e; }
+* { box-sizing:border-box; }
+body { margin:0; font:14px/1.45 Georgia,serif; background:var(--bg); color:var(--ink); }
+#honesty { background:#4a3b21; color:#f4e8c8; padding:4px 10px; font-size:12px; }
+#honesty b { color:#ffd98a; }
+#grid { display:grid; grid-template-columns:220px 1fr 340px; gap:8px; padding:8px; height:calc(100vh - 96px); }
+.col { overflow-y:auto; }
+.panel { background:var(--panel); border:1px solid var(--edge); border-radius:6px; padding:8px; margin-bottom:8px; }
+.panel h3 { margin:0 0 6px; font-size:12px; text-transform:uppercase; letter-spacing:1px; color:var(--accent); border-bottom:1px solid var(--edge); padding-bottom:3px; }
+.persona { display:flex; align-items:center; gap:7px; padding:5px 4px; border-radius:4px; cursor:pointer; border:1px solid transparent; }
+.persona:hover { background:var(--bg); }
+.persona.sel { border-color:var(--accent); background:var(--bg); }
+.persona img { width:34px; height:42px; object-fit:cover; border-radius:3px; border:1px solid var(--edge); }
+.persona .nm { font-weight:bold; font-size:13px; }
+.persona .held { font-size:11px; color:var(--accent); }
+.persona .mark { font-size:10px; background:#7a1f1f; color:#fff; padding:0 4px; border-radius:3px; }
+.mv { font-size:11px; padding:0 4px; cursor:pointer; border:1px solid var(--edge); border-radius:3px; background:var(--panel); }
+#chatlog { min-height:200px; }
+.turn { margin-bottom:8px; }
+.turn .user { color:var(--accent); font-style:italic; }
+.reply { margin:4px 0 4px 12px; padding:4px 8px; border-left:3px solid var(--edge); }
+.reply .who { font-weight:bold; font-size:12px; }
+.reply .fid { font-size:10px; color:#7a7; margin-left:6px; }
+.reply .fid.ungrounded { color:#a76; }
+#chatform { display:flex; gap:6px; margin-top:6px; }
+#chatform input { flex:1; padding:6px; border:1px solid var(--edge); border-radius:4px; font:inherit; background:var(--panel); color:var(--ink); }
+button { font:inherit; padding:5px 10px; border:1px solid var(--edge); border-radius:4px; background:var(--panel); color:var(--ink); cursor:pointer; }
+button:hover { background:var(--bg); }
+select { font:inherit; padding:3px; border:1px solid var(--edge); border-radius:4px; background:var(--panel); color:var(--ink); }
+.need { font-size:12px; padding:4px; border-bottom:1px dashed var(--edge); }
+.need .st { float:right; color:var(--accent); }
+.row { display:flex; gap:6px; align-items:center; margin:3px 0; font-size:12px; }
+.tag { display:inline-block; font-size:10px; padding:0 5px; border-radius:3px; border:1px solid var(--edge); margin-right:4px; }
+.tag.adm { background:#2e5a2e; color:#fff; }
+.tag.qua { background:#7a1f1f; color:#fff; }
+.tag.pend { background:#999; color:#fff; }
+.dev { font-size:11px; padding:3px 0; border-bottom:1px dotted var(--edge); }
+.dev .st-found { color:#2e5a2e; } .dev .st-installable { color:#1a5a8a; }
+.dev .st-unavailable, .dev .st-not-found { color:#a76; } .dev .st-not-a-target { color:#777; }
+#statusbar { position:fixed; bottom:0; left:0; right:0; background:var(--panel); border-top:1px solid var(--edge); padding:4px 10px; font-size:11px; display:flex; gap:16px; }
+#ctx { font-size:11px; color:var(--accent); font-style:italic; }
+progress { width:100%; }
+.voice-sel { font-size:10px; }
+.needlist { max-height:160px; overflow-y:auto; }
+.tabs { display:flex; gap:4px; margin-bottom:6px; }
+.tabs button { font-size:11px; padding:2px 8px; }
+.tabs button.on { background:var(--accent); color:#fff; }
+.hidden { display:none; }
+</style>
+</head>
+<body>
+<div id="honesty"><b>vesta</b> · loading…</div>
+<div id="grid">
+  <div class="col" id="left">
+    <div class="panel"><h3>Roster</h3><div id="roster"></div>
+      <div class="row"><button onclick="createPersona()">+ new persona</button></div>
+      <div class="row" style="font-size:11px">respondent selector (multi):</div>
+      <div id="selector"></div>
+    </div>
+    <div class="panel"><h3>Unmet floor</h3><div id="floor" class="needlist"></div></div>
+  </div>
+  <div class="col" id="center">
+    <div class="panel"><h3>Conversation <span id="ctx"></span></h3>
+      <div id="chatlog"></div>
+      <div id="chatform"><input id="chatbox" placeholder="say something — try 'make a list of all cities in pennsylvania'" onkeydown="if(event.key==='Enter')chat()"><button onclick="chat()">send</button><button onclick="resetConv()">reset</button><button onclick="speakLast()">speak</button></div>
+    </div>
+    <div class="panel"><h3>Stage</h3>
+      <div class="row"><button onclick="scene()">enact knock-knock</button><button onclick="mkInterstitial()">queue interstitial</button><select id="track"><option>rain-loop</option><option>hearth-drone</option><option>herald-chime</option></select><button onclick="channel()">open channel</button></div>
+      <div id="stage"></div>
+    </div>
+    <div class="panel"><h3>Library</h3>
+      <div class="tabs" id="libtabs"></div>
+      <div id="library"></div>
+    </div>
+  </div>
+  <div class="col" id="right">
+    <div class="panel"><h3>Settings</h3>
+      <div class="row">theme <select id="theme" onchange="setTheme(this.value)"></select>
+           <span style="font-size:10px">(fresh launch opens light)</span></div>
+      <div class="row">reply style <select id="style" onchange="setStyle(this.value)"></select></div>
+      <div class="row">depth <input id="depth" type="number" min="1" max="8" style="width:44px" onchange="setDepth(this.value)"></div>
+      <div class="row">preload <select id="preload" onchange="setPreload(this.value)"><option value="">—</option></select></div>
+      <div class="row"><input id="acctname" placeholder="account name" style="width:90px"><input id="accthost" placeholder="imap host" style="width:90px"></div>
+      <div class="row"><input id="acctuser" placeholder="user" style="width:90px"><input id="acctsec" placeholder="secret (stays local)" type="password" style="width:90px"><button onclick="addAccount()">configure</button></div>
+    </div>
+    <div class="panel"><h3>Sources</h3>
+      <div class="row"><button onclick="admitAll()">run admission gate</button><button onclick="mail()">mail</button></div>
+      <div id="sources" class="needlist"></div>
+      <div id="mail"></div>
+    </div>
+    <div class="panel"><h3>Fleet</h3>
+      <div class="row"><button onclick="discover()">discover</button><button onclick="mint()">mint usb seed</button><span id="dstate" style="font-size:11px"></span></div>
+      <progress id="dprog" value="0" max="254" style="display:none"></progress>
+      <div id="fleetroster"></div>
+      <div id="fleetdev"></div>
+    </div>
+    <div class="panel"><h3>Publish / exchange</h3>
+      <div class="row"><select id="holding"></select><select id="pubform"><option>postcard</option><option>scancode</option><option>file</option><option>email</option></select><button onclick="publish()">publish</button></div>
+      <div class="row"><button onclick="decodeArtifact()">decode artifact</button><span id="pubout" style="font-size:11px"></span></div>
+    </div>
+    <div class="panel"><h3>Persona editor</h3>
+      <div id="editor"><div class="row" style="font-size:11px">select a persona to edit</div></div>
+    </div>
+  </div>
+</div>
+<div id="statusbar"><span id="sb-engines"></span><span id="sb-gate"></span><span id="sb-live"></span><span id="sb-sel"></span></div>
+<script>
+let S = {};
+async function api(p, b){ const r = await fetch(p, b?{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(b)}:{}); return r.json(); }
+async function refresh(){ S = await api('/api/state'); render(); }
+function esc(s){ return (s||'').toString().replace(/[<>&]/g, c=>({'<':'&lt;','>':'&gt;','&':'&amp;'}[c])); }
+function render(){
+  const e=S.engines||{};
+  document.getElementById('honesty').innerHTML = '<b>vesta</b> '+(S.node||'')+' · '+((S.honesty||[]).map(x=>'<span>⚠ '+esc(x)+'</span>').join(' · '));
+  document.getElementById('sb-engines').textContent = 'llm:'+e.llm+' · tts:'+e.tts+' · stt:'+e.stt+' · voices:'+e.voices+' · bt:'+e.bt;
+  document.getElementById('sb-gate').textContent = 'gate:'+(S.gate&&S.gate.passed?('passed '+S.gate.timeToGateMs+'ms'):'FAILED');
+  const lv=S.liveness||{};
+  document.getElementById('sb-live').textContent = 'steward: '+lv.passes+' passes · age '+lv.age+'s · sources:'+S.sourceCount+' · needs:'+(S.needs||[]).length;
+  document.getElementById('sb-sel').textContent = 'selector: '+((S.selector||[]).join(',')||'none');
+  document.getElementById('ctx').textContent = S.context&&S.context.topic?('· '+S.context.topic):'';
+  renderRoster(); renderFloor(); renderSources(); renderFleet(); renderStage(); renderSettings(); renderLibrary(); renderReplies();
+}
+function renderRoster(){
+  const r=S.roster||[];
+  document.getElementById('roster').innerHTML = r.map(p=>`
+    <div class="persona ${((S.selector||[]).includes(p.id))?'sel':''}" onclick="selPersona('${p.id}')">
+      <img src="/api/persona/${p.id}/portrait" onerror="this.style.visibility='hidden'">
+      <div><div class="nm">${esc(p.name)} ${p.imitation?'<span class="mark">'+esc(p.imitation.mark)+'</span>':''}</div>
+      <div class="held">${esc(p.register||'')} · held ${p.held} · ${esc(p.surface||'host')}</div>
+      <div style="font-size:10px">${esc((p.voice&&p.voice.id)||'voice: none declared')}</div></div>
+      <div style="margin-left:auto"><span class="mv" onclick="event.stopPropagation();mv('${p.id}','up')">↑</span><br><span class="mv" onclick="event.stopPropagation();mv('${p.id}','down')">↓</span></div>
+    </div>`).join('');
+  document.getElementById('selector').innerHTML = r.map(p=>`<label style="font-size:11px"><input type="checkbox" ${((S.selector||[]).includes(p.id))?'checked':''} onchange="selToggle('${p.id}',this.checked)">${esc(p.name)}</label>`).join(' ');
+}
+function renderFloor(){
+  const n=S.needs||[];
+  document.getElementById('floor').innerHTML = n.length? n.map(x=>`<div class="need"><span class="st">${esc(x.state)}</span><b>${esc(x.kind)}</b> ${esc(x.title||'')} <div style="font-size:10px">${esc(x.need)} · ${esc(x.basis||'')}</div>
+    <button style="font-size:10px;padding:0 4px" onclick="api('/api/need/focus',{id:'${x.need}'}).then(refresh)">focus</button>
+    <button style="font-size:10px;padding:0 4px" onclick="api('/api/need/cancel',{id:'${x.need}'}).then(refresh)">cancel</button></div>`).join('') : '<div class="need">floor is empty — no unmet needs</div>';
+}
+async function renderReplies(){
+  const r = await api('/api/replies');
+  const log = document.getElementById('chatlog');
+  const items = (r.replies||[]).slice(-20);
+  log.innerHTML = items.map(x=>`<div class="reply"><span class="who">${esc(x.name||x.persona)}</span><span class="fid ${x.fidelity==='ungrounded-declared'?'ungrounded':''}">${esc(x.fidelity||'')}</span><div>${esc(x.text)}</div></div>`).join('');
+}
+function renderSources(){
+  api('/api/sources').then(r=>{
+    const s=(r.sources||[]);
+    document.getElementById('sources').innerHTML = s.slice(0,60).map(x=>{
+      const a=x.admission; const cls=a?(a.admitted?'adm':'qua'):'pend';
+      return `<div class="need"><span class="tag ${cls}">${a?(a.admitted?'admitted':'quarantined'):'pending'}</span>${esc(x.name)} <span style="font-size:10px">${esc(x.kind)} · ${esc((x.domains||[]).slice(0,3).join(','))}</span></div>`;}).join('');
+  });
+}
+function renderFleet(){
+  api('/api/fleet').then(r=>{
+    const d=r.discovery||{};
+    document.getElementById('dstate').textContent = d.state==='running'?('scanning '+((d.progress||{}).done||0)+'/'+((d.progress||{}).total||254)):(d.state||'idle')+(d.at?(' · '+d.devices.length+' devices'):'');
+    document.getElementById('fleetroster').innerHTML = (d.roster||[]).map(x=>`<div class="dev"><b>${x.id}</b> <span class="st-${x.status}">${x.status}</span> <span style="font-size:10px">${x.role}${x.device?(' · '+x.device.ip):''}</span></div>`).join('');
+    document.getElementById('fleetdev').innerHTML = (d.devices||[]).map(x=>`<div class="dev">${x.ip} ${esc(x.name||'')} <span style="font-size:10px">${x.kind}${x.peer?' · vesta-peer':''}${x.self?' · this host':''}</span>
+      <button style="font-size:9px;padding:0 3px" onclick="api('/api/fleet/invite',{ip:'${x.ip}'}).then(showLegible)">invite</button>
+      <button style="font-size:9px;padding:0 3px" onclick="api('/api/fleet/install',{ip:'${x.ip}'}).then(showLegible)">install</button></div>`).join('');
+    if(d.state==='running') setTimeout(refresh, 1500);
+  });
+}
+function showLegible(r){ alert(r.legible || JSON.stringify(r)); refresh(); }
+async function renderStage(){
+  const r = await api('/api/stage');
+  const inter = (r.interstitials||[]).map(i=>`<div class="need">interstitial <b>${esc(i.id)}</b> ${esc(i.title||'')} — <b>${esc(i.state)}</b>
+    <button style="font-size:9px" onclick="api('/api/stage/interstitial',{id:'${i.id}',action:'collect'}).then(refresh)">collect</button>
+    <button style="font-size:9px" onclick="api('/api/stage/interstitial',{id:'${i.id}',action:'rework',changed:'inputs changed'}).then(refresh)">rework</button>
+    <button style="font-size:9px" onclick="api('/api/stage/interstitial',{id:'${i.id}',action:'present'}).then(showLegible)">present</button></div>`).join('');
+  const chans = (r.channels||[]).map(c=>`<div class="dev">channel ${esc(c.name)} · ${esc(c.track)} · ${esc(c.audioEngine)}</div>`).join('');
+  document.getElementById('stage').innerHTML = chans + inter;
+}
+let libTab='personas';
+function renderLibrary(){
+  const tabs=['personas','tools','compositions','lists','workshops','sources','artifacts','projects'];
+  document.getElementById('libtabs').innerHTML = tabs.map(t=>`<button class="${t===libTab?'on':''}" onclick="libTab='${t}';renderLibrary()">${t}</button>`).join('');
+  api('/api/library').then(r=>{
+    const h=r.holdings||{};
+    const rows=(h[libTab]||[]).map(x=>`<div class="dev">${Object.entries(x).filter(([k])=>k!=='id').map(([k,v])=>`<span style="font-size:11px"><b>${k}:</b> ${esc(JSON.stringify(v))}</span> `).join('')}</div>`).join('');
+    document.getElementById('library').innerHTML = rows||'<div class="dev">empty</div>';
+    const holds=[...(h.personas||[]).map(x=>x.id),...(h.workshops||[]).map(x=>x.id),...(h.lists||[]).map(x=>x.id),...(h.tools||[]).map(x=>x.id)];
+    document.getElementById('holding').innerHTML = holds.map(x=>`<option>${x}</option>`).join('');
+  });
+}
+function renderSettings(){
+  const th=document.getElementById('theme');
+  if(!th.options.length){ (S.themes||[]).forEach(t=>th.add(new Option(t,t))); Object.keys(S.styles||{}).forEach(s=>document.getElementById('style').add(new Option(s,s))); Object.keys(S.preloads||{}).forEach(p=>document.getElementById('preload').add(new Option(p,p))); }
+  th.value=S.themeName; document.getElementById('style').value=S.style||'balanced'; document.getElementById('depth').value=S.depth||2;
+  const t=S.theme||{}; const r=document.documentElement.style;
+  if(t.bg){ r.setProperty('--bg',t.bg); r.setProperty('--ink',t.ink); r.setProperty('--panel',t.panel); r.setProperty('--edge',t.edge); r.setProperty('--accent',t.accent); }
+}
+async function chat(){ const b=document.getElementById('chatbox'); if(!b.value)return; const t=b.value; b.value='';
+  const log=document.getElementById('chatlog'); log.innerHTML += `<div class="turn"><div class="user">you: ${esc(t)}</div><div class="reply"><i>…</i></div></div>`;
+  await api('/api/chat',{text:t}); refresh(); }
+async function createPersona(){ const n=prompt('name the persona'); if(!n)return;
+  const r=await api('/api/persona/create',{name:n,domains:[]});
+  if(r.sourceSuggestions&&r.sourceSuggestions.length){ const s=r.sourceSuggestions[0];
+    if(confirm(`assign source ${s.name} (matched: ${s.matchedOn})?`)) await api('/api/persona/source-grant',{id:r.persona,source:s.source,accept:true});
+    else await api('/api/persona/source-grant',{id:r.persona,source:s.source,accept:false}); }
+  refresh(); }
+async function mv(id,d){ const r=await api('/api/roster/move',{id,direction:d}); if(r.held!==undefined) console.log('held-confidence '+r.previous+'→'+r.held); refresh(); }
+async function selPersona(id){ await api('/api/persona/select',{id}); editPersona(id); refresh(); }
+async function selToggle(id,on){ const cur=S.selector||[]; const ids=on?[...cur,id]:cur.filter(x=>x!==id); await api('/api/settings/selector',{ids}); refresh(); }
+async function setTheme(v){ await api('/api/settings',{setting:'theme',value:v}); refresh(); }
+async function setStyle(v){ await api('/api/settings',{setting:'response-style',value:v}); refresh(); }
+async function setDepth(v){ await api('/api/settings/depth',{n:+v}); refresh(); }
+async function setPreload(v){ if(!v)return; await api('/api/settings/preload',{name:v}); refresh(); }
+async function resetConv(){ await api('/api/conversation/reset',{}); document.getElementById('chatlog').innerHTML=''; refresh(); }
+async function speakLast(){ const r=await api('/api/replies'); const last=(r.replies||[]).slice(-1)[0]; if(last) await api('/api/speak',{text:last.text,persona:last.persona}); }
+async function scene(){ const r=await api('/api/stage/scene',{}); alert((r.lines||[]).map(l=>l[0]+': '+l[1]).join('\n')); refresh(); }
+async function mkInterstitial(){ const t=prompt('interstitial title','the ledger, explained'); if(t) await api('/api/stage/interstitial',{title:t,action:'queue'}); refresh(); }
+async function channel(){ await api('/api/stage/channel',{name:'ambient-'+document.getElementById('track').value,track:document.getElementById('track').value}); refresh(); }
+async function discover(){ await api('/api/fleet/discover',{}); setTimeout(refresh,1200); }
+async function mint(){ const r=await api('/api/fleet/mint',{}); alert(r.ok?('minted to '+r.dest):(r.error||'failed')); }
+async function publish(){ const h=document.getElementById('holding').value,f=document.getElementById('pubform').value; const r=await api('/api/publish',{holding:h,form:f}); document.getElementById('pubout').textContent = r.deferred?('deferred: '+r.status):('produced '+JSON.stringify(r.produced||r)); }
+async function decodeArtifact(){ const r=await api('/api/exchange/decode',{file:(S.runtimeDir||'runtime')+'/artifacts/artifact-0001.png'}); alert(r.ok?('decoded: '+JSON.stringify(r.package).slice(0,300)):('decode failed')); }
+async function admitAll(){ document.getElementById('sources').innerHTML='<div class="dev">gate running — real HTTP probes…</div>'; const r=await api('/api/sources/admit',{all:true,limit:50}); refresh(); }
+async function mail(){ const r=await api('/api/email'); document.getElementById('mail').innerHTML='<div style="font-size:10px">basis: '+esc(r.basis)+'</div>'+(r.mails||[]).map(m=>`<div class="dev">${esc(m.subject)} <span style="font-size:10px">${esc(m.from)}</span> <button style="font-size:9px" onclick="api('/api/email/context',{id:'${m.id}'}).then(x=>{alert(x.commentary||'no commentary');refresh();})">context</button></div>`).join(''); }
+async function addAccount(){ const r=await api('/api/accounts',{name:document.getElementById('acctname').value,kind:'imap',host:document.getElementById('accthost').value,user:document.getElementById('acctuser').value,secret:document.getElementById('acctsec').value}); alert(r.ok?'account configured — secret held locally':'failed'); refresh(); }
+function editPersona(id){ const p=(S.roster||[]).find(x=>x.id===id); if(!p)return;
+  document.getElementById('editor').innerHTML=`<div class="row"><input id="ed-name" value="${esc(p.name)}" style="width:90px"><input id="ed-reg" value="${esc(p.register||'')}" style="width:80px"></div>
+  <div class="row"><textarea id="ed-char" style="width:100%;height:44px">${esc(p.character||'')}</textarea></div>
+  <div class="row"><input id="ed-int" value="${esc((p.interests||[]).join(','))}" placeholder="interests csv" style="width:100%"></div>
+  <div class="row"><textarea id="ed-hist" style="width:100%;height:36px" placeholder="personality history">${esc(p.history||'')}</textarea></div>
+  <div class="row"><select id="ed-surf"><option>host</option><option>satellite</option><option>stage</option></select>
+  <select id="ed-voice" class="voice-sel"></select></div>
+  <div class="row"><button onclick="savePersona('${id}')">save</button></div>`;
+  api('/api/voices').then(r=>{ const vs=document.getElementById('ed-voice'); vs.innerHTML=(r.catalog||[]).map(c=>`<option value="${c.id}" ${p.voice&&p.voice.id===c.id?'selected':''}>${c.description}</option>`).join(''); });
+}
+async function savePersona(id){ await api('/api/persona/edit',{id,fields:{name:document.getElementById('ed-name').value,register:document.getElementById('ed-reg').value,character:document.getElementById('ed-char').value,interests:document.getElementById('ed-int').value.split(',').map(s=>s.trim()).filter(Boolean),history:document.getElementById('ed-hist').value,surface:document.getElementById('ed-surf').value}});
+  const v=document.getElementById('ed-voice').value; if(v) await api('/api/persona/voice',{id,voiceId:v}); refresh(); }
+refresh(); setInterval(refresh, 8000);
+</script>
+</body>
+</html>

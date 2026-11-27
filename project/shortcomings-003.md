@@ -1,4 +1,5 @@
 # Shortcomings list — direction-003 (ISSUED 2026-11-22)
+<!-- harness-doc kind=shortcomings status=discharged applies-to=direction-003 mapped-into=direction-003 -->
 
 Compiled 2026-11-22 by the coordinator session; scope confirmed by owner ruling
 2026-11-22 ("full set"). Working definition of "the shortcomings" for

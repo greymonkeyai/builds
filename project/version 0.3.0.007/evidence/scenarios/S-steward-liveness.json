@@ -1,0 +1,117 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:06",
+    "checks": [
+      {
+        "name": "monotonic passes",
+        "pass": false,
+        "detail": "None \u2192 None"
+      },
+      {
+        "name": "real age",
+        "pass": false,
+        "detail": "age=Nones since last pass"
+      },
+      {
+        "name": "no reset",
+        "pass": false,
+        "detail": "counter only accumulates"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "monotonic passes",
+        "pass": true,
+        "detail": "3 \u2192 4"
+      },
+      {
+        "name": "real age",
+        "pass": true,
+        "detail": "age=10.1s since last pass"
+      },
+      {
+        "name": "no reset",
+        "pass": true,
+        "detail": "counter only accumulates"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "monotonic passes",
+        "pass": true,
+        "detail": "1 \u2192 2"
+      },
+      {
+        "name": "real age",
+        "pass": true,
+        "detail": "age=1.7s since last pass"
+      },
+      {
+        "name": "no reset",
+        "pass": true,
+        "detail": "counter only accumulates"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:03",
+    "checks": [
+      {
+        "name": "monotonic passes",
+        "pass": true,
+        "detail": "1 \u2192 2"
+      },
+      {
+        "name": "real age",
+        "pass": true,
+        "detail": "age=3.2s since last pass"
+      },
+      {
+        "name": "no reset",
+        "pass": true,
+        "detail": "counter only accumulates"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "monotonic passes",
+        "pass": false,
+        "detail": "None \u2192 None"
+      },
+      {
+        "name": "real age",
+        "pass": false,
+        "detail": "age=Nones since last pass"
+      },
+      {
+        "name": "no reset",
+        "pass": false,
+        "detail": "counter only accumulates"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  }
+}

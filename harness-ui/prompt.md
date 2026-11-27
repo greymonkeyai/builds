@@ -1,4 +1,5 @@
 # harness-ui — prompt (embedded snapshot, revision 2026-11-23)
+<!-- harness-doc kind=prompt status=in-force -->
 
 Build a **read-only status display** over a builds root (default `C:\builds`): a set of
 static pages — openable directly from the filesystem (`file://`), no server — that

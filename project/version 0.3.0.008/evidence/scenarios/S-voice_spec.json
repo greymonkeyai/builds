@@ -1,0 +1,162 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "spec is QR-fittable (minimal payload)",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "ranked families and/or traits carried",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "local engine mapping renders nearest voice",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "spec is QR-fittable (minimal payload)",
+    "pass": true,
+    "detail": "payload 83B: {\"f\":[{\"g\":\"u\",\"fam\":\"sapi-unknown\",\"rank\":1}],\"t\":{\"rate\":0,\"reg\":\"dry-engineer",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "ranked families and/or traits carried",
+    "pass": true,
+    "detail": "families=[{'g': 'u', 'fam': 'sapi-unknown', 'rank': 1}]",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "local engine mapping renders nearest voice",
+    "pass": true,
+    "detail": "voice={'name': 'Microsoft Zira Desktop', 'stable': True, 'reason': 'user-directed'}",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "spec is QR-fittable (minimal payload)",
+    "pass": true,
+    "detail": "payload 76B: {\"f\":[{\"g\":\"u\",\"fam\":\"sapi-unknown\",\"rank\":1}],\"t\":{\"rate\":0,\"reg\":\"plain\"}}",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "ranked families and/or traits carried",
+    "pass": true,
+    "detail": "families=[{'g': 'u', 'fam': 'sapi-unknown', 'rank': 1}]",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "local engine mapping renders nearest voice",
+    "pass": true,
+    "detail": "voice={'name': 'Microsoft Zira Desktop', 'stable': True, 'reason': 'user-directed'}",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "spec is QR-fittable (minimal payload)",
+    "pass": true,
+    "detail": "payload 83B: {\"f\":[{\"g\":\"u\",\"fam\":\"sapi-unknown\",\"rank\":1}],\"t\":{\"rate\":0,\"reg\":\"dry-engineer",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "ranked families and/or traits carried",
+    "pass": true,
+    "detail": "families=[{'g': 'u', 'fam': 'sapi-unknown', 'rank': 1}]",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "local engine mapping renders nearest voice",
+    "pass": true,
+    "detail": "voice=None",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "spec is QR-fittable (minimal payload)",
+    "pass": false,
+    "detail": "payload 4B: null",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "ranked families and/or traits carried",
+    "pass": false,
+    "detail": "families=[]",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "local engine mapping renders nearest voice",
+    "pass": true,
+    "detail": "voice=None",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 1,
+  "fail": 2,
+  "allGreen": false
+ }
+}

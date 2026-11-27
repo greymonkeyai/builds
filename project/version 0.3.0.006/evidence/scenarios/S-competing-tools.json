@@ -1,0 +1,29 @@
+{
+ "id": "S-competing-tools",
+ "ran": true,
+ "checks": [
+  {
+   "name": "two competing tools ran the same need",
+   "pass": true,
+   "detail": "['tool.list-members', 'tool.list-members', 'tool.search+harvest']"
+  },
+  {
+   "name": "both legs produced interpretable results",
+   "pass": true,
+   "detail": "[{\"tool\": \"tool.list-members\", \"via\": \"category:States in Mexico\", \"count\": 0, \"members\": []}, {\"tool\": \"tool.list-members\", \"via\": \"category:States\", \"count\": 0, \"members\": []}, {\"tool\": \"tool.search"
+  },
+  {
+   "name": "results comparable (member counts)",
+   "pass": true,
+   "detail": "[0, 0, 1]"
+  },
+  {
+   "name": "comparison recorded",
+   "pass": true,
+   "detail": "a-292"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 5.1
+}

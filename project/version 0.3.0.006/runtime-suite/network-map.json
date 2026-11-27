@@ -1,0 +1,366 @@
+{
+ "node": "node-desktop-oogq7un-n-f2c6",
+ "generatedAt": 1795675968.5455108,
+ "subnet": "192.168.86.0/24",
+ "devices": [
+  {
+   "ip": "192.168.86.1",
+   "name": null,
+   "mac": "08-9e-08-fa-31-2a",
+   "ports": {
+    "80": true
+   },
+   "peer": false,
+   "self": false,
+   "transport": "lan",
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "ip": "192.168.86.21",
+   "name": "google-nest-hub.lan",
+   "mac": "d8-eb-46-9a-1a-ee",
+   "ports": {},
+   "peer": false,
+   "self": false,
+   "transport": "lan",
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "ip": "192.168.86.22",
+   "name": null,
+   "mac": "74-c2-46-31-4b-37",
+   "ports": {},
+   "peer": false,
+   "self": false,
+   "transport": "lan",
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "ip": "192.168.86.23",
+   "name": "pixel-9a.lan",
+   "mac": "4e-8a-ad-df-cf-e7",
+   "ports": {},
+   "peer": false,
+   "self": false,
+   "transport": "lan",
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "ip": "192.168.86.24",
+   "name": "amazon-7526c0796.lan",
+   "mac": "dc-54-d7-f8-46-bd",
+   "ports": {},
+   "peer": false,
+   "self": false,
+   "transport": "lan",
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "ip": "192.168.86.25",
+   "name": "DESKTOP-OOGQ7UN.lan",
+   "mac": null,
+   "ports": {
+    "445": true,
+    "7871": true
+   },
+   "peer": true,
+   "self": true,
+   "transport": "lan",
+   "member": false,
+   "kind": "peer"
+  },
+  {
+   "ip": "192.168.86.26",
+   "name": "hl_pan3-d03f27c8ce18.lan",
+   "mac": "d0-3f-27-c8-ce-18",
+   "ports": {},
+   "peer": false,
+   "self": false,
+   "transport": "lan",
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "ip": "192.168.86.27",
+   "name": null,
+   "mac": "18-74-2e-88-06-b6",
+   "ports": {},
+   "peer": false,
+   "self": false,
+   "transport": "lan",
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "ip": "192.168.86.28",
+   "name": null,
+   "mac": "58-db-09-a4-31-aa",
+   "ports": {},
+   "peer": false,
+   "self": false,
+   "transport": "lan",
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "ip": "192.168.86.30",
+   "name": "brnb422002abf58.lan",
+   "mac": "b4-22-00-2a-bf-58",
+   "ports": {
+    "80": true
+   },
+   "peer": false,
+   "self": false,
+   "transport": "lan",
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "ip": "192.168.86.31",
+   "name": null,
+   "mac": "d8-6c-63-d8-b1-24",
+   "ports": {
+    "80": true
+   },
+   "peer": false,
+   "self": false,
+   "transport": "lan",
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "ip": "192.168.86.32",
+   "name": null,
+   "mac": "08-9e-08-fa-35-6b",
+   "ports": {
+    "80": true
+   },
+   "peer": false,
+   "self": false,
+   "transport": "lan",
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "ip": "192.168.86.33",
+   "name": "hl_pan3-d03f27cc09fd.lan",
+   "mac": "d0-3f-27-cc-09-fd",
+   "ports": {},
+   "peer": false,
+   "self": false,
+   "transport": "lan",
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "ip": "192.168.86.34",
+   "name": null,
+   "mac": "08-9e-08-fa-32-74",
+   "ports": {
+    "80": true
+   },
+   "peer": false,
+   "self": false,
+   "transport": "lan",
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "ip": "192.168.86.35",
+   "name": "google-home-mini.lan",
+   "mac": "48-d6-d5-65-d0-66",
+   "ports": {},
+   "peer": false,
+   "self": false,
+   "transport": "lan",
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "ip": "192.168.86.36",
+   "name": "hl_pan3-d03f27c8fe54.lan",
+   "mac": "d0-3f-27-c8-fe-54",
+   "ports": {},
+   "peer": false,
+   "self": false,
+   "transport": "lan",
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "ip": "192.168.86.37",
+   "name": "amazon-2b830136d.lan",
+   "mac": "24-4c-e3-0d-4a-b2",
+   "ports": {},
+   "peer": false,
+   "self": false,
+   "transport": "lan",
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "ip": "192.168.86.38",
+   "name": null,
+   "mac": "fc-a6-67-a8-71-42",
+   "ports": {},
+   "peer": false,
+   "self": false,
+   "transport": "lan",
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "ip": "192.168.86.39",
+   "name": "pixel-tablet.lan",
+   "mac": "9e-f7-cd-f3-0b-24",
+   "ports": {},
+   "peer": false,
+   "self": false,
+   "transport": "lan",
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "ip": "192.168.86.40",
+   "name": "hl_pan3-d03f27c90971.lan",
+   "mac": "d0-3f-27-c9-09-71",
+   "ports": {},
+   "peer": false,
+   "self": false,
+   "transport": "lan",
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "ip": "192.168.86.41",
+   "name": "nucbox_g3_pro.lan",
+   "mac": "e0-51-d8-21-46-54",
+   "ports": {
+    "445": true,
+    "3389": true
+   },
+   "peer": false,
+   "self": false,
+   "transport": "lan",
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "ip": "192.168.86.42",
+   "name": "amazon-60665eb3b.lan",
+   "mac": "18-65-71-92-fc-11",
+   "ports": {},
+   "peer": false,
+   "self": false,
+   "transport": "lan",
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "ip": "192.168.86.43",
+   "name": "chromecast-ultra.lan",
+   "mac": "44-09-b8-3d-a3-7e",
+   "ports": {},
+   "peer": false,
+   "self": false,
+   "transport": "lan",
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "ip": "192.168.86.44",
+   "name": "amazon-9ade45b71.lan",
+   "mac": "b0-fc-0d-41-27-89",
+   "ports": {},
+   "peer": false,
+   "self": false,
+   "transport": "lan",
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "ip": "192.168.86.46",
+   "name": "mybooklive.lan",
+   "mac": "00-90-a9-b9-a8-e2",
+   "ports": {
+    "80": true,
+    "445": true
+   },
+   "peer": false,
+   "self": false,
+   "transport": "lan",
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "ip": "192.168.86.176",
+   "name": "amazon-c5a42c8c4.lan",
+   "mac": "fc-a6-67-2c-83-e5",
+   "ports": {},
+   "peer": false,
+   "self": false,
+   "transport": "lan",
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "ip": "192.168.86.238",
+   "name": "hs100.lan",
+   "mac": "50-c7-bf-17-f3-01",
+   "ports": {
+    "80": true
+   },
+   "peer": false,
+   "self": false,
+   "transport": "lan",
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "ip": "192.168.86.250",
+   "name": "tstat-dd9a27.lan",
+   "mac": "00-d0-2d-dd-9a-27",
+   "ports": {},
+   "peer": false,
+   "self": false,
+   "transport": "lan",
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "ip": "192.168.86.255",
+   "name": null,
+   "mac": "ff-ff-ff-ff-ff-ff",
+   "ports": {},
+   "peer": false,
+   "transport": "lan",
+   "arpOnly": true,
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "name": "Generic Bluetooth Radio",
+   "transport": "bluetooth",
+   "ports": {},
+   "peer": false,
+   "bt": true,
+   "member": false,
+   "kind": "non-member"
+  },
+  {
+   "name": "Microsoft Bluetooth Enumerator",
+   "transport": "bluetooth",
+   "ports": {},
+   "peer": false,
+   "bt": true,
+   "member": false,
+   "kind": "non-member"
+  }
+ ],
+ "members": 0
+}

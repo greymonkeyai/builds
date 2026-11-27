@@ -1,0 +1,55 @@
+{
+  "id": "S-fleet-invite",
+  "ran": true,
+  "checks": [
+    {
+      "name": "discovery lists candidates",
+      "pass": true,
+      "detail": 29
+    },
+    {
+      "name": "user selects which join",
+      "pass": true,
+      "detail": [
+        {
+          "key": "PC-DEV",
+          "at": 1795608558412,
+          "issued": true,
+          "device": {
+            "ip": "192.168.86.25",
+            "mac": "",
+            "name": "DESKTOP-OOGQ7UN",
+            "transport": "wired-lan",
+            "roster": "PC-DEV",
+            "reachable": true,
+            "self": true
+          },
+          "state": "issued"
+        }
+      ]
+    },
+    {
+      "name": "non-invited devices are NOT members",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true,
+  "invited": [
+    {
+      "key": "PC-DEV",
+      "at": 1795608558412,
+      "issued": true,
+      "device": {
+        "ip": "192.168.86.25",
+        "mac": "",
+        "name": "DESKTOP-OOGQ7UN",
+        "transport": "wired-lan",
+        "roster": "PC-DEV",
+        "reachable": true,
+        "self": true
+      },
+      "state": "issued"
+    }
+  ]
+}

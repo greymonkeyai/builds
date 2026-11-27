@@ -1,0 +1,22 @@
+{
+  "id": "S-network-map",
+  "ran": true,
+  "checks": [
+    {
+      "name": "map artifact produced",
+      "pass": true,
+      "detail": "C:\\builds\\project\\version 0.3.0.005\\runtime-suite\\network-map.json"
+    },
+    {
+      "name": "covers non-member devices alongside members",
+      "pass": true,
+      "detail": 27
+    },
+    {
+      "name": "member/non-member distinction on the map",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true
+}

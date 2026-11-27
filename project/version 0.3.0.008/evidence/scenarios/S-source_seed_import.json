@@ -1,0 +1,286 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "seed imports as configured-source rows",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "50 entries incl. simpsons, wookieepedia, memory-alpha",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "each row carries kind, endpoint, domains, descriptor, ceiling",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "all rows free-tier + no-login",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "seeded sources browsable",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "unreachable source declared, not silent",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 6,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "seed imports as configured-source rows",
+    "pass": true,
+    "detail": "53 source rows",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "50 entries incl. simpsons, wookieepedia, memory-alpha",
+    "pass": true,
+    "detail": "named present=True",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "each row carries kind, endpoint, domains, descriptor, ceiling",
+    "pass": true,
+    "detail": "all fields present on all rows",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "all rows free-tier + no-login",
+    "pass": true,
+    "detail": "303 admitted verdicts each verified free+no-login+no-optout",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "seeded sources browsable",
+    "pass": true,
+    "detail": "53 browsable",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "unreachable source declared, not silent",
+    "pass": true,
+    "detail": "quarantined/declared=2",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 6,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "seed imports as configured-source rows",
+    "pass": false,
+    "detail": "2 source rows",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "50 entries incl. simpsons, wookieepedia, memory-alpha",
+    "pass": false,
+    "detail": "named present=False",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "each row carries kind, endpoint, domains, descriptor, ceiling",
+    "pass": true,
+    "detail": "all fields present on all rows",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "all rows free-tier + no-login",
+    "pass": false,
+    "detail": "0 admitted verdicts each verified free+no-login+no-optout",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "seeded sources browsable",
+    "pass": true,
+    "detail": "2 browsable",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "unreachable source declared, not silent",
+    "pass": true,
+    "detail": "quarantined/declared=2",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 3,
+  "allGreen": false
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "seed imports as configured-source rows",
+    "pass": true,
+    "detail": "53 source rows",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "50 entries incl. simpsons, wookieepedia, memory-alpha",
+    "pass": true,
+    "detail": "named present=True",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "each row carries kind, endpoint, domains, descriptor, ceiling",
+    "pass": true,
+    "detail": "all fields present on all rows",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "all rows free-tier + no-login",
+    "pass": true,
+    "detail": "252 admitted verdicts each verified free+no-login+no-optout",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "seeded sources browsable",
+    "pass": true,
+    "detail": "53 browsable",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "unreachable source declared, not silent",
+    "pass": true,
+    "detail": "quarantined/declared=2",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 6,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "seed imports as configured-source rows",
+    "pass": false,
+    "detail": "0 source rows",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "50 entries incl. simpsons, wookieepedia, memory-alpha",
+    "pass": false,
+    "detail": "named present=False",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "each row carries kind, endpoint, domains, descriptor, ceiling",
+    "pass": true,
+    "detail": "all fields present on all rows",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "all rows free-tier + no-login",
+    "pass": true,
+    "detail": "0 admitted verdicts each verified free+no-login+no-optout",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "seeded sources browsable",
+    "pass": false,
+    "detail": "0 browsable",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "unreachable source declared, not silent",
+    "pass": true,
+    "detail": "quarantined/declared=0",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 3,
+  "allGreen": false
+ }
+}

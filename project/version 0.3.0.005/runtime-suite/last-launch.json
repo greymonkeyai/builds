@@ -1,0 +1,54 @@
+{
+  "app": "quorum",
+  "version": "0.3.0.005",
+  "started": 1795609092677,
+  "runtime": "C:\\builds\\project\\version 0.3.0.005\\runtime-suite",
+  "port": 9793,
+  "ok": true,
+  "mounted": {
+    "partition": 0,
+    "journal": 0
+  },
+  "first_run": {
+    "seeded": 18,
+    "personas": 4
+  },
+  "mounted_after_seed": {
+    "partition": 6,
+    "journal": 0
+  },
+  "gate": {
+    "passed": true,
+    "checks": [
+      {
+        "check": "primitive pipelines route input",
+        "pass": true
+      },
+      {
+        "check": "primary LLM handle live",
+        "pass": true,
+        "note": "live-ollama:llama3.2"
+      },
+      {
+        "check": "launch partition mounted",
+        "pass": true,
+        "rows": 6
+      },
+      {
+        "check": "ledger queryable",
+        "pass": true
+      },
+      {
+        "check": "journal durable",
+        "pass": true
+      }
+    ],
+    "bootedAt": 1795609092677,
+    "passedAt": 1795609095953,
+    "timeToGateMs": 3276
+  },
+  "port_probe": {
+    "free": true
+  },
+  "bound": 9793
+}

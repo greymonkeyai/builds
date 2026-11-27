@@ -1,0 +1,286 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "admission gate screens new sources",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "free + no-login verified per row",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "opt-out posture checked",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "verification recorded as assertion",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "failing rows quarantined w/ basis",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "a login-gated or opted-out source is refused, not admitted",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 6,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "admission gate screens new sources",
+    "pass": true,
+    "detail": "verdict=False",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "free + no-login verified per row",
+    "pass": true,
+    "detail": "303 verdicts w/ steps",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "opt-out posture checked",
+    "pass": true,
+    "detail": "optOutList step present",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "verification recorded as assertion",
+    "pass": true,
+    "detail": "source-verdict rows in journal",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "failing rows quarantined w/ basis",
+    "pass": true,
+    "detail": "quarantined=False refused=True",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "a login-gated or opted-out source is refused, not admitted",
+    "pass": true,
+    "detail": "login-gated test verdict=False steps={'optOutList': True, 'loginHints': False, 'reachableFreeTier': None}",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 6,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "admission gate screens new sources",
+    "pass": true,
+    "detail": "verdict=False",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "free + no-login verified per row",
+    "pass": true,
+    "detail": "0 verdicts w/ steps",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "opt-out posture checked",
+    "pass": false,
+    "detail": "optOutList step present",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "verification recorded as assertion",
+    "pass": false,
+    "detail": "source-verdict rows in journal",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "failing rows quarantined w/ basis",
+    "pass": true,
+    "detail": "quarantined=False refused=True",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "a login-gated or opted-out source is refused, not admitted",
+    "pass": true,
+    "detail": "login-gated test verdict=False steps={'optOutList': True, 'loginHints': False, 'reachableFreeTier': None}",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 2,
+  "allGreen": false
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "admission gate screens new sources",
+    "pass": true,
+    "detail": "verdict=False",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "free + no-login verified per row",
+    "pass": true,
+    "detail": "252 verdicts w/ steps",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "opt-out posture checked",
+    "pass": true,
+    "detail": "optOutList step present",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "verification recorded as assertion",
+    "pass": true,
+    "detail": "source-verdict rows in journal",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "failing rows quarantined w/ basis",
+    "pass": true,
+    "detail": "quarantined=False refused=True",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "a login-gated or opted-out source is refused, not admitted",
+    "pass": true,
+    "detail": "login-gated test verdict=False steps={'optOutList': True, 'loginHints': False, 'reachableFreeTier': None}",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 6,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "admission gate screens new sources",
+    "pass": false,
+    "detail": "verdict=None",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "free + no-login verified per row",
+    "pass": true,
+    "detail": "0 verdicts w/ steps",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "opt-out posture checked",
+    "pass": false,
+    "detail": "optOutList step present",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "verification recorded as assertion",
+    "pass": false,
+    "detail": "source-verdict rows in journal",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "failing rows quarantined w/ basis",
+    "pass": false,
+    "detail": "quarantined=False refused=False",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "a login-gated or opted-out source is refused, not admitted",
+    "pass": false,
+    "detail": "login-gated test verdict=None steps=None",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 1,
+  "fail": 5,
+  "allGreen": false
+ }
+}

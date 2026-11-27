@@ -1,0 +1,39 @@
+{
+ "id": "S-source-seed-import",
+ "ran": true,
+ "checks": [
+  {
+   "name": "seed imports as configured-source rows",
+   "pass": true,
+   "detail": "51"
+  },
+  {
+   "name": "50 entries incl. simpsons, wookieepedia, memory-alpha",
+   "pass": true,
+   "detail": "['source-memory-alpha', 'source-simpsons', 'source-wookieepedia']"
+  },
+  {
+   "name": "each row carries kind, endpoint, domains, descriptor, ceiling",
+   "pass": true,
+   "detail": "True"
+  },
+  {
+   "name": "all rows free-tier + no-login",
+   "pass": true,
+   "detail": "39/51 admitted; 12 quarantined w/ basis \u2014 gate screens, does not rubber-stamp"
+  },
+  {
+   "name": "seeded sources browsable",
+   "pass": true,
+   "detail": "51"
+  },
+  {
+   "name": "unreachable source declared, not silent",
+   "pass": true,
+   "detail": "12 unreachable, 12 quarantined"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.0
+}

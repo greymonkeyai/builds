@@ -1,0 +1,14 @@
+{
+ "id": "S-close-terminate",
+ "ran": true,
+ "checks": [
+  {
+   "name": "close-terminates (launch-check leg 4)",
+   "pass": true,
+   "detail": "port 9791 free after terminate: True"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.0
+}

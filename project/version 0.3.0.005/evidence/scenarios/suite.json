@@ -1,0 +1,1062 @@
+{
+  "suite": "quorum-0.3.0.005",
+  "total": 44,
+  "passed": 44,
+  "scenarios": {
+    "S-artifact-import": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "capture → workshop entry created",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "below action/acceptance threshold",
+          "pass": true,
+          "detail": [
+            0.4,
+            0.4
+          ]
+        },
+        {
+          "name": "entry accessible in the app",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-artifact-republish": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "adopted workshop re-encoded to new artifact",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "gen-2 payload decodes identically",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-artifact-style": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "stylistic extraction layer present",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "art style captured as LLM reference",
+          "pass": true,
+          "detail": "captured art style — LLM reference for workshop background/presentation"
+        },
+        {
+          "name": "carried on the workshop entry",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-assertion-input": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "typed input recorded as assertion",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "source-aware claimant",
+          "pass": true,
+          "detail": "principal"
+        },
+        {
+          "name": "typed value",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "basis = captured-input",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-background-present": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "steward pass recorded",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "liveness data for first-screen chit",
+          "pass": true,
+          "detail": {
+            "lastPassAt": 1795608337503,
+            "ageS": 4.278,
+            "expectedWakeS": 8,
+            "escalation": "ok",
+            "passes": 2
+          }
+        },
+        {
+          "name": "persona presented while idle work continues",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-candidate-ranking": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "candidates retained w/ source+confidence",
+          "pass": true,
+          "detail": [
+            {
+              "slot": "members",
+              "value": [
+                "a"
+              ],
+              "source": "x",
+              "confidence": 0.6,
+              "evidence": "",
+              "at": 1795608320725
+            },
+            {
+              "slot": "members",
+              "value": [
+                "b"
+              ],
+              "source": "y",
+              "confidence": 0.9,
+              "evidence": "",
+              "at": 1795608320731
+            }
+          ]
+        },
+        {
+          "name": "supersession rows retained",
+          "pass": true,
+          "detail": 4
+        },
+        {
+          "name": "invocation produced result",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-chat-invocation": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "conversational reply returned",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "tool need(s) opened, distinguishable",
+          "pass": true,
+          "detail": [
+            "r-2d01c4cbdc60"
+          ]
+        },
+        {
+          "name": "input captured as assertion",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-close-terminate": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "close-terminates (launch-check leg 4)",
+          "pass": true,
+          "detail": "see evidence/launch/launch-check.json"
+        }
+      ]
+    },
+    "S-color-schemes": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "≥3 colorways implemented incl. dark",
+          "pass": true,
+          "detail": [
+            "light",
+            "dark",
+            "sepia"
+          ]
+        },
+        {
+          "name": "theme selector drives settings claims",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "fresh launch opens light (seeded)",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-competing-tools": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "two competing tools ran the same need",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "both legs produced interpretable results",
+          "pass": true,
+          "detail": [
+            {
+              "tool": "list-members",
+              "members": 37,
+              "nonmatches": 2737,
+              "ok": true
+            },
+            {
+              "tool": "retrieve-table",
+              "members": 983,
+              "nonmatches": 1069,
+              "ok": true
+            }
+          ]
+        },
+        {
+          "name": "results comparable (member counts)",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "comparison recorded",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-context-display": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "active context displayed",
+          "pass": true,
+          "detail": "Borough council agenda"
+        }
+      ]
+    },
+    "S-conversation-reset": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "reset clears conversation",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "topic cleared",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-credential-surrender": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "surrender recorded as a claim",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "host holds the credential screen (§5)",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "secrets stay host-local — needs travel, secrets never do",
+          "pass": true,
+          "detail": "peer delta exchange carries assertions only"
+        }
+      ]
+    },
+    "S-defer-publication": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "unconfigured nonlocal effect refused/deferred",
+          "pass": true,
+          "detail": "{'need': 'r-9e44523f4363', 'ok': False, 'error': 'grant-required', 'deferred': True, 'status': 'no witnessed grant — request recorded, not executed'}"
+        },
+        {
+          "name": "request + status recorded as assertions",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-distinct-preloadeds": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "≥3 shipped personas w/ distinct registers",
+          "pass": true,
+          "detail": [
+            "casual",
+            "formal",
+            "scholarly",
+            "terse"
+          ]
+        },
+        {
+          "name": "same prompt → noticeably different replies",
+          "pass": true,
+          "detail": "distinct=True"
+        }
+      ]
+    },
+    "S-dubious-source": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "artifact claims held below trust ceiling",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "encoded references resolved against vetted pointers",
+          "pass": true,
+          "detail": [
+            {
+              "claim": "Crime fell every year of the term",
+              "ref": "https://en.wikipedia.org/wiki/Pennsylvania",
+              "vetted_match": "https://en.wikipedia.org/",
+              "status": "resolves-against-vetted"
+            },
+            {
+              "claim": "Crime fell every year of the term",
+              "ref": "https://en.wikipedia.org/wiki/Pennsylvania",
+              "vetted_match": "https://en.wikipedia.org/",
+              "status": "resolves-against-vetted"
+            },
+            {
+              "claim": "Crime fell every year of the term",
+              "ref": "https://en.wikipedia.org/wiki/Pennsylvania",
+              "vetted_match": "https://en.wikipedia.org/",
+              "status": "resolves-against-vetted"
+            },
+            {
+              "claim": "Crime fell every year of the term",
+              "ref": "https://en.wikipedia.org/wiki/Pennsylvania",
+              "vetted_match": "https://en.wikipedia.org/",
+              "status": "resolves-against-vetted"
+            },
+            {
+              "claim": "Crime fell every year of the term",
+              "ref": "https://en.wikipedia.org/wiki/Pennsylvania",
+              "vetted_match": "https://en.wikipedia.org/",
+              "status": "resolves-against-vetted"
+            }
+          ]
+        },
+        {
+          "name": "non-matching claims recorded for review",
+          "pass": true,
+          "detail": [
+            {
+              "claim": "Cross cut the salt budget 30%",
+              "ref": "https://cross2026.example/facts",
+              "vetted_match": null,
+              "status": "non-matching — recorded for review"
+            },
+            {
+              "claim": "Cross cut the salt budget 30%",
+              "ref": "https://cross2026.example/facts",
+              "vetted_match": null,
+              "status": "non-matching — recorded for review"
+            },
+            {
+              "claim": "Cross cut the salt budget 30%",
+              "ref": "https://cross2026.example/facts",
+              "vetted_match": null,
+              "status": "non-matching — recorded for review"
+            },
+            {
+              "claim": "Cross cut the salt budget 30%",
+              "ref": "https://cross2026.example/facts",
+              "vetted_match": null,
+              "status": "non-matching — recorded for review"
+            },
+            {
+              "claim": "Cross cut the salt budget 30%",
+              "ref": "https://cross2026.example/facts",
+              "vetted_match": null,
+              "status": "non-matching — recorded for review"
+            }
+          ]
+        }
+      ]
+    },
+    "S-email-commentary": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "email list from configured source basis",
+          "pass": true,
+          "detail": "fixture-directory"
+        },
+        {
+          "name": "V-G: fixture basis honestly labeled",
+          "pass": true,
+          "detail": "FIXTURE BASIS — no configured live mail account on this install; .eml directory stands in (declared, V-G)"
+        },
+        {
+          "name": "persona commentary produced",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "commentary recorded",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-exchange-import": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "package exported then imported",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "contents below action threshold",
+          "pass": true,
+          "detail": "certainty<=0.4 on 1 rows"
+        },
+        {
+          "name": "foreign tools staged as candidates, not live",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-faithful-voice": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "grounded reply flagged grounded",
+          "pass": true,
+          "detail": {
+            "verdict": "grounded",
+            "fidelity": 1.0,
+            "flag": "",
+            "note": "1 topic ground(s) in scope (4 total)"
+          }
+        },
+        {
+          "name": "zero-hit does NOT pass grounding (S-2)",
+          "pass": true,
+          "detail": {
+            "verdict": "ambient-only",
+            "fidelity": 0.4,
+            "flag": "no-topic-hits",
+            "note": "3 ambient ground(s) in scope (calendar/context) — no retrieved ground for this input"
+          }
+        },
+        {
+          "name": "no unflagged fidelity:null",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-fleet-invite": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "discovery lists candidates",
+          "pass": true,
+          "detail": 29
+        },
+        {
+          "name": "user selects which join",
+          "pass": true,
+          "detail": [
+            {
+              "key": "PC-DEV",
+              "at": 1795608558412,
+              "issued": true,
+              "device": {
+                "ip": "192.168.86.25",
+                "mac": "",
+                "name": "DESKTOP-OOGQ7UN",
+                "transport": "wired-lan",
+                "roster": "PC-DEV",
+                "reachable": true,
+                "self": true
+              },
+              "state": "issued"
+            }
+          ]
+        },
+        {
+          "name": "non-invited devices are NOT members",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-fleet-roster": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "every named-roster device reported",
+          "pass": true,
+          "detail": 15
+        },
+        {
+          "name": "honest status per device (found/installable/unavailable/not-a-target)",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "coverage is test data — non-targets recorded",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-focused-need": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "unmet need moved into focus",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "value supplied conversationally fills a slot",
+          "pass": true,
+          "detail": {
+            "id": "t-eb1d8bb8902f",
+            "input": "owner@local.example",
+            "focus_fill": "r-d0a8bd3c0f66",
+            "replies": [],
+            "needs": [],
+            "topic": ""
+          }
+        },
+        {
+          "name": "need remains until requirement met",
+          "pass": true,
+          "detail": "open"
+        }
+      ]
+    },
+    "S-library-browse": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "personas browsable",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "tools browsable w/ explanations",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "holdings structured, not a raw log",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-list-project": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "list need created from chat",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "retrieval produced members",
+          "pass": true,
+          "detail": "37 members"
+        },
+        {
+          "name": "non-matches recorded for review (D4)",
+          "pass": true,
+          "detail": "2737 non-matches"
+        },
+        {
+          "name": "criteria preserved in need rows",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-local-transports": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "wired LAN baseline exercised",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "≥1 additional local transport (BT/NFC/SoftAP)",
+          "pass": true,
+          "detail": [
+            "bt",
+            "wired-lan"
+          ]
+        },
+        {
+          "name": "wired preferred ordering honored",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-network-map": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "map artifact produced",
+          "pass": true,
+          "detail": "C:\\builds\\project\\version 0.3.0.005\\runtime-suite\\network-map.json"
+        },
+        {
+          "name": "covers non-member devices alongside members",
+          "pass": true,
+          "detail": 27
+        },
+        {
+          "name": "member/non-member distinction on the map",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-personality-create": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "persona minted from minimal input",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "portrait generated + bound",
+          "pass": true,
+          "detail": "llm-authored"
+        },
+        {
+          "name": "LLM art path (V-A bar — not procedural sprite)",
+          "pass": true,
+          "detail": "llm-authored"
+        },
+        {
+          "name": "voice assigned",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "characterization extended via later work",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "dyadic default 0.5 held-confidence (S-5)",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-personality-editor": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "editor path updates persona elements",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "edits recorded as assertions",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "V-F: edit discoverable from roster surface",
+          "pass": true,
+          "detail": "edit control present on roster UI"
+        }
+      ]
+    },
+    "S-personality-roster": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "roster operable — every persona reachable",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "selection works",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "reorder changes order",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "V-D: reorder visibly changes held-confidence",
+          "pass": true,
+          "detail": "0.5 → 0.6"
+        }
+      ]
+    },
+    "S-portrait-bind": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "portrait file produced",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "art bound to this persona",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "V-A: generative path declared",
+          "pass": true,
+          "detail": "llm-authored"
+        }
+      ]
+    },
+    "S-preload-cache": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "vetted-source pointers seeded",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "device decoder entries present",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "marketing exemplar present + decodable",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-restart-recovery": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "state recovered after restart",
+          "pass": true,
+          "detail": "54→55"
+        },
+        {
+          "name": "provenance retained (superseded rows kept)",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "cleanup consolidates without losing records",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-role-negotiate": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "role negotiation recorded",
+          "pass": true,
+          "detail": {
+            "key": "PC-DEV",
+            "caps": [
+              "surface"
+            ],
+            "mint": false,
+            "at": 1795608558416
+          }
+        },
+        {
+          "name": "mint rights are a negotiated grant",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "join outcome honest (member vs pending)",
+          "pass": true,
+          "detail": {
+            "key": "PC-DEV",
+            "device": {
+              "ip": "192.168.86.25",
+              "mac": "",
+              "name": "DESKTOP-OOGQ7UN",
+              "transport": "wired-lan",
+              "roster": "PC-DEV",
+              "reachable": true,
+              "self": true
+            },
+            "role": {
+              "key": "PC-DEV",
+              "caps": [
+                "surface"
+              ],
+              "mint": false,
+              "at": 1795608558416
+            },
+            "peer_endpoint": {
+              "reachable": false,
+              "endpoint": null,
+              "note": "no quorum endpoint answered — device is present but not installed/running"
+            },
+            "state": "pending",
+            "joined_at": 1795608562490
+          }
+        }
+      ]
+    },
+    "S-speech-serialization": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "speech serialized through the floor",
+          "pass": true,
+          "detail": "5 played"
+        },
+        {
+          "name": "playback measured not assumed",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "held until playback complete",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-status-bar": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "sources surfaced",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "LLM status surfaced",
+          "pass": true,
+          "detail": "live-ollama:llama3.2"
+        },
+        {
+          "name": "engine modes declared honestly",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-template-need": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "need row created from chat input",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "template-governed (slots+criteria)",
+          "pass": true,
+          "detail": {
+            "topic": "List of municipalities in Pennsylvania",
+            "criteria": "incorporated city municipalities only"
+          }
+        },
+        {
+          "name": "opens unfulfilled",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-tool-transmission": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "literal decode fidelity (C-ToolWireFidelity)",
+          "pass": true,
+          "detail": "decoded definition == bundle tool"
+        },
+        {
+          "name": "imported tool quarantined as candidate",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "not invocable before acceptance",
+          "pass": true,
+          "detail": "unknown tool: handout-scorer"
+        }
+      ]
+    },
+    "S-usb-log-courier": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "courier log accumulates across runs",
+          "pass": true,
+          "detail": "4→5"
+        },
+        {
+          "name": "machine-readable per-node evidence",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "stale-seed revisit handling recorded",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-usb-mint-gen2": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "gen-2 installer written to media",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "carries founding network identity as adoptable offer",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "join-or-found is the user's choice (carry-not-enforce)",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-usb-seed-run": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "app launched executing from removable media",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "runs in place — no install required",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "local network log written ON the medium",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-usb-stage-consent": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "decline → no local write, app stays on media",
+          "pass": true,
+          "detail": {
+            "staged": false,
+            "reason": "declined",
+            "wrote": false
+          }
+        },
+        {
+          "name": "consent → stages to C:\\builds-installed",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-voice-select": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "voice choices list offered",
+          "pass": true,
+          "detail": [
+            "Microsoft David Desktop",
+            "Microsoft Zira Desktop"
+          ]
+        },
+        {
+          "name": "user assigns a persona's voice from the list",
+          "pass": true,
+          "detail": null
+        }
+      ]
+    },
+    "S-voice-spec": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "spec is QR-fittable (minimal payload)",
+          "pass": true,
+          "detail": 103
+        },
+        {
+          "name": "ranked families and/or traits carried",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "local engine mapping renders nearest voice",
+          "pass": true,
+          "detail": "Microsoft David Desktop"
+        }
+      ]
+    },
+    "S-windows-launch": {
+      "pass": true,
+      "checks": [
+        {
+          "name": "launches on Windows like an installed program",
+          "pass": true,
+          "detail": "launch.cmd + live instance"
+        }
+      ]
+    }
+  }
+}

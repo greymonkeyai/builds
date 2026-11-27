@@ -1,0 +1,34 @@
+{
+ "id": "S-audible-ack",
+ "ran": true,
+ "checks": [
+  {
+   "name": "snippet pre-generated per persona",
+   "pass": true,
+   "detail": "6 acks"
+  },
+  {
+   "name": "plays before composition starts",
+   "pass": true,
+   "detail": "{\"persona\": \"Bolt\", \"durationMs\": 439, \"basis\": \"locally-synthesized\"}"
+  },
+  {
+   "name": "\u22640.5s / \u22645 syllables",
+   "pass": true,
+   "detail": "dur=439 syllables=[0, 0, 0]"
+  },
+  {
+   "name": "register-suitable",
+   "pass": true,
+   "detail": "{\"path\": \"C:\\\\builds\\\\project\\\\version 0.3.0.006\\\\runtime-suite\\\\personas\\\\persona-3e46e6b8ec-ack.wav\", \"duration_ms\": 4"
+  },
+  {
+   "name": "absent snippet declared, not a silent gap",
+   "pass": true,
+   "detail": "{\"persona\": \"Bolt\", \"durationMs\": 439, \"basis\": \"locally-synthesized\"}"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 2.8
+}

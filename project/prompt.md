@@ -1,10 +1,31 @@
-# Prompt snapshot
+# Prompt snapshot — revision 2026-11-27-a
+<!-- harness-doc kind=prompt status=in-force -->
 
-Source: C:\Project\MigrateInbound\ProjectPrompt.md — taken 2026-11-25 for project line `project`.
+Assembled 2026-11-25 for project line `project`.
 The revision in force for every cycle of this project until a review adopts a new one.
+Re-assembled 2026-11-27 ahead of cycle-8 — `prompt-amendments-002` (environmental
+grounding: device location + meteorological data) adopted upstream into
+`ProjectPrompt.md` §Projects and temporal context; revision advanced to 2026-11-27-a.
+
+## Assembled from
+
+| Source document | Corpus revision |
+|-----------------|-----------------|
+| `C:\Project\MigrateInbound\ProjectPrompt.md` | 2026-11-27 |
+| `C:\Project\Design\INTENTS.md` | 2026-11-24 |
+| `C:\Project\Design\MAXIMS.md` | 2026-11-24 |
+
+Cited depth tier (consultable, not embedded):
+`C:\Project\Design\INTENTS_explained.md`, `C:\Project\Design\MAXIMS_explained.md`,
+`C:\Project\Papers\`
+
+## Executed under
+
+- Cycle 5 — direction-005 (2026-11-25)
+- Cycle 6 — direction-006 (2026-11-25)
+- Cycle 7 — direction-007 (2026-11-26)
 
 ---
-
 # Project Prompt
 
 Develop an independent implementation of a private, local-first ecosystem in which a persistent assertion ledger records semantic state, distinct personalities interpret that shared ledger through their own lenses, configurable tools perform useful work, and locally controlled devices provide capabilities and surfaces for the user. The implementation may use any programming language, architecture, model provider, storage arrangement, or interface method that preserves the behavior below.
@@ -44,6 +65,10 @@ The application represents complex intentions as projects: sequences or collecti
 Project work may include publishing through a specialized interface, creating a personality, or any other multi-step outcome. The project is the organizing structure for those goals; the particular decomposition into tools, prompts, and interfaces is an implementation choice.
 
 The application can interpret calendar and other temporal sources so that upcoming, current, and historical events can inform project work, personality responses, and relevant background attention. Calendar entries remain source evidence; their interpretation, confidence, and resulting actions are governed by the same ledger and authority rules as other data.
+
+The installation grounds itself in place as well as time. Device location — the physical placement of hosts, surfaces, and joined devices — is recorded in the ledger as attributed assertions, derived from configured values, discovered platform or network signals, or user statement; uncertainty and staleness are recorded, not smoothed over. Environmental data such as meteorological conditions enter through configured sources like other outside information: the admission gate applies, and results are claims carrying provenance, confidence, and freshness. Personalities may draw on location and environmental data as ordinary grounding for responses, planning, and background attention — an opinion about weather may be backed by observed local conditions where known, and marked by register where it is improv.
+
+The installation's home location is canonical. A user may take a device out of the home location and return it — while away, that device's environmental claims refer to its current location where known, with staleness recorded rather than hidden; on return they re-converge on the home site. Departure, roaming uncertainty, and return are the interesting cases; multi-site federation is not required of the default installation.
 
 ## Confidence and selection
 
@@ -118,3 +143,105 @@ An implementation should be reviewable through demonstrations such as:
 These demonstrations are evidence of the required behavior, not prescriptions for a particular user interface, scheduler, model, storage format, or programming language.
 
 An implementation is expected to expose observable evidence for criteria named by the review process — logs, records, or other accessible artifacts — in a form external assessment, including machine assessment, can consume. The set of named criteria is supplied with each evaluation direction and may change between runs; the accessible form is an implementation choice.
+
+---
+
+# Design — project steering tier
+
+Adopted steering statements and maxims for this project. These carry the
+design's rationale and preferred paths; the corpus commentaries
+(`INTENTS_explained.md`, `MAXIMS_explained.md`) and `Papers/` hold the depth
+behind each statement.
+
+# Intents
+
+Project-scoped steering statements — the same type as MAXIMs, binding this project's
+design rather than candidate-universal practice. Each names a situation and states the
+preferred path (M-Steering). Adopted 2026-11-24; wording remains revisable like all
+design statements (M-Revision).
+
+Commentary: `INTENTS_explained.md` — same identifiers and order, same relationship
+as `MAXIMS.md` to `MAXIMS_explained.md`. Depth tier: `Papers/` holds the white
+papers each intent compresses. Intents may restate guarantees the Project Prompt
+requires; they carry the rationale, which is their job.
+
+Scope note: an intent can be project-bound by nature — correct here while contrary to
+general practice (see I-Engagement). Whether an intent generalizes is a review
+question, not a property of the intent; promotion to M-* runs through the existing
+MAXIMs review. History and workflow: `MigrateInbound/InstructionsForMAXIMS.txt`
+(Intents note, 2026-11-24).
+
+## I-Delegation: Authority over work is bound before the decision arises: scopes carry attributed, confidence-bearing assignments, and the assigned steward answers for its scope.
+
+## I-Conferral: Work outside assigned authority continues as conversation: the request, its status, and the path to authorization are recorded and remain available.
+
+## I-Discrepancy: When personalities diverge on shared ledger state, each answer carries its claimant and the divergence is presented, so the user can compare named advisors.
+
+## I-Precedent: Rank and confidence changes take effect as new assertions; every consumer re-derives at read time, so one ruling propagates to every scope it reaches.
+
+## I-Dyadic: Confidence moves pick the simplest representable value between neighbors, so each reorder is a fresh append and the prior standing stays in the journal.
+
+## I-Engagement: Bookkeeping, provenance, and recall are automated; choice points remain user-facing, because judgment is the part of the experience the user keeps.
+
+## I-Attachment: Persona shape is user-authored and revisable; attachment tracks the user's own investment in the character.
+
+---
+
+Promoted out: I-Steering → M-Steering (corollary under M-Affirmative, adopted
+2026-11-24 — see `MAXIMS_history.md`).
+
+---
+
+# MAXIMs
+
+## MAXIM-Prototype: These MAXIMs should guide planning to prevent predictable mistakes.
+
+## M-Freedom: Ask if you want more than you have.
+
+## M-Revision: Every rule is subject to revision.
+
+### M-Coherence: Check MAXIMs for consistency with one another.
+
+### M-Discipline: Revise procedures in review; surface improvements in execution.
+
+## M-Materialism: All things are either physical substance or constructed meaning.
+
+### M-Reality: The supernatural is fictional.
+
+## M-Lens: Every communication is an imperfect observer's reflection of reality.
+
+### M-Origin: Life arose by abiogenesis.
+
+## M-Adequacy: Gate on requirements.
+
+### M-Affirmative: Avoid negative statements.
+
+#### M-Steering: State preferred paths; a path steers where a prohibition only blocks.
+
+## M-Simplicity: Assume you have the tools you need before planning a task.
+
+## M-Invention: The only solutions are imitation or invention.
+
+## M-Honesty: Offer only what you can deliver.
+
+## M-Benefit: Only promote solutions that serve the user's interests.
+
+### M-Ownership: User intentions are primary, even when unknown.
+
+## M-Novelty: Surface conflicts through conversation.
+
+## M-Fitting: Adaptive utility is the measure of success.
+
+## M-Entropy: Change is constant.
+
+### M-Grace: Fail gracefully.
+
+## M-Compression: Compression is prediction.
+
+### M-Convention: When data is absent, default to Schelling points and existing reference samples.
+
+### M-Absence: An event that is anticipated is notable in its absence.
+
+## M-Village: Social capacity is limited.
+
+## M-Impersonation: Consent is required before imitating the living, and the recently deceased.

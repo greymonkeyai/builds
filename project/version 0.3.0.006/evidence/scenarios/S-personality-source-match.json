@@ -1,0 +1,29 @@
+{
+ "id": "S-personality-source-match",
+ "ran": true,
+ "checks": [
+  {
+   "name": "domain-matched source suggested at creation",
+   "pass": true,
+   "detail": "{\"source\": \"source-memory-alpha\", \"name\": \"Memory Alpha\", \"matched_domains\": [\"star-trek\"], \"score\": 1}"
+  },
+  {
+   "name": "accept binds source to persona",
+   "pass": true,
+   "detail": "\"source-memory-alpha\""
+  },
+  {
+   "name": "decline leaves persona source-free",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "name": "suggestion discriminates \u2014 star-trek domain gets memory-alpha, not simpsons",
+   "pass": true,
+   "detail": "{\"source\": \"source-memory-alpha\", \"name\": \"Memory Alpha\", \"matched_domains\": [\"star-trek\"], \"score\": 1}"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.0
+}

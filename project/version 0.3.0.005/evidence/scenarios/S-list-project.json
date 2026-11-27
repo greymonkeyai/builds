@@ -1,0 +1,72 @@
+{
+  "id": "S-list-project",
+  "ran": true,
+  "checks": [
+    {
+      "name": "list need created from chat",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retrieval produced members",
+      "pass": true,
+      "detail": "37 members"
+    },
+    {
+      "name": "non-matches recorded for review (D4)",
+      "pass": true,
+      "detail": "2737 non-matches"
+    },
+    {
+      "name": "criteria preserved in need rows",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true,
+  "members_sample": [
+    "Census-designated place",
+    "Municipal corporation",
+    "Municipality",
+    "Northeastern United States",
+    "Philadelphia",
+    "Pittsburgh",
+    "Post office",
+    "Train station",
+    "U.S. state",
+    "Allegheny Mountains",
+    "Allegheny National Forest",
+    "Allegheny Plateau",
+    "Bald Eagle Valley",
+    "Blue Ridge Mountains",
+    "Coal Region",
+    "Cumberland Valley",
+    "Endless Mountains",
+    "Greater Pittsburgh",
+    "Laurel Highlands",
+    "Lebanon Valley",
+    "Lehigh Valley",
+    "Municipalities of Puerto Rico",
+    "New York metropolitan area",
+    "Nittany Valley",
+    "North Penn Valley"
+  ],
+  "member_count": 37,
+  "nonmatches_sample": [
+    "List of cities in Pennsylvania",
+    "2020 United States census",
+    "Abington Township, Montgomery County, Pennsylvania",
+    "Adams Township, Butler County, Pennsylvania",
+    "Adams Township, Cambria County, Pennsylvania",
+    "Administrative divisions of Pennsylvania",
+    "Akron, Pennsylvania",
+    "Aldan, Pennsylvania",
+    "Aliquippa, Pennsylvania",
+    "Allegheny Township, Blair County, Pennsylvania",
+    "Allegheny Township, Cambria County, Pennsylvania",
+    "Allegheny Township, Westmoreland County, Pennsylvania",
+    "Allen Township, Northampton County, Pennsylvania",
+    "Allentown, Pennsylvania",
+    "Alsace Township, Pennsylvania"
+  ]
+}

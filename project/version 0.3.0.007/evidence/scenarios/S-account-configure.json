@@ -1,0 +1,167 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:07",
+    "checks": [
+      {
+        "name": "credential path exists",
+        "pass": false,
+        "detail": "descriptor=None"
+      },
+      {
+        "name": "descriptor row",
+        "pass": false,
+        "detail": "0 account:configured rows"
+      },
+      {
+        "name": "secret hygiene",
+        "pass": false,
+        "detail": "secret string absent from every ledger row"
+      },
+      {
+        "name": "real read",
+        "pass": false,
+        "detail": "basis="
+      },
+      {
+        "name": "unconfigured honest",
+        "pass": false,
+        "detail": "basis declared: "
+      }
+    ],
+    "pass": 0,
+    "fail": 5,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "credential path exists",
+        "pass": true,
+        "detail": "descriptor=cred-checkmail"
+      },
+      {
+        "name": "descriptor row",
+        "pass": true,
+        "detail": "1 account:configured rows"
+      },
+      {
+        "name": "secret hygiene",
+        "pass": true,
+        "detail": "secret string absent from every ledger row"
+      },
+      {
+        "name": "real read",
+        "pass": true,
+        "detail": "basis=fixture:.eml (no configured account \u2014 fixture basis honestly labeled)"
+      },
+      {
+        "name": "unconfigured honest",
+        "pass": true,
+        "detail": "basis declared: fixture:.eml (no configured account \u2014 fixture basis honestly labeled)"
+      }
+    ],
+    "pass": 5,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "credential path exists",
+        "pass": true,
+        "detail": "descriptor=cred-checkmail"
+      },
+      {
+        "name": "descriptor row",
+        "pass": false,
+        "detail": "0 account:configured rows"
+      },
+      {
+        "name": "secret hygiene",
+        "pass": false,
+        "detail": "secret string absent from every ledger row"
+      },
+      {
+        "name": "real read",
+        "pass": true,
+        "detail": "basis=fixture:.eml (no configured account \u2014 fixture basis honestly labeled)"
+      },
+      {
+        "name": "unconfigured honest",
+        "pass": true,
+        "detail": "basis declared: fixture:.eml (no configured account \u2014 fixture basis honestly labeled)"
+      }
+    ],
+    "pass": 3,
+    "fail": 2,
+    "allGreen": false
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:03",
+    "checks": [
+      {
+        "name": "credential path exists",
+        "pass": true,
+        "detail": "descriptor=cred-checkmail"
+      },
+      {
+        "name": "descriptor row",
+        "pass": true,
+        "detail": "1 account:configured rows"
+      },
+      {
+        "name": "secret hygiene",
+        "pass": true,
+        "detail": "secret string absent from every ledger row"
+      },
+      {
+        "name": "real read",
+        "pass": true,
+        "detail": "basis=fixture:.eml (no configured account \u2014 fixture basis honestly labeled)"
+      },
+      {
+        "name": "unconfigured honest",
+        "pass": true,
+        "detail": "basis declared: fixture:.eml (no configured account \u2014 fixture basis honestly labeled)"
+      }
+    ],
+    "pass": 5,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "credential path exists",
+        "pass": false,
+        "detail": "descriptor=None"
+      },
+      {
+        "name": "descriptor row",
+        "pass": false,
+        "detail": "0 account:configured rows"
+      },
+      {
+        "name": "secret hygiene",
+        "pass": false,
+        "detail": "secret string absent from every ledger row"
+      },
+      {
+        "name": "real read",
+        "pass": false,
+        "detail": "basis="
+      },
+      {
+        "name": "unconfigured honest",
+        "pass": false,
+        "detail": "basis declared: "
+      }
+    ],
+    "pass": 0,
+    "fail": 5,
+    "allGreen": false
+  }
+}

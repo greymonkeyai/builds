@@ -1,4 +1,5 @@
 # Direction 002 — SIGNED by owner 2026-11-20
+<!-- harness-doc kind=direction status=discharged applies-to=cycle-2 -->
 
 Drafted at Cycle 1 review from devlog `## Review findings`; open decisions ruled by
 the owner 2026-11-20. Rectification set defined by `shortcomings-002.md`.

@@ -1,0 +1,36 @@
+{
+ "ok": true,
+ "port": 9790,
+ "gate": {
+  "ok": true,
+  "checks": [
+   {
+    "check": "ledger partition mounted",
+    "pass": true
+   },
+   {
+    "check": "partition queryable",
+    "pass": true
+   },
+   {
+    "check": "input pipelines accept and route",
+    "pass": true
+   },
+   {
+    "check": "primary LLM handle",
+    "pass": true,
+    "mode": "live-ollama:llama3.2"
+   }
+  ],
+  "passedAt": "2026-11-26T06:53:24.678+00:00",
+  "bootStartedAt": null,
+  "timeToGateMs": 3948
+ },
+ "gateMs": 3948,
+ "llm": "live-ollama:llama3.2",
+ "voices": 2,
+ "node": "node-desktop-oogq7un-n-f2c6",
+ "network": "net-chorus-4430ef",
+ "peerPort": 7871,
+ "seed": false
+}

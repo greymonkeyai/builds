@@ -1,0 +1,54 @@
+{
+  "id": "S-competing-tools",
+  "ran": true,
+  "checks": [
+    {
+      "name": "two competing tools ran the same need",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "both legs produced interpretable results",
+      "pass": true,
+      "detail": [
+        {
+          "tool": "list-members",
+          "members": 37,
+          "nonmatches": 2737,
+          "ok": true
+        },
+        {
+          "tool": "retrieve-table",
+          "members": 983,
+          "nonmatches": 1069,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "name": "results comparable (member counts)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "comparison recorded",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true,
+  "legs": [
+    {
+      "tool": "list-members",
+      "members": 37,
+      "nonmatches": 2737,
+      "ok": true
+    },
+    {
+      "tool": "retrieve-table",
+      "members": 983,
+      "nonmatches": 1069,
+      "ok": true
+    }
+  ]
+}

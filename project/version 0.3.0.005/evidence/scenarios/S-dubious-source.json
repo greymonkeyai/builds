@@ -1,0 +1,84 @@
+{
+  "id": "S-dubious-source",
+  "ran": true,
+  "checks": [
+    {
+      "name": "artifact claims held below trust ceiling",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "encoded references resolved against vetted pointers",
+      "pass": true,
+      "detail": [
+        {
+          "claim": "Crime fell every year of the term",
+          "ref": "https://en.wikipedia.org/wiki/Pennsylvania",
+          "vetted_match": "https://en.wikipedia.org/",
+          "status": "resolves-against-vetted"
+        },
+        {
+          "claim": "Crime fell every year of the term",
+          "ref": "https://en.wikipedia.org/wiki/Pennsylvania",
+          "vetted_match": "https://en.wikipedia.org/",
+          "status": "resolves-against-vetted"
+        },
+        {
+          "claim": "Crime fell every year of the term",
+          "ref": "https://en.wikipedia.org/wiki/Pennsylvania",
+          "vetted_match": "https://en.wikipedia.org/",
+          "status": "resolves-against-vetted"
+        },
+        {
+          "claim": "Crime fell every year of the term",
+          "ref": "https://en.wikipedia.org/wiki/Pennsylvania",
+          "vetted_match": "https://en.wikipedia.org/",
+          "status": "resolves-against-vetted"
+        },
+        {
+          "claim": "Crime fell every year of the term",
+          "ref": "https://en.wikipedia.org/wiki/Pennsylvania",
+          "vetted_match": "https://en.wikipedia.org/",
+          "status": "resolves-against-vetted"
+        }
+      ]
+    },
+    {
+      "name": "non-matching claims recorded for review",
+      "pass": true,
+      "detail": [
+        {
+          "claim": "Cross cut the salt budget 30%",
+          "ref": "https://cross2026.example/facts",
+          "vetted_match": null,
+          "status": "non-matching — recorded for review"
+        },
+        {
+          "claim": "Cross cut the salt budget 30%",
+          "ref": "https://cross2026.example/facts",
+          "vetted_match": null,
+          "status": "non-matching — recorded for review"
+        },
+        {
+          "claim": "Cross cut the salt budget 30%",
+          "ref": "https://cross2026.example/facts",
+          "vetted_match": null,
+          "status": "non-matching — recorded for review"
+        },
+        {
+          "claim": "Cross cut the salt budget 30%",
+          "ref": "https://cross2026.example/facts",
+          "vetted_match": null,
+          "status": "non-matching — recorded for review"
+        },
+        {
+          "claim": "Cross cut the salt budget 30%",
+          "ref": "https://cross2026.example/facts",
+          "vetted_match": null,
+          "status": "non-matching — recorded for review"
+        }
+      ]
+    }
+  ],
+  "pass": true
+}

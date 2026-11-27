@@ -1,0 +1,17 @@
+{
+  "id": "S-artifact-republish",
+  "ran": true,
+  "checks": [
+    {
+      "name": "adopted workshop re-encoded to new artifact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "gen-2 payload decodes identically",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true
+}

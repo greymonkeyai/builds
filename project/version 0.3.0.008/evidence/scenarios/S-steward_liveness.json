@@ -1,0 +1,166 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "monotonic passes",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "real age",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no reset",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "monotonic passes",
+    "pass": true,
+    "detail": "passes 35\u219236\u219238 across restart",
+    "src": [
+     "user-path",
+     "external:file"
+    ]
+   },
+   {
+    "name": "real age",
+    "pass": true,
+    "detail": "ageSeconds=1.2 real elapsed",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no reset",
+    "pass": true,
+    "detail": "counter carried across relaunch: 36\u219238",
+    "src": [
+     "external:file"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "monotonic passes",
+    "pass": true,
+    "detail": "passes 20\u219221\u219223 across restart",
+    "src": [
+     "user-path",
+     "external:file"
+    ]
+   },
+   {
+    "name": "real age",
+    "pass": true,
+    "detail": "ageSeconds=1.6 real elapsed",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no reset",
+    "pass": true,
+    "detail": "counter carried across relaunch: 21\u219223",
+    "src": [
+     "external:file"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "monotonic passes",
+    "pass": true,
+    "detail": "passes 8\u21929\u219211 across restart",
+    "src": [
+     "user-path",
+     "external:file"
+    ]
+   },
+   {
+    "name": "real age",
+    "pass": true,
+    "detail": "ageSeconds=1.2 real elapsed",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no reset",
+    "pass": true,
+    "detail": "counter carried across relaunch: 9\u219211",
+    "src": [
+     "external:file"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "monotonic passes",
+    "pass": false,
+    "detail": "passes 0\u21920\u21920 across restart",
+    "src": [
+     "user-path",
+     "external:file"
+    ]
+   },
+   {
+    "name": "real age",
+    "pass": false,
+    "detail": "ageSeconds=None real elapsed",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no reset",
+    "pass": true,
+    "detail": "counter carried across relaunch: 0\u21920",
+    "src": [
+     "external:file"
+    ]
+   }
+  ],
+  "pass": 1,
+  "fail": 2,
+  "allGreen": false
+ }
+}

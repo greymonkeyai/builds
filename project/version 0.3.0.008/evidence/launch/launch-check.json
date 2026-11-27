@@ -1,0 +1,57 @@
+{
+ "generated": "2026-11-27T08:43:06",
+ "root": "C:\\builds\\project\\version 0.3.0.008",
+ "port": 9539,
+ "legs": [
+  {
+   "leg": 1,
+   "name": "cold launch \u2192 readiness gate",
+   "pass": true,
+   "gateSeconds": 6.0,
+   "aliveSeconds": 0.0,
+   "gate": {
+    "passed": true,
+    "checks": {
+     "partitionMounted": true,
+     "ledgerQueryable": true,
+     "llmHandle": true,
+     "inputPipeline": true
+    },
+    "seconds": 0.0,
+    "passedAt": "2026-11-27T08:42:43",
+    "timeToGateSeconds": 5.5
+   }
+  },
+  {
+   "leg": 2,
+   "name": "relaunch recovery",
+   "pass": true,
+   "journalRowsBefore": 221,
+   "journalRowsAfter": 344
+  },
+  {
+   "leg": 3,
+   "name": "executing from removable media (H:)",
+   "pass": 7.635579824447632,
+   "driveType": 2,
+   "health": 7.635579824447632,
+   "onRemovable": true,
+   "note": "seed staged by S-usb-mint-gen2 / S-usb-seed-run"
+  },
+  {
+   "leg": 4,
+   "name": "close-terminates",
+   "pass": true,
+   "exitCode": 1,
+   "portFree": true
+  },
+  {
+   "leg": 5,
+   "name": "launch hygiene \u2014 owned port refused to second owner",
+   "pass": true,
+   "portOwned": 6.081412315368652,
+   "secondBindRefused": true
+  }
+ ],
+ "allPass": true
+}

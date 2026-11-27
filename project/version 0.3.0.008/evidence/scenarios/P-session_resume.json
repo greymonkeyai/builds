@@ -1,0 +1,394 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "P-session-resume step: shell.launch",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: ledger.recovery",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: ledger.candidates",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: shell.status",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: conversation.context",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: conversation.reset",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: shell.library",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: shell.close",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 8,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "P-session-resume step: shell.launch",
+    "pass": true,
+    "detail": "affordance=chat rendered=True api=/api/health code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: ledger.recovery",
+    "pass": true,
+    "detail": "affordance=chat rendered=True api=/api/ledger code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: ledger.candidates",
+    "pass": true,
+    "detail": "affordance=needs-floor rendered=True api=/api/ledger code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: shell.status",
+    "pass": true,
+    "detail": "affordance=status-bar rendered=True api=/api/state code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: conversation.context",
+    "pass": true,
+    "detail": "affordance=context-display rendered=True api=/api/conversation code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: conversation.reset",
+    "pass": true,
+    "detail": "affordance=chat-reset rendered=True api=/api/conversation code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: shell.library",
+    "pass": true,
+    "detail": "affordance=library rendered=True api=/api/library code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: shell.close",
+    "pass": true,
+    "detail": "affordance=chat rendered=True api=/api/health code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 8,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "P-session-resume step: shell.launch",
+    "pass": true,
+    "detail": "affordance=chat rendered=True api=/api/health code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: ledger.recovery",
+    "pass": true,
+    "detail": "affordance=chat rendered=True api=/api/ledger code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: ledger.candidates",
+    "pass": true,
+    "detail": "affordance=needs-floor rendered=True api=/api/ledger code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: shell.status",
+    "pass": true,
+    "detail": "affordance=status-bar rendered=True api=/api/state code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: conversation.context",
+    "pass": true,
+    "detail": "affordance=context-display rendered=True api=/api/conversation code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: conversation.reset",
+    "pass": true,
+    "detail": "affordance=chat-reset rendered=True api=/api/conversation code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: shell.library",
+    "pass": true,
+    "detail": "affordance=library rendered=True api=/api/library code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: shell.close",
+    "pass": true,
+    "detail": "affordance=chat rendered=True api=/api/health code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 8,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "P-session-resume step: shell.launch",
+    "pass": true,
+    "detail": "affordance=chat rendered=True api=/api/health code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: ledger.recovery",
+    "pass": true,
+    "detail": "affordance=chat rendered=True api=/api/ledger code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: ledger.candidates",
+    "pass": true,
+    "detail": "affordance=needs-floor rendered=True api=/api/ledger code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: shell.status",
+    "pass": true,
+    "detail": "affordance=status-bar rendered=True api=/api/state code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: conversation.context",
+    "pass": true,
+    "detail": "affordance=context-display rendered=True api=/api/conversation code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: conversation.reset",
+    "pass": true,
+    "detail": "affordance=chat-reset rendered=True api=/api/conversation code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: shell.library",
+    "pass": true,
+    "detail": "affordance=library rendered=True api=/api/library code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: shell.close",
+    "pass": true,
+    "detail": "affordance=chat rendered=True api=/api/health code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 8,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "P-session-resume step: shell.launch",
+    "pass": true,
+    "detail": "affordance=chat rendered=False api=/api/health code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: ledger.recovery",
+    "pass": false,
+    "detail": "affordance=chat rendered=False api=/api/ledger code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: ledger.candidates",
+    "pass": false,
+    "detail": "affordance=needs-floor rendered=False api=/api/ledger code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: shell.status",
+    "pass": false,
+    "detail": "affordance=status-bar rendered=False api=/api/state code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: conversation.context",
+    "pass": false,
+    "detail": "affordance=context-display rendered=False api=/api/conversation code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: conversation.reset",
+    "pass": false,
+    "detail": "affordance=chat-reset rendered=False api=/api/conversation code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: shell.library",
+    "pass": false,
+    "detail": "affordance=library rendered=False api=/api/library code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-session-resume step: shell.close",
+    "pass": true,
+    "detail": "affordance=chat rendered=False api=/api/health code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 2,
+  "fail": 6,
+  "allGreen": false
+ }
+}

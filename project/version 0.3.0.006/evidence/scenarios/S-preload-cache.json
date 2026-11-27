@@ -1,0 +1,24 @@
+{
+ "id": "S-preload-cache",
+ "ran": true,
+ "checks": [
+  {
+   "name": "vetted-source pointers seeded",
+   "pass": true,
+   "detail": "0 pointer rows"
+  },
+  {
+   "name": "device decoder entries present",
+   "pass": true,
+   "detail": "5 decoder entries"
+  },
+  {
+   "name": "marketing exemplar present + decodable",
+   "pass": true,
+   "detail": "exemplar rows=1 files=[]"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.0
+}

@@ -1,0 +1,306 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "P-fleet-adopt step: fleet.discovery",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-fleet-adopt step: fleet.identify",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-fleet-adopt step: fleet.invite",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-fleet-adopt step: fleet.install",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-fleet-adopt step: fleet.roster",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-fleet-adopt step: fleet.map",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 6,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "P-fleet-adopt step: fleet.discovery",
+    "pass": true,
+    "detail": "affordance=fleet rendered=True api=/api/fleet/discovery code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-fleet-adopt step: fleet.identify",
+    "pass": true,
+    "detail": "affordance=fleet rendered=True api=/api/fleet code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-fleet-adopt step: fleet.invite",
+    "pass": true,
+    "detail": "affordance=fleet rendered=True api=/api/fleet code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-fleet-adopt step: fleet.install",
+    "pass": true,
+    "detail": "affordance=fleet rendered=True api=/api/fleet code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-fleet-adopt step: fleet.roster",
+    "pass": true,
+    "detail": "affordance=fleet rendered=True api=/api/fleet code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-fleet-adopt step: fleet.map",
+    "pass": true,
+    "detail": "affordance=map rendered=True api=/api/fleet/map code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 6,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "P-fleet-adopt step: fleet.discovery",
+    "pass": true,
+    "detail": "affordance=fleet rendered=True api=/api/fleet/discovery code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-fleet-adopt step: fleet.identify",
+    "pass": true,
+    "detail": "affordance=fleet rendered=True api=/api/fleet code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-fleet-adopt step: fleet.invite",
+    "pass": true,
+    "detail": "affordance=fleet rendered=True api=/api/fleet code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-fleet-adopt step: fleet.install",
+    "pass": true,
+    "detail": "affordance=fleet rendered=True api=/api/fleet code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-fleet-adopt step: fleet.roster",
+    "pass": true,
+    "detail": "affordance=fleet rendered=True api=/api/fleet code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-fleet-adopt step: fleet.map",
+    "pass": true,
+    "detail": "affordance=map rendered=True api=/api/fleet/map code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 6,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "P-fleet-adopt step: fleet.discovery",
+    "pass": true,
+    "detail": "affordance=fleet rendered=True api=/api/fleet/discovery code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-fleet-adopt step: fleet.identify",
+    "pass": true,
+    "detail": "affordance=fleet rendered=True api=/api/fleet code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-fleet-adopt step: fleet.invite",
+    "pass": true,
+    "detail": "affordance=fleet rendered=True api=/api/fleet code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-fleet-adopt step: fleet.install",
+    "pass": true,
+    "detail": "affordance=fleet rendered=True api=/api/fleet code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-fleet-adopt step: fleet.roster",
+    "pass": true,
+    "detail": "affordance=fleet rendered=True api=/api/fleet code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-fleet-adopt step: fleet.map",
+    "pass": true,
+    "detail": "affordance=map rendered=True api=/api/fleet/map code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 6,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "P-fleet-adopt step: fleet.discovery",
+    "pass": false,
+    "detail": "affordance=fleet rendered=False api=/api/fleet/discovery code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-fleet-adopt step: fleet.identify",
+    "pass": false,
+    "detail": "affordance=fleet rendered=False api=/api/fleet code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-fleet-adopt step: fleet.invite",
+    "pass": false,
+    "detail": "affordance=fleet rendered=False api=/api/fleet code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-fleet-adopt step: fleet.install",
+    "pass": false,
+    "detail": "affordance=fleet rendered=False api=/api/fleet code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-fleet-adopt step: fleet.roster",
+    "pass": false,
+    "detail": "affordance=fleet rendered=False api=/api/fleet code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-fleet-adopt step: fleet.map",
+    "pass": false,
+    "detail": "affordance=map rendered=False api=/api/fleet/map code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 6,
+  "allGreen": false
+ }
+}

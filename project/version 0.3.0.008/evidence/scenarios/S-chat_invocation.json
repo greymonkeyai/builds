@@ -1,0 +1,206 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "conversational reply returned",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "tool need(s) opened, distinguishable",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "input captured as assertion",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "needs route",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 4,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "conversational reply returned",
+    "pass": true,
+    "detail": "2 replies",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "tool need(s) opened, distinguishable",
+    "pass": true,
+    "detail": "needsOpened=['a-a4ccdd98043c']",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "input captured as assertion",
+    "pass": true,
+    "detail": "",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "needs route",
+    "pass": true,
+    "detail": "routed=[{'intent': 'name-address', 'to': 'p-d6a0ca33c0'}, {'intent': 'list-request', 'to': 'list-machinery'}]",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "conversational reply returned",
+    "pass": true,
+    "detail": "1 replies",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "tool need(s) opened, distinguishable",
+    "pass": true,
+    "detail": "needsOpened=['a-4abcca951906']",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "input captured as assertion",
+    "pass": true,
+    "detail": "",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "needs route",
+    "pass": true,
+    "detail": "routed=[{'intent': 'list-request', 'to': 'list-machinery'}]",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "conversational reply returned",
+    "pass": true,
+    "detail": "2 replies",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "tool need(s) opened, distinguishable",
+    "pass": true,
+    "detail": "needsOpened=['a-79f7be9db084']",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "input captured as assertion",
+    "pass": true,
+    "detail": "",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "needs route",
+    "pass": true,
+    "detail": "routed=[{'intent': 'name-address', 'to': 'p-d6a0ca33c0'}, {'intent': 'list-request', 'to': 'list-machinery'}]",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "conversational reply returned",
+    "pass": false,
+    "detail": "0 replies",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "tool need(s) opened, distinguishable",
+    "pass": false,
+    "detail": "needsOpened=[]",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "input captured as assertion",
+    "pass": false,
+    "detail": "",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "needs route",
+    "pass": false,
+    "detail": "routed=[]",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 4,
+  "allGreen": false
+ }
+}

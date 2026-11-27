@@ -1,0 +1,142 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:06",
+    "checks": [
+      {
+        "name": "interest match responds",
+        "pass": false,
+        "detail": "no persona with plant interests"
+      },
+      {
+        "name": "different keys",
+        "pass": false,
+        "detail": "no persona with plant interests"
+      },
+      {
+        "name": "same key gated",
+        "pass": false,
+        "detail": "no persona with plant interests"
+      },
+      {
+        "name": "awareness carried",
+        "pass": false,
+        "detail": "no persona with plant interests"
+      }
+    ],
+    "pass": 0,
+    "fail": 4,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "interest match responds",
+        "pass": true,
+        "detail": "Bramble in ['Trekkie', 'Bramble']"
+      },
+      {
+        "name": "different keys",
+        "pass": true,
+        "detail": "distinct respondent keys ['Trekkie', 'Bramble']"
+      },
+      {
+        "name": "same key gated",
+        "pass": true,
+        "detail": "respondents ['Trekkie', 'Bramble'] within roster + threshold bounds"
+      },
+      {
+        "name": "awareness carried",
+        "pass": true,
+        "detail": "matching open needs/projects carried to respondent"
+      }
+    ],
+    "pass": 4,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "interest match responds",
+        "pass": false,
+        "detail": "no persona with plant interests"
+      },
+      {
+        "name": "different keys",
+        "pass": false,
+        "detail": "no persona with plant interests"
+      },
+      {
+        "name": "same key gated",
+        "pass": false,
+        "detail": "no persona with plant interests"
+      },
+      {
+        "name": "awareness carried",
+        "pass": false,
+        "detail": "no persona with plant interests"
+      }
+    ],
+    "pass": 0,
+    "fail": 4,
+    "allGreen": false
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:03",
+    "checks": [
+      {
+        "name": "interest match responds",
+        "pass": true,
+        "detail": "Bramble in ['Trekkie', 'Bramble']"
+      },
+      {
+        "name": "different keys",
+        "pass": true,
+        "detail": "distinct respondent keys ['Trekkie', 'Bramble']"
+      },
+      {
+        "name": "same key gated",
+        "pass": true,
+        "detail": "respondents ['Trekkie', 'Bramble'] within roster + threshold bounds"
+      },
+      {
+        "name": "awareness carried",
+        "pass": true,
+        "detail": "matching open needs/projects carried to respondent"
+      }
+    ],
+    "pass": 4,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "interest match responds",
+        "pass": false,
+        "detail": "no persona with plant interests"
+      },
+      {
+        "name": "different keys",
+        "pass": false,
+        "detail": "no persona with plant interests"
+      },
+      {
+        "name": "same key gated",
+        "pass": false,
+        "detail": "no persona with plant interests"
+      },
+      {
+        "name": "awareness carried",
+        "pass": false,
+        "detail": "no persona with plant interests"
+      }
+    ],
+    "pass": 0,
+    "fail": 4,
+    "allGreen": false
+  }
+}

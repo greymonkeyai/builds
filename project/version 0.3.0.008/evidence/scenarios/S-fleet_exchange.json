@@ -1,0 +1,242 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "second real node",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "delta exchange",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "rejoin correlation",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "courier sync",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "both sides evidenced",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 5,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "second real node",
+    "pass": false,
+    "detail": "no hearth peer on LAN \u2014 declared absence",
+    "src": [
+     "external:net"
+    ]
+   },
+   {
+    "name": "delta exchange",
+    "pass": false,
+    "detail": "requires second node",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "rejoin correlation",
+    "pass": false,
+    "detail": "requires second node",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "courier sync",
+    "pass": false,
+    "detail": "requires second node",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "both sides evidenced",
+    "pass": false,
+    "detail": "requires second node",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 5,
+  "allGreen": false
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "second real node",
+    "pass": false,
+    "detail": "no hearth peer on LAN \u2014 declared absence",
+    "src": [
+     "external:net"
+    ]
+   },
+   {
+    "name": "delta exchange",
+    "pass": false,
+    "detail": "requires second node",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "rejoin correlation",
+    "pass": false,
+    "detail": "requires second node",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "courier sync",
+    "pass": false,
+    "detail": "requires second node",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "both sides evidenced",
+    "pass": false,
+    "detail": "requires second node",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 5,
+  "allGreen": false
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "second real node",
+    "pass": false,
+    "detail": "no hearth peer on LAN \u2014 declared absence",
+    "src": [
+     "external:net"
+    ]
+   },
+   {
+    "name": "delta exchange",
+    "pass": false,
+    "detail": "requires second node",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "rejoin correlation",
+    "pass": false,
+    "detail": "requires second node",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "courier sync",
+    "pass": false,
+    "detail": "requires second node",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "both sides evidenced",
+    "pass": false,
+    "detail": "requires second node",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 5,
+  "allGreen": false
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "second real node",
+    "pass": false,
+    "detail": "no hearth peer on LAN \u2014 declared absence",
+    "src": [
+     "external:net"
+    ]
+   },
+   {
+    "name": "delta exchange",
+    "pass": false,
+    "detail": "requires second node",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "rejoin correlation",
+    "pass": false,
+    "detail": "requires second node",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "courier sync",
+    "pass": false,
+    "detail": "requires second node",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "both sides evidenced",
+    "pass": false,
+    "detail": "requires second node",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 5,
+  "allGreen": false
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "id": "S-fleet-install-path",
+ "ran": true,
+ "checks": [
+  {
+   "name": "no dead end",
+   "pass": true,
+   "detail": "1 install records"
+  },
+  {
+   "name": "target surface OR directions",
+   "pass": true,
+   "detail": "{\"subject\": \"192.168.86.41\", \"ip\": \"192.168.86.41\", \"attempted\": true, \"adminShare\": \"unreachable: OSError\", \"state\": \"pending\", \"directions\": \"admin share is not open to this machine. Operator path: "
+  },
+  {
+   "name": "honest outcome",
+   "pass": true,
+   "detail": "unreachable: OSError"
+  },
+  {
+   "name": "pending stated",
+   "pass": true,
+   "detail": "pending"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 4.1
+}

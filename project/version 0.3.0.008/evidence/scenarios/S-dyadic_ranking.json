@@ -1,0 +1,164 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "every move visible",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "interior moves",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "surface shows it",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "every move visible",
+    "pass": true,
+    "detail": "3 dyadic-rank rows for moved personas",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "interior moves",
+    "pass": true,
+    "detail": "moved=['p-886fed0178', 'p-d6a0ca33c0', 'p-247731c75f']",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "surface shows it",
+    "pass": true,
+    "detail": "dyadic values on roster: {'p-f29ae37cab': 0.75, 'p-247731c75f': 0.5, 'p-d6a0ca33c0': 0.5, 'p-886fed0178': 0.5, 'p-e3347c1f5e': 0.25}",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "every move visible",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "interior moves",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "surface shows it",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "every move visible",
+    "pass": true,
+    "detail": "3 dyadic-rank rows for moved personas",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "interior moves",
+    "pass": true,
+    "detail": "moved=['p-886fed0178', 'p-d6a0ca33c0', 'p-247731c75f']",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "surface shows it",
+    "pass": true,
+    "detail": "dyadic values on roster: {'p-f29ae37cab': 0.75, 'p-247731c75f': 0.5, 'p-d6a0ca33c0': 0.5, 'p-886fed0178': 0.5, 'p-e3347c1f5e': 0.25}",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "every move visible",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "interior moves",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "surface shows it",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ }
+}

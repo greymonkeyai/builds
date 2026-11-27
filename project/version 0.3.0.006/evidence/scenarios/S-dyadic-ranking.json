@@ -1,0 +1,24 @@
+{
+ "id": "S-dyadic-ranking",
+ "ran": true,
+ "checks": [
+  {
+   "name": "every move visible",
+   "pass": true,
+   "detail": "5 rows"
+  },
+  {
+   "name": "interior moves",
+   "pass": true,
+   "detail": "{\"moved\": true, \"previous\": 0.5, \"heldConfidence\": 0.463, \"confidence\": 0.463, \"differentiates\": true, \"order\": [\"Nix\", \"Vera\", \"Bolt\", \"Wren\", \"Opal\""
+  },
+  {
+   "name": "surface shows it",
+   "pass": true,
+   "detail": "0.5 -> 0.463"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.0
+}

@@ -1,4 +1,5 @@
 # Development log — harness-ui
+<!-- harness-doc kind=log status=in-force -->
 
 Line of development: a read-only, file-derived status display over the builds root.
 Started 2026-11-23. This log is the continuous record of this project; it is pointed

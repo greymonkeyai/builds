@@ -1,4 +1,5 @@
 # Direction 001 — SIGNED 2026-11-23
+<!-- harness-doc kind=direction status=discharged applies-to=cycle-1 -->
 
 Drafted by the coordinator session 2026-11-23 at line birth. First cycle on a new line.
 Signed by owner 2026-11-23 (with line name, judge model, and scenario suite).

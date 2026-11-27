@@ -1,0 +1,306 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "P-artifact-exchange step: exchange.import",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-artifact-exchange step: exchange.style",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-artifact-exchange step: exchange.republish",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-artifact-exchange step: exchange.transmission",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-artifact-exchange step: exchange.cache",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-artifact-exchange step: exchange.scancode",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 6,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "P-artifact-exchange step: exchange.import",
+    "pass": true,
+    "detail": "affordance=workshops rendered=True api=/api/workshops code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-artifact-exchange step: exchange.style",
+    "pass": true,
+    "detail": "affordance=style-picker rendered=True api=/api/settings code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-artifact-exchange step: exchange.republish",
+    "pass": true,
+    "detail": "affordance=workshops rendered=True api=/api/workshops code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-artifact-exchange step: exchange.transmission",
+    "pass": true,
+    "detail": "affordance=tools rendered=True api=/api/tools code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-artifact-exchange step: exchange.cache",
+    "pass": true,
+    "detail": "affordance=preloads rendered=True api=/api/preloads code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-artifact-exchange step: exchange.scancode",
+    "pass": true,
+    "detail": "affordance=workshops rendered=True api=/api/workshops code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 6,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "P-artifact-exchange step: exchange.import",
+    "pass": true,
+    "detail": "affordance=workshops rendered=True api=/api/workshops code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-artifact-exchange step: exchange.style",
+    "pass": true,
+    "detail": "affordance=style-picker rendered=True api=/api/settings code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-artifact-exchange step: exchange.republish",
+    "pass": true,
+    "detail": "affordance=workshops rendered=True api=/api/workshops code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-artifact-exchange step: exchange.transmission",
+    "pass": true,
+    "detail": "affordance=tools rendered=True api=/api/tools code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-artifact-exchange step: exchange.cache",
+    "pass": true,
+    "detail": "affordance=preloads rendered=True api=/api/preloads code=500",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-artifact-exchange step: exchange.scancode",
+    "pass": true,
+    "detail": "affordance=workshops rendered=True api=/api/workshops code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 6,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "P-artifact-exchange step: exchange.import",
+    "pass": true,
+    "detail": "affordance=workshops rendered=True api=/api/workshops code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-artifact-exchange step: exchange.style",
+    "pass": true,
+    "detail": "affordance=style-picker rendered=True api=/api/settings code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-artifact-exchange step: exchange.republish",
+    "pass": true,
+    "detail": "affordance=workshops rendered=True api=/api/workshops code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-artifact-exchange step: exchange.transmission",
+    "pass": true,
+    "detail": "affordance=tools rendered=True api=/api/tools code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-artifact-exchange step: exchange.cache",
+    "pass": true,
+    "detail": "affordance=preloads rendered=True api=/api/preloads code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-artifact-exchange step: exchange.scancode",
+    "pass": true,
+    "detail": "affordance=workshops rendered=True api=/api/workshops code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 6,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "P-artifact-exchange step: exchange.import",
+    "pass": false,
+    "detail": "affordance=workshops rendered=False api=/api/workshops code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-artifact-exchange step: exchange.style",
+    "pass": false,
+    "detail": "affordance=style-picker rendered=False api=/api/settings code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-artifact-exchange step: exchange.republish",
+    "pass": false,
+    "detail": "affordance=workshops rendered=False api=/api/workshops code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-artifact-exchange step: exchange.transmission",
+    "pass": false,
+    "detail": "affordance=tools rendered=False api=/api/tools code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-artifact-exchange step: exchange.cache",
+    "pass": false,
+    "detail": "affordance=preloads rendered=False api=/api/preloads code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-artifact-exchange step: exchange.scancode",
+    "pass": false,
+    "detail": "affordance=workshops rendered=False api=/api/workshops code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 6,
+  "allGreen": false
+ }
+}

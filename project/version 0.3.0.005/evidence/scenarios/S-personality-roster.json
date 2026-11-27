@@ -1,0 +1,27 @@
+{
+  "id": "S-personality-roster",
+  "ran": true,
+  "checks": [
+    {
+      "name": "roster operable — every persona reachable",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "selection works",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "reorder changes order",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "V-D: reorder visibly changes held-confidence",
+      "pass": true,
+      "detail": "0.5 → 0.6"
+    }
+  ],
+  "pass": true
+}

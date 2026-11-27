@@ -1,0 +1,238 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "typed input recorded as assertion",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "source-aware claimant",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "typed value",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "basis = captured-input",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 4,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "typed input recorded as assertion",
+    "pass": true,
+    "detail": "1 user-input rows for the sent text in journal file",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "source-aware claimant",
+    "pass": true,
+    "detail": "claimant=user",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "typed value",
+    "pass": true,
+    "detail": "value={'text': 'checking the record please', 'surface': 'chat'}",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "basis = captured-input",
+    "pass": true,
+    "detail": "basis=captured-input",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "edge: derived certainty capped below top",
+    "pass": true,
+    "detail": "no derived row asserts certainty=1.0",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 5,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "typed input recorded as assertion",
+    "pass": true,
+    "detail": "1 user-input rows for the sent text in journal file",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "source-aware claimant",
+    "pass": true,
+    "detail": "claimant=user",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "typed value",
+    "pass": true,
+    "detail": "value={'text': 'checking the record please', 'surface': 'chat'}",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "basis = captured-input",
+    "pass": true,
+    "detail": "basis=captured-input",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "edge: derived certainty capped below top",
+    "pass": true,
+    "detail": "no derived row asserts certainty=1.0",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 5,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "typed input recorded as assertion",
+    "pass": true,
+    "detail": "1 user-input rows for the sent text in journal file",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "source-aware claimant",
+    "pass": true,
+    "detail": "claimant=user",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "typed value",
+    "pass": true,
+    "detail": "value={'text': 'checking the record please', 'surface': 'chat'}",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "basis = captured-input",
+    "pass": true,
+    "detail": "basis=captured-input",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "edge: derived certainty capped below top",
+    "pass": true,
+    "detail": "no derived row asserts certainty=1.0",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 5,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "typed input recorded as assertion",
+    "pass": false,
+    "detail": "0 user-input rows for the sent text in journal file",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "source-aware claimant",
+    "pass": false,
+    "detail": "claimant=[]",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "typed value",
+    "pass": false,
+    "detail": "value=[]",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "basis = captured-input",
+    "pass": false,
+    "detail": "basis=[]",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "edge: derived certainty capped below top",
+    "pass": true,
+    "detail": "no derived row asserts certainty=1.0",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 1,
+  "fail": 4,
+  "allGreen": false
+ }
+}

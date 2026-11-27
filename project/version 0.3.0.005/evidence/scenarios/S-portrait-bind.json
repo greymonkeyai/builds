@@ -1,0 +1,22 @@
+{
+  "id": "S-portrait-bind",
+  "ran": true,
+  "checks": [
+    {
+      "name": "portrait file produced",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "art bound to this persona",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "V-A: generative path declared",
+      "pass": true,
+      "detail": "llm-authored"
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,22 @@
+{
+  "id": "S-preload-cache",
+  "ran": true,
+  "checks": [
+    {
+      "name": "vetted-source pointers seeded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "device decoder entries present",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "marketing exemplar present + decodable",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true
+}

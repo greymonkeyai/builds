@@ -1,0 +1,29 @@
+{
+ "id": "S-scancode-interchange",
+ "ran": true,
+ "checks": [
+  {
+   "name": "generate",
+   "pass": true,
+   "detail": "{\"symbology\": \"rastgrid-1\", \"modules\": 64, \"payloadBytes\": 241, \"crc\": 359503823, \"file\": \"C:\\\\builds\\\\project\\\\version 0.3.0.006\\\\runtime-suite\\\\arti"
+  },
+  {
+   "name": "carry",
+   "pass": true,
+   "detail": "C:\\builds\\project\\version 0.3.0.006\\runtime-suite\\artifacts\\workshop-536a1a7689.bmp"
+  },
+  {
+   "name": "decode",
+   "pass": true,
+   "detail": "crcOk=True"
+  },
+  {
+   "name": "import",
+   "pass": true,
+   "detail": "{\"decode\": {\"crcOk\": true, \"modules\": 64}, \"capture\": \"a-582\", \"workshop\": \"a-583\"}"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.0
+}

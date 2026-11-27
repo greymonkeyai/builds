@@ -1,0 +1,166 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "adopted workshop re-encoded to new artifact",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "gen-2 payload decodes identically",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "gen-2 decoded in a second instance (R-V1/jev)",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "adopted workshop re-encoded to new artifact",
+    "pass": true,
+    "detail": "gen2=C:\\builds\\project\\version 0.3.0.008\\runtime\\green\\exchange\\artifact-gen2.png",
+    "src": [
+     "user-path",
+     "external:file"
+    ]
+   },
+   {
+    "name": "gen-2 payload decodes identically",
+    "pass": true,
+    "detail": "gen=2",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "gen-2 decoded in a second instance (R-V1/jev)",
+    "pass": true,
+    "detail": "decoded by a distinct spawned instance, not this process",
+    "src": [
+     "external:net"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "adopted workshop re-encoded to new artifact",
+    "pass": true,
+    "detail": "gen2=C:\\builds\\project\\version 0.3.0.008\\runtime\\sabotage-empty-store\\exchange\\artifact-gen2.png",
+    "src": [
+     "user-path",
+     "external:file"
+    ]
+   },
+   {
+    "name": "gen-2 payload decodes identically",
+    "pass": true,
+    "detail": "gen=2",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "gen-2 decoded in a second instance (R-V1/jev)",
+    "pass": true,
+    "detail": "decoded by a distinct spawned instance, not this process",
+    "src": [
+     "external:net"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "adopted workshop re-encoded to new artifact",
+    "pass": true,
+    "detail": "gen2=C:\\builds\\project\\version 0.3.0.008\\runtime\\sabotage-stub-engines\\exchange\\artifact-gen2.png",
+    "src": [
+     "user-path",
+     "external:file"
+    ]
+   },
+   {
+    "name": "gen-2 payload decodes identically",
+    "pass": true,
+    "detail": "gen=2",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "gen-2 decoded in a second instance (R-V1/jev)",
+    "pass": true,
+    "detail": "decoded by a distinct spawned instance, not this process",
+    "src": [
+     "external:net"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "adopted workshop re-encoded to new artifact",
+    "pass": false,
+    "detail": "gen2=None",
+    "src": [
+     "user-path",
+     "external:file"
+    ]
+   },
+   {
+    "name": "gen-2 payload decodes identically",
+    "pass": false,
+    "detail": "gen=None",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "gen-2 decoded in a second instance (R-V1/jev)",
+    "pass": false,
+    "detail": "decoded by a distinct spawned instance, not this process",
+    "src": [
+     "external:net"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ }
+}

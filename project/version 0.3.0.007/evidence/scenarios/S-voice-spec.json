@@ -1,0 +1,117 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:06",
+    "checks": [
+      {
+        "name": "spec is QR-fittable (minimal payload)",
+        "pass": false,
+        "detail": "35 bytes"
+      },
+      {
+        "name": "ranked families and/or traits carried",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "local engine mapping renders nearest voice",
+        "pass": false,
+        "detail": "engine=None"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "spec is QR-fittable (minimal payload)",
+        "pass": true,
+        "detail": "82 bytes"
+      },
+      {
+        "name": "ranked families and/or traits carried",
+        "pass": true,
+        "detail": "{'rate': 0, 'pitch': 'natural'}"
+      },
+      {
+        "name": "local engine mapping renders nearest voice",
+        "pass": true,
+        "detail": "engine=Microsoft Zira Desktop"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "spec is QR-fittable (minimal payload)",
+        "pass": false,
+        "detail": "35 bytes"
+      },
+      {
+        "name": "ranked families and/or traits carried",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "local engine mapping renders nearest voice",
+        "pass": false,
+        "detail": "engine=None"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:03",
+    "checks": [
+      {
+        "name": "spec is QR-fittable (minimal payload)",
+        "pass": true,
+        "detail": "35 bytes"
+      },
+      {
+        "name": "ranked families and/or traits carried",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "local engine mapping renders nearest voice",
+        "pass": true,
+        "detail": "engine=thin/absent voice pool \u2014 no voices installed on this device"
+      }
+    ],
+    "pass": 2,
+    "fail": 1,
+    "allGreen": false
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "spec is QR-fittable (minimal payload)",
+        "pass": false,
+        "detail": "35 bytes"
+      },
+      {
+        "name": "ranked families and/or traits carried",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "local engine mapping renders nearest voice",
+        "pass": false,
+        "detail": "engine=None"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  }
+}

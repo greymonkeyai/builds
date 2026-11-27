@@ -1,0 +1,12 @@
+{
+  "id": "S-windows-launch",
+  "ran": true,
+  "checks": [
+    {
+      "name": "launches on Windows like an installed program",
+      "pass": true,
+      "detail": "launch.cmd + live instance"
+    }
+  ],
+  "pass": true
+}

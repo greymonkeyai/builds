@@ -1,4 +1,5 @@
 # Convention reclassification sweep — 2026-11-19
+<!-- harness-doc kind=analysis status=discharged -->
 
 Per owner ruling 3 in `conventions-001.md`: every D-* record and every review finding
 classified across the three-layer model — **prompt** (specified behavior — "requirement"

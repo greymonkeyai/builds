@@ -1,0 +1,24 @@
+{
+ "id": "S-role-negotiate",
+ "ran": true,
+ "checks": [
+  {
+   "name": "role negotiation recorded",
+   "pass": true,
+   "detail": "4 role/member rows"
+  },
+  {
+   "name": "mint rights are a negotiated grant",
+   "pass": true,
+   "detail": "2 mint-grant mentions"
+  },
+  {
+   "name": "join outcome honest (member vs pending)",
+   "pass": true,
+   "detail": "['member', 'member', 'pending', 'pending', 'pending', 'pending', 'pending', 'pending']"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.0
+}

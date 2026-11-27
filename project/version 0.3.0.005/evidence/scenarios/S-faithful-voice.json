@@ -1,0 +1,32 @@
+{
+  "id": "S-faithful-voice",
+  "ran": true,
+  "checks": [
+    {
+      "name": "grounded reply flagged grounded",
+      "pass": true,
+      "detail": {
+        "verdict": "grounded",
+        "fidelity": 1.0,
+        "flag": "",
+        "note": "1 topic ground(s) in scope (4 total)"
+      }
+    },
+    {
+      "name": "zero-hit does NOT pass grounding (S-2)",
+      "pass": true,
+      "detail": {
+        "verdict": "ambient-only",
+        "fidelity": 0.4,
+        "flag": "no-topic-hits",
+        "note": "3 ambient ground(s) in scope (calendar/context) — no retrieved ground for this input"
+      }
+    },
+    {
+      "name": "no unflagged fidelity:null",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true
+}

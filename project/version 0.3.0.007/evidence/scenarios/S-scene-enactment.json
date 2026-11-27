@@ -1,0 +1,167 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:07",
+    "checks": [
+      {
+        "name": "short public-domain scene enacted",
+        "pass": false,
+        "detail": "0 lines"
+      },
+      {
+        "name": "\u22652 personas enact parts",
+        "pass": false,
+        "detail": "speakers=[]"
+      },
+      {
+        "name": "available tool classes exercised",
+        "pass": false,
+        "detail": "toolsUsed=None"
+      },
+      {
+        "name": "knock-knock joke enactable",
+        "pass": false,
+        "detail": "0 joke lines"
+      },
+      {
+        "name": "discrimination-case",
+        "pass": false,
+        "detail": "scene script is real (multi-line exchange), not a stub card"
+      }
+    ],
+    "pass": 0,
+    "fail": 5,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "short public-domain scene enacted",
+        "pass": true,
+        "detail": "5 lines"
+      },
+      {
+        "name": "\u22652 personas enact parts",
+        "pass": true,
+        "detail": "speakers=['persona-0001', 'persona-0002']"
+      },
+      {
+        "name": "available tool classes exercised",
+        "pass": true,
+        "detail": "toolsUsed=['llm-art', 'music', 'catalogs', 'voice']"
+      },
+      {
+        "name": "knock-knock joke enactable",
+        "pass": true,
+        "detail": "5 joke lines"
+      },
+      {
+        "name": "discrimination-case",
+        "pass": true,
+        "detail": "scene script is real (multi-line exchange), not a stub card"
+      }
+    ],
+    "pass": 5,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "short public-domain scene enacted",
+        "pass": false,
+        "detail": "0 lines"
+      },
+      {
+        "name": "\u22652 personas enact parts",
+        "pass": false,
+        "detail": "speakers=[]"
+      },
+      {
+        "name": "available tool classes exercised",
+        "pass": false,
+        "detail": "toolsUsed=None"
+      },
+      {
+        "name": "knock-knock joke enactable",
+        "pass": false,
+        "detail": "0 joke lines"
+      },
+      {
+        "name": "discrimination-case",
+        "pass": false,
+        "detail": "scene script is real (multi-line exchange), not a stub card"
+      }
+    ],
+    "pass": 0,
+    "fail": 5,
+    "allGreen": false
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:03",
+    "checks": [
+      {
+        "name": "short public-domain scene enacted",
+        "pass": true,
+        "detail": "5 lines"
+      },
+      {
+        "name": "\u22652 personas enact parts",
+        "pass": true,
+        "detail": "speakers=['persona-0001', 'persona-0002']"
+      },
+      {
+        "name": "available tool classes exercised",
+        "pass": true,
+        "detail": "toolsUsed=['catalogs']"
+      },
+      {
+        "name": "knock-knock joke enactable",
+        "pass": true,
+        "detail": "5 joke lines"
+      },
+      {
+        "name": "discrimination-case",
+        "pass": true,
+        "detail": "scene script is real (multi-line exchange), not a stub card"
+      }
+    ],
+    "pass": 5,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "short public-domain scene enacted",
+        "pass": false,
+        "detail": "0 lines"
+      },
+      {
+        "name": "\u22652 personas enact parts",
+        "pass": false,
+        "detail": "speakers=[]"
+      },
+      {
+        "name": "available tool classes exercised",
+        "pass": false,
+        "detail": "toolsUsed=None"
+      },
+      {
+        "name": "knock-knock joke enactable",
+        "pass": false,
+        "detail": "0 joke lines"
+      },
+      {
+        "name": "discrimination-case",
+        "pass": false,
+        "detail": "scene script is real (multi-line exchange), not a stub card"
+      }
+    ],
+    "pass": 0,
+    "fail": 5,
+    "allGreen": false
+  }
+}

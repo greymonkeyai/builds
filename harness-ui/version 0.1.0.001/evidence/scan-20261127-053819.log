@@ -1,0 +1,7 @@
+﻿2026-11-27 05:38:19 harness-emit scan — root C:\builds
+2026-11-27 05:38:19 discovered 2 project(s): harness-ui, project
+2026-11-27 05:38:19 project: harness-ui
+2026-11-27 05:38:19   parsing harness-ui\devlog.md
+2026-11-27 05:38:19     entries: 1; verdict json blocks parsed: 0; failed: 0
+2026-11-27 05:38:19     state.json: parsed
+2026-11-27 05:38:19     scenarios.md: 10 ids

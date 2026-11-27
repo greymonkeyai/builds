@@ -1,0 +1,192 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:07",
+    "checks": [
+      {
+        "name": "asset needs queued fleet-addressable",
+        "pass": false,
+        "detail": "0 queued, 0 rows"
+      },
+      {
+        "name": "collected before presentation",
+        "pass": false,
+        "detail": "0 presented"
+      },
+      {
+        "name": "input change triggers rework",
+        "pass": false,
+        "detail": "0 \u2192 0"
+      },
+      {
+        "name": "presents when ready",
+        "pass": false,
+        "detail": "presented=[]"
+      },
+      {
+        "name": "trigger honestly bounded",
+        "pass": false,
+        "detail": "bounded trigger recorded on 0 interstitial rows"
+      },
+      {
+        "name": "honest-absence",
+        "pass": false,
+        "detail": "deferral declared: collect=None present=None"
+      }
+    ],
+    "pass": 0,
+    "fail": 6,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "asset needs queued fleet-addressable",
+        "pass": true,
+        "detail": "1 queued, 3 rows"
+      },
+      {
+        "name": "collected before presentation",
+        "pass": true,
+        "detail": "1 presented"
+      },
+      {
+        "name": "input change triggers rework",
+        "pass": true,
+        "detail": "1 \u2192 1"
+      },
+      {
+        "name": "presents when ready",
+        "pass": true,
+        "detail": "presented=['inter-0004']"
+      },
+      {
+        "name": "trigger honestly bounded",
+        "pass": true,
+        "detail": "bounded trigger recorded on 3 interstitial rows"
+      },
+      {
+        "name": "honest-absence",
+        "pass": true,
+        "detail": "deferral declared: collect=False present=[]"
+      }
+    ],
+    "pass": 6,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "asset needs queued fleet-addressable",
+        "pass": false,
+        "detail": "1 queued, 0 rows"
+      },
+      {
+        "name": "collected before presentation",
+        "pass": false,
+        "detail": "0 presented"
+      },
+      {
+        "name": "input change triggers rework",
+        "pass": true,
+        "detail": "1 \u2192 1"
+      },
+      {
+        "name": "presents when ready",
+        "pass": false,
+        "detail": "presented=[]"
+      },
+      {
+        "name": "trigger honestly bounded",
+        "pass": false,
+        "detail": "bounded trigger recorded on 0 interstitial rows"
+      },
+      {
+        "name": "honest-absence",
+        "pass": false,
+        "detail": "deferral declared: collect=False present=[]"
+      }
+    ],
+    "pass": 1,
+    "fail": 5,
+    "allGreen": false
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:03",
+    "checks": [
+      {
+        "name": "asset needs queued fleet-addressable",
+        "pass": true,
+        "detail": "1 queued, 3 rows"
+      },
+      {
+        "name": "collected before presentation",
+        "pass": true,
+        "detail": "1 presented"
+      },
+      {
+        "name": "input change triggers rework",
+        "pass": true,
+        "detail": "1 \u2192 1"
+      },
+      {
+        "name": "presents when ready",
+        "pass": true,
+        "detail": "presented=['inter-0004']"
+      },
+      {
+        "name": "trigger honestly bounded",
+        "pass": true,
+        "detail": "bounded trigger recorded on 3 interstitial rows"
+      },
+      {
+        "name": "honest-absence",
+        "pass": true,
+        "detail": "deferral declared: collect=False present=[]"
+      }
+    ],
+    "pass": 6,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "asset needs queued fleet-addressable",
+        "pass": false,
+        "detail": "0 queued, 0 rows"
+      },
+      {
+        "name": "collected before presentation",
+        "pass": false,
+        "detail": "0 presented"
+      },
+      {
+        "name": "input change triggers rework",
+        "pass": false,
+        "detail": "0 \u2192 0"
+      },
+      {
+        "name": "presents when ready",
+        "pass": false,
+        "detail": "presented=[]"
+      },
+      {
+        "name": "trigger honestly bounded",
+        "pass": false,
+        "detail": "bounded trigger recorded on 0 interstitial rows"
+      },
+      {
+        "name": "honest-absence",
+        "pass": false,
+        "detail": "deferral declared: collect=None present=None"
+      }
+    ],
+    "pass": 0,
+    "fail": 6,
+    "allGreen": false
+  }
+}

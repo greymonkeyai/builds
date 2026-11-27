@@ -1,0 +1,206 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "invite legible",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "join legible",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "install legible",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "map legible",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 4,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "invite legible",
+    "pass": true,
+    "detail": "invite control rendered + verdict text returned",
+    "src": [
+     "rendered"
+    ]
+   },
+   {
+    "name": "join legible",
+    "pass": true,
+    "detail": "join verdict=installed",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "install legible",
+    "pass": true,
+    "detail": "legible outcome: installed None",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "map legible",
+    "pass": true,
+    "detail": "map devices=28 rendered",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "invite legible",
+    "pass": true,
+    "detail": "invite control rendered + verdict text returned",
+    "src": [
+     "rendered"
+    ]
+   },
+   {
+    "name": "join legible",
+    "pass": true,
+    "detail": "join verdict=installed",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "install legible",
+    "pass": true,
+    "detail": "legible outcome: installed None",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "map legible",
+    "pass": true,
+    "detail": "map devices=28 rendered",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "invite legible",
+    "pass": true,
+    "detail": "invite control rendered + verdict text returned",
+    "src": [
+     "rendered"
+    ]
+   },
+   {
+    "name": "join legible",
+    "pass": true,
+    "detail": "join verdict=installed",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "install legible",
+    "pass": true,
+    "detail": "legible outcome: installed None",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "map legible",
+    "pass": true,
+    "detail": "map devices=28 rendered",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "invite legible",
+    "pass": false,
+    "detail": "invite control rendered + verdict text returned",
+    "src": [
+     "rendered"
+    ]
+   },
+   {
+    "name": "join legible",
+    "pass": false,
+    "detail": "join verdict=None",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "install legible",
+    "pass": false,
+    "detail": "legible outcome: None None",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "map legible",
+    "pass": false,
+    "detail": "map devices=0 rendered",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 4,
+  "allGreen": false
+ }
+}

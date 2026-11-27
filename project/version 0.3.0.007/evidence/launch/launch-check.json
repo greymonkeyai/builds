@@ -1,0 +1,29 @@
+{
+  "ts": "2026-11-26T16:05:15",
+  "seconds": 5.0,
+  "legs": [
+    {
+      "leg": "port-hygiene",
+      "pass": true,
+      "detail": ":9537 free"
+    },
+    {
+      "leg": "fresh-launch-health",
+      "pass": true,
+      "detail": "{\"ok\": true, \"app\": \"vesta\", \"bare\": false, \"node\": \"node-desktop-oogq7un-n-e318\", \"part2\": true, \"gate\": true}"
+    },
+    {
+      "leg": "readiness-gate-passed",
+      "pass": true,
+      "detail": "gate passedAt=2026-11-26T16:05:14 (seconds=0.03)",
+      "timeToGateSeconds": 0.03
+    },
+    {
+      "leg": "close-terminates",
+      "pass": true,
+      "detail": "terminated rc=1"
+    }
+  ],
+  "allPass": true,
+  "timeToGateSeconds": 0.03
+}

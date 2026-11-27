@@ -1,0 +1,29 @@
+{
+ "id": "S-publish-workflow",
+ "ran": true,
+ "checks": [
+  {
+   "name": "select + form",
+   "pass": true,
+   "detail": "{\"state\": \"produced\", \"artifact\": {\"kind\": \"file\", \"file\": \"C:\\\\builds\\\\project\\\\version 0.3.0.006\\\\runtime-suite\\\\artifacts\\\\pub-x-0765bf2ee4.json\"},"
+  },
+  {
+   "name": "produced + recorded",
+   "pass": true,
+   "detail": "{\"state\": \"produced\", \"artifact\": {\"kind\": \"file\", \"file\": \"C:\\\\builds\\\\project\\\\version 0.3.0.006\\\\runtime-suite\\\\artifacts\\\\pub-x-0765bf2ee4.json\"},"
+  },
+  {
+   "name": "or deferred",
+   "pass": true,
+   "detail": "produced"
+  },
+  {
+   "name": "no silent absence",
+   "pass": true,
+   "detail": "{\"state\": \"produced\", \"artifact\": {\"kind\": \"file\", \"file\": \"C:\\\\builds\\\\project\\\\version 0.3.0.006\\\\runtime-suite\\\\artifacts\\\\pub-x-0765bf2ee4.json\"},"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.0
+}

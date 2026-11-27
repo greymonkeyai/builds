@@ -1,0 +1,15 @@
+{
+ "mode": "sabotage:stub-engines",
+ "ts": "2026-11-27T08:36:37",
+ "elapsed": 200.0,
+ "scenarios": 84,
+ "checks": 349,
+ "passed": 332,
+ "green": 332,
+ "evidenceClass": {
+  "externalToFlag": 0.47564469914040114,
+  "rendered": 0.2636103151862464,
+  "userPath": 0.5988538681948424,
+  "selfAttestedOnly": 0.0
+ }
+}

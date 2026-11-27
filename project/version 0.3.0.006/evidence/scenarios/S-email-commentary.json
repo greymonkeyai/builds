@@ -1,0 +1,34 @@
+{
+ "id": "S-email-commentary",
+ "ran": true,
+ "checks": [
+  {
+   "name": "email list from configured source basis",
+   "pass": true,
+   "detail": "fixture=3 live=[]"
+  },
+  {
+   "name": "V-G: fixture basis honestly labeled",
+   "pass": true,
+   "detail": "fixture-directory (labeled)"
+  },
+  {
+   "name": "persona commentary produced",
+   "pass": true,
+   "detail": "Sorry, I'm not really sure what's in your email, can you tell me or check it you"
+  },
+  {
+   "name": "commentary recorded",
+   "pass": true,
+   "detail": "chat:reply rows in journal"
+  },
+  {
+   "name": "configured source exercised",
+   "pass": true,
+   "detail": "fixture-directory (labeled)"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 2.4
+}

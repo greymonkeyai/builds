@@ -1,4 +1,5 @@
 # Direction — 2026-11-18
+<!-- harness-doc kind=direction status=discharged applies-to=cycle-1 -->
 
 - **Region / variable:** Fulfill `prompt.md` in its entirety; rectify the shortcomings
   already documented (`shortcomings-001.md` — owner-scoped 2026-11-18: A2/A11 fleet

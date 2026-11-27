@@ -1,0 +1,39 @@
+{
+ "id": "S-personality-create",
+ "ran": true,
+ "checks": [
+  {
+   "name": "persona minted from minimal input",
+   "pass": true,
+   "detail": "persona-c226d08d87"
+  },
+  {
+   "name": "portrait generated + bound",
+   "pass": true,
+   "detail": "{\"path\": \"C:\\\\builds\\\\project\\\\version 0.3.0.006\\\\runtime-suite\\\\personas\\\\persona-c226d08d87.svg\", \"authored\": true, \"e"
+  },
+  {
+   "name": "LLM art path (V-A)",
+   "pass": true,
+   "detail": "{\"path\": \"C:\\\\builds\\\\project\\\\version 0.3.0.006\\\\runtime-suite\\\\personas\\\\persona-c226d08d87.svg\", \"authored\": true, \"e"
+  },
+  {
+   "name": "voice assigned",
+   "pass": true,
+   "detail": "{\"name\": \"Microsoft David Desktop\", \"engine\": \"sapi\", \"spec\": {\"families\": [\"male-adult\", \"neutral\"]"
+  },
+  {
+   "name": "characterization extended",
+   "pass": true,
+   "detail": "characterize need opened at mint; extended by steward"
+  },
+  {
+   "name": "dyadic default 0.5",
+   "pass": true,
+   "detail": "0.5"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 5.0
+}

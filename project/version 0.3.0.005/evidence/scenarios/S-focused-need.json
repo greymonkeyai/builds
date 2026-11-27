@@ -1,0 +1,29 @@
+{
+  "id": "S-focused-need",
+  "ran": true,
+  "checks": [
+    {
+      "name": "unmet need moved into focus",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "value supplied conversationally fills a slot",
+      "pass": true,
+      "detail": {
+        "id": "t-eb1d8bb8902f",
+        "input": "owner@local.example",
+        "focus_fill": "r-d0a8bd3c0f66",
+        "replies": [],
+        "needs": [],
+        "topic": ""
+      }
+    },
+    {
+      "name": "need remains until requirement met",
+      "pass": true,
+      "detail": "open"
+    }
+  ],
+  "pass": true
+}

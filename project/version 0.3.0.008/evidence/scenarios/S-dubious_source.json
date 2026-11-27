@@ -1,0 +1,162 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "artifact claims held below trust ceiling",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "encoded references resolved against vetted pointers",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "non-matching claims recorded for review",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "artifact claims held below trust ceiling",
+    "pass": true,
+    "detail": "all artifact-sourced claims \u22640.5 ceiling",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "encoded references resolved against vetted pointers",
+    "pass": true,
+    "detail": "1 resolved against vetted pointers",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "non-matching claims recorded for review",
+    "pass": true,
+    "detail": "1 review items",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "artifact claims held below trust ceiling",
+    "pass": true,
+    "detail": "all artifact-sourced claims \u22640.5 ceiling",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "encoded references resolved against vetted pointers",
+    "pass": true,
+    "detail": "1 resolved against vetted pointers",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "non-matching claims recorded for review",
+    "pass": true,
+    "detail": "1 review items",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "artifact claims held below trust ceiling",
+    "pass": true,
+    "detail": "all artifact-sourced claims \u22640.5 ceiling",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "encoded references resolved against vetted pointers",
+    "pass": true,
+    "detail": "1 resolved against vetted pointers",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "non-matching claims recorded for review",
+    "pass": true,
+    "detail": "1 review items",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "artifact claims held below trust ceiling",
+    "pass": false,
+    "detail": "all artifact-sourced claims \u22640.5 ceiling",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "encoded references resolved against vetted pointers",
+    "pass": false,
+    "detail": "0 resolved against vetted pointers",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "non-matching claims recorded for review",
+    "pass": false,
+    "detail": "0 review items",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ }
+}

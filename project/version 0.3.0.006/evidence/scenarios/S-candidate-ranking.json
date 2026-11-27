@@ -1,0 +1,29 @@
+{
+ "id": "S-candidate-ranking",
+ "ran": true,
+ "checks": [
+  {
+   "name": "candidates retained w/ source+confidence",
+   "pass": true,
+   "detail": "1 candidate rows"
+  },
+  {
+   "name": "supersession rows retained",
+   "pass": true,
+   "detail": "19 superseding rows"
+  },
+  {
+   "name": "invocation produced result",
+   "pass": true,
+   "detail": "{\"imported\": 4, \"belowThreshold\": true}"
+  },
+  {
+   "name": "ranking differentiates on evidence, not vacancy",
+   "pass": true,
+   "detail": "confidences [0.3]"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.0
+}

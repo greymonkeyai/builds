@@ -1,0 +1,544 @@
+{
+  "criteria": [
+    {
+      "name": "clean launch",
+      "score": 0.9,
+      "evidence": [
+        "version 0.3.0.005/evidence/launch/launch-check.json:2",
+        "version 0.3.0.005/scripts/launch-check.py:57",
+        "version 0.3.0.005/launch-server.out:1",
+        "version 0.3.0.005/runtime/last-launch.json:42",
+        "version 0.3.0.005/evidence/probe-20261125-071855.json:3"
+      ],
+      "confidence": 0.9,
+      "user_opinion": null
+    },
+    {
+      "name": "existing features",
+      "score": 0.7,
+      "evidence": [
+        "version 0.3.0.005/FEATURES.md:67",
+        "version 0.3.0.005/quorum/book.py",
+        "version 0.3.0.005/quorum/needs.py:26",
+        "version 0.3.0.005/quorum/fleet.py:582",
+        "version 0.3.0.005/quorum/artifacts.py:179",
+        "version 0.3.0.005/quorum/evals.py:55"
+      ],
+      "confidence": 0.8,
+      "user_opinion": null
+    },
+    {
+      "name": "completeness",
+      "score": 0.72,
+      "evidence": [
+        "version 0.3.0.005/FEATURES.md:39",
+        "version 0.3.0.005/evidence/scenarios/suite.json:3",
+        "version 0.3.0.005/evidence/scenarios/S-list-project.json:27",
+        "version 0.3.0.005/quorum/personas.py:99",
+        "prompt.md:121"
+      ],
+      "confidence": 0.75,
+      "user_opinion": null
+    },
+    {
+      "name": "fleet discovery",
+      "score": 0.85,
+      "evidence": [
+        "version 0.3.0.005/evidence/discovery-initial.json:1",
+        "version 0.3.0.005/evidence/scenarios/S-fleet-roster.json:16",
+        "version 0.3.0.005/quorum/fleet.py:173",
+        "version 0.3.0.005/quorum/fleet.py:382"
+      ],
+      "confidence": 0.9,
+      "user_opinion": null
+    },
+    {
+      "name": "fleet install",
+      "score": 0.72,
+      "evidence": [
+        "H:/quorum-seed/seed-log.jsonl:1",
+        "H:/quorum-seed/minted-gen2/SIGNING-NOTES.md:1",
+        "H:/quorum-seed/minted-gen2/manifest.json:1",
+        "version 0.3.0.005/evidence/scenarios/S-usb-stage-consent.json:8",
+        "version 0.3.0.005/evidence/scenarios/S-role-negotiate.json:23",
+        "version 0.3.0.005/quorum/fleet.py:382"
+      ],
+      "confidence": 0.8,
+      "user_opinion": null
+    },
+    {
+      "name": "exchange media",
+      "score": 0.8,
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-artifact-import.json:1",
+        "version 0.3.0.005/evidence/scenarios/S-tool-transmission.json:1",
+        "version 0.3.0.005/evidence/scenarios/S-dubious-source.json:1",
+        "version 0.3.0.005/evidence/scenarios/S-voice-spec.json:1",
+        "version 0.3.0.005/quorum/artifacts.py:74",
+        "version 0.3.0.005/seed-packs/exemplar-postcard.bmp"
+      ],
+      "confidence": 0.85,
+      "user_opinion": null
+    },
+    {
+      "name": "user score",
+      "score": null,
+      "evidence": [],
+      "confidence": 0,
+      "user_opinion": null
+    },
+    {
+      "name": "scenario suite",
+      "score": 0.78,
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/suite.json:3",
+        "version 0.3.0.005/evidence/scenarios/S-list-project.json:27",
+        "version 0.3.0.005/evidence/scenarios/S-network-map.json:6",
+        "version 0.3.0.005/scripts/scenarios.py:9"
+      ],
+      "confidence": 0.8,
+      "user_opinion": null
+    },
+    {
+      "name": "time-to-gate",
+      "score": 1.0,
+      "evidence": [
+        "version 0.3.0.005/runtime/gate.json:27",
+        "version 0.3.0.005/launch-server.out:1",
+        "version 0.3.0.005/evidence/launch/launch-20261125-071838.log:1"
+      ],
+      "confidence": 0.95,
+      "user_opinion": null
+    }
+  ],
+  "overall": 0.81,
+  "metrics": {
+    "time_to_gate": 2.094
+  },
+  "judge_model": "SWE-2 High",
+  "user_commentary": [],
+  "scenarios": [
+    {
+      "id": "S-assertion-input",
+      "score": 0.85,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-assertion-input.json:1"
+      ],
+      "notes": "Typed input recorded as source-aware assertion (claimant principal, basis captured-input) via live API."
+    },
+    {
+      "id": "S-template-need",
+      "score": 0.8,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-template-need.json:1"
+      ],
+      "notes": "Need opened unfulfilled from chat with template slots+criteria carried."
+    },
+    {
+      "id": "S-candidate-ranking",
+      "score": 0.8,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-candidate-ranking.json:1"
+      ],
+      "notes": "Competing candidates retained with source+confidence; 4 supersession rows kept."
+    },
+    {
+      "id": "S-list-project",
+      "score": 0.3,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-list-project.json:27",
+        "version 0.3.0.005/evidence/scenarios/S-list-project.json:49",
+        "version 0.3.0.005/evidence/scenarios/S-list-project.json:69"
+      ],
+      "notes": "Canonical ENACTED but outcome fails the defensibility bar: the 37-member list is dominated by non-cities (Allegheny Mountains, Coal Region, 'Municipalities of Puerto Rico', 'New York metropolitan area', 'Post office', 'Train station', 'Census-designated place') while real cities (Allentown, Aliquippa, Akron) land in non-matches — exactly the 'passed off as cities' failure the scenario names. Merits: need created from chat, 2737 non-matches recorded for review, criteria preserved. Regression vs .004's 57 real municipalities."
+    },
+    {
+      "id": "S-personality-create",
+      "score": 0.85,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-personality-create.json:1",
+        "version 0.3.0.005/quorum/art.py:50"
+      ],
+      "notes": "Canonical: mint→LLM-authored SVG portrait (attempt log: 1893 chars, validated)→SAPI voice→characterization; dyadic 0.5 default (S-5). V-A bar genuinely addressed — art.py prompts the live LLM for authored SVG with XML validation + declared fallback."
+    },
+    {
+      "id": "S-background-present",
+      "score": 0.8,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-background-present.json:1",
+        "version 0.3.0.005/quorum/steward.py:38"
+      ],
+      "notes": "Steward passes recorded with real liveness data (ageS, expectedWakeS, escalation) feeding the §4 first-screen chit."
+    },
+    {
+      "id": "S-competing-tools",
+      "score": 0.65,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-competing-tools.json:1"
+      ],
+      "notes": "Two real tools ran the same need and results were recorded — but 37 vs 983 members is a wild divergence; 'comparable results' bar only partially met."
+    },
+    {
+      "id": "S-restart-recovery",
+      "score": 0.85,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-restart-recovery.json:1"
+      ],
+      "notes": "Real process restart, 54→55 row recovery, superseded rows retained."
+    },
+    {
+      "id": "S-exchange-import",
+      "score": 0.85,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-exchange-import.json:1"
+      ],
+      "notes": "Export→import round-trip; contents held at certainty≤0.4; foreign tools staged as candidates not live."
+    },
+    {
+      "id": "S-defer-publication",
+      "score": 0.85,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-defer-publication.json:1"
+      ],
+      "notes": "Ungranted nonlocal effect returned grant-required deferral, request+status recorded."
+    },
+    {
+      "id": "S-chat-invocation",
+      "score": 0.8,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-chat-invocation.json:1"
+      ],
+      "notes": "Conversational reply plus a distinguishable opened need (r-2d01c4cbdc60)."
+    },
+    {
+      "id": "S-focused-need",
+      "score": 0.8,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-focused-need.json:1"
+      ],
+      "notes": "Need focused, slot filled conversationally (focus_fill row), remains open until fulfilled."
+    },
+    {
+      "id": "S-personality-roster",
+      "score": 0.85,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-personality-roster.json:1",
+        "version 0.3.0.005/quorum/personas.py:148"
+      ],
+      "notes": "Select/reorder operable through the API control path; V-D closed — reorder writes a dyadic rel:held-confidence row (0.5→0.6 visible)."
+    },
+    {
+      "id": "S-portrait-bind",
+      "score": 0.7,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-portrait-bind.json:1",
+        "version 0.3.0.005/evidence/scenarios/S-personality-create.json:1"
+      ],
+      "notes": "LLM-authored SVG genuinely produced and bound for the created persona; but the produced file lived in runtime-suite/artifacts (wiped on reset — uninspectable now) and shipped personas carry portrait:'' in runtime/personas.json."
+    },
+    {
+      "id": "S-color-schemes",
+      "score": 0.7,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-color-schemes.json:1"
+      ],
+      "notes": "3 colorways incl. dark, light default seeded; selector exercised via its API path driving settings claims — restyle observed at claim level, one step short of the R1 'watch the control repaint' bar."
+    },
+    {
+      "id": "S-status-bar",
+      "score": 0.85,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-status-bar.json:1",
+        "version 0.3.0.005/quorum/ui/app.js:425"
+      ],
+      "notes": "Live sources + LLM mode surfaced; V-B: declared-absences section labels deferred items at the bottom, not in the feature list."
+    },
+    {
+      "id": "S-email-commentary",
+      "score": 0.75,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-email-commentary.json:1",
+        "version 0.3.0.005/fixtures/inbox/001-civic.eml"
+      ],
+      "notes": "Real .eml fixtures listed, selected, persona commentary recorded — fixture basis explicitly labeled 'FIXTURE BASIS' per V-G's honest-declaration allowance; still no configured live account (declared absence)."
+    },
+    {
+      "id": "S-conversation-reset",
+      "score": 0.8,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-conversation-reset.json:1"
+      ],
+      "notes": "Reset clears conversation and topic through the API path."
+    },
+    {
+      "id": "S-context-display",
+      "score": 0.8,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-context-display.json:1"
+      ],
+      "notes": "Active context surfaced on selection ('Borough council agenda')."
+    },
+    {
+      "id": "S-personality-editor",
+      "score": 0.8,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-personality-editor.json:1",
+        "version 0.3.0.005/quorum/ui/app.js:56"
+      ],
+      "notes": "Editor round-trip writes assertions; V-F closed — edit control sits on each roster card."
+    },
+    {
+      "id": "S-windows-launch",
+      "score": 0.75,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/launch.cmd",
+        "version 0.3.0.005/launch-server.out:1"
+      ],
+      "notes": "launch.cmd boots like an installed program (env baked, port/runtime pinned); .cmd launcher, not packaged install — same ceiling as prior cycles."
+    },
+    {
+      "id": "S-close-terminate",
+      "score": 0.85,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/launch/launch-check.json:19"
+      ],
+      "notes": "Real terminate→port-free leg verified by the launch-check driver."
+    },
+    {
+      "id": "S-speech-serialization",
+      "score": 0.8,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-speech-serialization.json:1",
+        "version 0.3.0.005/quorum/engines.py:113"
+      ],
+      "notes": "SpeechFloor serializes with measured playbackMs; 5 played in sequence."
+    },
+    {
+      "id": "S-distinct-preloadeds",
+      "score": 0.8,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-distinct-preloadeds.json:1"
+      ],
+      "notes": "4 shipped personas with distinct registers; same prompt produced distinct replies."
+    },
+    {
+      "id": "S-library-browse",
+      "score": 0.8,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-library-browse.json:1",
+        "version 0.3.0.005/quorum/ui/app.js:230"
+      ],
+      "notes": "Structured holdings browser — personas/tools/workshops with V-C explanations, not a log tail."
+    },
+    {
+      "id": "S-faithful-voice",
+      "score": 0.8,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-faithful-voice.json:1"
+      ],
+      "notes": "S-2 flags closed: ambient-only retrieval yields verdict 'ambient-only' fidelity 0.4 flag no-topic-hits (zero-hit does NOT pass grounding); no unflagged fidelity:null."
+    },
+    {
+      "id": "S-usb-seed-run",
+      "score": 0.85,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-usb-seed-run.json:1",
+        "H:/quorum-seed/launch-server.out:1",
+        "H:/quorum-seed/launch-seed.cmd"
+      ],
+      "notes": "Real removable FAT32 volume labeled BUILD (H: verified via Get-Volume); app executed in place on :9796, courier log written on the medium."
+    },
+    {
+      "id": "S-usb-stage-consent",
+      "score": 0.85,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-usb-stage-consent.json:8",
+        "H:/quorum-seed/seed-log.jsonl:2"
+      ],
+      "notes": "Decline leg verified staged:false + stage dir absent; consent leg staged to C:\\builds-installed\\quorum (exists on disk at JEV time); both courier entries on the medium."
+    },
+    {
+      "id": "S-fleet-invite",
+      "score": 0.85,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-fleet-invite.json:1"
+      ],
+      "notes": "29 candidates listed, user-selected invite issued, non-invited devices have no fleet:member rows."
+    },
+    {
+      "id": "S-role-negotiate",
+      "score": 0.8,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-role-negotiate.json:1"
+      ],
+      "notes": "fleet:role row recorded (surface caps, mint:false for non-installable); join outcome honestly 'pending' — no quorum endpoint answered, never faked as member."
+    },
+    {
+      "id": "S-usb-mint-gen2",
+      "score": 0.75,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-usb-mint-gen2.json:1",
+        "H:/quorum-seed/minted-gen2/network-identity.json"
+      ],
+      "notes": "Gen-2 installer written to media carrying net-dbc00344c83b as an adoptable offer (join-or-found = user choice); boot-on-fresh-machine leg declared unexercised (needs a second physical host)."
+    },
+    {
+      "id": "S-usb-log-courier",
+      "score": 0.75,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-usb-log-courier.json:1",
+        "H:/quorum-seed/seed-log.jsonl:1"
+      ],
+      "notes": "Courier log accumulates 4→5 machine-readable per-node entries on the medium; stale-seed revisit handling recorded (stage-declined/staged/discovery events) though a genuinely stale-seed revisit is thinly evidenced."
+    },
+    {
+      "id": "S-fleet-roster",
+      "score": 0.9,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-fleet-roster.json:16"
+      ],
+      "notes": "All 15 named-roster devices reported with honest statuses: PC-GMK found-installable (NUCBOX_G3_PRO @ .41), PC-DEV found-not-target (self), RMT-93/105 + PC-TERRY + STICK-WIN unavailable, 8 not-found-not-target — coverage is test data, exactly C-HonestDiscovery."
+    },
+    {
+      "id": "S-network-map",
+      "score": 0.65,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-network-map.json:1",
+        "version 0.3.0.005/quorum/fleet.py:493"
+      ],
+      "notes": "Map artifact was produced and verified at check time (27 non-member devices, member/non-member split) — but the cited file runtime-suite/network-map.json was wiped by a later runtime reset; absent at JEV time despite FEATURES.md's evidence map."
+    },
+    {
+      "id": "S-local-transports",
+      "score": 0.8,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-local-transports.json:1",
+        "version 0.3.0.005/evidence/discovery-initial.json:1"
+      ],
+      "notes": "Wired LAN baseline + real Bluetooth enumeration exercised; wired-preferred ordering honored."
+    },
+    {
+      "id": "S-credential-surrender",
+      "score": 0.75,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-credential-surrender.json:1",
+        "version 0.3.0.005/quorum/fleet.py:461"
+      ],
+      "notes": "peer:credential-surrender claim recorded, host-only screen via surface_role gate, peer delta carries assertions only — but exercised without a live peer join (join stayed pending), so the both-books leg is partially demonstrated."
+    },
+    {
+      "id": "S-artifact-import",
+      "score": 0.85,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-artifact-import.json:1"
+      ],
+      "notes": "Real BMP capture → workshop entry at 0.4/0.4 below threshold, accessible in app."
+    },
+    {
+      "id": "S-tool-transmission",
+      "score": 0.85,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-tool-transmission.json:1"
+      ],
+      "notes": "Barcode-encoded tool decodes with literal fidelity (decoded == bundle); quarantined candidate — invocation refused 'unknown tool' pre-acceptance (§1 candidate lane real)."
+    },
+    {
+      "id": "S-artifact-style",
+      "score": 0.75,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-artifact-style.json:1",
+        "version 0.3.0.005/quorum/artifacts.py:179"
+      ],
+      "notes": "Stylistic layer genuinely extracted from the exemplar's pixels (palette shares, contrast, grid — verified by independent decode at JEV time) and carried as an LLM reference on the workshop; the 'workshop presentation rendered in the captured style' leg is reference-carried, not visually demonstrated."
+    },
+    {
+      "id": "S-artifact-republish",
+      "score": 0.7,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-artifact-republish.json:1",
+        "version 0.3.0.005/scripts/scenarios.py:810"
+      ],
+      "notes": "Adopted workshop re-encoded to gen-2 BMP and decodes identically — but the 'second instance imports it' leg was not exercised; decode verified in the same instance."
+    },
+    {
+      "id": "S-dubious-source",
+      "score": 0.85,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-dubious-source.json:1"
+      ],
+      "notes": "Artifact claims held under trust ceiling; refs resolved against vetted pointers, non-matching claims (cross2026.example) recorded for review."
+    },
+    {
+      "id": "S-preload-cache",
+      "score": 0.9,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-preload-cache.json:1",
+        "version 0.3.0.005/seed-packs/vetted-sources.json",
+        "version 0.3.0.005/seed-packs/exemplar-postcard.bmp"
+      ],
+      "notes": "Vetted pointers + decoders + exemplar all present; JEV independently re-decoded the exemplar BMP at review — real payload, real stylistic layer."
+    },
+    {
+      "id": "S-voice-spec",
+      "score": 0.85,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-voice-spec.json:1",
+        "version 0.3.0.005/quorum/artifacts.py:135"
+      ],
+      "notes": "103-byte QR-fittable spec carrying ranked families/traits, mapped to nearest installed voice (Microsoft David Desktop)."
+    },
+    {
+      "id": "S-voice-select",
+      "score": 0.8,
+      "evidence_class": "enactment",
+      "evidence": [
+        "version 0.3.0.005/evidence/scenarios/S-voice-select.json:1"
+      ],
+      "notes": "Selection floor met: user assigns persona voice from the installed SAPI list (2 voices)."
+    }
+  ],
+  "notes": "Genuine enactment evidence throughout: a real suite driver booted the app on :9793/:9796 and exercised the live HTTP API (scripts/scenarios.py); the USB seed ran in place from a real removable FAT32 volume labeled BUILD (H:\\quorum-seed) with an accumulating courier log and a minted gen-2 installer carrying the network identity as an adoptable offer; discovery is a real ARP/ping/nbtstat/BT scan reporting 25+ nodes and honest per-device statuses for all 15 roster entries; JEV independently re-decoded the exemplar BMP (real literal+semantic+stylistic layers). Flags for the owner: (1) CANONICAL REGRESSION — S-list-project enacted but delivered a non-defensible list: 37 members dominated by regions/landforms/concepts ('Municipalities of Puerto Rico', 'New York metropolitan area') while real cities (Allentown, Aliquippa) were classified as non-matches; .004 delivered 57 real municipalities. (2) Install leg unexercised: the suite invited PC-DEV (self, non-installable) rather than PC-GMK — the lone found-installable device was never invited/joined/install-attempted; join stayed honestly 'pending', never faked. (3) Evidence durability: S-network-map and persona-art artifacts were produced and verified at check time but wiped by later runtime-suite resets — cited artifacts absent at JEV time; FEATURES.md evidence map cites runtime/network-map.json and runtime/artifacts/persona-art/ which do not exist. (4) Devlog claims a live instance on :9790; it answered probes at 07:06 and 07:18 but nothing listens at JEV time — launch evidence stands, the live-instance claim is stale. (5) Shipped personas have portrait:'' in runtime/personas.json — portraits generate on demand via the LLM path but shipped preloadeds carry no bound art. (6) The suite booted the seed with a host-supplied --runtime on local disk; launch-seed.cmd itself uses an on-media runtime, so the in-place contract is intact. (7) suite.json contains the JSON document twice (cosmetic duplication). Conventions: FEATURES.md carries a full conform/challenge table including all promoted decision-candidates §§1–5 (verified in code: candidate lane + acceptance mint, JEV dual-run lane + need:request counted and projected per §4 item 4, sovereign-hub peer rows, steward chit, host-only credential screen); no challenges filed and no silent departures found. C-SeedSigning handled by documented AV-allowlist arrangement rather than actual signing — honestly declared, and the gated harm (killed first run → empty discovery) did not materialize. Time to implement: ~31 min session (devlog). No frontier-model escalation recommended."
+}

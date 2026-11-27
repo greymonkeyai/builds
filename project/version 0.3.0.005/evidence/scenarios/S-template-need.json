@@ -1,0 +1,25 @@
+{
+  "id": "S-template-need",
+  "ran": true,
+  "checks": [
+    {
+      "name": "need row created from chat input",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template-governed (slots+criteria)",
+      "pass": true,
+      "detail": {
+        "topic": "List of municipalities in Pennsylvania",
+        "criteria": "incorporated city municipalities only"
+      }
+    },
+    {
+      "name": "opens unfulfilled",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,43 @@
+{
+  "id": "S-candidate-ranking",
+  "ran": true,
+  "checks": [
+    {
+      "name": "candidates retained w/ source+confidence",
+      "pass": true,
+      "detail": [
+        {
+          "slot": "members",
+          "value": [
+            "a"
+          ],
+          "source": "x",
+          "confidence": 0.6,
+          "evidence": "",
+          "at": 1795608320725
+        },
+        {
+          "slot": "members",
+          "value": [
+            "b"
+          ],
+          "source": "y",
+          "confidence": 0.9,
+          "evidence": "",
+          "at": 1795608320731
+        }
+      ]
+    },
+    {
+      "name": "supersession rows retained",
+      "pass": true,
+      "detail": 4
+    },
+    {
+      "name": "invocation produced result",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true
+}

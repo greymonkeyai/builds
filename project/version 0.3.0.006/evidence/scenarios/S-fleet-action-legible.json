@@ -1,0 +1,29 @@
+{
+ "id": "S-fleet-action-legible",
+ "ran": true,
+ "checks": [
+  {
+   "name": "invite legible",
+   "pass": true,
+   "detail": "192.168.86.41 invited \u2014 pending. no running peer on this device. To complete the add: 1) carry the seed media (USB labeled BUILD) to the device, 2) run chorus from the media (launch-seed.cmd) \u2014 it boots in place, no install needed, 3) on its fleet screen enter invite key inv-1795675956-012212 \u2014 it joins this network and surrenders credential custody to this host"
+  },
+  {
+   "name": "join legible",
+   "pass": true,
+   "detail": "192.168.86.41: install pending \u2014 admin share is not open to this machine. Operator path: carry the USB seed to the device and run launch-seed.cmd (runs in place), or sign in on the device and pull the install from this host's fleet screen"
+  },
+  {
+   "name": "install legible",
+   "pass": true,
+   "detail": "192.168.86.41: install pending \u2014 admin share is not open to this machine. Operator path: carry the USB seed to the device and run launch-seed.cmd (runs in place), or sign in on the device and pull the install from this host's fleet screen"
+  },
+  {
+   "name": "map legible",
+   "pass": true,
+   "detail": "map written \u2014 31 devices, 0 members"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 2.0
+}

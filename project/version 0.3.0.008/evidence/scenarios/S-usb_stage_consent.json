@@ -1,0 +1,126 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "decline \u2192 no local write, app stays on media",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "consent \u2192 stages to C:\\builds-installed",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 2,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "decline \u2192 no local write, app stays on media",
+    "pass": true,
+    "detail": "decline verdict={'staged': False, 'declared': True}",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "consent \u2192 stages to C:\\builds-installed",
+    "pass": true,
+    "detail": "staged to C:\\builds-installed\\hearth exists=True",
+    "src": [
+     "external:file"
+    ]
+   }
+  ],
+  "pass": 2,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "decline \u2192 no local write, app stays on media",
+    "pass": true,
+    "detail": "decline verdict={'staged': False, 'declared': True}",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "consent \u2192 stages to C:\\builds-installed",
+    "pass": true,
+    "detail": "staged to C:\\builds-installed\\hearth exists=True",
+    "src": [
+     "external:file"
+    ]
+   }
+  ],
+  "pass": 2,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "decline \u2192 no local write, app stays on media",
+    "pass": true,
+    "detail": "decline verdict={'staged': False, 'declared': True}",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "consent \u2192 stages to C:\\builds-installed",
+    "pass": true,
+    "detail": "staged to C:\\builds-installed\\hearth exists=True",
+    "src": [
+     "external:file"
+    ]
+   }
+  ],
+  "pass": 2,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "decline \u2192 no local write, app stays on media",
+    "pass": false,
+    "detail": "decline verdict={'error': 'endpoint unavailable (sabotage)'}",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "consent \u2192 stages to C:\\builds-installed",
+    "pass": false,
+    "detail": "staged to  exists=False",
+    "src": [
+     "external:file"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 2,
+  "allGreen": false
+ }
+}

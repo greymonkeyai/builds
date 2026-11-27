@@ -1,0 +1,22 @@
+{
+  "id": "S-voice-spec",
+  "ran": true,
+  "checks": [
+    {
+      "name": "spec is QR-fittable (minimal payload)",
+      "pass": true,
+      "detail": 103
+    },
+    {
+      "name": "ranked families and/or traits carried",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "local engine mapping renders nearest voice",
+      "pass": true,
+      "detail": "Microsoft David Desktop"
+    }
+  ],
+  "pass": true
+}

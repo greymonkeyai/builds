@@ -1,0 +1,24 @@
+{
+ "id": "S-restart-recovery",
+ "ran": true,
+ "checks": [
+  {
+   "name": "state recovered after restart",
+   "pass": true,
+   "detail": "8 personas"
+  },
+  {
+   "name": "provenance retained (superseded rows kept)",
+   "pass": true,
+   "detail": "1299 rows, 55 supersede-links"
+  },
+  {
+   "name": "cleanup consolidates without losing records",
+   "pass": true,
+   "detail": "journal authoritative; partition is the launch slice"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0
+}

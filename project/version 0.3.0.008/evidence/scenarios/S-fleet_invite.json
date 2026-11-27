@@ -1,0 +1,246 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "discovery lists candidates",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "user selects which join",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "non-invited devices are NOT members",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "continues to path",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "legible outcome",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 5,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "discovery lists candidates",
+    "pass": true,
+    "detail": "28 devices, 14 roster rows",
+    "src": [
+     "external:net"
+    ]
+   },
+   {
+    "name": "user selects which join",
+    "pass": true,
+    "detail": "user picked installable PC-GMK",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "non-invited devices are NOT members",
+    "pass": true,
+    "detail": "members 0\u21920",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "continues to path",
+    "pass": true,
+    "detail": "invite \u2192 installed",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "legible outcome",
+    "pass": true,
+    "detail": "legible verdict text=None",
+    "src": [
+     "user-path",
+     "rendered"
+    ]
+   }
+  ],
+  "pass": 5,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "discovery lists candidates",
+    "pass": true,
+    "detail": "28 devices, 14 roster rows",
+    "src": [
+     "external:net"
+    ]
+   },
+   {
+    "name": "user selects which join",
+    "pass": true,
+    "detail": "user picked installable PC-GMK",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "non-invited devices are NOT members",
+    "pass": true,
+    "detail": "members 0\u21920",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "continues to path",
+    "pass": true,
+    "detail": "invite \u2192 installed",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "legible outcome",
+    "pass": true,
+    "detail": "legible verdict text=None",
+    "src": [
+     "user-path",
+     "rendered"
+    ]
+   }
+  ],
+  "pass": 5,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "discovery lists candidates",
+    "pass": true,
+    "detail": "28 devices, 14 roster rows",
+    "src": [
+     "external:net"
+    ]
+   },
+   {
+    "name": "user selects which join",
+    "pass": true,
+    "detail": "user picked installable PC-GMK",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "non-invited devices are NOT members",
+    "pass": true,
+    "detail": "members 0\u21920",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "continues to path",
+    "pass": true,
+    "detail": "invite \u2192 installed",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "legible outcome",
+    "pass": true,
+    "detail": "legible verdict text=None",
+    "src": [
+     "user-path",
+     "rendered"
+    ]
+   }
+  ],
+  "pass": 5,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "discovery lists candidates",
+    "pass": false,
+    "detail": "0 devices, 0 roster rows",
+    "src": [
+     "external:net"
+    ]
+   },
+   {
+    "name": "user selects which join",
+    "pass": false,
+    "detail": "user picked installable None",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "non-invited devices are NOT members",
+    "pass": true,
+    "detail": "members 0\u21920",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "continues to path",
+    "pass": false,
+    "detail": "invite \u2192 None",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "legible outcome",
+    "pass": false,
+    "detail": "legible verdict text=None",
+    "src": [
+     "user-path",
+     "rendered"
+    ]
+   }
+  ],
+  "pass": 1,
+  "fail": 4,
+  "allGreen": false
+ }
+}

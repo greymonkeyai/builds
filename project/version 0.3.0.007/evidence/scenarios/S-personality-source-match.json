@@ -1,0 +1,142 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:06",
+    "checks": [
+      {
+        "name": "domain-matched source suggested at creation",
+        "pass": false,
+        "detail": "{}"
+      },
+      {
+        "name": "accept binds source to persona",
+        "pass": false,
+        "detail": "0 grant rows"
+      },
+      {
+        "name": "decline leaves persona source-free",
+        "pass": false,
+        "detail": "0 decline rows"
+      },
+      {
+        "name": "discrimination-case",
+        "pass": false,
+        "detail": "star-trek domain matched memory-alpha, not simpsons"
+      }
+    ],
+    "pass": 0,
+    "fail": 4,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "domain-matched source suggested at creation",
+        "pass": true,
+        "detail": "{'source': 'source-memory-alpha', 'name': 'Memory Alpha', 'matchedOn': ['star-trek']}"
+      },
+      {
+        "name": "accept binds source to persona",
+        "pass": true,
+        "detail": "1 grant rows"
+      },
+      {
+        "name": "decline leaves persona source-free",
+        "pass": true,
+        "detail": "1 decline rows"
+      },
+      {
+        "name": "discrimination-case",
+        "pass": true,
+        "detail": "star-trek domain matched memory-alpha, not simpsons"
+      }
+    ],
+    "pass": 4,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "domain-matched source suggested at creation",
+        "pass": false,
+        "detail": "{}"
+      },
+      {
+        "name": "accept binds source to persona",
+        "pass": false,
+        "detail": "0 grant rows"
+      },
+      {
+        "name": "decline leaves persona source-free",
+        "pass": false,
+        "detail": "0 decline rows"
+      },
+      {
+        "name": "discrimination-case",
+        "pass": false,
+        "detail": "star-trek domain matched memory-alpha, not simpsons"
+      }
+    ],
+    "pass": 0,
+    "fail": 4,
+    "allGreen": false
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:03",
+    "checks": [
+      {
+        "name": "domain-matched source suggested at creation",
+        "pass": true,
+        "detail": "{'source': 'source-memory-alpha', 'name': 'Memory Alpha', 'matchedOn': ['star-trek']}"
+      },
+      {
+        "name": "accept binds source to persona",
+        "pass": true,
+        "detail": "1 grant rows"
+      },
+      {
+        "name": "decline leaves persona source-free",
+        "pass": true,
+        "detail": "1 decline rows"
+      },
+      {
+        "name": "discrimination-case",
+        "pass": true,
+        "detail": "star-trek domain matched memory-alpha, not simpsons"
+      }
+    ],
+    "pass": 4,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "domain-matched source suggested at creation",
+        "pass": false,
+        "detail": "{}"
+      },
+      {
+        "name": "accept binds source to persona",
+        "pass": false,
+        "detail": "0 grant rows"
+      },
+      {
+        "name": "decline leaves persona source-free",
+        "pass": false,
+        "detail": "0 decline rows"
+      },
+      {
+        "name": "discrimination-case",
+        "pass": false,
+        "detail": "star-trek domain matched memory-alpha, not simpsons"
+      }
+    ],
+    "pass": 0,
+    "fail": 4,
+    "allGreen": false
+  }
+}

@@ -1,0 +1,285 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "no dead end",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "target surface OR directions",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "honest outcome",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "pending stated",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "install driven to verdict (R-F4)",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "verdict on an installable roster device (R-F4)",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 6,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "no dead end",
+    "pass": true,
+    "detail": "outcome=installed directions=None",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "target surface OR directions",
+    "pass": true,
+    "detail": "steps=3",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "honest outcome",
+    "pass": true,
+    "detail": "verdict=installed reason=None",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "pending stated",
+    "pass": true,
+    "detail": "pending only when honestly pending: installed",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "install driven to verdict (R-F4)",
+    "pass": true,
+    "detail": "driven to installed via 3 steps",
+    "src": [
+     "external:net",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "verdict on an installable roster device (R-F4)",
+    "pass": true,
+    "detail": "target=PC-GMK installable (not the gateway)",
+    "src": [
+     "external:net"
+    ]
+   }
+  ],
+  "pass": 6,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "no dead end",
+    "pass": true,
+    "detail": "outcome=installed directions=None",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "target surface OR directions",
+    "pass": true,
+    "detail": "steps=3",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "honest outcome",
+    "pass": true,
+    "detail": "verdict=installed reason=None",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "pending stated",
+    "pass": true,
+    "detail": "pending only when honestly pending: installed",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "install driven to verdict (R-F4)",
+    "pass": true,
+    "detail": "driven to installed via 3 steps",
+    "src": [
+     "external:net",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "verdict on an installable roster device (R-F4)",
+    "pass": true,
+    "detail": "target=PC-GMK installable (not the gateway)",
+    "src": [
+     "external:net"
+    ]
+   }
+  ],
+  "pass": 6,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "no dead end",
+    "pass": true,
+    "detail": "outcome=installed directions=None",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "target surface OR directions",
+    "pass": true,
+    "detail": "steps=3",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "honest outcome",
+    "pass": true,
+    "detail": "verdict=installed reason=None",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "pending stated",
+    "pass": true,
+    "detail": "pending only when honestly pending: installed",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "install driven to verdict (R-F4)",
+    "pass": true,
+    "detail": "driven to installed via 3 steps",
+    "src": [
+     "external:net",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "verdict on an installable roster device (R-F4)",
+    "pass": true,
+    "detail": "target=PC-GMK installable (not the gateway)",
+    "src": [
+     "external:net"
+    ]
+   }
+  ],
+  "pass": 6,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "no dead end",
+    "pass": false,
+    "detail": "no installable roster device enumerated",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "target surface OR directions",
+    "pass": false,
+    "detail": "no installable roster device enumerated",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "honest outcome",
+    "pass": false,
+    "detail": "no installable roster device enumerated",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "pending stated",
+    "pass": false,
+    "detail": "no installable roster device enumerated",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "install driven to verdict (R-F4)",
+    "pass": false,
+    "detail": "no installable roster device enumerated",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "verdict on an installable roster device (R-F4)",
+    "pass": false,
+    "detail": "no installable roster device enumerated",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 6,
+  "allGreen": false
+ }
+}

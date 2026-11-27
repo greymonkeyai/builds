@@ -1,0 +1,24 @@
+{
+ "id": "S-speech-serialization",
+ "ran": true,
+ "checks": [
+  {
+   "name": "speech serialized through the floor",
+   "pass": true,
+   "detail": "9 utterance plays"
+  },
+  {
+   "name": "playback measured not assumed",
+   "pass": true,
+   "detail": "21946"
+  },
+  {
+   "name": "held until playback complete",
+   "pass": true,
+   "detail": "21946"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 2.8
+}

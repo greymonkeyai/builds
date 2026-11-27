@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"><title>chorus</title>
+<style>
+:root{--bg:#f4f2ec;--panel:#fff;--ink:#222;--mut:#6a6a60;--acc:#3a6a4f;--line:#ddd8cc}
+[data-theme=dark]{--bg:#16181d;--panel:#1f232b;--ink:#e6e2d8;--mut:#8a8f99;--acc:#7fb98f;--line:#313743}
+[data-theme=sepia]{--bg:#efe6d2;--panel:#f8f0dd;--ink:#3d3223;--mut:#7a6a4d;--acc:#8a5a2b;--line:#d8c9a8}
+[data-theme=contrast]{--bg:#000;--panel:#0a0a0a;--ink:#fff;--mut:#ccc;--acc:#ff0;--line:#555}
+*{box-sizing:border-box}
+body{margin:0;font:14px/1.45 system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+#banner{background:var(--panel);border-bottom:1px solid var(--line);padding:4px 10px;font-size:12px;color:var(--mut)}
+#wrap{display:grid;grid-template-columns:230px 1fr 280px;gap:8px;padding:8px;height:calc(100vh - 66px)}
+.col{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px;overflow-y:auto}
+h3{margin:2px 0 8px;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--mut)}
+.persona{border:1px solid var(--line);border-radius:8px;padding:6px;margin-bottom:6px;cursor:pointer}
+.persona.sel{outline:2px solid var(--acc)}
+.persona img{width:42px;height:42px;border-radius:6px;background:#ccc;float:left;margin-right:6px}
+.persona .nm{font-weight:600}.persona .cf{font-size:11px;color:var(--mut)}
+.persona .badge{font-size:10px;color:#a33}
+button{background:var(--acc);color:var(--panel);border:0;border-radius:6px;padding:4px 9px;cursor:pointer;font-size:12px}
+button.ghost{background:transparent;color:var(--acc);border:1px solid var(--acc)}
+button.selbtn{border:1px solid var(--line);background:var(--panel);color:var(--ink);margin:0 3px 3px 0}
+button.selbtn.on{background:var(--acc);color:#fff}
+#chat{display:flex;flex-direction:column;height:100%}
+#log{flex:1;overflow-y:auto}
+.msg{margin:6px 0;padding:7px 9px;border-radius:8px;background:var(--bg);border:1px solid var(--line)}
+.msg .who{font-size:11px;font-weight:600;color:var(--acc)}
+.msg.user{border-left:3px solid var(--acc)}
+.msg .meta{font-size:10px;color:var(--mut)}
+#inputrow{display:flex;gap:6px;margin-top:6px}
+#inputrow input{flex:1;padding:7px;border-radius:6px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+.need{border:1px dashed var(--line);border-radius:6px;padding:5px;margin-bottom:5px;font-size:12px}
+.need .k{font-size:10px;color:var(--mut)}
+#statusbar{border-top:1px solid var(--line);background:var(--panel);padding:4px 10px;font-size:12px;color:var(--mut);position:fixed;bottom:0;left:0;right:0}
+.dev{font-size:11px;border-bottom:1px solid var(--line);padding:3px 0}
+.pill{display:inline-block;border:1px solid var(--line);border-radius:9px;padding:0 6px;font-size:10px;margin:1px}
+.pill.warn{border-color:#c80;color:#a60}
+select,input[type=text],input[type=number]{padding:4px;border:1px solid var(--line);border-radius:5px;background:var(--panel);color:var(--ink)}
+details{margin:8px 0}summary{cursor:pointer;font-weight:600;font-size:12px}
+pre{font-size:10px;white-space:pre-wrap}
+.stage-asset{font-size:11px;padding:3px;border:1px solid var(--line);border-radius:5px;margin:2px 0}
+</style>
+</head>
+<body data-theme="light">
+<div id="banner">…loading</div>
+<div id="wrap">
+  <div class="col" id="roster"><h3>roster</h3></div>
+  <div class="col" id="chat">
+    <h3>chat <span id="topic" style="float:right;font-weight:400"></span></h3>
+    <div id="quick"></div>
+    <div id="log"></div>
+    <div id="inputrow">
+      <input id="in" placeholder="say something — name a persona, ask, or make a list">
+      <button onclick="send()">send</button>
+      <button class="ghost" onclick="resetConv()">reset</button>
+    </div>
+    <details><summary>fleet</summary>
+      <button onclick="discover()">discover</button>
+      <button class="ghost" onclick="fleetMap()">map</button>
+      <div id="discstate" style="font-size:11px;margin:3px 0"></div>
+      <div id="fleet"></div>
+      <div id="roster-report" style="font-size:11px"></div>
+    </details>
+    <details><summary>stage</summary>
+      <button onclick="scene()">enact knock-knock</button>
+      <button class="ghost" onclick="interstitial()">new interstitial</button>
+      <div id="stage"></div>
+    </details>
+    <details><summary>library</summary><div id="library"></div></details>
+    <details><summary>settings</summary>
+      <div>theme <select id="theme" onchange="setTheme(this.value)">
+        <option>light</option><option>dark</option><option>sepia</option><option>contrast</option></select></div>
+      <div>response depth <input type="number" id="depth" min="1" max="9" style="width:3em" onchange="setDepth(this.value)"></div>
+      <div style="margin-top:6px">account <input type="text" id="acct" placeholder="imap user@host" style="width:10em">
+      <button class="ghost" onclick="addAccount()">configure</button></div>
+      <div id="accounts" style="font-size:11px"></div>
+      <div style="margin-top:6px">add source <input type="text" id="srcname" placeholder="name" style="width:8em">
+        <input type="text" id="srcurl" placeholder="https://…" style="width:12em">
+        <button class="ghost" onclick="addSource()">admit</button></div>
+      <div id="srcresult" style="font-size:11px"></div>
+    </details>
+    <details><summary>declared absences</summary><div id="absences" style="font-size:12px"></div></details>
+  </div>
+  <div class="col" id="rail">
+    <h3>unmet floor <span id="liveness" style="float:right"></span></h3>
+    <div id="needs"></div>
+    <h3 style="margin-top:10px">sources</h3>
+    <div id="sources"></div>
+    <h3 style="margin-top:10px">editor</h3>
+    <div id="editor"><i>select a persona</i></div>
+  </div>
+</div>
+<div id="statusbar">…</div>
+<script>
+const api=async(p,b)=>{const r=await fetch(p,b?{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(b)}:undefined);return r.json()};
+let state={}, sel=[];
+async function refresh(){
+  state=await api('/api/state'); sel=state.selector||[];
+  const h=state.honesty||{};
+  document.getElementById('banner').textContent =
+    `chorus — ledger ${h.ledger||'?'} · llm ${h.llm} · tts ${h.tts} · voices ${h.voices?h.voices.pool:'?'}${h.voices&&h.voices.thin?' (thin pool — declared)':''} · sources ${h.sources?h.sources.admitted+'/'+h.sources.configured:'?'} admitted`;
+  document.getElementById('statusbar').textContent =
+    `node ${state.node} · net ${state.network} · rows ${state.rows} · met needs ${state.metCount} · discovery ${state.discoveryState} · gate ${state.gate&&state.gate.ok?'PASS '+state.gate.timeToGateMs+'ms':'?'}`;
+  document.getElementById('topic').textContent = state.topic?('topic: '+state.topic):'';
+  document.getElementById('liveness').textContent = state.liveness?
+    `steward ${state.liveness.passes}p ${state.liveness.ageS!=null?state.liveness.ageS+'s':''}${state.liveness.busy?'…':''}`:'';
+  document.body.dataset.theme = state.theme||'light';
+  renderRoster(); renderNeeds(); renderChat(); renderSources();
+  renderFleet(); renderEditor(); renderAbsences(); renderLibrary();
+}
+function renderRoster(){
+  const el=document.getElementById('roster');
+  el.innerHTML='<h3>roster</h3>'+state.roster.map(p=>`
+    <div class="persona ${state.selected===p.id?'sel':''}" onclick="selectP('${p.id}')">
+      ${p.portrait?`<img src="/api/art/${p.id}">`:`<img src="" alt="no art">`}
+      <div class="nm">${p.imitation?'◈ ':''}${p.name}${p.imitation?` <span class="badge">imitates ${p.imitates}</span>`:''}</div>
+      <div class="cf">held-conf ${p.confidence} · ${p.voice?p.voice.name:'no voice'}${p.portrait&&!p.portrait.authored?' · fallback art':''}</div>
+      <button class="ghost" onclick="event.stopPropagation();move('${p.id}','up')">↑</button>
+      <button class="ghost" onclick="event.stopPropagation();move('${p.id}','down')">↓</button>
+    </div>`).join('');
+  const q=document.getElementById('quick');
+  q.innerHTML = '<button class="selbtn '+(sel.length?'':'on')+'" onclick="chatAll()">chat all</button>'+
+    state.roster.filter(p=>p.confidence>=state.threshold).map(p=>
+      `<button class="selbtn ${sel.includes(p.id)?'on':''}" onclick="toggleSel('${p.id}')">${p.name}</button>`).join('');
+}
+async function selectP(id){await api('/api/roster/select',{id});refresh()}
+async function move(id,dir){const r=await api('/api/roster/move',{id,dir});refresh()}
+async function chatAll(){await api('/api/selector',{ids:[]});refresh()}
+async function toggleSel(id){
+  const i=sel.indexOf(id); i<0?sel.push(id):sel.splice(i,1);
+  await api('/api/selector',{ids:sel});refresh();
+}
+function renderNeeds(){
+  document.getElementById('needs').innerHTML = state.needs.length?state.needs.map(n=>`
+    <div class="need"><div class="k">${n.kind}</div>${n.requirement||n.subject}
+    <button class="ghost" onclick="focusNeed('${n.needId}')">focus</button>
+    <button class="ghost" onclick="cancelNeed('${n.needId}')">×</button></div>`).join(''):'<i>floor clear — met needs left the list</i>';
+}
+function renderChat(){
+  const log=document.getElementById('log');
+  log.innerHTML=(state.conversation||[]).map(t=>`
+    <div class="msg user"><div class="who">you</div>${t.text}</div>`+
+    (t.replies||[]).map(r=>`<div class="msg"><div class="who">${r.persona} <span class="meta">${r.grant} · ${r.fidelity} · ${r.composeMs}ms${r.ttsMs?' · tts '+r.ttsMs+'ms':''}</span></div>${r.text}</div>`).join('')).join('');
+  log.scrollTop=log.scrollHeight;
+}
+function renderSources(){
+  const el=document.getElementById('sources');
+}
+async function send(){
+  const inp=document.getElementById('in'); const text=inp.value.trim(); if(!text)return;
+  inp.value='';
+  const r=await api('/api/chat',{text,selector:sel});
+  if(r.error){alert(r.error)}refresh();
+}
+document.getElementById('in').addEventListener('keydown',e=>{if(e.key==='Enter')send()});
+async function resetConv(){await api('/api/conversation/reset');refresh()}
+async function focusNeed(id){await api('/api/needs/focus',{needId:id});refresh()}
+async function cancelNeed(id){await api('/api/needs/cancel',{needId:id});refresh()}
+async function setTheme(v){await api('/api/settings',{key:'ui:theme',value:v});refresh()}
+async function setDepth(v){await api('/api/settings',{key:'chat:response-depth',value:+v});refresh()}
+async function addAccount(){
+  const a=document.getElementById('acct').value.trim(); if(!a)return;
+  const secret=prompt('app password / imap secret (held locally, never ledgered)')||'';
+  const [address,imaphost]=a.split('@').length>2?[a,null]:[a,null];
+  const r=await api('/api/accounts',{kind:'imap',address:a,secret,imap:null});
+  refresh();
+}
+async function addSource(){
+  const name=document.getElementById('srcname').value, url=document.getElementById('srcurl').value;
+  if(!name||!url)return;
+  const r=await api('/api/sources/add',{name,url,kind:'web',domains:['user-added']});
+  document.getElementById('srcresult').textContent = r.admitted?`admitted — ${r.basis}`:`quarantined — ${r.basis}`;
+}
+async function discover(){await api('/api/fleet/discover');pollFleet()}
+async function pollFleet(){
+  const f=await api('/api/fleet');
+  document.getElementById('discstate').textContent =
+    'discovery: '+f.discovery.state+' '+JSON.stringify(f.discovery.progress||{});
+  if(f.discovery.state==='scanning'){setTimeout(pollFleet,800)}
+  renderFleet();
+}
+function renderFleet(){
+  const f=document.getElementById('fleet'); if(!f)return;
+  const d=(state.discoveryState); const res=(window._fleet&&window._fleet.discovery&&window._fleet.discovery.results)||[];
+}
+async function fleetMap(){const r=await api('/api/fleet/map');alert(r.legible||'map written')}
+async function invite(ip){const r=await api('/api/fleet/invite',{ip});alert(r.legible)}
+async function install(ip){const r=await api('/api/fleet/install',{ip});alert(r.legible)}
+async function scene(){const r=await api('/api/stage/scene',{scene:'knock-knock'});
+  document.getElementById('stage').innerHTML = r.lines?r.lines.map(l=>`<div class="stage-asset"><b>${l.persona}</b>: ${l.text}</div>`).join('')+(r.skipped&&r.skipped.length?`<div class="stage-asset">skipped (absent): ${r.skipped.join(', ')}</div>`:''):'could not enact';
+}
+async function interstitial(){const t=prompt('interstitial topic');if(!t)return;
+  const r=await api('/api/stage/interstitial',{topic:t,origin:'user-request'});refresh()}
+async function presentInt(id){const r=await api('/api/stage/present',{id});alert(JSON.stringify(r.presented?`presented: ${r.topic}`:(r.declared||'deferred')))}
+function renderEditor(){
+  const el=document.getElementById('editor');
+  const p=(state.roster||[]).find(p=>p.id===state.selected);
+  if(!p){el.innerHTML='<i>select a persona</i>';return}
+  el.innerHTML=`
+    <div>name <input type="text" id="e_name" value="${p.name}" style="width:8em"></div>
+    <div>register <input type="text" id="e_reg" value="${p.register||''}" style="width:16em"></div>
+    <div>interests <input type="text" id="e_int" value="${(p.interests||[]).join(', ')}" style="width:16em"></div>
+    <div>voice <select id="e_voice">${(state._voices||[]).map(v=>`<option ${p.voice&&p.voice.name===v?'selected':''}>${v}</option>`).join('')}</select></div>
+    <button onclick="saveP('${p.id}')">save</button>
+    <div style="margin-top:4px">mint <input type="text" id="mintname" placeholder="name" style="width:8em">
+      <input type="text" id="mintdom" placeholder="domains, csv" style="width:9em">
+      <button class="ghost" onclick="mint()">mint</button></div>`;
+}
+async function saveP(id){await api('/api/persona/edit',{id,
+  name:document.getElementById('e_name').value,
+  register:document.getElementById('e_reg').value,
+  interests:document.getElementById('e_int').value.split(',').map(s=>s.trim()).filter(Boolean),
+  voice:document.getElementById('e_voice').value});refresh()}
+async function mint(){
+  const name=document.getElementById('mintname').value||'Persona';
+  const doms=document.getElementById('mintdom').value.split(',').map(s=>s.trim()).filter(Boolean);
+  const r=await api('/api/persona/mint',{name,domains:doms,accept_source:true});
+  refresh();
+}
+function renderAbsences(){
+  const a=(state.honesty&&state.honesty.declaredAbsences)||[];
+  document.getElementById('absences').innerHTML=a.map(x=>`<div>· ${x}</div>`).join('');
+}
+async function renderLibrary(){
+  const l=await api('/api/library'); if(!l)return;
+  document.getElementById('library').innerHTML =
+    `<div><b>${l.personas.length} personas · ${l.tools.length} tools · ${l.lists.length} lists · ${l.sources.length} sources</b></div>`+
+    l.lists.map(li=>`<div class="dev">list: ${li.subject} — ${li.memberCount} members (${li.nonMatchCount} non-matches retained)</div>`).join('')+
+    l.workshops.map(w=>`<div class="dev">workshop: ${w.name||w.subject}</div>`).join('');
+}
+setInterval(refresh,3000);refresh();
+</script>
+</body>
+</html>

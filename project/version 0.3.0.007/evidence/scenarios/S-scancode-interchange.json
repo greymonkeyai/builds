@@ -1,0 +1,142 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:07",
+    "checks": [
+      {
+        "name": "generate",
+        "pass": false,
+        "detail": "artifact=None file=None"
+      },
+      {
+        "name": "carry",
+        "pass": false,
+        "detail": "artifact file carried on disk"
+      },
+      {
+        "name": "decode",
+        "pass": false,
+        "detail": "decoded holding=None"
+      },
+      {
+        "name": "import",
+        "pass": false,
+        "detail": "0 sub-threshold assertions + workshop=None"
+      }
+    ],
+    "pass": 0,
+    "fail": 4,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "generate",
+        "pass": true,
+        "detail": "artifact=artifact-0002 file=C:\\builds\\project\\version 0.3.0.007\\runtime\\suite-20261126-160519\\artifacts\\artifact-0002.png"
+      },
+      {
+        "name": "carry",
+        "pass": true,
+        "detail": "artifact file carried on disk"
+      },
+      {
+        "name": "decode",
+        "pass": true,
+        "detail": "decoded holding=persona-0002"
+      },
+      {
+        "name": "import",
+        "pass": true,
+        "detail": "1 sub-threshold assertions + workshop=workshop-0001"
+      }
+    ],
+    "pass": 4,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "generate",
+        "pass": true,
+        "detail": "artifact=artifact-0001 file=C:\\builds\\project\\version 0.3.0.007\\runtime\\suite-20261126-155355\\artifacts\\artifact-0001.png"
+      },
+      {
+        "name": "carry",
+        "pass": true,
+        "detail": "artifact file carried on disk"
+      },
+      {
+        "name": "decode",
+        "pass": true,
+        "detail": "decoded holding=None"
+      },
+      {
+        "name": "import",
+        "pass": false,
+        "detail": "0 sub-threshold assertions + workshop=None"
+      }
+    ],
+    "pass": 3,
+    "fail": 1,
+    "allGreen": false
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:03",
+    "checks": [
+      {
+        "name": "generate",
+        "pass": true,
+        "detail": "artifact=artifact-0002 file=C:\\builds\\project\\version 0.3.0.007\\runtime\\suite-20261126-155616\\artifacts\\artifact-0002.png"
+      },
+      {
+        "name": "carry",
+        "pass": true,
+        "detail": "artifact file carried on disk"
+      },
+      {
+        "name": "decode",
+        "pass": true,
+        "detail": "decoded holding=persona-0002"
+      },
+      {
+        "name": "import",
+        "pass": true,
+        "detail": "1 sub-threshold assertions + workshop=workshop-0001"
+      }
+    ],
+    "pass": 4,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "generate",
+        "pass": false,
+        "detail": "artifact=None file=None"
+      },
+      {
+        "name": "carry",
+        "pass": false,
+        "detail": "artifact file carried on disk"
+      },
+      {
+        "name": "decode",
+        "pass": false,
+        "detail": "decoded holding=None"
+      },
+      {
+        "name": "import",
+        "pass": false,
+        "detail": "0 sub-threshold assertions + workshop=None"
+      }
+    ],
+    "pass": 0,
+    "fail": 4,
+    "allGreen": false
+  }
+}

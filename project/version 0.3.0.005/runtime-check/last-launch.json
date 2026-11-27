@@ -1,0 +1,48 @@
+{
+  "app": "quorum",
+  "version": "0.3.0.005",
+  "started": 1795608124843,
+  "runtime": "C:\\builds\\project\\version 0.3.0.005\\runtime-check",
+  "port": 9794,
+  "ok": false,
+  "mounted": {
+    "partition": 18,
+    "journal": 2
+  },
+  "gate": {
+    "passed": true,
+    "checks": [
+      {
+        "check": "primitive pipelines route input",
+        "pass": true
+      },
+      {
+        "check": "primary LLM handle live",
+        "pass": true,
+        "note": "live-ollama:moondream"
+      },
+      {
+        "check": "launch partition mounted",
+        "pass": true,
+        "rows": 18
+      },
+      {
+        "check": "ledger queryable",
+        "pass": true
+      },
+      {
+        "check": "journal durable",
+        "pass": true
+      }
+    ],
+    "bootedAt": 1795608124843,
+    "passedAt": 1795608126910,
+    "timeToGateMs": 2067
+  },
+  "port_probe": {
+    "free": false,
+    "owner": "quorum-instance",
+    "note": "prior Quorum instance owns the port \u2014 refusing to claim clean launch"
+  },
+  "error": "port 9794 owned by quorum-instance \u2014 prior Quorum instance owns the port \u2014 refusing to claim clean launch"
+}

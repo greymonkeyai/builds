@@ -1,0 +1,38 @@
+{
+ "id": "S-portrait-bind",
+ "ran": true,
+ "checks": [
+  {
+   "name": "portrait file produced",
+   "pass": true,
+   "detail": "8 svg files"
+  },
+  {
+   "name": "art bound to this persona",
+   "pass": true,
+   "detail": "8/8 bound"
+  },
+  {
+   "name": "generative path declared",
+   "pass": true,
+   "detail": "{\"path\": \"C:\\\\builds\\\\project\\\\version 0.3.0.006\\\\runtime-suite\\\\personas\\\\persona-3e46e6b8ec.svg\", \"authored\": true, \"e"
+  },
+  {
+   "name": "auto-bound shipped",
+   "pass": true,
+   "detail": "4 shipped"
+  },
+  {
+   "name": "auto-bound minted",
+   "pass": true,
+   "detail": "4 minted"
+  },
+  {
+   "name": "fallback legible",
+   "pass": true,
+   "detail": "0 fallback-marked of 8 bound"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment"
+}

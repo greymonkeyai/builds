@@ -1,0 +1,29 @@
+{
+ "id": "S-template-need",
+ "ran": true,
+ "checks": [
+  {
+   "name": "need row created from chat input",
+   "pass": true,
+   "detail": "a-154"
+  },
+  {
+   "name": "template-governed (slots+criteria)",
+   "pass": true,
+   "detail": "{\"criteria\": {\"scope\": \"rivers\", \"place\": \"france\", \"member_kind\": \"river\", \"label\": \"rivers in france\", \"preserved\": \"criteria carried in the need row; refinement supersedes by assertion, never rewri"
+  },
+  {
+   "name": "opens unfulfilled",
+   "pass": true,
+   "detail": "open"
+  },
+  {
+   "name": "filled need reaches filled state",
+   "pass": true,
+   "detail": "fulfilled"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 26.6
+}

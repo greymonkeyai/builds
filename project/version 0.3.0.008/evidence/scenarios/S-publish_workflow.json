@@ -1,0 +1,202 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "select + form",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "produced + recorded",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "or deferred",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no silent absence",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 4,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "select + form",
+    "pass": true,
+    "detail": "holding+form accepted: produced",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "produced + recorded",
+    "pass": true,
+    "detail": "produced=True rows=5",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "or deferred",
+    "pass": true,
+    "detail": "unconfigured channel \u2192 deferred-unconfigured-channel",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no silent absence",
+    "pass": true,
+    "detail": "every publish request returns a recorded verdict",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "select + form",
+    "pass": true,
+    "detail": "holding+form accepted: produced",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "produced + recorded",
+    "pass": true,
+    "detail": "produced=True rows=5",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "or deferred",
+    "pass": true,
+    "detail": "unconfigured channel \u2192 deferred-unconfigured-channel",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no silent absence",
+    "pass": true,
+    "detail": "every publish request returns a recorded verdict",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "select + form",
+    "pass": true,
+    "detail": "holding+form accepted: produced",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "produced + recorded",
+    "pass": true,
+    "detail": "produced=True rows=5",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "or deferred",
+    "pass": true,
+    "detail": "unconfigured channel \u2192 deferred-unconfigured-channel",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no silent absence",
+    "pass": true,
+    "detail": "every publish request returns a recorded verdict",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "select + form",
+    "pass": true,
+    "detail": "holding+form accepted: None",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "produced + recorded",
+    "pass": false,
+    "detail": "produced=False rows=0",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "or deferred",
+    "pass": false,
+    "detail": "unconfigured channel \u2192 None",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no silent absence",
+    "pass": false,
+    "detail": "every publish request returns a recorded verdict",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 1,
+  "fail": 3,
+  "allGreen": false
+ }
+}

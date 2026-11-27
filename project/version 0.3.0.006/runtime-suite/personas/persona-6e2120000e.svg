@@ -1,0 +1,11 @@
+<svg viewBox="0 0 200 200">
+  <g transform="scale(0.5)">
+    <circle cx="50" cy="50" r="30" fill="#f7f7f7" />
+    <path d="M 35, 100 Q  25, 120  15, 150" stroke="#5c5c5c" stroke-width="2" fill="none" />
+    <path d="M 65, 100 Q 85, 120 95, 150" stroke="#5c5c5c" stroke-width="2" fill="none" />
+    <circle cx="65" cy="95" r="10" fill="#808080" />
+    <circle cx="35" cy="95" r="10" fill="#808080" />
+    <path d="M 50, 125 Q  60, 120  70, 110" stroke="#5c5c5c" stroke-width="2" fill="none" />
+    <path d="M 40, 80 Q  50, 90  60, 100" stroke="#5c5c5c" stroke-width="2" fill="none" />
+  </g>
+</svg>

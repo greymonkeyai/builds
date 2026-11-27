@@ -1,0 +1,29 @@
+{
+ "id": "S-speech-completion",
+ "ran": true,
+ "checks": [
+  {
+   "name": "sentence boundary",
+   "pass": true,
+   "detail": "9 utterance chunks"
+  },
+  {
+   "name": "sequential utterances",
+   "pass": true,
+   "detail": "9 sequential"
+  },
+  {
+   "name": "or declared excerpt",
+   "pass": true,
+   "detail": "excerpt flags: [False, False, False, False, False, False]"
+  },
+  {
+   "name": "no silent cut",
+   "pass": true,
+   "detail": "all utterances end at boundaries or declare excerpt"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 2.8
+}

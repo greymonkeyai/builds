@@ -1,0 +1,17 @@
+{
+  "id": "S-conversation-reset",
+  "ran": true,
+  "checks": [
+    {
+      "name": "reset clears conversation",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "topic cleared",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,192 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:06",
+    "checks": [
+      {
+        "name": "name-addressed \u2192 addressee",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "capability \u2192 answered",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "want \u2260 list",
+        "pass": false,
+        "detail": "kind=None; sandwich-as-list rows=0"
+      },
+      {
+        "name": "list \u2192 list machinery",
+        "pass": false,
+        "detail": "kind=None needs=[]"
+      },
+      {
+        "name": "genuine unmet \u2192 floor",
+        "pass": false,
+        "detail": "keys need on floor: False"
+      },
+      {
+        "name": "no stray rows",
+        "pass": false,
+        "detail": "capability/chat strays on floor: 0"
+      }
+    ],
+    "pass": 0,
+    "fail": 6,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "name-addressed \u2192 addressee",
+        "pass": true,
+        "detail": "named"
+      },
+      {
+        "name": "capability \u2192 answered",
+        "pass": true,
+        "detail": "capability"
+      },
+      {
+        "name": "want \u2260 list",
+        "pass": true,
+        "detail": "kind=want; sandwich-as-list rows=0"
+      },
+      {
+        "name": "list \u2192 list machinery",
+        "pass": true,
+        "detail": "kind=list needs=['need-0015']"
+      },
+      {
+        "name": "genuine unmet \u2192 floor",
+        "pass": true,
+        "detail": "keys need on floor: True"
+      },
+      {
+        "name": "no stray rows",
+        "pass": true,
+        "detail": "capability/chat strays on floor: 0"
+      }
+    ],
+    "pass": 6,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "name-addressed \u2192 addressee",
+        "pass": false,
+        "detail": "chat"
+      },
+      {
+        "name": "capability \u2192 answered",
+        "pass": false,
+        "detail": "capability"
+      },
+      {
+        "name": "want \u2260 list",
+        "pass": true,
+        "detail": "kind=want; sandwich-as-list rows=0"
+      },
+      {
+        "name": "list \u2192 list machinery",
+        "pass": true,
+        "detail": "kind=list needs=['need-0015']"
+      },
+      {
+        "name": "genuine unmet \u2192 floor",
+        "pass": false,
+        "detail": "keys need on floor: False"
+      },
+      {
+        "name": "no stray rows",
+        "pass": true,
+        "detail": "capability/chat strays on floor: 0"
+      }
+    ],
+    "pass": 3,
+    "fail": 3,
+    "allGreen": false
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:02",
+    "checks": [
+      {
+        "name": "name-addressed \u2192 addressee",
+        "pass": true,
+        "detail": "named"
+      },
+      {
+        "name": "capability \u2192 answered",
+        "pass": true,
+        "detail": "capability"
+      },
+      {
+        "name": "want \u2260 list",
+        "pass": true,
+        "detail": "kind=want; sandwich-as-list rows=0"
+      },
+      {
+        "name": "list \u2192 list machinery",
+        "pass": true,
+        "detail": "kind=list needs=['need-0015']"
+      },
+      {
+        "name": "genuine unmet \u2192 floor",
+        "pass": true,
+        "detail": "keys need on floor: True"
+      },
+      {
+        "name": "no stray rows",
+        "pass": true,
+        "detail": "capability/chat strays on floor: 0"
+      }
+    ],
+    "pass": 6,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "name-addressed \u2192 addressee",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "capability \u2192 answered",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "want \u2260 list",
+        "pass": false,
+        "detail": "kind=None; sandwich-as-list rows=0"
+      },
+      {
+        "name": "list \u2192 list machinery",
+        "pass": false,
+        "detail": "kind=None needs=[]"
+      },
+      {
+        "name": "genuine unmet \u2192 floor",
+        "pass": false,
+        "detail": "keys need on floor: False"
+      },
+      {
+        "name": "no stray rows",
+        "pass": false,
+        "detail": "capability/chat strays on floor: 0"
+      }
+    ],
+    "pass": 0,
+    "fail": 6,
+    "allGreen": false
+  }
+}

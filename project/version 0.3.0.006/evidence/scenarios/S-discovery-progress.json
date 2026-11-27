@@ -1,0 +1,24 @@
+{
+ "id": "S-discovery-progress",
+ "ran": true,
+ "checks": [
+  {
+   "name": "in-progress shown",
+   "pass": true,
+   "detail": "scanning"
+  },
+  {
+   "name": "transport progress",
+   "pass": true,
+   "detail": "{\"lan\": \"23/254\", \"bt\": \"queued\"}"
+  },
+  {
+   "name": "finished shown",
+   "pass": true,
+   "detail": "finished"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 10.7
+}

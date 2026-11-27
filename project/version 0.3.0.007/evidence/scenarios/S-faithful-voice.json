@@ -1,0 +1,117 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:06",
+    "checks": [
+      {
+        "name": "grounded reply flagged grounded",
+        "pass": false,
+        "detail": "grounded=0 ungrounded-flagged=0"
+      },
+      {
+        "name": "zero-hit does NOT pass grounding (S-2)",
+        "pass": false,
+        "detail": "no reply claims grounded fidelity on an unsupportable ask"
+      },
+      {
+        "name": "no unflagged fidelity:null",
+        "pass": false,
+        "detail": "0 null-fidelity replies"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "grounded reply flagged grounded",
+        "pass": true,
+        "detail": "grounded=1 ungrounded-flagged=1"
+      },
+      {
+        "name": "zero-hit does NOT pass grounding (S-2)",
+        "pass": true,
+        "detail": "no reply claims grounded fidelity on an unsupportable ask"
+      },
+      {
+        "name": "no unflagged fidelity:null",
+        "pass": true,
+        "detail": "0 null-fidelity replies"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "grounded reply flagged grounded",
+        "pass": false,
+        "detail": "grounded=0 ungrounded-flagged=0"
+      },
+      {
+        "name": "zero-hit does NOT pass grounding (S-2)",
+        "pass": false,
+        "detail": "no reply claims grounded fidelity on an unsupportable ask"
+      },
+      {
+        "name": "no unflagged fidelity:null",
+        "pass": false,
+        "detail": "0 null-fidelity replies"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:03",
+    "checks": [
+      {
+        "name": "grounded reply flagged grounded",
+        "pass": true,
+        "detail": "grounded=1 ungrounded-flagged=1"
+      },
+      {
+        "name": "zero-hit does NOT pass grounding (S-2)",
+        "pass": true,
+        "detail": "no reply claims grounded fidelity on an unsupportable ask"
+      },
+      {
+        "name": "no unflagged fidelity:null",
+        "pass": true,
+        "detail": "0 null-fidelity replies"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "grounded reply flagged grounded",
+        "pass": false,
+        "detail": "grounded=0 ungrounded-flagged=0"
+      },
+      {
+        "name": "zero-hit does NOT pass grounding (S-2)",
+        "pass": false,
+        "detail": "no reply claims grounded fidelity on an unsupportable ask"
+      },
+      {
+        "name": "no unflagged fidelity:null",
+        "pass": false,
+        "detail": "0 null-fidelity replies"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  }
+}

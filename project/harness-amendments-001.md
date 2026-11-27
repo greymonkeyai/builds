@@ -1,4 +1,5 @@
 # Proposed harness amendments — APPROVED and APPLIED 2026-11-20
+<!-- harness-doc kind=amendments status=adopted-upstream -->
 
 Applied to `C:\Harness`: H1/H2/H4 → `harness/workflow.md`, H3 → `harness/rubric.md`,
 scenario-suite item → `harness/templates/intake.md`.

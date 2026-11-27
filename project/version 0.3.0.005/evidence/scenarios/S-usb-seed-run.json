@@ -1,0 +1,23 @@
+{
+  "id": "S-usb-seed-run",
+  "ran": true,
+  "checks": [
+    {
+      "name": "app launched executing from removable media",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "runs in place — no install required",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "local network log written ON the medium",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true,
+  "media": "H:\\quorum-seed"
+}

@@ -1,0 +1,14 @@
+{
+ "id": "S-context-display",
+ "ran": true,
+ "checks": [
+  {
+   "name": "active context displayed",
+   "pass": true,
+   "detail": "let's discuss railroads steam"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 2.6
+}

@@ -1,0 +1,202 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "sample tracks present",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "prompt reference creates channel",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "channel persists under conversation",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "honest when audio engine absent",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 4,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "sample tracks present",
+    "pass": true,
+    "detail": "3 channel wavs on disk: ['channel-calm.wav', 'channel-rain.wav', 'channel-focus.wav']",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "prompt reference creates channel",
+    "pass": true,
+    "detail": "channel rows=1",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "channel persists under conversation",
+    "pass": true,
+    "detail": "1 channels survive a chat turn",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "honest when audio engine absent",
+    "pass": true,
+    "detail": "produced=3 declared=0",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "sample tracks present",
+    "pass": false,
+    "detail": "0 channel wavs on disk: []",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "prompt reference creates channel",
+    "pass": true,
+    "detail": "channel rows=1",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "channel persists under conversation",
+    "pass": true,
+    "detail": "1 channels survive a chat turn",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "honest when audio engine absent",
+    "pass": false,
+    "detail": "produced=0 declared=0",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 2,
+  "fail": 2,
+  "allGreen": false
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "sample tracks present",
+    "pass": true,
+    "detail": "3 channel wavs on disk: ['channel-calm.wav', 'channel-rain.wav', 'channel-focus.wav']",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "prompt reference creates channel",
+    "pass": true,
+    "detail": "channel rows=1",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "channel persists under conversation",
+    "pass": true,
+    "detail": "1 channels survive a chat turn",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "honest when audio engine absent",
+    "pass": true,
+    "detail": "produced=3 declared=0",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "sample tracks present",
+    "pass": false,
+    "detail": "0 channel wavs on disk: []",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "prompt reference creates channel",
+    "pass": false,
+    "detail": "channel rows=0",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "channel persists under conversation",
+    "pass": false,
+    "detail": "0 channels survive a chat turn",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "honest when audio engine absent",
+    "pass": false,
+    "detail": "produced=0 declared=0",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 4,
+  "allGreen": false
+ }
+}

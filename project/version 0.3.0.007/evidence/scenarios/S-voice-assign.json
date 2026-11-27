@@ -1,0 +1,217 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:06",
+    "checks": [
+      {
+        "name": "assignment reasons from available descriptions",
+        "pass": false,
+        "detail": "0 judged assignments"
+      },
+      {
+        "name": "in-use voices assessed",
+        "pass": false,
+        "detail": "in-use voices appear in reasons"
+      },
+      {
+        "name": "used voices disfavored",
+        "pass": false,
+        "detail": "variety assessment in assignment reasons"
+      },
+      {
+        "name": "assigned voice stable across relaunch",
+        "pass": false,
+        "detail": "voice specs + roster voices survive reboot"
+      },
+      {
+        "name": "changes only on user direction",
+        "pass": false,
+        "detail": "edit without voice field leaves None intact"
+      },
+      {
+        "name": "discrimination-case",
+        "pass": false,
+        "detail": "voices in use set() differ across personas"
+      },
+      {
+        "name": "honest-absence",
+        "pass": false,
+        "detail": "pool declared: module not mounted \u2014 bare system"
+      }
+    ],
+    "pass": 0,
+    "fail": 7,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "assignment reasons from available descriptions",
+        "pass": true,
+        "detail": "9 judged assignments"
+      },
+      {
+        "name": "in-use voices assessed",
+        "pass": true,
+        "detail": "in-use voices appear in reasons"
+      },
+      {
+        "name": "used voices disfavored",
+        "pass": true,
+        "detail": "variety assessment in assignment reasons"
+      },
+      {
+        "name": "assigned voice stable across relaunch",
+        "pass": true,
+        "detail": "voice specs + roster voices survive reboot"
+      },
+      {
+        "name": "changes only on user direction",
+        "pass": true,
+        "detail": "edit without voice field leaves Microsoft Zira Desktop|slow intact"
+      },
+      {
+        "name": "discrimination-case",
+        "pass": true,
+        "detail": "voices in use {'Microsoft Zira Desktop|slow', 'Microsoft Zira Desktop|bright', 'Microsoft David Desktop|bright', 'Microsoft David Desktop|slow', 'Microsoft David Desktop|low', 'Microsoft David Desktop|base', 'Microsoft Zira Desktop|low'} differ across personas"
+      },
+      {
+        "name": "honest-absence",
+        "pass": true,
+        "detail": "pool declared: thin pool"
+      }
+    ],
+    "pass": 7,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "assignment reasons from available descriptions",
+        "pass": false,
+        "detail": "0 judged assignments"
+      },
+      {
+        "name": "in-use voices assessed",
+        "pass": false,
+        "detail": "in-use voices appear in reasons"
+      },
+      {
+        "name": "used voices disfavored",
+        "pass": false,
+        "detail": "variety assessment in assignment reasons"
+      },
+      {
+        "name": "assigned voice stable across relaunch",
+        "pass": false,
+        "detail": "voice specs + roster voices survive reboot"
+      },
+      {
+        "name": "changes only on user direction",
+        "pass": false,
+        "detail": "edit without voice field leaves None intact"
+      },
+      {
+        "name": "discrimination-case",
+        "pass": false,
+        "detail": "voices in use set() differ across personas"
+      },
+      {
+        "name": "honest-absence",
+        "pass": false,
+        "detail": "pool declared: thin pool"
+      }
+    ],
+    "pass": 0,
+    "fail": 7,
+    "allGreen": false
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:03",
+    "checks": [
+      {
+        "name": "assignment reasons from available descriptions",
+        "pass": false,
+        "detail": "0 judged assignments"
+      },
+      {
+        "name": "in-use voices assessed",
+        "pass": false,
+        "detail": "in-use voices appear in reasons"
+      },
+      {
+        "name": "used voices disfavored",
+        "pass": false,
+        "detail": "variety assessment in assignment reasons"
+      },
+      {
+        "name": "assigned voice stable across relaunch",
+        "pass": false,
+        "detail": "voice specs + roster voices survive reboot"
+      },
+      {
+        "name": "changes only on user direction",
+        "pass": true,
+        "detail": "edit without voice field leaves None intact"
+      },
+      {
+        "name": "discrimination-case",
+        "pass": false,
+        "detail": "voices in use {None} differ across personas"
+      },
+      {
+        "name": "honest-absence",
+        "pass": true,
+        "detail": "pool declared: thin pool"
+      }
+    ],
+    "pass": 2,
+    "fail": 5,
+    "allGreen": false
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "assignment reasons from available descriptions",
+        "pass": false,
+        "detail": "0 judged assignments"
+      },
+      {
+        "name": "in-use voices assessed",
+        "pass": false,
+        "detail": "in-use voices appear in reasons"
+      },
+      {
+        "name": "used voices disfavored",
+        "pass": false,
+        "detail": "variety assessment in assignment reasons"
+      },
+      {
+        "name": "assigned voice stable across relaunch",
+        "pass": false,
+        "detail": "voice specs + roster voices survive reboot"
+      },
+      {
+        "name": "changes only on user direction",
+        "pass": false,
+        "detail": "edit without voice field leaves None intact"
+      },
+      {
+        "name": "discrimination-case",
+        "pass": false,
+        "detail": "voices in use set() differ across personas"
+      },
+      {
+        "name": "honest-absence",
+        "pass": false,
+        "detail": "pool declared: endpoint '/api/voices' stubbed by sabotage"
+      }
+    ],
+    "pass": 0,
+    "fail": 7,
+    "allGreen": false
+  }
+}

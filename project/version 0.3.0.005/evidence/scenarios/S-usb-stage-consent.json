@@ -1,0 +1,21 @@
+{
+  "id": "S-usb-stage-consent",
+  "ran": true,
+  "checks": [
+    {
+      "name": "decline → no local write, app stays on media",
+      "pass": true,
+      "detail": {
+        "staged": false,
+        "reason": "declined",
+        "wrote": false
+      }
+    },
+    {
+      "name": "consent → stages to C:\\builds-installed",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true
+}

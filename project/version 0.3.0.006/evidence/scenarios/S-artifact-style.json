@@ -1,0 +1,24 @@
+{
+ "id": "S-artifact-style",
+ "ran": true,
+ "checks": [
+  {
+   "name": "stylistic extraction layer present",
+   "pass": true,
+   "detail": "{\"id\": \"workshop-4b6301d980\", \"name\": \"styled\", \"persona\": null, \"tools\": [], \"text\": \"a sonnet about data\", \"materials\": [], \"style\": \"clean geometric lines, muted palette\", \"created\": \"2026-11-26T06"
+  },
+  {
+   "name": "art style captured as LLM reference",
+   "pass": true,
+   "detail": "clean geometric lines, muted palette"
+  },
+  {
+   "name": "carried on the workshop entry",
+   "pass": true,
+   "detail": "{\"subject\": \"workshop-4b6301d980\", \"name\": \"styled\", \"persona\": null, \"tools\": []}"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.0
+}

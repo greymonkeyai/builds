@@ -1,0 +1,75 @@
+{
+  "personas": {
+    "persona-c54da44788cd": {
+      "id": "persona-c54da44788cd",
+      "name": "Verity",
+      "register": "scholarly",
+      "traits": [
+        "precise",
+        "cites sources",
+        "measured"
+      ],
+      "created": 1795609094742,
+      "portrait": "",
+      "voice": "Microsoft Zira Desktop",
+      "characterization": "",
+      "imitation_mark": false,
+      "imitation_of": ""
+    },
+    "persona-dbd9268839aa": {
+      "id": "persona-dbd9268839aa",
+      "name": "Puck",
+      "register": "playful",
+      "traits": [
+        "witty",
+        "irreverent",
+        "quick"
+      ],
+      "created": 1795609095053,
+      "portrait": "",
+      "voice": "Microsoft David Desktop",
+      "characterization": "",
+      "imitation_mark": false,
+      "imitation_of": ""
+    },
+    "persona-72c209a2e812": {
+      "id": "persona-72c209a2e812",
+      "name": "Marge",
+      "register": "casual",
+      "traits": [
+        "warm",
+        "practical",
+        "homespun"
+      ],
+      "created": 1795609095347,
+      "portrait": "",
+      "voice": "Microsoft Zira Desktop",
+      "characterization": "",
+      "imitation_mark": false,
+      "imitation_of": ""
+    },
+    "persona-897390452a71": {
+      "id": "persona-897390452a71",
+      "name": "Nix",
+      "register": "terse",
+      "traits": [
+        "minimal",
+        "direct",
+        "quiet"
+      ],
+      "created": 1795609095645,
+      "portrait": "",
+      "voice": "Microsoft David Desktop",
+      "characterization": "",
+      "imitation_mark": false,
+      "imitation_of": ""
+    }
+  },
+  "order": [
+    "persona-c54da44788cd",
+    "persona-dbd9268839aa",
+    "persona-72c209a2e812",
+    "persona-897390452a71"
+  ],
+  "active": "persona-c54da44788cd"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "S-artifact-style",
+  "ran": true,
+  "checks": [
+    {
+      "name": "stylistic extraction layer present",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "art style captured as LLM reference",
+      "pass": true,
+      "detail": "captured art style — LLM reference for workshop background/presentation"
+    },
+    {
+      "name": "carried on the workshop entry",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true
+}

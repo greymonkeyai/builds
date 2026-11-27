@@ -1,0 +1,19 @@
+{
+ "id": "S-distinct-preloadeds",
+ "ran": true,
+ "checks": [
+  {
+   "name": "\u22653 shipped personas w/ distinct registers",
+   "pass": true,
+   "detail": "['Nix', 'Vera', 'Bolt', 'Opal', 'Wren']"
+  },
+  {
+   "name": "same prompt \u2192 noticeably different replies",
+   "pass": true,
+   "detail": "3 replies, 3 distinct"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 4.6
+}

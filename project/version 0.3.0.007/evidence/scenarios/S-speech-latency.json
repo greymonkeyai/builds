@@ -1,0 +1,117 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:07",
+    "checks": [
+      {
+        "name": "composition time measured per response",
+        "pass": false,
+        "detail": "0 latency metrics"
+      },
+      {
+        "name": "recorded as metric",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "reportable for host comparison",
+        "pass": false,
+        "detail": "node field on metrics: None"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "composition time measured per response",
+        "pass": true,
+        "detail": "28 latency metrics"
+      },
+      {
+        "name": "recorded as metric",
+        "pass": true,
+        "detail": "0.964"
+      },
+      {
+        "name": "reportable for host comparison",
+        "pass": true,
+        "detail": "node field on metrics: node-desktop-oogq7un-n-8b24"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "composition time measured per response",
+        "pass": false,
+        "detail": "0 latency metrics"
+      },
+      {
+        "name": "recorded as metric",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "reportable for host comparison",
+        "pass": false,
+        "detail": "node field on metrics: None"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:03",
+    "checks": [
+      {
+        "name": "composition time measured per response",
+        "pass": true,
+        "detail": "28 latency metrics"
+      },
+      {
+        "name": "recorded as metric",
+        "pass": true,
+        "detail": "0.0"
+      },
+      {
+        "name": "reportable for host comparison",
+        "pass": true,
+        "detail": "node field on metrics: node-desktop-oogq7un-n-01f1"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "composition time measured per response",
+        "pass": false,
+        "detail": "0 latency metrics"
+      },
+      {
+        "name": "recorded as metric",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "reportable for host comparison",
+        "pass": false,
+        "detail": "node field on metrics: None"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  }
+}

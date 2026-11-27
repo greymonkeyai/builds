@@ -1,0 +1,206 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "sentence boundary",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "sequential utterances",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "or declared excerpt",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no silent cut",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 4,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "sentence boundary",
+    "pass": true,
+    "detail": "3 utterance wavs, declared=['excerpt-declared', 'excerpt-declared']",
+    "src": [
+     "external:file",
+     "user-path"
+    ]
+   },
+   {
+    "name": "sequential utterances",
+    "pass": true,
+    "detail": "3 sequential wavs",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "or declared excerpt",
+    "pass": true,
+    "detail": "declared=['excerpt-declared', 'excerpt-declared']",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no silent cut",
+    "pass": true,
+    "detail": "speech ends at boundary or declares excerpt",
+    "src": [
+     "external:file"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "sentence boundary",
+    "pass": true,
+    "detail": "2 utterance wavs, declared=['excerpt-declared', 'excerpt-declared']",
+    "src": [
+     "external:file",
+     "user-path"
+    ]
+   },
+   {
+    "name": "sequential utterances",
+    "pass": true,
+    "detail": "2 sequential wavs",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "or declared excerpt",
+    "pass": true,
+    "detail": "declared=['excerpt-declared', 'excerpt-declared']",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no silent cut",
+    "pass": true,
+    "detail": "speech ends at boundary or declares excerpt",
+    "src": [
+     "external:file"
+    ]
+   }
+  ],
+  "pass": 4,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "sentence boundary",
+    "pass": false,
+    "detail": "0 utterance wavs, declared=[]",
+    "src": [
+     "external:file",
+     "user-path"
+    ]
+   },
+   {
+    "name": "sequential utterances",
+    "pass": false,
+    "detail": "0 sequential wavs",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "or declared excerpt",
+    "pass": false,
+    "detail": "declared=[]",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no silent cut",
+    "pass": false,
+    "detail": "speech ends at boundary or declares excerpt",
+    "src": [
+     "external:file"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 4,
+  "allGreen": false
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "sentence boundary",
+    "pass": false,
+    "detail": "0 utterance wavs, declared=[]",
+    "src": [
+     "external:file",
+     "user-path"
+    ]
+   },
+   {
+    "name": "sequential utterances",
+    "pass": false,
+    "detail": "0 sequential wavs",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "or declared excerpt",
+    "pass": false,
+    "detail": "declared=[]",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "no silent cut",
+    "pass": false,
+    "detail": "speech ends at boundary or declares excerpt",
+    "src": [
+     "external:file"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 4,
+  "allGreen": false
+ }
+}

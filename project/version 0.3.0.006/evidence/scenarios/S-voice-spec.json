@@ -1,0 +1,24 @@
+{
+ "id": "S-voice-spec",
+ "ran": true,
+ "checks": [
+  {
+   "name": "spec is QR-fittable (minimal payload)",
+   "pass": true,
+   "detail": "6 specs; 6 under 400B"
+  },
+  {
+   "name": "ranked families and/or traits carried",
+   "pass": true,
+   "detail": "{\"families\": [\"male-adult\", \"neutral\"], \"traits\": []}"
+  },
+  {
+   "name": "local engine mapping renders nearest voice",
+   "pass": true,
+   "detail": "['Microsoft David Desktop', 'Microsoft Zira Desktop', 'Microsoft David Desktop', 'Microsoft David Desktop', 'Microsoft David Desktop', None, None, 'Microsoft David Desktop']"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.0
+}

@@ -1,0 +1,242 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "email list from configured source basis",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "V-G: fixture basis honestly labeled",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "persona commentary produced",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "commentary recorded",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "configured source exercised",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 5,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "email list from configured source basis",
+    "pass": true,
+    "detail": "3 items basis=fixture",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "V-G: fixture basis honestly labeled",
+    "pass": true,
+    "detail": "basis=fixture",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "persona commentary produced",
+    "pass": true,
+    "detail": "3 replies",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "commentary recorded",
+    "pass": true,
+    "detail": "context rows=2",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "configured source exercised",
+    "pass": true,
+    "detail": "basis=fixture",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 5,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "email list from configured source basis",
+    "pass": true,
+    "detail": "3 items basis=fixture",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "V-G: fixture basis honestly labeled",
+    "pass": true,
+    "detail": "basis=fixture",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "persona commentary produced",
+    "pass": true,
+    "detail": "1 replies",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "commentary recorded",
+    "pass": true,
+    "detail": "context rows=2",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "configured source exercised",
+    "pass": true,
+    "detail": "basis=fixture",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 5,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "email list from configured source basis",
+    "pass": true,
+    "detail": "3 items basis=fixture",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "V-G: fixture basis honestly labeled",
+    "pass": true,
+    "detail": "basis=fixture",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "persona commentary produced",
+    "pass": true,
+    "detail": "3 replies",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "commentary recorded",
+    "pass": true,
+    "detail": "context rows=2",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "configured source exercised",
+    "pass": true,
+    "detail": "basis=fixture",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 5,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "email list from configured source basis",
+    "pass": false,
+    "detail": "0 items basis=",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "V-G: fixture basis honestly labeled",
+    "pass": false,
+    "detail": "basis=",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "persona commentary produced",
+    "pass": false,
+    "detail": "0 replies",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "commentary recorded",
+    "pass": false,
+    "detail": "context rows=0",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "configured source exercised",
+    "pass": false,
+    "detail": "basis=",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 5,
+  "allGreen": false
+ }
+}

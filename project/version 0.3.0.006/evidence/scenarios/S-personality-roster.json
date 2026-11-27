@@ -1,0 +1,34 @@
+{
+ "id": "S-personality-roster",
+ "ran": true,
+ "checks": [
+  {
+   "name": "roster operable",
+   "pass": true,
+   "detail": "8"
+  },
+  {
+   "name": "selection works",
+   "pass": true,
+   "detail": "persona-3e46e6b8ec"
+  },
+  {
+   "name": "reorder changes order",
+   "pass": true,
+   "detail": "new order: ['Nix', 'Vera', 'Bolt', 'Opal', 'Wren', 'Quill', 'Loner', 'Trekkie']"
+  },
+  {
+   "name": "V-D: reorder visibly changes held-confidence",
+   "pass": true,
+   "detail": "{\"moved\": true, \"previous\": 0.5, \"heldConfidence\": 0.55, \"confidence\": 0.55, \"differentiates\": true, \"order\": [\"Nix\", \"Vera\", \"Bolt\", \"Opal\", \"Wren\", \"Quill\", \"Loner\", \"Trekkie\"]}"
+  },
+  {
+   "name": "every move moves",
+   "pass": true,
+   "detail": "all moves produced moves"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.0
+}

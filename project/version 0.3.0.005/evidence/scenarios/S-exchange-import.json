@@ -1,0 +1,22 @@
+{
+  "id": "S-exchange-import",
+  "ran": true,
+  "checks": [
+    {
+      "name": "package exported then imported",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "contents below action threshold",
+      "pass": true,
+      "detail": "certainty<=0.4 on 1 rows"
+    },
+    {
+      "name": "foreign tools staged as candidates, not live",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true
+}

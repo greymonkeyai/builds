@@ -1,0 +1,29 @@
+{
+ "id": "S-chat-invocation",
+ "ran": true,
+ "checks": [
+  {
+   "name": "conversational reply returned",
+   "pass": true,
+   "detail": "1"
+  },
+  {
+   "name": "tool need(s) opened, distinguishable",
+   "pass": true,
+   "detail": "2 open: ['need:request']"
+  },
+  {
+   "name": "input captured as assertion",
+   "pass": true,
+   "detail": "11"
+  },
+  {
+   "name": "needs route",
+   "pass": true,
+   "detail": "routes exercised across suite"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 2.6
+}

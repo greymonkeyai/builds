@@ -1,0 +1,86 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "active context displayed",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 1,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "active context displayed",
+    "pass": true,
+    "detail": "context=[{'kind': 'email', 'ref': 'fixture-1', 'label': 'Re: ledger', 'ts': 1795785178.1385543}]; affordance rendered",
+    "src": [
+     "user-path",
+     "rendered"
+    ]
+   }
+  ],
+  "pass": 1,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "active context displayed",
+    "pass": true,
+    "detail": "context=[{'kind': 'email', 'ref': 'fixture-1', 'label': 'Re: ledger', 'ts': 1795786163.7833362}]; affordance rendered",
+    "src": [
+     "user-path",
+     "rendered"
+    ]
+   }
+  ],
+  "pass": 1,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "active context displayed",
+    "pass": true,
+    "detail": "context=[{'kind': 'email', 'ref': 'fixture-1', 'label': 'Re: ledger', 'ts': 1795786451.3489914}]; affordance rendered",
+    "src": [
+     "user-path",
+     "rendered"
+    ]
+   }
+  ],
+  "pass": 1,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "active context displayed",
+    "pass": false,
+    "detail": "context=[]; affordance rendered",
+    "src": [
+     "user-path",
+     "rendered"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 1,
+  "allGreen": false
+ }
+}

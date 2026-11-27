@@ -1,4 +1,5 @@
 # Direction 004 — SIGNED 2026-11-23
+<!-- harness-doc kind=direction status=discharged applies-to=cycle-4 -->
 
 Drafted by the coordinator session from the owner's Cycle-3 review
 (`devlog.md` 2026-11-23: existing features 0.4, completeness 0.5, user score

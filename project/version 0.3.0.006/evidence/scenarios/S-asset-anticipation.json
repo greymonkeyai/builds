@@ -1,0 +1,29 @@
+{
+ "id": "S-asset-anticipation",
+ "ran": true,
+ "checks": [
+  {
+   "name": "persona creation opens asset need(s)",
+   "pass": true,
+   "detail": "['need:portrait', 'need:voice', 'need:ack']"
+  },
+  {
+   "name": "background fulfillment produces asset",
+   "pass": true,
+   "detail": "{\"path\": \"C:\\\\builds\\\\project\\\\version 0.3.0.006\\\\runtime-suite\\\\personas\\\\persona-a73c008eba.svg\", \"authored\": true, \"e"
+  },
+  {
+   "name": "asset bound to persona",
+   "pass": true,
+   "detail": "portrait+voice bound"
+  },
+  {
+   "name": "need closes on fulfillment",
+   "pass": true,
+   "detail": "0 asset needs remain"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 8.0
+}

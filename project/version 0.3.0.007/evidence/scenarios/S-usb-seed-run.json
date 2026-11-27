@@ -1,0 +1,117 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:07",
+    "checks": [
+      {
+        "name": "app launched executing from removable media",
+        "pass": false,
+        "detail": "launchedFrom=None"
+      },
+      {
+        "name": "runs in place \u2014 no install required",
+        "pass": false,
+        "detail": "installed=None"
+      },
+      {
+        "name": "local network log written ON the medium",
+        "pass": false,
+        "detail": "62 courier entries on H:\\vesta-seed"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "app launched executing from removable media",
+        "pass": true,
+        "detail": "launchedFrom=H:\\vesta-seed"
+      },
+      {
+        "name": "runs in place \u2014 no install required",
+        "pass": true,
+        "detail": "installed=False"
+      },
+      {
+        "name": "local network log written ON the medium",
+        "pass": true,
+        "detail": "64 courier entries on H:\\vesta-seed"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "app launched executing from removable media",
+        "pass": true,
+        "detail": "launchedFrom=H:\\vesta-seed"
+      },
+      {
+        "name": "runs in place \u2014 no install required",
+        "pass": true,
+        "detail": "installed=False"
+      },
+      {
+        "name": "local network log written ON the medium",
+        "pass": true,
+        "detail": "37 courier entries on H:\\vesta-seed"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:03",
+    "checks": [
+      {
+        "name": "app launched executing from removable media",
+        "pass": true,
+        "detail": "launchedFrom=H:\\vesta-seed"
+      },
+      {
+        "name": "runs in place \u2014 no install required",
+        "pass": true,
+        "detail": "installed=False"
+      },
+      {
+        "name": "local network log written ON the medium",
+        "pass": true,
+        "detail": "46 courier entries on H:\\vesta-seed"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "app launched executing from removable media",
+        "pass": false,
+        "detail": "launchedFrom=None"
+      },
+      {
+        "name": "runs in place \u2014 no install required",
+        "pass": false,
+        "detail": "installed=None"
+      },
+      {
+        "name": "local network log written ON the medium",
+        "pass": false,
+        "detail": "53 courier entries on H:\\vesta-seed"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  }
+}

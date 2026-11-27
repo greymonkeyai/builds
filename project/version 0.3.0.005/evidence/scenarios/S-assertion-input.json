@@ -1,0 +1,27 @@
+{
+  "id": "S-assertion-input",
+  "ran": true,
+  "checks": [
+    {
+      "name": "typed input recorded as assertion",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source-aware claimant",
+      "pass": true,
+      "detail": "principal"
+    },
+    {
+      "name": "typed value",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "basis = captured-input",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true
+}

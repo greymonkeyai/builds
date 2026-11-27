@@ -1,0 +1,192 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:06",
+    "checks": [
+      {
+        "name": "persona minted from minimal input",
+        "pass": false,
+        "detail": "None on roster"
+      },
+      {
+        "name": "portrait generated + bound",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "LLM art path (V-A)",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "voice assigned",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "characterization extended",
+        "pass": false,
+        "detail": "character + history present"
+      },
+      {
+        "name": "dyadic default 0.5",
+        "pass": false,
+        "detail": "None"
+      }
+    ],
+    "pass": 0,
+    "fail": 6,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "persona minted from minimal input",
+        "pass": true,
+        "detail": "persona-0006 on roster"
+      },
+      {
+        "name": "portrait generated + bound",
+        "pass": true,
+        "detail": "{'file': 'C:\\\\builds\\\\project\\\\version 0.3.0.007\\\\runtime\\\\suite-20261126-160519\\\\personas\\\\persona-"
+      },
+      {
+        "name": "LLM art path (V-A)",
+        "pass": true,
+        "detail": "llm-art"
+      },
+      {
+        "name": "voice assigned",
+        "pass": true,
+        "detail": "Microsoft Zira Desktop|bright"
+      },
+      {
+        "name": "characterization extended",
+        "pass": true,
+        "detail": "character + history present"
+      },
+      {
+        "name": "dyadic default 0.5",
+        "pass": true,
+        "detail": "0.5"
+      }
+    ],
+    "pass": 6,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "persona minted from minimal input",
+        "pass": false,
+        "detail": "persona-0014 on roster"
+      },
+      {
+        "name": "portrait generated + bound",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "LLM art path (V-A)",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "voice assigned",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "characterization extended",
+        "pass": false,
+        "detail": "character + history present"
+      },
+      {
+        "name": "dyadic default 0.5",
+        "pass": false,
+        "detail": "None"
+      }
+    ],
+    "pass": 0,
+    "fail": 6,
+    "allGreen": false
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:03",
+    "checks": [
+      {
+        "name": "persona minted from minimal input",
+        "pass": true,
+        "detail": "persona-0006 on roster"
+      },
+      {
+        "name": "portrait generated + bound",
+        "pass": true,
+        "detail": "{'file': 'C:\\\\builds\\\\project\\\\version 0.3.0.007\\\\runtime\\\\suite-20261126-155616\\\\personas\\\\persona-"
+      },
+      {
+        "name": "LLM art path (V-A)",
+        "pass": true,
+        "detail": "fallback-declared"
+      },
+      {
+        "name": "voice assigned",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "characterization extended",
+        "pass": true,
+        "detail": "character + history present"
+      },
+      {
+        "name": "dyadic default 0.5",
+        "pass": true,
+        "detail": "0.5"
+      }
+    ],
+    "pass": 5,
+    "fail": 1,
+    "allGreen": false
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "persona minted from minimal input",
+        "pass": false,
+        "detail": "None on roster"
+      },
+      {
+        "name": "portrait generated + bound",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "LLM art path (V-A)",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "voice assigned",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "characterization extended",
+        "pass": false,
+        "detail": "character + history present"
+      },
+      {
+        "name": "dyadic default 0.5",
+        "pass": false,
+        "detail": "None"
+      }
+    ],
+    "pass": 0,
+    "fail": 6,
+    "allGreen": false
+  }
+}

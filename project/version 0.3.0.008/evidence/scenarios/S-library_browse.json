@@ -1,0 +1,174 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "personas browsable",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "tools browsable w/ explanations",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "holdings structured, not a raw log",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "personas browsable",
+    "pass": true,
+    "detail": "8 personas in library",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "tools browsable w/ explanations",
+    "pass": true,
+    "detail": "15 tools each carrying explanations",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "holdings structured, not a raw log",
+    "pass": true,
+    "detail": "typed sections (personas/tools/workshops/sources), not a row dump",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "personas browsable",
+    "pass": true,
+    "detail": "4 personas in library",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "tools browsable w/ explanations",
+    "pass": true,
+    "detail": "15 tools each carrying explanations",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "holdings structured, not a raw log",
+    "pass": true,
+    "detail": "typed sections (personas/tools/workshops/sources), not a row dump",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "personas browsable",
+    "pass": true,
+    "detail": "8 personas in library",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "tools browsable w/ explanations",
+    "pass": true,
+    "detail": "15 tools each carrying explanations",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "holdings structured, not a raw log",
+    "pass": true,
+    "detail": "typed sections (personas/tools/workshops/sources), not a row dump",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "personas browsable",
+    "pass": false,
+    "detail": "0 personas in library",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "tools browsable w/ explanations",
+    "pass": false,
+    "detail": "0 tools each carrying explanations",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "holdings structured, not a raw log",
+    "pass": false,
+    "detail": "typed sections (personas/tools/workshops/sources), not a row dump",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ }
+}

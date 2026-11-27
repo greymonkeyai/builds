@@ -1,0 +1,23 @@
+{
+ "id": "S-steward-liveness",
+ "ran": true,
+ "checks": [
+  {
+   "name": "monotonic passes",
+   "pass": true,
+   "detail": "96"
+  },
+  {
+   "name": "real age",
+   "pass": true,
+   "detail": "0.5"
+  },
+  {
+   "name": "no reset",
+   "pass": true,
+   "detail": "before=94 after=96 resumed=True"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment"
+}

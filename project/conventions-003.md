@@ -1,6 +1,9 @@
 # Conventions — AVQR / artifact exchange lifecycle (proposal, 2026-11-24)
+<!-- harness-doc kind=conventions status=adopted-upstream since=2026-11-25 applies-to=cycle-5 mapped-into=CONVENTIONS.md -->
 
-**Approved 2026-11-25** (owner). Drafted for owner edit/approval. Content-side twin of
+**Approved 2026-11-25** (owner). **Adopted 2026-11-25** into
+`C:\Project\MigrateInbound\CONVENTIONS.md` (Artifact exchange section).
+Drafted for owner edit/approval. Content-side twin of
 `conventions-002.md` (USB seed
 distribution): the USB carries *software + network identity* to an instance; the
 artifact carries a *workshop bundle* between different users' instances. Same

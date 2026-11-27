@@ -1,0 +1,22 @@
+{
+  "id": "S-distinct-preloadeds",
+  "ran": true,
+  "checks": [
+    {
+      "name": "≥3 shipped personas w/ distinct registers",
+      "pass": true,
+      "detail": [
+        "casual",
+        "formal",
+        "scholarly",
+        "terse"
+      ]
+    },
+    {
+      "name": "same prompt → noticeably different replies",
+      "pass": true,
+      "detail": "distinct=True"
+    }
+  ],
+  "pass": true
+}

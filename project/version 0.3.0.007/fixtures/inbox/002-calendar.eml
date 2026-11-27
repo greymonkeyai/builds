@@ -1,0 +1,6 @@
+From: calendar-noreply@lab.local
+Subject: Reminder: fleet coverage review Friday
+Date: Wed, 26 Nov 2026 10:30:00 -0500
+
+Coverage is test data. Every device on the named roster gets an honest
+status: found, installable, unavailable, or not-a-target.

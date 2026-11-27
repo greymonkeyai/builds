@@ -1,0 +1,22 @@
+{
+  "id": "S-personality-editor",
+  "ran": true,
+  "checks": [
+    {
+      "name": "editor path updates persona elements",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "edits recorded as assertions",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "V-F: edit discoverable from roster surface",
+      "pass": true,
+      "detail": "edit control present on roster UI"
+    }
+  ],
+  "pass": true
+}

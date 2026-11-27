@@ -1,0 +1,170 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "sources surfaced",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "LLM status surfaced",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "engine modes declared honestly",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "sources surfaced",
+    "pass": true,
+    "detail": "counts={'journal': 1431, 'needsOpen': 14, 'personas': 8, 'sources': 53}",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "LLM status surfaced",
+    "pass": true,
+    "detail": "llm mode=live-ollama:llama3.2:latest",
+    "src": [
+     "rendered"
+    ]
+   },
+   {
+    "name": "engine modes declared honestly",
+    "pass": true,
+    "detail": "engines={'llm': 'live-ollama:llama3.2:latest', 'tts': 'sapi', 'stt': 'absent-declared', 'audioOut': 'device-present', 'bt': 'radio-present', 'mail': 'fixture-or-configured', 'seedSigning': 'unsigned-source'} decls=0",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "sources surfaced",
+    "pass": true,
+    "detail": "counts={'journal': 17, 'needsOpen': 0, 'personas': 4, 'sources': 2}",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "LLM status surfaced",
+    "pass": true,
+    "detail": "llm mode=live-ollama:llama3.2:latest",
+    "src": [
+     "rendered"
+    ]
+   },
+   {
+    "name": "engine modes declared honestly",
+    "pass": true,
+    "detail": "engines={'llm': 'live-ollama:llama3.2:latest', 'tts': 'sapi', 'stt': 'absent-declared', 'audioOut': 'device-present', 'bt': 'radio-present', 'mail': 'fixture-or-configured', 'seedSigning': 'unsigned-source'} decls=0",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "sources surfaced",
+    "pass": true,
+    "detail": "counts={'journal': 1147, 'needsOpen': 14, 'personas': 8, 'sources': 53}",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "LLM status surfaced",
+    "pass": true,
+    "detail": "llm mode=absent-declared",
+    "src": [
+     "rendered"
+    ]
+   },
+   {
+    "name": "engine modes declared honestly",
+    "pass": true,
+    "detail": "engines={'llm': 'absent-declared', 'tts': 'absent-declared', 'stt': 'absent-declared', 'audioOut': 'absent-declared', 'bt': 'absent-declared', 'mail': 'fixture-or-configured', 'seedSigning': 'unsigned-source'} decls=0",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "sources surfaced",
+    "pass": false,
+    "detail": "counts=None",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "LLM status surfaced",
+    "pass": false,
+    "detail": "llm mode=None",
+    "src": [
+     "rendered"
+    ]
+   },
+   {
+    "name": "engine modes declared honestly",
+    "pass": false,
+    "detail": "engines={} decls=0",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ }
+}

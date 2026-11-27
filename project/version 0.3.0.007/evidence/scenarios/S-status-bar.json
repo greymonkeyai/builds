@@ -1,0 +1,117 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:07",
+    "checks": [
+      {
+        "name": "sources surfaced",
+        "pass": false,
+        "detail": "sourceCount=None; statusbar on page=False"
+      },
+      {
+        "name": "LLM status surfaced",
+        "pass": false,
+        "detail": "llm=None"
+      },
+      {
+        "name": "engine modes declared honestly",
+        "pass": false,
+        "detail": "declarations=[]"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "sources surfaced",
+        "pass": true,
+        "detail": "sourceCount=50; statusbar on page=True"
+      },
+      {
+        "name": "LLM status surfaced",
+        "pass": true,
+        "detail": "llm=live-ollama:llama3.2:latest"
+      },
+      {
+        "name": "engine modes declared honestly",
+        "pass": true,
+        "detail": "declarations=['voice pool thin (2 base voices)', 'stt=absent \u2014 no server-side speech input', 'ledger=durable (append-only jsonl)']"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "sources surfaced",
+        "pass": true,
+        "detail": "sourceCount=0; statusbar on page=True"
+      },
+      {
+        "name": "LLM status surfaced",
+        "pass": true,
+        "detail": "llm=absent-declared"
+      },
+      {
+        "name": "engine modes declared honestly",
+        "pass": true,
+        "detail": "declarations=['llm=absent \u2014 replies are declared-fallback', 'tts=absent \u2014 speech floor still serializes', 'voice pool thin (0 base voices)', 'bluetooth=absent or no devices', 'stt=absent \u2014 no server-side speech input', 'ledger=durable (append-only jsonl)']"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:03",
+    "checks": [
+      {
+        "name": "sources surfaced",
+        "pass": true,
+        "detail": "sourceCount=50; statusbar on page=True"
+      },
+      {
+        "name": "LLM status surfaced",
+        "pass": true,
+        "detail": "llm=absent-declared"
+      },
+      {
+        "name": "engine modes declared honestly",
+        "pass": true,
+        "detail": "declarations=['llm=absent \u2014 replies are declared-fallback', 'tts=absent \u2014 speech floor still serializes', 'voice pool thin (0 base voices)', 'bluetooth=absent or no devices', 'stt=absent \u2014 no server-side speech input', 'ledger=durable (append-only jsonl)']"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "sources surfaced",
+        "pass": false,
+        "detail": "sourceCount=None; statusbar on page=False"
+      },
+      {
+        "name": "LLM status surfaced",
+        "pass": false,
+        "detail": "llm=None"
+      },
+      {
+        "name": "engine modes declared honestly",
+        "pass": false,
+        "detail": "declarations=[]"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  }
+}

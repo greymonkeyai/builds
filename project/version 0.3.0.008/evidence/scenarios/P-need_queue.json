@@ -1,0 +1,262 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "P-need-queue step: needs.floor",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-need-queue step: needs.template",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-need-queue step: needs.candidates",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-need-queue step: needs.execute",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-need-queue step: needs.floor",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 5,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "P-need-queue step: needs.floor",
+    "pass": true,
+    "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-need-queue step: needs.template",
+    "pass": true,
+    "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-need-queue step: needs.candidates",
+    "pass": true,
+    "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-need-queue step: needs.execute",
+    "pass": true,
+    "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-need-queue step: needs.floor",
+    "pass": true,
+    "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 5,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "P-need-queue step: needs.floor",
+    "pass": true,
+    "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-need-queue step: needs.template",
+    "pass": true,
+    "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-need-queue step: needs.candidates",
+    "pass": true,
+    "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-need-queue step: needs.execute",
+    "pass": true,
+    "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-need-queue step: needs.floor",
+    "pass": true,
+    "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 5,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "P-need-queue step: needs.floor",
+    "pass": true,
+    "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-need-queue step: needs.template",
+    "pass": true,
+    "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-need-queue step: needs.candidates",
+    "pass": true,
+    "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-need-queue step: needs.execute",
+    "pass": true,
+    "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-need-queue step: needs.floor",
+    "pass": true,
+    "detail": "affordance=needs-floor rendered=True api=/api/needs code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 5,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "P-need-queue step: needs.floor",
+    "pass": false,
+    "detail": "affordance=needs-floor rendered=False api=/api/needs code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-need-queue step: needs.template",
+    "pass": false,
+    "detail": "affordance=needs-floor rendered=False api=/api/needs code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-need-queue step: needs.candidates",
+    "pass": false,
+    "detail": "affordance=needs-floor rendered=False api=/api/needs code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-need-queue step: needs.execute",
+    "pass": false,
+    "detail": "affordance=needs-floor rendered=False api=/api/needs code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-need-queue step: needs.floor",
+    "pass": false,
+    "detail": "affordance=needs-floor rendered=False api=/api/needs code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 5,
+  "allGreen": false
+ }
+}

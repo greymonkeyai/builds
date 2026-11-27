@@ -1,0 +1,74 @@
+{
+ "schema": "chorus-exchange-1",
+ "from": "node-desktop-oogq7un-n-f2c6",
+ "issuedAt": "2026-11-26T06:52:49.322+00:00",
+ "what": "library-sample",
+ "personas": [
+  {
+   "name": "Nix",
+   "register": "precise, dry, cites what it knows and says plainly what it doesn't",
+   "domains": [
+    "general-knowledge",
+    "reference",
+    "historical-documents"
+   ]
+  },
+  {
+   "name": "Vera",
+   "register": "warm, plainspoken, short sentences, asks back",
+   "domains": [
+    "television",
+    "tropes",
+    "media-analysis"
+   ]
+  },
+  {
+   "name": "Bolt",
+   "register": "terse, concrete, numbers before adjectives",
+   "domains": [
+    "computer-science",
+    "research",
+    "technical-reports"
+   ]
+  }
+ ],
+ "tools": [
+  {
+   "componentId": "tool.search",
+   "purpose": "retrieve candidates from a configured source",
+   "inputs": {
+    "query": "required",
+    "source": "optional"
+   }
+  },
+  {
+   "componentId": "tool.fetch-page",
+   "purpose": "fetch a page extract from a configured source",
+   "inputs": {
+    "title": "required",
+    "source": "required"
+   }
+  },
+  {
+   "componentId": "tool.list-members",
+   "purpose": "enumerate members of a category/set",
+   "inputs": {
+    "category": "required",
+    "source": "required",
+    "limit": "optional"
+   }
+  },
+  {
+   "componentId": "tool.match-criteria",
+   "purpose": "test candidates against list criteria",
+   "inputs": {
+    "candidates": "required",
+    "criteria": "required"
+   }
+  }
+ ],
+ "needs": [
+  "I want a birthday poem about trains",
+  "I want a taco"
+ ]
+}

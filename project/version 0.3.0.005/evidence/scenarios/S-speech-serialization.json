@@ -1,0 +1,22 @@
+{
+  "id": "S-speech-serialization",
+  "ran": true,
+  "checks": [
+    {
+      "name": "speech serialized through the floor",
+      "pass": true,
+      "detail": "5 played"
+    },
+    {
+      "name": "playback measured not assumed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "held until playback complete",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,92 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:07",
+    "checks": [
+      {
+        "name": "adopted workshop re-encoded to new artifact",
+        "pass": false,
+        "detail": "gen-2 file=None holding=None"
+      },
+      {
+        "name": "gen-2 payload decodes identically",
+        "pass": false,
+        "detail": "gen2 holding=None persona=False"
+      }
+    ],
+    "pass": 0,
+    "fail": 2,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "adopted workshop re-encoded to new artifact",
+        "pass": true,
+        "detail": "gen-2 file=C:\\builds\\project\\version 0.3.0.007\\runtime\\suite-20261126-160519\\artifacts\\artifact-0015.png holding=workshop-0006"
+      },
+      {
+        "name": "gen-2 payload decodes identically",
+        "pass": true,
+        "detail": "gen2 holding=workshop-0006 persona=True"
+      }
+    ],
+    "pass": 2,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "adopted workshop re-encoded to new artifact",
+        "pass": true,
+        "detail": "gen-2 file=C:\\builds\\project\\version 0.3.0.007\\runtime\\suite-20261126-155355\\artifacts\\artifact-0015.png holding=None"
+      },
+      {
+        "name": "gen-2 payload decodes identically",
+        "pass": false,
+        "detail": "gen2 holding=None persona=False"
+      }
+    ],
+    "pass": 1,
+    "fail": 1,
+    "allGreen": false
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:03",
+    "checks": [
+      {
+        "name": "adopted workshop re-encoded to new artifact",
+        "pass": true,
+        "detail": "gen-2 file=C:\\builds\\project\\version 0.3.0.007\\runtime\\suite-20261126-155616\\artifacts\\artifact-0015.png holding=workshop-0006"
+      },
+      {
+        "name": "gen-2 payload decodes identically",
+        "pass": true,
+        "detail": "gen2 holding=workshop-0006 persona=True"
+      }
+    ],
+    "pass": 2,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "adopted workshop re-encoded to new artifact",
+        "pass": false,
+        "detail": "gen-2 file=None holding=None"
+      },
+      {
+        "name": "gen-2 payload decodes identically",
+        "pass": false,
+        "detail": "gen2 holding=None persona=False"
+      }
+    ],
+    "pass": 0,
+    "fail": 2,
+    "allGreen": false
+  }
+}

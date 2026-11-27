@@ -1,0 +1,246 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "credential path exists",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "descriptor row",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "secret hygiene",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "real read",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "unconfigured honest",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 5,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "credential path exists",
+    "pass": true,
+    "detail": "owner-facing credential form + API",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "descriptor row",
+    "pass": true,
+    "detail": "descriptor={'kind': 'imap', 'store': 'local-file', 'ref': 'account-lab-test.secret'}",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "secret hygiene",
+    "pass": true,
+    "detail": "secret material absent from journal rows",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "real read",
+    "pass": true,
+    "detail": "mail basis=fixture-inbox; account configured (live fetch unavailable)",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "unconfigured honest",
+    "pass": true,
+    "detail": "basis labeled=fixture-inbox; account configured (live fetch unavailable)",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 5,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "credential path exists",
+    "pass": true,
+    "detail": "owner-facing credential form + API",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "descriptor row",
+    "pass": true,
+    "detail": "descriptor={'kind': 'imap', 'store': 'local-file', 'ref': 'account-lab-test.secret'}",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "secret hygiene",
+    "pass": true,
+    "detail": "secret material absent from journal rows",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "real read",
+    "pass": true,
+    "detail": "mail basis=fixture-inbox; account configured (live fetch unavailable)",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "unconfigured honest",
+    "pass": true,
+    "detail": "basis labeled=fixture-inbox; account configured (live fetch unavailable)",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 5,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "credential path exists",
+    "pass": true,
+    "detail": "owner-facing credential form + API",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "descriptor row",
+    "pass": true,
+    "detail": "descriptor={'kind': 'imap', 'store': 'local-file', 'ref': 'account-lab-test.secret'}",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "secret hygiene",
+    "pass": true,
+    "detail": "secret material absent from journal rows",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "real read",
+    "pass": true,
+    "detail": "mail basis=fixture-inbox; account configured (live fetch unavailable)",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "unconfigured honest",
+    "pass": true,
+    "detail": "basis labeled=fixture-inbox; account configured (live fetch unavailable)",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 5,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "credential path exists",
+    "pass": false,
+    "detail": "owner-facing credential form + API",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "descriptor row",
+    "pass": false,
+    "detail": "descriptor=None",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "secret hygiene",
+    "pass": true,
+    "detail": "secret material absent from journal rows",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "real read",
+    "pass": false,
+    "detail": "mail basis=",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "unconfigured honest",
+    "pass": false,
+    "detail": "basis labeled=",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 1,
+  "fail": 4,
+  "allGreen": false
+ }
+}

@@ -1,0 +1,286 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "list need created from chat",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "chat path enactment",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "iterable object",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "retrieval produced members",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "non-matches recorded for review (D4)",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "criteria preserved in need rows",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 6,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "list need created from chat",
+    "pass": true,
+    "detail": "3 list-build rows",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "chat path enactment",
+    "pass": true,
+    "detail": "reply presented via chat: 2",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "iterable object",
+    "pass": true,
+    "detail": "list-object rows iterable=True",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "retrieval produced members",
+    "pass": true,
+    "detail": "55 member rows (PA has 56 cities)",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "non-matches recorded for review (D4)",
+    "pass": true,
+    "detail": "4 non-match rows retained for review",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "criteria preserved in need rows",
+    "pass": true,
+    "detail": "criteria in need rows, not reset",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 6,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "list need created from chat",
+    "pass": true,
+    "detail": "3 list-build rows",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "chat path enactment",
+    "pass": true,
+    "detail": "reply presented via chat: 1",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "iterable object",
+    "pass": true,
+    "detail": "list-object rows iterable=True",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "retrieval produced members",
+    "pass": true,
+    "detail": "55 member rows (PA has 56 cities)",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "non-matches recorded for review (D4)",
+    "pass": true,
+    "detail": "4 non-match rows retained for review",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "criteria preserved in need rows",
+    "pass": true,
+    "detail": "criteria in need rows, not reset",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 6,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "list need created from chat",
+    "pass": true,
+    "detail": "3 list-build rows",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "chat path enactment",
+    "pass": true,
+    "detail": "reply presented via chat: 2",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "iterable object",
+    "pass": true,
+    "detail": "list-object rows iterable=True",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "retrieval produced members",
+    "pass": true,
+    "detail": "55 member rows (PA has 56 cities)",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "non-matches recorded for review (D4)",
+    "pass": true,
+    "detail": "4 non-match rows retained for review",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "criteria preserved in need rows",
+    "pass": true,
+    "detail": "criteria in need rows, not reset",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 6,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "list need created from chat",
+    "pass": false,
+    "detail": "0 list-build rows",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   },
+   {
+    "name": "chat path enactment",
+    "pass": false,
+    "detail": "reply presented via chat: 0",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "iterable object",
+    "pass": false,
+    "detail": "list-object rows iterable=None",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "retrieval produced members",
+    "pass": false,
+    "detail": "0 member rows (PA has 56 cities)",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "non-matches recorded for review (D4)",
+    "pass": false,
+    "detail": "0 non-match rows retained for review",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "criteria preserved in need rows",
+    "pass": false,
+    "detail": "criteria in need rows, not reset",
+    "src": [
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 6,
+  "allGreen": false
+ }
+}

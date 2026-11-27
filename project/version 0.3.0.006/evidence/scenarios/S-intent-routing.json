@@ -1,0 +1,39 @@
+{
+ "id": "S-intent-routing",
+ "ran": true,
+ "checks": [
+  {
+   "name": "name-addressed \u2192 addressee",
+   "pass": true,
+   "detail": "['Vera']"
+  },
+  {
+   "name": "capability \u2192 answered",
+   "pass": true,
+   "detail": "1"
+  },
+  {
+   "name": "want \u2260 list",
+   "pass": true,
+   "detail": "1->1 list objects"
+  },
+  {
+   "name": "list \u2192 list machinery",
+   "pass": true,
+   "detail": "need:list"
+  },
+  {
+   "name": "genuine unmet \u2192 floor",
+   "pass": true,
+   "detail": "want:I want a taco"
+  },
+  {
+   "name": "no stray rows",
+   "pass": true,
+   "detail": "[]"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 12.2
+}

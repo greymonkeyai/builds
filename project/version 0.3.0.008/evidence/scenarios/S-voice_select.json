@@ -1,0 +1,130 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "voice choices list offered",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "user assigns a persona's voice from the list",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 2,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "voice choices list offered",
+    "pass": true,
+    "detail": "voice-select rendered; pool=2",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "user assigns a persona's voice from the list",
+    "pass": true,
+    "detail": "assigned Microsoft Zira Desktop",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 2,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "voice choices list offered",
+    "pass": true,
+    "detail": "voice-select rendered; pool=2",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "user assigns a persona's voice from the list",
+    "pass": true,
+    "detail": "assigned Microsoft Zira Desktop",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 2,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "voice choices list offered",
+    "pass": false,
+    "detail": "voice-select rendered; pool=0",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "user assigns a persona's voice from the list",
+    "pass": false,
+    "detail": "assigned None",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 2,
+  "allGreen": false
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "voice choices list offered",
+    "pass": false,
+    "detail": "voice-select rendered; pool=0",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "user assigns a persona's voice from the list",
+    "pass": false,
+    "detail": "assigned None",
+    "src": [
+     "user-path",
+     "external:journal"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 2,
+  "allGreen": false
+ }
+}

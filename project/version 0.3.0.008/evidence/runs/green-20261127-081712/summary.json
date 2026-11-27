@@ -1,0 +1,15 @@
+{
+ "mode": "green",
+ "ts": "2026-11-27T08:17:12",
+ "elapsed": 440.3,
+ "scenarios": 84,
+ "checks": 355,
+ "passed": 350,
+ "green": 350,
+ "evidenceClass": {
+  "externalToFlag": 0.48169014084507045,
+  "rendered": 0.2591549295774648,
+  "userPath": 0.5915492957746479,
+  "selfAttestedOnly": 0.0
+ }
+}

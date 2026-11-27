@@ -1,0 +1,22 @@
+{
+  "id": "S-restart-recovery",
+  "ran": true,
+  "checks": [
+    {
+      "name": "state recovered after restart",
+      "pass": true,
+      "detail": "54→55"
+    },
+    {
+      "name": "provenance retained (superseded rows kept)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cleanup consolidates without losing records",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true
+}

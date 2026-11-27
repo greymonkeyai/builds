@@ -1,0 +1,39 @@
+{
+ "id": "S-source-admission-gate",
+ "ran": true,
+ "checks": [
+  {
+   "name": "admission gate screens new sources",
+   "pass": true,
+   "detail": "{\"key\": \"source-test-wiki\", \"admitted\": true, \"checks\": {\"http_status\": 200, \"free_read\": true, \"no_login\": true, \"robots_status\": 200, \"ai_optout\": ["
+  },
+  {
+   "name": "free + no-login verified per row",
+   "pass": true,
+   "detail": "{\"http_status\": 200, \"free_read\": true, \"no_login\": true, \"robots_status\": 200, \"ai_optout\": []}"
+  },
+  {
+   "name": "opt-out posture checked",
+   "pass": true,
+   "detail": "{\"http_status\": 200, \"free_read\": true, \"no_login\": true, \"robots_status\": 200, \"ai_optout\": []}"
+  },
+  {
+   "name": "verification recorded as assertion",
+   "pass": true,
+   "detail": "51 admission assertions"
+  },
+  {
+   "name": "failing rows quarantined w/ basis",
+   "pass": true,
+   "detail": "{\"key\": \"source-login-wall\", \"admitted\": false, \"checks\": {\"free_read\": false, \"error\": \"<urlopen error [Errno 11001] getaddrinfo failed>\", \"no_login\": false, \"ai_optout\": \"robots-unreachable\"}, \"basi"
+  },
+  {
+   "name": "a login-gated or opted-out source is refused, not admitted",
+   "pass": true,
+   "detail": "gate refused: free-tier readability failed"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.5
+}

@@ -1,4 +1,5 @@
 # Direction 003 — SIGNED by owner 2026-11-22
+<!-- harness-doc kind=direction status=discharged applies-to=cycle-3 -->
 
 Drafted by the coordinator session from the Cycle-2 review record and the owner's
 2026-11-22 refinement pass (scenario-suite additions + execution-structure

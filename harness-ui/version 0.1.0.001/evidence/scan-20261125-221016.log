@@ -1,0 +1,27 @@
+﻿2026-11-25 22:10:16 harness-emit scan — root C:\builds
+2026-11-25 22:10:16 discovered 2 project(s): harness-ui, project
+2026-11-25 22:10:16 project: harness-ui
+2026-11-25 22:10:16   parsing harness-ui\devlog.md
+2026-11-25 22:10:16     entries: 1; verdict json blocks parsed: 0; failed: 0
+2026-11-25 22:10:16     state.json: parsed
+2026-11-25 22:10:16     scenarios.md: 10 ids
+2026-11-25 22:10:16     last-*-status.txt: 1 file(s)
+2026-11-25 22:10:16     register: 3 docs; pending 0; in-force 2; headerless 0
+2026-11-25 22:10:16     version folders: 1; latest: version 0.1.0.001
+2026-11-25 22:10:16     verdict series points: 0
+2026-11-25 22:10:17     liveness: newest in-scope mtime 2026-11-26T03:07:44.0987374Z (version 0.1.0.001\evidence\scan-20261125-220742.log); age 153s
+2026-11-25 22:10:17     corpus: prompt ref none derivable; conventions file none -> 0 ids
+2026-11-25 22:10:17     emitted harness-ui\display\ (shell + data.js, 12732 bytes)
+2026-11-25 22:10:17 project: project
+2026-11-25 22:10:17   parsing project\devlog.md
+2026-11-25 22:10:17     entries: 8; verdict json blocks parsed: 8; failed: 0
+2026-11-25 22:10:17     state.json: parsed
+2026-11-25 22:10:17     scenarios.md: 60 ids
+2026-11-25 22:10:17     last-*-status.txt: 2 file(s)
+2026-11-25 22:10:17     register: 24 docs; pending 1; in-force 3; headerless 0
+2026-11-25 22:10:17     version folders: 5; latest: version 0.3.0.005
+2026-11-25 22:10:17     verdict series points: 8
+2026-11-25 22:10:17     liveness: newest in-scope mtime 2026-11-26T03:10:15.8344909Z (version 0.3.0.005\runtime\ledger.jsonl); age 1s
+2026-11-25 22:10:17     corpus: prompt ref C:\Project\MigrateInbound\ProjectPrompt.md; conventions file C:\Project\MigrateInbound\CONVENTIONS.md -> 96 ids
+2026-11-25 22:10:18     emitted project\display\ (shell + data.js, 468388 bytes)
+2026-11-25 22:10:18 emitted C:\builds fleet index + data.js (1407 bytes)

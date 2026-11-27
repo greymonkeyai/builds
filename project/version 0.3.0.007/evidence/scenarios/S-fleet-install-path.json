@@ -1,0 +1,142 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:07",
+    "checks": [
+      {
+        "name": "no dead end",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "target surface OR directions",
+        "pass": false,
+        "detail": "{'directions': False, 'surface': False}"
+      },
+      {
+        "name": "honest outcome",
+        "pass": false,
+        "detail": "status=None"
+      },
+      {
+        "name": "pending stated",
+        "pass": false,
+        "detail": "status=None"
+      }
+    ],
+    "pass": 0,
+    "fail": 4,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "no dead end",
+        "pass": true,
+        "detail": "{'ip': '192.168.86.1', 'at': 1795727316.4547827, 'ok': False, 'status': 'pending', 'pending': True, 'directions': ['Run discovery first', 'C"
+      },
+      {
+        "name": "target surface OR directions",
+        "pass": true,
+        "detail": "{'directions': True, 'surface': False}"
+      },
+      {
+        "name": "honest outcome",
+        "pass": true,
+        "detail": "status=pending"
+      },
+      {
+        "name": "pending stated",
+        "pass": true,
+        "detail": "status=pending"
+      }
+    ],
+    "pass": 4,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "no dead end",
+        "pass": true,
+        "detail": "{'ip': '192.168.86.1', 'at': 1795726489.3248043, 'ok': False, 'status': 'pending', 'pending': True, 'directions': ['Run discovery first', 'C"
+      },
+      {
+        "name": "target surface OR directions",
+        "pass": true,
+        "detail": "{'directions': True, 'surface': False}"
+      },
+      {
+        "name": "honest outcome",
+        "pass": true,
+        "detail": "status=pending"
+      },
+      {
+        "name": "pending stated",
+        "pass": true,
+        "detail": "status=pending"
+      }
+    ],
+    "pass": 4,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:03",
+    "checks": [
+      {
+        "name": "no dead end",
+        "pass": true,
+        "detail": "{'ip': '192.168.86.1', 'at': 1795726656.3948507, 'ok': False, 'status': 'pending', 'pending': True, 'directions': ['Run discovery first', 'C"
+      },
+      {
+        "name": "target surface OR directions",
+        "pass": true,
+        "detail": "{'directions': True, 'surface': False}"
+      },
+      {
+        "name": "honest outcome",
+        "pass": true,
+        "detail": "status=pending"
+      },
+      {
+        "name": "pending stated",
+        "pass": true,
+        "detail": "status=pending"
+      }
+    ],
+    "pass": 4,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "no dead end",
+        "pass": false,
+        "detail": "None"
+      },
+      {
+        "name": "target surface OR directions",
+        "pass": false,
+        "detail": "{'directions': False, 'surface': False}"
+      },
+      {
+        "name": "honest outcome",
+        "pass": false,
+        "detail": "status=None"
+      },
+      {
+        "name": "pending stated",
+        "pass": false,
+        "detail": "status=None"
+      }
+    ],
+    "pass": 0,
+    "fail": 4,
+    "allGreen": false
+  }
+}

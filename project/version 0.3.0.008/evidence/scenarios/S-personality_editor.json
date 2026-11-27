@@ -1,0 +1,166 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "editor path updates persona elements",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "edits recorded as assertions",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "V-F: edit discoverable from roster surface",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "editor path updates persona elements",
+    "pass": true,
+    "detail": "character=edited-here",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "edits recorded as assertions",
+    "pass": true,
+    "detail": "1 persona-attr rows",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "V-F: edit discoverable from roster surface",
+    "pass": true,
+    "detail": "editor affordance rendered + edit visible in roster view",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "editor path updates persona elements",
+    "pass": true,
+    "detail": "character=edited-here",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "edits recorded as assertions",
+    "pass": true,
+    "detail": "1 persona-attr rows",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "V-F: edit discoverable from roster surface",
+    "pass": true,
+    "detail": "editor affordance rendered + edit visible in roster view",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "editor path updates persona elements",
+    "pass": true,
+    "detail": "character=edited-here",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "edits recorded as assertions",
+    "pass": true,
+    "detail": "1 persona-attr rows",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "V-F: edit discoverable from roster surface",
+    "pass": true,
+    "detail": "editor affordance rendered + edit visible in roster view",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "editor path updates persona elements",
+    "pass": false,
+    "detail": "character=None",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "edits recorded as assertions",
+    "pass": false,
+    "detail": "0 persona-attr rows",
+    "src": [
+     "external:journal"
+    ]
+   },
+   {
+    "name": "V-F: edit discoverable from roster surface",
+    "pass": false,
+    "detail": "editor affordance rendered + edit visible in roster view",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "id": "S-background-present",
+ "ran": true,
+ "checks": [
+  {
+   "name": "steward pass recorded",
+   "pass": true,
+   "detail": "1 liveness rows"
+  },
+  {
+   "name": "liveness data for first-screen chit",
+   "pass": true,
+   "detail": "{\"passes\": 17, \"ageS\": 0.4, \"busy\": false, \"cadenceS\": 1.5}"
+  },
+  {
+   "name": "persona presented while idle work continues",
+   "pass": true,
+   "detail": "Opal"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.0
+}

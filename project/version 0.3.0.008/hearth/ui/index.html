@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<title>hearth</title>
+
+<style>
+
+  :root { --bg:#f7f5f0; --fg:#23211c; --panel:#ffffff; --line:#d8d4c8; }
+
+  body.dark   { --bg:#181a1f; --fg:#e6e4da; --panel:#22252c; --line:#3a3e48; }
+
+  body.sepia  { --bg:#efe4cf; --fg:#3d2f1d; --panel:#f7eeda; --line:#cbb896; }
+
+  body.contrast { --bg:#000000; --fg:#ffffff; --panel:#101010; --line:#ffffff; }
+
+  body { margin:0; background:var(--bg); color:var(--fg);
+
+         font-family:Segoe UI, sans-serif; font-size:14px; }
+
+  header { display:flex; align-items:center; gap:14px; padding:6px 14px;
+
+           background:var(--panel); border-bottom:1px solid var(--line); }
+
+  #status-bar { font-size:12px; opacity:.85; flex:1; }
+
+  #liveness { font-size:12px; }
+
+  main { display:grid; grid-template-columns:210px 1fr 320px; gap:10px;
+
+         padding:10px; }
+
+  section { background:var(--panel); border:1px solid var(--line);
+
+            border-radius:6px; padding:10px; }
+
+  h2 { font-size:13px; margin:0 0 8px; text-transform:uppercase;
+
+       letter-spacing:.06em; opacity:.7; }
+
+  .persona { display:flex; align-items:center; gap:8px; padding:5px;
+
+             border:1px solid var(--line); border-radius:5px;
+
+             margin-bottom:5px; cursor:pointer; }
+
+  .persona.selected { outline:2px solid #6a8; }
+
+  .persona img { width:34px; height:34px; border-radius:4px; }
+
+  .persona .dy { font-size:11px; opacity:.7; }
+
+  .persona .mark { font-size:10px; color:#a40; }
+
+  #chat-log { min-height:180px; max-height:340px; overflow:auto;
+
+              border:1px solid var(--line); border-radius:5px;
+
+              padding:8px; margin-bottom:8px; }
+
+  .turn { margin-bottom:6px; }
+
+  .reply { margin:2px 0 6px 14px; }
+
+  .reply .who { font-size:11px; opacity:.7; }
+
+  .reply .reg { font-size:10px; opacity:.5; }
+
+  #chat-in { width:78%; padding:6px; }
+
+  button { padding:4px 10px; cursor:pointer; }
+
+  .need { border:1px dashed var(--line); border-radius:5px;
+
+          padding:6px; margin-bottom:6px; font-size:12px; }
+
+  .need .slots { opacity:.75; }
+
+  .dev { display:flex; justify-content:space-between; gap:6px;
+
+         font-size:12px; padding:3px; border-bottom:1px dotted var(--line); }
+
+  .dev .acts button { font-size:11px; padding:1px 6px; }
+
+  .legible { font-size:12px; white-space:pre-wrap; }
+
+  .tab { display:inline-block; padding:4px 10px; cursor:pointer;
+
+         border:1px solid var(--line); border-radius:4px 4px 0 0; }
+
+  .tab.active { background:var(--bg); }
+
+  select, input[type=text], input[type=password] { padding:4px; }
+
+  #disc-progress { font-size:12px; margin:4px 0; }
+
+  .chit { display:inline-block; padding:2px 8px; border-radius:8px;
+
+          background:#3a7; color:#fff; font-size:11px; }
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+  <strong>hearth</strong>
+
+  <span id="status-bar">…</span>
+
+  <span id="liveness">steward <span id="chit" class="chit">…</span></span>
+
+  <select id="theme-select" data-affordance="theme-selector">
+
+    <option>light</option><option>dark</option>
+
+    <option>sepia</option><option>contrast</option>
+
+  </select>
+
+</header>
+
+<main>
+
+  <section id="roster-panel" data-affordance="persona-roster">
+
+    <h2>Roster</h2>
+
+    <div id="roster"></div>
+
+    <button id="roster-up" data-action="reorder">↑</button>
+
+    <button id="roster-down" data-action="reorder">↓</button>
+
+    <input id="new-persona-name" type="text" placeholder="new persona name">
+
+    <button id="persona-create" data-action="persona-create">Create</button>
+
+    <div id="editor" data-affordance="persona-editor" style="margin-top:8px">
+
+      <input id="edit-field" type="text" placeholder="field">
+
+      <input id="edit-value" type="text" placeholder="value">
+
+      <button id="persona-edit" data-action="persona-edit">Edit</button>
+
+      <select id="voice-select" data-affordance="voice-select"></select>
+
+      <button id="voice-assign" data-action="voice-assign">Assign voice</button>
+
+    </div>
+
+  </section>
+
+  <section id="chat-panel" data-affordance="chat">
+
+    <h2>Conversation <span id="context-view" data-affordance="context-display"></span></h2>
+
+    <div id="chat-log"></div>
+
+    <input id="chat-in" type="text" placeholder="say something">
+
+    <button id="chat-send" data-action="chat-send">Send</button>
+
+    <button id="chat-reset" data-action="chat-reset">Reset</button>
+
+    <label>depth <input id="depth" type="number" min="0" max="6" value="2"
+
+      data-affordance="response-depth" style="width:44px"></label>
+
+    <div id="floor" data-affordance="needs-floor" style="margin-top:8px"></div>
+
+  </section>
+
+  <section id="right-col">
+
+    <section id="fleet-panel" data-affordance="fleet">
+
+      <h2>Fleet</h2>
+
+      <button id="fleet-discover" data-action="fleet-discover">Discover</button>
+
+      <div id="disc-progress"></div>
+
+      <div id="fleet-list"></div>
+
+      <div id="fleet-out" class="legible"></div>
+
+    </section>
+
+    <section id="stage-panel" data-affordance="stage">
+
+      <h2>Stage</h2>
+
+      <div id="channels"></div>
+
+      <button id="scene-run" data-action="scene-run">Enact scene</button>
+
+      <button id="interstitial-add" data-action="interstitial">Queue interstitial</button>
+
+    </section>
+
+    <section id="settings-panel" data-affordance="settings">
+
+      <h2>Settings</h2>
+
+      <label>style <select id="style-select" data-affordance="style-picker">
+
+        <option>plain</option><option>warm</option><option>compact</option>
+
+      </select></label>
+
+      <select id="preload-select" data-affordance="preloads">
+
+        <option>homestead-1950</option><option>studio-1985</option>
+
+        <option>archive-2020</option>
+
+      </select>
+
+      <button id="preload-apply" data-action="preload-apply">Apply</button>
+
+      <div style="margin-top:6px">
+
+        <input id="acct-label" type="text" placeholder="account label">
+
+        <input id="acct-endpoint" type="text" placeholder="imap endpoint">
+
+        <input id="acct-secret" type="password" placeholder="secret">
+
+        <button id="acct-add" data-action="account-configure">Configure</button>
+
+      </div>
+
+      <div id="mail-list" data-affordance="mail-list"></div>
+
+      <div id="env-view" data-affordance="environment"></div>
+
+    </section>
+
+  </section>
+
+</main>
+
+<section id="library" data-affordance="library" style="margin:0 10px 10px">
+
+  <h2>Library</h2>
+
+  <div>
+
+    <span class="tab active" data-tab="personas">Personas</span>
+
+    <span class="tab" data-tab="tools">Tools</span>
+
+    <span class="tab" data-tab="lists">Lists</span>
+
+    <span class="tab" data-tab="workshops">Workshops</span>
+
+    <span class="tab" data-tab="sources">Sources</span>
+
+    <span class="tab" data-tab="map">Map</span>
+
+  </div>
+
+  <div id="lib-body" class="legible"></div>
+
+</section>
+
+<script>
+
+const api = {
+
+  get: async p => (await fetch(p)).json(),
+
+  post: async (p, b) => (await fetch(p, {method:'POST',
+
+    headers:{'Content-Type':'application/json'},
+
+    body:JSON.stringify(b||{})})).json()
+
+};
+
+let rosterCache = [];
+
+async function refreshStatus(){
+
+  const s = await api.get('/api/state');
+
+  const eng = s.engines||{};
+
+  document.getElementById('status-bar').textContent =
+
+    'llm:' + (eng.llm? eng.llm.mode : 'none') +
+
+    ' · tts:' + (eng.tts? eng.tts.mode : 'none') +
+
+    ' · sources:' + (s.counts? s.counts.sources : '?') +
+
+    ' · node:' + (s.node? s.node.id : '?') +
+
+    ' · gate:' + (s.gate && s.gate.passed ?
+
+      s.gate.timeToGateSeconds + 's' : 'unpassed');
+
+  const lv = await api.get('/api/liveness');
+
+  document.getElementById('chit').textContent =
+
+    'passes ' + (lv.passes||0) + ' · age ' +
+
+    (lv.ageSeconds==null?'—':lv.ageSeconds+'s');
+
+}
+
+async function refreshRoster(){
+
+  const r = await api.get('/api/personas');
+
+  rosterCache = r.roster||[];
+
+  const sel = r.selected||[];
+
+  const el = document.getElementById('roster');
+
+  el.innerHTML = rosterCache.map(p =>
+
+    `<div class="persona ${sel.includes(p.id)?'selected':''}"
+
+       data-persona="${p.id}" onclick="pick('${p.id}')">
+
+       ${p.portrait? `<img src="/api/personas/${p.id}/portrait.png">`:''}
+
+       <div><b>${p.name}</b> <span class="dy">dy ${p.dyadic}</span>
+
+       ${p.imitation? '<span class="mark">[imitation]</span>':''}<br>
+
+       <span class="dy">${p.register} · ${p.voice? p.voice.name:'no voice'}</span>
+
+       </div></div>`).join('');
+
+  const vs = document.getElementById('voice-select');
+
+  vs.innerHTML = (r.voices||[]).map(v =>
+
+    `<option>${v.name}</option>`).join('');
+
+}
+
+async function pick(id){ await api.post('/api/personas/select',{ids:[id]});
+
+  refreshRoster(); }
+
+async function refreshFloor(){
+
+  const f = await api.get('/api/needs');
+
+  document.getElementById('floor').innerHTML =
+
+    '<h2>Unmet floor</h2>' + (f.floor||[]).map(n =>
+
+    `<div class="need" data-need="${n.id}"><b>${n.template}</b>
+
+      ${n.desc}<div class="slots">${
+
+      Object.entries(n.candidates||{}).map(([s,cs]) =>
+
+        s+': '+cs.map(c=>c.value+'('+c.confidence+')').join(', ')
+
+      ).join(' · ')}</div>
+
+      <button onclick="focusNeed('${n.id}')">focus</button>
+
+      <button onclick="execNeed('${n.id}')">run</button>
+
+      <button onclick="forceNeed('${n.id}')">force</button>
+
+      <button onclick="cancelNeed('${n.id}')">cancel</button></div>`
+
+    ).join('');
+
+}
+
+async function focusNeed(id){await api.post('/api/needs/'+id+'/focus');}
+
+async function execNeed(id){await api.post('/api/needs/'+id+'/execute');
+
+  refreshFloor();}
+
+async function forceNeed(id){await api.post('/api/needs/'+id+'/force');
+
+  refreshFloor();}
+
+async function cancelNeed(id){await api.post('/api/needs/'+id+'/cancel');
+
+  refreshFloor();}
+
+async function sendChat(){
+  const inp = document.getElementById('chat-in');
+  await api.post('/api/chat', {text: inp.value});
+  inp.value='';
+  const last = await api.get('/api/conversation');
+  const t = last.turns[last.turns.length-1];
+  const log = document.getElementById('chat-log');
+  let h = `<div class="turn"><b>you:</b> ${t? t.input:''}</div>`;
+  (t?t.replies:[]).forEach(r=>{
+    h += `<div class="reply"><span class="who">${r.name}</span>
+      <span class="reg">${r.register} · ${r.fidelity}</span><br>
+      ${r.text}</div>`; });
+  log.insertAdjacentHTML('beforeend', h);
+  document.getElementById('context-view').textContent =
+    ' · topic: ' + (last.topic||'general');
+  refreshFloor();
+}
+async function discover(){
+
+  document.getElementById('disc-progress').textContent =
+
+    'discovery running…';
+
+  await api.post('/api/fleet/discover', {async:true});
+
+  let tries = 0;
+
+  const poll = async () => {
+
+    const d = await api.get('/api/fleet/discovery');
+
+    if (d.state === 'running' && tries++ < 120){
+
+      document.getElementById('disc-progress').textContent =
+
+        'running: ' + JSON.stringify(d.progress);
+
+      setTimeout(poll, 500); return;
+
+    }
+
+    document.getElementById('disc-progress').textContent =
+
+      'finished: ' + JSON.stringify(d.progress);
+
+    const f = await api.get('/api/fleet');
+
+    document.getElementById('fleet-list').innerHTML =
+
+      (f.roster||[]).map(r =>
+
+        `<div class="dev"><span>${r.id} — ${r.status}
+
+          ${r.installable?'(installable)':''} ${r.ip||''}</span>
+
+          <span class="acts">
+
+          <button onclick="identify('${r.ip||r.id}')">identify</button>
+
+          <button onclick="invite('${r.ip||r.id}')">invite</button>
+
+          </span></div>`).join('') +
+
+      '<h2>Members</h2>' + (f.members||[]).map(m =>
+
+        `<div class="dev">${m.id} ${m.ip||''} ${m.role}</div>`).join('');
+
+  };
+
+  setTimeout(poll, 400);
+
+}
+
+async function identify(t){
+
+  const r = await api.post('/api/fleet/identify', {target:t});
+
+  document.getElementById('fleet-out').textContent =
+
+    r.error? r.error :
+
+    `${r.ip} — ${r.name||'?'} [${r.vendor||'vendor?'}] ` +
+
+    `${r.typeInference} · services: ${(r.services||[]).join(',')} · ` +
+
+    `signal ${r.signalClass} rtt ${r.rttSeconds}s`;
+
+}
+
+async function invite(t){
+
+  const r = await api.post('/api/fleet/invite', {target:t});
+
+  const v = r.verdict||{};
+
+  document.getElementById('fleet-out').textContent =
+
+    `verdict: ${v.verdict} ${v.reason||''} ${v.directions||''}`;
+
+}
+
+async function refreshLibrary(tab){
+
+  const l = await api.get('/api/library');
+
+  const el = document.getElementById('lib-body');
+
+  if (tab==='tools')
+
+    el.textContent = (l.tools||[]).map(t =>
+
+      t.id+' — '+t.explain).join('\n');
+
+  else if (tab==='lists')
+
+    el.textContent = (l.lists||[]).map(x =>
+
+      x.criteria+' → '+x.members.length+' members').join('\n');
+
+  else if (tab==='sources')
+
+    el.textContent = (l.sources||[]).map(s =>
+
+      s.key+' ['+s.admission+'] '+(s.domains||[]).join(',')).join('\n');
+
+  else if (tab==='workshops')
+
+    el.textContent = (l.workshops||[]).map(w =>
+
+      w.artifact+' (ceiling '+w.ceiling+')').join('\n');
+
+  else if (tab==='map'){
+
+    const m = await api.get('/api/fleet/map');
+
+    el.textContent = (m.devices||[]).map(d =>
+
+      d.ip+' '+(d.name||'?')+(d.member?' [member]':'') +
+
+      (d.sameHost?' [host]':'')).join('\n');
+
+  } else
+
+    el.textContent = (l.personas||[]).map(p =>
+
+      p.name+' — '+p.register).join('\n');
+
+}
+
+async function scene(){
+
+  const r = await api.post('/api/stage/scene', {kind:'knock-knock'});
+
+  document.getElementById('channels').innerHTML +=
+
+    `<div class="legible">scene: ${(r.lines||[]).join(' / ')}</div>`;
+
+}
+
+async function channels(){
+
+  const s = await api.get('/api/stage');
+
+  document.getElementById('channels').innerHTML = (s.channels||[]).map(c =>
+
+    `<div class="dev">${c.name} ${c.produced? c.info.seconds+'s wav':
+
+      c.declared}</div>`).join('');
+
+}
+
+async function environment(){
+
+  const e = await api.get('/api/environment');
+
+  document.getElementById('env-view').textContent =
+
+    'home: ' + JSON.stringify(e.home) +
+
+    (e.weather? ' · weather: '+e.weather.tempC+'°C' : ' · no weather claim');
+
+}
+
+async function mail(){
+
+  const m = await api.get('/api/mail');
+
+  document.getElementById('mail-list').innerHTML =
+
+    '<b>mail ('+m.basis+')</b>' + (m.items||[]).map(i =>
+
+      `<div class="dev">${i.subject}
+
+        <button onclick="api.post('/api/context/add',
+
+          {kind:'email',ref:i.id,label:i.subject}).then(()=>{})">
+
+          add to context</button></div>`).join('');
+
+}
+
+document.getElementById('chat-send').onclick = sendChat;
+
+document.getElementById('chat-reset').onclick =
+
+  () => api.post('/api/chat/reset').then(refreshFloor);
+
+document.getElementById('persona-create').onclick = async () => {
+
+  const n = document.getElementById('new-persona-name').value;
+
+  if (n) { const r = await api.post('/api/personas', {name:n});
+
+    if (r.suggestion) alert('suggest source: '+r.suggestion.name);
+
+    refreshRoster(); refreshFloor(); } };
+
+document.getElementById('persona-edit').onclick = async () => {
+
+  const id = rosterCache.find(p=>p.selected||true)?.id;
+
+  await api.post('/api/personas/edit',
+
+    {id: rosterCache[0]?.id,
+
+     field: document.getElementById('edit-field').value,
+
+     value: document.getElementById('edit-value').value});
+
+  refreshRoster(); };
+
+document.getElementById('voice-assign').onclick = async () => {
+
+  await api.post('/api/personas/voice',
+
+    {id: rosterCache[0]?.id,
+
+     voice: document.getElementById('voice-select').value});
+
+  refreshRoster(); };
+
+document.getElementById('roster-up').onclick = async () => {
+
+  const order = rosterCache.map(p=>p.id);
+
+  if (order.length>1){ const x=order.shift(); order.push(x);
+
+    await api.post('/api/personas/reorder',{order}); refreshRoster(); } };
+
+document.getElementById('theme-select').onchange = async e => {
+
+  document.body.className = e.target.value;
+
+  await api.post('/api/settings/theme',{theme:e.target.value}); };
+
+document.getElementById('depth').onchange = async e =>
+
+  api.post('/api/settings/depth',{depth:+e.target.value});
+
+document.getElementById('style-select').onchange = async e =>
+
+  api.post('/api/settings/style',{style:e.target.value});
+
+document.getElementById('preload-apply').onclick = async e => {
+
+  const r = await api.post('/api/settings/preload',
+
+    {name:document.getElementById('preload-select').value});
+
+  if (r.values) document.body.className = r.values.theme; };
+
+document.getElementById('fleet-discover').onclick = discover;
+
+document.getElementById('scene-run').onclick = scene;
+
+document.getElementById('interstitial-add').onclick = async () => {
+
+  await api.post('/api/stage/interstitial',{topic:'how tides work'}); };
+
+document.getElementById('acct-add').onclick = async () => {
+
+  await api.post('/api/accounts', {
+
+    kind:'imap', label:document.getElementById('acct-label').value,
+
+    endpoint:document.getElementById('acct-endpoint').value,
+
+    secret:document.getElementById('acct-secret').value});
+
+  mail(); };
+
+document.querySelectorAll('.tab').forEach(t =>
+
+  t.onclick = () => { document.querySelectorAll('.tab').forEach(x =>
+
+    x.classList.remove('active')); t.classList.add('active');
+
+    refreshLibrary(t.dataset.tab); });
+
+refreshStatus(); refreshRoster(); refreshFloor(); channels();
+
+environment(); mail(); refreshLibrary('personas');
+
+setInterval(refreshStatus, 5000);
+
+</script>
+
+</body>
+
+</html>
+

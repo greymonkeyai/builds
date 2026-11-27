@@ -1,0 +1,25 @@
+{
+ "id": "persona-010701ba5f",
+ "name": "Bolt",
+ "role": "engineer",
+ "register": "terse, concrete, numbers before adjectives",
+ "interests": [
+  "computer-science",
+  "technical-reports",
+  "tools"
+ ],
+ "domains": [
+  "computer-science",
+  "research",
+  "technical-reports"
+ ],
+ "confidence": 0.5,
+ "certainty": 0.8,
+ "voice": null,
+ "portrait": null,
+ "ack": null,
+ "sources": [],
+ "imitation": false,
+ "shipped": true,
+ "created": "2026-11-26T05:31:59.881+00:00"
+}

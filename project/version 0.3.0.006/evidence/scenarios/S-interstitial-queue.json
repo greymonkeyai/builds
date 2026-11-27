@@ -1,0 +1,39 @@
+{
+ "id": "S-interstitial-queue",
+ "ran": true,
+ "checks": [
+  {
+   "name": "asset needs queued fleet-addressable",
+   "pass": true,
+   "detail": "interstitial-f9df79ab70"
+  },
+  {
+   "name": "collected before presentation",
+   "pass": true,
+   "detail": "{\"topic\": \"how black holes merge\", \"needs\": [\"a-598\", \"a-599\", \"a-600\"], \"state\": \"collecting\", \"version\": 1}"
+  },
+  {
+   "name": "input change triggers rework",
+   "pass": true,
+   "detail": "{\"topic\": \"how black holes evaporate\", \"needs\": [\"a-598\", \"a-599\", \"a-600\"], \"state\": \"collecting\", \"version\": 2}"
+  },
+  {
+   "name": "presents when ready",
+   "pass": true,
+   "detail": "{\"presented\": \"interstitial-f9df79ab70\", \"topic\": \"how black holes evaporate\"}"
+  },
+  {
+   "name": "trigger honestly bounded",
+   "pass": true,
+   "detail": "trigger: complex-information need or user request only"
+  },
+  {
+   "name": "unready presentation deferred + declared",
+   "pass": true,
+   "detail": "{\"presented\": \"interstitial-f9df79ab70\", \"topic\": \"how black holes evaporate\"}"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 2.0
+}

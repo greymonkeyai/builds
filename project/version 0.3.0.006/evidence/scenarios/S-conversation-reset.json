@@ -1,0 +1,19 @@
+{
+ "id": "S-conversation-reset",
+ "ran": true,
+ "checks": [
+  {
+   "name": "reset clears conversation",
+   "pass": true,
+   "detail": "0"
+  },
+  {
+   "name": "topic cleared",
+   "pass": true,
+   "detail": "None"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 2.6
+}

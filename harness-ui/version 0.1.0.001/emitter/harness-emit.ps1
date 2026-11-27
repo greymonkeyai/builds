@@ -206,12 +206,108 @@ function Parse-ScenarioSuite([string]$path) {
     return $out
 }
 
+function Parse-Paths([string]$path) {
+    # '## Paths' rows: | P-foo | journey | a.b -> c.d | S-x, S-y |
+    $out = New-Object System.Collections.ArrayList
+    if (-not (Test-Path $path)) { return $out }
+    $inPaths = $false
+    foreach ($line in (Get-Content -LiteralPath $path -Encoding UTF8)) {
+        if ($line -match '^##\s+Paths') { $inPaths = $true; continue }
+        if ($inPaths -and $line -match '^##\s') { break }
+        if (-not $inPaths) { continue }
+        if ($line -match '^\|\s*(P-[A-Za-z0-9_-]+)\s*\|\s*(.*?)\s*\|\s*(.*?)\s*\|\s*(.*?)\s*\|') {
+            $steps = @($Matches[3] -split ([char]0x2192) | ForEach-Object { $_.Trim() } | Where-Object { $_ })
+            $enacts = @($Matches[4] -split ',' | ForEach-Object { $_.Trim() } | Where-Object { $_ })
+            [void]$out.Add(@{ id = $Matches[1]; journey = $Matches[2]; steps = $steps; enacts = $enacts })
+        }
+    }
+    return $out
+}
+
+function Parse-ModuleTable([string]$projDir) {
+    # impl-design-*.md '## Modules' rows: | **name** | owns | scenarios | surface | deps |
+    $out = @{}
+    $file = Get-ChildItem -LiteralPath $projDir -Filter 'impl-design-*.md' -ErrorAction SilentlyContinue |
+            Sort-Object Name | Select-Object -First 1
+    if (-not $file) { return $out }
+    $inMod = $false
+    foreach ($line in (Get-Content -LiteralPath $file.FullName -Encoding UTF8)) {
+        if ($line -match '^##\s+Modules') { $inMod = $true; continue }
+        if ($inMod -and $line -match '^##\s') { break }
+        if (-not $inMod) { continue }
+        if ($line -match '^\|\s*\*\*([A-Za-z0-9_-]+)\*\*\s*\|') {
+            $name = $Matches[1]
+            $cells = @($line -split '\|')
+            $surface = if ($cells.Count -ge 5) { $cells[4].Trim() } else { '' }
+            $hasSurface = ($surface -and $surface -notmatch '^\s*(none|[\u2014-])')
+            $out[$name] = @{ row_text = $line; surface = $surface; has_surface = $hasSurface }
+        }
+    }
+    return $out
+}
+
 function Get-ConventionIdsFromFile([string]$path, [System.Collections.ArrayList]$ids) {
     if (-not (Test-Path $path)) { return }
     $text = Get-Content -LiteralPath $path -Raw -Encoding UTF8
     foreach ($m in [regex]::Matches($text, '\|\s*(C-[A-Z][A-Za-z0-9]+)\s*\|')) {
         $cid = $m.Groups[1].Value
         if (-not $ids.Contains($cid)) { [void]$ids.Add($cid) }
+    }
+}
+
+function Parse-DocRegister([string]$projRoot) {
+    # Derivative-doc register: scans top-level *.md for <!-- harness-doc ... -->
+    # headers (workflow.md §Derivative documents). Read-only — derives the same
+    # shape .devin/register-scan.ps1 emits, without requiring register.json.
+    $terminal = @('superseded','rejected','discharged','adopted-upstream')
+    $docs = New-Object System.Collections.ArrayList
+    $headerless = New-Object System.Collections.ArrayList
+    foreach ($f in (Get-ChildItem -LiteralPath $projRoot -Filter '*.md' -File -ErrorAction SilentlyContinue)) {
+        if (@('AGENTS.md','README.md') -contains $f.Name) { continue }
+        $head = (Get-Content -LiteralPath $f.FullName -TotalCount 15 -ErrorAction SilentlyContinue) -join ' '
+        $hdr = $null
+        if ($head -match 'harness-doc\s+(.*?)-->') { $hdr = $Matches[1] }
+        if ($null -eq $hdr) { [void]$headerless.Add($f.Name); continue }
+        $doc = [ordered]@{ id = [IO.Path]::GetFileNameWithoutExtension($f.Name); file = $f.Name }
+        foreach ($kv in [regex]::Matches($hdr, '([A-Za-z-]+)=("[^"]*"|\S+)')) {
+            $k = $kv.Groups[1].Value -replace '-','_'
+            $v = $kv.Groups[2].Value.Trim('"')
+            if ($k -eq 'mapped_into' -or $k -eq 'applies_to') {
+                $doc[$k] = @($v -split ',' | ForEach-Object { $_.Trim() } | Where-Object { $_ })
+            } elseif ($v -eq 'true') { $doc[$k] = $true }
+            elseif ($v -eq 'false') { $doc[$k] = $false }
+            else { $doc[$k] = $v }
+        }
+        if (-not $doc.Contains('kind'))   { $doc['kind'] = 'unknown' }
+        if (-not $doc.Contains('status')) { $doc['status'] = 'unparsed' }
+        # body: full text minus the harness-doc header line, capped — approval
+        # review needs the wording, not just the status.
+        $body = $head -join "`n"
+        $raw = Get-Content -LiteralPath $f.FullName -Raw -Encoding UTF8
+        if ($raw) {
+            $body = (($raw -split "`r?`n") | Where-Object { $_ -notmatch 'harness-doc' }) -join "`n"
+            if ($body.Length -gt 120000) { $body = $body.Substring(0, 120000) + "`n... [truncated at 120KB]" }
+        }
+        $doc['body'] = $body
+        [void]$docs.Add($doc)
+    }
+    $current = [ordered]@{}
+    foreach ($d in $docs) {
+        if ($terminal -contains (Get-Field $d 'status')) { continue }
+        $n = 0
+        if ($d.id -match '(\d+)\s*$') { $n = [int]$Matches[1] }
+        $k = Get-Field $d 'kind'
+        if (-not $current.Contains($k) -or $n -ge $current[$k].n) { $current[$k] = @{ n = $n; id = $d.id } }
+    }
+    $currentIds = [ordered]@{}
+    foreach ($k in $current.Keys) { $currentIds[$k] = $current[$k].id }
+    return [ordered]@{
+        docs = @($docs)
+        current = $currentIds
+        pending = @($docs | Where-Object { @('draft','proposed') -contains (Get-Field $_ 'status') } | ForEach-Object { $_.id })
+        in_force = @($docs | Where-Object { (Get-Field $_ 'status') -eq 'in-force' } | ForEach-Object { $_.id })
+        provisional_ids = @($docs | Where-Object { (Get-Field $_ 'provisional_ids') -eq $true } | ForEach-Object { $_.id })
+        headerless = @($headerless)
     }
 }
 
@@ -238,8 +334,42 @@ function Build-ProjectData($projDir, $scanUtc) {
 
     # --- scenario suite ---
     $scenPath = Join-Path $devinDir 'scenarios.md'
+    if (-not (Test-Path $scenPath)) { $scenPath = Join-Path $projDir.FullName 'scenarios.md' }
     $suite = Parse-ScenarioSuite $scenPath
     Write-Log ("    scenarios.md: {0} ids" -f $(if (Test-Path $scenPath) { $suite.Count } else { 'MISSING -> gap' }))
+
+    # --- pathed scenarios + gap signs (pathed-scenarios.md) ---
+    $paths = @(Parse-Paths $scenPath)
+    $modules = Parse-ModuleTable $projDir.FullName
+    $enacted = @{}
+    foreach ($pp in $paths) { foreach ($sid in $pp.enacts) { $enacted[$sid] = $true } }
+    $suiteIds = @($suite | ForEach-Object { $_.id })
+    $unconsol = @($suiteIds | Where-Object { -not $enacted.ContainsKey($_) })
+    $unknownRefs = @($enacted.Keys | Where-Object { $suiteIds -notcontains $_ })
+    $undeclared = New-Object System.Collections.ArrayList
+    $touchedMods = @{}
+    foreach ($pp in $paths) {
+        foreach ($st in $pp.steps) {
+            $parts = $st -split '\.', 2
+            if ($parts.Count -lt 2) { [void]$undeclared.Add(@{ path = $pp.id; item = $st; kind = 'malformed' }); continue }
+            $mname = $parts[0]; $aname = $parts[1]
+            if (-not $modules.ContainsKey($mname)) { [void]$undeclared.Add(@{ path = $pp.id; item = $st; kind = 'unknown-module' }); continue }
+            $touchedMods[$mname] = $true
+            if ($modules[$mname].row_text -notmatch [regex]::Escape($aname)) { [void]$undeclared.Add(@{ path = $pp.id; item = $st; kind = 'undeclared-affordance' }) }
+        }
+    }
+    $unreachable = @($modules.Keys | Where-Object { $modules[$_].has_surface -and -not $touchedMods.ContainsKey($_) })
+    $pathData = [ordered]@{
+        n_paths = $paths.Count
+        declared = @($paths)
+        consolidated = ($suiteIds.Count - $unconsol.Count)
+        suite_n = $suiteIds.Count
+        unconsolidated = @($unconsol)
+        unknown_refs = @($unknownRefs)
+        undeclared_items = @($undeclared)
+        unreachable_modules = @($unreachable)
+    }
+    Write-Log ("    paths: {0}; consolidated {1}/{2}; unconsol {3}; undeclared {4}; unreachable-mods {5}" -f $paths.Count, $pathData.consolidated, $suiteIds.Count, $unconsol.Count, $undeclared.Count, $unreachable.Count)
 
     # --- last status files ---
     $statusFiles = [ordered]@{}
@@ -247,6 +377,10 @@ function Build-ProjectData($projDir, $scanUtc) {
         $statusFiles[$sf.Name] = (Get-Content -LiteralPath $sf.FullName -Raw -Encoding UTF8)
     }
     Write-Log ("    last-*-status.txt: {0} file(s)" -f $statusFiles.Count)
+
+    # --- derivative doc register (harness-doc headers on top-level *.md) ---
+    $register = Parse-DocRegister $projDir.FullName
+    Write-Log ("    register: {0} docs; pending {1}; in-force {2}; headerless {3}" -f $register.docs.Count, $register.pending.Count, $register.in_force.Count, $register.headerless.Count)
 
     # --- raw jev fallback: jev-cycle-*.out verdict blocks not already in devlog ---
     # (devlog is primary; .out files are consulted only when a cycle entry has no parsed verdict)
@@ -305,6 +439,8 @@ function Build-ProjectData($projDir, $scanUtc) {
                 baseline   = $(if ($e.bullets.Contains('Baseline')) { $e.bullets['Baseline'] } else { $null })
                 criteria   = $(if ($e.bullets.Contains('Criteria')) { $e.bullets['Criteria'] } elseif ($e.bullets.Contains('Criteria (rubric revision)')) { $e.bullets['Criteria (rubric revision)'] } else { $null })
                 time_to_implement = $(if ($e.bullets.Contains('Time to implement')) { $e.bullets['Time to implement'] } else { $null })
+                calendar_span = $(if ($e.bullets.Contains('Calendar span')) { $e.bullets['Calendar span'] } else { $null })
+                llm_build_time = $(if ($e.bullets.Contains('LLM build time')) { $e.bullets['LLM build time'] } else { $null })
                 result     = $(if ($e.bullets.Contains('Result')) { $e.bullets['Result'] } else { $null })
                 build_folder = $buildFolder
                 verdict_ok = $v.ok; verdict_error = $v.error; verdict = $v.json; verdict_raw = $v.raw
@@ -407,6 +543,7 @@ function Build-ProjectData($projDir, $scanUtc) {
         state_present = $statePresent
         state_error = $stateError
         state = $state
+        register = $register
         suite = @($suite)
         status_files = $statusFiles
         series = @($series)
@@ -425,6 +562,7 @@ function Build-ProjectData($projDir, $scanUtc) {
             corpus_conventions_source = $corpusConvSource
             corpus_convention_ids = @($corpusIds | Sort-Object)
             live_scenario_ids = @($suite | ForEach-Object { $_.id })
+            paths = $pathData
             state_revisions = $(Get-Field $state 'revisions')
         }
     }
@@ -528,6 +666,11 @@ function Invoke-Scan {
             direction = $(Get-Field (Get-Field $data.state 'direction_in_force') 'ref')
             direction_clarity = $(Get-Field (Get-Field $data.state 'direction_in_force') 'clarity')
             budget = $(Get-Field (Get-Field $data.state 'direction_in_force') 'budget')
+            docs_pending = $data.register.pending.Count
+            docs_pending_ids = @($data.register.pending)
+            docs_provisional_ids = @($data.register.provisional_ids)
+            docs_in_force = @($data.register.in_force)
+            docs_unregistered = @($data.register.headerless)
             last_verdict = $data.last_verdict
             liveness_seconds = $data.liveness_seconds
             newest_mtime = $data.newest_mtime

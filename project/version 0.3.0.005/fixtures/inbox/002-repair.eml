@@ -1,0 +1,9 @@
+From: dmitri@terryza-repair.example
+To: owner@local.example
+Date: Tue, 25 Nov 2026 07:52:00 -0500
+Subject: Terryza T6 — disk triage status
+Content-Type: text/plain; charset="utf-8"
+
+Disk check on the T6 finished overnight. Two bad sectors remapped; the
+system volume reads clean now. It's bootable but I'd keep it off anything
+important until the replacement drive arrives Thursday.

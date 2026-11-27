@@ -1,0 +1,19 @@
+{
+ "id": "S-voice-select",
+ "ran": true,
+ "checks": [
+  {
+   "name": "voice choices list offered",
+   "pass": true,
+   "detail": "{'pool': 2, 'thin': True, 'note': 'thin voice pool declared honestly'}"
+  },
+  {
+   "name": "user assigns a persona's voice from the list",
+   "pass": true,
+   "detail": "{\"name\": \"Microsoft David Desktop\", \"engine\": \"sapi\", \"stable\": true, \"byUser\": true}"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 0.0
+}

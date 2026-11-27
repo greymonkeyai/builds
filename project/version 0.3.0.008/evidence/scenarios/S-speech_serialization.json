@@ -1,0 +1,162 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "speech serialized through the floor",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "playback measured not assumed",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "held until playback complete",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "speech serialized through the floor",
+    "pass": true,
+    "detail": "57 floor items serialized",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "playback measured not assumed",
+    "pass": true,
+    "detail": "playSeconds=[0.5, 0.5, 8.0, 6.2, 0.4]",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "held until playback complete",
+    "pass": true,
+    "detail": "floor serializes \u2014 each utterance held to completion",
+    "src": [
+     "external:file"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "speech serialized through the floor",
+    "pass": true,
+    "detail": "38 floor items serialized",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "playback measured not assumed",
+    "pass": true,
+    "detail": "playSeconds=[0.4, 5.2, 8.8, 0.4, 10.6]",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "held until playback complete",
+    "pass": true,
+    "detail": "floor serializes \u2014 each utterance held to completion",
+    "src": [
+     "external:file"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "speech serialized through the floor",
+    "pass": true,
+    "detail": "61 floor items serialized",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "playback measured not assumed",
+    "pass": true,
+    "detail": "playSeconds=[0.4, 0.4, 0.4, 0.4, 0.4]",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "held until playback complete",
+    "pass": true,
+    "detail": "floor serializes \u2014 each utterance held to completion",
+    "src": [
+     "external:file"
+    ]
+   }
+  ],
+  "pass": 3,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "speech serialized through the floor",
+    "pass": false,
+    "detail": "0 floor items serialized",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "playback measured not assumed",
+    "pass": false,
+    "detail": "playSeconds=[]",
+    "src": [
+     "external:file"
+    ]
+   },
+   {
+    "name": "held until playback complete",
+    "pass": false,
+    "detail": "floor serializes \u2014 each utterance held to completion",
+    "src": [
+     "external:file"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 3,
+  "allGreen": false
+ }
+}

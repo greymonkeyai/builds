@@ -1,0 +1,117 @@
+{
+  "baseline": {
+    "ts": "2026-11-26T16:05:07",
+    "checks": [
+      {
+        "name": "\u22653 colorways implemented incl. dark",
+        "pass": false,
+        "detail": "[]"
+      },
+      {
+        "name": "theme selector drives settings claims",
+        "pass": false,
+        "detail": "selector on page=False; claim rows=0"
+      },
+      {
+        "name": "fresh launch opens light (seeded)",
+        "pass": false,
+        "detail": "themeName at first read=None"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  },
+  "green": {
+    "ts": "2026-11-26T16:09:09",
+    "checks": [
+      {
+        "name": "\u22653 colorways implemented incl. dark",
+        "pass": true,
+        "detail": "['light', 'dark', 'sepia', 'contrast']"
+      },
+      {
+        "name": "theme selector drives settings claims",
+        "pass": true,
+        "detail": "selector on page=True; claim rows=1"
+      },
+      {
+        "name": "fresh launch opens light (seeded)",
+        "pass": true,
+        "detail": "themeName at first read=light"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-empty-store": {
+    "ts": "2026-11-26T15:55:15",
+    "checks": [
+      {
+        "name": "\u22653 colorways implemented incl. dark",
+        "pass": true,
+        "detail": "['light', 'dark', 'sepia', 'contrast']"
+      },
+      {
+        "name": "theme selector drives settings claims",
+        "pass": false,
+        "detail": "selector on page=True; claim rows=0"
+      },
+      {
+        "name": "fresh launch opens light (seeded)",
+        "pass": true,
+        "detail": "themeName at first read=light"
+      }
+    ],
+    "pass": 2,
+    "fail": 1,
+    "allGreen": false
+  },
+  "sabotage-stub-engines": {
+    "ts": "2026-11-26T15:58:03",
+    "checks": [
+      {
+        "name": "\u22653 colorways implemented incl. dark",
+        "pass": true,
+        "detail": "['light', 'dark', 'sepia', 'contrast']"
+      },
+      {
+        "name": "theme selector drives settings claims",
+        "pass": true,
+        "detail": "selector on page=True; claim rows=1"
+      },
+      {
+        "name": "fresh launch opens light (seeded)",
+        "pass": true,
+        "detail": "themeName at first read=light"
+      }
+    ],
+    "pass": 3,
+    "fail": 0,
+    "allGreen": true
+  },
+  "sabotage-stubbed-endpoints": {
+    "ts": "2026-11-26T15:59:34",
+    "checks": [
+      {
+        "name": "\u22653 colorways implemented incl. dark",
+        "pass": false,
+        "detail": "[]"
+      },
+      {
+        "name": "theme selector drives settings claims",
+        "pass": false,
+        "detail": "selector on page=False; claim rows=0"
+      },
+      {
+        "name": "fresh launch opens light (seeded)",
+        "pass": false,
+        "detail": "themeName at first read=None"
+      }
+    ],
+    "pass": 0,
+    "fail": 3,
+    "allGreen": false
+  }
+}

@@ -1,0 +1,39 @@
+{
+ "id": "S-list-project",
+ "ran": true,
+ "checks": [
+  {
+   "name": "list need created from chat",
+   "pass": true,
+   "detail": "need:list"
+  },
+  {
+   "name": "chat path enactment",
+   "pass": true,
+   "detail": "input:captured carries the request"
+  },
+  {
+   "name": "iterable object",
+   "pass": true,
+   "detail": "56 members"
+  },
+  {
+   "name": "retrieval produced members",
+   "pass": true,
+   "detail": "memberCount=56"
+  },
+  {
+   "name": "non-matches recorded for review (D4)",
+   "pass": true,
+   "detail": "nonMatchCount=2 nonMatches=['List of sister cities in Pennsylvania', 'List of cities in Pennsylvania']"
+  },
+  {
+   "name": "criteria preserved in need rows",
+   "pass": true,
+   "detail": "{\"scope\": \"cities\", \"place\": \"pennsylvania\", \"member_kind\": \"city\", \"label\": \"cities in pennsylvania\", \"preserved\": \"criteria carried in the need row; refinemen"
+  }
+ ],
+ "pass": true,
+ "evidence_class": "enactment",
+ "seconds": 5.0
+}

@@ -1,0 +1,55 @@
+{
+  "id": "S-role-negotiate",
+  "ran": true,
+  "checks": [
+    {
+      "name": "role negotiation recorded",
+      "pass": true,
+      "detail": {
+        "key": "PC-DEV",
+        "caps": [
+          "surface"
+        ],
+        "mint": false,
+        "at": 1795608558416
+      }
+    },
+    {
+      "name": "mint rights are a negotiated grant",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "join outcome honest (member vs pending)",
+      "pass": true,
+      "detail": {
+        "key": "PC-DEV",
+        "device": {
+          "ip": "192.168.86.25",
+          "mac": "",
+          "name": "DESKTOP-OOGQ7UN",
+          "transport": "wired-lan",
+          "roster": "PC-DEV",
+          "reachable": true,
+          "self": true
+        },
+        "role": {
+          "key": "PC-DEV",
+          "caps": [
+            "surface"
+          ],
+          "mint": false,
+          "at": 1795608558416
+        },
+        "peer_endpoint": {
+          "reachable": false,
+          "endpoint": null,
+          "note": "no quorum endpoint answered — device is present but not installed/running"
+        },
+        "state": "pending",
+        "joined_at": 1795608562490
+      }
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,394 @@
+{
+ "baseline": {
+  "ts": "2026-11-27T07:29:27",
+  "checks": [
+   {
+    "name": "P-personality-forge step: personas.create",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.editor",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.portrait",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.reorder",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.source-match",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.voices",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.selector",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: conversation.chat",
+    "pass": false,
+    "detail": "operator surface absent",
+    "src": [
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 8,
+  "allGreen": false
+ },
+ "green": {
+  "ts": "2026-11-27T08:17:12",
+  "checks": [
+   {
+    "name": "P-personality-forge step: personas.create",
+    "pass": true,
+    "detail": "affordance=persona-create rendered=True api=/api/personas code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.editor",
+    "pass": true,
+    "detail": "affordance=persona-editor rendered=True api=/api/personas code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.portrait",
+    "pass": true,
+    "detail": "affordance=persona-roster rendered=True api=/api/personas code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.reorder",
+    "pass": true,
+    "detail": "affordance=roster-up rendered=True api=/api/personas code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.source-match",
+    "pass": true,
+    "detail": "affordance=persona-create rendered=True api=/api/personas code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.voices",
+    "pass": true,
+    "detail": "affordance=voice-select rendered=True api=/api/personas code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.selector",
+    "pass": true,
+    "detail": "affordance=persona-roster rendered=True api=/api/personas code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: conversation.chat",
+    "pass": true,
+    "detail": "affordance=chat rendered=True api=/api/conversation code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 8,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-empty-store": {
+  "ts": "2026-11-27T08:33:11",
+  "checks": [
+   {
+    "name": "P-personality-forge step: personas.create",
+    "pass": true,
+    "detail": "affordance=persona-create rendered=True api=/api/personas code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.editor",
+    "pass": true,
+    "detail": "affordance=persona-editor rendered=True api=/api/personas code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.portrait",
+    "pass": true,
+    "detail": "affordance=persona-roster rendered=True api=/api/personas code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.reorder",
+    "pass": true,
+    "detail": "affordance=roster-up rendered=True api=/api/personas code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.source-match",
+    "pass": true,
+    "detail": "affordance=persona-create rendered=True api=/api/personas code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.voices",
+    "pass": true,
+    "detail": "affordance=voice-select rendered=True api=/api/personas code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.selector",
+    "pass": true,
+    "detail": "affordance=persona-roster rendered=True api=/api/personas code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: conversation.chat",
+    "pass": true,
+    "detail": "affordance=chat rendered=True api=/api/conversation code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 8,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stub-engines": {
+  "ts": "2026-11-27T08:36:37",
+  "checks": [
+   {
+    "name": "P-personality-forge step: personas.create",
+    "pass": true,
+    "detail": "affordance=persona-create rendered=True api=/api/personas code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.editor",
+    "pass": true,
+    "detail": "affordance=persona-editor rendered=True api=/api/personas code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.portrait",
+    "pass": true,
+    "detail": "affordance=persona-roster rendered=True api=/api/personas code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.reorder",
+    "pass": true,
+    "detail": "affordance=roster-up rendered=True api=/api/personas code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.source-match",
+    "pass": true,
+    "detail": "affordance=persona-create rendered=True api=/api/personas code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.voices",
+    "pass": true,
+    "detail": "affordance=voice-select rendered=True api=/api/personas code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.selector",
+    "pass": true,
+    "detail": "affordance=persona-roster rendered=True api=/api/personas code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: conversation.chat",
+    "pass": true,
+    "detail": "affordance=chat rendered=True api=/api/conversation code=200",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 8,
+  "fail": 0,
+  "allGreen": true
+ },
+ "sabotage-stubbed-endpoints": {
+  "ts": "2026-11-27T08:41:38",
+  "checks": [
+   {
+    "name": "P-personality-forge step: personas.create",
+    "pass": false,
+    "detail": "affordance=persona-create rendered=False api=/api/personas code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.editor",
+    "pass": false,
+    "detail": "affordance=persona-editor rendered=False api=/api/personas code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.portrait",
+    "pass": false,
+    "detail": "affordance=persona-roster rendered=False api=/api/personas code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.reorder",
+    "pass": false,
+    "detail": "affordance=roster-up rendered=False api=/api/personas code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.source-match",
+    "pass": false,
+    "detail": "affordance=persona-create rendered=False api=/api/personas code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.voices",
+    "pass": false,
+    "detail": "affordance=voice-select rendered=False api=/api/personas code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: personas.selector",
+    "pass": false,
+    "detail": "affordance=persona-roster rendered=False api=/api/personas code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   },
+   {
+    "name": "P-personality-forge step: conversation.chat",
+    "pass": false,
+    "detail": "affordance=chat rendered=False api=/api/conversation code=503",
+    "src": [
+     "rendered",
+     "user-path"
+    ]
+   }
+  ],
+  "pass": 0,
+  "fail": 8,
+  "allGreen": false
+ }
+}

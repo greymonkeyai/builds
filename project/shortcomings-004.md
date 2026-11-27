@@ -1,4 +1,5 @@
 # Named deficiencies — direction-004 (SIGNED 2026-11-23)
+<!-- harness-doc kind=shortcomings status=discharged applies-to=direction-004 mapped-into=scenarios.md -->
 
 Compiled 2026-11-23 by the coordinator session from the owner's Cycle-3 review
 (`devlog.md` Cycle-3 verdict `user_commentary`, "Owner review — Cycle 3" R1–R5)

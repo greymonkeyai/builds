@@ -1,0 +1,27 @@
+{
+  "id": "S-email-commentary",
+  "ran": true,
+  "checks": [
+    {
+      "name": "email list from configured source basis",
+      "pass": true,
+      "detail": "fixture-directory"
+    },
+    {
+      "name": "V-G: fixture basis honestly labeled",
+      "pass": true,
+      "detail": "FIXTURE BASIS — no configured live mail account on this install; .eml directory stands in (declared, V-G)"
+    },
+    {
+      "name": "persona commentary produced",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "commentary recorded",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "pass": true
+}
